@@ -1,0 +1,1176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel Main/Molekel</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  
+  .diffbox { width:570px; border-left:1px #999999 solid; margin-top:1.33em; }
+  .diffauthor { font-weight:bold; }
+  .diffchangesum { font-weight:bold; }
+  .difftime { font-family:verdana,sans-serif; font-size:66%; 
+    background-color:#dddddd; }
+  .difftype { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; font-weight:bold; }
+  .diffadd { border-left:5px #99ff99 solid; padding-left:5px; }
+  .diffdel { border-left:5px #ffff99 solid; padding-left:5px; }
+  .diffrestore { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; margin:1.5em 0px; }
+  .diffmarkup { font-family:monospace; }  
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='../ReferenceGuide/Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='ContactMe'>Contact</a>
+</li><li><a class='selflink' href='HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage' class='pagegroup'>Main</a>-->
+					<p> </p>
+					<h1><a href='HomePage'>Molekel</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<h2 class='wikiaction'>Main.HomePage History</h2>
+  <p><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=diff&amp;source=n&amp;minor=n'>Hide minor edits</a> - <a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=diff&amp;source=y&amp;minor=y'>Show changes to markup</a></p>
+  <div id='wikidiff'>
+      <div class='diffbox'><div class='difftime'>June 21, 2010, at 03:09 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png | <strong>Ckick to enlarge</strong></span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png | <span style='font-size:83%'><strong>Click on image to enlarge</strong></span></span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1277125761:1277125718:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 21, 2010, at 03:08 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png | <strong>Ckick to enlarge</strong></span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1277125718:1277125619:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 21, 2010, at 03:06 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1277125619:1274346425:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>May 20, 2010, at 11:07 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 6 from:</div>
+        <div class='diffdel'><p>Molekel is an open-source multi-platform molecular visualization program. The latest version is 5.4 released in August 2009.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Molekel is an open-source multi-platform molecular visualization program. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1274346425:1265366598:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:43 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p><strong><span style='font-size:83%'> (<a class='wikilink' href='Citing'>citation info</a>) </span></strong>)
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><span style='font-size:83%'> (<a class='wikilink' href='Citing'>citation info</a>) </span></strong>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366598:1265366591:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:43 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>(<strong><span style='font-size:83%'> <a class='wikilink' href='Citing'>citation info</a> </span></strong>)
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><span style='font-size:83%'> (<a class='wikilink' href='Citing'>citation info</a>) </span></strong>)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366591:1265366561:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:42 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 7:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366561:1265366553:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:42 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 7 from:</div>
+        <div class='diffdel'><p><strong><span style='font-size:83%'> <a class='wikilink' href='Citing'>citation info</a> </span></strong>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(<strong><span style='font-size:83%'> <a class='wikilink' href='Citing'>citation info</a> </span></strong>)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366553:1265366505:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:41 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted line 6:</div>
+        <div class='diffdel'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366505:1265366481:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:41 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p><a class='wikilink' href='Citing'>citation info</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><span style='font-size:83%'> <a class='wikilink' href='Citing'>citation info</a> </span></strong>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366481:1265366457:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:40 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>citation info</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>?</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='wikilink' href='Citing'>citation info</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366457:1265366441:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:40 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>(<a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>Citation Info</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>?</a>)
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>citation info</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366441:1265366376:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:39 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>([[Citation] | Citation Info ])
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(<a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>Citation Info</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Citation?action=edit'>?</a>)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366376:1265366365:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 05, 2010, at 11:39 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added lines 7-8:</div>
+        <div class='diffadd'><p>([[Citation] | Citation Info ])
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1265366365:1253634329:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 22, 2009, at 05:45 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted line 9:</div>
+        <div class='diffdel'><ul><li>Completely redesigned UI
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1253634329:1253104325:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 16, 2009, at 02:32 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed lines 6-8 from:</div>
+        <div class='diffdel'><p>Molekel is an open-source multiplatform molecular visualization program being developed at the Swiss National Supercomputing Centre (CSCS).
+</p>
+<p class='vspace'>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.4 released in August 2009.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Molekel is an open-source multi-platform molecular visualization program. The latest version is 5.4 released in August 2009.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1253104325:1250668387:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 19, 2009, at 09:53 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 26:</div>
+        <div class='diffadd'><ul><li>Export high resolution images for 300+ DPI printing 
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1250668387:1250602678:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 18, 2009, at 03:37 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Latest version is 5.4 released in August 2009.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.4 released in August 2009.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1250602678:1250599330:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 18, 2009, at 02:42 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame rfloat' style='width: 400px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1250599330:1250599313:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 18, 2009, at 02:41 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 400px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1250599313:1250599275:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 18, 2009, at 02:41 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/ui_main_radiation_density_probe_colorbar_gray.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1250599275:1250589636:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 18, 2009, at 12:00 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Versions 5.3.x are being tested and available for download on our ftp site at <a class='urllink' href='ftp://ftp.cscs.ch/out/molekel' rel='nofollow'>ftp://ftp.cscs.ch/out/molekel</a>. 
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Latest version is 5.4 released in August 2009.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1250589636:1238600229:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>April 01, 2009, at 05:37 PM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. 
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Versions 5.3.x are being tested and available for download on our ftp site at <a class='urllink' href='ftp://ftp.cscs.ch/out/molekel' rel='nofollow'>ftp://ftp.cscs.ch/out/molekel</a>. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1238600229:1237226579:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 16, 2009, at 07:02 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. Check out the <em>News</em> and file release section for updates.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1237226579:1236877903:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:11 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame lfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame rfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877903:1236877828:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:10 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame lfloat'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame lfloat' style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877828:1236877729:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:08 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted line 2:</div>
+        <div class='diffdel'><div  style='width: 300px;' > 
+</div>
+</div>
+        <div class='difftype'>Changed line 4 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877729:1236877702:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:08 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 3-5 from:</div>
+        <div class='diffdel'><p><span  style='width: 300px;'> </span><span class='frame lfloat'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><div  style='width: 300px;' > 
+<p><span class='frame lfloat'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p></div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877702:1236877684:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:08 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame lfloat'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span  style='width: 300px;'> </span><span class='frame lfloat'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877684:1236877670:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:07 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span class='frame lfloat'> </span><span  style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame lfloat'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877670:1236877619:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:06 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><span  style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame lfloat'> </span><span  style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877619:1236877436:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 06:03 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added lines 2-3:</div>
+        <div class='diffadd'><p><span  style='width: 300px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/molekel_orbital_42_ui.png</span>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236877436:1236848680:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 10:04 AM 
+        by <span class='diffauthor' title='129.132.128.136'>129.132.128.136</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p>Molekel is an opensource (GPL) multiplatform molecular visualization program being developed at the Swiss National Supercomputing Centre (CSCS).
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Molekel is an open-source multiplatform molecular visualization program being developed at the Swiss National Supercomputing Centre (CSCS).
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236848680:1236703915:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 05:51 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted lines 27-29:</div>
+        <div class='diffdel'><p>This site is currently used for all the development tasks and as the main source code repository.
+</p>
+<p class='vspace'>The bioinformatics.org project page is here. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236703915:1236673403:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:23 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 2:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236673403:1236673392:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:23 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 1 from:</div>
+        <div class='diffdel'><p>(:title test:)
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(:title Molekel:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236673392:1236673374:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:22 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 1:</div>
+        <div class='diffadd'><p>(:title test:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236673374:1236673348:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:22 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted line 0:</div>
+        <div class='diffdel'><p>(:noheader:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236673348:1236673287:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:21 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 1:</div>
+        <div class='diffadd'><p>(:noheader:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1236673287:1220859454:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 08, 2008, at 09:37 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 21 from:</div>
+        <div class='diffdel'><ul><li>Export to PostScript
+</li></ul>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ul><li>Export to PostScript and PDF
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1220859454:1220858930:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 08, 2008, at 09:28 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 20:</div>
+        <div class='diffadd'><ul><li>Animation of vibrational modes
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1220858930:1220858890:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 08, 2008, at 09:28 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added lines 8-9:</div>
+        <div class='diffadd'><ul><li>Different methods to speed-up rendering of molecules with support for billboards and view-dependent level of detail techniques 
+</li><li>Programmable shaders;  standard shaders to enhance rendering quality, outline contours and  perform sketch-like renderings are provided 
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1220858890:1203591190:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 21, 2008, at 11:53 AM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 3-4 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. Check out the <em>News</em> and file release section for updates.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. Check out the <em>News</em> and file release section for updates.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1203591190:1179073121:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>May 13, 2007, at 06:18 PM 
+        by <span class='diffauthor' title='87.2.216.131'>87.2.216.131</span> - </div>
+        <div class='difftype'>Changed lines 21-22 from:</div>
+        <div class='diffdel'><ul><li>Fully Doxygen-commented source code.
+</li></ul>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ul><li>Fully Doxygen-commented source code. 
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1179073121:1171037212:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 09, 2007, at 05:06 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 3-4 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. Check ouy the <em>News</em> and file release section for updates.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. Check out the <em>News</em> and file release section for updates.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1171037212:1170428201:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 02, 2007, at 03:56 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 3-5 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.6.
+</p>
+<p class='vspace'>Some of the features available in this new version are:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x. Check ouy the <em>News</em> and file release section for updates.
+</p>
+<p class='vspace'>Some of the features available in the new version are:
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1170428201:1166791279:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 01:41 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 5 from:</div>
+        <div class='diffdel'><p>Some of the features added in this new version are:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Some of the features available in this new version are:
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166791279:1166788965:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 01:02 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 21-22 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ul><li>Fully Doxygen-commented source code.
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166788965:1166788847:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 01:00 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 3-4 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.6.
+</p>
+</div>
+        <div class='difftype'>Added line 13:</div>
+        <div class='diffadd'><dl><dd><ul><li>Iso-surface from Gaussian cube grid data
+</li></ul></dd></dl>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166788847:1166788808:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 01:00 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 5-20:</div>
+        <div class='diffadd'><p>Some of the features added in this new version are:
+</p><ul><li>Multiplatform: Mac OS X, Windows, Linux
+</li><li>Completely redesigned UI
+</li><li>Visualization of residues (ribbon or schematic)
+</li><li>Complete control over the generation of molecular surfaces (bounding box and resolution)
+</li><li>Visualization of the following surfaces:
+<ul><li>Orbitals
+</li><li>Iso-surface from density matrix
+</li><li>SAS
+</li><li>SES
+</li><li>Van der Waals
+</li></ul></li><li>Animation of molecular surfaces
+</li><li>Export to PostScript
+</li><li>Export animation
+</li><li>Plane widget to visualize a scalar field: the plane can be freely moved in 3d space and the points on the plane surface will be colored according to the value of the scalar field: a cursor can be moved on the plane surface to show the exact value of the field at a specific point in space. 
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166788808:1166730393:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 08:46 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'><p>This site is currently used for all the development tasks and as the main source code repository. 
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>This site is currently used for all the development tasks and as the main source code repository.
+</p>
+<p class='vspace'>The bioinformatics.org project page is here. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166730393:1166717906:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 05:18 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 3-4 from:</div>
+        <div class='diffdel'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.6.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.x.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166717906:1166717866:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 05:17 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 1-6 from:</div>
+        <div class='diffdel'><h2><span  style='color: red;'> Update in progress</span></h2>
+<p>Molekel is a multiplatform molecular visualization program being developed at the Swiss National Supercomputing Centre (CSCS).
+</p>
+<p class='vspace'>Molekel was developed at the University of Geneva and CSCS/ETH Zurich in the early nineties, and is currently being rewritten under an open source GPL license.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Molekel is an opensource (GPL) multiplatform molecular visualization program being developed at the Swiss National Supercomputing Centre (CSCS).
+</p>
+<p class='vspace'>Version 5.0 has been released on December 21<sup>st</sup> 2006 and is an almost complete rewrite of Molekel 4.6.
+</p>
+</div>
+        <div class='difftype'>Deleted lines 6-8:</div>
+        <div class='diffdel'><p><strong>Note:</strong>
+<em>This site is currently being updated in preparation for the release of Molekel 5.0 on December 21<sup>st</sup>. In the meantime, if you are interested in this project you can checkout the development page here and subscribe to mailing lists, post a message to a forum, download released files or contact me directly.</em>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166717866:1166549351:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 06:29 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 1-2 from:</div>
+        <div class='diffdel'><h2>%red$ Update in progress</h2>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2><span  style='color: red;'> Update in progress</span></h2>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166549351:1166549339:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 06:28 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 1-2:</div>
+        <div class='diffadd'><h2>%red$ Update in progress</h2>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166549339:1166539564:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:46 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 8-15 from:</div>
+        <div class='diffdel'><div class='indent'><em>This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page here and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.</em>
+</div><p class='vspace'><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+<a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Testimage/Png?action=edit'>testimage.png</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Testimage/Png?action=edit'>?</a>
+</p><hr />
+<p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><em>This site is currently being updated in preparation for the release of Molekel 5.0 on December 21<sup>st</sup>. In the meantime, if you are interested in this project you can checkout the development page here and subscribe to mailing lists, post a message to a forum, download released files or contact me directly.</em>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166539564:1166539297:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:41 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 14-15 from:</div>
+        <div class='diffdel'><p>molekel_mac_sshot1.jpg
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166539297:1166539276:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:41 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 14-15 from:</div>
+        <div class='diffdel'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166539276:1166539100:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:38 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 12 from:</div>
+        <div class='diffdel'><p>testimage.png
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Testimage/Png?action=edit'>testimage.png</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Testimage/Png?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166539100:1166539085:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:38 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Added line 12:</div>
+        <div class='diffadd'><p>testimage.png
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166539085:1166539017:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:36 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 11 from:</div>
+        <div class='diffdel'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/Uploads?action=upload&amp;upname=testimage.png'>wiki/uploads/testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/Uploads?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166539017:1166538959:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:35 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 11 from:</div>
+        <div class='diffdel'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/Uploads?action=upload&amp;upname=testimage.png'>wiki/uploads/testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/Uploads?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166538959:1166538705:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:31 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 11 from:</div>
+        <div class='diffdel'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>Attach:testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166538705:1166538608:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 19, 2006, at 03:30 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Added lines 10-11:</div>
+        <div class='diffadd'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>Attach:testimage.png</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=testimage.png'>&nbsp;&Delta;</a>
+</p>
+</div>
+        <div class='difftype'>Added line 14:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1166538608:1160385394:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>October 09, 2006, at 11:16 AM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'><p>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>This site is currently used for all the development tasks and as the main source code repository. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1160385394:1159481462:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 29, 2006, at 12:11 AM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</p>
+</div>
+        <div class='difftype'>Changed lines 8-11 from:</div>
+        <div class='diffdel'><div class='indent'>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</div><p class='vspace'>This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page here and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><div class='indent'><em>This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page here and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.</em>
+</div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159481462:1159481414:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 29, 2006, at 12:10 AM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 5 from:</div>
+        <div class='diffdel'><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; 
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div>
+        <div class='difftype'>Changed lines 8-12 from:</div>
+        <div class='diffdel'><p>=======
+<strong>'Note:</strong>'
+</p><div class='indent'>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</div><p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159481414:1159481393:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 29, 2006, at 12:09 AM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'><p><strong>'Note:</strong>'
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; 
+<strong>Note:</strong>
+</p>
+</div>
+        <div class='difftype'>Changed lines 8-12 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>=======
+<strong>'Note:</strong>'
+</p><div class='indent'>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</div><p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 
+</p>
+</div>
+        <div class='difftype'>Changed line 16 from:</div>
+        <div class='diffdel'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159481393:1159481345:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 29, 2006, at 12:09 AM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'><p>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong>'Note:</strong>'
+</p><div class='indent'>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159481345:1159481290:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 29, 2006, at 12:08 AM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 7-8 from:</div>
+        <div class='diffdel'><p>This site has just been created and it's going to be a work in progress for the next few weeks.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page here and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159481290:1159480750:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 28, 2006, at 11:59 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 7-8:</div>
+        <div class='diffadd'><p>This site has just been created and it's going to be a work in progress for the next few weeks.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159480750:1159218573:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 25, 2006, at 11:09 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 6 from:</div>
+        <div class='diffdel'><p><a class='wikilink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/SideBar'>SideBar</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159218573:1159218435:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 25, 2006, at 11:07 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 6 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='wikilink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/SideBar'>SideBar</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159218435:1159217964:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 25, 2006, at 10:59 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Deleted line 7:</div>
+        <div class='diffdel'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/SideBar?action=edit'>Wiki.SideBar</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/SideBar?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159217964:1159217947:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 25, 2006, at 10:59 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 8 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/SideBar?action=edit'>Wiki.SideBar</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Wiki/SideBar?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159217947:1159216557:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 25, 2006, at 10:35 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 9-10 from:</div>
+        <div class='diffdel'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+<a class='wikilink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/SideBar'>SideBar</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159216557:1159216538:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 25, 2006, at 10:35 PM 
+        by <span class='diffauthor' title='84.74.35.168'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added line 10:</div>
+        <div class='diffadd'><p><a class='wikilink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/SideBar'>SideBar</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159216538:1159132454:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:14 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159132454:1159132420:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:13 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p>http://molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159132420:1159132342:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:12 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>Attach:molekel_mac_sshot1.jpg</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>&nbsp;&Delta;</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159132342:1159132241:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:10 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>Attach:molekel_mac_sshot1.jpg</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>&nbsp;&Delta;</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159132241:1159132209:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:10 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p>molekel_mac_sshot1.jpg
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159132209:1159132171:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:09 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p>(:<a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>Attach:molekel_mac_sshot1.jpg</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>&nbsp;&Delta;</a>)
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>molekel_mac_sshot1.jpg
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159132171:1159131869:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:04 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(:<a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>Attach:molekel_mac_sshot1.jpg</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>&nbsp;&Delta;</a>)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159131869:1159131831:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:03 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p>(:attachlist:)
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159131831:1159131614:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 11:00 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(:attachlist:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159131614:1159131463:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 10:57 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 9 from:</div>
+        <div class='diffdel'><p><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>Attach:molekel_mac_sshot1.jpg</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>&nbsp;&Delta;</a>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><a class='createlinktext' rel='nofollow' 
+    href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>molekel_mac_sshot1.jpg</a><a rel='nofollow' 
+    class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/MolekelMacSshot1/Jpg?action=edit'>?</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159131463:1159131233:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 10:53 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 7-8 from:</div>
+        <div class='diffdel'><p>===========
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><hr />
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159131233:1159130729:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 10:45 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 6-9:</div>
+        <div class='diffadd'><p>===========
+</p>
+<p class='vspace'><a rel='nofollow' class='createlinktext' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>Attach:molekel_mac_sshot1.jpg</a><a rel='nofollow' class='createlink' href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=upload&amp;upname=molekel_mac_sshot1.jpg'>&nbsp;&Delta;</a>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159130729:1159129526:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 10:25 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Deleted lines 0-1:</div>
+        <div class='diffdel'><p>(:title Molekel Development Site:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159129526:1159129478:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 10:24 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - Main Page</div>
+        <div class='difftype'>Added lines 1-2:</div>
+        <div class='diffadd'><p>(:title Molekel Development Site:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159129478:1159128908:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>September 24, 2006, at 10:15 PM 
+        by <span class='diffauthor' title='84.72.112.101'>Ugo Varetto</span> - Main Page</div>
+        <div class='difftype'>Added lines 1-5:</div>
+        <div class='diffadd'><p>Molekel is a multiplatform molecular visualization program being developed at the Swiss National Supercomputing Centre (CSCS).
+</p>
+<p class='vspace'>Molekel was developed at the University of Geneva and CSCS/ETH Zurich in the early nineties, and is currently being rewritten under an open source GPL license.
+</p>
+<p class='vspace'>This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  here.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage?action=edit&amp;restore=diff:1159128908:1125534324:&amp;preview=y'>Restore</a></div></div></div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>Main</span>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='Gallery'>Gallery</a></strong>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='DownloadBinary'>Download</a></strong>
+</p>
+<p class='vspace sidehead'> <strong>Documentation</strong>
+</p><ul><li><a class='wikilink' href='../ReferenceGuide/Introduction'>Manual</a> 
+</li><li><a class='wikilink' href='Presentations'>Presentations</a>
+</li><li><a class='wikilink' href='VideosBlipTV'>Videos</a>
+</li><li><a class='wikilink' href='VideoTutorials'>Video tutorials</a>
+</li><li><a class='wikilink' href='Install'>Install</a>
+</li><li><a class='wikilink' href='Build'>Build</a>
+<ul><li><a class='wikilink' href='BuildPlatformSpecific'>Platforms</a>
+</li><li><a class='wikilink' href='OpenBabel'>OpenBabel</a>
+</li></ul></li></ul><p class='vspace sidehead'> <strong><a class='wikilink' href='Citing'>Citing</a></strong>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='HomePage'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='HomePage?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='HomePage?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='HomePage?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified June 21, 2010, at 03:09 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel ReferenceGuide/Surface from grid data</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='../Main/Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='../Main/DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='../Main/ContactMe'>Contact</a>
+</li><li><a class='wikilink' href='../Main/HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/HomePage' class='pagegroup'>ReferenceGuide</a>-->
+					<p> </p>
+					<h1><a href='GridData'>Surface from grid data</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>It is possible to generate an iso-surface from grid data read from a Gaussian cube or ADF t41 files through the "Grid Data Surface Dialog" (<em>Surfaces</em>-<em>Grid Data</em> menu item).
+</p>
+<div class='vspace'></div><div><img src='../../uploaded/ReferenceGuide/griddata_dlg.png' alt='' title='' /></div>
+<p class='vspace'>This dialog box shows the information about the current dataset in the read-only <em>Grid Data</em> section.
+</p>
+<p class='vspace'>The step multiplier (dafault is 1) can be increased to decrease the resolution of the generated surface for faster surface generation.
+</p>
+<p class='vspace'>The rendering style can be changed after the surface has been generated.
+</p>
+<p class='vspace'>To generate the surface simply press the <em>Generate</em> button.
+</p>
+<p class='vspace'>To remove the surface press the <em>Remove</em> button which is enabled only if a surface has been generated.
+</p>
+<p class='vspace'>Checking the "Real-time Update" checkbox will cause a surface to be re-generated without having to press the <em>Generate</em> button each time any value in the dialog box changes.
+</p>
+<p class='vspace'>Molekel 5.1.1 or newer can display surfaces generated from grid data contained in ADF Tape41 files; when grid data are read from ADF files the <em>Grids</em> drop-down list box contains a list of all the grids found in the file: to generate an iso-surface from a particular grid simply select the grid name in the list before pressing the <em>Generate</em> button. Every surface can be displayed with a different color: to change the color of a specific surface select the grid name in the <em>Grids</em> list view and press the <em>Color</em> button.
+</p>
+<div class='vspace'></div><h2>Using negative and positive iso-values at the same time</h2>
+<p>Although this feature is not supported yet in the released versions, it is possible to use both negative and positive iso-values, or in general multiple iso-values, by  loading multiple (one per iso-value) copies of the same molecule and then generate one surface with a different iso-value for each copy of the loaded molecule.
+</p>
+<p class='vspace'>e.g. 
+</p>
+<div class='vspace'></div>
+<table border='0' ><tr ><td  align='center'> <img width='170px' src='../../uploaded/ReferenceGuide/gridminus.png' alt='' title='' /></td><td  align='center'> <img width='170px' src='../../uploaded/ReferenceGuide/gridplus.png' alt='' title='' /></td><td  align='center'> <img width='170px' src='../../uploaded/ReferenceGuide/gridplusminus.png' alt='' title='' /></td></tr>
+<tr ><td  align='left'><em>Copy 1, iso value = -0.05</em></td><td ><em>Copy 2, iso value = 0.05</em></td><td  align='center'>Copy 1 &amp; 2 displayed together</td></tr>
+</table>
+<div class='vspace'></div><h2>Smoothing</h2>
+<p>Molekel 5.1 or newer does support smoothing of the generated isosurfaces through Laplacian smoothing.
+</p>
+<div class='vspace'></div>
+<table border='0' ><tr ><td  align='center'> <img width='220px' src='../../uploaded/ReferenceGuide/cube_surface_no_smoothing.png' alt='' title='' /></td><td  align='center'> <img width='220px' src='../../uploaded/ReferenceGuide/cube_surface_smoothing_200_0.01.png' alt='' title='' /></td></tr>
+<tr ><td  align='left'><em>Iso-surface, no smoothing</em></td><td ><em>Iso-surface, 200 iterations with 0.01 relaxation</em></td></tr>
+</table>
+<div class='vspace'></div>
+</div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>User Guide</span>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Introduction'>Introduction</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Workspace'>Workspace</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Menu'>Menu</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplayStyle'>Display Style</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplaySettings'>Display Settings</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Animation'>Animation</a></strong>
+</p><ul><li><a class='wikilink' href='Settings'>Settings</a>
+</li><li><a class='wikilink' href='ExportAnimation'>Export</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Surfaces'>Surfaces</a></strong>
+</p><ul><li><a class='wikilink' href='ElectronDensity'>Electron Density Surfaces</a>
+</li><li><a class='selflink' href='GridData'>Surface from Grid Data</a>
+</li><li><a class='wikilink' href='SAS'>Solvent Accessible Surface</a>
+</li><li><a class='wikilink' href='SES'>Solvent Excluded Surface</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Analysis'>Analysis</a></strong>
+</p><ul><li><a class='wikilink' href='PlaneProbe'>Plane Probe</a>
+</li><li><a class='wikilink' href='DistanceAngles'>Distances and (dihedral) angles</a>
+</li><li><a class='wikilink' href='RadiationSpectra'>Radiation Spectra</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Shaders'>Shaders</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='EditBonds'>Edit bonds</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='SaveImage'>Export images</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='FileFormats'>File Formats</a></strong>
+</p>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='GridData'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='GridData?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='GridData?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='GridData?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 12, 2009, at 05:09 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

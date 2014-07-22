@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel ReferenceGuide/Display Settings</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  
+  .diffbox { width:570px; border-left:1px #999999 solid; margin-top:1.33em; }
+  .diffauthor { font-weight:bold; }
+  .diffchangesum { font-weight:bold; }
+  .difftime { font-family:verdana,sans-serif; font-size:66%; 
+    background-color:#dddddd; }
+  .difftype { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; font-weight:bold; }
+  .diffadd { border-left:5px #99ff99 solid; padding-left:5px; }
+  .diffdel { border-left:5px #ffff99 solid; padding-left:5px; }
+  .diffrestore { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; margin:1.5em 0px; }
+  .diffmarkup { font-family:monospace; }  
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='../Main/Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='../Main/DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='../Main/ContactMe'>Contact</a>
+</li><li><a class='wikilink' href='../Main/HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/HomePage' class='pagegroup'>ReferenceGuide</a>-->
+					<p> </p>
+					<h1><a href='DisplaySettings'>Display Settings</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<h2 class='wikiaction'>ReferenceGuide.DisplaySettings History</h2>
+  <p><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=diff&amp;source=n&amp;minor=n'>Hide minor edits</a> - <a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=diff&amp;source=y&amp;minor=y'>Show changes to markup</a></p>
+  <div id='wikidiff'>
+      <div class='diffbox'><div class='difftime'>March 17, 2009, at 05:52 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 1-2 from:</div>
+        <div class='diffdel'><p><br clear='all' />
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(:title Display Settings:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1237308738:1236949184:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 13, 2009, at 01:59 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 16-17 from:</div>
+        <div class='diffdel'><div class='indent'>When rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces; change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</div>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>When rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces; change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236949184:1236949164:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 13, 2009, at 01:59 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236949164:1236949131:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 13, 2009, at 01:58 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><p><strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces. Note that in general you always need this feature when displaying molecular orbitals, if not you will get wrong results.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236949131:1236874409:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:13 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td ><span  style='width: 270; height: 270;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 280; height: 280;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236874409:1236874365:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:12 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 11 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/antialiasing.png</td><td  align='right'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/no_antialiasing.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 280;'> http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/antialiasing.png</span></td><td  align='right'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/no_antialiasing.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236874365:1236874282:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:11 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td ><span  style='width: 230; height: 230;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 270; height: 270;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236874282:1236874265:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:11 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td ><span  style='width: 300; height: 300;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 230; height: 230;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236874265:1236702033:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 05:20 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td ><span  style='width: 200; height: 200;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 300; height: 300;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236702033:1236702004:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 05:20 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td ><span  style='width: 60; height: 60;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 200; height: 200;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236702004:1236701977:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 05:19 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td ><span  style='width: 60; height: 60;'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</span></td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236701977:1236674315:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:38 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 1-2 from:</div>
+        <div class='diffdel'><h2>Display Settings</h2>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><br clear='all' />
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236674315:1236617722:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 09, 2009, at 05:55 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'><p>http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/3d_view_properties.png
+</p>
+</div>
+        <div class='difftype'>Changed line 12 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td >http://bioinformatics.org/molekel/uploads/ReferenceGuide/antialiasing.png</td><td  align='right'>http://bioinformatics.org/molekel/uploads/ReferenceGuide/no_antialiasing.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/antialiasing.png</td><td  align='right'>http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/no_antialiasing.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>Changed line 20 from:</div>
+        <div class='diffdel'><table width='100%'><tr ><td >http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_dp.png</td><td >http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table width='100%'><tr ><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_dp.png</td><td >http://molekel.cscs.ch/wiki/uploaded/ReferenceGuide/orbitals_no_dp.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>Added line 22:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1236617722:1203005568:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:12 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 3-4 from:</div>
+        <div class='diffdel'><p>Global display settings affecting rendering speed and quality can be edited through the !!3D View Properties!! window.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Global display settings affecting rendering speed and quality can be edited through the <em>3D View Properties</em> window.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203005568:1203005499:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:11 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 16-18 from:</div>
+        <div class='diffdel'><p><strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces:
+</p><div class='indent'>when rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces; change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</div>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces.
+</p><div class='indent'>When rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces; change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203005499:1203005312:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:08 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Deleted lines 8-11:</div>
+        <div class='diffdel'><p><strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces:
+</p><div class='indent'>when rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces
+</div><div class='indent'>change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</div>
+</div>
+        <div class='difftype'>Added lines 15-18:</div>
+        <div class='diffadd'><p><strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces:
+</p><div class='indent'>when rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces; change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203005312:1203005226:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:07 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Added line 8:</div>
+        <div class='diffadd'></div>
+        <div class='difftype'>Added line 12:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203005226:1203005204:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:06 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 7-12 from:</div>
+        <div class='diffdel'><ul><li><em>3D View Size</em>: changes the 3d view size.
+</li><li><em>Depth peeling</em>: these parameters affect the rendering of transparent surfaces:
+<ul><li>when rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces
+</li><li>change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</li></ul></li><li><em>Anti Aliasing</em>: increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples 
+</li></ul>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>3D View Size</em></strong>: changes the 3d view size.
+<strong><em>Depth peeling</em></strong>: these parameters affect the rendering of transparent surfaces:
+</p><div class='indent'>when rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces
+</div><div class='indent'>change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</div><p><strong><em>Anti Aliasing</em></strong>: increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203005204:1203005102:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:05 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 5-6 from:</div>
+        <div class='diffdel'><p><span class='rfloat'> http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png</span>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png
+</p>
+</div>
+        <div class='difftype'>Changed lines 13-19 from:</div>
+        <div class='diffdel'><p><br clear='all' />
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' ><tr ><td >http://bioinformatics.org/molekel/uploads/ReferenceGuide/antialiasing.png</td><td  align='right'>http://bioinformatics.org/molekel/uploads/ReferenceGuide/no_antialiasing.png</td></tr>
+<tr ><td ><em>Anti-aliasing on</em></td><td ><em>Anti-aliasing off</em></td></tr>
+</table>
+<div class='vspace'></div>
+<table border='0' ><tr ><td >http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_dp.png</td><td >http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_no_dp.png</td></tr>
+<tr ><td ><em>Depth-peeling on</em></td><td ><em>Depth-peeling off</em></td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203005102:1203004813:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 05:00 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Added lines 4-13:</div>
+        <div class='diffadd'><p><span class='rfloat'> http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png</span>
+</p>
+<div class='vspace'></div><ul><li><em>3D View Size</em>: changes the 3d view size.
+</li><li><em>Depth peeling</em>: these parameters affect the rendering of transparent surfaces:
+<ul><li>when rendering multiple transparent surfaces increase the <em>Max peels</em> parameter until you can see all the overlapping transparent surfaces
+</li><li>change the <em>Occlusion ratio</em> parameter to increase rendering speed or eliminate rendering artifacts: <code>0</code> = best quality, <code>1</code> = max speed
+</li></ul></li><li><em>Anti Aliasing</em>: increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples 
+</li></ul><p class='vspace'><br clear='all' />
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203004813:1203004706:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 04:58 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Added lines 1-3:</div>
+        <div class='diffadd'><h2>Display Settings</h2>
+<p>Global display settings affecting rendering speed and quality can be edited through the !!3D View Properties!! window.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/DisplaySettings?action=edit&amp;restore=diff:1203004706:1203004706:&amp;preview=y'>Restore</a></div></div></div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>User Guide</span>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Introduction'>Introduction</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Workspace'>Workspace</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Menu'>Menu</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplayStyle'>Display Style</a></strong>
+</p>
+<p class='vspace'><strong><a class='selflink' href='DisplaySettings'>Display Settings</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Animation'>Animation</a></strong>
+</p><ul><li><a class='wikilink' href='Settings'>Settings</a>
+</li><li><a class='wikilink' href='ExportAnimation'>Export</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Surfaces'>Surfaces</a></strong>
+</p><ul><li><a class='wikilink' href='ElectronDensity'>Electron Density Surfaces</a>
+</li><li><a class='wikilink' href='GridData'>Surface from Grid Data</a>
+</li><li><a class='wikilink' href='SAS'>Solvent Accessible Surface</a>
+</li><li><a class='wikilink' href='SES'>Solvent Excluded Surface</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Analysis'>Analysis</a></strong>
+</p><ul><li><a class='wikilink' href='PlaneProbe'>Plane Probe</a>
+</li><li><a class='wikilink' href='DistanceAngles'>Distances and (dihedral) angles</a>
+</li><li><a class='wikilink' href='RadiationSpectra'>Radiation Spectra</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Shaders'>Shaders</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='EditBonds'>Edit bonds</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='SaveImage'>Export images</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='FileFormats'>File Formats</a></strong>
+</p>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='DisplaySettings'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='DisplaySettings?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='DisplaySettings?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='DisplaySettings?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 17, 2009, at 05:52 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

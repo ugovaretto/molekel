@@ -1,0 +1,96 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+  <title>Molekel | Main / Build - Platform specific information </title>
+  <link rel='stylesheet' href='http://molekel.cscs.ch/wiki/pub/skins/print/print.css' type='text/css' />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+<body>
+  <div id='printhead'>
+    <h3>From Molekel</h3>
+    <h1 class='pagename'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main'>Main: Build - Platform specific information </a></h1>
+  </div>
+<!--PageText-->
+<div id='wikitext'>
+<div class='vspace'></div><h2>Windows</h2>
+<p>As of <em>December 2008</em> <em>Molekel</em> builds with <em>Visual C++</em>, both <em>nmake</em> and solution (<em>.sln</em>) files can be generated from <em>CMakeSetup</em>.
+A free version of <em>Visual C++</em> is available here: <a class='urllink' href='http://www.microsoft.com/express/vc' rel='nofollow'>http://www.microsoft.com/express/vc</a>
+</p>
+<p class='vspace'>The <em>MinGW</em> environment is not supported anymore.
+</p>
+<div class='vspace'></div><h2>Linux</h2>
+<p>No issues to report. Tested on various <em>SuSE</em> and <em>Red Hat</em> distributions.
+</p>
+<div class='vspace'></div><h2>Mac OS X</h2>
+<p>Tested on <em>Tiger</em> only. Not tested with universal binaries. There should be no issue in building universal binaries, provided you properly build all the required libraries first.
+</p>
+<p class='vspace'>On Mac some libraries and tools can be installed with <em>darwinports</em> or <em>fink</em>.
+Check on the <a class='urllink' href='http://darwinports.opendarwin.org' rel='nofollow'>Darwinports</a> and <a class='createlinktext' rel='nofollow' 
+    href='Fink?action=edit'>http://fink.sourceforge.net</a><a rel='nofollow' 
+    class='createlink' href='Fink?action=edit'>?</a> websites for information on the available packages.
+</p>
+<p class='vspace'>if you use <em>darwinports</em> to install <em>OpenBabel</em> it will be automatically installed under <code>/opt/local</code> and the include directory to set in the <em>CMake</em> configuration will be <code>/usr/local/include/openbabel-2.0</code> (or some other version number).
+</p>
+<p class='vspace'>If you install a pre-built version of <em>Coin3D</em> make sure you also install the <em>tools</em> package which is required to build applications outside <em>Xcode</em>.
+</p>
+<p class='vspace'>When building <em>VTK</em> make sure that <code>VTK_USE_CARBON</code> is <code>ON</code>.
+</p>
+<p class='vspace'><em>OpenMOIV</em> doesn't build out of the box on Mac OS; if you have <em>OpenGL</em> installed as a framework (and want to use it as a framework)
+then you cannot use <code>#include &lt;GL/gl.h&gt;</code> in the source code because there is no <code>GL</code> directory in the <code>OpenGL.framework/Headers</code> directory.
+To build <em>OpenMOIV</em> you can use the include files in the <code>/usr/X11R6/include/GL</code> directory, note that these include files are usually different from the ones in the <code>OpenGL.framework/Headers</code> directory.
+To have <em>CMake</em> use the files in the <code>X11</code> directory open <em>OpenMOIV</em> <em>CMakeLists.txt</em> and add the following line before <code>INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_PATH})</code>:
+</p><ul><li><code class='escaped'> SET( OPENGL_INCLUDE_DIR /usr/X11R6/include )</code>
+</li></ul><p class='vspace'>Build with <code>cmake -Dcoin:int=1</code> then <code>make</code>
+</p>
+<p class='vspace'>You will then have to copy the <code>include/ChemKit2</code> directory into your preferred include dir (e.g. <code>/usr/local/include</code>) and the <code>libChemKit2</code>
+lib into your preferred lib dir (e.g. <code>/usr/local/lib</code>).
+</p>
+<p class='vspace'>Due to the fact that some libraries used by <em>Molekel</em> do have include files that <code>#include &lt;GL/gl.h&gt;</code> you also need to configure <em>CMake</em> to use <code>/usr/X11R6/include as the value of </code>OPENGL_INCLUDE_DIR<code>; this is an advanced options and therefore you need to press </code>'t'@@ to have it displayed.
+</p>
+<p class='vspace'>If you want to use the <code>OpenGL.framework</code> <code>#includes</code> you might as well copy the <code>OpenGL.frameworks/Headers</code> files to a <code>GL</code> directory and change the value of <code>OPENGL_INCLUDE_DIR</code> to the directory containing the <code>GL</code> directory; there are however other issues if you do this: if some code references <code>GL/glx.h</code> compilation will fail because there is no <code>glx.h</code> file in the <code>OpenGL.framework/Headers</code> directory.
+</p>
+<p class='vspace'><code>IV_INCLUDE_DIR</code> and <code>IV_LINK_DIR</code> do not have to be set on Mac if you install the standard <em>Coin3D</em> distribution as a framework.
+</p>
+<div class='vspace'></div>
+</div>
+
+  <div id='printfoot'>
+    <div class='from'>Retrieved from http://molekel.cscs.ch/wiki/pmwiki.php/Main/BuildPlatformSpecific</div>
+    <div class='lastmod'>Page last modified on March 16, 2009, at 06:42 PM</div></div>
+<!--HTMLFooter-->
+</body>
+</html>

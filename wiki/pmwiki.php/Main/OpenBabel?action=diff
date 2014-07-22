@@ -1,0 +1,1011 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel Main/OpenBabel and MinGW</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  
+  .diffbox { width:570px; border-left:1px #999999 solid; margin-top:1.33em; }
+  .diffauthor { font-weight:bold; }
+  .diffchangesum { font-weight:bold; }
+  .difftime { font-family:verdana,sans-serif; font-size:66%; 
+    background-color:#dddddd; }
+  .difftype { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; font-weight:bold; }
+  .diffadd { border-left:5px #99ff99 solid; padding-left:5px; }
+  .diffdel { border-left:5px #ffff99 solid; padding-left:5px; }
+  .diffrestore { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; margin:1.5em 0px; }
+  .diffmarkup { font-family:monospace; }  
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='../ReferenceGuide/Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='ContactMe'>Contact</a>
+</li><li><a class='wikilink' href='HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage' class='pagegroup'>Main</a>-->
+					<p> </p>
+					<h1><a href='OpenBabel'>OpenBabel and MinGW</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<h2 class='wikiaction'>Main.OpenBabel History</h2>
+  <p><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=diff&amp;source=n&amp;minor=n'>Hide minor edits</a> - <a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=diff&amp;source=y&amp;minor=y'>Show changes to markup</a></p>
+  <div id='wikidiff'>
+      <div class='diffbox'><div class='difftime'>March 16, 2009, at 06:45 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p><strong><em>NOTE</em></strong>: This page is left for reference; <em>Molekel</em> is not however using <em>MinGW</em> anymore as the main Windows build environment, it is therefore not required to have a <em>MinGW</em> build of <em>OpenBabel</em>. 
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>NOTE</em></strong>: <span style='font-size:83%'>This page is left for reference; <em>Molekel</em> is not however using <em>MinGW</em> anymore as the main Windows build environment, it is therefore not required to have a <em>MinGW</em> build of <em>OpenBabel</em></span>. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1237225527:1237225488:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 16, 2009, at 06:44 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added lines 2-3:</div>
+        <div class='diffadd'><p><strong><em>NOTE</em></strong>: This page is left for reference; <em>Molekel</em> is not however using <em>MinGW</em> anymore as the main Windows build environment, it is therefore not required to have a <em>MinGW</em> build of <em>OpenBabel</em>. 
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1237225488:1237225360:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 16, 2009, at 06:42 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 1 from:</div>
+        <div class='diffdel'><h1>OpenBabel and MinGW</h1>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(:title OpenBabel and MinGW :)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1237225360:1183068606:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 29, 2007, at 12:10 AM 
+        by <span class='diffauthor' title='84.74.33.192'>84.74.33.192</span> - </div>
+        <div class='difftype'>Added line 13:</div>
+        <div class='diffadd'><p>/*depending on the version of gcc installed you might or might not have hash_map in the include path.*/
+</p>
+</div>
+        <div class='difftype'>Changed lines 15-17 from:</div>
+        <div class='diffdel'><pre>  //typedef stdext::hash_map&lt;std::string, unsigned&gt; NameIndexType;
+</pre><p>//#else
+</p><pre>  typedef std::map&lt;std::string, unsigned&gt; NameIndexType;
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>//  #include &lt;hash_map&gt; 
+</p>
+</div>
+        <div class='difftype'>Added lines 17-24:</div>
+        <div class='diffadd'><p>...
+</p>
+<p class='vspace'>//#ifdef _WIN32
+</p><pre>  //typedef stdext::hash_map&lt;std::string, unsigned&gt; NameIndexType;
+</pre><p>//#else
+</p><pre>  typedef std::map&lt;std::string, unsigned&gt; NameIndexType;
+</pre><p>//#endif
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1183068606:1182955658:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 27, 2007, at 04:47 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 22 from:</div>
+        <div class='diffdel'><p>OpenBabel does need the <code>gettimeofday()</code> function which might or might not be available in the MinGW installation; in case you install <em>MinGW 5.1.3</em> (gcc 3.4.2) the function should be available as
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>OpenBabel does need the <code>gettimeofday()</code> function which might or might not be available in your MinGW environment; in case you install <em>MinGW 5.1.3</em> (gcc 3.4.2) the function should be available as
+</p>
+</div>
+        <div class='difftype'>Changed lines 28-29 from:</div>
+        <div class='diffdel'><p>Note that mingw-runtime 3.12 or later should contain a proper implementation of <code>gettimeofday()</code>.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Also note that mingw-runtime 3.12 or later should contain a proper implementation of <code>gettimeofday()</code>.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1182955658:1182955606:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 27, 2007, at 04:46 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 22 from:</div>
+        <div class='diffdel'><p>OpenBabel does need the gettimeofdaty() function which might or might not be available in the MinGW installation; in case you install <em>MinGW 5.1.3</em> (gcc 3.4.2) the function should be available as
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>OpenBabel does need the <code>gettimeofday()</code> function which might or might not be available in the MinGW installation; in case you install <em>MinGW 5.1.3</em> (gcc 3.4.2) the function should be available as
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1182955606:1182955530:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 27, 2007, at 04:45 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 28-30 from:</div>
+        <div class='diffdel'><p>In case the function is not available, you can simply replace <code>include/sys/time.h</code> with an include containing the following code:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Note that mingw-runtime 3.12 or later should contain a proper implementation of <code>gettimeofday()</code>.
+</p>
+<p class='vspace'>If the function is not available, you can simply replace <code>include/sys/time.h</code> with an include containing the following code:
+</p>
+</div>
+        <div class='difftype'>Changed lines 101-102 from:</div>
+        <div class='diffdel'><p>If you try to build OpenBabel 2.0.2 on Windows with MinGW you should get something similar to the following:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>If you try to build OpenBabel 2.0.2 on Windows with MinGW you might get something similar to the following:
+</p>
+</div>
+        <div class='difftype'>Changed lines 111-112 from:</div>
+        <div class='diffdel'><p>The compiler is complaining about a missing function; <code>gettimeofday</code> is in fact missing in a MinGW environment.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>The compiler is complaining about a missing function; <code>gettimeofday</code> is in fact missing in some MinGW environments (mingw-runtime 3.12 or better should contain a proper implementation of <code>gettimeofday</code>).
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1182955530:1182954783:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 27, 2007, at 04:33 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p>OpenBabel doesn't build out of the box with MinGW, this section describes how to build OpenBabel 2.0.2 and 2.1 (libs only) on Windows with MinGW.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>OpenBabel doesn't build out of the box with MinGW, this page describes how to build OpenBabel 2.0.2 and 2.1 (libs only) on Windows with MinGW.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1182954783:1182954729:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 27, 2007, at 04:32 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 3 from:</div>
+        <div class='diffdel'><p>OpenBabel doesn't build out of the box with MinGW, this section describes how to build OpenBabel 2.0.2 on Windows with MinGW.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>OpenBabel doesn't build out of the box with MinGW, this section describes how to build OpenBabel 2.0.2 and 2.1 (libs only) on Windows with MinGW.
+</p>
+</div>
+        <div class='difftype'>Deleted lines 5-7:</div>
+        <div class='diffdel'><p>Following the instructions on this page you'll be able to build all the libraries and tools except for <code>obgrep</code> which has a dependency
+on a library which is not included in the OpenBabel distribution: <code>XGetopt</code> and that you can download from here: http://www.codeproject.com/cpp/xgetopt.asp?df=100.
+</p>
+</div>
+        <div class='difftype'>Changed lines 8-9 from:</div>
+        <div class='diffdel'><p>If you try to build OpenBabel 2.0.2 on Windows with MinGW you should get something similar to the following:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2>OpenBabel 2.1 (libs only)</h2>
+<h3>1 - hash_map</h3>
+<p>When building OB 2.1 on MinGW you need to disable the usage of <code>hash_map</code> in <em><code>obmolecformat.h</code></em>: simply comment the lines where this class is used:
+</p>
+</div>
+        <div class='difftype'>Changed lines 13-17 from:</div>
+        <div class='diffdel'><p>./configure
+...
+make
+...
+../../src/obutil.h:73: error: `gettimeofday' undeclared (first use this function)      
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>//#ifdef _WIN32
+</p><pre>  //typedef stdext::hash_map&lt;std::string, unsigned&gt; NameIndexType;
+</pre><p>//#else
+</p><pre>  typedef std::map&lt;std::string, unsigned&gt; NameIndexType;
+</pre><p>//#endif
+@] 
+Note that <code>stdext::hash_map</code> is MS version of something similar to <code>tr1::unordered_map</code> and GCC's <code>__gnu_cxx::hash_map</code> which is in fact a modified version of SGI's <code>::hash_map</code>; these data types are not however compatible with each other(try to replace <code>stdext::hash_map</code> with <code>__gnu_cxx::hash_map</code> and check the error you get). 
+</p>
+<div class='vspace'></div><h3>2 - <em><code>gettimeofday()</code></em></h3>
+<p>OpenBabel does need the gettimeofdaty() function which might or might not be available in the MinGW installation; in case you install <em>MinGW 5.1.3</em> (gcc 3.4.2) the function should be available as
+[@
+int __cdecl gettimeofday(struct timeval *__restrict__,
+</p><pre>			 void *__restrict__  /*	tzp (unused) */);
+</pre>
+</div>
+        <div class='difftype'>Changed lines 28-32 from:</div>
+        <div class='diffdel'><p>The compiler is complaining about a missing function; <code>gettimeofday</code> is in fact missing in a MinGW environment.
+</p>
+<p class='vspace'>To fix this you can do the following:
+</p>
+<p class='vspace'><strong><em>1.</em></strong> Open <code>src/babelconfig.h.in</code> and add the following declaration:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>In case the function is not available, you can simply replace <code>include/sys/time.h</code> with an include containing the following code:
+</p>
+</div>
+        <div class='difftype'>Changed lines 30-90 from:</div>
+        <div class='diffdel'><p>void gettimeofday( struct timeval* p, void* );
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ol><li>ifndef _SYS_TIME_H_
+</li><li>define _SYS_TIME_H_
+</li><li>include &lt;time.h&gt;
+<div class='vspace'></div></li><li>include &lt;windows.h&gt;
+<div class='vspace'></div></li><li>ifndef _TIMEVAL_DEFINED /* also in winsock[2].h */
+</li><li>define _TIMEVAL_DEFINED
+</li></ol><p>struct timeval {
+</p><pre>  long tv_sec;
+  long tv_usec;
+</pre><p>};
+</p><ol><li>define timerisset(tvp)	 ((tvp)-&gt;tv_sec || (tvp)-&gt;tv_usec)
+</li><li>define timercmp(tvp, uvp, cmp) 	(((tvp)-&gt;tv_sec != (uvp)-&gt;tv_sec) ? 	((tvp)-&gt;tv_sec cmp (uvp)-&gt;tv_sec) : 	((tvp)-&gt;tv_usec cmp (uvp)-&gt;tv_usec))
+</li><li>define timerclear(tvp)	 (tvp)-&gt;tv_sec = (tvp)-&gt;tv_usec = 0
+</li><li>endif /* _TIMEVAL_DEFINED */
+</li></ol><p class='vspace'>/* Provided for compatibility with code that assumes that
+</p><pre>   the presence of gettimeofday function implies a definition
+   of struct timezone. */
+</pre><p>struct timezone
+{
+</p><pre>  int tz_minuteswest; /* of Greenwich */
+  int tz_dsttime;     /* type of dst correction to apply */
+</pre><p>};
+</p>
+<p class='vspace'>/*
+</p><pre>   Implementation as per:
+   The Open Group Base Specifications, Issue 6
+   IEEE Std 1003.1, 2004 Edition
+
+   The timezone pointer arg is ignored.  Errors are ignored.
+</pre><ul><li>/ 
+</li></ul><div class='vspace'></div><ol><li>ifdef	__cplusplus
+</li></ol><p class='vspace'>void  GetSystemTimeAsFileTime(FILETIME*);
+</p>
+<p class='vspace'>inline int gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+{
+</p><pre>	union {
+	    long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		FILETIME ft;
+	} now;
+
+    GetSystemTimeAsFileTime( &amp;(now.ft) );
+    p-&gt;tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+    p-&gt;tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+	return 0;
+</pre><p>}
+</p>
+<div class='vspace'></div><ol><li>else 
+</li></ol><pre>    /* Must be defined somewhere else */
+</pre><dl><dd>int gettimeofday(struct timeval* p, void* tz /* IGNORED */);
+</dd></dl><ol><li>endif
+<div class='vspace'></div></li><li>endif /* _SYS_TIME_H_ */
+</li></ol>
+</div>
+        <div class='difftype'>Changed lines 93-108 from:</div>
+        <div class='diffdel'><p>If you build now you get a brand new error message:
+<code class='escaped'>bondtyper.cpp:21: bondtyp.h: No such file or directory</code>
+</p>
+<p class='vspace'>The problem is that there are a number of files in the data dir which need to be accessible and they are not because this directory is not in the include path, here is part of the gcc command line you get when invoking <code>make</code>: 
+<code class='escaped'>-I. -I. -I. -I../data</code>
+</p>
+<p class='vspace'>To fix this problem you need to add the data dir (where the <code>bondtyp.h</code> resides) to the include path.
+</p>
+<p class='vspace'><strong><em>2.</em></strong> before running <code>./configure</code> set the <code>CPPFLAGS</code> evironment variable:
+<code class='escaped'>export CPPFLAGS="-I &lt;absolute path to data dir&gt;"</code>
+</p>
+<p class='vspace'>Now everything compiles but doesn't link yet because there is no definition of function <code>gettimeofday</code> so in case you try to link you get the following error:
+<code class='escaped'>undefined reference to `gettimeofday( timeval*, void* )</code>
+We need to write the definition of this function in a c++ file and then modify the makefile to include this new source file.
+</p>
+<p class='vspace'><strong><em>3.</em></strong> create a file <code>gettimeofday.cpp</code> and add the following code into it:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>That's it. With these two changes you'll be able to build the <em>inchi</em> and <em>openbabel</em> libraries.
+</p>
+<div class='vspace'></div><h2>OpenBabel 2.0.x</h2>
+<p>Following the instructions in this section you'll be able to build all the libraries and tools except for <code>obgrep</code> which has a dependency
+on a library which is not included in the OpenBabel distribution: <code>XGetopt</code> and that you can download from here: http://www.codeproject.com/cpp/xgetopt.asp?df=100.
+</p>
+<p class='vspace'>If you try to build OpenBabel 2.0.2 on Windows with MinGW you should get something similar to the following:
+</p>
+</div>
+        <div class='difftype'>Changed lines 102-117 from:</div>
+        <div class='diffdel'><pre>   #include &lt;windows.h&gt;
+   #include &lt;sys/time.h&gt;
+
+   void __stdcall GetSystemTimeAsFileTime(FILETIME*);
+
+   void gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+   {
+	  union {
+	     long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		 FILETIME ft;
+	  } now;
+
+      GetSystemTimeAsFileTime( &amp;(now.ft) );
+      p-&gt;tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+      p-&gt;tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+   }
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>./configure
+...
+make
+...
+../../src/obutil.h:73: error: `gettimeofday' undeclared (first use this function)      
+</p>
+</div>
+        <div class='difftype'>Changed lines 109-119 from:</div>
+        <div class='diffdel'><p><strong><em>4.</em></strong> Modify <code>Makefile.in</code> adding <code>gettimeofday.cpp</code> to the list of source files:
+[@ ...
+</p><pre>   @BUILD_SHARED_TRUE@ fingerprints/libfingerprints.la @LTLIBOBJS@
+   am__libopenbabel_la_SOURCES_DIST = gettimeofday.cpp atom.cpp base.cpp bitvec.cpp    ...
+   @BUILD_SHARED_TRUE@am__objects_1 = dlhandler_unix.lo
+   am_libopenbabel_la_OBJECTS = gettimeofday.lo base.lo bitvec.lo bond.lo    ...
+   libopenbabel_la_SOURCES = 		gettimeofday.cpp atom.cpp base.cpp bitvec.cpp bond.cpp    ...
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>The compiler is complaining about a missing function; <code>gettimeofday</code> is in fact missing in a MinGW environment.
+</p>
+<p class='vspace'>To fix this you can do the following:
+</p>
+<p class='vspace'><strong><em>1.</em></strong> Open <code>src/babelconfig.h.in</code> and add the following declaration:
+[@
+void gettimeofday( struct timeval* p, void* );
+</p>
+</div>
+        <div class='difftype'>Changed lines 117-127 from:</div>
+        <div class='diffdel'><p>If you build it with the current configuration you will incur in another problem: the dynamic library handler is set to unix
+</p>
+<p class='vspace'><strong><em>5.</em></strong> substitute all the instances of <code>dlhandler_unix.xxx</code> in <code>Makefile.in</code> with <code>dlhandler_win32.xxx</code>, there should be a total of five occurrences in the file. The use of a dynamic library handler should be automatically enabled when shared library support is turned on (default).
+In case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove<code class='escaped'> @BUILD_SHARED_TRUE@ </code>in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+<p class='vspace'>At this point the libraries build but not the executables.
+</p>
+<p class='vspace'><strong><em>6.</em></strong> if you want to build the executables you'll have to open all the cpp files in the <em>test</em> and <em>tools</em> folder and comment
+<code class='escaped'> #define USING_OBDLL </code>
+i.e.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>If you build now you get a brand new error message:
+<code class='escaped'>bondtyper.cpp:21: bondtyp.h: No such file or directory</code>
+</p>
+<p class='vspace'>The problem is that there are a number of files in the data dir which need to be accessible and they are not because this directory is not in the include path, here is part of the gcc command line you get when invoking <code>make</code>: 
+<code class='escaped'>-I. -I. -I. -I../data</code>
+</p>
+<p class='vspace'>To fix this problem you need to add the data dir (where the <code>bondtyp.h</code> resides) to the include path.
+</p>
+<p class='vspace'><strong><em>2.</em></strong> before running <code>./configure</code> set the <code>CPPFLAGS</code> evironment variable:
+<code class='escaped'>export CPPFLAGS="-I &lt;absolute path to data dir&gt;"</code>
+</p>
+<p class='vspace'>Now everything compiles but doesn't link yet because there is no definition of function <code>gettimeofday</code> so in case you try to link you get the following error:
+<code class='escaped'>undefined reference to `gettimeofday( timeval*, void* )</code>
+We need to write the definition of this function in a c++ file and then modify the makefile to include this new source file.
+</p>
+<p class='vspace'><strong><em>3.</em></strong> create a file <code>gettimeofday.cpp</code> and add the following code into it:
+</p>
+</div>
+        <div class='difftype'>Changed lines 135-138 from:</div>
+        <div class='diffdel'><p>// used to set import/export for Cygwin DLLs
+</p><ol><li>ifdef WIN32
+</li></ol><p>//#define USING_OBDLL
+</p><ol><li>endif
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><pre>   #include &lt;windows.h&gt;
+   #include &lt;sys/time.h&gt;
+
+   void __stdcall GetSystemTimeAsFileTime(FILETIME*);
+
+   void gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+   {
+	  union {
+	     long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		 FILETIME ft;
+	  } now;
+
+      GetSystemTimeAsFileTime( &amp;(now.ft) );
+      p-&gt;tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+      p-&gt;tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+   }
+</pre>
+</div>
+        <div class='difftype'>Added lines 153-182:</div>
+        <div class='diffadd'><p><strong><em>4.</em></strong> Modify <code>Makefile.in</code> adding <code>gettimeofday.cpp</code> to the list of source files:
+</p><pre class='escaped'> ...
+   @BUILD_SHARED_TRUE@ fingerprints/libfingerprints.la @LTLIBOBJS@
+   am__libopenbabel_la_SOURCES_DIST = gettimeofday.cpp atom.cpp base.cpp bitvec.cpp \
+   ...
+   @BUILD_SHARED_TRUE@am__objects_1 = dlhandler_unix.lo
+   am_libopenbabel_la_OBJECTS = gettimeofday.lo base.lo bitvec.lo bond.lo \
+   ...
+   libopenbabel_la_SOURCES = \
+		gettimeofday.cpp atom.cpp base.cpp bitvec.cpp bond.cpp \
+   ...
+</pre>
+<p class='vspace'>If you build it with the current configuration you will incur in another problem: the dynamic library handler is set to unix
+</p>
+<p class='vspace'><strong><em>5.</em></strong> substitute all the instances of <code>dlhandler_unix.xxx</code> in <code>Makefile.in</code> with <code>dlhandler_win32.xxx</code>, there should be a total of five occurrences in the file. The use of a dynamic library handler should be automatically enabled when shared library support is turned on (default).
+In case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove<code class='escaped'> @BUILD_SHARED_TRUE@ </code>in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+<p class='vspace'>At this point the libraries build but not the executables.
+</p>
+<p class='vspace'><strong><em>6.</em></strong> if you want to build the executables you'll have to open all the cpp files in the <em>test</em> and <em>tools</em> folder and comment
+<code class='escaped'> #define USING_OBDLL </code>
+i.e.
+</p><pre class='escaped'>
+// used to set import/export for Cygwin DLLs
+#ifdef WIN32
+//#define USING_OBDLL
+#endif
+</pre>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1182954729:1167933409:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>January 04, 2007, at 06:56 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 31-32 from:</div>
+        <div class='diffdel'><p>@[bondtyper.cpp:21: bondtyp.h: No such file or directory@]
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><code class='escaped'>bondtyper.cpp:21: bondtyp.h: No such file or directory</code>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1167933409:1166789872:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 01:17 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 21-22 from:</div>
+        <div class='diffdel'><p>The compiler is complaining about a missing function; gettimeofday is in fact missing in a MinGW environment.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>The compiler is complaining about a missing function; <code>gettimeofday</code> is in fact missing in a MinGW environment.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166789872:1166714641:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:24 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Deleted lines 0-1:</div>
+        <div class='diffdel'><h2><span  style='color: red;'> Update in progress</span></h2>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166714641:1166714608:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:23 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 83-84 from:</div>
+        <div class='diffdel'><p>@in case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove <code></code>BUILD_SHARED_TRUE<code></code> in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>In case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove<code class='escaped'> @BUILD_SHARED_TRUE@ </code>in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166714608:1166714544:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:22 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 83-84 from:</div>
+        <div class='diffdel'><p>@in case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove <code>@BUILD_SHARED_TRUE</code>@ in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>@in case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove <code></code>BUILD_SHARED_TRUE<code></code> in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166714544:1166714409:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:20 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 26-27 from:</div>
+        <div class='diffdel'><ol><li>Open <code>src/babelconfig.h.in</code>
+</li><li>Add the following declaration:
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>1.</em></strong> Open <code>src/babelconfig.h.in</code> and add the following declaration:
+</p>
+</div>
+        <div class='difftype'>Added line 31:</div>
+        <div class='diffadd'></div>
+        <div class='difftype'>Added line 34:</div>
+        <div class='diffadd'></div>
+        <div class='difftype'>Changed lines 37-38 from:</div>
+        <div class='diffdel'><p>To fix this problem you need to add the data dir (where the <code>bondtyp.h</code> resides) to the include path:
+</p><ol><li>before running <code>./configure</code> set the <code>CPPFLAGS</code> evironment variable:
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>To fix this problem you need to add the data dir (where the <code>bondtyp.h</code> resides) to the include path.
+</p>
+<p class='vspace'><strong><em>2.</em></strong> before running <code>./configure</code> set the <code>CPPFLAGS</code> evironment variable:
+</p>
+</div>
+        <div class='difftype'>Added line 42:</div>
+        <div class='diffadd'></div>
+        <div class='difftype'>Changed lines 46-47 from:</div>
+        <div class='diffdel'><ol><li>create a file <code>gettimeofday.cpp</code> and add the following code into it:
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>3.</em></strong> create a file <code>gettimeofday.cpp</code> and add the following code into it:
+</p>
+</div>
+        <div class='difftype'>Changed lines 66-67 from:</div>
+        <div class='diffdel'><ol><li>Modify <code>Makefile.in</code> adding <code>gettimeofday.cpp</code> to the list of source files:
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>4.</em></strong> Modify <code>Makefile.in</code> adding <code>gettimeofday.cpp</code> to the list of source files:
+</p>
+</div>
+        <div class='difftype'>Changed lines 78-79 from:</div>
+        <div class='diffdel'><p>@]   
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>@]
+</p>
+</div>
+        <div class='difftype'>Changed lines 81-82 from:</div>
+        <div class='diffdel'><ol><li>substitute all the instances of <code>dlhandler_unix.xxx</code> in <code>Makefile.in</code> with <code>dlhandler_win32.xxx</code>, there should be a total of five occurrences in the file. The use of a dynamic library handler should be automatically enabled when shared library support is turned on (default).
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>5.</em></strong> substitute all the instances of <code>dlhandler_unix.xxx</code> in <code>Makefile.in</code> with <code>dlhandler_win32.xxx</code>, there should be a total of five occurrences in the file. The use of a dynamic library handler should be automatically enabled when shared library support is turned on (default).
+</p>
+</div>
+        <div class='difftype'>Added lines 84-85:</div>
+        <div class='diffadd'><p>At this point the libraries build but not the executables.
+</p>
+</div>
+        <div class='difftype'>Changed lines 87-102 from:</div>
+        <div class='diffdel'><p>7) if you want to build the executables you'll have to open the cpp files in
+</p><pre>   test and tools folder and comment #define USING_OBDLL
+
+   // used to set import/export for Cygwin DLLs
+   #ifdef WIN32
+   //#define USING_OBDLL
+   #endif
+</pre><p class='vspace'>8) run configure --prefix=&lt;installation folder&gt; then make: this will build the
+</p><pre>   libraries into src/.libs, and the executables in the src, tools and test folders.
+   You can then run make install.
+   Note that to have make install succeed you have to also fix obgrep.cpp so that it
+   can somehow build: either you get the XGetopt library mentioned at the beginning
+   of this document, build it with MinGW and link with it or you can simply comment
+   the code in obgrep.cpp main function.
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>6.</em></strong> if you want to build the executables you'll have to open all the cpp files in the <em>test</em> and <em>tools</em> folder and comment
+<code class='escaped'> #define USING_OBDLL </code>
+i.e.
+</p><pre class='escaped'>
+// used to set import/export for Cygwin DLLs
+#ifdef WIN32
+//#define USING_OBDLL
+#endif
+</pre>
+<p class='vspace'><strong><em>7.</em></strong> run <code>configure --prefix=&lt;installation folder&gt;</code> then <code>make</code>: this will build the libraries into <code>src/.libs</code>, and the executables in the <code>src</code>, tools and test folders. You can then run <code>make install</code>.
+Note that to have <code>make install</code> succeed you have to also fix <code>obgrep.cpp</code> so that it can somehow build: either you get the XGetopt library mentioned at the beginning of this document, build it with MinGW and link with it or you can simply comment the code in <code>obgrep.cpp</code> <code>main</code> function.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166714409:1166713938:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:12 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 23-25 from:</div>
+        <div class='diffdel'><p>The compiler is complaining about a missing function; gettimeofday is in fact
+missing in a MinGW environment.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>The compiler is complaining about a missing function; gettimeofday is in fact missing in a MinGW environment.
+</p>
+</div>
+        <div class='difftype'>Changed lines 26-31 from:</div>
+        <div class='diffdel'><p>1) Open src/babelconfig.h.in
+2) Add the followfing declaration:
+</p>
+<div class='vspace'></div><pre>   void gettimeofday( struct timeval* p, void* );
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ol><li>Open <code>src/babelconfig.h.in</code>
+</li><li>Add the following declaration:
+</li></ol><pre class='escaped'>
+void gettimeofday( struct timeval* p, void* );
+</pre>
+</div>
+        <div class='difftype'>Changed lines 32-57 from:</div>
+        <div class='diffdel'><p>bondtyper.cpp:21: bondtyp.h: No such file or director
+</p>
+<p class='vspace'>The problem is that there are a number of files in the data dir which need
+to be accessible and they are not because this directory is not in the include
+path, here is part of the gcc command line you get: 
+</p>
+<p class='vspace'>-I. -I. -I. -I../data
+</p>
+<p class='vspace'>To fix this problem you need to add the data dir (where the bondtyp.h resides) 
+to the include path:
+</p>
+<p class='vspace'>3) before running ./configure set the CPPFLAGS evironment variable:
+</p><pre>   export CPPFLAGS="-I &lt;absolute path to data dir&gt;"
+</pre><p class='vspace'>Now everything compiles but doesn't link yet because there is no definition
+of function gettimeofday so in case you try to link you get the following
+error:
+</p>
+<div class='vspace'></div><pre> undefined reference to `gettimeofday(timeval*, void* )
+</pre><p class='vspace'>We need to write the definition of this function in a c++ file and then
+modify the makefile to include this new source file.
+</p>
+<p class='vspace'>4) create a file gettimeofday.cpp and add the following code into it:
+</p><pre>   (this is a version of some code I found on the internet a while ago)
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>@[bondtyper.cpp:21: bondtyp.h: No such file or directory@]
+The problem is that there are a number of files in the data dir which need to be accessible and they are not because this directory is not in the include path, here is part of the gcc command line you get when invoking <code>make</code>: 
+<code class='escaped'>-I. -I. -I. -I../data</code>
+To fix this problem you need to add the data dir (where the <code>bondtyp.h</code> resides) to the include path:
+</p><ol><li>before running <code>./configure</code> set the <code>CPPFLAGS</code> evironment variable:
+</li></ol><p><code class='escaped'>export CPPFLAGS="-I &lt;absolute path to data dir&gt;"</code>
+Now everything compiles but doesn't link yet because there is no definition of function <code>gettimeofday</code> so in case you try to link you get the following error:
+<code class='escaped'>undefined reference to `gettimeofday( timeval*, void* )</code>
+We need to write the definition of this function in a c++ file and then modify the makefile to include this new source file.
+</p><ol><li>create a file <code>gettimeofday.cpp</code> and add the following code into it:
+</li></ol><p>[@
+</p>
+</div>
+        <div class='difftype'>Changed lines 59-61 from:</div>
+        <div class='diffdel'><p>5) Modify Makefile.in adding gettimeofday.cpp to the list of source files:
+</p><pre>   ...
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>@]
+</p><ol><li>Modify <code>Makefile.in</code> adding <code>gettimeofday.cpp</code> to the list of source files:
+</li></ol><p>[@ ...
+</p>
+</div>
+        <div class='difftype'>Added lines 71-77:</div>
+        <div class='diffadd'><p>@]   
+If you build it with the current configuration you will incur in another problem: the dynamic library handler is set to unix
+</p><ol><li>substitute all the instances of <code>dlhandler_unix.xxx</code> in <code>Makefile.in</code> with <code>dlhandler_win32.xxx</code>, there should be a total of five occurrences in the file. The use of a dynamic library handler should be automatically enabled when shared library support is turned on (default).
+</li></ol><p>@in case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove <code>@BUILD_SHARED_TRUE</code>@ in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+<p class='vspace'>7) if you want to build the executables you'll have to open the cpp files in
+</p><pre>   test and tools folder and comment #define USING_OBDLL
+</pre>
+</div>
+        <div class='difftype'>Deleted lines 78-93:</div>
+        <div class='diffdel'><p>If you build it with the current configuration you will incur in another
+problem: the dynamic library handler is set to unix
+</p>
+<p class='vspace'>6a) substitute all the instances of dlhandler_unix.xxx in Makefile.in with
+</p><pre>    dlhandler_win32.xxx, there should be a total of five occurrences in the file.
+    The use of a dynamic library handler should be automatically enabled when
+    shared library support is turned on (default).
+</pre><p class='vspace'>6b) in case dlhandler is set to null in Makefile you'll have to manually remove
+</p><pre>    @BUILD_SHARED_TRUE@ in front of am_objects_1 AND dlhandler = dlhandler_win32.cpp
+    you have to do this if you get a link error about an undefined
+    symbol __imp_XXXDLHandler9openFileXXXX
+</pre><p class='vspace'>7) if you want to build the executables you'll have to open the cpp files in
+</p><pre>   test and tools folder and comment #define USING_OBDLL
+</pre>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166713938:1166713498:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:04 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 15-18 from:</div>
+        <div class='diffdel'><p><span class='frame'> ./configure</span>
+<span class='frame'>  ...</span>
+<span class='frame'> make</span>
+</p><pre> ...
+</pre>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>[@
+./configure
+...
+make
+...
+</p>
+</div>
+        <div class='difftype'>Changed lines 21-22 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>@]
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166713498:1166713249:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 04:00 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 6-7 from:</div>
+        <div class='diffdel'><p>OpenBabel libraries do not seem to be built using the provided VC++ project files neither.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Actually OpenBabel libraries do not seem to be built on Windows using the provided VC++ project files neither.
+</p>
+</div>
+        <div class='difftype'>Changed lines 15-16 from:</div>
+        <div class='diffdel'><p>
+./configure
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><span class='frame'> ./configure</span>
+<span class='frame'>  ...</span>
+<span class='frame'> make</span>
+</p>
+</div>
+        <div class='difftype'>Deleted lines 18-19:</div>
+        <div class='diffdel'><p>make
+</p><pre> ...
+</pre>
+</div>
+        <div class='difftype'>Changed lines 20-21 from:</div>
+        <div class='diffdel'><p><br clear='all' />
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166713249:1166713148:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 03:59 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 1-2 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2><span  style='color: red;'> Update in progress</span></h2>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166713148:1166713121:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 03:58 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added line 1:</div>
+        <div class='diffadd'></div>
+        <div class='difftype'>Changed lines 12-14 from:</div>
+        <div class='diffdel'><p>If you try to build OpenBabel 2.0.2 on Windows with MinGW you should
+get something similar to the following:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>If you try to build OpenBabel 2.0.2 on Windows with MinGW you should get something similar to the following:
+</p>
+<p class='vspace'>
+</p>
+</div>
+        <div class='difftype'>Changed lines 20-21 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><br clear='all' />
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166713121:1166713039:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 03:57 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 1-114:</div>
+        <div class='diffadd'><h1>OpenBabel and MinGW</h1>
+<p>OpenBabel doesn't build out of the box with MinGW, this section describes how to build OpenBabel 2.0.2 on Windows with MinGW.
+OpenBabel libraries do not seem to be built using the provided VC++ project files neither.
+</p>
+<p class='vspace'>Following the instructions on this page you'll be able to build all the libraries and tools except for <code>obgrep</code> which has a dependency
+on a library which is not included in the OpenBabel distribution: <code>XGetopt</code> and that you can download from here: http://www.codeproject.com/cpp/xgetopt.asp?df=100.
+</p>
+<p class='vspace'>OpenBabel requires <em>libxml2</em> so make sure you have this library properly installed in your MinGW environment; libxml can be found here: http://xmlsoft.org
+</p>
+<p class='vspace'>If you try to build OpenBabel 2.0.2 on Windows with MinGW you should
+get something similar to the following:
+</p>
+<p class='vspace'>./configure
+</p><pre> ...
+</pre><p>make
+</p><pre> ...
+</pre><p>../../src/obutil.h:73: error: `gettimeofday' undeclared (first use this function)      
+</p>
+<p class='vspace'>The compiler is complaining about a missing function; gettimeofday is in fact
+missing in a MinGW environment.
+</p>
+<p class='vspace'>To fix this you can do the following:
+</p>
+<p class='vspace'>1) Open src/babelconfig.h.in
+2) Add the followfing declaration:
+</p>
+<div class='vspace'></div><pre>   void gettimeofday( struct timeval* p, void* );
+</pre><p class='vspace'>If you build now you get a brand new error message:
+</p>
+<p class='vspace'>bondtyper.cpp:21: bondtyp.h: No such file or director
+</p>
+<p class='vspace'>The problem is that there are a number of files in the data dir which need
+to be accessible and they are not because this directory is not in the include
+path, here is part of the gcc command line you get: 
+</p>
+<p class='vspace'>-I. -I. -I. -I../data
+</p>
+<p class='vspace'>To fix this problem you need to add the data dir (where the bondtyp.h resides) 
+to the include path:
+</p>
+<p class='vspace'>3) before running ./configure set the CPPFLAGS evironment variable:
+</p><pre>   export CPPFLAGS="-I &lt;absolute path to data dir&gt;"
+</pre><p class='vspace'>Now everything compiles but doesn't link yet because there is no definition
+of function gettimeofday so in case you try to link you get the following
+error:
+</p>
+<div class='vspace'></div><pre> undefined reference to `gettimeofday(timeval*, void* )
+</pre><p class='vspace'>We need to write the definition of this function in a c++ file and then
+modify the makefile to include this new source file.
+</p>
+<p class='vspace'>4) create a file gettimeofday.cpp and add the following code into it:
+</p><pre>   (this is a version of some code I found on the internet a while ago)
+   #include &lt;windows.h&gt;
+   #include &lt;sys/time.h&gt;
+
+   void __stdcall GetSystemTimeAsFileTime(FILETIME*);
+
+   void gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+   {
+	  union {
+	     long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		 FILETIME ft;
+	  } now;
+
+      GetSystemTimeAsFileTime( &amp;(now.ft) );
+      p-&gt;tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+      p-&gt;tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+   }
+</pre><p class='vspace'>5) Modify Makefile.in adding gettimeofday.cpp to the list of source files:
+</p><pre>   ...
+   @BUILD_SHARED_TRUE@ fingerprints/libfingerprints.la @LTLIBOBJS@
+   am__libopenbabel_la_SOURCES_DIST = gettimeofday.cpp atom.cpp base.cpp bitvec.cpp    ...
+   @BUILD_SHARED_TRUE@am__objects_1 = dlhandler_unix.lo
+   am_libopenbabel_la_OBJECTS = gettimeofday.lo base.lo bitvec.lo bond.lo    ...
+   libopenbabel_la_SOURCES = 		gettimeofday.cpp atom.cpp base.cpp bitvec.cpp bond.cpp    ...
+</pre><p class='vspace'>If you build it with the current configuration you will incur in another
+problem: the dynamic library handler is set to unix
+</p>
+<p class='vspace'>6a) substitute all the instances of dlhandler_unix.xxx in Makefile.in with
+</p><pre>    dlhandler_win32.xxx, there should be a total of five occurrences in the file.
+    The use of a dynamic library handler should be automatically enabled when
+    shared library support is turned on (default).
+</pre><p class='vspace'>6b) in case dlhandler is set to null in Makefile you'll have to manually remove
+</p><pre>    @BUILD_SHARED_TRUE@ in front of am_objects_1 AND dlhandler = dlhandler_win32.cpp
+    you have to do this if you get a link error about an undefined
+    symbol __imp_XXXDLHandler9openFileXXXX
+</pre><p class='vspace'>7) if you want to build the executables you'll have to open the cpp files in
+</p><pre>   test and tools folder and comment #define USING_OBDLL
+
+   // used to set import/export for Cygwin DLLs
+   #ifdef WIN32
+   //#define USING_OBDLL
+   #endif
+</pre><p class='vspace'>8) run configure --prefix=&lt;installation folder&gt; then make: this will build the
+</p><pre>   libraries into src/.libs, and the executables in the src, tools and test folders.
+   You can then run make install.
+   Note that to have make install succeed you have to also fix obgrep.cpp so that it
+   can somehow build: either you get the XGetopt library mentioned at the beginning
+   of this document, build it with MinGW and link with it or you can simply comment
+   the code in obgrep.cpp main function.
+</pre>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/OpenBabel?action=edit&amp;restore=diff:1166713039:1166713039:&amp;preview=y'>Restore</a></div></div></div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>Main</span>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='Gallery'>Gallery</a></strong>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='DownloadBinary'>Download</a></strong>
+</p>
+<p class='vspace sidehead'> <strong>Documentation</strong>
+</p><ul><li><a class='wikilink' href='../ReferenceGuide/Introduction'>Manual</a> 
+</li><li><a class='wikilink' href='Presentations'>Presentations</a>
+</li><li><a class='wikilink' href='VideosBlipTV'>Videos</a>
+</li><li><a class='wikilink' href='VideoTutorials'>Video tutorials</a>
+</li><li><a class='wikilink' href='Install'>Install</a>
+</li><li><a class='wikilink' href='Build'>Build</a>
+<ul><li><a class='wikilink' href='BuildPlatformSpecific'>Platforms</a>
+</li><li><a class='selflink' href='OpenBabel'>OpenBabel</a>
+</li></ul></li></ul><p class='vspace sidehead'> <strong><a class='wikilink' href='Citing'>Citing</a></strong>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='OpenBabel'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='OpenBabel?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='OpenBabel?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='OpenBabel?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 16, 2009, at 06:45 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

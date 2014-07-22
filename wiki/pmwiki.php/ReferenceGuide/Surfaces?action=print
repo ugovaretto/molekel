@@ -1,0 +1,73 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+  <title>Molekel | ReferenceGuide / Surfaces</title>
+  <link rel='stylesheet' href='http://molekel.cscs.ch/wiki/pub/skins/print/print.css' type='text/css' />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+<body>
+  <div id='printhead'>
+    <h3>From Molekel</h3>
+    <h1 class='pagename'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide'>ReferenceGuide: Surfaces</a></h1>
+  </div>
+<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Molekel can displaly the following surface types, with optional mapping of electrostatic potential:
+</p><ul><li>Electron density
+<ul><li>Density Matrix
+</li><li>Orbitals
+</li></ul></li><li>From grid data read from Gaussian cube or ADF Tape41 files
+</li><li>Solvent Accessible Surface as iso-surface
+</li><li>Solvent Excluded Surface (Connolly)
+</li></ul><p class='vspace'>Surface resolution is configurable for all surface types through step or probe radius parameters.
+Bounding box size is configurable for iso-surfaces.
+</p>
+<div class='vspace'></div>
+<table border='0' align='center' ><tr ><td ><em>Density Matrix</em></td><td  align='left'><em>Connolly</em></td></tr>
+<tr ><td  align='center'> <img width='200px' src='../../uploaded/sshots/density_small.png' alt='' title='' /></td><td  align='center'> <img width='200px' src='../../uploaded/sshots/connollymep_small.png' alt='' title='' /></td></tr>
+<tr ><td ><em>Orbitals</em></td><td ><em>Van der Waals</em></td></tr>
+<tr ><td  align='center'> <img width='200px' src='../../uploaded/sshots/orbitals_small.png' alt='' title='' /></td><td  align='center'> <img width='200px' src='../../uploaded/sshots/vdwmep_small.png' alt='' title='' /></td></tr>
+</table>
+<div class='vspace'></div>
+</div>
+
+  <div id='printfoot'>
+    <div class='from'>Retrieved from http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces</div>
+    <div class='lastmod'>Page last modified on June 23, 2010, at 05:07 PM</div></div>
+<!--HTMLFooter-->
+</body>
+</html>

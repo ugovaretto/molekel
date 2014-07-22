@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel ReferenceGuide/Surfaces</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  
+  .diffbox { width:570px; border-left:1px #999999 solid; margin-top:1.33em; }
+  .diffauthor { font-weight:bold; }
+  .diffchangesum { font-weight:bold; }
+  .difftime { font-family:verdana,sans-serif; font-size:66%; 
+    background-color:#dddddd; }
+  .difftype { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; font-weight:bold; }
+  .diffadd { border-left:5px #99ff99 solid; padding-left:5px; }
+  .diffdel { border-left:5px #ffff99 solid; padding-left:5px; }
+  .diffrestore { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; margin:1.5em 0px; }
+  .diffmarkup { font-family:monospace; }  
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='../Main/Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='../Main/DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='../Main/ContactMe'>Contact</a>
+</li><li><a class='wikilink' href='../Main/HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/HomePage' class='pagegroup'>ReferenceGuide</a>-->
+					<p> </p>
+					<h1><a href='Surfaces'>Surfaces</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<h2 class='wikiaction'>ReferenceGuide.Surfaces History</h2>
+  <p><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=diff&amp;source=n&amp;minor=n'>Hide minor edits</a> - <a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=diff&amp;source=y&amp;minor=y'>Show changes to markup</a></p>
+  <div id='wikidiff'>
+      <div class='diffbox'><div class='difftime'>June 23, 2010, at 05:07 PM 
+        by <span class='diffauthor' title='129.132.202.35'>129.132.202.35</span> - </div>
+        <div class='difftype'>Deleted lines 12-14:</div>
+        <div class='diffdel'><p><strong><em>Note</em></strong>: there is an excellent article on how to visualize electron density data from <em>Gaussian 09</em> files here:
+http://baoilleach.blogspot.com/2010/06/visualising-orbitals-and-density-with.html
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1277305641:1277305622:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 23, 2010, at 05:07 PM 
+        by <span class='diffauthor' title='129.132.202.35'>129.132.202.35</span> - </div>
+        <div class='difftype'>Changed line 14 from:</div>
+        <div class='diffdel'><p><em>Note</em>: there is an excellent article on how to visualize electron density data here:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>Note</em></strong>: there is an excellent article on how to visualize electron density data from <em>Gaussian 09</em> files here:
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1277305622:1277305129:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 23, 2010, at 04:58 PM 
+        by <span class='diffauthor' title='129.132.202.35'>129.132.202.35</span> - </div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1277305129:1277305119:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 23, 2010, at 04:58 PM 
+        by <span class='diffauthor' title='129.132.202.35'>129.132.202.35</span> - </div>
+        <div class='difftype'>Added lines 13-15:</div>
+        <div class='diffadd'><p><em>Note</em>: there is an excellent article on how to visualize electron density data here:
+http://baoilleach.blogspot.com/2010/06/visualising-orbitals-and-density-with.html
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1277305119:1237308921:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 17, 2009, at 05:55 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 14 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1237308921:1237308871:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 17, 2009, at 05:54 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted line 13:</div>
+        <div class='diffdel'><div  style='text-align: center;' > 
+</div>
+</div>
+        <div class='difftype'>Changed line 19 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1237308871:1237308857:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 17, 2009, at 05:54 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 14:</div>
+        <div class='diffadd'><div  style='text-align: center;' > 
+</div>
+</div>
+        <div class='difftype'>Changed line 20 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1237308857:1237308822:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 17, 2009, at 05:53 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 1-2 from:</div>
+        <div class='diffdel'><p><br clear='all' />
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>(:title Surfaces:)
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1237308822:1236873999:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:06 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 17 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/orbitals_small.png</td><td  align='center'>http://molekel.cscs.ch/wiki/uploaded/sshots/vdwmep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/orbitals_small.png</span></td><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/vdwmep_small.png</span></td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1236873999:1236873958:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:05 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</span></td><td  align='center'>%width=200px" http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</span></td><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</span></td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1236873958:1236873945:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:05 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</span></td><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</span></td><td  align='center'>%width=200px" http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1236873945:1236873895:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 12, 2009, at 05:04 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</td><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'><span  style='width: 200px;'> http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</span></td><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1236873895:1236674370:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 10, 2009, at 09:39 AM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed lines 1-2 from:</div>
+        <div class='diffdel'><h1>Surfaces</h1>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><br clear='all' />
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1236674370:1236617904:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 09, 2009, at 05:58 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 16 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/density_small.png</td><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>Changed lines 18-19 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'>http://molekel.cscs.ch/wiki/uploaded/sshots/orbitals_small.png</td><td  align='center'>http://molekel.cscs.ch/wiki/uploaded/sshots/vdwmep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1236617904:1181303731:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>June 08, 2007, at 01:55 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed line 7 from:</div>
+        <div class='diffdel'><ul><li>From Gaussian cube grid data
+</li></ul>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ul><li>From grid data read from Gaussian cube or ADF Tape41 files
+</li></ul>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1181303731:1166699040:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 12:04 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added line 15:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td ><em>Density Matrix</em></td><td  align='left'><em>Connolly</em></td></tr>
+</table>
+</div>
+        <div class='difftype'>Changed line 17 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td ><em>Density Matrix</em></td><td  align='left'><em>Connolly</em></td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td ><em>Orbitals</em></td><td ><em>Van der Waals</em></td></tr>
+</table>
+</div>
+        <div class='difftype'>Deleted line 18:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td ><em>Orbitals</em></td><td ><em>Van der Waals</em></td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166699040:1166699010:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 12:03 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 17-18 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'><em>Orbitals</em> http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='left'><em>Van der Waals</em> http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+<tr ><td ><em>Orbitals</em></td><td ><em>Van der Waals</em></td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166699010:1166698939:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 12:02 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 15-16 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png (:title:) Density Matrix</td><td  align='left'><em>Connolly</em> http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+<tr ><td ><em>Density Matrix</em></td><td  align='left'><em>Connolly</em></td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698939:1166698864:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 12:01 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'>(:title:) Density Matrix http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='left'><em>Connolly</em> http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png (:title:) Density Matrix</td><td  align='left'><em>Connolly</em> http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698864:1166698840:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 12:00 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'><em>Density Matrix</em> http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='left'><em>Connolly</em> http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'>(:title:) Density Matrix http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='left'><em>Connolly</em> http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698840:1166698725:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:58 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 16 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='left'><em>Orbitals</em> http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'><em>Van der Waals</em> http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'><em>Orbitals</em> http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='left'><em>Van der Waals</em> http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698725:1166698701:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:58 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 15-16 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'><em>Density Matrix</em> http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+<tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='left'><em>Density Matrix</em> http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='left'><em>Connolly</em> http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+<tr ><td  align='left'><em>Orbitals</em> http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'><em>Van der Waals</em> http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698701:1166698646:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:57 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>Density Matrix http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'><em>Density Matrix</em> http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698646:1166698632:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:57 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>! Density Matrix http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'>Density Matrix http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698632:1166698609:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:56 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png Density Matrix</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'>! Density Matrix http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698609:1166698540:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:55 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Deleted lines 0-1:</div>
+        <div class='diffdel'><h2><span  style='color: red;'> Update in progress</span></h2>
+</div>
+        <div class='difftype'>Changed line 15 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png Density Matrix</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698540:1166698440:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:54 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 17-18 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td></tr>
+<tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698440:1166698393:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:53 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 17-20 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png Density Matrix</td></tr>
+</table><pre>   http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png Connolly ||
+</pre><p>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png ||
+http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png ||
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png</td></tr>
+</table>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698393:1166698350:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:52 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 17-18 from:</div>
+        <div class='diffdel'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png | Density Matrix</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png | Connolly</td></tr>
+</table>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><table border='0' align='center' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png Density Matrix</td></tr>
+</table><pre>   http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png Connolly ||
+</pre>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698350:1166698284:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 11:51 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 16-19:</div>
+        <div class='diffadd'><table border='0' ><tr ><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/density_small.png | Density Matrix</td><td  align='center'>http://bioinformatics.org/molekel/uploads/sshots/connollymep_small.png | Connolly</td></tr>
+</table><p>http://bioinformatics.org/molekel/uploads/sshots/orbitals_small.png ||
+http://bioinformatics.org/molekel/uploads/sshots/vdwmep_small.png ||
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166698284:1166647144:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 20, 2006, at 09:39 PM 
+        by <span class='diffauthor' title='84.74.33.192'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 1-15:</div>
+        <div class='diffadd'><h2><span  style='color: red;'> Update in progress</span></h2>
+<h1>Surfaces</h1>
+<p>Molekel can displaly the following surface types, with optional mapping of electrostatic potential:
+</p><ul><li>Electron density
+<ul><li>Density Matrix
+</li><li>Orbitals
+</li></ul></li><li>From Gaussian cube grid data
+</li><li>Solvent Accessible Surface as iso-surface
+</li><li>Solvent Excluded Surface (Connolly)
+</li></ul><p class='vspace'>Surface resolution is configurable for all surface types through step or probe radius parameters.
+Bounding box size is configurable for iso-surfaces.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Surfaces?action=edit&amp;restore=diff:1166647144:1166647144:&amp;preview=y'>Restore</a></div></div></div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>User Guide</span>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Introduction'>Introduction</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Workspace'>Workspace</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Menu'>Menu</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplayStyle'>Display Style</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplaySettings'>Display Settings</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Animation'>Animation</a></strong>
+</p><ul><li><a class='wikilink' href='Settings'>Settings</a>
+</li><li><a class='wikilink' href='ExportAnimation'>Export</a>
+</li></ul><p class='vspace'><strong><a class='selflink' href='Surfaces'>Surfaces</a></strong>
+</p><ul><li><a class='wikilink' href='ElectronDensity'>Electron Density Surfaces</a>
+</li><li><a class='wikilink' href='GridData'>Surface from Grid Data</a>
+</li><li><a class='wikilink' href='SAS'>Solvent Accessible Surface</a>
+</li><li><a class='wikilink' href='SES'>Solvent Excluded Surface</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Analysis'>Analysis</a></strong>
+</p><ul><li><a class='wikilink' href='PlaneProbe'>Plane Probe</a>
+</li><li><a class='wikilink' href='DistanceAngles'>Distances and (dihedral) angles</a>
+</li><li><a class='wikilink' href='RadiationSpectra'>Radiation Spectra</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Shaders'>Shaders</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='EditBonds'>Edit bonds</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='SaveImage'>Export images</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='FileFormats'>File Formats</a></strong>
+</p>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='Surfaces'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='Surfaces?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='Surfaces?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='Surfaces?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified June 23, 2010, at 05:07 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel ReferenceGuide/File Formats</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='../Main/Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='../Main/DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='../Main/ContactMe'>Contact</a>
+</li><li><a class='wikilink' href='../Main/HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/HomePage' class='pagegroup'>ReferenceGuide</a>-->
+					<p> </p>
+					<h1><a href='FileFormats'>File Formats</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Molekel supports the following file formats through <a class='urllink' href='http://openbabel.sourceforge.net' rel='nofollow'>OpenBabel</a> and custom readers/writers.
+Note that the main formats used for testing are <em>pdb</em>, <em>xyz</em>, <em>cube</em>, <em>Gaussian</em> and <em>GAMESS</em> output files.
+</p>
+<div class='vspace'></div><ul><li>alc -- Alchemy format
+</li><li>bgf -- MSI BGF format  
+</li><li>box -- Dock 3.5 Box format
+</li><li>bs -- Ball and Stick format
+</li><li>c3d1 -- Chem3D Cartesian 1 format
+</li><li>c3d2 -- Chem3D Cartesian 2 format
+</li><li>caccrt -- Cacao Cartesian format
+</li><li>cache -- CAChe MolStruct format [Write-only]
+</li><li>cacint -- Cacao Internal format [Write-only]
+</li><li>car -- Accelrys/MSI Biosym/Insight II CAR format [Read-only]
+</li><li>ccc -- CCC format [Read-only]
+</li><li>cht -- Chemtool format [Write-only]
+</li><li>cmlr -- CML Reaction format
+</li><li>com -- Gaussian 98/03 Cartesian Input [Write-only]
+</li><li>copy -- Copies raw text [Write-only]
+</li><li>crk2d -- Chemical Resource Kit 2D diagram format
+</li><li>crk3d -- Chemical Resource Kit 3D format
+</li><li>csr -- Accelrys/MSI Quanta CSR format [Write-only]
+</li><li>cssr -- CSD CSSR format [Write-only]
+</li><li>ct -- ChemDraw Connection Table format
+</li><li>cube -- Gaussian cube [Read-only] - <em>Supports orthogonal bases only</em>
+</li><li>dmol -- DMol3 coordinates format
+</li><li>ent -- Protein Data Bank format
+</li><li>feat -- Feature format
+</li><li>fh -- Fenske-Hall Z-Matrix format [Write-only]
+</li><li>fix -- SMILES FIX format [Write-only]
+</li><li>fpt -- Fingerprint format [Write-only]
+</li><li>fract -- Free Form Fractional format
+</li><li>fs -- FastSearching Index
+</li><li>g03 -- Gaussian98/03 Output [Read-only]
+</li><li>g98 -- Gaussian98/03 Output [Read-only]
+</li><li>gam -- GAMESS Output [Read-only]
+</li><li>gamin -- GAMESS Input [Write-only]
+</li><li>gamout -- GAMESS Output [Read-only]
+</li><li>gau -- Gaussian 98/03 Cartesian Input [Write-only]
+</li><li>gpr -- Ghemical format
+</li><li>gr96 -- GROMOS96 format [Write-only]
+</li><li>hin -- HyperChem HIN format
+</li><li>inp -- GAMESS Input [Write-only]
+</li><li>ns -- ShelX format [Read-only]
+</li><li>jin -- Jaguar input format [Write-only]
+</li><li>jout -- Jaguar output format [Read-only]
+</li><li>mdl -- MDL MOL format
+</li><li>mmd, mmod -- MacroModel format
+</li><li>mol -- MDL MOL format
+</li><li>mol2 -- Sybyl Mol2 format
+</li><li>molden -- Molden input format [Read-only]
+</li><li>mopcrt -- MOPAC Cartesian format
+</li><li>mopout -- MOPAC Output format [Read-only]
+</li><li>mpd -- Sybyl descriptor format [Write-only]
+</li><li>mpqc -- MPQC output format [Read-only]
+</li><li>mpqcin -- MPQC simplified input format [Write-only]
+</li><li>msms -- Michel Sanner'MSMS input format [Write-only]
+</li><li>nw -- NWChem input format [Write-only]
+</li><li>nwo -- NWChem output format [Read-only]
+</li><li>pc -- PubChem format [Read-only]
+</li><li>pcm -- PCModel format
+</li><li>pdb -- Protein Data Bank format
+</li><li>pov -- POV-Ray input format [Write-only]
+</li><li>pqs -- Parallel Quantum Solutions format
+</li><li>prep -- Amber Prep format [Read-only]
+</li><li>qcin -- Q-Chem input format [Write-only]
+</li><li>qcout -- Q-Chem output format [Read-only]
+</li><li>report -- Open Babel report format [Write-only]
+</li><li>res -- ShelX format [Read-only]
+</li><li>rxn -- MDL RXN format
+</li><li>sd, sdf -- MDL MOL format
+</li><li>smi -- SMILES format
+</li><li>t41 -- ADF Tape41 <strong>ASCII</strong> format [Read-only]
+</li><li>test -- Test format [Write-only]
+</li><li>tmol -- TurboMole Coordinate format
+</li><li>txyz -- Tinker MM2 format [Write-only]
+</li><li>unixyz -- UniChem XYZ format
+</li><li>vmol -- ViewMol format
+</li><li>xed -- XED format [Write-only]
+</li><li>xyz -- XYZ cartesian coordinates format
+</li><li>yob -- YASARA.org YOB format
+</li><li>zin -- ZINDO input format [Write-only]
+</li><li>zmatrix -- Z-Matrix input [Read-only]
+</li></ul>
+</div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>User Guide</span>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Introduction'>Introduction</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Workspace'>Workspace</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Menu'>Menu</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplayStyle'>Display Style</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplaySettings'>Display Settings</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Animation'>Animation</a></strong>
+</p><ul><li><a class='wikilink' href='Settings'>Settings</a>
+</li><li><a class='wikilink' href='ExportAnimation'>Export</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Surfaces'>Surfaces</a></strong>
+</p><ul><li><a class='wikilink' href='ElectronDensity'>Electron Density Surfaces</a>
+</li><li><a class='wikilink' href='GridData'>Surface from Grid Data</a>
+</li><li><a class='wikilink' href='SAS'>Solvent Accessible Surface</a>
+</li><li><a class='wikilink' href='SES'>Solvent Excluded Surface</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Analysis'>Analysis</a></strong>
+</p><ul><li><a class='wikilink' href='PlaneProbe'>Plane Probe</a>
+</li><li><a class='wikilink' href='DistanceAngles'>Distances and (dihedral) angles</a>
+</li><li><a class='wikilink' href='RadiationSpectra'>Radiation Spectra</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Shaders'>Shaders</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='EditBonds'>Edit bonds</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='SaveImage'>Export images</a></strong>
+</p>
+<p class='vspace'><strong><a class='selflink' href='FileFormats'>File Formats</a></strong>
+</p>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='FileFormats'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='FileFormats?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='FileFormats?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='FileFormats?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 17, 2009, at 05:57 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

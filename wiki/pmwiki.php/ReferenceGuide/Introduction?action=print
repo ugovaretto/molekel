@@ -1,0 +1,101 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+  <title>Molekel | ReferenceGuide / Introduction</title>
+  <link rel='stylesheet' href='http://molekel.cscs.ch/wiki/pub/skins/print/print.css' type='text/css' />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+<body>
+  <div id='printhead'>
+    <h3>From Molekel</h3>
+    <h1 class='pagename'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide'>ReferenceGuide: Introduction</a></h1>
+  </div>
+<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Molekel is a free and open-source multiplatform molecular visualization program.
+</p>
+<p class='vspace'>The program is developed and tested on the following platforms:
+</p><ul><li>SuSE Linux 10.3, Fedora Core 8 x86 32bit
+</li><li>Red Hat Enterprise 4 x86 64bit
+</li><li>Microsoft Windows XP/2000
+</li><li>Apple Mac OS X 10.4 Intel and PowerPC G5
+</li></ul><div class='vspace'></div><h3>Features</h3>
+<p>Some of the features implemented in version 5.4 are: 
+</p>
+<div class='vspace'></div><ul><li>Read molecular data from different file formats
+</li><li>Display molecules with different styles:
+<ul><li>Spacefill
+</li><li>Ball and Stick
+</li><li>Ball and Wire
+</li><li>Stick
+</li><li>Backbone (Residues)
+</li><li>Ribbon (Residues)
+</li><li>Schematic (Residue)
+</li></ul></li><li>Change atom and bond size
+</li><li>Read atom colors from file 
+</li><li>Display dipole moment (for molecular formats containing this information)
+</li><li>Animate atoms using the trajectory and vibration information available in some file formats
+</li><li>Animate molecules read from multi-frame pdb and xyz files
+</li><li>Display arrows to show the speed and direction of motion of each animated atom
+</li><li>Animate molecular surfaces (while exporting amimation)
+</li><li>Perform distance and (dihedral) angle computations
+</li><li>Use a planar probe to visualize scalar fields (e.g. Electrostatic Potential) and display the value of the scalar field at a specific point in 3D space.
+</li><li>Visualize molecular orbital iso-surfaces optionally color-coded with Electrostatic Potential.
+</li><li>Visualize surfaces generated from density matrix optionally color-coded with Electrostatic Potential.
+</li><li>Visualize surfaces from grid data (in Gaussian cube format or read from ADF tape41 files) optionally color-coded with Electrostatic Potential.
+</li><li>Smooth surfaces generated from grid data (Gaussian .cube) with Laplacian smoothing
+</li><li>Use grid data read from .cube files as molecular electrostatic potential to map onto SAS and SES surfaces 
+</li><li>Compute Solvent Accessible Surface as iso-surface optionally color-coded with Electrostatic Potential.
+</li><li>Compute and display Solvent Excluded Surface, optionally using <em>M.F. Sanner</em>'s MSMS program (highly recommended), get it <a class='urllink' href='http://mgltools.scripps.edu/downloads' rel='nofollow'>here</a>
+</li><li>Save print quality (&gt;300 DPI) images
+</li><li>Export molecule to a number of molecular file formats
+</li><li>Export to POV (Experimental, through OpenBabel)
+</li><li>Export to TIFF, PNG, PostScript and PDF
+</li><li>Programmable shaders (GLSL) support
+</li><li>Visualization of radiation spectra (infra-red and Raman)
+</li><li>High-quality multi-pass rendering with anti-aliasing and correct rendering of multi-layered transparent surfaces
+</li><li>Blending of vibrational modes
+</li><li>Export high resolution images 
+</li></ul><div class='vspace'></div>
+</div>
+
+  <div id='printfoot'>
+    <div class='from'>Retrieved from http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/Introduction</div>
+    <div class='lastmod'>Page last modified on January 06, 2010, at 12:36 PM</div></div>
+<!--HTMLFooter-->
+</body>
+</html>

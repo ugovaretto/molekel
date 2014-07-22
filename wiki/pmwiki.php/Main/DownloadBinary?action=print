@@ -1,0 +1,68 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+  <title>Molekel | Main / Download</title>
+  <link rel='stylesheet' href='http://molekel.cscs.ch/wiki/pub/skins/print/print.css' type='text/css' />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+<body>
+  <div id='printhead'>
+    <h3>From Molekel</h3>
+    <h1 class='pagename'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main'>Main: Download</a></h1>
+  </div>
+<!--PageText-->
+<div id='wikitext'>
+<div class='vspace'></div><ul><li><a class='urllink' href='ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_win.exe' rel='nofollow'>Windows XP 32 bit</a>
+</li><li><a class='urllink' href='ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_linux_x86_32.tar.gz' rel='nofollow'>Linux x86 32 bit</a>  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)
+</li><li><a class='urllink' href='ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_linux_x86_64.tar.gz' rel='nofollow'>Linux x86 64 bit</a>  (built on Red Hat Enterprise 4)
+</li><li><a class='urllink' href='ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_MacOS_5_4_0_i386.dmg' rel='nofollow'>Mac OS X Intel</a> (built on Mac OS X 10.4.11)
+</li><li><a class='urllink' href='ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_1_ppc.dmg' rel='nofollow'>Mac OS X PPC</a> (built on Mac OS X 10.4.11 - G5 CPU)
+<div class='vspace'></div></li><li><a class='urllink' href='ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh' rel='nofollow'>Gaussian 09 to 03 converter</a> shell script - provided by Lorenz Blum. In order for this script to work you need to provide the <code>GFINPUT</code>, <code>GFOLDPRINT</code> and <code>POP=</code> keywords to the <em>Gaussian</em> calculation.
+</li></ul><p class='vspace'>A subversion repository containing the source code is available here: 
+<a class='urllink' href='../../../svn/molekel' rel='nofollow'>http://molekel.cscs.ch/svn/molekel</a>
+</p>
+<div class='vspace'></div><h3>NOTE:</h3>
+<p><strong>The Mac OS executables require X11</strong> due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  <a class='urllink' href='http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0.' rel='nofollow'>Apple website</a>. To check if X11 is already installed on your system open the <em>Finder-&gt;Utility</em> folder and verify that an <em>X11</em> icon is present.    
+</p>
+</div>
+
+  <div id='printfoot'>
+    <div class='from'>Retrieved from http://molekel.cscs.ch/wiki/pmwiki.php/Main/DownloadBinary</div>
+    <div class='lastmod'>Page last modified on July 15, 2010, at 09:48 AM</div></div>
+<!--HTMLFooter-->
+</body>
+</html>

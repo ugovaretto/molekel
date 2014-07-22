@@ -1,0 +1,244 @@
+/*
+ * PmWiki GlossyHue: http://pmwiki.com/Cookbook/GlossyHue and http://skins.solidgone.org/
+ *
+ * Based on Glossy Blue by Nick La http://www.ndesign-studio.com/
+ * Copyright (c) 2007 David Gilbert
+ * Dual licensed under the MIT and GPL licenses:
+ *	 http://www.opensource.org/licenses/mit-license.php
+ *	 http://www.gnu.org/licenses/gpl.html
+ */
+
+/* tags
+--------------------------------------------------*/
+body {
+	/*background: url(images/main-bg.gif);*/
+       background: url(images/vertical_gradient_bk_blue-cyan.jpg) repeat-x;
+	/*background-color: #ffffff;*/
+       background-color: #e4eff4; 
+	color: #444;
+	}
+
+.escaped {
+       background-color: #f7ffff;
+       display: block;
+}
+
+a {
+	color: #cc6600;
+	}
+a:visited {
+	color: #cc6633;
+	}
+a:hover {
+	color: #ff6600;
+	}
+#header h1 a, h1 a:visited{
+	color: #c9eefe;
+}
+#header h1 a:hover{
+	color: #ffffff;
+}
+
+#pagelead h1,#pagelead h1 a,
+#sidebar .sidehead,
+h2, h2 a, h2 a:visited  {
+	color: #6391a8;/*** #699ab2 UV ***/
+	}
+h2, #sidebar .sidehead {
+	border-color: #cccccc;
+	}
+h2 a:hover {
+	color: #ff6600;
+	}
+h3, h4 {
+	color: #699ab2; /*** UV ***/
+	}
+hr {
+	border-color: #b6d6e1;
+	}
+#page {
+	border-color: #d5e6eb;
+	background-color: #ffffff;
+	}
+
+/* content
+--------------------------------------------------*/
+nav .page_item a{
+	color: #ffffff;
+	background: #5c8d0c url(images/nav-button-bg.gif) repeat-x;
+	border-top-color: #E6EED0;
+	border-left-color: #AFCD69;
+	border-right-color: #AFCD69;
+}
+.post-month {
+	color: #FFFFFF;
+}
+.post-day, .post-year {
+	color: #999999;
+}
+.navigation a, .navigation a:visited {
+	color: #59770e;
+}
+ul.links.inline.edit-link {
+	color: #CC6633;
+}
+
+/* comments
+--------------------------------------------------*/
+#comments, #respond {
+	border-bottom-color: #CCCCCC;
+}
+.commentlist .alt {
+	background: #f1fedb;
+}
+.commentlist .cite, .commentlist .cite a, .commentlist .cite a:visited {
+	color: #CC6600;
+}
+#commentform label{
+	color: #787878;
+}
+#commentform input{
+	background:#f1fedb;
+	border-color: #bdd77f;
+}
+#commentform textarea{
+	background:#f1fedb;
+	border-color: #bdd77f;
+}
+#commentform textarea:focus, #commentform input[type="text"]:focus {
+	background: #ffffff;
+}
+#commentform #comment-post{
+	background: transparent url(images/btn-bg.gif) no-repeat;
+	color: #FFFFFF;
+}
+
+/* headings
+--------------------------------------------------*/
+#header {
+	background: url(images/header-bg-molekel.jpg) no-repeat;
+	background-color: #0facea;
+	border-color: #14668c; /*** UV ***/
+	}
+#headerimg .description,
+#headerimg .sitetitle, #headerimg .sitetitle a, #headerimg .sitetitle a:visited {
+	color: #c9eefe;
+	}
+#headerimg .description a {
+	color: #fff;
+	}
+#headerimg .sitetitle a:hover, #header .pageheader a:hover {
+	color: #ff6600;
+	}
+.post-date {
+	background: url(images/date-bg.gif) no-repeat;
+}
+
+/* nav
+--------------------------------------------------*/
+#nav li {
+	background: url(images/nav-button-bg.gif) repeat-x;
+	background-color: #0c5a8d;
+	border-top-color: #d0e6ee;
+	border-left-color: #699ecd;
+	border-right-color: #699ecd;
+	}
+#nav .selflink, #nav .selflink:visited, #nav li a:hover {
+	color: #ffffff; /*#ff6600;*/
+	}
+#nav li a {
+	color: #ffffff;
+	}
+
+/* pageactions
+--------------------------------------------------*/
+#pagelead .pageactions li a{
+	color: #a2abbe;
+	}
+#pagelead .pagegroup, #pagelead .pageactions li a:hover, #pagelead .pagegroup:hover {
+	color: #ff6600;
+	}
+#footer .pageactions li a{
+	color: #a2abbe;
+	}
+#footer .pageactions li a:hover {
+	color: #ff6600;
+	}
+
+/* edit area
+--------------------------------------------------*/
+#wikiedit input, #wikiedit #text {
+	border-color: #59780a;
+	}
+#wikiedit input[type=submit] {
+	color: #fff;
+	background-color: #5c8d0c;
+	}
+#wikiedit input[type=submit]:hover {
+	color: #ff6600;
+	}
+
+/* sidebar
+--------------------------------------------------*/
+#sidebar .top {
+	border-top: solid 3px #cedae1;
+	border-bottom: solid 2px #cedae1;
+	display: block;
+	background-color: #eaf6fb; /*#c9eefe;*/
+	color: #6391a8;
+	}
+
+#sidebar {
+	color: #666;
+	}
+#sidebar .sidehead {
+	border-bottom-color: #cedae1; /*** UV ***/
+	}
+#sidebar .sidehead, #sidebar a, #sidebar a:visited {
+	color: #658dac; /*** UV ***/
+	}
+#sidebar a:hover{
+	color: #ff6600;
+	}
+#sidebar ul li ul li{
+	border-bottom-color: #1f3f50; /*** UV ***/
+	}
+
+/* search form
+--------------------------------------------------*/
+#searchform #searchfield {
+	border-color: #b2c3d8; 
+	background: #c9eefe;
+	color: #000;
+	}
+#searchform #searchbutton {
+	color: #fbfbfb;
+	background: url(images/search-btn-bg.gif) no-repeat;
+	}
+
+/* footer
+--------------------------------------------------*/
+#footer {
+	background: url(images/footer-bg.gif) no-repeat;
+	background-color: #048db4;
+	color: #acd7ee;
+	}
+#footer a, #footer a:visited {
+	color: #fbfbfb;
+	}
+#footer h4 {
+	color: #9cdbfb;
+	}
+#footer .footer-about {
+	background: url(images/footer-right-bg.gif) no-repeat;
+	}
+
+/* credits
+--------------------------------------------------*/
+#credits {
+	color: #7a9299;
+	}
+#credits a, #credit a:visited {
+	color: #048db5;
+	}
+

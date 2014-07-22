@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel Main/Build - Platform specific information </title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='Gallery'>Gallery</a>
+</li><li><a class='wikilink' href='DownloadBinary'>Download</a>
+</li><li><a class='wikilink' href='../ReferenceGuide/Introduction'>User Guide</a>
+</li><li><a class='wikilink' href='ContactMe'>Contact</a>
+</li><li><a class='wikilink' href='HomePage'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage' class='pagegroup'>Main</a>-->
+					<p> </p>
+					<h1><a href='BuildPlatformSpecific'>Build - Platform specific information </a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<div class='vspace'></div><h2>Windows</h2>
+<p>As of <em>December 2008</em> <em>Molekel</em> builds with <em>Visual C++</em>, both <em>nmake</em> and solution (<em>.sln</em>) files can be generated from <em>CMakeSetup</em>.
+A free version of <em>Visual C++</em> is available here: <a class='urllink' href='http://www.microsoft.com/express/vc' rel='nofollow'>http://www.microsoft.com/express/vc</a>
+</p>
+<p class='vspace'>The <em>MinGW</em> environment is not supported anymore.
+</p>
+<div class='vspace'></div><h2>Linux</h2>
+<p>No issues to report. Tested on various <em>SuSE</em> and <em>Red Hat</em> distributions.
+</p>
+<div class='vspace'></div><h2>Mac OS X</h2>
+<p>Tested on <em>Tiger</em> only. Not tested with universal binaries. There should be no issue in building universal binaries, provided you properly build all the required libraries first.
+</p>
+<p class='vspace'>On Mac some libraries and tools can be installed with <em>darwinports</em> or <em>fink</em>.
+Check on the <a class='urllink' href='http://darwinports.opendarwin.org' rel='nofollow'>Darwinports</a> and <a class='createlinktext' rel='nofollow' 
+    href='Fink?action=edit'>http://fink.sourceforge.net</a><a rel='nofollow' 
+    class='createlink' href='Fink?action=edit'>?</a> websites for information on the available packages.
+</p>
+<p class='vspace'>if you use <em>darwinports</em> to install <em>OpenBabel</em> it will be automatically installed under <code>/opt/local</code> and the include directory to set in the <em>CMake</em> configuration will be <code>/usr/local/include/openbabel-2.0</code> (or some other version number).
+</p>
+<p class='vspace'>If you install a pre-built version of <em>Coin3D</em> make sure you also install the <em>tools</em> package which is required to build applications outside <em>Xcode</em>.
+</p>
+<p class='vspace'>When building <em>VTK</em> make sure that <code>VTK_USE_CARBON</code> is <code>ON</code>.
+</p>
+<p class='vspace'><em>OpenMOIV</em> doesn't build out of the box on Mac OS; if you have <em>OpenGL</em> installed as a framework (and want to use it as a framework)
+then you cannot use <code>#include &lt;GL/gl.h&gt;</code> in the source code because there is no <code>GL</code> directory in the <code>OpenGL.framework/Headers</code> directory.
+To build <em>OpenMOIV</em> you can use the include files in the <code>/usr/X11R6/include/GL</code> directory, note that these include files are usually different from the ones in the <code>OpenGL.framework/Headers</code> directory.
+To have <em>CMake</em> use the files in the <code>X11</code> directory open <em>OpenMOIV</em> <em>CMakeLists.txt</em> and add the following line before <code>INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_PATH})</code>:
+</p><ul><li><code class='escaped'> SET( OPENGL_INCLUDE_DIR /usr/X11R6/include )</code>
+</li></ul><p class='vspace'>Build with <code>cmake -Dcoin:int=1</code> then <code>make</code>
+</p>
+<p class='vspace'>You will then have to copy the <code>include/ChemKit2</code> directory into your preferred include dir (e.g. <code>/usr/local/include</code>) and the <code>libChemKit2</code>
+lib into your preferred lib dir (e.g. <code>/usr/local/lib</code>).
+</p>
+<p class='vspace'>Due to the fact that some libraries used by <em>Molekel</em> do have include files that <code>#include &lt;GL/gl.h&gt;</code> you also need to configure <em>CMake</em> to use <code>/usr/X11R6/include as the value of </code>OPENGL_INCLUDE_DIR<code>; this is an advanced options and therefore you need to press </code>'t'@@ to have it displayed.
+</p>
+<p class='vspace'>If you want to use the <code>OpenGL.framework</code> <code>#includes</code> you might as well copy the <code>OpenGL.frameworks/Headers</code> files to a <code>GL</code> directory and change the value of <code>OPENGL_INCLUDE_DIR</code> to the directory containing the <code>GL</code> directory; there are however other issues if you do this: if some code references <code>GL/glx.h</code> compilation will fail because there is no <code>glx.h</code> file in the <code>OpenGL.framework/Headers</code> directory.
+</p>
+<p class='vspace'><code>IV_INCLUDE_DIR</code> and <code>IV_LINK_DIR</code> do not have to be set on Mac if you install the standard <em>Coin3D</em> distribution as a framework.
+</p>
+<div class='vspace'></div>
+</div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>Main</span>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='Gallery'>Gallery</a></strong>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='DownloadBinary'>Download</a></strong>
+</p>
+<p class='vspace sidehead'> <strong>Documentation</strong>
+</p><ul><li><a class='wikilink' href='../ReferenceGuide/Introduction'>Manual</a> 
+</li><li><a class='wikilink' href='Presentations'>Presentations</a>
+</li><li><a class='wikilink' href='VideosBlipTV'>Videos</a>
+</li><li><a class='wikilink' href='VideoTutorials'>Video tutorials</a>
+</li><li><a class='wikilink' href='Install'>Install</a>
+</li><li><a class='wikilink' href='Build'>Build</a>
+<ul><li><a class='selflink' href='BuildPlatformSpecific'>Platforms</a>
+</li><li><a class='wikilink' href='OpenBabel'>OpenBabel</a>
+</li></ul></li></ul><p class='vspace sidehead'> <strong><a class='wikilink' href='Citing'>Citing</a></strong>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='BuildPlatformSpecific'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='BuildPlatformSpecific?action=edit'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='BuildPlatformSpecific?action=diff'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='BuildPlatformSpecific?action=print'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 16, 2009, at 06:42 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>
