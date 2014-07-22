@@ -1,0 +1,12 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7
+author=
+host=148.187.130.131
+name=Main.Forums
+rev=1
+targets=
+text=Public forums are available through [[http://bioinformatics.org/forum/?group_id=678 | this page]].
+time=1161001589
+author:1161001589=
+diff:1161001589:1161001589:=1d0%0a%3c Public forums are available through [[http://bioinformatics.org/forum/?group_id=678 | this page]].%0a\ No newline at end of file%0a
+host:1161001589=148.187.130.131

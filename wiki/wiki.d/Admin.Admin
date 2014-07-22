@@ -1,0 +1,57 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.48 Safari/525.19
+author=
+charset=ISO-8859-1
+csum=
+ctime=1236677785
+host=148.187.130.153
+name=Admin.Admin
+rev=15
+targets=Site.GlossyHue-SiteHeader,Site.GlossyHue-SiteNav,Site.GlossyHue-SiteFooter,Main.SideBar,ReferenceGuide.SideBar
+text=!!Installed modules%0a*Mini gallery + Lightbox%0a*Mail form%0a%0a!!Skin-specific%0a!!!Glossy-Hue%0a*[[Site.GlossyHue-SiteHeader]]%0a*[[Site.GlossyHue-SiteNav]]%0a*[[Site.GlossyHue-SiteFooter]]%0a%0aRemoved search form%0a[@%0a%3c!--PageSearchFmt-->%0a%3cform id="searchform" action='$ScriptUrl' method="post">%0a  %3cfieldset>%0a    %3cinput class="hidden" type='hidden' name='n' value='{$FullName}' />%0a    %3cinput class="hidden" type='hidden' name='action' value='search' />%0a    %3cinput id="searchbutton" type='submit' name="searchbutton" value='$[Search]' />%0a    %3cinput id="searchfield" type='text' name='q' value='' height='23'/>%0a  %3c/fieldset>%0a%3c/form>%0a%3c!--/PageSearchFmt-->%0a@]%0a%0aRemoved pageaction from @pagelead@%0a[@%0a%3cdiv class="pageactions">%0a  %3c!--PageActionFmt-->%0a  %3c!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->%0a  %3c!--/PageActionFmt-->%0a%3c/div>%0a@]%0a%0a%0a!!Sidebars%0a*[[Main.SideBar]]%0a*[[ReferenceGuide.SideBar]]%0a%0a
+time=1237998249
+author:1237998249=
+diff:1237998249:1237993406:=10d9%0a%3c %0a24,33d22%0a%3c %0a%3c Removed pageaction from @pagelead@%0a%3c [@%0a%3c %3cdiv class="pageactions">%0a%3c   %3c!--PageActionFmt-->%0a%3c   %3c!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->%0a%3c   %3c!--/PageActionFmt-->%0a%3c %3c/div>%0a%3c @]%0a%3c %0a
+host:1237998249=148.187.130.153
+author:1237993406=
+diff:1237993406:1237993313:=0a1%0a> %0a12,21c13,27%0a%3c %3c!--PageSearchFmt-->%0a%3c %3cform id="searchform" action='$ScriptUrl' method="post">%0a%3c   %3cfieldset>%0a%3c     %3cinput class="hidden" type='hidden' name='n' value='{$FullName}' />%0a%3c     %3cinput class="hidden" type='hidden' name='action' value='search' />%0a%3c     %3cinput id="searchbutton" type='submit' name="searchbutton" value='$[Search]' />%0a%3c     %3cinput id="searchfield" type='text' name='q' value='' height='23'/>%0a%3c   %3c/fieldset>%0a%3c %3c/form>%0a%3c %3c!--/PageSearchFmt-->%0a---%0a> %3c!--PageHeaderFmt-->%0a> 			%3cdiv id="headerimg">%0a> 				%3c!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader {$SiteGroup}.{$SkinName}-SiteHeader-->%0a> 			%3c/div>%0a> 			%3c!-- ADD ! in front of --PageSearchFmt tags -->%0a> 			%3c!--PageSearchFmt-->%0a> 			%3cform id="searchform" action='$ScriptUrl' method="post">%0a> 			%3cfieldset>%0a> 				%3cinput class="hidden" type='hidden' name='n' value='{$FullName}' />%0a> 				%3cinput class="hidden" type='hidden' name='action' value='search' />%0a> 				%3cinput id="searchbutton" type='submit' name="searchbutton" value='$[Search]' />%0a> 				%3cinput id="searchfield" type='text' name='q' value='' height='23'/>%0a> 			%3c/fieldset>%0a> 			%3c/form>%0a> 			%3c!--/PageSearchFmt-->%0a
+host:1237993406=148.187.130.153
+author:1237993313=
+diff:1237993313:1237281682:=1a2%0a> %0a11,28d11%0a%3c Removed search form%0a%3c [@%0a%3c %3c!--PageHeaderFmt-->%0a%3c 			%3cdiv id="headerimg">%0a%3c 				%3c!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader {$SiteGroup}.{$SkinName}-SiteHeader-->%0a%3c 			%3c/div>%0a%3c 			%3c!-- ADD ! in front of --PageSearchFmt tags -->%0a%3c 			%3c!--PageSearchFmt-->%0a%3c 			%3cform id="searchform" action='$ScriptUrl' method="post">%0a%3c 			%3cfieldset>%0a%3c 				%3cinput class="hidden" type='hidden' name='n' value='{$FullName}' />%0a%3c 				%3cinput class="hidden" type='hidden' name='action' value='search' />%0a%3c 				%3cinput id="searchbutton" type='submit' name="searchbutton" value='$[Search]' />%0a%3c 				%3cinput id="searchfield" type='text' name='q' value='' height='23'/>%0a%3c 			%3c/fieldset>%0a%3c 			%3c/form>%0a%3c 			%3c!--/PageSearchFmt-->%0a%3c @]%0a
+host:1237993313=148.187.130.153
+author:1237281682=
+diff:1237281682:1237281672:=1d0%0a%3c %0a
+host:1237281682=129.132.128.136
+author:1237281672=
+diff:1237281672:1237281602:=2,4d1%0a%3c !!Installed modules%0a%3c *Mini gallery + Lightbox%0a%3c *Mail form%0a
+host:1237281672=129.132.128.136
+author:1237281602=
+diff:1237281602:1237281582:=1,2d0%0a%3c %0a%3c %0a
+host:1237281602=129.132.128.136
+author:1237281582=
+diff:1237281582:1237281406:=1d0%0a%3c !!Skin-specific%0a7c6%0a%3c !!Sidebars%0a---%0a> !!!Sidebars%0a
+host:1237281582=129.132.128.136
+author:1237281406=
+diff:1237281406:1236791526:=5,8d4%0a%3c %0a%3c !!!Sidebars%0a%3c *[[Main.SideBar]]%0a%3c *[[ReferenceGuide.SideBar]]%0a
+host:1237281406=129.132.128.136
+author:1236791526=
+diff:1236791526:1236790607:=1d0%0a%3c !!!Glossy-Hue%0a
+host:1236791526=148.187.130.153
+author:1236790607=
+diff:1236790607:1236704890:=1d0%0a%3c *[[Site.GlossyHue-SiteHeader]]%0a
+host:1236790607=148.187.130.153
+author:1236704890=
+diff:1236704890:1236704870:=0a1%0a> (:if false:)%0a3c4%0a%3c %0a---%0a> (:ifend:)%0a
+host:1236704890=148.187.130.153
+author:1236704870=
+diff:1236704870:1236677904:=1d0%0a%3c (:if false:)%0a4d2%0a%3c (:ifend:)%0a
+host:1236704870=148.187.130.153
+author:1236677904=
+diff:1236677904:1236677894:=1,2c1,2%0a%3c *[[Site.GlossyHue-SiteNav]]%0a%3c *[[Site.GlossyHue-SiteFooter]]%0a---%0a> [[Site.GlossyHue-SiteNav]]%0a> [[Site.GlossyHue-SiteFooter]]%0a
+host:1236677904=148.187.130.153
+author:1236677894=
+diff:1236677894:1236677785:=1,2c1%0a%3c [[Site.GlossyHue-SiteNav]]%0a%3c [[Site.GlossyHue-SiteFooter]]%0a---%0a> [[Site.GlossyHue-SiteNav]]%0a\ No newline at end of file%0a
+host:1236677894=148.187.130.153
+author:1236677785=
+diff:1236677785:1236677785:=1d0%0a%3c [[Site.GlossyHue-SiteNav]]%0a\ No newline at end of file%0a
+host:1236677785=148.187.130.153

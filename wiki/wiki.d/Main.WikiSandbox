@@ -1,0 +1,26 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/530.5 (KHTML, like Gecko) Chrome/2.0.172.39 Safari/530.5
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=Main.WikiSandbox
+rev=8
+targets=PmWiki.TextFormattingRules
+text=Feel free to use this page to experiment with the [[PmWiki/Text Formatting Rules]].  Just click the "Edit Page" link at the bottom of the page.%0a----%0aFirst paragraph.%0a%0aSecond paragraph.%0a%0aList:%0a* item%0a* another item%0a* yet another item%0a%0aList (numbered):%0a# one%0a# two%0a# three%0a%0aList (terms):%0a:term1:definition 1%0a:term2:definition 2%0a%0a''italics'', ''''bold'''', ''''''bold italics'''''', @@mono spaced@@%0a||border=1 width=80%25%0a||!Hdr ||!Hdr ||!Hdr ||%0a||     ||     ||     ||%0a||     ||     ||     ||%0a%0a!!Youtube test%0a%0a(:youtube TgMIdmyLATc:)%0a%0a%0a%0a%0a
+time=1250691033
+author:1250691033=
+diff:1250691033:1250683896:=29c29%0a%3c (:youtube TgMIdmyLATc:)%0a---%0a> (:youtube 0Audsv-_G2M:)%0a
+host:1250691033=148.187.130.153
+author:1250683896=
+diff:1250683896:1250683245:=26,31d25%0a%3c %0a%3c !!Youtube test%0a%3c %0a%3c (:youtube 0Audsv-_G2M:)%0a%3c %0a%3c %0a
+host:1250683896=148.187.130.153
+author:1250683245=
+diff:1250683245:1159216498:=26a27%0a> [[Main.SideBar | Edit Side Bar ]]%0a
+host:1250683245=148.187.130.153
+author:1159216498=Ugo Varetto
+diff:1159216498:1159118701:=27,28d26%0a%3c [[Main.SideBar | Edit Side Bar ]]%0a%3c %0a
+host:1159216498=84.74.35.168
+author:1159118701=
+diff:1159118701:1093548433:=3,26d2%0a%3c First paragraph.%0a%3c %0a%3c Second paragraph.%0a%3c %0a%3c List:%0a%3c * item%0a%3c * another item%0a%3c * yet another item%0a%3c %0a%3c List (numbered):%0a%3c # one%0a%3c # two%0a%3c # three%0a%3c %0a%3c List (terms):%0a%3c :term1:definition 1%0a%3c :term2:definition 2%0a%3c %0a%3c ''italics'', ''''bold'''', ''''''bold italics'''''', @@mono spaced@@%0a%3c ||border=1 width=80%25%0a%3c ||!Hdr ||!Hdr ||!Hdr ||%0a%3c ||     ||     ||     ||%0a%3c ||     ||     ||     ||%0a%3c %0a
+host:1159118701=84.72.112.101

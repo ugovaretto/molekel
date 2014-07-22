@@ -1,0 +1,40 @@
+table {
+	width: auto;
+}
+td {
+	font-size: 96%;
+	padding: 0.1ex;
+}
+h1,h2,h3,h4,h5,h6 {
+	height:1.2em;
+}
+
+
+#grid-wrap {
+	background:#F3F2EB;
+	width:100%;
+}
+#grid-main {
+	margin:0;
+	overflow-x:scroll
+	}
+
+#wiki-left p,#wiki-right p {
+	display:inline-block
+}
+div#wiki-left ul, div#wiki-right ul {
+	margin:0 0;
+	padding:0;
+}
+div#wiki-left li, div#wiki-right li {
+	margin: 0 0 0 -16px  ;
+	padding:0;
+}
+
+
+#wikiedit{
+	width:100%
+}
+#wikiedit textarea{
+	width:100%;
+}

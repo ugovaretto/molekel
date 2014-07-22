@@ -1,0 +1,24 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19
+author=
+charset=ISO-8859-1
+csum=
+ctime=1265366233
+host=148.187.133.156
+name=Main.Citing
+rev=4
+targets=
+text=Any version of Molekel greater than 4.3 should be cited as:%0a%0a''Ugo Varetto, %3cMOLEKEL Version>; Swiss National Supercomputing Centre: Lugano (Switzerland)''
+time=1337330778
+author:1337330778=
+diff:1337330778:1309880322:=3c3%0a%3c ''Ugo Varetto, %3cMOLEKEL Version>; Swiss National Supercomputing Centre: Lugano (Switzerland)''%0a\ No newline at end of file%0a---%0a> ''Ugo Varetto, %3cMOLEKEL Version>; Swiss National Supercomputing Centre: Manno (Switzerland)''%0a\ No newline at end of file%0a
+host:1337330778=148.187.133.156
+author:1309880322=
+diff:1309880322:1265366274:=3c3%0a%3c ''Ugo Varetto, %3cMOLEKEL Version>; Swiss National Supercomputing Centre: Manno (Switzerland)''%0a\ No newline at end of file%0a---%0a> ''Varetto, U. %3cMOLEKEL Version>; Swiss National Supercomputing Centre: Manno (Switzerland)''%0a\ No newline at end of file%0a
+host:1309880322=148.187.130.153
+author:1265366274=
+diff:1265366274:1265366233:=
+host:1265366274=148.187.130.153
+author:1265366233=
+diff:1265366233:1265366233:=1,3d0%0a%3c Any version of Molekel greater than 4.3 should be cited as:%0a%3c %0a%3c ''Varetto, U. %3cMOLEKEL Version>; Swiss National Supercomputing Centre: Manno (Switzerland)''%0a\ No newline at end of file%0a
+host:1265366233=148.187.130.153

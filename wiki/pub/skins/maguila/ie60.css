@@ -1,0 +1,44 @@
+h1,h2,h3,h4,h5,h6{
+	height:1.2em;
+}
+
+#grid-wrap{
+	height:1%;
+	position:relative;
+	overflow:hidden;
+}
+#grid-inner {
+	height:1%;
+	overflow:hidden;
+}
+#grid-left {
+	overflow-x:scroll;
+
+}
+#grid-right {
+	overflow-x:scroll;
+}
+#grid-main{
+	overflow-x:scroll;
+}
+
+
+#wiki-wrap {
+	height:1%;
+}
+#wiki-left p,#wiki-right p {
+	height:1%;
+}
+div#wiki-left ul,div#wiki-right ul{
+	margin:0 0;
+	padding:0;
+}
+div#wiki-left li,div#wiki-right li {
+	margin: 0 0 0 -1.3em  ;
+	padding: 0;
+}
+#wiki-main {
+	height:1%
+}
+
+

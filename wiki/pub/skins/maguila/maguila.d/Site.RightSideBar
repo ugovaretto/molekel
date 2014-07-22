@@ -1,0 +1,3 @@
+version=pmwiki-2.2.0-beta62 ordered=1 urlencoded=1
+charset=ISO-8859-1
+text=%25sidehead%25 [[ $[{$SiteGroup}/SkinConfig] | $[Font Size] ]]%0a* [[{*$PageUrl}?fnt=0|'''[-SMALLER-]''']]%0a* [[{*$PageUrl}?fnt=1|'''NORMAL''']]%0a* [[{*$PageUrl}?fnt=2|'''[+BIGGER+]''']]%0a%0a%25sidehead%25 [[ $[{$SiteGroup}/SkinConfig] | $[Layout] ]]%0a* [[{*$PageUrl}?col=0 | No side bars]]  %0a* [[{*$PageUrl}?col=1 | just left side bar]]%0a* [[{*$PageUrl}?col=2 | Just right side bar]]%0a* [[{*$PageUrl}?col=3 | both side bars]]%0a%0a%25right%25 [-[[Site.RightSideBar?action=edit | edit Right Side Bar]]-]

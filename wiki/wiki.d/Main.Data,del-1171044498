@@ -1,0 +1,18 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.9) Gecko/20061206 Firefox/1.5.0.9
+author=Ugo Varetto
+host=148.187.130.131
+name=Main.Data
+rev=3
+targets=
+text=[[http://bioinformatics.org/molekel/uploads/data/sampledata1.zip | Sample Data 1]]:%0a*Gaussian output%0a*Gaussian cube%0a*GAMESS%0a*pdb%0a*mol%0a*xyz%0a
+time=1166706597
+author:1166706597=Ugo Varetto
+diff:1166706597:1166706541:=1c1%0a%3c [[http://bioinformatics.org/molekel/uploads/data/sampledata1.zip | Sample Data 1]]:%0a---%0a> [[http://bioinformatics.org/molekel/uploads/data/sampledata1.tar.gz | Sample Data 1]]:%0a
+host:1166706597=148.187.130.131
+author:1166706541=Ugo Varetto
+diff:1166706541:1166706291:=1,7c1,6%0a%3c [[http://bioinformatics.org/molekel/uploads/data/sampledata1.tar.gz | Sample Data 1]]:%0a%3c *Gaussian output%0a%3c *Gaussian cube%0a%3c *GAMESS%0a%3c *pdb%0a%3c *mol%0a%3c *xyz%0a---%0a> %0a> Gaussian output 1%0a> Gaussian output 2%0a> Gaussian cube%0a> GAMESS%0a> Mol%0a
+host:1166706541=148.187.130.131
+author:1166706291=Ugo Varetto
+diff:1166706291:1166706291:=1,6d0%0a%3c %0a%3c Gaussian output 1%0a%3c Gaussian output 2%0a%3c Gaussian cube%0a%3c GAMESS%0a%3c Mol%0a
+host:1166706291=148.187.130.131

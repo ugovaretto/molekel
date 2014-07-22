@@ -1,0 +1,27 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=ReferenceGuide.RadiationSpectra
+rev=5
+targets=
+text=(:title Radiation Spectra:)%0a%0aMolekel can display infra-red and Raman activity spectra if the information is available in the loaded file.%0a%0aTo display the radiation spectrum dialog:%0a#select the molecule%0a#select the Analysis->Radiation Spectrum menu item%0a%0a{$ResDir}/ReferenceGuide/spectrum_dlg.png%0a%0aThe radiation spectrum window allows the user to select the diagram type (infra-red or Raman) and display style as well as to save the graph to PostScript or PDF formats.%0a%0aMoving the mouse pointer over the graph displays frequency and intensity information at the pointer position.%0a%0aA video showing radiation spectra in action is available here: http://molekel.cscs.ch/video/radiation_spectrum_big.htm
+time=1277125550
+title=Radiation Spectra
+author:1277125550=
+diff:1277125550:1237309035:=13,15c13%0a%3c Moving the mouse pointer over the graph displays frequency and intensity information at the pointer position.%0a%3c %0a%3c A video showing radiation spectra in action is available here: http://molekel.cscs.ch/video/radiation_spectrum_big.htm%0a\ No newline at end of file%0a---%0a> Moving the mouse pointer over the graph displays frequency and intensity information at the pointer position.%0a\ No newline at end of file%0a
+host:1277125550=148.187.130.153
+author:1237309035=
+diff:1237309035:1236677016:=1,2c1%0a%3c (:title Radiation Spectra:)%0a%3c %0a---%0a> [[%3c%3c]]%0a
+host:1237309035=148.187.130.153
+author:1236677016=
+diff:1236677016:1236618115:=1c1,2%0a%3c [[%3c%3c]]%0a---%0a> !!Radiation Spectra%0a> %0a
+host:1236677016=148.187.130.153
+author:1236618115=
+diff:1236618115:1202920638:=9c9%0a%3c {$ResDir}/ReferenceGuide/spectrum_dlg.png%0a---%0a> http://bioinformatics.org/molekel/uploads/ReferenceGuide/spectrum_dlg.png%0a
+host:1236618115=148.187.130.153
+author:1202920638=
+diff:1202920638:1202920638:=1,13d0%0a%3c !!Radiation Spectra%0a%3c %0a%3c Molekel can display infra-red and Raman activity spectra if the information is available in the loaded file.%0a%3c %0a%3c To display the radiation spectrum dialog:%0a%3c #select the molecule%0a%3c #select the Analysis->Radiation Spectrum menu item%0a%3c %0a%3c http://bioinformatics.org/molekel/uploads/ReferenceGuide/spectrum_dlg.png%0a%3c %0a%3c The radiation spectrum window allows the user to select the diagram type (infra-red or Raman) and display style as well as to save the graph to PostScript or PDF formats.%0a%3c %0a%3c Moving the mouse pointer over the graph displays frequency and intensity information at the pointer position. %0a\ No newline at end of file%0a
+host:1202920638=148.187.130.131

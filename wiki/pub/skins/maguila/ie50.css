@@ -1,0 +1,60 @@
+table {
+	width: auto;
+}
+td {
+	font-size: 96%;
+	padding: 0.1ex 0.5ex;
+}
+h1,h2,h3,h4,h5,h6{
+	height:1.2em;
+}
+
+
+#grid-wrap{
+	display:inline-block;
+	width:100%;
+}
+#grid-main{
+	border:0;
+	margin:0;
+	overflow-x:scroll
+}
+#grid-left{
+	
+}
+#grid-right{
+
+}
+
+
+#wrap-wiki{
+	width:100%;
+}
+#wiki-action{
+	height:1.8em;
+}
+#wiki-action li {
+	display:inline:block
+}
+p#main-action{
+	height:1.2em;
+}
+h2#main-title{
+	height:1.2em;
+}
+#wiki-left p,#wiki-right p {
+	height:1%;
+}
+div#wiki-left li ,div#wiki-right li {
+	margin: 0 0 0 -16px  ;
+	padding:0;
+}
+
+
+
+#wikiedit{
+	width:100%;
+}
+#wikiedit textarea{
+	width:100%;
+}

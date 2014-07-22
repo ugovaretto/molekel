@@ -1,0 +1,66 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.48 Safari/525.19
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=ReferenceGuide.ExportAnimation
+rev=18
+targets=
+text=(:title Export Animation:)%0a%0aMolekel can export animation and animate all the visible molecular surfaces by recomputing the surfaces at each animation step. Animation can be exported as individual frames or AVI files (on Windows).%0a%0aWhen exporting animations to individual frames the user needs to select the directory where the individual frames will be written. Files are exported as png images with names which include the frame sequence number.%0a%0aTo create animations from the generated frames you can use a program like%0a*[[http://www.mplayerhq.hu/DOCS/HTML/en/mencoder.html | mencoder]]%0a*[[http://www.ensight.com/enve.html | EnVe]]%0a*[[http://www.virtualdub.org | VirtualDub]]%0a%0aSample ''mencoder'' command line which will generate an mpeg video ''m.mpeg'' from the png images found in @@c:\tmp\molekelvideo1@@ :%0a%0a%25frame%25 @@mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg@@%0a  %0aThe frame rate should match the frame rate specified in Molekel's ''Export Animation'' dialog.%0a%0aTo specify the frame rate on ''mencoder'' command line use the ''@@-ofps@@'' switch. %0a%0aTo export an animation open the ''Export Animation'' dialog by selecting the ''Animation-Export Animation'' menu item, modify the parameter values, click on ''Ok'' and select the output directory (individual frames) or file (AVI).%0a%0a!!Export Animation Dialog%0a%0a%25rfloat%25 {$ResDir}/ReferenceGuide/export_animation_dlg.png %0a%0aThis dialog box allows the user to speficy duration, frames per second and output type (individual frames or AVI) and the parameters that will be used for rendering the visible surfaces while animating.%0a%0aNote that:%0a*the values specified here will override any previously specified value and will apply to all the visible surfaces%0a*the same step will be used for all the visible iso-surfaces%0a*the same value of 0.05 will be used for all the visible iso-surfaces (i.e. the suface ''scalar_field( x, y, z ) = 0.05'' will be computed)%0a%0aThe labels on this dialog should give a good explanation of what the parameters other than ''Bounding Box Scaling Factor'' are.%0a%0a''Bounding Box Scaling Factor'' is the value by which the size of each molecule's bounding box is multiplied before computing the isosurfaces (if any).%0a%0aHaving only one set of values that apply to all the surfaces is definitely not an optimal solution; the only way to cover all the possible options (different bounding boxes, animating a surface by changing an iso-value or probe radius at each frame etc.) is to introduce scripting, which will be added in the next version (5.1) of Molekel.%0a%0a%0a%0a%0a%0a%0a
+time=1237308800
+title=Export Animation
+author:1237308800=
+diff:1237308800:1236674406:=1,2c1%0a%3c (:title Export Animation:)%0a%3c %0a---%0a> [[%3c%3c]]%0a
+host:1237308800=148.187.130.153
+author:1236674406=
+diff:1236674406:1236617866:=1c1,2%0a%3c [[%3c%3c]]%0a---%0a> !Export Animation%0a> %0a
+host:1236674406=148.187.130.153
+author:1236617866=
+diff:1236617866:1182240914:=24c24%0a%3c %25rfloat%25 {$ResDir}/ReferenceGuide/export_animation_dlg.png %0a---%0a> %25rfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/export_animation_dlg.png %0a
+host:1236617866=148.187.130.153
+author:1182240914=
+diff:1182240914:1170416256:=8c8%0a%3c *[[http://www.mplayerhq.hu/DOCS/HTML/en/mencoder.html | mencoder]]%0a---%0a> *[[http://web.njit.edu/all_topics/Prog_Lang_Docs/html/mplayer/encoding.html | mencoder]]%0a
+host:1182240914=148.187.130.131
+author:1170416256=Ugo Varetto
+diff:1170416256:1166696723:=10,11c10%0a%3c *[[http://www.virtualdub.org | VirtualDub]]%0a%3c %0a---%0a> %0a
+host:1170416256=148.187.130.131
+author:1166696723=Ugo Varetto
+diff:1166696723:1166639064:=0a1,2%0a> !! %25red%25 Update in progress%0a> %0a
+host:1166696723=148.187.130.131
+author:1166639064=Ugo Varetto
+diff:1166639064:1166639037:=25,26c25,26%0a%3c %25rfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/export_animation_dlg.png %0a%3c %0a---%0a> %25lfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/export_animation_dlg.png %0a> %0a
+host:1166639064=148.187.130.131
+author:1166639037=Ugo Varetto
+diff:1166639037:1166637649:=27,45c27,29%0a%3c This dialog box allows the user to speficy duration, frames per second and output type (individual frames or AVI) and the parameters that will be used for rendering the visible surfaces while animating.%0a%3c %0a%3c Note that:%0a%3c *the values specified here will override any previously specified value and will apply to all the visible surfaces%0a%3c *the same step will be used for all the visible iso-surfaces%0a%3c *the same value of 0.05 will be used for all the visible iso-surfaces (i.e. the suface ''scalar_field( x, y, z ) = 0.05'' will be computed)%0a%3c %0a%3c The labels on this dialog should give a good explanation of what the parameters other than ''Bounding Box Scaling Factor'' are.%0a%3c %0a%3c ''Bounding Box Scaling Factor'' is the value by which the size of each molecule's bounding box is multiplied before computing the isosurfaces (if any).%0a%3c %0a%3c Having only one set of values that apply to all the surfaces is definitely not an optimal solution; the only way to cover all the possible options (different bounding boxes, animating a surface by changing an iso-value or probe radius at each frame etc.) is to introduce scripting, which will be added in the next version (5.1) of Molekel.%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c  %0a\ No newline at end of file%0a---%0a> %0a> %0a> %0a
+host:1166639037=148.187.130.131
+author:1166637649=Ugo Varetto
+diff:1166637649:1166637529:=21,22c21,22%0a%3c To export an animation open the ''Export Animation'' dialog by selecting the ''Animation-Export Animation'' menu item, modify the parameter values, click on ''Ok'' and select the output directory (individual frames) or file (AVI).%0a%3c %0a---%0a> To export an animation open the ''Export Animation'' dialog by selecting the ''Animation-Export Animation'' menu item.%0a> %0a25,29c25,29%0a%3c %25lfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/export_animation_dlg.png %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> http://bioinformatics.org/molekel/uploads/ReferenceGuide/export_animation_dlg.png %0a> %0a> %0a> %0a> %0a
+host:1166637649=148.187.130.131
+author:1166637529=Ugo Varetto
+diff:1166637529:1166637240:=21,29c21,22%0a%3c To export an animation open the ''Export Animation'' dialog by selecting the ''Animation-Export Animation'' menu item.%0a%3c %0a%3c !!Export Animation Dialog%0a%3c %0a%3c http://bioinformatics.org/molekel/uploads/ReferenceGuide/export_animation_dlg.png %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> To export an animation open the ''Export Animation'' dialog %0a> %0a
+host:1166637529=148.187.130.131
+author:1166637240=Ugo Varetto
+diff:1166637240:1166637194:=21,22c21%0a%3c To export an animation open the ''Export Animation'' dialog %0a%3c %0a---%0a> %0a
+host:1166637240=148.187.130.131
+author:1166637194=Ugo Varetto
+diff:1166637194:1166637130:=13,14c13,14%0a%3c Sample ''mencoder'' command line which will generate an mpeg video ''m.mpeg'' from the png images found in @@c:\tmp\molekelvideo1@@ :%0a%3c %0a---%0a> Sample ''mencoder'' command line which will generate an mpeg video ''m.mpeg' from the png images found in @@c:\tmp\molekelvideo1@@ :%0a> %0a
+host:1166637194=148.187.130.131
+author:1166637130=Ugo Varetto
+diff:1166637130:1166636842:=13,15c13,15%0a%3c Sample ''mencoder'' command line which will generate an mpeg video ''m.mpeg' from the png images found in @@c:\tmp\molekelvideo1@@ :%0a%3c %0a%3c %25frame%25 @@mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg@@%0a---%0a> Sample ''mencoder'' command line:%0a> %0a> %25frame%25 @@C:\tmp\molekelvideo1>c:\programs\mplayer\mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg@@%0a17,21c17,19%0a%3c The frame rate should match the frame rate specified in Molekel's ''Export Animation'' dialog.%0a%3c %0a%3c To specify the frame rate on ''mencoder'' command line use the ''@@-ofps@@'' switch. %0a%3c %0a%3c %0a---%0a> %0a> %0a> %0a
+host:1166637130=148.187.130.131
+author:1166636842=Ugo Varetto
+diff:1166636842:1166636783:=14,19c14,19%0a%3c %0a%3c %25frame%25 @@C:\tmp\molekelvideo1>c:\programs\mplayer\mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg@@%0a%3c   %0a%3c %0a%3c %0a%3c %0a---%0a> [@%0a> C:\tmp\molekelvideo1>c:\programs\mplayer\mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg%0a> @]  %0a> %0a> %0a> %0a
+host:1166636842=148.187.130.131
+author:1166636783=Ugo Varetto
+diff:1166636783:1166636660:=9,19c9,14%0a%3c To create animations from the generated frames you can use a program like%0a%3c *[[http://web.njit.edu/all_topics/Prog_Lang_Docs/html/mplayer/encoding.html | mencoder]]%0a%3c *[[http://www.ensight.com/enve.html | EnVe]]%0a%3c %0a%3c Sample ''mencoder'' command line:%0a%3c [@%0a%3c C:\tmp\molekelvideo1>c:\programs\mplayer\mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg%0a%3c @]  %0a%3c %0a%3c %0a%3c %0a---%0a> To create animations from the generated frames use a program like%0a> *[[http://web.njit.edu/all_topics/Prog_Lang_Docs/html/mplayer/encoding.html | ''mencoder'']]%0a> *[[http://www.ensight.com/enve.html | EnVe]] %0a> %0a> %0a> %0a
+host:1166636783=148.187.130.131
+author:1166636660=Ugo Varetto
+diff:1166636660:1166636640:=10,14c10,14%0a%3c *[[http://web.njit.edu/all_topics/Prog_Lang_Docs/html/mplayer/encoding.html | ''mencoder'']]%0a%3c *[[http://www.ensight.com/enve.html | EnVe]] %0a%3c %0a%3c %0a%3c %0a---%0a> *%25frame%25 [[http://web.njit.edu/all_topics/Prog_Lang_Docs/html/mplayer/encoding.html | ''mencoder'']]%0a> *%25frame%25 [[http://www.ensight.com/enve.html | EnVe]] %0a> %0a> %0a> %0a
+host:1166636660=148.187.130.131
+author:1166636640=Ugo Varetto
+diff:1166636640:1166635848:=7,15c7%0a%3c When exporting animations to individual frames the user needs to select the directory where the individual frames will be written. Files are exported as png images with names which include the frame sequence number.%0a%3c %0a%3c To create animations from the generated frames use a program like%0a%3c *%25frame%25 [[http://web.njit.edu/all_topics/Prog_Lang_Docs/html/mplayer/encoding.html | ''mencoder'']]%0a%3c *%25frame%25 [[http://www.ensight.com/enve.html | EnVe]] %0a%3c %0a%3c %0a%3c %0a%3c  %0a\ No newline at end of file%0a---%0a> When exporting animations to individual frames the user needs to select the directory where the individual frames will be written. Files are exported as png images with names which include the frame sequence number.%0a\ No newline at end of file%0a
+host:1166636640=148.187.130.131
+author:1166635848=Ugo Varetto
+diff:1166635848:1166635848:=1,7d0%0a%3c !! %25red%25 Update in progress%0a%3c %0a%3c !Export Animation%0a%3c %0a%3c Molekel can export animation and animate all the visible molecular surfaces by recomputing the surfaces at each animation step. Animation can be exported as individual frames or AVI files (on Windows).%0a%3c %0a%3c When exporting animations to individual frames the user needs to select the directory where the individual frames will be written. Files are exported as png images with names which include the frame sequence number.%0a\ No newline at end of file%0a
+host:1166635848=148.187.130.131

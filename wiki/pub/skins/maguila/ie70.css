@@ -1,0 +1,17 @@
+#grid-main{
+	overflow-x:scroll;
+}
+#grid-wrap{
+	position:relative;
+}
+
+
+div#wiki-left ul,div#wiki-right ul{
+	margin:0 0;
+	padding:0;
+}
+div#wiki-left li,div#wiki-right li {
+	margin: 0 0 0 -1.3em  ;
+	padding: -0.1ex 0;
+	border:0;
+}

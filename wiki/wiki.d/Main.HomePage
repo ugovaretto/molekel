@@ -1,0 +1,290 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=Main.HomePage
+rev=285
+targets=Main.Citing
+text=(:title Molekel:)%0a%0a%25rframe width=300px%25 [[ {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png | {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png ]] | [-'''Click on image to enlarge'''-]%0a%0a%0aMolekel is an open-source multi-platform molecular visualization program. %0a%0a'''[- ([[Citing | citation info]]) -]'''%0a%0aSome of the features available in the new version are:%0a*Multiplatform: Mac OS X, Windows, Linux%0a*Different methods to speed-up rendering of molecules with support for billboards and view-dependent level of detail techniques %0a*Programmable shaders;  standard shaders to enhance rendering quality, outline contours and  perform sketch-like renderings are provided %0a*Visualization of residues (ribbon or schematic)%0a*Complete control over the generation of molecular surfaces (bounding box and resolution)%0a*Visualization of the following surfaces:%0a**Orbitals%0a**Iso-surface from density matrix%0a**Iso-surface from Gaussian cube grid data%0a**SAS%0a**SES%0a**Van der Waals%0a*Animation of molecular surfaces%0a*Animation of vibrational modes%0a*Export high resolution images for 300+ DPI printing %0a*Export to PostScript and PDF%0a*Export animation%0a*Plane widget to visualize a scalar field: the plane can be freely moved in 3d space and the points on the plane surface will be colored according to the value of the scalar field: a cursor can be moved on the plane surface to show the exact value of the field at a specific point in space. %0a*Fully Doxygen-commented source code. %0a%0a%0a
+time=1277125761
+title=Molekel
+author:1277125761=
+diff:1277125761:1277125718:=3c3%0a%3c %25rframe width=300px%25 [[ {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png | {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png ]] | [-'''Click on image to enlarge'''-]%0a---%0a> %25rframe width=300px%25 [[ {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png | {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png ]] | '''Ckick to enlarge'''%0a
+host:1277125761=148.187.130.153
+author:1277125718=
+diff:1277125718:1277125619:=3c3%0a%3c %25rframe width=300px%25 [[ {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png | {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png ]] | '''Ckick to enlarge'''%0a---%0a> %25rframe width=300px%25 [[ {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png | {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png ]]%0a
+host:1277125718=148.187.130.153
+author:1277125619=
+diff:1277125619:1274346425:=3c3%0a%3c %25rframe width=300px%25 [[ {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png | {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png ]]%0a---%0a> %25rframe width=300px%25 {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png%0a
+host:1277125619=148.187.130.153
+author:1274346425=
+diff:1274346425:1265366598:=6c6%0a%3c Molekel is an open-source multi-platform molecular visualization program. %0a---%0a> Molekel is an open-source multi-platform molecular visualization program. The latest version is 5.4 released in August 2009.%0a
+host:1274346425=148.187.130.153
+author:1265366598=
+diff:1265366598:1265366591:=8c8%0a%3c '''[- ([[Citing | citation info]]) -]'''%0a---%0a> '''[- ([[Citing | citation info]]) -]''')%0a
+host:1265366598=148.187.130.153
+author:1265366591=
+diff:1265366591:1265366561:=8c8%0a%3c '''[- ([[Citing | citation info]]) -]''')%0a---%0a> ('''[- [[Citing | citation info]] -]''')%0a
+host:1265366591=148.187.130.153
+author:1265366561=
+diff:1265366561:1265366553:=7d6%0a%3c %0a
+host:1265366561=148.187.130.153
+author:1265366553=
+diff:1265366553:1265366505:=7c7%0a%3c ('''[- [[Citing | citation info]] -]''')%0a---%0a> '''[- [[Citing | citation info]] -]'''%0a
+host:1265366553=148.187.130.153
+author:1265366505=
+diff:1265366505:1265366481:=6a7%0a> %0a
+host:1265366505=148.187.130.153
+author:1265366481=
+diff:1265366481:1265366457:=8c8%0a%3c '''[- [[Citing | citation info]] -]'''%0a---%0a> [[Citing | citation info]]%0a
+host:1265366481=148.187.130.153
+author:1265366457=
+diff:1265366457:1265366441:=8c8%0a%3c [[Citing | citation info]]%0a---%0a> [[Citation | citation info]]%0a
+host:1265366457=148.187.130.153
+author:1265366441=
+diff:1265366441:1265366376:=8c8%0a%3c [[Citation | citation info]]%0a---%0a> ([[Citation | Citation Info ]])%0a
+host:1265366441=148.187.130.153
+author:1265366376=
+diff:1265366376:1265366365:=8c8%0a%3c ([[Citation | Citation Info ]])%0a---%0a> ([[Citation] | Citation Info ])%0a
+host:1265366376=148.187.130.153
+author:1265366365=
+diff:1265366365:1253634329:=7,8d6%0a%3c %0a%3c ([[Citation] | Citation Info ])%0a
+host:1265366365=148.187.130.153
+author:1253634329=
+diff:1253634329:1253104325:=9a10%0a> *Completely redesigned UI%0a
+host:1253634329=148.187.130.153
+author:1253104325=
+diff:1253104325:1250668387:=6c6,8%0a%3c Molekel is an open-source multi-platform molecular visualization program. The latest version is 5.4 released in August 2009.%0a---%0a> Molekel is an open-source multiplatform molecular visualization program being developed at the [[http://www.cscs.ch | Swiss National Supercomputing Centre (CSCS)]].%0a> %0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.4 released in August 2009.%0a
+host:1253104325=129.132.128.136
+author:1250668387=
+diff:1250668387:1250602678:=26d25%0a%3c *Export high resolution images for 300+ DPI printing %0a
+host:1250668387=148.187.130.153
+author:1250602678=
+diff:1250602678:1250599330:=8c8%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.4 released in August 2009.%0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Latest version is 5.4 released in August 2009.%0a
+host:1250602678=129.132.128.136
+author:1250599330=
+diff:1250599330:1250599313:=3c3%0a%3c %25rframe width=300px%25 {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png%0a---%0a> %25rframe width=400px%25 {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png%0a
+host:1250599330=129.132.128.136
+author:1250599313=
+diff:1250599313:1250599275:=3c3%0a%3c %25rframe width=400px%25 {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png%0a---%0a> %25rframe width=300px%25 {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png%0a
+host:1250599313=129.132.128.136
+author:1250599275=
+diff:1250599275:1250589636:=3c3%0a%3c %25rframe width=300px%25 {$ResDir}/sshots/ui_main_radiation_density_probe_colorbar_gray.png%0a---%0a> %25rframe width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1250599275=129.132.128.136
+author:1250589636=
+diff:1250589636:1238600229:=8c8%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Latest version is 5.4 released in August 2009.%0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Versions 5.3.x are being tested and available for download on our ftp site at ftp://ftp.cscs.ch/out/molekel. %0a
+host:1250589636=129.132.128.136
+author:1238600229=
+diff:1238600229:1237226579:=8c8%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0 released in 2008. Versions 5.3.x are being tested and available for download on our ftp site at ftp://ftp.cscs.ch/out/molekel. %0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. %0a
+host:1238600229=129.132.128.136
+author:1237226579=
+diff:1237226579:1236877903:=8c8%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. %0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. Check out the [[http://bioinformatics.org/molekel/wiki/Main/Status|''News'']] and [[http://bioinformatics.org/project/filelist.php?group_id=678|file release section]] for updates.%0a
+host:1237226579=148.187.130.153
+author:1236877903=
+diff:1236877903:1236877828:=3c3%0a%3c %25rframe width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a---%0a> %25lframe width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877903=148.187.130.153
+author:1236877828=
+diff:1236877828:1236877729:=3c3%0a%3c %25lframe width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a---%0a> %25lframe%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877828=148.187.130.153
+author:1236877729=
+diff:1236877729:1236877702:=2a3%0a> >>width=300px%3c%3c%0a4c5%0a%3c %0a---%0a> >>%3c%3c%0a
+host:1236877729=148.187.130.153
+author:1236877702=
+diff:1236877702:1236877684:=3,5c3%0a%3c >>width=300px%3c%3c%0a%3c %25lframe%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a%3c >>%3c%3c%0a---%0a> %25width=300px%25 %25lframe%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877702=148.187.130.153
+author:1236877684=
+diff:1236877684:1236877670:=3c3%0a%3c %25width=300px%25 %25lframe%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a---%0a> %25lframe%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877684=148.187.130.153
+author:1236877670=
+diff:1236877670:1236877619:=3c3%0a%3c %25lframe%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a---%0a> %25lframe%25 %25width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877670=148.187.130.153
+author:1236877619=
+diff:1236877619:1236877436:=3c3%0a%3c %25lframe%25 %25width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a---%0a> %25width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877619=148.187.130.153
+author:1236877436=
+diff:1236877436:1236848680:=2,3d1%0a%3c %0a%3c %25width=300px%25 {$ResDir}/sshots/molekel_orbital_42_ui.png%0a
+host:1236877436=148.187.130.153
+author:1236848680=
+diff:1236848680:1236703915:=3c3%0a%3c Molekel is an open-source multiplatform molecular visualization program being developed at the [[http://www.cscs.ch | Swiss National Supercomputing Centre (CSCS)]].%0a---%0a> Molekel is an opensource (GPL) multiplatform molecular visualization program being developed at the [[http://www.cscs.ch | Swiss National Supercomputing Centre (CSCS)]].%0a
+host:1236848680=129.132.128.136
+author:1236703915=
+diff:1236703915:1236673403:=27a28,30%0a> This site is currently used for all the development tasks and as the main source code repository.%0a> %0a> The bioinformatics.org project page is [[http://bioinformatics.org/project/?group_id=678 | here]]. %0a
+host:1236703915=148.187.130.153
+author:1236673403=
+diff:1236673403:1236673392:=2d1%0a%3c %0a
+host:1236673403=148.187.130.153
+author:1236673392=
+diff:1236673392:1236673374:=1c1%0a%3c (:title Molekel:)%0a---%0a> (:title test:)%0a
+host:1236673392=148.187.130.153
+author:1236673374=
+diff:1236673374:1236673348:=1d0%0a%3c (:title test:)%0a
+host:1236673374=148.187.130.153
+author:1236673348=
+diff:1236673348:1236673287:=0a1%0a> (:noheader:)%0a
+host:1236673348=148.187.130.153
+author:1236673287=
+diff:1236673287:1220859454:=1d0%0a%3c (:noheader:)%0a
+host:1236673287=148.187.130.153
+author:1220859454=
+diff:1220859454:1220858930:=21c21%0a%3c *Export to PostScript and PDF%0a---%0a> *Export to PostScript%0a
+host:1220859454=148.187.130.153
+author:1220858930=
+diff:1220858930:1220858890:=20d19%0a%3c *Animation of vibrational modes%0a
+host:1220858930=148.187.130.153
+author:1220858890=
+diff:1220858890:1203591190:=8,9d7%0a%3c *Different methods to speed-up rendering of molecules with support for billboards and view-dependent level of detail techniques %0a%3c *Programmable shaders;  standard shaders to enhance rendering quality, outline contours and  perform sketch-like renderings are provided %0a
+host:1220858890=148.187.130.153
+author:1203591190=
+diff:1203591190:1179073121:=3,4c3,4%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. The latest version is 5.3.0. Check out the [[http://bioinformatics.org/molekel/wiki/Main/Status|''News'']] and [[http://bioinformatics.org/project/filelist.php?group_id=678|file release section]] for updates.%0a%3c %0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. Check out the [[http://bioinformatics.org/molekel/wiki/Main/Status|''News'']] and [[http://bioinformatics.org/project/filelist.php?group_id=678|file release section]] for updates.%0a> %0a
+host:1203591190=148.187.130.131
+author:1179073121=
+diff:1179073121:1171037212:=21,22c21,22%0a%3c *Fully Doxygen-commented source code. %0a%3c %0a---%0a> *Fully Doxygen-commented source code.%0a> %0a
+host:1179073121=87.2.216.131
+author:1171037212=Ugo Varetto
+diff:1171037212:1170428201:=3,4c3,4%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. Check out the [[http://bioinformatics.org/molekel/wiki/Main/Status|''News'']] and [[http://bioinformatics.org/project/filelist.php?group_id=678|file release section]] for updates.%0a%3c %0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. Check ouy the ''News'' and file release section for updates.%0a> %0a
+host:1171037212=148.187.130.131
+author:1170428201=Ugo Varetto
+diff:1170428201:1166791279:=3,5c3,5%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x. Check ouy the ''News'' and file release section for updates.%0a%3c %0a%3c Some of the features available in the new version are:%0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.6.%0a> %0a> Some of the features available in this new version are:%0a
+host:1170428201=148.187.130.131
+author:1166791279=Ugo Varetto
+diff:1166791279:1166788965:=5c5%0a%3c Some of the features available in this new version are:%0a---%0a> Some of the features added in this new version are:%0a
+host:1166791279=148.187.130.131
+author:1166788965=Ugo Varetto
+diff:1166788965:1166788847:=21,22c21%0a%3c *Fully Doxygen-commented source code.%0a%3c %0a---%0a> %0a
+host:1166788965=148.187.130.131
+author:1166788847=Ugo Varetto
+diff:1166788847:1166788808:=3,4c3,4%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.6.%0a%3c %0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x.%0a> %0a13d12%0a%3c **Iso-surface from Gaussian cube grid data%0a
+host:1166788847=148.187.130.131
+author:1166788808=Ugo Varetto
+diff:1166788808:1166730393:=5,20d4%0a%3c Some of the features added in this new version are:%0a%3c *Multiplatform: Mac OS X, Windows, Linux%0a%3c *Completely redesigned UI%0a%3c *Visualization of residues (ribbon or schematic)%0a%3c *Complete control over the generation of molecular surfaces (bounding box and resolution)%0a%3c *Visualization of the following surfaces:%0a%3c **Orbitals%0a%3c **Iso-surface from density matrix%0a%3c **SAS%0a%3c **SES%0a%3c **Van der Waals%0a%3c *Animation of molecular surfaces%0a%3c *Export to PostScript%0a%3c *Export animation%0a%3c *Plane widget to visualize a scalar field: the plane can be freely moved in 3d space and the points on the plane surface will be colored according to the value of the scalar field: a cursor can be moved on the plane surface to show the exact value of the field at a specific point in space. %0a%3c %0a
+host:1166788808=148.187.130.131
+author:1166730393=
+diff:1166730393:1166717906:=5,8c5,6%0a%3c This site is currently used for all the development tasks and as the main source code repository.%0a%3c %0a%3c The bioinformatics.org project page is [[http://bioinformatics.org/project/?group_id=678 | here]]. %0a%3c %0a---%0a> This site is currently used for all the development tasks and as the main source code repository. %0a> %0a
+host:1166730393=148.187.130.131
+author:1166717906=Ugo Varetto
+diff:1166717906:1166717866:=3,4c3,4%0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.x.%0a%3c %0a---%0a> Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.6.%0a> %0a
+host:1166717906=148.187.130.131
+author:1166717866=Ugo Varetto
+diff:1166717866:1166549351:=1,4c1,6%0a%3c Molekel is an opensource (GPL) multiplatform molecular visualization program being developed at the [[http://www.cscs.ch | Swiss National Supercomputing Centre (CSCS)]].%0a%3c %0a%3c Version 5.0 has been released on December 21'^st^' 2006 and is an almost complete rewrite of Molekel 4.6.%0a%3c %0a---%0a> !! %25red%25 Update in progress%0a> %0a> Molekel is a multiplatform molecular visualization program being developed at the [[http://www.cscs.ch | Swiss National Supercomputing Centre (CSCS)]].%0a> %0a> Molekel was developed at the University of Geneva and CSCS/ETH Zurich in the early nineties, and is currently being rewritten under an open source GPL license.%0a> %0a6a9,11%0a> '''Note:'''%0a> ''This site is currently being updated in preparation for the release of Molekel 5.0 on December 21'^st^'. In the meantime, if you are interested in this project you can checkout the development page [[http://bioinformatics.org/project/?group_id=678  | here]] and subscribe to mailing lists, post a message to a forum, download released files or contact me directly.''%0a> %0a
+host:1166717866=148.187.130.131
+author:1166549351=Ugo Varetto
+diff:1166549351:1166549339:=1,2c1,2%0a%3c !! %25red%25 Update in progress%0a%3c %0a---%0a> !! %25red$ Update in progress%0a> %0a
+host:1166549351=148.187.130.131
+author:1166549339=Ugo Varetto
+diff:1166549339:1166539564:=1,2d0%0a%3c !! %25red$ Update in progress%0a%3c %0a
+host:1166549339=148.187.130.131
+author:1166539564=
+diff:1166539564:1166539297:=8,9c8,15%0a%3c ''This site is currently being updated in preparation for the release of Molekel 5.0 on December 21'^st^'. In the meantime, if you are interested in this project you can checkout the development page [[http://bioinformatics.org/project/?group_id=678  | here]] and subscribe to mailing lists, post a message to a forum, download released files or contact me directly.''%0a%3c %0a---%0a> ->''This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page [[http://bioinformatics.org/project/?group_id=678  | here]] and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.''%0a> %0a> %0a> [[(Attach:)testimage.png]]%0a> [[testimage.png]]%0a> -----------------%0a> [[molekel_mac_sshot1.jpg]]%0a> %0a
+host:1166539564=148.187.130.131
+author:1166539297=
+diff:1166539297:1166539276:=14,15c14,15%0a%3c [[molekel_mac_sshot1.jpg]]%0a%3c %0a---%0a> molekel_mac_sshot1.jpg%0a> %0a
+host:1166539297=148.187.130.131
+author:1166539276=
+diff:1166539276:1166539100:=14,15c14,15%0a%3c molekel_mac_sshot1.jpg%0a%3c %0a---%0a> http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg%0a> %0a
+host:1166539276=148.187.130.131
+author:1166539100=
+diff:1166539100:1166539085:=12c12%0a%3c [[testimage.png]]%0a---%0a> testimage.png%0a
+host:1166539100=148.187.130.131
+author:1166539085=
+diff:1166539085:1166539017:=12d11%0a%3c testimage.png%0a
+host:1166539085=148.187.130.131
+author:1166539017=
+diff:1166539017:1166538959:=11c11%0a%3c [[(Attach:)testimage.png]]%0a---%0a> [[(Attach:)wiki/uploads/testimage.png]]%0a
+host:1166539017=148.187.130.131
+author:1166538959=
+diff:1166538959:1166538705:=11c11%0a%3c [[(Attach:)wiki/uploads/testimage.png]]%0a---%0a> [[(Attach:)testimage.png]]%0a
+host:1166538959=148.187.130.131
+author:1166538705=
+diff:1166538705:1166538608:=11c11%0a%3c [[(Attach:)testimage.png]]%0a---%0a> [[Attach:testimage.png]]%0a
+host:1166538705=148.187.130.131
+author:1166538608=
+diff:1166538608:1160385394:=10,11d9%0a%3c %0a%3c [[Attach:testimage.png]]%0a14d11%0a%3c %0a
+host:1166538608=148.187.130.131
+author:1160385394=
+diff:1160385394:1159481462:=5,6c5,6%0a%3c This site is currently used for all the development tasks and as the main source code repository. %0a%3c %0a---%0a> This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a> %0a
+host:1160385394=148.187.130.131
+author:1159481462=Ugo Varetto
+diff:1159481462:1159481414:=5,6c5%0a%3c This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a%3c %0a---%0a> %0a8,9c7,10%0a%3c ->''This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page [[http://bioinformatics.org/project/?group_id=678  | here]] and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.''%0a%3c %0a---%0a> ->This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a> %0a> This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page [[http://bioinformatics.org/project/?group_id=678  | here]] and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.%0a> %0a
+host:1159481462=84.74.35.168
+author:1159481414=Ugo Varetto
+diff:1159481414:1159481393:=5c5%0a%3c %0a---%0a> %3c%3c%3c%3c%3c%3c%3c %0a8c8,12%0a%3c %0a---%0a> =======%0a> ''''Note:''''%0a> ->This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a> >>>>>>> %0a> %0a
+host:1159481414=84.74.35.168
+author:1159481393=Ugo Varetto
+diff:1159481393:1159481345:=5,6c5%0a%3c %3c%3c%3c%3c%3c%3c%3c %0a%3c '''Note:'''%0a---%0a> ''''Note:''''%0a8,12c7%0a%3c =======%0a%3c ''''Note:''''%0a%3c ->This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a%3c >>>>>>> %0a%3c %0a---%0a> %0a16c11%0a%3c http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg%0a---%0a> http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg%0a\ No newline at end of file%0a
+host:1159481393=84.74.35.168
+author:1159481345=Ugo Varetto
+diff:1159481345:1159481290:=5,7c5,6%0a%3c ''''Note:''''%0a%3c ->This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a%3c %0a---%0a> This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a> %0a
+host:1159481345=84.74.35.168
+author:1159481290=Ugo Varetto
+diff:1159481290:1159480750:=7,8c7,8%0a%3c This site has just been created and it's going to be a work in progress for the next few weeks. In the meantime, if you are interested in this project you can checkout the development page [[http://bioinformatics.org/project/?group_id=678  | here]] and subscribe to a mailing list, post a message to a forum, download released files or contact me directly.%0a%3c %0a---%0a> This site has just been created and it's going to be a work in progress for the next few weeks.%0a> %0a
+host:1159481290=84.74.35.168
+author:1159480750=Ugo Varetto
+diff:1159480750:1159218573:=7,8d6%0a%3c This site has just been created and it's going to be a work in progress for the next few weeks.%0a%3c %0a
+host:1159480750=84.74.35.168
+author:1159218573=Ugo Varetto
+diff:1159218573:1159218435:=6c6%0a%3c %0a---%0a> [[Main/SideBar]]%0a
+host:1159218573=84.74.35.168
+author:1159218435=Ugo Varetto
+diff:1159218435:1159217964:=6c6%0a%3c [[Main/SideBar]]%0a---%0a> %0a
+host:1159218435=84.74.35.168
+author:1159217964=Ugo Varetto
+diff:1159217964:1159217947:=7a8%0a> [[Wiki.SideBar]]%0a
+host:1159217964=84.74.35.168
+author:1159217947=Ugo Varetto
+diff:1159217947:1159216557:=8c8%0a%3c [[Wiki.SideBar]]%0a---%0a> %0a
+host:1159217947=84.74.35.168
+author:1159216557=Ugo Varetto
+diff:1159216557:1159216538:=9c9,10%0a%3c http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg%0a\ No newline at end of file%0a---%0a> http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg%0a> [[SideBar]]%0a\ No newline at end of file%0a
+host:1159216557=84.74.35.168
+author:1159216538=Ugo Varetto
+diff:1159216538:1159132454:=10d9%0a%3c [[SideBar]]%0a\ No newline at end of file%0a
+host:1159216538=84.74.35.168
+author:1159132454=Ugo Varetto
+diff:1159132454:1159132420:=9c9%0a%3c http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg%0a---%0a> [[http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg]]%0a
+host:1159132454=84.72.112.101
+author:1159132420=Ugo Varetto
+diff:1159132420:1159132342:=9c9%0a%3c [[http://bioinformatics.org/molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg]]%0a---%0a> [[http://molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg]]%0a
+host:1159132420=84.72.112.101
+author:1159132342=Ugo Varetto
+diff:1159132342:1159132241:=9c9%0a%3c [[http://molekel/wiki/uploads/Main/molekel_mac_sshot1.jpg]]%0a---%0a> [[Attach:molekel_mac_sshot1.jpg]]%0a
+host:1159132342=84.72.112.101
+author:1159132241=Ugo Varetto
+diff:1159132241:1159132209:=9c9%0a%3c [[Attach:molekel_mac_sshot1.jpg]]%0a---%0a> [[molekel_mac_sshot1.jpg]]%0a
+host:1159132241=84.72.112.101
+author:1159132209=Ugo Varetto
+diff:1159132209:1159132171:=9c9%0a%3c [[molekel_mac_sshot1.jpg]]%0a---%0a> molekel_mac_sshot1.jpg%0a
+host:1159132209=84.72.112.101
+author:1159132171=Ugo Varetto
+diff:1159132171:1159131869:=9c9%0a%3c molekel_mac_sshot1.jpg%0a---%0a> (:Attach:molekel_mac_sshot1.jpg)%0a
+host:1159132171=84.72.112.101
+author:1159131869=Ugo Varetto
+diff:1159131869:1159131831:=9c9%0a%3c (:Attach:molekel_mac_sshot1.jpg)%0a---%0a> [[molekel_mac_sshot1.jpg]]%0a
+host:1159131869=84.72.112.101
+author:1159131831=Ugo Varetto
+diff:1159131831:1159131614:=9c9%0a%3c [[molekel_mac_sshot1.jpg]]%0a---%0a> (:attachlist:)%0a
+host:1159131831=84.72.112.101
+author:1159131614=Ugo Varetto
+diff:1159131614:1159131463:=9c9%0a%3c (:attachlist:)%0a---%0a> [[molekel_mac_sshot1.jpg]]%0a
+host:1159131614=84.72.112.101
+author:1159131463=Ugo Varetto
+diff:1159131463:1159131233:=9c9%0a%3c [[molekel_mac_sshot1.jpg]]%0a---%0a> [[Attach:molekel_mac_sshot1.jpg]]%0a
+host:1159131463=84.72.112.101
+author:1159131233=Ugo Varetto
+diff:1159131233:1159130729:=7,8c7,8%0a%3c -----------------%0a%3c %0a---%0a> ===========%0a> %0a
+host:1159131233=84.72.112.101
+author:1159130729=Ugo Varetto
+diff:1159130729:1159129526:=6,9d5%0a%3c %0a%3c ===========%0a%3c %0a%3c [[Attach:molekel_mac_sshot1.jpg]]%0a
+host:1159130729=84.72.112.101
+author:1159129526=Ugo Varetto
+diff:1159129526:1159129478:=0a1,2%0a> (:title Molekel Development Site:)%0a> %0a
+host:1159129526=84.72.112.101
+author:1159129478=Ugo Varetto
+csum:1159129478=Main Page
+diff:1159129478:1159128908:=1,2d0%0a%3c (:title Molekel Development Site:)%0a%3c %0a
+host:1159129478=84.72.112.101
+author:1159128908=Ugo Varetto
+csum:1159128908=Main Page
+diff:1159128908:1125534324:=1,5d0%0a%3c Molekel is a multiplatform molecular visualization program being developed at the [[http://www.cscs.ch | Swiss National Supercomputing Centre (CSCS)]].%0a%3c %0a%3c Molekel was developed at the University of Geneva and CSCS/ETH Zurich in the early nineties, and is currently being rewritten under an open source GPL license.%0a%3c %0a%3c This site is currently used for all the design/development tasks and as the main source code repository. Detailed information about Molekel can be found at the official Molekel website hosted at CSCS  [[http://www.cscs.ch/molekel | here]].%0a
+host:1159128908=84.72.112.101

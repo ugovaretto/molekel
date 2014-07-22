@@ -1,0 +1,31 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36
+author=
+charset=ISO-8859-1
+csum=
+ctime=1251721250
+host=148.187.133.156
+name=Main.Presentations
+rev=6
+targets=
+text=(:title Presentations:)%0a%0a!!!ACS National Meeting, Washington D.C. - August 2009%0ahttp://www.slideshare.net/molekel/molekel-august-2009-acs-meeting
+time=1401283003
+title=Presentations
+author:1401283003=
+diff:1401283003:1401282929:=4c4%0a%3c http://www.slideshare.net/molekel/molekel-august-2009-acs-meeting%0a\ No newline at end of file%0a---%0a> %3ciframe src="http://www.slideshare.net/slideshow/embed_code/1930974" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%25;" allowfullscreen> %3c/iframe> %3cdiv style="margin-bottom:5px"> %3cstrong> %3ca href="https://www.slideshare.net/molekel/molekel-august-2009-acs-meeting" title="Molekel - August 2009 ACS meeting" target="_blank">Molekel - August 2009 ACS meeting%3c/a> %3c/strong> from %3cstrong>%3ca href="http://www.slideshare.net/molekel" target="_blank">CSCS%3c/a>%3c/strong> %3c/div>%0a
+host:1401283003=148.187.133.156
+author:1401282929=
+diff:1401282929:1401282882:=4c4%0a%3c %3ciframe src="http://www.slideshare.net/slideshow/embed_code/1930974" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%25;" allowfullscreen> %3c/iframe> %3cdiv style="margin-bottom:5px"> %3cstrong> %3ca href="https://www.slideshare.net/molekel/molekel-august-2009-acs-meeting" title="Molekel - August 2009 ACS meeting" target="_blank">Molekel - August 2009 ACS meeting%3c/a> %3c/strong> from %3cstrong>%3ca href="http://www.slideshare.net/molekel" target="_blank">CSCS%3c/a>%3c/strong> %3c/div>%0a---%0a> (:slideshare molekel/molekel-august-2009-acs-meeting:)%0a
+host:1401282929=148.187.133.156
+author:1401282882=
+diff:1401282882:1251721395:=4c4%0a%3c (:slideshare molekel/molekel-august-2009-acs-meeting:)%0a---%0a> (:slideshare acs-aug-2009-molekel-latest-090831063621-phpapp01 Molekel-ACS-2009 :)%0a
+host:1401282882=148.187.133.156
+author:1251721395=
+diff:1251721395:1251721307:=4d3%0a%3c (:slideshare acs-aug-2009-molekel-latest-090831063621-phpapp01 Molekel-ACS-2009 :)%0a
+host:1251721395=148.187.130.153
+author:1251721307=
+diff:1251721307:1251721250:=1,3c1%0a%3c (:title Presentations:)%0a%3c %0a%3c !!!ACS National Meeting, Washington D.C. - August 2009%0a---%0a> (:title Presentations:)%0a\ No newline at end of file%0a
+host:1251721307=148.187.130.153
+author:1251721250=
+diff:1251721250:1251721250:=1d0%0a%3c (:title Presentations:)%0a\ No newline at end of file%0a
+host:1251721250=148.187.130.153

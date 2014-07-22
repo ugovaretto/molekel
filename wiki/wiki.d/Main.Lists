@@ -1,0 +1,12 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7
+author=
+host=148.187.130.131
+name=Main.Lists
+rev=1
+targets=
+text=You can currently subscribe to the following mailing lists:%0a*[[https://bioinformatics.org/mailman/listinfo/molekel-announce | Announce]]%0a*[[https://bioinformatics.org/mailman/listinfo/molekel-users | Users]]%0a%0aArchives are here:%0a*[[http://bioinformatics.org/pipermail/molekel-announce | Announce]]%0a*[[http://bioinformatics.org/pipermail/molekel-users | Users]]%0a%0a%0a%0a%0a
+time=1161001877
+author:1161001877=
+diff:1161001877:1161001877:=1,11d0%0a%3c You can currently subscribe to the following mailing lists:%0a%3c *[[https://bioinformatics.org/mailman/listinfo/molekel-announce | Announce]]%0a%3c *[[https://bioinformatics.org/mailman/listinfo/molekel-users | Users]]%0a%3c %0a%3c Archives are here:%0a%3c *[[http://bioinformatics.org/pipermail/molekel-announce | Announce]]%0a%3c *[[http://bioinformatics.org/pipermail/molekel-users | Users]]%0a%3c %0a%3c %0a%3c %0a%3c %0a
+host:1161001877=148.187.130.131

@@ -1,0 +1,12 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.3) Gecko/20060425 SUSE/1.5.0.3-7 Firefox/1.5.0.3
+author=
+host=148.187.130.131
+name=Doc.SideBar
+rev=1
+targets=
+text=test
+time=1166437428
+author:1166437428=
+diff:1166437428:1166437428:=1d0%0a%3c test%0a\ No newline at end of file%0a
+host:1166437428=148.187.130.131

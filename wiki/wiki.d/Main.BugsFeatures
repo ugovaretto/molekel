@@ -1,0 +1,15 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7
+author=
+host=148.187.130.131
+name=Main.BugsFeatures
+rev=2
+targets=
+text=The front-end for bug reports and feature requests is [[http://bioinformatics.org/bugs/?group_id=678 | here]].
+time=1161000444
+author:1161000444=
+diff:1161000444:1161000420:=1c1%0a%3c The front-end for bug reports and feature requests is [[http://bioinformatics.org/bugs/?group_id=678 | here]].%0a\ No newline at end of file%0a---%0a> The front-end for bug report and feature requests is [[http://bioinformatics.org/bugs/?group_id=678 | here]].%0a\ No newline at end of file%0a
+host:1161000444=148.187.130.131
+author:1161000420=
+diff:1161000420:1161000420:=1d0%0a%3c The front-end for bug report and feature requests is [[http://bioinformatics.org/bugs/?group_id=678 | here]].%0a\ No newline at end of file%0a
+host:1161000420=148.187.130.131

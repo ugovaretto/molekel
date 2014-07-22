@@ -1,0 +1,12 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4
+author=DaveG
+charset=ISO-8859-1
+csum=
+ctime=1195871140
+host=127.0.0.1
+name=Site.GlossyHue-SiteFooter
+rev=2
+targets=Site.GlossyHue-SiteFooter
+text=(:div class="footer-section":)%0a!!!!Footer 1%0aEdit [[{$SiteGroup}.{$SkinName}-SiteFooter | {$SiteGroup}.{$SkinName}-SiteFooter]] to change the footer sections.%0a(:divend:)%0a(:div class="footer-section":)%0a!!!! Footer 2%0a(:divend:)%0a(:div class="footer-about":)%0a!!!! About%0aSomething about yourself...%0a(:divend:)
+

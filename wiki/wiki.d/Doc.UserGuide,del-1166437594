@@ -1,0 +1,21 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.3) Gecko/20060425 SUSE/1.5.0.3-7 Firefox/1.5.0.3
+author=
+host=148.187.130.131
+name=Doc.UserGuide
+rev=4
+targets=
+text="delete"
+time=1166437554
+author:1166437554=
+diff:1166437554:1166437456:=1d0%0a%3c "delete"%0a\ No newline at end of file%0a
+host:1166437554=148.187.130.131
+author:1166437456=
+diff:1166437456:1166437316:=0a1%0a> [[Doc.SideBar | Side bar]]%0a\ No newline at end of file%0a
+host:1166437456=148.187.130.131
+author:1166437316=
+diff:1166437316:1166437294:=1c1%0a%3c [[Doc.SideBar | Side bar]]%0a\ No newline at end of file%0a---%0a> Doc.SideBar%0a\ No newline at end of file%0a
+host:1166437316=148.187.130.131
+author:1166437294=
+diff:1166437294:1166437294:=1d0%0a%3c Doc.SideBar%0a\ No newline at end of file%0a
+host:1166437294=148.187.130.131

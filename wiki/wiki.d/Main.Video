@@ -1,0 +1,21 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/530.5 (KHTML, like Gecko) Chrome/2.0.172.39 Safari/530.5
+author=
+charset=ISO-8859-1
+csum=
+ctime=1250699396
+host=148.187.130.153
+name=Main.Video
+rev=3
+targets=
+text=[[%3c%3c]]%0a!!Tutorials%0a%0a!!!Electron density%0aShows how to generate an electron density surface color coded with Molecular Electrostatic Potential values.%0a%0a!!!Real-time update%0aInteractive generation of an electron density surface using the real-time update check-box to help in optimally adjusting the bounding box used for computation/  %0a%0a!!!Molecular orbitals%0aHOMO generation.%0a%0a!!!Shaders%0aShows how to apply transparent plastic and x-ray effects to an electron density surface.%0a%0a!!!High resolution export & vibrational modes%0aGeneration  of vibrational modes animations and still images, image enhancement through anti-aliasing and export to high resolution image through the use of the "Scaling" box in the save dialog box.%0a%0a!!!Radiation spectra %0aVisualization of radiation spectra and export to PDF.%0a%0a%0a
+time=1250699528
+author:1250699528=
+diff:1250699528:1250699514:=1d0%0a%3c [[%3c%3c]]%0a
+host:1250699528=148.187.130.153
+author:1250699514=
+diff:1250699514:1250699396:=1c1,3%0a%3c !!Tutorials%0a---%0a> !Videos%0a> %0a> !!Tutorial%0a
+host:1250699514=148.187.130.153
+author:1250699396=
+diff:1250699396:1250699396:=1,23d0%0a%3c !Videos%0a%3c %0a%3c !!Tutorial%0a%3c %0a%3c !!!Electron density%0a%3c Shows how to generate an electron density surface color coded with Molecular Electrostatic Potential values.%0a%3c %0a%3c !!!Real-time update%0a%3c Interactive generation of an electron density surface using the real-time update check-box to help in optimally adjusting the bounding box used for computation/  %0a%3c %0a%3c !!!Molecular orbitals%0a%3c HOMO generation.%0a%3c %0a%3c !!!Shaders%0a%3c Shows how to apply transparent plastic and x-ray effects to an electron density surface.%0a%3c %0a%3c !!!High resolution export & vibrational modes%0a%3c Generation  of vibrational modes animations and still images, image enhancement through anti-aliasing and export to high resolution image through the use of the "Scaling" box in the save dialog box.%0a%3c %0a%3c !!!Radiation spectra %0a%3c Visualization of radiation spectra and export to PDF.%0a%3c %0a%3c %0a
+host:1250699396=148.187.130.153

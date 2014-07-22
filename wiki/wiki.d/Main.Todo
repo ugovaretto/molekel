@@ -1,0 +1,18 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.8) Gecko/20061025 Firefox/1.5.0.8
+author=Ugo Varetto
+host=148.187.130.131
+name=Main.Todo
+rev=3
+targets=
+text=Done with version 5.0.%0a%0aNew tasks will be added according to roadmap (TBD).%0a%0a%0a%0a    %0a %0a%0a%0a
+time=1166549099
+author:1166549099=Ugo Varetto
+diff:1166549099:1164270980:=1,6c1,15%0a%3c Done with version 5.0.%0a%3c %0a%3c New tasks will be added according to roadmap (TBD).%0a%3c %0a%3c %0a%3c %0a---%0a> *Add following surfaces:%0a> **Van der Waals%0a> **Solvent Accessible%0a> **Connolly%0a> %0a> *Map MEP onto following surfaces:%0a> **Van der Waals%0a> **SAS%0a> **Connolly%0a> %0a> *Export to POV/RMan%0a> %0a> *Export to PS%0a> %0a> %0a
+host:1166549099=148.187.130.131
+author:1164270980=
+diff:1164270980:1160999231:=0a1,28%0a> *Plane probe support for:%0a> **Grid Data from Gaussian cube files%0a> **Electron density (density matrix)%0a> **Spin density%0a> %0a> *MPEG export%0a> %0a> *Display width and height of 3D view in status bar when resizing window%0a> %0a> *Iso-surface generation of:%0a> **Electron density (density matrix)%0a> **Spin density%0a> %0a> *Display dipole moment%0a> %0a> *Animation:%0a> **Add option to recompute bonds%0a> **Display per-atom direction of movement as arrows%0a> %0a> *Compute and display:%0a> **Angle between bonds/atoms%0a> **Distance between atoms%0a> **Dihedral angle%0a> %0a> *Refactor MainWindow, MolekelMolecule, MolekelData to completely decouple UI from underlying rendering engine (right now there are things like a reference to an So object passed to a MainWindow method)%0a> %0a> *Add smart pointer and RAII classes into utility framework%0a> %0a6a35,36%0a> **Grid Data (OBGridData)%0a> **Electron density%0a
+host:1164270980=148.187.130.131
+author:1160999231=
+diff:1160999231:1160999231:=1,49d0%0a%3c *Plane probe support for:%0a%3c **Grid Data from Gaussian cube files%0a%3c **Electron density (density matrix)%0a%3c **Spin density%0a%3c %0a%3c *MPEG export%0a%3c %0a%3c *Display width and height of 3D view in status bar when resizing window%0a%3c %0a%3c *Iso-surface generation of:%0a%3c **Electron density (density matrix)%0a%3c **Spin density%0a%3c %0a%3c *Display dipole moment%0a%3c %0a%3c *Animation:%0a%3c **Add option to recompute bonds%0a%3c **Display per-atom direction of movement as arrows%0a%3c %0a%3c *Compute and display:%0a%3c **Angle between bonds/atoms%0a%3c **Distance between atoms%0a%3c **Dihedral angle%0a%3c %0a%3c *Refactor MainWindow, MolekelMolecule, MolekelData to completely decouple UI from underlying rendering engine (right now there are things like a reference to an So object passed to a MainWindow method)%0a%3c %0a%3c *Add smart pointer and RAII classes into utility framework%0a%3c %0a%3c *Add following surfaces:%0a%3c **Van der Waals%0a%3c **Solvent Accessible%0a%3c **Connolly%0a%3c %0a%3c *Map MEP onto following surfaces:%0a%3c **Grid Data (OBGridData)%0a%3c **Electron density%0a%3c **Van der Waals%0a%3c **SAS%0a%3c **Connolly%0a%3c %0a%3c *Export to POV/RMan%0a%3c %0a%3c *Export to PS%0a%3c %0a%3c %0a%3c     %0a%3c  %0a%3c %0a%3c %0a
+host:1160999231=148.187.130.131

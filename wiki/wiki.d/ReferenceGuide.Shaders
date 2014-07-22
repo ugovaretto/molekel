@@ -1,0 +1,54 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=ReferenceGuide.Shaders
+rev=14
+targets=
+text=(:title Shaders:)%0a%0aMolekel 5.2 and above supports programmable shaders for rendering a molecule structure or molecular surfaces. OpenGL GLSL shaders can be assigned on a per-molecule, per-surface basis.%0a%0aA video showing how to apply shaders is available here: http://molekel.cscs.ch/video/eldens_shader_apply_big.htm%0a%0aTo apply a shader to a molecule or one of the generated surfaces select the ''Display->Shaders'' menu which is enabled only when a molecule is selected and the system supports OpenGL 2.0 GLSL shaders (this is automatically detected by Molekel).%0a%0a%25width=500px%25 {$ResDir}/ReferenceGuide/shaders_dlg.png%0a%0a%0aAfter the shader dialog opens:%0a# select the surface to which the shader should be applied by clicking on one of the tabs%0a# select the vertex shader file (acts on geometry)%0a# select the fragment shader file (acts on pixels)%0a# if available select a parameter file containing the shader parameters' values%0a# click on ''Apply''%0a%0aWhen the shader is ''applied'' to the surface Molekel checks the configurable shader parameters and builds a GUI which allows the user to interactively modify the parameter values; in case the parameter name contains the string ''color'' or ''colour'' (case insensitive) and the type is ''vec3'' the value can be edited through a color dialog by clicking on the button under the parameter's name.%0a%0aIf a parameter file is selected the values read from the file are automatically applied to the shader and displayed in the GUI.%0a%0aShader parameter values can be saved to a text file and read back when needed.%0a%0a'''''IMPORTANT''''': If the vertex and fragment shader field are left blank and a parameter file is read first the vertex and fragment shader fields are automatically filled with filenames having the same filepath as the parameter file with the extension changed to ''.vert'' (vertex shaders) and ''.frag'' (fragment shaders).  %0a%0aA few shaders are provided in the @@''/shaders''@@ directory; try to apply e.g. the ''phong'' shader to a molecule and the ''x-ray'' shader to a surface by loading the corresponding  ''.params'' file and clicking on ''Apply''.%0a%0a%0a
+time=1277124966
+title=Shaders
+author:1277124966=
+diff:1277124966:1250666783:=4,5d3%0a%3c %0a%3c A video showing how to apply shaders is available here: http://molekel.cscs.ch/video/eldens_shader_apply_big.htm%0a
+host:1277124966=148.187.130.153
+author:1250666783=
+diff:1250666783:1250588926:=26a27%0a> ''Note that this section is currently containing some very basic information only and will be expanded soon.''%0a
+host:1250666783=148.187.130.153
+author:1250588926=
+diff:1250588926:1237309053:=3c3%0a%3c Molekel 5.2 and above supports programmable shaders for rendering a molecule structure or molecular surfaces. OpenGL GLSL shaders can be assigned on a per-molecule, per-surface basis.%0a---%0a> Molekel 5.2 or above supports programmable shaders for rendering a molecule structure or molecular surfaces. OpenGL GLSL shaders can be assigned on a per-molecule, per-surface basis.%0a
+host:1250588926=129.132.128.136
+author:1237309053=
+diff:1237309053:1236874603:=1,2c1%0a%3c (:title Shaders:)%0a%3c %0a---%0a> [[%3c%3c]]%0a
+host:1237309053=148.187.130.153
+author:1236874603=
+diff:1236874603:1236874594:=6c6%0a%3c %25width=500px%25 {$ResDir}/ReferenceGuide/shaders_dlg.png%0a---%0a> %25width=400px%25 {$ResDir}/ReferenceGuide/shaders_dlg.png%0a
+host:1236874603=148.187.130.153
+author:1236874594=
+diff:1236874594:1236677029:=6c6%0a%3c %25width=400px%25 {$ResDir}/ReferenceGuide/shaders_dlg.png%0a---%0a> {$ResDir}/ReferenceGuide/shaders_dlg.png%0a
+host:1236874594=148.187.130.153
+author:1236677029=
+diff:1236677029:1236618134:=1c1,3%0a%3c [[%3c%3c]]%0a---%0a> !Shaders%0a> %0a> %0a
+host:1236677029=148.187.130.153
+author:1236618134=
+diff:1236618134:1184853510:=8c8%0a%3c {$ResDir}/ReferenceGuide/shaders_dlg.png%0a---%0a> http://bioinformatics.org/molekel/uploads/ReferenceGuide/shaders_dlg.png%0a
+host:1236618134=148.187.130.153
+author:1184853510=
+diff:1184853510:1184853410:=18,19c18,19%0a%3c When the shader is ''applied'' to the surface Molekel checks the configurable shader parameters and builds a GUI which allows the user to interactively modify the parameter values; in case the parameter name contains the string ''color'' or ''colour'' (case insensitive) and the type is ''vec3'' the value can be edited through a color dialog by clicking on the button under the parameter's name.%0a%3c %0a---%0a> When the shader is ''applied'' to the surface Molekel checks the configurable shader parameters and builds a GUI which allows the user to interactively modify the parameter values; in case the parameter name contains the string ''color'' or ''colour'' (case insensitive) and the type is ''vec3d'' the value can be edited through a color dialog.%0a> %0a
+host:1184853510=148.187.130.131
+author:1184853410=
+diff:1184853410:1184853360:=28,29c28,29%0a%3c ''Note that this section is currently containing some very basic information only and will be expanded soon.''%0a%3c %0a---%0a> ''Note that this section is currently containing some very basic information and will be expanded soon.''%0a> %0a
+host:1184853410=148.187.130.131
+author:1184853360=
+diff:1184853360:1184853278:=8,10d7%0a%3c http://bioinformatics.org/molekel/uploads/ReferenceGuide/shaders_dlg.png%0a%3c %0a%3c %0a19d15%0a%3c %0a
+host:1184853360=148.187.130.131
+author:1184853278=
+diff:1184853278:1184853240:=4,5c4,5%0a%3c Molekel 5.2 or above supports programmable shaders for rendering a molecule structure or molecular surfaces. OpenGL GLSL shaders can be assigned on a per-molecule, per-surface basis.%0a%3c %0a---%0a> Molekel 5.2 or above support programmable shaders for rendering a molecule structure or molecular surfaces. OpenGL GLSL shaders can be assigned on a per-molecule, per-surface basis.%0a> %0a
+host:1184853278=148.187.130.131
+author:1184853240=
+diff:1184853240:1184853089:=5a6,7%0a> This section is currently containing some very basic information and will be expanded soon.%0a> %0a22,25c24,25%0a%3c A few shaders are provided in the @@''/shaders''@@ directory; try to apply e.g. the ''phong'' shader to a molecule and the ''x-ray'' shader to a surface by loading the corresponding  ''.params'' file and clicking on ''Apply''.%0a%3c %0a%3c ''Note that this section is currently containing some very basic information and will be expanded soon.''%0a%3c %0a---%0a> A few shaders are provided in the @@''/shaders@@ directory; try to apply e.g. the ''phong'' shader to a molecule and the ''x-ray'' shader to a surface by loading the corresponding  ''.params'' file and clicking on ''Apply''.%0a> %0a
+host:1184853240=148.187.130.131
+author:1184853089=
+diff:1184853089:1184853089:=1,25d0%0a%3c !Shaders%0a%3c %0a%3c %0a%3c Molekel 5.2 or above support programmable shaders for rendering a molecule structure or molecular surfaces. OpenGL GLSL shaders can be assigned on a per-molecule, per-surface basis.%0a%3c %0a%3c This section is currently containing some very basic information and will be expanded soon.%0a%3c %0a%3c To apply a shader to a molecule or one of the generated surfaces select the ''Display->Shaders'' menu which is enabled only when a molecule is selected and the system supports OpenGL 2.0 GLSL shaders (this is automatically detected by Molekel).%0a%3c %0a%3c After the shader dialog opens:%0a%3c # select the surface to which the shader should be applied by clicking on one of the tabs%0a%3c # select the vertex shader file (acts on geometry)%0a%3c # select the fragment shader file (acts on pixels)%0a%3c # if available select a parameter file containing the shader parameters' values%0a%3c # click on ''Apply''%0a%3c %0a%3c When the shader is ''applied'' to the surface Molekel checks the configurable shader parameters and builds a GUI which allows the user to interactively modify the parameter values; in case the parameter name contains the string ''color'' or ''colour'' (case insensitive) and the type is ''vec3d'' the value can be edited through a color dialog.%0a%3c If a parameter file is selected the values read from the file are automatically applied to the shader and displayed in the GUI.%0a%3c %0a%3c Shader parameter values can be saved to a text file and read back when needed.%0a%3c %0a%3c '''''IMPORTANT''''': If the vertex and fragment shader field are left blank and a parameter file is read first the vertex and fragment shader fields are automatically filled with filenames having the same filepath as the parameter file with the extension changed to ''.vert'' (vertex shaders) and ''.frag'' (fragment shaders).  %0a%3c %0a%3c A few shaders are provided in the @@''/shaders@@ directory; try to apply e.g. the ''phong'' shader to a molecule and the ''x-ray'' shader to a surface by loading the corresponding  ''.params'' file and clicking on ''Apply''.%0a%3c %0a
+host:1184853089=148.187.130.131

@@ -1,0 +1,3 @@
+version=pmwiki-2.2.0-beta62 ordered=1 urlencoded=1
+charset=ISO-8859-1
+text=!!%25apply=block id=main-title%25{*$Title}%25%25%0a%25p id=main-info%25$[Filed in]: {*$FullName}  &middot; $[Modified on] : {*$LastModifiedDate}%25%25%0a%0a

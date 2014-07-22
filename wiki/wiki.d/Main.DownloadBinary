@@ -1,0 +1,69 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/6.0.427.0 Safari/534.1
+author=
+charset=ISO-8859-1
+csum=
+host=129.132.202.35
+name=Main.DownloadBinary
+rev=19
+targets=
+text=(:title Download:)%0a%0a* [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_win.exe | Windows XP 32 bit ]]%0a* [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_linux_x86_32.tar.gz | Linux x86 32 bit]]  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)%0a* [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_linux_x86_64.tar.gz | Linux x86 64 bit]]  (built on Red Hat Enterprise 4)%0a* [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_MacOS_5_4_0_i386.dmg | Mac OS X Intel]] (built on Mac OS X 10.4.11)%0a* [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_1_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU)%0a %0a* [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script - provided by Lorenz Blum. In order for this script to work you need to provide the @@GFINPUT@@, @@GFOLDPRINT@@ and @@POP=@@ keywords to the ''Gaussian'' calculation.%0a%0aA subversion repository containing the source code is available here: %0ahttp://molekel.cscs.ch/svn/molekel%0a%0a!!!NOTE:%0a'''The Mac OS executables require X11''' due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  [[http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. | Apple website]]. To check if X11 is already installed on your system open the ''Finder->Utility'' folder and verify that an ''X11'' icon is present.    %0a
+time=1279180088
+title=Download
+author:1279180088=
+diff:1279180088:1278486734:=10,12d9%0a%3c %0a%3c A subversion repository containing the source code is available here: %0a%3c http://molekel.cscs.ch/svn/molekel%0a
+host:1279180088=129.132.202.35
+author:1278486734=
+diff:1278486734:1278486662:=
+host:1278486734=129.132.202.35
+author:1278486662=
+diff:1278486662:1278486631:=9c9%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script - provided by Lorenz Blum. In order for this script to work you need to provide the @@GFINPUT@@, @@GFOLDPRINT@@ and @@POP=@@ keywords to the ''Gaussian'' calculation.%0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script - provided by Lorenz Blum. In order for this script to work you need to provide the @@GFINPUT@@, @@GFOLDPRINT@@ and @@POP=@@ keywords.%0a
+host:1278486662=129.132.202.35
+author:1278486631=
+diff:1278486631:1278399340:=9c9%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script - provided by Lorenz Blum. In order for this script to work you need to provide the @@GFINPUT@@, @@GFOLDPRINT@@ and @@POP=@@ keywords.%0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script - provided by Lorenz Blum. %0a
+host:1278486631=129.132.202.35
+author:1278399340=
+diff:1278399340:1274346092:=9c9%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script - provided by Lorenz Blum. %0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script%0a
+host:1278399340=129.132.202.35
+author:1274346092=
+diff:1274346092:1274346078:=8,9c8,9%0a%3c  %0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]] shell script%0a---%0a> * %0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]]%0a
+host:1274346092=148.187.130.153
+author:1274346078=
+diff:1274346078:1274346046:=8d7%0a%3c * %0a
+host:1274346078=148.187.130.153
+author:1274346046=
+diff:1274346046:1256892281:=8d7%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/convG09to03.sh | Gaussian 09 to 03 converter]]%0a
+host:1274346046=148.187.130.153
+author:1256892281=
+diff:1256892281:1256892158:=10c10%0a%3c '''The Mac OS executables require X11''' due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  [[http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. | Apple website]]. To check if X11 is already installed on your system open the ''Finder->Utility'' folder and verify that an ''X11'' icon is present.    %0a---%0a> The Mac OS executables require X11 due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  [[http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. | Apple website]]. To check if X11 is already installed on your system open the ''Finder->Utility'' folder and verify that an ''X11'' icon is present.    %0a
+host:1256892281=148.187.130.153
+author:1256892158=
+diff:1256892158:1256892146:=9,10c9%0a%3c !!!NOTE:%0a%3c The Mac OS executables require X11 due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  [[http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. | Apple website]]. To check if X11 is already installed on your system open the ''Finder->Utility'' folder and verify that an ''X11'' icon is present.    %0a---%0a> !!!NOTE: The Mac OS executables require X11 due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  [[http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. | Apple website]]. To check if X11 is already installed on your system open the ''Finder->Utility'' folder and verify that an ''X11'' icon is present.    %0a
+host:1256892158=148.187.130.153
+author:1256892146=
+diff:1256892146:1253164271:=7,9c7%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_1_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU)%0a%3c %0a%3c !!!NOTE: The Mac OS executables require X11 due to a dependency in one of the libraries we use. The X11 environment is available on the Mac OS installation DVDs; specific information on X11 is available on the  [[http://support.apple.com/downloads/X11_for_Mac_OS_X_1_0. | Apple website]]. To check if X11 is already installed on your system open the ''Finder->Utility'' folder and verify that an ''X11'' icon is present.    %0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_1_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU) %0a
+host:1256892146=148.187.130.153
+author:1253164271=
+diff:1253164271:1253164230:=7c7%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_1_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU) %0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_0_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU) %0a
+host:1253164271=92.104.224.51
+author:1253164230=
+diff:1253164230:1250589785:=7c7%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3.1/molekel_MacOS_5_3_0_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU) %0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU) %0a
+host:1253164230=92.104.224.51
+author:1250589785=
+diff:1250589785:1236673522:=3,6c3,6%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_win.exe | Windows XP 32 bit ]]%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_linux_x86_32.tar.gz | Linux x86 32 bit]]  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_5_4_0_linux_x86_64.tar.gz | Linux x86 64 bit]]  (built on Red Hat Enterprise 4)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.4/molekel_MacOS_5_4_0_i386.dmg | Mac OS X Intel]] (built on Mac OS X 10.4.11)%0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_win32.exe | Windows XP 32 bit ]]%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_32.tar.gz | Linux x86 32 bit]]  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_64.tar.gz | Linux x86 64 bit]]  (built on Red Hat Enterprise 4)%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_i386.dmg | Mac OS X Intel]] (built on Mac OS X 10.4.11)%0a
+host:1250589785=129.132.128.136
+author:1236673522=
+diff:1236673522:1214294313:=1,2c1%0a%3c (:title Download:)%0a%3c %0a---%0a> !!!Download%0a
+host:1236673522=148.187.130.153
+author:1214294313=
+diff:1214294313:1214294265:=3,6c3,6%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_32.tar.gz | Linux x86 32 bit]]  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_64.tar.gz | Linux x86 64 bit]]  (built on Red Hat Enterprise 4)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_i386.dmg | Mac OS X Intel]] (built on Mac OS X 10.4.11)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_ppc.dmg | Mac OS X PPC]] (built on Mac OS X 10.4.11 - G5 CPU) %0a---%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_32.tar.gz | Linux x86 32 bit%3c/a>  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_64.tar.gz | Linux x86 64 bit%3c/a>  (built on Red Hat Enterprise 4)%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_i386.dmg | Mac OS X Intel (built on Mac OS X 10.4.11)%0a> * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_ppc.dmg | (built on Mac OS X 10.4.11 - G5 CPU) %0a
+host:1214294313=129.132.128.136
+author:1214294265=
+diff:1214294265:1171044449:=1,7c1%0a%3c !!!Download%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_win32.exe | Windows XP 32 bit ]]%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_32.tar.gz | Linux x86 32 bit%3c/a>  (built on Fedora Core 8, tested on Fedora Core 8 and SuSE 10.3)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_5_3_0_linux_x86_64.tar.gz | Linux x86 64 bit%3c/a>  (built on Red Hat Enterprise 4)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_i386.dmg | Mac OS X Intel (built on Mac OS X 10.4.11)%0a%3c * [[ftp://ftp.cscs.ch/out/molekel/molekel_5.3/molekel_MacOS_5_3_0_ppc.dmg | (built on Mac OS X 10.4.11 - G5 CPU) %0a%3c 	%0a\ No newline at end of file%0a---%0a> Binary downloads are available through [[http://bioinformatics.org/project/filelist.php?group_id=678 | this page]].%0a\ No newline at end of file%0a
+host:1214294265=129.132.128.136
+author:1171044449=
+diff:1171044449:1161000685:=1c1%0a%3c Binary downloads are available through [[http://bioinformatics.org/project/filelist.php?group_id=678 | this page]].%0a\ No newline at end of file%0a---%0a> Binary downloads are available through [[http://bioinformatics.org/project/filelist.php?group_id=678 | this]] page.%0a\ No newline at end of file%0a
+host:1171044449=148.187.130.131
+author:1161000685=
+diff:1161000685:1161000685:=1d0%0a%3c Binary downloads are available through [[http://bioinformatics.org/project/filelist.php?group_id=678 | this]] page.%0a\ No newline at end of file%0a
+host:1161000685=148.187.130.131

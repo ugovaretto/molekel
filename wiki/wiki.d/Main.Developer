@@ -1,0 +1,12 @@
+version=pmwiki-2.0.13 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.8) Gecko/20061025 Firefox/1.5.0.8
+author=Ugo Varetto
+host=148.187.130.131
+name=Main.Developer
+rev=1
+targets=
+text=!! %25red%25 Update in progress%0a%0aThis section will contain information on the following topics:%0a*Design/implementation%0a*Build/deployment information%0a*Libraries and frameworks used and evaluated%0a*Description of the development environment used to develop/build/install Molekel on different platforms
+time=1166551376
+author:1166551376=Ugo Varetto
+diff:1166551376:1166551376:=1,7d0%0a%3c !! %25red%25 Update in progress%0a%3c %0a%3c This section will contain information on the following topics:%0a%3c *Design/implementation%0a%3c *Build/deployment information%0a%3c *Libraries and frameworks used and evaluated%0a%3c *Description of the development environment used to develop/build/install Molekel on different platforms%0a\ No newline at end of file%0a
+host:1166551376=148.187.130.131

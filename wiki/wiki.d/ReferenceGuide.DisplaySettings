@@ -1,0 +1,75 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.48 Safari/525.19
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=ReferenceGuide.DisplaySettings
+rev=21
+targets=
+text=(:title Display Settings:)%0a%0aGlobal display settings affecting rendering speed and quality can be edited through the ''3D View Properties'' window.%0a%0a{$ResDir}/ReferenceGuide/3d_view_properties.png%0a%0a'''''3D View Size''''': changes the 3d view size.%0a%0a'''''Anti Aliasing''''': increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples %0a%0a||border = 0%0a||%25width=280%25 {$ResDir}/ReferenceGuide/antialiasing.png|| {$ResDir}/ReferenceGuide/no_antialiasing.png||%0a||''Anti-aliasing on''||''Anti-aliasing off''||%0a%0a%0a'''''Depth peeling''''': these parameters affect the rendering of transparent surfaces. Note that in general you always need this feature when displaying molecular orbitals, if not you will get wrong results.%0a%0aWhen rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces; change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a%0a||border = 0%0a||%25width=280 height=280%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a||''Depth-peeling on''||''Depth-peeling off''||%0a%0a
+time=1237308738
+title=Display Settings
+author:1237308738=
+diff:1237308738:1236949184:=1,2c1%0a%3c (:title Display Settings:)%0a%3c %0a---%0a> [[%3c%3c]]%0a
+host:1237308738=148.187.130.153
+author:1236949184=
+diff:1236949184:1236949164:=16,17c16%0a%3c %0a%3c When rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces; change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a---%0a> ->When rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces; change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a
+host:1236949184=148.187.130.153
+author:1236949164=
+diff:1236949164:1236949131:=
+host:1236949164=148.187.130.153
+author:1236949131=
+diff:1236949131:1236874409:=15c15%0a%3c '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces. Note that in general you always need this feature when displaying molecular orbitals, if not you will get wrong results.%0a---%0a> '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces.%0a
+host:1236949131=148.187.130.153
+author:1236874409=
+diff:1236874409:1236874365:=19c19%0a%3c ||%25width=280 height=280%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||%25width=270 height=270%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a
+host:1236874409=148.187.130.153
+author:1236874365=
+diff:1236874365:1236874282:=11c11%0a%3c ||%25width=280%25 {$ResDir}/ReferenceGuide/antialiasing.png|| {$ResDir}/ReferenceGuide/no_antialiasing.png||%0a---%0a> ||{$ResDir}/ReferenceGuide/antialiasing.png|| {$ResDir}/ReferenceGuide/no_antialiasing.png||%0a
+host:1236874365=148.187.130.153
+author:1236874282=
+diff:1236874282:1236874265:=19c19%0a%3c ||%25width=270 height=270%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||%25width=230 height=230%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a
+host:1236874282=148.187.130.153
+author:1236874265=
+diff:1236874265:1236702033:=19c19%0a%3c ||%25width=230 height=230%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||%25width=300 height=300%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a
+host:1236874265=148.187.130.153
+author:1236702033=
+diff:1236702033:1236702004:=19c19%0a%3c ||%25width=300 height=300%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||%25width=200 height=200%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a
+host:1236702033=148.187.130.153
+author:1236702004=
+diff:1236702004:1236701977:=19c19%0a%3c ||%25width=200 height=200%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||%25width=60 height=60%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a
+host:1236702004=148.187.130.153
+author:1236701977=
+diff:1236701977:1236674315:=19c19%0a%3c ||%25width=60 height=60%25{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a
+host:1236701977=148.187.130.153
+author:1236674315=
+diff:1236674315:1236617722:=1c1,2%0a%3c [[%3c%3c]]%0a---%0a> !!Display Settings%0a> %0a
+host:1236674315=148.187.130.153
+author:1236617722=
+diff:1236617722:1203005568:=5,6c5,6%0a%3c {$ResDir}/ReferenceGuide/3d_view_properties.png%0a%3c %0a---%0a> http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png%0a> %0a12c12%0a%3c ||{$ResDir}/ReferenceGuide/antialiasing.png|| {$ResDir}/ReferenceGuide/no_antialiasing.png||%0a---%0a> ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/antialiasing.png|| http://bioinformatics.org/molekel/uploads/ReferenceGuide/no_antialiasing.png||%0a20c20%0a%3c ||{$ResDir}/ReferenceGuide/orbitals_dp.png||{$ResDir}/ReferenceGuide/orbitals_no_dp.png||%0a---%0a> ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_dp.png||http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_no_dp.png||%0a22d21%0a%3c %0a
+host:1236617722=148.187.130.153
+author:1203005568=
+diff:1203005568:1203005499:=3,4c3,4%0a%3c Global display settings affecting rendering speed and quality can be edited through the ''3D View Properties'' window.%0a%3c %0a---%0a> Global display settings affecting rendering speed and quality can be edited through the !!3D View Properties!! window.%0a> %0a
+host:1203005568=148.187.130.131
+author:1203005499=
+diff:1203005499:1203005312:=16,18c16,18%0a%3c '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces.%0a%3c ->When rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces; change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a%3c %0a---%0a> '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces:%0a> ->when rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces; change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a> %0a
+host:1203005499=148.187.130.131
+author:1203005312=
+diff:1203005312:1203005226:=8a9,12%0a> '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces:%0a> ->when rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces%0a> ->change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a> %0a15,18d18%0a%3c %0a%3c '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces:%0a%3c ->when rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces; change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a%3c %0a
+host:1203005312=148.187.130.131
+author:1203005226=
+diff:1203005226:1203005204:=8d7%0a%3c %0a12d10%0a%3c %0a
+host:1203005226=148.187.130.131
+author:1203005204=
+diff:1203005204:1203005102:=7,12c7,12%0a%3c '''''3D View Size''''': changes the 3d view size.%0a%3c '''''Depth peeling''''': these parameters affect the rendering of transparent surfaces:%0a%3c ->when rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces%0a%3c ->change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a%3c '''''Anti Aliasing''''': increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples %0a%3c %0a---%0a> *''3D View Size'': changes the 3d view size.%0a> *''Depth peeling'': these parameters affect the rendering of transparent surfaces:%0a> **when rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces%0a> **change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a> *''Anti Aliasing'': increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples %0a> %0a
+host:1203005204=148.187.130.131
+author:1203005102=
+diff:1203005102:1203004813:=5,6c5,6%0a%3c http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png%0a%3c %0a---%0a> %25rfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png%0a> %0a13,19c13%0a%3c ||border = 0%0a%3c ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/antialiasing.png|| http://bioinformatics.org/molekel/uploads/ReferenceGuide/no_antialiasing.png||%0a%3c ||''Anti-aliasing on''||''Anti-aliasing off''||%0a%3c %0a%3c ||border = 0%0a%3c ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_dp.png||http://bioinformatics.org/molekel/uploads/ReferenceGuide/orbitals_no_dp.png||%0a%3c ||''Depth-peeling on''||''Depth-peeling off''||%0a---%0a> [[%3c%3c]]%0a\ No newline at end of file%0a
+host:1203005102=148.187.130.131
+author:1203004813=
+diff:1203004813:1203004706:=4,13d3%0a%3c %0a%3c %25rfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/3d_view_properties.png%0a%3c %0a%3c *''3D View Size'': changes the 3d view size.%0a%3c *''Depth peeling'': these parameters affect the rendering of transparent surfaces:%0a%3c **when rendering multiple transparent surfaces increase the ''Max peels'' parameter until you can see all the overlapping transparent surfaces%0a%3c **change the ''Occlusion ratio'' parameter to increase rendering speed or eliminate rendering artifacts: @@0@@ = best quality, @@1@@ = max speed%0a%3c *''Anti Aliasing'': increase the number of samples for better looking pictures with little or no jaggies(i.e. steps in diagonal lines or edges); note that each sample is a complete redraw, so rendering time will increase linearly with the number of samples %0a%3c %0a%3c [[%3c%3c]]%0a\ No newline at end of file%0a
+host:1203004813=148.187.130.131
+author:1203004706=
+diff:1203004706:1203004706:=1,3d0%0a%3c !!Display Settings%0a%3c %0a%3c Global display settings affecting rendering speed and quality can be edited through the !!3D View Properties!! window.%0a
+host:1203004706=148.187.130.131

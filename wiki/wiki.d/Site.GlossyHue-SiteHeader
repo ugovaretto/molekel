@@ -1,0 +1,17 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13 (.NET CLR 3.5.30729)
+author=
+charset=ISO-8859-1
+csum=
+host=129.132.128.136
+name=Site.GlossyHue-SiteHeader
+rev=7
+targets=Site.GlossyHue-SiteHeader
+text=(:if false:)%0a(:div class="sitelogo":)header-icon.gif%0a(:divend:)%0a(:ifend:)%0a%0a(:if false:)%0a! [[Path:/ | {$WikiTitle}]]%0a(:ifend)%0a%0a(:if false:)%0a(:div class="description":)Edit [[{$SiteGroup}.{$SkinName}-SiteHeader | {$SiteGroup}.{$SkinName}-SiteHeader]] to change the header.%0a(:divend:)%0a(:ifend:)%0a%0a(:if false:)%0a(:div class="description":)%0a'''''Molecular Visualization'''''%0a(:divend:)%0a(:ifend:)%0a%0a%0a%0a
+time=1250610245
+author:1250610245=
+diff:1250610245:1236791445:=6d5%0a%3c (:if false:)%0a8,9c7%0a%3c (:ifend)%0a%3c %0a---%0a> %0a15d12%0a%3c (:if false:)%0a19d15%0a%3c (:ifend:)%0a
+host:1250610245=129.132.128.136
+author:1236791445=
+diff:1236791445:1235347139:=8c8%0a%3c (:if false:)%0a---%0a> (:if true:)%0a12,18d11%0a%3c %0a%3c (:div class="description":)%0a%3c '''''Molecular Visualization'''''%0a%3c (:divend:)%0a%3c %0a%3c %0a%3c %0a
+host:1236791445=148.187.130.153

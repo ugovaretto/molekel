@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>$WikiTitle {$Group}/{$Titlespaced}</title>
+	<link rel='stylesheet' href='$SkinDirUrl/layout.css' type='text/css' />
+	<link rel='stylesheet' href='$SkinDirUrl/color-$SkinColor.css' type='text/css' />
+	<script type="text/javascript" src="$SkinDirUrl/javascript/jquery.js"></script>
+	<script type="text/javascript" src="$SkinDirUrl/javascript/blix.js"></script>
+
+<!--HTMLHeader-->
+</head>
+<body>
+
+<div id="container">
+	<div id="header">
+		<!--PageHeaderFmt-->
+		<div id="sitelogo"><!--wiki:{$Group}.SiteHeader {$SiteGroup}.SiteHeader {$SiteGroup}.{$SkinName}-SiteHeader--></div>
+		<!--/PageHeaderFmt-->
+	</div>
+
+	<div id="navigation">
+		<!--PageSearchFmt-->
+		<form action='$ScriptUrl'>
+			<fieldset>
+				<input class="hidden" type='hidden' name='n' value='{$FullName}' />
+				<input class="hidden" type='hidden' name='action' value='search' />
+				<input id="searchfield" type='text' name='q' value='' />
+				<input id="searchbutton" type='submit' name="searchbutton" value='$[Go!]' />
+			</fieldset>
+		</form>
+		<!--/PageSearchFmt-->
+		<div class="navlinks">
+			<!--wiki:{$Group}.SiteNav {$SiteGroup}.SiteNav {$SiteGroup}.{$SkinName}-SiteNav-->
+		</div>
+		<div class="pageactions">
+			<!--PageActionFmt-->
+			<!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions-->
+			<!--/PageActionFmt-->
+		</div>
+	</div>
+
+	<div id="content-wrapper">
+		<div id="content-container">
+			<div id="content">
+				<!--PageTitleFmt-->
+				<a href='{$ScriptUrl}/{$Group}' class="pagegroup">{$Group}</a>
+				<h1><a href='{$PageUrl}'>{$Titlespaced}</a></h1>
+				<!--/PageTitleFmt-->
+
+				<!--PageText-->
+			</div>
+		</div>
+	</div>
+
+	<div id="subcontent">
+		<div id='subcontent_bg'><!-- --></div>
+		<!--PageRightFmt-->
+		<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar {$SiteGroup}.{$SkinName}-SideBar-->
+		<!--/PageRightFmt-->
+	</div>
+
+	<div id="footer" class="clearfix">
+		<!--PageFooterFmt-->
+		<!--wiki:{$Group}.SiteFooter {$SiteGroup}.SiteFooter {$SiteGroup}.{$SkinName}-SiteFooter-->
+		<!--/PageFooterFmt-->
+	</div>
+
+</div>
+
+<div id="credits">
+	<div class="alignleft">
+	</div>
+	<div class="alignright">
+		<p><a href="http://www.kingcosmonaut.de/blix/" rel="nofollow">Blix</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>, powered by <a href="http://pmwiki.com/">PmWiki</a></p>
+	</div>
+</div>
+
+</body>
+</html>

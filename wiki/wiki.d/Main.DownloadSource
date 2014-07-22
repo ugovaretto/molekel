@@ -1,0 +1,44 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.48 Safari/525.19
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=Main.DownloadSource
+rev=11
+targets=
+text=[[%3c%3c]]%0aSource code and sample data can be downloaded through the svn web interface [[http://bioinformatics.org/websvn/listing.php?repname=molekel | here]] by clicking on the ''Tarball'' link on the right.%0a%0aNote that the branches also contain the project files for some flash presentations and are therefore pretty big; all you need to build Molekel is the ''@@src@@'' directory and optionally the ''@@build@@'' and ''@@data@@'' directories.
+time=1236673576
+author:1236673576=
+diff:1236673576:1236673563:=1c1%0a%3c [[%3c%3c]]%0a---%0a> %0a
+host:1236673576=148.187.130.153
+author:1236673563=
+diff:1236673563:1236673554:=
+host:1236673563=148.187.130.153
+author:1236673554=
+diff:1236673554:1212675867:=1d0%0a%3c %0a
+host:1236673554=148.187.130.153
+author:1212675867=
+diff:1212675867:1170866912:=3c3%0a%3c Note that the branches also contain the project files for some flash presentations and are therefore pretty big; all you need to build Molekel is the ''@@src@@'' directory and optionally the ''@@build@@'' and ''@@data@@'' directories.%0a\ No newline at end of file%0a---%0a> Note that the 5.1 branch also contains the project files for some flash presentations and it is therefore pretty big; all you need to build Molekel is the ''@@src@@'' directory and optionally the ''@@build@@'' and ''@@data@@'' directories.%0a\ No newline at end of file%0a
+host:1212675867=148.187.130.186
+author:1170866912=Ugo Varetto
+diff:1170866912:1170866884:=3c3%0a%3c Note that the 5.1 branch also contains the project files for some flash presentations and it is therefore pretty big; all you need to build Molekel is the ''@@src@@'' directory and optionally the ''@@build@@'' and ''@@data@@'' directories.%0a\ No newline at end of file%0a---%0a> Note that the 5.1 branch also contains the project files for some flash presentations and is therefore pretty big; all you need to build Molekel is the ''@@src@@'' directory and optionally the ''@@build@@'' and ''@@data@@'' directories.%0a\ No newline at end of file%0a
+host:1170866912=148.187.130.131
+author:1170866884=Ugo Varetto
+diff:1170866884:1170427548:=3c3,4%0a%3c Note that the 5.1 branch also contains the project files for some flash presentations and is therefore pretty big; all you need to build Molekel is the ''@@src@@'' directory and optionally the ''@@build@@'' and ''@@data@@'' directories.%0a\ No newline at end of file%0a---%0a> [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Fbranches%252F5.1%252F&rev=0&isdir=1 | Download source repository snapshot of 5.1 branch with sample data]].%0a> %0a
+host:1170866884=148.187.130.131
+author:1170427548=Ugo Varetto
+diff:1170427548:1166706097:=3,4c3,5%0a%3c [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Fbranches%252F5.1%252F&rev=0&isdir=1 | Download source repository snapshot of 5.1 branch with sample data]].%0a%3c %0a---%0a> [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Fbranches%252F5.0%252F&rev=0&isdir=1 | Download source repository snapshot of 5.0 branch with sample data]].%0a> %0a> [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Ftrunk%252F&rev=0&isdir=1 | Download source repository snapshot of main development branch with sample data]].%0a\ No newline at end of file%0a
+host:1170427548=148.187.130.131
+author:1166706097=Ugo Varetto
+diff:1166706097:1166706029:=5c5%0a%3c [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Ftrunk%252F&rev=0&isdir=1 | Download source repository snapshot of main development branch with sample data]].%0a\ No newline at end of file%0a---%0a> [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Ftrunk%252F&rev=0&isdir=1 | Download source repository snapshot with sample data]].%0a\ No newline at end of file%0a
+host:1166706097=148.187.130.131
+author:1166706029=Ugo Varetto
+diff:1166706029:1161001060:=3,4d2%0a%3c [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Fbranches%252F5.0%252F&rev=0&isdir=1 | Download source repository snapshot of 5.0 branch with sample data]].%0a%3c %0a
+host:1166706029=148.187.130.131
+author:1161001060=
+diff:1161001060:1161001023:=1,2c1,2%0a%3c Source code and sample data can be downloaded through the svn web interface [[http://bioinformatics.org/websvn/listing.php?repname=molekel | here]] by clicking on the ''Tarball'' link on the right.%0a%3c %0a---%0a> Source code and sample data can be downloaded through the svn web interface [[http://bioinformatics.org/websvn/listing.php?repname=molekel | here]] by clicking on the "Tarball" link on the right.%0a> %0a
+host:1161001060=148.187.130.131
+author:1161001023=
+diff:1161001023:1161001023:=1,3d0%0a%3c Source code and sample data can be downloaded through the svn web interface [[http://bioinformatics.org/websvn/listing.php?repname=molekel | here]] by clicking on the "Tarball" link on the right.%0a%3c %0a%3c [[http://bioinformatics.org/websvn/dl.php?repname=molekel&path=%252Ftrunk%252F&rev=0&isdir=1 | Download source repository snapshot with sample data]].%0a\ No newline at end of file%0a
+host:1161001023=148.187.130.131

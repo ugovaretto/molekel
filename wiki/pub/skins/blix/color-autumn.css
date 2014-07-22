@@ -1,0 +1,241 @@
+/* body
+--------------------------------------------------*/
+body {
+  color:#414141;
+  background:#EDE8E2;
+}
+
+body#commentblockpopup {background:white;}
+/* headings
+--------------------------------------------------*/
+h1, h1 a,
+h2, h2 a,
+h3 a,
+h4 a,
+.sidehead a
+  {color:#B53F00;}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+.sidehead a:hover
+  {color:#B53F00}
+
+/* links
+--------------------------------------------------*/
+a {color:#9E7638;}
+a:hover {color:#C55C3F;}
+
+a.commentlink {
+	padding-left:16px;
+	background:url(images/spring/comments.gif) center left no-repeat;
+}
+a.more {
+	padding-right:10px;
+	background:url(images/spring/more.gif) center right no-repeat;
+}
+/* paragraphs, lists, etc
+--------------------------------------------------*/
+pre,
+code
+  {background-color:#F8FAF2;}
+kbr {color:#C55C3F;}
+
+/* container
+--------------------------------------------------*/
+#content_bg {
+	background: white url(images/spring/container_bg.gif) repeat-y scroll left top;
+	width: 15px;
+	}
+#container {
+  padding-top:0;
+  border-top:30px solid white;
+	background-color:white;
+}
+#container.singlecol,
+#commentblockpopup #container {background-image:none;}
+/* header
+--------------------------------------------------*/
+#header {
+	background-color:#EBC709;
+	background-image:url(images/backgrounds/gradient_gold.png);
+}
+#header .sitetitle {
+   color: #C55C3F;
+}
+
+/* navigation
+--------------------------------------------------*/
+#navigation {background-color:#9E7638;}
+#navigation li, #navigation .navlinks li {border-color:white;}
+#navigation a {color:white;}
+#navigation .navlinks .selflink,
+#navigation .navlinks a:hover
+  {background-color:#B53F00;}
+#navigation .pageactions,
+#navigation .pageactions a {
+  color:#B53F00;
+}
+#navigation .pageactions a:hover {color:#fff;}
+#navigation form {
+  border-color:white;
+  background:#B53F00 url(images/spring/corner_bottom_right.gif) bottom right no-repeat;
+}
+#navigation #searchfield {border-color:#FFF9EA;}
+#navigation #searchbutton {
+  color:white;
+  background-color:#9E7638;
+}
+
+/* Entry
+--------------------------------------------------*/
+.entry {margin:0 0 40px 0;}
+.entry .info {
+  border-color:#F3F4F4;
+  background-color:#FAFAFA;
+}
+.entry a.more {
+	padding-left:12px;
+	background:url(images/spring/more.gif) center left no-repeat;
+}
+.entry .info .date,
+.entry .info .comments {
+	padding-left:15px;
+	border-color:#949494;
+}
+.entry .info .date {
+	background:url(images/spring/post.gif) center left no-repeat;
+}
+.entry .info .comments {
+	background:url(images/spring/comments.gif) 0 1px no-repeat;
+}
+.entry .info .tags,
+.entry .info .author {
+	padding-left:13px;
+	border-color:#949494;
+}
+.entry .info .author {
+	background:url(images/spring/author.gif) 0 2px no-repeat;
+}
+.entry .info .tags {
+	background:url(images/spring/categories_yellow.gif) 0 2px no-repeat;
+}
+.entry #filedunder {border-color:#F3F4F4;}
+
+/* Mini-Entry
+--------------------------------------------------*/
+.minientry	{border-color:#D9D9D9;}
+.minientry .commentlink {border-color:#949494;}
+.minientry .permalink {
+	padding-left:15px;
+	background:url(images/spring/post.gif) center left no-repeat;
+}
+.minientry .author {
+	padding-left:23px;
+	border-color:#949494;
+	background:url(images/spring/author.gif) 10px 2px no-repeat;
+}
+/* Comments
+--------------------------------------------------*/
+#commentblock h2 a {color:#6C8C37;}
+#commentblock li.trackback,#commentblock li.pingback {list-style-image:url(images/spring/pingtrackback.gif);}
+#commentblock form {background-color:#EDF3DE;}
+#commentblock .header {background-color:#EDF3DE;}
+#commentblock .header.alt {background-color:#E9F7F6;}
+/* form
+--------------------------------------------------*/
+form p {border-color:white;}
+form label { color:#B53FOO;}
+form em {color:#C8C8B4;}
+form input {color:#414141;}
+#wikiedit form input[type="submit"]:hover {background-color:#B53F00;}
+form input, form textarea {
+  border-color:#DCDCDC #F0F0F0 #F0F0F0 #DCDCDC;
+}
+form .inputbutton {
+  border-color:white #DCDCDC #DCDCDC white;
+  background-color:#F0F0F0;
+}
+
+/* Archives
+--------------------------------------------------*/
+.archive .postspermonth {color:#A0A0A0;}
+/* content misc
+--------------------------------------------------*/
+.next a {
+	padding-right:10px;
+	background:url(images/spring/next.gif) center right no-repeat;
+}
+.previous a {
+	padding-left:10px;
+	background:url(images/spring/previous.gif) center left no-repeat;
+}
+#entrynavigation {border-color:#F3F4F4;}
+.editlink {
+	background:url(images/spring/edit.gif) 0 -13px no-repeat;
+	padding-left: 18px;
+}
+/* subcontent
+--------------------------------------------------*/
+#subcontent_bg {
+	background:transparent url(images/spring/subcontent_bg.gif) no-repeat scroll left top;
+	height:45px;
+	width:15px;
+}
+
+/* subcontent headings
+--------------------------------------------------*/
+#subcontent .sidehead {
+  color:white;
+  background:#9E7638 url(images/spring/corner_top_left.gif) top left no-repeat;
+}
+#subcontent .sidehead em {
+	background:url(images/spring/corner_bottom_right.gif) bottom right no-repeat;
+}
+
+/* subcontent list
+--------------------------------------------------*/
+#subcontent ul li {border-bottom-color:#F0F0F0;}
+#subcontent li a:hover {background-color:#FFFBF0;}
+#subcontent ul.pages li {list-style-image:url(images/spring/post_yellow.gif);}
+#subcontent ul.months li {list-style-image:url(images/spring/categories_yellow.gif);}
+#subcontent ul.links li {list-style-image:url(images/spring/links_yellow.gif);}
+#subcontent ul.feeds li {list-style-image:url(images/spring/feeds_yellow.gif);}
+#subcontent ul.posts li {list-style-image:url(images/spring/post_yellow.gif);}
+#subcontent ul li li {list-style-image:url(images/spring/sub_categories_yellow.gif);}
+
+#subcontent .list-post li {background: url(images/spring/post_yellow.gif) no-repeat left top; list-style: none; padding-left: 20px !important;}
+#subcontent .list-admin li {background: url(images/spring/author.gif) no-repeat left center;	list-style: none; padding-left: 20px !important;}
+#subcontent .list-comments li {background: url(images/spring/comments.gif) no-repeat left top; list-style: none; padding-left: 20px !important;}
+#subcontent .list-cat li {background: url(images/spring/categories_yellow.gif) no-repeat left top; list-style: none; padding-left: 20px !important;}
+
+/* calendar
+--------------------------------------------------*/
+#wp-calendar {color:#A0A0A0;}
+#subcontent table caption {border-bottom-color:#F3F4F4;}
+#subcontent table thead tr {
+	border-bottom-color:#F3F4F4;
+	color:#414141;
+}
+#subcontent table th {border-bottom-color:#F3F4F4;}
+#subcontent table td#today {
+	border-color:#F3F4F4;
+	color:#414141;
+}
+#subcontent table td a {
+	border-bottom-color:#A3C159;
+	background-color:#EDF3DE;
+}
+#subcontent table tfoot {border-top-color:#F3F4F4;}
+#subcontent table tfoot a {background:none;}
+/* footer
+--------------------------------------------------*/
+#footer {
+  color:#A0A0A0;
+  background:white;
+}
+/*#footer p {border-top:6px solid #E9F7F6;}*/
+#footer {border-top:6px solid #E9F7F6;}
+#footer a {color:#A0A0A0;}
+#footer a:hover {color:#414141;}
+#footer strong {color:#C55C3F;}

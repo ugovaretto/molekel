@@ -1,0 +1,84 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.48 Safari/525.19
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=ReferenceGuide.GridData
+rev=24
+targets=
+text=(:title Surface from grid data:)%0a%0aIt is possible to generate an iso-surface from grid data read from a Gaussian cube or ADF t41 files through the "Grid Data Surface Dialog" (''Surfaces''-''Grid Data'' menu item).%0a%0a{$ResDir}/ReferenceGuide/griddata_dlg.png%0a%0aThis dialog box shows the information about the current dataset in the read-only ''Grid Data'' section.%0a%0aThe step multiplier (dafault is 1) can be increased to decrease the resolution of the generated surface for faster surface generation.%0a%0aThe rendering style can be changed after the surface has been generated.%0a%0aTo generate the surface simply press the ''Generate'' button.%0a%0aTo remove the surface press the ''Remove'' button which is enabled only if a surface has been generated.%0a%0aChecking the "Real-time Update" checkbox will cause a surface to be re-generated without having to press the ''Generate'' button each time any value in the dialog box changes.%0a%0aMolekel 5.1.1 or newer can display surfaces generated from grid data contained in ADF Tape41 files; when grid data are read from ADF files the ''Grids'' drop-down list box contains a list of all the grids found in the file: to generate an iso-surface from a particular grid simply select the grid name in the list before pressing the ''Generate'' button. Every surface can be displayed with a different color: to change the color of a specific surface select the grid name in the ''Grids'' list view and press the ''Color'' button.%0a%0a%0a!!Using negative and positive iso-values at the same time%0a%0aAlthough this feature is not supported yet in the released versions, it is possible to use both negative and positive iso-values, or in general multiple iso-values, by  loading multiple (one per iso-value) copies of the same molecule and then generate one surface with a different iso-value for each copy of the loaded molecule.%0a%0ae.g. %0a%0a||border=0%0a|| %25width=170px%25 {$ResDir}/ReferenceGuide/gridminus.png ||  %25width=170px%25 {$ResDir}/ReferenceGuide/gridplus.png ||  %25width=170px%25 {$ResDir}/ReferenceGuide/gridplusminus.png ||%0a||''Copy 1, iso value = -0.05'' ||''Copy 2, iso value = 0.05''|| Copy 1 & 2 displayed together ||%0a%0a%0a!!Smoothing%0a%0aMolekel 5.1 or newer does support smoothing of the generated isosurfaces through Laplacian smoothing.%0a%0a||border=0%0a|| %25width=220px%25 {$ResDir}/ReferenceGuide/cube_surface_no_smoothing.png ||  %25width=220px%25 {$ResDir}/ReferenceGuide/cube_surface_smoothing_200_0.01.png ||%0a||''Iso-surface, no smoothing'' ||''Iso-surface, 200 iterations with 0.01 relaxation''||%0a%0a%0a%0a%0a%0a
+time=1236874195
+title=Surface from grid data
+author:1236874195=
+diff:1236874195:1236874143:=38c38%0a%3c || %25width=220px%25 {$ResDir}/ReferenceGuide/cube_surface_no_smoothing.png ||  %25width=220px%25 {$ResDir}/ReferenceGuide/cube_surface_smoothing_200_0.01.png ||%0a---%0a> ||{$ResDir}/ReferenceGuide/cube_surface_no_smoothing.png || {$ResDir}/ReferenceGuide/cube_surface_smoothing_200_0.01.png ||%0a
+host:1236874195=148.187.130.153
+author:1236874143=
+diff:1236874143:1236874099:=29c29%0a%3c || %25width=170px%25 {$ResDir}/ReferenceGuide/gridminus.png ||  %25width=170px%25 {$ResDir}/ReferenceGuide/gridplus.png ||  %25width=170px%25 {$ResDir}/ReferenceGuide/gridplusminus.png ||%0a---%0a> || %25width=200px%25 {$ResDir}/ReferenceGuide/gridminus.png ||  %25width=200px%25 {$ResDir}/ReferenceGuide/gridplus.png ||  %25width=200px%25 {$ResDir}/ReferenceGuide/gridplusminus.png ||%0a
+host:1236874143=148.187.130.153
+author:1236874099=
+diff:1236874099:1236676909:=29c29%0a%3c || %25width=200px%25 {$ResDir}/ReferenceGuide/gridminus.png ||  %25width=200px%25 {$ResDir}/ReferenceGuide/gridplus.png ||  %25width=200px%25 {$ResDir}/ReferenceGuide/gridplusminus.png ||%0a---%0a> ||{$ResDir}/ReferenceGuide/gridminus.png || {$ResDir}/ReferenceGuide/gridplus.png || {$ResDir}/ReferenceGuide/gridplusminus.png ||%0a
+host:1236874099=148.187.130.153
+author:1236676909=
+diff:1236676909:1236618000:=1c1%0a%3c (:title Surface from grid data:)%0a---%0a> !Surface from grid data%0a
+host:1236676909=148.187.130.153
+author:1236618000=
+diff:1236618000:1199721909:=5,6c5,6%0a%3c {$ResDir}/ReferenceGuide/griddata_dlg.png%0a%3c %0a---%0a> http://bioinformatics.org/molekel/uploads/ReferenceGuide/griddata_dlg.png%0a> %0a29c29%0a%3c ||{$ResDir}/ReferenceGuide/gridminus.png || {$ResDir}/ReferenceGuide/gridplus.png || {$ResDir}/ReferenceGuide/gridplusminus.png ||%0a---%0a> ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/gridminus.png || http://bioinformatics.org/molekel/uploads/ReferenceGuide/gridplus.png || http://bioinformatics.org/molekel/uploads/ReferenceGuide/gridplusminus.png ||%0a38c38%0a%3c ||{$ResDir}/ReferenceGuide/cube_surface_no_smoothing.png || {$ResDir}/ReferenceGuide/cube_surface_smoothing_200_0.01.png ||%0a---%0a> ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png || http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png ||%0a
+host:1236618000=148.187.130.153
+author:1199721909=
+diff:1199721909:1199721812:=21d20%0a%3c %0a32d30%0a%3c %0a
+host:1199721909=148.187.130.131
+author:1199721812=
+diff:1199721812:1181302827:=21,30c21%0a%3c !!Using negative and positive iso-values at the same time%0a%3c %0a%3c Although this feature is not supported yet in the released versions, it is possible to use both negative and positive iso-values, or in general multiple iso-values, by  loading multiple (one per iso-value) copies of the same molecule and then generate one surface with a different iso-value for each copy of the loaded molecule.%0a%3c %0a%3c e.g. %0a%3c %0a%3c ||border=0%0a%3c ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/gridminus.png || http://bioinformatics.org/molekel/uploads/ReferenceGuide/gridplus.png || http://bioinformatics.org/molekel/uploads/ReferenceGuide/gridplusminus.png ||%0a%3c ||''Copy 1, iso value = -0.05'' ||''Copy 2, iso value = 0.05''|| Copy 1 & 2 displayed together ||%0a%3c %0a---%0a> %0a
+host:1199721812=148.187.130.131
+author:1181302827=
+diff:1181302827:1170419553:=3,4c3,4%0a%3c It is possible to generate an iso-surface from grid data read from a Gaussian cube or ADF t41 files through the "Grid Data Surface Dialog" (''Surfaces''-''Grid Data'' menu item).%0a%3c %0a---%0a> It is possible to generate an iso-surface from grid data read from a Gaussian cube file through the "Grid Data Surface Dialog" (''Surfaces''-''Grid Data'' menu item).%0a> %0a13,14c13,14%0a%3c To generate the surface simply press the ''Generate'' button.%0a%3c %0a---%0a> To generate the surface simply press on the ''Generate'' button.%0a> %0a19,21d18%0a%3c Molekel 5.1.1 or newer can display surfaces generated from grid data contained in ADF Tape41 files; when grid data are read from ADF files the ''Grids'' drop-down list box contains a list of all the grids found in the file: to generate an iso-surface from a particular grid simply select the grid name in the list before pressing the ''Generate'' button. Every surface can be displayed with a different color: to change the color of a specific surface select the grid name in the ''Grids'' list view and press the ''Color'' button.%0a%3c %0a%3c %0a
+host:1181302827=148.187.130.131
+author:1170419553=Ugo Varetto
+diff:1170419553:1170419486:=25,30c25,30%0a%3c ||''Iso-surface, no smoothing'' ||''Iso-surface, 200 iterations with 0.01 relaxation''||%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> ||''Iso-surface, no smoothing'' ||''Iso-surface, 200 smoothing steps with 0.01 relaxation''||%0a> %0a> %0a> %0a> %0a> %0a
+host:1170419553=148.187.130.131
+author:1170419486=Ugo Varetto
+diff:1170419486:1170419394:=24,30c24,29%0a%3c ||http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png || http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png ||%0a%3c ||''Iso-surface, no smoothing'' ||''Iso-surface, 200 smoothing steps with 0.01 relaxation''||%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> ||%25float%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing'' ||%25float%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''||%0a> %0a> %0a> %0a> %0a> %0a
+host:1170419486=148.187.130.131
+author:1170419394=Ugo Varetto
+diff:1170419394:1170419339:=24,29c24,30%0a%3c ||%25float%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing'' ||%25float%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''||%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> ||%25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing'' ||%25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing%0a>  steps with 0.01 relaxation''||%0a> %0a> %0a> %0a> %0a> %0a
+host:1170419394=148.187.130.131
+author:1170419339=Ugo Varetto
+diff:1170419339:1170419235:=23,30c23,29%0a%3c ||border=0%0a%3c ||%25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing'' ||%25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing%0a%3c  steps with 0.01 relaxation''||%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> %25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing''%0a> %25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''%0a> %0a> %0a> %0a> %0a> %0a
+host:1170419339=148.187.130.131
+author:1170419235=Ugo Varetto
+diff:1170419235:1170419152:=23,29c23,29%0a%3c %25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing''%0a%3c %25frame%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> %25lfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing''%0a> %25rfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''%0a> %0a> %0a> %0a> %0a> %0a
+host:1170419235=148.187.130.131
+author:1170419152=Ugo Varetto
+diff:1170419152:1170419048:=23,29c23,29%0a%3c %25lfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing''%0a%3c %25rfloat%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> %25lframe%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing''%0a> %25rframe%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''%0a> %0a> %0a> %0a> %0a> %0a
+host:1170419152=148.187.130.131
+author:1170419048=Ugo Varetto
+diff:1170419048:1170418916:=23,29c23,26%0a%3c %25lframe%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_no_smoothing.png | ''Iso-surface, no smoothing''%0a%3c %25rframe%25 http://bioinformatics.org/molekel/uploads/ReferenceGuide/cube_surface_smoothing_200_0.01.png | ''Iso-surface, 200 smoothing steps with 0.01 relaxation''%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> %0a> %0a> %0a> %0a
+host:1170419048=148.187.130.131
+author:1170418916=Ugo Varetto
+diff:1170418916:1166699532:=19,26c19,25%0a%3c !!Smoothing%0a%3c %0a%3c Molekel 5.1 or newer does support smoothing of the generated isosurfaces through Laplacian smoothing.%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> %0a> %0a> %0a> %0a> %0a> %0a> %0a
+host:1170418916=148.187.130.131
+author:1166699532=Ugo Varetto
+diff:1166699532:1166650270:=0a1,2%0a> !! %25red%25 Update in progress%0a> %0a
+host:1166699532=148.187.130.131
+author:1166650270=Ugo Varetto
+diff:1166650270:1166650020:=19,27c19,24%0a%3c Checking the "Real-time Update" checkbox will cause a surface to be re-generated without having to press the ''Generate'' button each time any value in the dialog box changes.%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> %0a> %0a> %0a> %0a> %0a> %0a
+host:1166650270=84.74.33.192
+author:1166650020=Ugo Varetto
+diff:1166650020:1166649694:=11,24c11,18%0a%3c The step multiplier (dafault is 1) can be increased to decrease the resolution of the generated surface for faster surface generation.%0a%3c %0a%3c The rendering style can be changed after the surface has been generated.%0a%3c %0a%3c To generate the surface simply press on the ''Generate'' button.%0a%3c %0a%3c To remove the surface press the ''Remove'' button which is enabled only if a surface has been generated.%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> The step (dafault is 1) can be increased to decrease the resolution of the generated surface for faster surface generation.%0a> %0a> %0a> %0a> %0a> %0a> %0a> %0a
+host:1166650020=84.74.33.192
+author:1166649694=Ugo Varetto
+diff:1166649694:1166649561:=9,18c9,14%0a%3c This dialog box shows the information about the current dataset in the read-only ''Grid Data'' section.%0a%3c %0a%3c The step (dafault is 1) can be increased to decrease the resolution of the generated surface for faster surface generation.%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> This dialog box shows the information about the current dataset in%0a> %0a> %0a> %0a> %0a> %0a
+host:1166649694=84.74.33.192
+author:1166649561=Ugo Varetto
+diff:1166649561:1166649224:=7,14c7%0a%3c http://bioinformatics.org/molekel/uploads/ReferenceGuide/griddata_dlg.png%0a%3c %0a%3c This dialog box shows the information about the current dataset in%0a%3c %0a%3c %0a%3c %0a%3c %0a%3c %0a---%0a> http://bioinformatics.org/molekel/uploads/ReferenceGuide/griddata_dlg.png%0a\ No newline at end of file%0a
+host:1166649561=84.74.33.192
+author:1166649224=Ugo Varetto
+diff:1166649224:1166649074:=5,7c5%0a%3c It is possible to generate an iso-surface from grid data read from a Gaussian cube file through the "Grid Data Surface Dialog" (''Surfaces''-''Grid Data'' menu item).%0a%3c %0a%3c http://bioinformatics.org/molekel/uploads/ReferenceGuide/griddata_dlg.png%0a\ No newline at end of file%0a---%0a> It is possible to generate an iso-surface from grid data read from a Gaussian cube file through the "Grid Data Surface Dialog" (''Surfaces''-''Grid Data'' menu item).%0a\ No newline at end of file%0a
+host:1166649224=84.74.33.192
+author:1166649074=Ugo Varetto
+diff:1166649074:1166648775:=5c5%0a%3c It is possible to generate an iso-surface from grid data read from a Gaussian cube file through the "Grid Data Surface Dialog" (''Surfaces''-''Grid Data'' menu item).%0a\ No newline at end of file%0a---%0a> It is possible to generate an iso-surface from grid data read from a Gaussian cube file by opening the through the ''Surfaces''-''Grid Data'' menu%0a\ No newline at end of file%0a
+host:1166649074=84.74.33.192
+author:1166648775=Ugo Varetto
+diff:1166648775:1166648775:=1,5d0%0a%3c !! %25red%25 Update in progress%0a%3c %0a%3c !Surface from grid data%0a%3c %0a%3c It is possible to generate an iso-surface from grid data read from a Gaussian cube file by opening the through the ''Surfaces''-''Grid Data'' menu%0a\ No newline at end of file%0a
+host:1166648775=84.74.33.192

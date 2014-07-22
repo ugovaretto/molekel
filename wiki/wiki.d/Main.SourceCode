@@ -1,0 +1,47 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+author=
+charset=ISO-8859-1
+csum=
+host=129.132.128.136
+name=Main.SourceCode
+rev=12
+targets=
+text=[[%3c%3c]]%0aThe ''Subversion'' repository url is%0a->[@ http://molekel.cscs.ch/svn/molekel @]%0a%0aThe code browser interface is %25newwin%25 [[http://molekel.cscs.ch/trac/molekel/browser | here ]].
+time=1253723982
+author:1253723982=
+diff:1253723982:1253723913:=5c5%0a%3c The code browser interface is %25newwin%25 [[http://molekel.cscs.ch/trac/molekel/browser | here ]].%0a\ No newline at end of file%0a---%0a> The code browser interface is [[http://molekel.cscs.ch/trac/molekel/browser | here ]].%0a\ No newline at end of file%0a
+host:1253723982=129.132.128.136
+author:1253723913=
+diff:1253723913:1253723904:=3c3%0a%3c ->[@ http://molekel.cscs.ch/svn/molekel @]%0a---%0a> [@ http://molekel.cscs.ch/svn/molekel @]%0a
+host:1253723913=129.132.128.136
+author:1253723904=
+diff:1253723904:1253723896:=3c3%0a%3c [@ http://molekel.cscs.ch/svn/molekel @]%0a---%0a> ->[@ http://molekel.cscs.ch/svn/molekel @]%0a
+host:1253723904=129.132.128.136
+author:1253723896=
+diff:1253723896:1253723885:=3c3%0a%3c ->[@ http://molekel.cscs.ch/svn/molekel @]%0a---%0a> ->[@@ http://molekel.cscs.ch/svn/molekel @@]%0a
+host:1253723896=129.132.128.136
+author:1253723885=
+diff:1253723885:1253723823:=3c3%0a%3c ->[@@ http://molekel.cscs.ch/svn/molekel @@]%0a---%0a> ->[= http://molekel.cscs.ch/svn/molekel =]%0a
+host:1253723885=129.132.128.136
+author:1253723823=
+diff:1253723823:1236673845:=2,5c2,5%0a%3c The ''Subversion'' repository url is%0a%3c ->[= http://molekel.cscs.ch/svn/molekel =]%0a%3c %0a%3c The code browser interface is [[http://molekel.cscs.ch/trac/molekel/browser | here ]].%0a\ No newline at end of file%0a---%0a> Source code is accessible through SVN at the following url:%0a> ->[= svn://bioinformatics.org/svnroot/molekel =]%0a> %0a> Or through a web interface [[http://bioinformatics.org/websvn/listing.php?repname=molekel&path=%252F&sc=0 | here ]].%0a\ No newline at end of file%0a
+host:1253723823=129.132.128.136
+author:1236673845=
+diff:1236673845:1236673694:=
+host:1236673845=148.187.130.153
+author:1236673694=
+diff:1236673694:1236673648:=3c3%0a%3c ->[= svn://bioinformatics.org/svnroot/molekel =]%0a---%0a> ->SVN url: svn://bioinformatics.org/svnroot/molekel%0a
+host:1236673694=148.187.130.153
+author:1236673648=
+diff:1236673648:1236673639:=4d3%0a%3c %0a
+host:1236673648=148.187.130.153
+author:1236673639=
+diff:1236673639:1236673615:=2,3c2,5%0a%3c Source code is accessible through SVN at the following url:%0a%3c ->SVN url: svn://bioinformatics.org/svnroot/molekel%0a---%0a> Source code is accessible through SVN:%0a> %0a>   SVN url: svn://bioinformatics.org/svnroot/molekel%0a> %0a
+host:1236673639=148.187.130.153
+author:1236673615=
+diff:1236673615:1161000335:=1d0%0a%3c [[%3c%3c]]%0a
+host:1236673615=148.187.130.153
+author:1161000335=
+diff:1161000335:1161000335:=1,5d0%0a%3c Source code is accessible through SVN:%0a%3c %0a%3c   SVN url: svn://bioinformatics.org/svnroot/molekel%0a%3c %0a%3c Or through a web interface [[http://bioinformatics.org/websvn/listing.php?repname=molekel&path=%252F&sc=0 | here ]].%0a\ No newline at end of file%0a
+host:1161000335=148.187.130.131

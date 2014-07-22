@@ -1,0 +1,12 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4
+author=DaveG
+charset=ISO-8859-1
+csum=
+ctime=1194389975
+host=127.0.0.1
+name=Site.Blix-SiteHeader
+rev=21
+targets=
+text=(:div class="sitetitle":)%0a! [[Path:/ | {$WikiTitle}]]%0a(:divend:)%0a%0a(:if false:)%0aTo place an image logo:%0a(:div style="top-margin: 20px;":)Attach:my-logo.gif%0a(:divend:)%0a(:if:)
+time=1235347070

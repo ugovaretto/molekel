@@ -1,0 +1,21 @@
+version=pmwiki-2.2.0 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.48 Safari/525.19
+author=
+charset=ISO-8859-1
+csum=
+host=148.187.130.153
+name=ReferenceGuide.Analysis
+rev=3
+targets=
+text=(:title Analysis tools:)%0a%0aThe following analysis features are currently supported:%0a*Visualize scalar field and display value at specific point in space%0a*Compute distance between two atoms%0a*Compute angle among three atoms%0a*Compute dihedral angle
+time=1236676970
+title=Analysis tools
+author:1236676970=
+diff:1236676970:1166699616:=1c1%0a%3c (:title Analysis tools:)%0a---%0a> !Analysis%0a
+host:1236676970=148.187.130.153
+author:1166699616=Ugo Varetto
+diff:1166699616:1166657270:=0a1,2%0a> !! %25red%25 Update in progress%0a> %0a
+host:1166699616=148.187.130.131
+author:1166657270=Ugo Varetto
+diff:1166657270:1166657270:=1,9d0%0a%3c !! %25red%25 Update in progress%0a%3c %0a%3c !Analysis%0a%3c %0a%3c The following analysis features are currently supported:%0a%3c *Visualize scalar field and display value at specific point in space%0a%3c *Compute distance between two atoms%0a%3c *Compute angle among three atoms%0a%3c *Compute dihedral angle%0a\ No newline at end of file%0a
+host:1166657270=84.74.33.192
