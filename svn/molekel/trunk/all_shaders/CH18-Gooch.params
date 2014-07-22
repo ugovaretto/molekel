@@ -1,0 +1,6 @@
+vec3 LightPosition 0 10 4
+vec3 SurfaceColor 0.2 0.2 0.2
+vec3 WarmColor 0.6 0.3 0.3
+vec3 CoolColor 0 0 0.6
+float DiffuseWarm 0.45
+float DiffuseCool 1

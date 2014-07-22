@@ -1,0 +1,30 @@
+//
+// Vertex shader for hemisphere lighting with ambient occlusion
+//
+// Author: Randi Rost
+//
+// Copyright (c) 2003-2006: 3Dlabs, Inc.
+//
+// See 3Dlabs-License.txt for license information
+//
+
+uniform vec3 LightPosition;
+uniform vec3 SkyColor;
+uniform vec3 GroundColor;
+
+attribute float Accessibility;
+
+varying vec3  DiffuseColor;
+
+void main()
+{
+    vec3 ecPosition = vec3(gl_ModelViewMatrix * gl_Vertex);
+    vec3 tnorm      = normalize(gl_NormalMatrix * gl_Normal);
+    vec3 lightVec   = normalize(LightPosition - ecPosition);
+    float costheta  = dot(tnorm, lightVec);
+    float a         = 0.5 + 0.5 * costheta;
+
+    DiffuseColor = mix(GroundColor, SkyColor, a) * Accessibility;
+
+    gl_Position     = ftransform();
+}

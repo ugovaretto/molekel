@@ -1,0 +1,214 @@
+This is Molekel 5.4 - development
+
+IMPORTANT:
+  Make sure that line separators in input files match
+  the file separator of the platform you are running Molekel on;
+  e.g. if you have a file that was generated/modified on Windows
+  and you want to read that file on Linux then convert the end
+  of line separators with dos2unix.
+  If end of line separators are not correct you might incur into
+  problems when reading GAMESS, Molden and Gaussian files.
+
+Please report any problems through the http://molekel.cscs.ch website
+
+When submitting a bug please make sure you specify
+1) Molekel version
+2) Operating System
+3) Graphics card
+
+Change log
+==========
+
+5.4
+
+- Added support for saving images bigger than 3d view window;
+  doesn't require offscreen rendering support; works on any card
+
+- Added ability to freely move the bounding box used for computing
+  orbital and electron density surfaces; this allows to save time by
+  restricting the computation to a specific volume of space
+
+- Added context menu in tree view to speedup interaction with display
+  preferences and surface generation
+
+- Added display style button + menu to quickly switch among styles
+
+- Added display of animation sequence number
+
+- Fixed bugs:
+
+  * 675	 - Display geometry number	
+  * 1091 - Context menu in tree view
+  * 1074 - Density matix not computed for formats other than Gaussian 
+  * 1088 - #include directive missing
+  * 1089 - wrong operator= in src/utility/shaders/Shaders.cpp
+  * 1092 - Save images bigger than Molekel 3D view
+  * 1094 - Wrong documentation URL
+  * 1095 - View menu items always checked
+  * 1096 - Save bounding box size
+  * 1097 - Wrong display of "Ball & stick" menu item
+  * 1098 - Show isosurface bounding box
+  * 1099 - Move isosurface box center 
+
+
+5.3.1
+
+- Improved support for low-end and ATI graphics cards
+
+- Works on Vista with Aero turned on
+
+- Fixed bugs:
+
+  * 442  - After a molecule is loaded, it is not selected automatically
+  * 443  - Should use ball & stick on smaller molecules
+  * 449  - Molden input fails if no basis/mo-coefficients are present
+  * 450  - Molden input cannot read frequencies
+  * 454	 - Crash when reading gaussian output for anions
+  * 757  - Some shaders do not work on ATI cards.
+  * 1054 - Wrong selection mechanism	
+  * 1055 - Selection: shift-click required also on first atom	
+  * 1056 - Add/remove bonds
+  * 1057 - Make latest loaded molecule selected
+  * 1059 - Camera interaction not selected automatically
+
+
+5.3 
+
+- Added support for depth peeling for correct rendering of transparent
+  objects; requires an OpenGL 2.0 card and might not work properly on some
+  systems. Depth peeling paramters affecting rendering speed/quality of
+  transparent object can be set through the Display->View Properties
+  dialog.
+
+- Added plot of infrared and Raman spectra with PostScript and PDF output
+
+- Integrated with VTK 5.1 (cvs version since there is no official release yet).
+
+- Added support for anti-aliasing, disabled by default; can be enabled
+  through the Display->View Properties dialog.
+
+- It is now possible to change transparency and colors of orbital surfaces.
+
+- Added support for persistent settings in Electron Density Surface dialog.
+
+- Added new x-ray shaders that work properly with VTK 5.1. 
+
+- Fixed bugs:
+
+ * 392 - Add support for multi-molecule Gamess input
+ * 401 - Cannot delete Connolly surface
+ * 403 - Command line support
+ * 404 - Error reading Molden molecular orbital data
+ * 405 - Transparency not consistent for both orbital colors
+         (dependent on specific card/driver)
+ * 406 - Animation runs after deleting the molecule
+ * 408 - Feature request: start orbital index from zero
+ * 420 - Settings not saved when closing window	
+ * 421 - Surface from Grid Data: Elapsed time report wrong
+ * 422 - Cannot save animations with transparent SES
+
+
+5.2
+
+- Added support for GLSL shaders: after a molecule has been selected it is possible
+  to assign vertex and pixel shader to the molecule and any generated surface.
+  Shader parameters can be saved/loaded to/from text files.
+  Only the following data types are currently supported for uniform parameters:
+   * float
+   * vec2
+   * vec3
+   * vec4
+   * bool
+   * int
+
+  If a parameter name contains the string 'color' or 'colour' (case insensitive) it
+  is possible to set the value through a color dialog.
+
+  In case shaders are not supported (OpenGL 2.0 required) the shaders menu
+  item is disabled.
+
+- Added support for multiple vibrational modes: any number of vibrational
+  modes can now be combined to animate atoms.
+
+- Added option in Display menu to hide selection bounding boxes. 
+
+- Added support for record/playback of GUI events, this is mainly used for
+  automated GUI testing and demo purposes.
+
+- Animation export can now be interrupted by clicking on the 'stop' button.
+
+- Added optional command line parameters:
+  -load <file type> <file path>
+  -size <window width> <window height>
+  -position <window upper left corner x> <window upper left corner y>
+  -settings [<key1 value1> <key2 value2> ...] if not arguments are provided
+   current settings info is printed to console
+  -events <file path> <initial delay (s)> <time scaling>
+
+- Added support for PNG output.
+
+- Fixed bugs:
+
+  * 382 - Electron density surfaces are not animated
+  * 383 - Animation of SES is not reset
+  * 384 - Grid data surface dialog's 'Generate' button not disabled
+  * 388	- Cannot load GAMESS file with Hessian runs
+  * 389	- Cannot load basis set from GAMESS output
+  * 390 - Cannot specify file format when saving
+  * 393 - Bounding box not updated when animating.
+  * 394 - Program may crash when changing animation mode.
+
+
+5.1.1
+
+- Added support for ADF Tape41 files, look into the data dir for a sample file;
+  logging information is currently printed to standard output
+
+- Fixed bugs:
+
+  * 361	- Cannot change selection box color
+  * 362	- Cannot unpick atom/bond
+  * 363 - Wrong bonds computed
+  * 375	- Wrong atom size
+  * 376	- MEP scalar bar doesn't change when selecting molecule
+
+
+5.1
+
+- Removed local documentation: the documentation menu item now opens
+  the on-line documentation
+
+- Enhanced visual quality by patching the OpenMOIV library
+
+- Added option to change atom and bond size
+
+- Added option to change the material color for SoCylinder/SoSphere
+
+- Added option to load the atom color table from file (sample color file in data dir)
+
+- Added animation of molecules read from multi-frame PDB and XYZ
+
+- Added option to use cube data as Molecular Electrostatic Potential when computing SAS or SES
+
+- Added Z-matrix format (to build molecule from one z-matrix, see .zmatrix example in data dir)
+
+- Added option to change animation step
+
+- Added option to save one image per molecular orbital (only one molecular orbital
+  per-image is displayed in the saved images)
+
+- Added option to smooth with Laplacian smoothing iso-surfaces generated from Gaussian cube files
+
+- Molekel now asks for confirmation before deleting a molecule
+
+- Fixed bugs:
+  * 333 - Molecule is scaled when window resized, surface is not
+  * 334 - Cannot open file specified on command line.
+  * 335 - PDF and PostScript files are not replaced
+  * 337 - Loading of PDBs with multiple molecules is slow, adding
+          support for multi-frame pdbs has fixed this bug
+  * 340 - Molden input issues: Bohr units were not supported
+  * 341 - Program may crash when selecting a molecule loaded from pdb: issues
+          with OpenBabel::ReadFormula(); see OpenBabel bug 1632403
+  * 356 - Cannot load files on Mac OS X: an OpenBabel patch for version 5.0
+    has been made available, the new version doesn't need this patch.

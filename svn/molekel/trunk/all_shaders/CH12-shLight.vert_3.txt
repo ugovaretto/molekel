@@ -1,0 +1,51 @@
+//
+// Vertex shader for spherical harmonics lighting
+//
+// Author: Randi Rost
+//
+// Copyright (C) 2005 3Dlabs, Inc.
+//
+// See 3Dlabs-License.txt for license information
+//
+
+varying vec3  DiffuseColor;
+uniform float ScaleFactor;
+
+const float C1 = 0.429043;
+const float C2 = 0.511664;
+const float C3 = 0.743125;
+const float C4 = 0.886227;
+const float C5 = 0.247708;
+
+
+// Constants for St. Peter's Basilica lighting
+const vec3 L00  = vec3( 0.3623915,  0.2624130,  0.2326261);
+const vec3 L1m1 = vec3( 0.1759130,  0.1436267,  0.1260569);
+const vec3 L10  = vec3(-0.0247311, -0.0101253, -0.0010745);
+const vec3 L11  = vec3( 0.0346500,  0.0223184,  0.0101350);
+const vec3 L2m2 = vec3( 0.0198140,  0.0144073,  0.0043987);
+const vec3 L2m1 = vec3(-0.0469596, -0.0254485, -0.0117786);
+const vec3 L20  = vec3(-0.0898667, -0.0760911, -0.0740964);
+const vec3 L21  = vec3( 0.0050194,  0.0038841,  0.0001374);
+const vec3 L22  = vec3(-0.0818750, -0.0321501,  0.0033399);
+
+
+void main(void)
+{
+    vec3 tnorm      = normalize(gl_NormalMatrix * gl_Normal);
+
+    DiffuseColor    = C1 * L22 * (tnorm.x * tnorm.x - tnorm.y * tnorm.y) +
+                      C3 * L20 * tnorm.z * tnorm.z +
+                      C4 * L00 -
+                      C5 * L20 +
+                      2.0 * C1 * L2m2 * tnorm.x * tnorm.y +
+                      2.0 * C1 * L21  * tnorm.x * tnorm.z +
+                      2.0 * C1 * L2m1 * tnorm.y * tnorm.z +
+                      2.0 * C2 * L11  * tnorm.x +
+                      2.0 * C2 * L1m1 * tnorm.y +
+                      2.0 * C2 * L10  * tnorm.z;
+
+    DiffuseColor   *= ScaleFactor;
+
+    gl_Position     = ftransform();
+}

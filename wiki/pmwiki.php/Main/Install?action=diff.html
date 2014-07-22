@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel Main/Install</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  
+  .diffbox { width:570px; border-left:1px #999999 solid; margin-top:1.33em; }
+  .diffauthor { font-weight:bold; }
+  .diffchangesum { font-weight:bold; }
+  .difftime { font-family:verdana,sans-serif; font-size:66%; 
+    background-color:#dddddd; }
+  .difftype { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; font-weight:bold; }
+  .diffadd { border-left:5px #99ff99 solid; padding-left:5px; }
+  .diffdel { border-left:5px #ffff99 solid; padding-left:5px; }
+  .diffrestore { clear:both; font-family:verdana,sans-serif; 
+    font-size:66%; margin:1.5em 0px; }
+  .diffmarkup { font-family:monospace; }  
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='Gallery.html'>Gallery</a>
+</li><li><a class='wikilink' href='DownloadBinary.html'>Download</a>
+</li><li><a class='wikilink' href='../ReferenceGuide/Introduction.html'>User Guide</a>
+</li><li><a class='wikilink' href='ContactMe.html'>Contact</a>
+</li><li><a class='wikilink' href='HomePage.html'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage' class='pagegroup'>Main</a>-->
+					<p> </p>
+					<h1><a href='Install.html'>Install</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<h2 class='wikiaction'>Main.Install History</h2>
+  <p><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=diff&amp;source=n&amp;minor=n'>Hide minor edits</a> - <a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=diff&amp;source=y&amp;minor=y'>Show changes to markup</a></p>
+  <div id='wikidiff'>
+      <div class='diffbox'><div class='difftime'>March 13, 2009, at 02:28 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Added line 1:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1236950939:1236950933:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 13, 2009, at 02:28 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Deleted lines 0-1:</div>
+        <div class='diffdel'><h1>Installation</h1>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1236950933:1236950629:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>March 13, 2009, at 02:23 PM 
+        by <span class='diffauthor' title='148.187.130.153'>148.187.130.153</span> - </div>
+        <div class='difftype'>Changed line 44 from:</div>
+        <div class='diffdel'><p>Molekel versions 5.3 or above use some advanced multi-pass rendering techniques to enhance visual quality; these techniques may generate visual artifacts on transparent surfaces on some specific graphic cards. We have experienced problems on SuSE 10.3 x86-32/NVIDIA 8800 Ultra and Windows XP 32bit/NVIDIA 8800 Ultra system; on Windows problems can be  fixed by selecting <em>Let the 3D application decide</em> (which should be the default) in the <em>Image Settings</em> page of the NVIDIA Control Panel.       
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Molekel versions 5.3 or above use some advanced multi-pass rendering techniques to enhance visual quality; these techniques may generate visual artifacts on transparent surfaces on some specific graphic cards. We have experienced problems on SuSE 10.3 x86-32/NVIDIA 8800 Ultra and Windows XP 32bit/NVIDIA 8800 Ultra systems; on Windows problems can be  fixed by selecting <em>Let the 3D application decide</em> (which should be the default) in the <em>Image Settings</em> page of the NVIDIA Control Panel.       
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1236950629:1202994569:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>February 14, 2008, at 02:09 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 40-41 from:</div>
+        <div class='diffdel'><p>Simply open the <em>dmg</em> disk image and copy the folders to any location.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Simply open the <em>dmg</em> disk image and copy the folders to any location; you may want to create a <em>Molekel</em> folder inside <em>Applications</em> and put everything there.
+</p>
+</div>
+        <div class='difftype'>Changed lines 44-46 from:</div>
+        <div class='diffdel'><p>In case you have rendering problems, get messages about errors in Coin or the program crashes when loading files without reporting any error, you can set the value of two environment variables as follows:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Molekel versions 5.3 or above use some advanced multi-pass rendering techniques to enhance visual quality; these techniques may generate visual artifacts on transparent surfaces on some specific graphic cards. We have experienced problems on SuSE 10.3 x86-32/NVIDIA 8800 Ultra and Windows XP 32bit/NVIDIA 8800 Ultra system; on Windows problems can be  fixed by selecting <em>Let the 3D application decide</em> (which should be the default) in the <em>Image Settings</em> page of the NVIDIA Control Panel.       
+</p>
+<p class='vspace'>In general, in case you have rendering problems, get messages about errors in Coin or the program crashes when loading files without reporting any error, you can set the value of two environment variables as follows:
+</p>
+</div>
+        <div class='difftype'>Added lines 51-52:</div>
+        <div class='diffadd'><p>To set the environment variables permanently on Windows XP right-click on <em>My Computer</em> then select the <em>Advanced</em> tab and click on the <em>Environment Variables</em> button.
+</p>
+</div>
+        <div class='difftype'>Deleted line 54:</div>
+        <div class='diffdel'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1202994569:1188560948:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>August 31, 2007, at 01:49 PM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 8-9 from:</div>
+        <div class='diffdel'><p><strong><em>Warning</em></strong>: it seems that due to an issue with Qt's <em>QDesktopServices</em> Molekel is unable to open the main page of the local documentation if the installation path contains spaces. You can manually open the html documentation which resides in the <em><code>Molekel/doc</code></em> folder.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'></div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1188560948:1168248328:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>January 08, 2007, at 10:25 AM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 43-52 from:</div>
+        <div class='diffdel'></div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2>Rendering issues</h2>
+<p>In case you have rendering problems, get messages about errors in Coin or the program crashes when loading files without reporting any error, you can set the value of two environment variables as follows:
+</p><ul><li><code>COIN_FULL_INDIRECT_RENDERING=0</code>
+</li><li><code>COIN_FORCE_GL1_0_ONLY=1</code>
+</li></ul><p>before launching Molekel to disable the use of advanced OpenGL features.
+</p>
+<p class='vspace'>You can also set the <code>COIN_DEBUG_GLGLUE</code> environment variable to <code>1</code> before starting Molekel in a console window to print OpenGL debug information.
+To enable printing on standard output on Mac you'll have to invoke the actual executable in the <em>Molekel.app</em> folder i.e. <code>Molekel.app/Contents/MacOS/Molekel</code>.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1168248328:1167933058:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>January 04, 2007, at 06:50 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 8-9 from:</div>
+        <div class='diffdel'><p><strong><em>Warning</em></strong>: it seems that due to an issue with Qt's <em>QDesktopServices</em> Molekel is unable to open the main page of the local documentation if the installation path contains spaces. You can manually open the html documentation which resides in the Molekel/doc folder.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>Warning</em></strong>: it seems that due to an issue with Qt's <em>QDesktopServices</em> Molekel is unable to open the main page of the local documentation if the installation path contains spaces. You can manually open the html documentation which resides in the <em><code>Molekel/doc</code></em> folder.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1167933058:1167933026:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>January 04, 2007, at 06:50 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 8-9 from:</div>
+        <div class='diffdel'><p><strong><em>Warning</em></strong>: it seems that due to an issue with Qt's QDesktopServices Molekel is unable to open the main page of the local documentation if the installation path contains spaces. You can manually open the html documentation which resides in the Molekel/doc folder.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><strong><em>Warning</em></strong>: it seems that due to an issue with Qt's <em>QDesktopServices</em> Molekel is unable to open the main page of the local documentation if the installation path contains spaces. You can manually open the html documentation which resides in the Molekel/doc folder.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1167933026:1167932993:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>January 04, 2007, at 06:49 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 14 from:</div>
+        <div class='diffdel'><p>sh:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><em>sh</em>:
+</p>
+</div>
+        <div class='difftype'>Changed line 17 from:</div>
+        <div class='diffdel'><p>csh:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p><em>csh</em>:
+</p>
+</div>
+        <div class='difftype'>Changed lines 24-25 from:</div>
+        <div class='diffdel'><p>it means you do not have glibc 2.4 installed, you can either install glibc 2.4 o simply download this patch and replace <em><code>&lt;molekel root&gt;/lib/libQtCore.so.4</code></em> with the version found in the archive.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>it means you do not have <em>glibc 2.4</em> installed, you can either install glibc 2.4 o simply download this patch and replace <em><code>&lt;molekel root&gt;/lib/libQtCore.so.4</code></em> with the version found in the archive which works with <em>glibc 2.3</em>.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1167932993:1167932908:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>January 04, 2007, at 06:48 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 20-23 from:</div>
+        <div class='diffdel'><h3>Launch from desktop</h3>
+<p>To be able to launch Molekel from <em>KDE</em> and <em>Gnome</em> you can create a script like:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>If you get an error similar to the following: 
+</p>
+</div>
+        <div class='difftype'>Changed lines 22-27 from:</div>
+        <div class='diffdel'><ol><li>!/bin/sh
+</li><li>if you have not added the command to add Molekel's dynamic libs dir to LD_LIBRARY_PATH
+</li><li>to your .profile or .tcshrc file you need to do it here:
+</li></ol><p>export LD_LIBRARY_PATH=&lt;molekel installation dir&gt;/lib:$LD_LIBRARY_PATH
+</p><ol><li>launch molekel
+</li></ol><p>&lt;molekel installation dir&gt;/bin/Molekel
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>.../lib/tls/libc.so.6: version 'GLIBC_2.4' not found (required by ./lib/libQtCore.so.4)
+</p>
+</div>
+        <div class='difftype'>Added lines 24-36:</div>
+        <div class='diffadd'><p>it means you do not have glibc 2.4 installed, you can either install glibc 2.4 o simply download this patch and replace <em><code>&lt;molekel root&gt;/lib/libQtCore.so.4</code></em> with the version found in the archive.
+</p>
+<div class='vspace'></div><h3>Launch from desktop</h3>
+<p>To be able to launch Molekel from <em>KDE</em> and <em>Gnome</em> you can create a script like:
+</p><pre class='escaped'>
+#!/bin/sh
+#if you have not added the command to add Molekel's dynamic libs dir to LD_LIBRARY_PATH
+#to your .profile or .tcshrc file you need to do it here:
+export LD_LIBRARY_PATH=&lt;molekel installation dir&gt;/lib:$LD_LIBRARY_PATH
+#launch molekel
+&lt;molekel installation dir&gt;/bin/Molekel
+</pre>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1167932908:1166777004:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 09:43 AM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 12-13 from:</div>
+        <div class='diffdel'><p>Uncompress the archive and add the <em>@molekel/lib@</em> directory to <code>LD_LIBRARY_PATH</code> then run <em><code>&lt;molekel root&gt;/bin/Molekel</code></em>:
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Uncompress the archive and add the <em><code>molekel/lib</code></em> directory to <code>LD_LIBRARY_PATH</code> then run <em><code>&lt;molekel root&gt;/bin/Molekel</code></em>:
+</p>
+</div>
+        <div class='difftype'>Changed line 27 from:</div>
+        <div class='diffdel'><ol><li>to your .profile or .tcshrc you need to do it here:
+</li></ol>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><ol><li>to your .profile or .tcshrc file you need to do it here:
+</li></ol>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166777004:1166776942:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 22, 2006, at 09:42 AM 
+        by <span class='diffauthor' title='148.187.130.131'>148.187.130.131</span> - </div>
+        <div class='difftype'>Changed lines 12-22 from:</div>
+        <div class='diffdel'><p>Uncompress the archive and add the <em>@molekel/lib@</em> directory to <code>LD_LIBRARY_PATH</code> then run <em><code>&lt;molekel root&gt;/bin/Molekel</code></em>.
+</p>
+<p class='vspace'>A sample startup script <em>start_molekel.sh</em> is provided.
+</p>
+<div class='vspace'></div><h3>Launch from command line</h3>
+<p>Modify <em>start_molekel.sh.sample</em> to add <em><code>&lt;molekel home directory&gt;/lib</code></em> to <code>LD_LIBRARY_PATH</code> and
+enter the full path of Molekel's executable: <em><code>&lt;molekel home directory&gt;/bin/Molekel</code></em>.
+</p>
+<p class='vspace'>No need to cd to Molekel's home dir, the <em><code>cd ...</code></em> line can be commented.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Uncompress the archive and add the <em>@molekel/lib@</em> directory to <code>LD_LIBRARY_PATH</code> then run <em><code>&lt;molekel root&gt;/bin/Molekel</code></em>:
+</p>
+<p class='vspace'>sh:
+<code class='escaped'> export LD_LIBRARY_PATH=&lt;molekel installation dir&gt;/lib:$LD_LIBRARY_PATH </code>
+</p>
+<p class='vspace'>csh:
+<code class='escaped'> setenv LD_LIBRARY_PATH &lt;molekel installation dir&gt;/lib:${LD_LIBRARY_PATH} </code>
+</p>
+<div class='vspace'></div>
+</div>
+        <div class='difftype'>Changed lines 23-25 from:</div>
+        <div class='diffdel'><p>To be able to launch Molekel from KDE and Gnome you first need to modify the script as described in the previous paragraph.
+You can then create a launcher/application icon on the Gnome and KDE desktop and point it to the sh file.
+In this case the launch script will have to  explicitly cd to Molekel's root dir.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>To be able to launch Molekel from <em>KDE</em> and <em>Gnome</em> you can create a script like:
+</p><pre class='escaped'>
+#!/bin/sh
+#if you have not added the command to add Molekel's dynamic libs dir to LD_LIBRARY_PATH
+#to your .profile or .tcshrc you need to do it here:
+export LD_LIBRARY_PATH=&lt;molekel installation dir&gt;/lib:$LD_LIBRARY_PATH
+#launch molekel
+&lt;molekel installation dir&gt;/bin/Molekel
+</pre>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166776942:1166722630:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 06:37 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 8-9:</div>
+        <div class='diffadd'><p><strong><em>Warning</em></strong>: it seems that due to an issue with Qt's QDesktopServices Molekel is unable to open the main page of the local documentation if the installation path contains spaces. You can manually open the html documentation which resides in the Molekel/doc folder.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166722630:1166708999:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 02:49 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 10-11 from:</div>
+        <div class='diffdel'><p>Uncompress the archive and add the molekel/lib directory to LD_LIBRARY_PATH then run molekel/bin/Molekel.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Uncompress the archive and add the <em>@molekel/lib@</em> directory to <code>LD_LIBRARY_PATH</code> then run <em><code>&lt;molekel root&gt;/bin/Molekel</code></em>.
+</p>
+</div>
+        <div class='difftype'>Changed lines 23-24 from:</div>
+        <div class='diffdel'><p>To be able to launch Molekel from KDE and Gnome you need to modify the script <em>start_molekel.sh.sample</em>
+specifying Molekel's home directory.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>To be able to launch Molekel from KDE and Gnome you first need to modify the script as described in the previous paragraph.
+</p>
+</div>
+        <div class='difftype'>Changed line 25 from:</div>
+        <div class='diffdel'><p>In this case the launch script will have to  explicitly cd to Molekel's home dir.
+</p>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>In this case the launch script will have to  explicitly cd to Molekel's root dir.
+</p>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166708999:1166707630:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 02:27 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 31-33 from:</div>
+        <div class='diffdel'><p>Simply open the <em>dmg</em> disk image and drag and drop the folders in any location.
+</p>
+<div class='vspace'></div>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><p>Simply open the <em>dmg</em> disk image and copy the folders to any location.
+</p>
+<div class='vspace'></div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166707630:1166707589:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 02:26 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed line 4 from:</div>
+        <div class='diffdel'><h1>Windows</h1>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2>Windows</h2>
+</div>
+        <div class='difftype'>Changed lines 8-9 from:</div>
+        <div class='diffdel'><h1>Linux</h1>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2>Linux</h2>
+</div>
+        <div class='difftype'>Changed lines 29-30 from:</div>
+        <div class='diffdel'><h1>Mac OS</h1>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h2>Mac OS</h2>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166707589:1166707564:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 02:26 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Changed lines 1-3 from:</div>
+        <div class='diffdel'><h1>Install</h1>
+<h2>Windows</h2>
+</div>
+        <div class='difftype'>to:</div>
+        <div class='diffadd'><h1>Installation</h1>
+<div class='vspace'></div><h1>Windows</h1>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166707564:1166707530:&amp;preview=y'>Restore</a></div>
+      <div class='diffbox'><div class='difftime'>December 21, 2006, at 02:25 PM 
+        by <span class='diffauthor' title='148.187.130.131'>Ugo Varetto</span> - </div>
+        <div class='difftype'>Added lines 1-32:</div>
+        <div class='diffadd'><h1>Install</h1>
+<h2>Windows</h2>
+<ul><li><em>installer</em>: install the program with administrator privileges.
+</li><li><em>zip</em>: simply uncompress the archive; <em>Molekel.exe</em> is in <em>molekel/bin</em>.
+</li></ul><div class='vspace'></div><h1>Linux</h1>
+<p>Uncompress the archive and add the molekel/lib directory to LD_LIBRARY_PATH then run molekel/bin/Molekel.
+</p>
+<p class='vspace'>A sample startup script <em>start_molekel.sh</em> is provided.
+</p>
+<div class='vspace'></div><h3>Launch from command line</h3>
+<p>Modify <em>start_molekel.sh.sample</em> to add <em><code>&lt;molekel home directory&gt;/lib</code></em> to <code>LD_LIBRARY_PATH</code> and
+enter the full path of Molekel's executable: <em><code>&lt;molekel home directory&gt;/bin/Molekel</code></em>.
+</p>
+<p class='vspace'>No need to cd to Molekel's home dir, the <em><code>cd ...</code></em> line can be commented.
+</p>
+<div class='vspace'></div><h3>Launch from desktop</h3>
+<p>To be able to launch Molekel from KDE and Gnome you need to modify the script <em>start_molekel.sh.sample</em>
+specifying Molekel's home directory.
+You can then create a launcher/application icon on the Gnome and KDE desktop and point it to the sh file.
+In this case the launch script will have to  explicitly cd to Molekel's home dir.
+You can change the icon of the desktop shortcut by selecting the <em>Molekel.png</em> icon in the <em><code>&lt;molekel root&gt;/resources</code></em> directory.
+</p>
+<div class='vspace'></div><h1>Mac OS</h1>
+<p>Simply open the <em>dmg</em> disk image and drag and drop the folders in any location.
+</p>
+<div class='vspace'></div>
+</div></div>
+      <div class='diffrestore'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/Install?action=edit&amp;restore=diff:1166707530:1166707530:&amp;preview=y'>Restore</a></div></div></div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>Main</span>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='Gallery.html'>Gallery</a></strong>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='DownloadBinary.html'>Download</a></strong>
+</p>
+<p class='vspace sidehead'> <strong>Documentation</strong>
+</p><ul><li><a class='wikilink' href='../ReferenceGuide/Introduction.html'>Manual</a> 
+</li><li><a class='wikilink' href='Presentations.html'>Presentations</a>
+</li><li><a class='wikilink' href='VideosBlipTV.html'>Videos</a>
+</li><li><a class='wikilink' href='VideoTutorials.html'>Video tutorials</a>
+</li><li><a class='selflink' href='Install.html'>Install</a>
+</li><li><a class='wikilink' href='Build.html'>Build</a>
+<ul><li><a class='wikilink' href='BuildPlatformSpecific.html'>Platforms</a>
+</li><li><a class='wikilink' href='OpenBabel.html'>OpenBabel</a>
+</li></ul></li></ul><p class='vspace sidehead'> <strong><a class='wikilink' href='Citing.html'>Citing</a></strong>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='Install.html'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='Install%3Faction=edit.html'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='Install%3Faction=diff.html'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='Install%3Faction=print.html'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 13, 2009, at 02:28 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

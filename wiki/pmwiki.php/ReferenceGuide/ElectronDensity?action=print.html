@@ -1,0 +1,115 @@
+<!DOCTYPE html 
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+  <title>Molekel | ReferenceGuide / Electron Density</title>
+  <link rel='stylesheet' href='http://molekel.cscs.ch/wiki/pub/skins/print/print.css' type='text/css' />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+<body>
+  <div id='printhead'>
+    <h3>From Molekel</h3>
+    <h1 class='pagename'><a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide'>ReferenceGuide: Electron Density</a></h1>
+  </div>
+<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Use  the Electron Density Surface dialog (<em>Surfaces</em>-<em>Electron Density</em>) to generate surfaces from electron density data.
+</p>
+<p class='vspace'>UI controls are enabled only when data is available for the selected molecule.
+</p>
+<p class='vspace'>Regenerating a surface previously created simply replaces the previously generated surface. 
+</p>
+<p class='vspace'>The rendering style can be changed after the surface is generated.
+</p>
+<p class='vspace'>Checking the "Real-time Update" check-box will cause a surface to be re-generated without having to press the <em>Generate</em> button each time any value in the dialog box changes.
+</p>
+<p class='vspace'>The following settings are persistent across sessions (i.e. will be stored on disk and retrieved when Molekel starts):
+</p><ul><li><em>Isosurface value</em>
+</li><li><em>Use both signs</em>
+</li><li><em>Generate Nodal Surface</em>
+</li><li><em>Sep Size</em>
+</li><li><em>Transparency</em>
+</li><li><em>Color</em>
+</li></ul><p class='vspace'>Use the bounding box size and center to select the volume of interest.
+</p>
+<div class='vspace'></div><div><img src='../../uploaded/ReferenceGuide/ui_el_dens_bbox_small.png' alt='' title='' /></div>
+<p class='vspace'><strong><em>Hint</em></strong> - Use low-resolution (i.e. large step size) and check the <em>real-time update</em> box while adjusting the bounding box: the surface will be quickly recomputed at each change of the bounding box parameters; you can then decrease the step size as needed.
+</p>
+<p class='vspace'><strong><em>Note</em></strong>: there is an excellent article on how to visualize electron density data from <em>Gaussian 09</em> files here:
+ <a target='_blank'  class='urllink' href='http://baoilleach.blogspot.com/2010/06/visualising-orbitals-and-density-with.html' rel='nofollow'>http://baoilleach.blogspot.com/2010/06/visualising-orbitals-and-density-with.html</a>
+</p>
+<div class='vspace'></div><h3>Videos</h3>
+<p>A video showing how to generate electron density surface with color coded Electrostatic Potential values is here: <a class='urllink' href='../../../video/eldens_big.htm' rel='nofollow'>http://molekel.cscs.ch/video/eldens_big.htm</a> ...
+...and another one showing the use of real-time update to adjust the bounding box is here: <a class='urllink' href='../../../video/eldens_rt_update_big.htm' rel='nofollow'>http://molekel.cscs.ch/video/eldens_rt_update_big.htm</a>
+</p>
+<p class='vspace'>Another video available here: <a class='urllink' href='../../../video/orbitals_big.htm' rel='nofollow'>http://molekel.cscs.ch/video/orbitals_big.htm</a> shows how to generate orbitals.
+</p>
+<div class='vspace'></div><hr />  
+<div><img src='../../uploaded/ReferenceGuide/ui_el_dens_dlg.png' alt='' title='' /></div>
+<div class='vspace'></div><h3>Add density matrix surface</h3>
+<ol><li>Check <em>Density Matrix</em> checkbox
+</li><li>Adjust bounding box and step
+</li><li>Select rendering style
+</li><li>Press the <em>Generate</em> button
+</li></ol><div class='vspace'></div><h3>Remove <em>Density Matrix</em> surface</h3>
+<ol><li>Check <em>Density Matrix</em> checkbox
+</li><li>Press the <em>Remove</em> button
+</li></ol><div class='vspace'></div><h3>Add orbital surface</h3>
+<ol><li>Click on the row corresponding to the orbital surface to generate (click on any column except the one with orbital numbers).
+</li><li>Adjust bounding box and step
+</li><li>Select rendering style
+</li><li>Press the <em>Generate</em> button
+</li></ol><div class='vspace'></div><h3>Remove orbital surface</h3>
+<ol><li>Click on the row corresponding to the orbital surface to generate
+</li><li>Press the <em>Remove</em> button
+</li></ol><div class='vspace'></div><h2>Gaussian 03</h2>
+<p>In order to visualize molecular orbitals from <em>Gaussian 03</em> output files the <code class='escaped'>* ATOMIC CENTER * ATOMIC ORBITAL * GAUSSIAN FUNCTIONS *</code> table must be present in the file. 
+</p>
+<p class='vspace'>To have the basis functions printed in the correct format for Molekel use <code>gfoldprint</code> and <code>pop=full</code> when running Gaussian 03.
+</p>
+<p class='vspace'>Also do not include the word <em>basis</em> in the title line of your Gaussian input file.
+</p>
+<p class='vspace'><strong><em>note:</em></strong> If you just want to visualize IR spectra (<code>Freq=HPmodes</code>) you don't need <code>gfoldprint</code>   
+</p>
+<div class='vspace'></div>
+</div>
+
+  <div id='printfoot'>
+    <div class='from'>Retrieved from http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/ElectronDensity</div>
+    <div class='lastmod'>Page last modified on June 23, 2010, at 05:09 PM</div></div>
+<!--HTMLFooter-->
+</body>
+</html>

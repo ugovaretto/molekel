@@ -1,0 +1,7 @@
+float factor	0.24
+float xmax	0.12
+float xmin	-1
+float ymax	1
+float ymin	-1
+float zmax	1
+float zmin	-1

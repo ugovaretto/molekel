@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel ReferenceGuide/Export Animation</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='../Main/Gallery.html'>Gallery</a>
+</li><li><a class='wikilink' href='../Main/DownloadBinary.html'>Download</a>
+</li><li><a class='wikilink' href='Introduction.html'>User Guide</a>
+</li><li><a class='wikilink' href='../Main/ContactMe.html'>Contact</a>
+</li><li><a class='wikilink' href='../Main/HomePage.html'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/HomePage' class='pagegroup'>ReferenceGuide</a>-->
+					<p> </p>
+					<h1><a href='ExportAnimation.html'>Export Animation</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Molekel can export animation and animate all the visible molecular surfaces by recomputing the surfaces at each animation step. Animation can be exported as individual frames or AVI files (on Windows).
+</p>
+<p class='vspace'>When exporting animations to individual frames the user needs to select the directory where the individual frames will be written. Files are exported as png images with names which include the frame sequence number.
+</p>
+<p class='vspace'>To create animations from the generated frames you can use a program like
+</p><ul><li><a class='urllink' href='http://www.mplayerhq.hu/DOCS/HTML/en/mencoder.html' rel='nofollow'>mencoder</a>
+</li><li><a class='urllink' href='http://www.ensight.com/enve.html' rel='nofollow'>EnVe</a>
+</li><li><a class='urllink' href='http://www.virtualdub.org' rel='nofollow'>VirtualDub</a>
+</li></ul><p class='vspace'>Sample <em>mencoder</em> command line which will generate an mpeg video <em>m.mpeg</em> from the png images found in <code>c:\tmp\molekelvideo1</code> :
+</p>
+<p class='vspace'><span class='frame'> <code>mencoder.exe mf://c:\tmp\molekelvideo1\*.png -o m.mpg -ovc lavc -lavcopts vcodec=mpeg2video -of mpeg</code></span>
+</p>
+<p class='vspace'>The frame rate should match the frame rate specified in Molekel's <em>Export Animation</em> dialog.
+</p>
+<p class='vspace'>To specify the frame rate on <em>mencoder</em> command line use the <em><code>-ofps</code></em> switch. 
+</p>
+<p class='vspace'>To export an animation open the <em>Export Animation</em> dialog by selecting the <em>Animation-Export Animation</em> menu item, modify the parameter values, click on <em>Ok</em> and select the output directory (individual frames) or file (AVI).
+</p>
+<div class='vspace'></div><h2>Export Animation Dialog</h2>
+<div><span class='rfloat'> <img src='../../uploaded/ReferenceGuide/export_animation_dlg.png' alt='' title='' /> </span></div>
+<p class='vspace'>This dialog box allows the user to speficy duration, frames per second and output type (individual frames or AVI) and the parameters that will be used for rendering the visible surfaces while animating.
+</p>
+<p class='vspace'>Note that:
+</p><ul><li>the values specified here will override any previously specified value and will apply to all the visible surfaces
+</li><li>the same step will be used for all the visible iso-surfaces
+</li><li>the same value of 0.05 will be used for all the visible iso-surfaces (i.e. the suface <em>scalar_field( x, y, z ) = 0.05</em> will be computed)
+</li></ul><p class='vspace'>The labels on this dialog should give a good explanation of what the parameters other than <em>Bounding Box Scaling Factor</em> are.
+</p>
+<p class='vspace'><em>Bounding Box Scaling Factor</em> is the value by which the size of each molecule's bounding box is multiplied before computing the isosurfaces (if any).
+</p>
+<p class='vspace'>Having only one set of values that apply to all the surfaces is definitely not an optimal solution; the only way to cover all the possible options (different bounding boxes, animating a surface by changing an iso-value or probe radius at each frame etc.) is to introduce scripting, which will be added in the next version (5.1) of Molekel.
+</p>
+<div class='vspace'></div>
+</div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>User Guide</span>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Introduction.html'>Introduction</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Workspace.html'>Workspace</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Menu.html'>Menu</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplayStyle.html'>Display Style</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplaySettings.html'>Display Settings</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Animation.html'>Animation</a></strong>
+</p><ul><li><a class='wikilink' href='Settings.html'>Settings</a>
+</li><li><a class='selflink' href='ExportAnimation.html'>Export</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Surfaces.html'>Surfaces</a></strong>
+</p><ul><li><a class='wikilink' href='ElectronDensity.html'>Electron Density Surfaces</a>
+</li><li><a class='wikilink' href='GridData.html'>Surface from Grid Data</a>
+</li><li><a class='wikilink' href='SAS.html'>Solvent Accessible Surface</a>
+</li><li><a class='wikilink' href='SES.html'>Solvent Excluded Surface</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Analysis.html'>Analysis</a></strong>
+</p><ul><li><a class='wikilink' href='PlaneProbe.html'>Plane Probe</a>
+</li><li><a class='wikilink' href='DistanceAngles.html'>Distances and (dihedral) angles</a>
+</li><li><a class='wikilink' href='RadiationSpectra.html'>Radiation Spectra</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Shaders.html'>Shaders</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='EditBonds.html'>Edit bonds</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='SaveImage.html'>Export images</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='FileFormats.html'>File Formats</a></strong>
+</p>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='ExportAnimation.html'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='ExportAnimation%3Faction=edit.html'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='ExportAnimation%3Faction=diff.html'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='ExportAnimation%3Faction=print.html'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 17, 2009, at 05:53 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

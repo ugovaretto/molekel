@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel ReferenceGuide/Animation Settings</title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='../Main/Gallery.html'>Gallery</a>
+</li><li><a class='wikilink' href='../Main/DownloadBinary.html'>Download</a>
+</li><li><a class='wikilink' href='Introduction.html'>User Guide</a>
+</li><li><a class='wikilink' href='../Main/ContactMe.html'>Contact</a>
+</li><li><a class='wikilink' href='../Main/HomePage.html'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/ReferenceGuide/HomePage' class='pagegroup'>ReferenceGuide</a>-->
+					<p> </p>
+					<h1><a href='Settings.html'>Animation Settings</a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Per-molecule animation settings are used to change the dynamic behavior/appearance of the selected molecule.
+</p>
+<p class='vspace'>Animation settings are changed through the <em>Animation</em>-<em>Per-Molecule Settings</em> menu which opens the <em>Animation Preferences</em> dialog.
+</p>
+<p class='vspace'>The UI controls on the dialog are enabled if and only if the molecule can be animated i.e. if vibration or trajectory information is available.
+</p>
+<p class='vspace'>It is not possible to change the <em>Animation Mode</em> while an animation is in progress.  
+</p>
+<div class='vspace'></div><div><span class='rfloat'> <img src='../../uploaded/ReferenceGuide/animation_preferences_dlg.png' alt='' title='' /></span></div>
+<h2>Animation</h2>
+<p><strong><em>Animation</em></strong> - <em>On/Off</em> - Enable/Disable animation for the selected molecule.
+</p>
+<p class='vspace'><strong><em>Animation Mode</em></strong> - Choose animation mode between <em>Trajectory</em> and <em>Vibration</em>.
+</p>
+<p class='vspace'><strong><em>Time step</em></strong> - Set the animation time step in milliseconds for this molecule.
+</p>
+<p class='vspace'><br clear='all' />
+</p>
+<div class='vspace'></div><div><span class='lfloat'> <img src='../../uploaded/ReferenceGuide/animation_vibration_dlg.png' alt='' title='' /></span></div>
+<div  style='text-align: right;' > 
+<h2>Vibration</h2>
+</div>
+<p class='vspace'><strong><em>Scaling factor</em></strong> - Frequency multiplier, vibration speed is multiplied by this value.
+</p>
+<p class='vspace'><strong><em>Show arrows</em></strong> - Hide/Show arrows. Arrows are used to display the direction of motion and speed of individual atoms.
+</p>
+<p class='vspace'><strong><em>Constant arrow length</em></strong> - If checked all the arrows have constant length; enabled only when <em>Show arrows</em> checked.
+</p>
+<p class='vspace'><strong><em>Arrow scaling</em></strong> - Arrow length scaling factor; enabled only when <em>Show arrows</em> checked.
+</p>
+<p class='vspace'><strong><em>Frequency Table</em></strong> - Shows the vibration modes read from file. Any number of animation modes can be combined by checking multiple checkboxes.
+</p>
+<p class='vspace'><br clear='all' />
+</p>
+<div class='vspace'></div><div><span class='rfloat'> <img src='../../uploaded/ReferenceGuide/animation_trajectory_dlg.png' alt='' title='' /></span></div>
+<h2>Trajectory</h2>
+<p><strong><em>Direction</em></strong> - <em>Forward/Backward</em> - Change the direction of motion.
+</p>
+<p class='vspace'><strong><em>Loop Mode</em></strong> - Changes the way animation is repeated.
+</p><ul><li><em>One Time</em>: Play animation once; molecule will stop animating after the last frame has been reached.
+</li><li><em>Loop</em>: Animation will go from first to last frame and then restart from first frame until stopped by the user.
+</li><li><em>Swing</em>: Animation will play from first to last frame then play backward from last but one to first frame until stopped by the user.
+</li></ul><p class='vspace'><strong><em>Step</em></strong> - Changes number of frames per animation step.   
+</p>
+<p class='vspace'><br clear='all' />
+</p>
+</div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>User Guide</span>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Introduction.html'>Introduction</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Workspace.html'>Workspace</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Menu.html'>Menu</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplayStyle.html'>Display Style</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='DisplaySettings.html'>Display Settings</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='Animation.html'>Animation</a></strong>
+</p><ul><li><a class='selflink' href='Settings.html'>Settings</a>
+</li><li><a class='wikilink' href='ExportAnimation.html'>Export</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Surfaces.html'>Surfaces</a></strong>
+</p><ul><li><a class='wikilink' href='ElectronDensity.html'>Electron Density Surfaces</a>
+</li><li><a class='wikilink' href='GridData.html'>Surface from Grid Data</a>
+</li><li><a class='wikilink' href='SAS.html'>Solvent Accessible Surface</a>
+</li><li><a class='wikilink' href='SES.html'>Solvent Excluded Surface</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Analysis.html'>Analysis</a></strong>
+</p><ul><li><a class='wikilink' href='PlaneProbe.html'>Plane Probe</a>
+</li><li><a class='wikilink' href='DistanceAngles.html'>Distances and (dihedral) angles</a>
+</li><li><a class='wikilink' href='RadiationSpectra.html'>Radiation Spectra</a>
+</li></ul><p class='vspace'><strong><a class='wikilink' href='Shaders.html'>Shaders</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='EditBonds.html'>Edit bonds</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='SaveImage.html'>Export images</a></strong>
+</p>
+<p class='vspace'><strong><a class='wikilink' href='FileFormats.html'>File Formats</a></strong>
+</p>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='Settings.html'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='Settings%3Faction=edit.html'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='Settings%3Faction=diff.html'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='Settings%3Faction=print.html'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified April 11, 2009, at 04:37 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

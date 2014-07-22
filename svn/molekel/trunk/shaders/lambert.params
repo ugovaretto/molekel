@@ -1,0 +1,3 @@
+vec3 ambientColor	0 0 0
+vec3 lightDir	0 0 1
+float saturation	1

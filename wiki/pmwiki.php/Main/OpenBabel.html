@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Molekel Main/OpenBabel and MinGW </title>
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/style.css' type='text/css' />
+	<link rel='stylesheet' href='../../pub/skins/molekel_glossyhue/color-turquoise/color.css' type='text/css' />
+	<!--HTMLHeader--><style type='text/css'><!--.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../../pub/css/local.css' />
+
+</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<!--PageHeaderFmt-->
+			<div id="headerimg">
+				<div class='vspace'></div>
+
+			</div>
+			
+			
+			<div id="nav">
+				<ul><li><a class='wikilink' href='Gallery.html'>Gallery</a>
+</li><li><a class='wikilink' href='DownloadBinary.html'>Download</a>
+</li><li><a class='wikilink' href='../ReferenceGuide/Introduction.html'>User Guide</a>
+</li><li><a class='wikilink' href='ContactMe.html'>Contact</a>
+</li><li><a class='wikilink' href='HomePage.html'>Home</a>
+</li></ul>
+
+			</div>
+			<!--/PageHeaderFmt-->
+		</div>
+
+		<div id="content">
+			<div id="pagelead">
+				<div class="pageheader">
+					<!--PageTitleFmt-->
+					<!--<a href='http://molekel.cscs.ch/wiki/pmwiki.php/Main/HomePage' class='pagegroup'>Main</a>-->
+					<p> </p>
+					<h1><a href='OpenBabel.html'>OpenBabel and MinGW </a></h1>
+					<!--/PageTitleFmt-->
+				</div>
+
+				
+			</div>
+
+			<!--PageText-->
+<div id='wikitext'>
+<p class='vspace'><strong><em>NOTE</em></strong>: <span style='font-size:83%'>This page is left for reference; <em>Molekel</em> is not however using <em>MinGW</em> anymore as the main Windows build environment, it is therefore not required to have a <em>MinGW</em> build of <em>OpenBabel</em></span>. 
+</p>
+<p class='vspace'>OpenBabel doesn't build out of the box with MinGW, this page describes how to build OpenBabel 2.0.2 and 2.1 (libs only) on Windows with MinGW.
+Actually OpenBabel libraries do not seem to be built on Windows using the provided VC++ project files neither.
+</p>
+<p class='vspace'>OpenBabel requires <em>libxml2</em> so make sure you have this library properly installed in your MinGW environment; libxml can be found here: <a class='urllink' href='http://xmlsoft.org' rel='nofollow'>http://xmlsoft.org</a>
+</p>
+<div class='vspace'></div><h2>OpenBabel 2.1 (libs only)</h2>
+<h3>1 - hash_map</h3>
+<p>When building OB 2.1 on MinGW you need to disable the usage of <code>hash_map</code> in <em><code>obmolecformat.h</code></em>: simply comment the lines where this class is used:
+</p><pre class='escaped'>
+/*depending on the version of gcc installed you might or might not have hash_map in the include path.*/
+//#ifdef _WIN32
+//  #include &lt;hash_map&gt; 
+//#endif
+
+...
+
+//#ifdef _WIN32
+  //typedef stdext::hash_map&lt;std::string, unsigned&gt; NameIndexType;
+//#else
+  typedef std::map&lt;std::string, unsigned&gt; NameIndexType;
+//#endif
+</pre> 
+<p>Note that <code>stdext::hash_map</code> is MS version of something similar to <code>tr1::unordered_map</code> and GCC's <code>__gnu_cxx::hash_map</code> which is in fact a modified version of SGI's <code>::hash_map</code>; these data types are not however compatible with each other(try to replace <code>stdext::hash_map</code> with <code>__gnu_cxx::hash_map</code> and check the error you get). 
+</p>
+<div class='vspace'></div><h3>2 - <em><code>gettimeofday()</code></em></h3>
+<p>OpenBabel does need the <code>gettimeofday()</code> function which might or might not be available in your MinGW environment; in case you install <em>MinGW 5.1.3</em> (gcc 3.4.2) the function should be available as
+</p><pre class='escaped'>
+int __cdecl gettimeofday(struct timeval *__restrict__,
+			 void *__restrict__  /*	tzp (unused) */);
+</pre>
+<p class='vspace'>Also note that mingw-runtime 3.12 or later should contain a proper implementation of <code>gettimeofday()</code>.
+</p>
+<p class='vspace'>If the function is not available, you can simply replace <code>include/sys/time.h</code> with an include containing the following code:
+</p><pre class='escaped'>
+#ifndef _SYS_TIME_H_
+#define _SYS_TIME_H_
+#include &lt;time.h&gt;
+
+#include &lt;windows.h&gt;
+
+
+#ifndef _TIMEVAL_DEFINED /* also in winsock[2].h */
+#define _TIMEVAL_DEFINED
+struct timeval {
+  long tv_sec;
+  long tv_usec;
+};
+#define timerisset(tvp)	 ((tvp)-&gt;tv_sec || (tvp)-&gt;tv_usec)
+#define timercmp(tvp, uvp, cmp) \
+	(((tvp)-&gt;tv_sec != (uvp)-&gt;tv_sec) ? \
+	((tvp)-&gt;tv_sec cmp (uvp)-&gt;tv_sec) : \
+	((tvp)-&gt;tv_usec cmp (uvp)-&gt;tv_usec))
+#define timerclear(tvp)	 (tvp)-&gt;tv_sec = (tvp)-&gt;tv_usec = 0
+#endif /* _TIMEVAL_DEFINED */
+
+/* Provided for compatibility with code that assumes that
+   the presence of gettimeofday function implies a definition
+   of struct timezone. */
+struct timezone
+{
+  int tz_minuteswest; /* of Greenwich */
+  int tz_dsttime;     /* type of dst correction to apply */
+};
+
+/*
+   Implementation as per:
+   The Open Group Base Specifications, Issue 6
+   IEEE Std 1003.1, 2004 Edition
+
+   The timezone pointer arg is ignored.  Errors are ignored.
+*/ 
+
+#ifdef	__cplusplus
+
+void  GetSystemTimeAsFileTime(FILETIME*);
+
+inline int gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+{
+	union {
+	    long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		FILETIME ft;
+	} now;
+
+    GetSystemTimeAsFileTime( &amp;(now.ft) );
+    p-&gt;tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+    p-&gt;tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+	return 0;
+}
+
+#else 
+    /* Must be defined somewhere else */
+	int gettimeofday(struct timeval* p, void* tz /* IGNORED */);
+#endif
+
+#endif /* _SYS_TIME_H_ */
+</pre>
+<p class='vspace'>That's it. With these two changes you'll be able to build the <em>inchi</em> and <em>openbabel</em> libraries.
+</p>
+<div class='vspace'></div><h2>OpenBabel 2.0.x</h2>
+<p>Following the instructions in this section you'll be able to build all the libraries and tools except for <code>obgrep</code> which has a dependency
+on a library which is not included in the OpenBabel distribution: <code>XGetopt</code> and that you can download from here: <a class='urllink' href='http://www.codeproject.com/cpp/xgetopt.asp?df=100' rel='nofollow'>http://www.codeproject.com/cpp/xgetopt.asp?df=100</a>.
+</p>
+<p class='vspace'>If you try to build OpenBabel 2.0.2 on Windows with MinGW you might get something similar to the following:
+</p>
+<div class='vspace'></div><pre class='escaped'>
+./configure
+...
+make
+...
+../../src/obutil.h:73: error: `gettimeofday' undeclared (first use this function)      
+</pre>
+<p class='vspace'>The compiler is complaining about a missing function; <code>gettimeofday</code> is in fact missing in some MinGW environments (mingw-runtime 3.12 or better should contain a proper implementation of <code>gettimeofday</code>).
+</p>
+<p class='vspace'>To fix this you can do the following:
+</p>
+<p class='vspace'><strong><em>1.</em></strong> Open <code>src/babelconfig.h.in</code> and add the following declaration:
+</p><pre class='escaped'>
+void gettimeofday( struct timeval* p, void* );
+</pre>
+<p class='vspace'>If you build now you get a brand new error message:
+<code class='escaped'>bondtyper.cpp:21: bondtyp.h: No such file or directory</code>
+</p>
+<p class='vspace'>The problem is that there are a number of files in the data dir which need to be accessible and they are not because this directory is not in the include path, here is part of the gcc command line you get when invoking <code>make</code>: 
+<code class='escaped'>-I. -I. -I. -I../data</code>
+</p>
+<p class='vspace'>To fix this problem you need to add the data dir (where the <code>bondtyp.h</code> resides) to the include path.
+</p>
+<p class='vspace'><strong><em>2.</em></strong> before running <code>./configure</code> set the <code>CPPFLAGS</code> evironment variable:
+<code class='escaped'>export CPPFLAGS="-I &lt;absolute path to data dir&gt;"</code>
+</p>
+<p class='vspace'>Now everything compiles but doesn't link yet because there is no definition of function <code>gettimeofday</code> so in case you try to link you get the following error:
+<code class='escaped'>undefined reference to `gettimeofday( timeval*, void* )</code>
+We need to write the definition of this function in a c++ file and then modify the makefile to include this new source file.
+</p>
+<p class='vspace'><strong><em>3.</em></strong> create a file <code>gettimeofday.cpp</code> and add the following code into it:
+</p><pre class='escaped'>
+   #include &lt;windows.h&gt;
+   #include &lt;sys/time.h&gt;
+
+   void __stdcall GetSystemTimeAsFileTime(FILETIME*);
+
+   void gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+   {
+	  union {
+	     long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		 FILETIME ft;
+	  } now;
+
+      GetSystemTimeAsFileTime( &amp;(now.ft) );
+      p-&gt;tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+      p-&gt;tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+   }
+</pre>
+<p class='vspace'><strong><em>4.</em></strong> Modify <code>Makefile.in</code> adding <code>gettimeofday.cpp</code> to the list of source files:
+</p><pre class='escaped'> ...
+   @BUILD_SHARED_TRUE@ fingerprints/libfingerprints.la @LTLIBOBJS@
+   am__libopenbabel_la_SOURCES_DIST = gettimeofday.cpp atom.cpp base.cpp bitvec.cpp \
+   ...
+   @BUILD_SHARED_TRUE@am__objects_1 = dlhandler_unix.lo
+   am_libopenbabel_la_OBJECTS = gettimeofday.lo base.lo bitvec.lo bond.lo \
+   ...
+   libopenbabel_la_SOURCES = \
+		gettimeofday.cpp atom.cpp base.cpp bitvec.cpp bond.cpp \
+   ...
+</pre>
+<p class='vspace'>If you build it with the current configuration you will incur in another problem: the dynamic library handler is set to unix
+</p>
+<p class='vspace'><strong><em>5.</em></strong> substitute all the instances of <code>dlhandler_unix.xxx</code> in <code>Makefile.in</code> with <code>dlhandler_win32.xxx</code>, there should be a total of five occurrences in the file. The use of a dynamic library handler should be automatically enabled when shared library support is turned on (default).
+In case <code>dlhandler</code> is set to <code>null</code> in <code>Makefile</code> you'll have to manually remove<code class='escaped'> @BUILD_SHARED_TRUE@ </code>in front of <code>am_objects_1</code> AND <code>dlhandler =dlhandler_win32.cpp</code> you have to do this if you get a link error about an undefined symbol <code>__imp_XXXDLHandler9openFileXXXX</code>
+</p>
+<p class='vspace'>At this point the libraries build but not the executables.
+</p>
+<p class='vspace'><strong><em>6.</em></strong> if you want to build the executables you'll have to open all the cpp files in the <em>test</em> and <em>tools</em> folder and comment
+<code class='escaped'> #define USING_OBDLL </code>
+i.e.
+</p><pre class='escaped'>
+// used to set import/export for Cygwin DLLs
+#ifdef WIN32
+//#define USING_OBDLL
+#endif
+</pre>
+<p class='vspace'><strong><em>7.</em></strong> run <code>configure --prefix=&lt;installation folder&gt;</code> then <code>make</code>: this will build the libraries into <code>src/.libs</code>, and the executables in the <code>src</code>, tools and test folders. You can then run <code>make install</code>.
+Note that to have <code>make install</code> succeed you have to also fix <code>obgrep.cpp</code> so that it can somehow build: either you get the <a class='urllink' href='http://www.codeproject.com/cpp/xgetopt.asp?df=100' rel='nofollow'>XGetopt</a> library mentioned at the beginning of this document, build it with MinGW and link with it or you can simply comment the code in <code>obgrep.cpp</code> <code>main</code> function.
+</p>
+</div>
+
+		</div>
+
+		<div id="sidebar">
+			
+
+			<!--PageLeftFmt--> <!-- /*** UV ***/ -->
+			<p><span class='top'>Main</span>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='Gallery.html'>Gallery</a></strong>
+</p>
+<p class='vspace sidehead'> <strong><a class='wikilink' href='DownloadBinary.html'>Download</a></strong>
+</p>
+<p class='vspace sidehead'> <strong>Documentation</strong>
+</p><ul><li><a class='wikilink' href='../ReferenceGuide/Introduction.html'>Manual</a> 
+</li><li><a class='wikilink' href='Presentations.html'>Presentations</a>
+</li><li><a class='wikilink' href='VideosBlipTV.html'>Videos</a>
+</li><li><a class='wikilink' href='VideoTutorials.html'>Video tutorials</a>
+</li><li><a class='wikilink' href='Install.html'>Install</a>
+</li><li><a class='wikilink' href='Build.html'>Build</a>
+<ul><li><a class='wikilink' href='BuildPlatformSpecific.html'>Platforms</a>
+</li><li><a class='selflink' href='OpenBabel.html'>OpenBabel</a>
+</li></ul></li></ul><p class='vspace sidehead'> <strong><a class='wikilink' href='Citing.html'>Citing</a></strong>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageLeftFmt-->
+		</div>
+
+		<div id="footer">
+			<!--PageFooterFmt-->
+			<div class="pageactions">
+					<!--PageActionFmt-->
+					<ul><li class='browse'><a accesskey=''  class='selflink' href='OpenBabel.html'>View</a>
+</li><li class='edit'><a accesskey='e'  rel='nofollow'  class='wikilink' href='OpenBabel%3Faction=edit.html'>Edit</a>
+</li><li class='diff'><a accesskey='h'  rel='nofollow'  class='wikilink' href='OpenBabel%3Faction=diff.html'>History</a>
+</li><li class='print'><a accesskey=''  rel='nofollow'  class='wikilink' href='OpenBabel%3Faction=print.html'>Print</a>
+</li></ul>
+
+					<!--/PageActionFmt-->
+			</div>
+			<p  style='text-align: right;'> <span class='lastmodified'> <span style='font-size:83%'>Page last modified March 16, 2009, at 06:45 PM</span>   </span>
+</p>
+<div class='vspace'></div>
+
+			<!--/PageFooterFmt-->
+			<hr class="clear" />
+		</div>
+
+	</div>
+
+	<!--<div id="credits">
+		<div class="alignleft">
+			<a style="color:#7A9299;" href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/" rel="nofollow">GlossyBlue</a> theme adapted by <a href="http://solidgone.org/Skins/">David Gilbert</a>
+		</div>
+		<div class="alignright">
+			Powered by <a href="http://pmwiki.com/">PmWiki</a>
+		</div>
+	</div>-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7968858-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>
