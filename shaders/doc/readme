@@ -1,0 +1,81 @@
+Simple diffuse shader with support for saturation (amount of color mixed with white) control.
+
+1)  Load <molekel path>/data/aceticacid_g98.log
+2)  Select the molecule in the tree view and go to Surfaces->Electron Density
+3)  Check the 'Density Matrix' and 'Map Molecular Electrostatic Potential' boxes
+4)  Generate the surface
+5)  Choose whatever value for transparency (try with zero first)
+6)  Go to Display->Shaders
+7)  Select the "Density Matrix" tab
+8)  Load the vertex shader file lambert.vert by clicking on the 'Vertex Shader File' button
+9)  Load the fragment shader file lambert.frag by clicking on the 'Fragment Shader File' button
+10) Load the parameters file lambert.params by clicking on the 'Parameters File' button
+11) Click on 'Apply'
+
+Step (10) is optional but if you do not load default parameters you'll have to set
+values yourserlf.
+
+You should see the surface colored by diffuse color only without highlights.
+
+Try modifying e.g. the saturation; saturation values should always be in the range [0, 1].
+
+You can also play with the shader code itself, worst case scenario you'll get an error
+report when the shader is compiled similar to what you get when compiling any source
+code but (in theory) Molekel shouldn't crash.
+
+The implemented lighting model in this case is something like:
+
+Final Color = OpenGLVertexColor * abs( dot( LightDirection, VertexNormal ) )...  
+
+...plus some white and ambient color.
+
+
+
+FYI
+---
+
+Shaders: programs executed by the graphics subystem once per vertex or once per pixel to
+         compute position and color of vertices and pixels
+
+Shaders are treated like any other compiled module: compiled, linked and sent to the
+execution environment (in this case the OpenGL drivers).
+
+GLSL, Cg, HLSL: languages used to write shaders; all similar to C.
+
+Vertex shader:
+
+  * executed once per vertex/point
+  * computes position, normal and color for each geometry vertex; 
+  * computed data is sent to fragment shader
+  * uses information coming from the graphics API and optional parameters
+    passed by the application (what you see in the Molekel shaders GUI)
+               
+Fragment(= pixel) shader: 
+
+  * executed once per pixel
+  * computes the color of each pixel
+  * uses information coming from the graphics API, vertex shader and
+    optional parameters received from the application
+
+Parameters file:
+
+  * simple text file used by Molekel to record and load parameters to be passed
+    to shaders
+
+
+In case you open the files:
+
+'varying' variables are global variables used to exchange information between shaders;
+declared and modified in the vertex shader, declared and used in the fragment shader
+
+'uniform' variables are parameters received from the application (what you see in the
+Molekel shaders GUI).
+
+
+Also:
+
+Geometry shader:
+
+  * executed once per vertex/point
+  * can create new vertices
+  * supported only by latest graphics cards with shader model 4.0

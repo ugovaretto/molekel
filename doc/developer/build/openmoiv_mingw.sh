@@ -1,0 +1,1 @@
+cmake -Dshared:int=1 -Dno_libFL:int=1 -Dcoin:int=1 -Dsys_fonts:int=1

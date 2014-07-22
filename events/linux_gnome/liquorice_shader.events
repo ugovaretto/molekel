@@ -1,0 +1,1609 @@
+2554	"MainWindow/MainToolbar/QToolButton_0"	35	36	2	18	20	35	95	1	1	0
+88	"MainWindow/MainToolbar/QToolButton_0"	35	36	3	18	20	35	95	1	0	0
+86	"MainWindow/Open Molecule Dialog"	530	340	13	135	157	135	157
+0	"MainWindow/Open Molecule Dialog"	530	340	14	530	340	-1	-1
+0	"MainWindow/Open Molecule Dialog/QSizeGrip_0"	17	17	13	513	323	513	323
+0	"MainWindow/Open Molecule Dialog/QSizeGrip_0"	17	17	14	17	17	-1	-1
+0	"MainWindow/Open Molecule Dialog/QListView_0"	508	208	13	11	46	11	46
+0	"MainWindow/Open Molecule Dialog/QListView_0"	508	208	14	508	208	-1	-1
+0	"MainWindow/Open Molecule Dialog/QListView_0/qt_scrollarea_viewport"	504	204	13	2	2	2	2
+0	"MainWindow/Open Molecule Dialog/QListView_0/qt_scrollarea_viewport"	504	204	14	504	204	-1	-1
+2	"MainWindow/Open Molecule Dialog/QToolButton_0"	22	22	13	377	14	377	14
+0	"MainWindow/Open Molecule Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Open Molecule Dialog/QToolButton_1"	22	22	13	405	14	405	14
+0	"MainWindow/Open Molecule Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Open Molecule Dialog/QToolButton_2"	22	22	13	433	14	433	14
+0	"MainWindow/Open Molecule Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Open Molecule Dialog/QToolButton_3"	22	22	13	461	14	461	14
+0	"MainWindow/Open Molecule Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Open Molecule Dialog/QToolButton_4"	22	22	13	489	14	489	14
+0	"MainWindow/Open Molecule Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Open Molecule Dialog/QLabel_0"	68	29	13	11	11	11	11
+0	"MainWindow/Open Molecule Dialog/QLabel_0"	68	29	14	68	29	-1	-1
+0	"MainWindow/Open Molecule Dialog/QLabel_1"	68	33	13	11	260	11	260
+0	"MainWindow/Open Molecule Dialog/QLabel_1"	68	33	14	68	33	-1	-1
+0	"MainWindow/Open Molecule Dialog/QLabel_2"	68	30	13	11	299	11	299
+0	"MainWindow/Open Molecule Dialog/QLabel_2"	68	30	14	68	30	-1	-1
+0	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0"	80	69	13	439	260	439	260
+1	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0"	80	69	14	80	69	-1	-1
+0	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	13	0	0	0	0
+0	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	14	80	32	-1	-1
+0	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	13	0	37	0	37
+0	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	14	80	32	-1	-1
+0	"MainWindow/Open Molecule Dialog/QComboBox_0"	280	29	13	85	11	85	11
+0	"MainWindow/Open Molecule Dialog/QComboBox_0"	280	29	14	280	29	-1	-1
+0	"MainWindow/Open Molecule Dialog/QComboBox_0/QLineEdit_0"	237	25	13	22	2	22	2
+0	"MainWindow/Open Molecule Dialog/QComboBox_0/QLineEdit_0"	237	25	14	237	25	-1	-1
+0	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	13	85	262	85	262
+0	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	14	280	29	-1	-1
+0	"MainWindow/Open Molecule Dialog/QComboBox_1"	280	29	13	85	299	85	299
+0	"MainWindow/Open Molecule Dialog/QComboBox_1"	280	29	14	280	29	-1	-1
+19	"MainWindow/Open Molecule Dialog"	530	340	13	140	157	135	157
+1443	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	2	41	9	266	428	1	1	0
+128	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	3	41	9	266	428	1	0	0
+826	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	47	"/"	0	0	61	47
+81	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	47	"/"	0	0	61	47
+611	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	65	"a"	0	0	38	97
+94	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	65	"a"	0	0	38	97
+166	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	80	"p"	0	0	33	112
+81	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	80	"p"	0	0	33	112
+79	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	80	"p"	0	0	33	112
+81	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	80	"p"	0	0	33	112
+617	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	83	"s"	0	0	39	115
+78	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	83	"s"	0	0	39	115
+747	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	47	"/"	0	0	61	47
+78	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	47	"/"	0	0	61	47
+275	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	67	"c"	0	0	54	99
+112	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	67	"c"	0	0	54	99
+251	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	83	"s"	0	0	39	115
+88	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	83	"s"	0	0	39	115
+401	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	86	"v"	0	0	55	118
+88	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	86	"v"	0	0	55	118
+256	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	73	"i"	0	0	31	105
+91	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	73	"i"	0	0	31	105
+175	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	83	"s"	0	0	39	115
+85	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	83	"s"	0	0	39	115
+2036	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	47	"/"	0	0	61	47
+82	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	47	"/"	0	0	61	47
+617	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	77	"m"	0	0	58	109
+888	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	77	"m"	0	0	58	109
+1	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	79	"o"	0	0	32	111
+0	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	79	"o"	0	0	32	111
+100	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	76	"l"	0	0	46	108
+100	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	76	"l"	0	0	46	108
+156	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	69	"e"	0	0	26	101
+85	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	69	"e"	0	0	26	101
+243	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	75	"k"	0	0	45	107
+88	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	75	"k"	0	0	45	107
+200	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	69	"e"	0	0	26	101
+200	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	69	"e"	0	0	26	101
+343	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	76	"l"	0	0	46	108
+88	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	76	"l"	0	0	46	108
+692	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	47	"/"	0	0	61	47
+84	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	47	"/"	0	0	61	47
+256	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	68	"d"	0	0	40	100
+88	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	68	"d"	0	0	40	100
+266	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	65	"a"	0	0	38	97
+114	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	65	"a"	0	0	38	97
+339	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	84	"t"	0	0	28	116
+117	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	84	"t"	0	0	28	116
+382	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	65	"a"	0	0	38	97
+130	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	65	"a"	0	0	38	97
+1388	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	47	"/"	0	0	61	47
+85	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	47	"/"	0	0	61	47
+1121	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	65	"a"	0	0	38	97
+116	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	65	"a"	0	0	38	97
+237	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	67	"c"	0	0	54	99
+98	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	67	"c"	0	0	54	99
+365	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	69	"e"	0	0	26	101
+114	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	69	"e"	0	0	26	101
+269	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	84	"t"	0	0	28	116
+101	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	84	"t"	0	0	28	116
+217	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	73	"i"	0	0	31	105
+94	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	73	"i"	0	0	31	105
+156	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	67	"c"	0	0	54	99
+88	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	67	"c"	0	0	54	99
+443	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	65	"a"	0	0	38	97
+134	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	65	"a"	0	0	38	97
+217	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	67	"c"	0	0	54	99
+78	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	67	"c"	0	0	54	99
+230	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	73	"i"	0	0	31	105
+104	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	73	"i"	0	0	31	105
+192	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	68	"d"	0	0	40	100
+97	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	68	"d"	0	0	40	100
+1927	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	71	"g"	0	0	42	103
+85	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	71	"g"	0	0	42	103
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	71	"g"	0	0	42	103
+401	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	57	"9"	0	0	18	57
+101	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	57	"9"	0	0	18	57
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	57	"9"	0	0	18	57
+162	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	56	"8"	0	0	17	56
+91	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	56	"8"	0	0	17	56
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	56	"8"	0	0	17	56
+1227	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	46	"."	0	0	60	46
+94	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	46	"."	0	0	60	46
+224	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	76	"l"	0	0	46	108
+95	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	76	"l"	0	0	46	108
+181	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	79	"o"	0	0	32	111
+85	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	79	"o"	0	0	32	111
+185	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	6	1	0	71	"g"	0	0	42	103
+107	"MainWindow/Open Molecule Dialog/QLineEdit_0"	280	29	7	1	0	71	"g"	0	0	42	103
+0	"MainWindow/Open Molecule Dialog"	530	340	7	1	0	71	"g"	0	0	42	103
+2041	"MainWindow/Open Molecule Dialog/QComboBox_1"	280	29	2	268	20	493	476	1	1	0
+2	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0"	355	973	13	225	26	225	26
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0"	355	973	14	355	973	-1	-1
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0"	351	969	13	2	2	2	2
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0"	351	969	14	351	969	-1	-1
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	969	13	0	0	0	0
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	969	14	351	969	-1	-1
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxPrivateScroller_1"	100	30	13	0	0	0	0
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxPrivateScroller_1"	100	30	14	100	30	-1	-1
+12	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxPrivateScroller_1"	351	10	13	2	961	0	0
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxPrivateScroller_1"	351	10	14	351	10	100	30
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0"	351	959	14	351	959	351	969
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	14	351	959	351	969
+1033	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	266	447	493	475	0	1	0
+18	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	265	446	492	474	0	1	0
+0	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	264	446	491	474	0	1	0
+6	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	263	445	490	473	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	262	445	489	473	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	262	444	489	472	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	260	443	487	471	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	259	443	486	471	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	258	442	485	470	0	1	0
+16	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	257	441	484	469	0	1	0
+16	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	257	440	484	468	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	256	440	483	468	0	1	0
+16	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	255	439	482	467	0	1	0
+16	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	255	438	482	466	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	254	438	481	466	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	253	437	480	465	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	253	436	480	464	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	252	436	479	464	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	252	435	479	463	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	250	434	477	462	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	250	433	477	461	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	249	433	476	461	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	249	432	476	460	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	248	432	475	460	0	1	0
+16	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	248	431	475	459	0	1	0
+336	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	247	431	474	459	0	1	0
+24	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	247	432	474	460	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	246	432	473	460	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	246	433	473	461	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	245	434	472	462	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	245	435	472	463	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	244	435	471	463	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	244	436	471	464	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	243	437	470	465	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	243	438	470	466	0	1	0
+24	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	243	439	470	467	0	1	0
+24	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	243	440	470	468	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	242	440	469	468	0	1	0
+8	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	5	242	441	469	469	0	1	0
+1216	"MainWindow/Open Molecule Dialog/QComboBox_1/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	351	959	3	242	441	469	469	1	0	0
+1344	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	2	40	20	619	437	1	1	0
+112	"MainWindow/Open Molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	3	40	20	619	437	1	0	0
+5447	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	260	183	2	111	30	127	204	1	1	0
+143	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	260	183	3	111	30	127	204	1	0	0
+2200	"MainWindow/TheMenuBar"	800	25	2	89	13	94	62	1	1	0
+2	"MainWindow/TheMenuBar/QMenu_2"	209	207	13	70	73	70	73
+0	"MainWindow/TheMenuBar/QMenu_2"	209	207	14	209	207	-1	-1
+93	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	24	-10	94	63	0	1	0
+1	"MainWindow/TheMenuBar"	800	25	5	89	14	94	63	0	1	0
+48	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	24	-10	94	63	1	0	0
+0	"MainWindow/TheMenuBar"	800	25	3	89	14	94	63	1	0	0
+2079	"MainWindow/TheMenuBar/QMenu_9"	209	207	2	38	20	108	93	1	1	0
+232	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	38	20	108	93	1	0	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	80	123	80	123
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	14	293	481	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	29	13	10	10	10	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	29	14	83	29	-1	-1
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	13	105	10	105	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	29	13	10	51	10	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	178	29	13	105	51	105	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	29	13	10	92	10	92
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	13	105	92	105	92
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	29	13	10	133	10	133
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	13	105	133	105	133
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	29	13	10	174	10	174
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	178	29	13	105	174	105	174
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	13	10	213	10	213
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	13	109	213	109	213
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	13	10	237	10	237
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	13	109	237	109	237
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	13	10	268	10	268
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	174	21	13	109	268	109	268
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	13	10	295	10	295
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	13	109	295	109	295
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	170	27	13	10	326	10	326
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	170	27	14	170	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	27	13	192	326	192	326
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	170	27	13	10	365	10	365
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	170	27	14	170	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	27	13	192	365	192	365
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	27	14	91	27	-1	-1
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	273	3	13	10	402	10	402
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	273	3	14	273	3	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	273	23	13	10	411	10	411
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	273	23	14	273	23	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	13	10	444	10	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	14	92	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	91	27	13	101	444	101	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	92	27	13	191	444	191	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	92	27	14	92	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	254	87	80	123
+9	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	259	110	254	87
+1805	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	2	166	17	530	137	1	1	0
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	178	119	13	364	51	364	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	178	119	14	178	119	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	115	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	115	14	174	115	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	14	174	115	-1	-1
+582	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	164	83	530	136	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	163	82	529	135	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	162	82	528	135	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	162	81	528	134	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	161	81	527	134	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	161	80	527	133	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	160	80	526	133	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	159	79	525	132	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	159	78	525	131	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	158	78	524	131	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	158	77	524	130	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	157	76	523	129	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	156	76	522	129	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	156	75	522	128	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	155	74	521	127	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	154	74	520	127	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	154	73	520	126	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	154	72	520	125	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	153	72	519	125	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	152	71	518	124	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	152	70	518	123	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	151	70	517	123	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	151	69	517	122	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	150	68	516	121	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	150	67	516	120	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	149	67	515	120	0	1	0
+112	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	149	66	515	119	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	65	514	118	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	64	514	117	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	147	64	513	117	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	147	63	513	116	0	1	0
+385	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	3	147	63	513	116	1	0	0
+2263	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	2	168	21	532	223	1	1	0
+2	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0"	178	188	13	364	202	364	202
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0"	178	188	14	178	188	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	184	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	184	14	174	184	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	14	174	184	-1	-1
+733	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	166	20	532	224	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	165	20	531	224	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	164	21	530	225	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	164	22	530	226	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	22	529	226	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	23	529	227	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	24	529	228	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	24	528	228	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	25	528	229	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	161	26	527	230	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	161	27	527	231	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	161	28	527	232	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	160	28	526	232	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	160	30	526	234	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	160	31	526	235	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	160	32	526	236	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	160	33	526	237	0	1	0
+1057	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	3	160	33	526	237	1	0	0
+2199	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	2	22	11	390	358	1	1	0
+383	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	23	11	391	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	24	11	392	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	25	11	393	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	26	11	394	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	27	11	395	358	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	29	11	397	358	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	30	11	398	358	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	31	11	399	358	0	1	0
+72	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	32	11	400	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	34	11	402	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	36	11	404	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	37	11	405	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	38	11	406	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	39	11	407	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	40	11	408	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	41	11	409	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	42	11	410	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	43	11	411	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	44	11	412	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	45	11	413	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	46	11	414	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	47	11	415	358	0	1	0
+4	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	48	11	416	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	49	11	417	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	50	11	418	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	51	11	419	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	52	11	420	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	53	11	421	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	54	11	422	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	55	11	423	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	56	11	424	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	57	11	425	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	58	11	426	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	59	11	427	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	60	11	428	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	61	11	429	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	62	11	430	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	63	11	431	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	64	11	432	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	65	11	433	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	66	11	434	358	0	1	0
+4	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	67	11	435	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	68	11	436	358	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	69	11	437	358	0	1	0
+6	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	70	11	438	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	71	11	439	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	72	11	440	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	73	11	441	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	74	11	442	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	75	11	443	358	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	76	11	444	358	0	1	0
+3	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	77	11	445	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	78	11	446	358	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	79	11	447	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	80	11	448	358	0	1	0
+5	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	81	11	449	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	82	11	450	358	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	83	11	451	358	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	84	11	452	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	85	11	453	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	86	11	454	358	0	1	0
+4	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	87	11	455	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	88	11	456	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	89	11	457	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	90	11	458	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	91	11	459	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	92	11	460	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	93	11	461	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	94	11	462	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	95	11	463	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	96	11	464	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	97	11	465	358	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	98	11	466	358	0	1	0
+30	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	99	11	467	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	100	11	468	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	101	11	469	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	102	11	470	358	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	103	11	471	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	105	11	473	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	106	11	474	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	107	11	475	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	108	11	476	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	109	11	477	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	110	11	478	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	111	11	479	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	112	11	480	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	113	11	481	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	114	11	482	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	115	11	483	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	116	11	484	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	117	11	485	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	118	11	486	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	119	11	487	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	120	11	488	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	121	11	489	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	122	11	490	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	123	11	491	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	124	11	492	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	125	11	493	358	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	126	11	494	358	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	128	11	496	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	129	11	497	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	130	11	498	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	131	11	499	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	132	11	500	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	133	11	501	358	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	134	11	502	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	135	11	503	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	136	11	504	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	137	11	505	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	138	11	506	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	139	11	507	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	140	11	508	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	141	11	509	358	0	1	0
+6	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	142	11	510	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	143	11	511	358	0	1	0
+20	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	144	11	512	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	145	11	513	358	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	146	11	514	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	147	11	515	358	0	1	0
+48	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	148	11	516	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	149	11	517	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	150	11	518	358	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	151	11	519	358	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	152	11	520	358	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	153	11	521	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	154	11	522	358	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	155	11	523	358	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	156	11	524	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	157	11	525	358	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	158	11	526	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	159	11	527	358	0	1	0
+65	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	160	11	528	358	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	162	11	530	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	163	11	531	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	164	11	532	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	166	11	534	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	167	11	535	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	169	11	537	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	170	11	538	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	171	11	539	358	0	1	0
+448	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	3	171	11	539	358	1	0	0
+2335	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	2	37	10	405	415	1	1	0
+224	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	5	37	11	405	416	0	1	0
+56	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	5	36	11	404	416	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	5	35	11	403	416	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	5	34	11	402	416	0	1	0
+336	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	5	33	11	401	416	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	5	32	11	400	416	0	1	0
+1477	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	3	32	11	400	416	1	0	0
+2439	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	2	58	6	327	560	1	1	0
+168	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	3	58	6	327	560	1	0	0
+3375	"MainWindow/TheMenuBar"	800	25	2	92	10	97	59	1	1	0
+760	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	27	-14	97	59	1	0	0
+93	"MainWindow/TheMenuBar"	800	25	3	92	10	97	59	1	0	0
+1083	"MainWindow/TheMenuBar/QMenu_9"	209	207	2	63	192	133	265	1	1	0
+104	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	63	192	133	265	1	0	0
+13	"MainWindow/ShadersDialog_0"	385	273	13	80	123	80	123
+0	"MainWindow/ShadersDialog_0"	385	273	14	385	273	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	13	11	11	11	11
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	14	363	218	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	189	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	189	14	359	189	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	189	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	189	14	359	189	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	128	27	13	9	10	9	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	128	27	14	128	27	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	13	147	9	147	9
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	14	203	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	128	27	13	9	49	9	49
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	128	27	14	128	27	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	13	147	48	147	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	14	203	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	128	27	13	9	88	9	88
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	128	27	14	128	27	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	13	147	87	147	87
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	14	203	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	17	13	9	126	9	126
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	17	14	128	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	13	9	153	9	153
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	14	128	27	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	27	13	147	153	147	153
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	27	14	80	27	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	27	13	237	153	237	153
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	27	14	113	27	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	654	25	13	0	0	0	0
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	654	25	14	654	25	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	363	25	14	363	25	654	25
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_0"	16	25	13	331	0	331	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_0"	16	25	14	16	25	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_1"	16	25	13	347	0	347	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_1"	16	25	14	16	25	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	13	2	25	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	14	359	191	359	189
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	14	359	191	359	189
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	27	13	237	155	237	153
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	27	13	147	155	147	153
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	13	9	155	9	153
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	19	14	128	19	128	17
+0	"MainWindow/ShadersDialog_0/QPushButton_0"	363	27	13	11	235	11	235
+0	"MainWindow/ShadersDialog_0/QPushButton_0"	363	27	14	363	27	-1	-1
+1	"MainWindow/ShadersDialog_0"	385	273	13	208	191	80	123
+15	"MainWindow/ShadersDialog_0"	385	273	13	213	180	208	191
+1306	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	2	41	13	414	238	1	1	0
+111	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	3	41	13	414	238	1	0	0
+2392	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	47	"/"	0	0	61	47
+84	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	47	"/"	0	0	61	47
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+255	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	65	"a"	0	0	38	97
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+475	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	80	"p"	0	0	33	112
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+130	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	80	"p"	0	0	33	112
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	83	"s"	0	0	39	115
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+646	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	47	"/"	0	0	61	47
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+243	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	67	"c"	0	0	54	99
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	67	"c"	0	0	54	99
+173	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	83	"s"	0	0	39	115
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+262	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	86	"v"	0	0	55	118
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+223	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	73	"i"	0	0	31	105
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	73	"i"	0	0	31	105
+1	"MainWindow/ShadersDialog_0"	385	273	7	1	0	73	"i"	0	0	31	105
+126	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	83	"s"	0	0	39	115
+79	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+998	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	47	"/"	0	0	61	47
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+288	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	77	"m"	0	0	58	109
+98	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	79	"o"	0	0	32	111
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	79	"o"	0	0	32	111
+133	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	76	"l"	0	0	46	108
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+230	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	69	"e"	0	0	26	101
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+178	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	75	"k"	0	0	45	107
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	75	"k"	0	0	45	107
+107	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	69	"e"	0	0	26	101
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+143	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	76	"l"	0	0	46	108
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+850	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	47	"/"	0	0	61	47
+87	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+718	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	83	"s"	0	0	39	115
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+204	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	72	"h"	0	0	43	104
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	72	"h"	0	0	43	104
+111	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	65	"a"	0	0	38	97
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+195	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	68	"d"	0	0	40	100
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	68	"d"	0	0	40	100
+140	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	69	"e"	0	0	26	101
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+117	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	82	"r"	0	0	27	114
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	82	"r"	0	0	27	114
+211	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	83	"s"	0	0	39	115
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+1292	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	47	"/"	0	0	61	47
+84	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+1269	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	86	"v"	0	0	55	118
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+204	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	77	"m"	0	0	58	109
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+153	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	68	"d"	0	0	40	100
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	68	"d"	0	0	40	100
+782	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	46	"."	0	0	60	46
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	46	"."	0	0	60	46
+434	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	86	"v"	0	0	55	118
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+20	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	69	"e"	0	0	26	101
+79	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+278	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	82	"r"	0	0	27	114
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	82	"r"	0	0	27	114
+120	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	6	1	0	84	"t"	0	0	28	116
+82	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	84	"t"	0	0	28	116
+1592	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	2	36	12	409	276	1	1	0
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	3	36	12	409	276	1	0	0
+863	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	47	"/"	0	0	61	47
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+275	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	65	"a"	0	0	38	97
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+185	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	80	"p"	0	0	33	112
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+133	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	80	"p"	0	0	33	112
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	83	"s"	0	0	39	115
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+636	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	47	"/"	0	0	61	47
+82	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+239	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	67	"c"	0	0	54	99
+82	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	67	"c"	0	0	54	99
+191	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	83	"s"	0	0	39	115
+104	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+256	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	86	"v"	0	0	55	118
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+214	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	73	"i"	0	0	31	105
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	73	"i"	0	0	31	105
+130	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	83	"s"	0	0	39	115
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+1240	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	47	"/"	0	0	61	47
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+552	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	77	"m"	0	0	58	109
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+188	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	79	"o"	0	0	32	111
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	79	"o"	0	0	32	111
+159	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	76	"l"	0	0	46	108
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+131	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	69	"e"	0	0	26	101
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+117	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	75	"k"	0	0	45	107
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	75	"k"	0	0	45	107
+82	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	69	"e"	0	0	26	101
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+111	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	76	"l"	0	0	46	108
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+1646	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	47	"/"	0	0	61	47
+75	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+340	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	83	"s"	0	0	39	115
+107	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+182	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	72	"h"	0	0	43	104
+97	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	72	"h"	0	0	43	104
+1	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	72	"h"	0	0	43	104
+46	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	65	"a"	0	0	38	97
+97	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+218	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	68	"d"	0	0	40	100
+100	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	68	"d"	0	0	40	100
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	68	"d"	0	0	40	100
+123	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	69	"e"	0	0	26	101
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+111	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	82	"r"	0	0	27	114
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	82	"r"	0	0	27	114
+137	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	83	"s"	0	0	39	115
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+1620	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	47	"/"	0	0	61	47
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+246	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	86	"v"	0	0	55	118
+663	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+200	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	77	"m"	0	0	58	109
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+200	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	68	"d"	0	0	40	100
+63	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	68	"d"	0	0	40	100
+2527	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	46	"."	0	0	60	46
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	46	"."	0	0	60	46
+253	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	70	"f"	0	0	41	102
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	70	"f"	0	0	41	102
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	70	"f"	0	0	41	102
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	70	"f"	0	0	41	102
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	70	"f"	0	0	41	102
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	70	"f"	0	0	41	102
+117	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	82	"r"	0	0	27	114
+75	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	82	"r"	0	0	27	114
+556	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	65	"a"	0	0	38	97
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+501	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	6	1	0	71	"g"	0	0	42	103
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	7	1	0	71	"g"	0	0	42	103
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	71	"g"	0	0	42	103
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	71	"g"	0	0	42	103
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	71	"g"	0	0	42	103
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	71	"g"	0	0	42	103
+1749	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	2	46	18	419	321	1	1	0
+96	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	3	46	18	419	321	1	0	0
+910	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	47	"/"	0	0	61	47
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+218	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	65	"a"	0	0	38	97
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+169	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	80	"p"	0	0	33	112
+84	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	80	"p"	0	0	33	112
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+72	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	83	"s"	0	0	39	115
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+801	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	47	"/"	0	0	61	47
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+230	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	67	"c"	0	0	54	99
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	67	"c"	0	0	54	99
+240	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	83	"s"	0	0	39	115
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+243	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	86	"v"	0	0	55	118
+95	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+307	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	73	"i"	0	0	31	105
+98	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	73	"i"	0	0	31	105
+153	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	83	"s"	0	0	39	115
+100	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+1350	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	47	"/"	0	0	61	47
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+453	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	77	"m"	0	0	58	109
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+414	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	79	"o"	0	0	32	111
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	79	"o"	0	0	32	111
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	79	"o"	0	0	32	111
+133	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	76	"l"	0	0	46	108
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+114	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	69	"e"	0	0	26	101
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+114	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	75	"k"	0	0	45	107
+97	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	75	"k"	0	0	45	107
+1	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	75	"k"	0	0	45	107
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	75	"k"	0	0	45	107
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	69	"e"	0	0	26	101
+82	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	76	"l"	0	0	46	108
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+1201	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	47	"/"	0	0	61	47
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+566	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	83	"s"	0	0	39	115
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+214	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	72	"h"	0	0	43	104
+98	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	72	"h"	0	0	43	104
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	72	"h"	0	0	43	104
+65	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	65	"a"	0	0	38	97
+108	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+194	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	68	"d"	0	0	40	100
+98	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	68	"d"	0	0	40	100
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	69	"e"	0	0	26	101
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+98	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	82	"r"	0	0	27	114
+111	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	82	"r"	0	0	27	114
+437	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	83	"s"	0	0	39	115
+100	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+1247	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	47	"/"	0	0	61	47
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	47	"/"	0	0	61	47
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	47	"/"	0	0	61	47
+969	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	86	"v"	0	0	55	118
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	86	"v"	0	0	55	118
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	86	"v"	0	0	55	118
+308	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	77	"m"	0	0	58	109
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+230	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	68	"d"	0	0	40	100
+91	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	68	"d"	0	0	40	100
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	68	"d"	0	0	40	100
+740	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	45	"-"	0	0	20	45
+97	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	45	"-"	0	0	20	45
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	45	"-"	0	0	20	45
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	45	"-"	0	0	20	45
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	45	"-"	0	0	20	45
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	45	"-"	0	0	20	45
+366	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	77	"m"	0	0	58	109
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+143	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	69	"e"	0	0	26	101
+101	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	69	"e"	0	0	26	101
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	69	"e"	0	0	26	101
+207	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	84	"t"	0	0	28	116
+75	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	84	"t"	0	0	28	116
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	84	"t"	0	0	28	116
+463	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	65	"a"	0	0	38	97
+78	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+201	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	76	"l"	0	0	46	108
+65	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+127	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	76	"l"	0	0	46	108
+81	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	76	"l"	0	0	46	108
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	76	"l"	0	0	46	108
+224	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	73	"i"	0	0	31	105
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	73	"i"	0	0	31	105
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	73	"i"	0	0	31	105
+169	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	67	"c"	0	0	54	99
+78	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	67	"c"	0	0	54	99
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	67	"c"	0	0	54	99
+1024	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	46	"."	0	0	60	46
+84	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	46	"."	0	0	60	46
+317	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	80	"p"	0	0	33	112
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	80	"p"	0	0	33	112
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	80	"p"	0	0	33	112
+92	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	65	"a"	0	0	38	97
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+566	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	82	"r"	0	0	27	114
+84	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	82	"r"	0	0	27	114
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	82	"r"	0	0	27	114
+188	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	65	"a"	0	0	38	97
+85	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	65	"a"	0	0	38	97
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	65	"a"	0	0	38	97
+340	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	77	"m"	0	0	58	109
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	77	"m"	0	0	58	109
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	77	"m"	0	0	58	109
+334	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	6	1	0	83	"s"	0	0	39	115
+94	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	191	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	218	7	1	0	83	"s"	0	0	39	115
+0	"MainWindow/ShadersDialog_0"	385	273	7	1	0	83	"s"	0	0	39	115
+1476	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	2	66	14	301	385	1	1	0
+16	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	5	67	14	302	385	0	1	0
+88	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	3	67	14	302	385	1	0	0
+333	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	15	13	237	89	237	155
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	15	14	113	15	113	27
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	15	13	147	89	147	155
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	15	14	80	15	80	27
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	15	13	9	89	9	155
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	15	14	128	15	128	27
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	15	13	9	69	9	126
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	15	14	128	15	128	19
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	15	13	147	49	147	87
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	15	14	203	15	203	29
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	128	15	13	9	49	9	88
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	128	15	14	128	15	128	27
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	15	13	147	29	147	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	15	14	203	15	203	29
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	128	15	13	9	29	9	49
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	128	15	14	128	15	128	27
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	15	14	203	15	203	29
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	128	15	13	9	9	9	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	128	15	14	128	15	128	27
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	341	75	13	9	107	9	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	341	75	14	341	75	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	322	71	13	2	2	2	2
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	322	71	14	322	71	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0"	433	582	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0"	433	582	14	433	582	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_0"	91	29	13	9	9	9	9
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_0"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0"	75	29	13	106	9	106	9
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_1"	91	29	13	9	44	9	44
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_1"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1"	75	29	13	106	44	106	44
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2"	75	29	13	187	44	187	44
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3"	75	29	13	268	44	268	44
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_2"	91	29	13	9	79	9	79
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_2"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4"	75	29	13	106	79	106	79
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5"	75	29	13	187	79	187	79
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6"	75	29	13	268	79	268	79
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_3"	91	29	13	9	114	9	114
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_3"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7"	75	29	13	106	114	106	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8"	75	29	13	187	114	187	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_9"	75	29	13	268	114	268	114
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_9"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_9/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_9/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_4"	91	29	13	9	149	9	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_4"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_10"	75	29	13	106	149	106	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_10"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_10/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_10/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_11"	75	29	13	187	149	187	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_11"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_11/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_11/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_12"	75	29	13	268	149	268	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_12"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_12/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_12/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_5"	91	29	13	9	184	9	184
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_5"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_13"	75	29	13	106	184	106	184
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_13"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_13/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_13/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_14"	75	29	13	187	184	187	184
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_14"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_14/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_14/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_15"	75	29	13	268	184	268	184
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_15"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_15/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_15/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_6"	91	29	13	9	219	9	219
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_6"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_16"	75	29	13	106	219	106	219
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_16"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_16/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_16/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_17"	75	29	13	187	219	187	219
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_17"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_17/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_17/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_18"	75	29	13	268	219	268	219
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_18"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_18/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_18/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_7"	91	29	13	9	254	9	254
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_7"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_19"	75	29	13	106	254	106	254
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_19"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_19/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_19/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_20"	75	29	13	187	254	187	254
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_20"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_20/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_20/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_21"	75	29	13	268	254	268	254
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_21"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_21/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_21/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_8"	91	29	13	9	289	9	289
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_8"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_22"	75	29	13	106	289	106	289
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_22"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_22/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_22/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_23"	75	29	13	187	289	187	289
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_23"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_23/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_23/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_24"	75	29	13	268	289	268	289
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_24"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_24/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_24/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_9"	91	29	13	9	324	9	324
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_9"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_25"	75	29	13	106	324	106	324
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_25"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_25/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_25/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_26"	75	29	13	187	324	187	324
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_26"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_26/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_26/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_27"	75	29	13	268	324	268	324
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_27"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_27/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_27/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_28"	75	29	13	349	324	349	324
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_28"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_28/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_28/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_10"	91	29	13	9	359	9	359
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_10"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_29"	75	29	13	106	359	106	359
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_29"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_29/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_29/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_30"	75	29	13	187	359	187	359
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_30"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_30/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_30/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_31"	75	29	13	268	359	268	359
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_31"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_31/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_31/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_32"	75	29	13	349	359	349	359
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_32"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_32/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_32/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_11"	91	29	13	9	394	9	394
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_11"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_33"	75	29	13	106	394	106	394
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_33"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_33/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_33/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_12"	91	29	13	9	429	9	429
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_12"	91	29	14	91	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_34"	75	29	13	106	429	106	429
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_34"	75	29	14	75	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_34/qt_spinbox_lineedit"	54	23	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_34/qt_spinbox_lineedit"	54	23	14	54	23	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_13"	91	17	13	9	464	9	464
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_13"	91	17	14	91	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_14"	91	17	13	9	487	9	487
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_14"	91	17	14	91	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_15"	91	17	13	9	510	9	510
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_15"	91	17	14	91	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_16"	91	17	13	9	533	9	533
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_16"	91	17	14	91	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_17"	91	17	13	9	556	9	556
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_17"	91	17	14	91	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2"	15	71	13	324	2	324	2
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2"	15	71	14	15	71	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2/QScrollBar_0"	15	71	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2/QScrollBar_0"	15	71	14	15	71	-1	-1
+8	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	15	56	14	15	56	15	71
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	15	56	14	15	56	15	71
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	322	15	13	2	58	2	58
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	322	15	14	322	15	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	322	15	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	322	15	14	322	15	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	322	56	14	322	56	322	71
+19	"MainWindow/ShadersDialog_0"	385	354	14	385	354	385	273
+0	"MainWindow/ShadersDialog_0/QPushButton_0"	363	27	13	11	316	11	235
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	363	299	14	363	299	363	218
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	359	272	14	359	272	359	191
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	359	272	14	359	272	359	191
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	341	77	13	9	186	9	107
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	341	77	14	341	77	341	75
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	322	15	13	2	60	2	58
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	15	58	14	15	58	15	56
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	15	58	14	15	58	15	56
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	322	58	14	322	58	322	56
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	27	13	237	153	237	89
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	113	27	14	113	27	113	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	27	13	147	153	147	89
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	27	14	80	27	80	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	13	9	153	9	89
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	128	27	14	128	27	128	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	17	13	9	126	9	69
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	128	17	14	128	17	128	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	13	147	87	147	49
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	203	29	14	203	29	203	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	128	27	13	9	88	9	49
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	128	27	14	128	27	128	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	13	147	48	147	29
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	203	29	14	203	29	203	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	128	27	13	9	49	9	29
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	128	27	14	128	27	128	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	203	29	14	203	29	203	15
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	128	27	13	9	10	9	9
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	128	27	14	128	27	128	15
+2120	"MainWindow/ShadersDialog_0/QPushButton_0"	363	27	2	134	14	358	510	1	1	0
+95	"MainWindow/ShadersDialog_0/QPushButton_0"	363	27	3	134	14	358	510	1	0	0
+1200	"MainWindow/QVTKWidget"	512	515	2	78	210	371	322	1	1	0
+48	"MainWindow/QVTKWidget"	512	515	5	78	211	371	323	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	79	211	372	323	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	80	211	373	323	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	80	212	373	324	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	82	212	375	324	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	82	213	375	325	0	1	0
+19	"MainWindow/QVTKWidget"	512	515	5	83	214	376	326	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	84	214	377	326	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	85	215	378	327	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	86	215	379	327	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	87	216	380	328	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	89	217	382	329	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	91	218	384	330	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	91	219	384	331	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	92	220	385	332	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	93	220	386	332	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	94	221	387	333	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	95	222	388	334	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	96	222	389	334	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	97	222	390	334	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	97	223	390	335	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	98	223	391	335	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	99	223	392	335	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	100	224	393	336	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	101	225	394	337	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	102	225	395	337	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	103	226	396	338	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	104	226	397	338	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	104	227	397	339	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	105	228	398	340	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	106	229	399	341	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	107	230	400	342	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	108	231	401	343	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	109	231	402	343	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	109	232	402	344	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	110	232	403	344	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	111	233	404	345	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	112	233	405	345	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	112	234	405	346	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	113	234	406	346	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	114	235	407	347	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	114	236	407	348	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	115	236	408	348	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	116	238	409	350	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	117	240	410	352	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	118	240	411	352	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	120	241	413	353	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	122	243	415	355	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	123	244	416	356	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	124	244	417	356	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	125	245	418	357	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	126	245	419	357	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	126	246	419	358	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	128	247	421	359	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	128	248	421	360	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	129	249	422	361	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	129	250	422	362	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	129	251	422	363	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	130	251	423	363	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	130	253	423	365	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	131	253	424	365	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	131	254	424	366	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	131	255	424	367	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	131	256	424	368	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	132	257	425	369	0	1	0
+17	"MainWindow/QVTKWidget"	512	515	5	132	258	425	370	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	133	258	426	370	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	133	259	426	371	0	1	0
+21	"MainWindow/QVTKWidget"	512	515	5	134	260	427	372	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	134	261	427	373	0	1	0
+96	"MainWindow/QVTKWidget"	512	515	5	134	262	427	374	0	1	0
+48	"MainWindow/QVTKWidget"	512	515	5	134	263	427	375	0	1	0
+24	"MainWindow/QVTKWidget"	512	515	5	134	264	427	376	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	134	265	427	377	0	1	0
+56	"MainWindow/QVTKWidget"	512	515	5	134	266	427	378	0	1	0
+40	"MainWindow/QVTKWidget"	512	515	5	134	267	427	379	0	1	0
+32	"MainWindow/QVTKWidget"	512	515	5	135	267	428	379	0	1	0
+373	"MainWindow/QVTKWidget"	512	515	5	135	271	428	383	0	1	0
+90	"MainWindow/QVTKWidget"	512	515	5	135	272	428	384	0	1	0
+816	"MainWindow/QVTKWidget"	512	515	3	135	272	428	384	1	0	0

@@ -1,0 +1,63 @@
+From:	Benj FitzPatrick [benjfitz@uchicago.edu]
+Sent:	Tuesday, November 03, 2009 4:06 PM
+To:	Varetto  Ugo
+Cc:	benjfitz@gmail.com
+Subject:	RE: g09 changed the output file formatting lots from g03
+Attachments:	c3h5o-int18-ts-int9-2_opt-uccsd-avdz-vtight-p2b.log; c3h5o-int18-ts-int9-
+2_qst2-ump2-avdz-tight-p.log; c3h5o-int7-cis-cis-ts-int8_irc-f-ub3lyp-avdz-
+a2.log; c3h5o-int7-cis-cis-ts-int8_irc-r-ub3lyp-avdz-a2.log
+
+Ugo,
+Of course, I'm glad to help.  I've attached 4 files, 2 irc's and 2 geometry 
+optimizations.  The 2 irc's are from the same TS, but different directions.  
+The UCCSD geometry opt calculates the frequencies at the end.  The UMP2 
+geometry opt has calcall in there, so the frequency info should be all over 
+the place (in the past calcall caused Molekel to read in each vib twice).
+Thanks and let me know if I can be of any more help, Benj
+
+---- Original message ----
+>Date: Tue, 3 Nov 2009 09:55:14 +0100
+>From: "Varetto  Ugo" <uvaretto@cscs.ch>
+>Subject: RE: g09 changed the output file formatting lots from g03
+>To: Benj FitzPatrick <benjfitz@uchicago.edu>
+>
+>Hi Benj thanks a lot for the email.
+>
+>I knew the format had changed however I have no way of accessing 
+>Gaussian 09,
+here they decided to get rid of Gaussian so I won't even have sample output or 
+anything that could help me update the Gaussian readers.
+>It would be great if you could send me any sample Gaussian 09 log file 
+>you may
+have so that I can take a look, my plan was to use similar input files with 
+both
+G03 and G09 and check the output but it won't be possible.
+>
+>In case you want to send me some files you can use email or ftp
+(ftp.cscs.ch/in/put/abc/molekel/)
+>
+>Best Regards & thanks again
+>
+>-ugo-
+>
+>-----Original Message-----
+>From: Benj FitzPatrick [mailto:benjfitz@uchicago.edu]
+>Sent: Saturday, October 31, 2009 12:45 AM
+>To: Varetto Ugo
+>Subject: g09 changed the output file formatting lots from g03
+>
+>Hi Ugo,
+>I posted one case of this on the forums, but I thought I'd send you an 
+>email directly in case you haven't run across g09 yet.  It looks like 
+>geometry specifications are the same as g03, but IRC and frequency 
+>formatting in the output file has changed (even gaussview3 can't handle 
+>gaussian's own output file changes).
+>
+>With the vibrations it looks like at least some, if not all, of the 
+>frequencies get detected correctly, but the vectors corresponding to 
+>the normal mode motion appear to be different.  Namely, Molekel doesn't 
+>do anything when told to animate a vibrational mode.  Also, when I try 
+>to look at an IRC calculation the atoms get scrambled (some disappear all 
+together).
+>Sorry if I'm the bearer of bad news,
+>Benj

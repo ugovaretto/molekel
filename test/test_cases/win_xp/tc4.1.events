@@ -1,0 +1,803 @@
+1594	"MainWindow/MainToolbar/QToolButton_0"	31	30	2	18	13	134	71	1	1	0
+109	"MainWindow/MainToolbar/QToolButton_0"	31	30	3	18	13	134	71	1	0	0
+1360	"MainWindow/Load molecule Dialog"	530	340	13	343	210	343	210
+0	"MainWindow/Load molecule Dialog"	530	340	14	530	340	-1	-1
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	13	13	13	517	327	517	327
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	13	13	14	13	13	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0"	508	223	13	11	45	11	45
+0	"MainWindow/Load molecule Dialog/QListView_0"	508	223	14	508	223	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	204	13	1	1	1	1
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	204	14	506	204	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	506	17	13	1	205	1	205
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	506	17	14	506	17	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	506	17	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	506	17	14	506	17	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	13	363	14	363	14
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	13	394	14	394	14
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	13	425	14	425	14
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	13	456	14	456	14
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	13	487	14	487	14
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_0"	80	28	13	11	11	11	11
+0	"MainWindow/Load molecule Dialog/QLabel_0"	80	28	14	80	28	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_1"	80	28	13	11	274	11	274
+0	"MainWindow/Load molecule Dialog/QLabel_1"	80	28	14	80	28	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_2"	80	21	13	11	308	11	308
+0	"MainWindow/Load molecule Dialog/QLabel_2"	80	21	14	80	21	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	77	55	13	439	274	439	274
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	77	55	14	77	55	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	14	77	25	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	13	0	30	0	30
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	14	77	25	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	251	20	13	97	15	97	15
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	251	20	14	251	20	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	212	16	13	22	2	22	2
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	212	16	14	212	16	-1	-1
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	251	18	13	97	279	97	279
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	251	18	14	251	18	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	251	18	13	97	309	97	309
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	251	18	14	251	18	-1	-1
+47	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	14	506	221	506	204
+2203	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	2	67	114	422	370	1	1	0
+47	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	5	66	114	421	370	0	1	0
+78	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	3	66	114	421	370	1	0	0
+781	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	2	40	10	822	494	1	1	0
+109	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	3	40	10	822	494	1	0	0
+6844	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	181	234	2	98	17	214	161	1	1	0
+125	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	181	234	3	98	17	214	161	1	0	0
+1531	"MainWindow/TheMenuBar"	1005	21	2	284	7	390	42	1	1	0
+0	"QAlphaWidget_0"	185	78	13	354	55	354	55
+0	"QAlphaWidget_0"	185	78	14	185	78	-1	-1
+1438	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	36	-12	390	43	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	284	8	390	43	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	36	-11	390	44	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	284	9	390	44	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	36	-10	390	45	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	284	10	390	45	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	37	-9	391	46	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	285	11	391	46	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	37	-8	391	47	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	285	12	391	47	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	38	-6	392	49	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	286	14	392	49	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	39	-5	393	50	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	287	15	393	50	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	39	-3	393	52	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	287	17	393	52	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	40	-1	394	54	0	1	0
+0	"MainWindow/TheMenuBar"	1005	21	5	288	19	394	54	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	41	1	395	56	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	41	3	395	58	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	42	6	396	61	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	44	10	398	65	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	45	12	399	67	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	13	400	68	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	15	400	70	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	16	400	71	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	17	400	72	0	1	0
+219	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	18	400	73	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	19	400	74	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	20	400	75	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	21	400	76	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	22	400	77	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	24	400	79	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	25	400	80	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	26	400	81	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	27	400	82	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	185	78	5	46	28	400	83	0	1	0
+312	"MainWindow/TheMenuBar/QMenu_9"	185	78	3	46	28	400	83	1	0	0
+32	"MainWindow/GridDataSurfaceDialog_0"	375	421	13	12	30	12	30
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	14	375	421	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	13	11	11	11	11
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	14	353	329	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0"	335	94	13	9	9	9	9
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0"	335	94	14	335	94	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_0"	95	16	13	10	46	10	46
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_0"	95	16	14	95	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_1"	95	16	13	10	24	10	24
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_1"	95	16	14	95	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_2"	95	16	13	10	68	10	68
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_2"	95	16	14	95	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_3"	214	16	13	111	24	111	24
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_3"	214	16	14	214	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_4"	214	16	13	111	46	111	46
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_4"	214	16	14	214	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_5"	214	16	13	111	68	111	68
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_0/QLabel_5"	214	16	14	214	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_0"	168	20	13	9	109	9	109
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_0"	168	20	14	168	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	13	176	110	176	110
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	14	168	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	150	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	150	16	14	150	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_1"	168	18	13	9	135	9	135
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_1"	168	18	14	168	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0"	168	18	13	176	135	176	135
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0"	168	18	14	168	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_2"	168	20	13	9	159	9	159
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_2"	168	20	14	168	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QSpinBox_0"	168	18	13	176	160	176	160
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QSpinBox_0"	168	18	14	168	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QSpinBox_0/qt_spinbox_lineedit"	150	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QSpinBox_0/qt_spinbox_lineedit"	150	16	14	150	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QPushButton_0"	168	25	13	9	185	9	185
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QPushButton_0"	168	25	14	168	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_3"	168	25	13	176	185	176	185
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_3"	168	25	14	168	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_4"	168	18	13	9	216	9	216
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QLabel_4"	168	18	14	168	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_1"	168	18	13	176	216	176	216
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_1"	168	18	14	168	18	-1	-1
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1"	335	80	13	9	240	9	240
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1"	335	80	14	335	80	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QLabel_0"	155	20	13	10	24	10	24
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QLabel_0"	155	20	14	155	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QSpinBox_0"	154	18	13	171	25	171	25
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QSpinBox_0"	154	18	14	154	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QSpinBox_0/qt_spinbox_lineedit"	136	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QSpinBox_0/qt_spinbox_lineedit"	136	16	14	136	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QLabel_1"	155	20	13	10	50	10	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QLabel_1"	155	20	14	155	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QDoubleSpinBox_0"	154	18	13	171	51	171	51
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QDoubleSpinBox_0"	154	18	14	154	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QDoubleSpinBox_0/qt_spinbox_lineedit"	136	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QGroupBox_1/QDoubleSpinBox_0/qt_spinbox_lineedit"	136	16	14	136	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	376	11	376
+0	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	14	353	3	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/QLabel_0"	177	15	13	11	355	11	355
+0	"MainWindow/GridDataSurfaceDialog_0/QLabel_0"	177	15	14	177	15	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/QCheckBox_0"	177	15	13	187	355	187	355
+0	"MainWindow/GridDataSurfaceDialog_0/QCheckBox_0"	177	15	14	177	15	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/QPushButton_0"	118	25	13	11	385	11	385
+0	"MainWindow/GridDataSurfaceDialog_0/QPushButton_0"	118	25	14	118	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/QPushButton_1"	119	25	13	128	385	128	385
+0	"MainWindow/GridDataSurfaceDialog_0/QPushButton_1"	119	25	14	119	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/QPushButton_2"	118	25	13	246	385	246	385
+0	"MainWindow/GridDataSurfaceDialog_0/QPushButton_2"	118	25	14	118	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	13	417	132	8	0
+32	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	346	11	376
+46	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	376	11	346
+0	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	346	11	376
+7047	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	150	16	2	65	9	674	293	1	1	0
+157	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	150	16	3	65	9	674	293	1	0	0
+781	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+344	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+63	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+62	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+63	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+62	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+63	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+62	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+47	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+47	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+62	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	16777219	""	0	512	14	8
+63	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	16777219	""	0	512	14	8
+1594	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	48	"0"	0	512	11	48
+93	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	48	"0"	0	512	11	48
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	48	"0"	0	512	11	48
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	48	"0"	0	512	11	48
+266	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	46	"."	0	512	52	190
+109	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	46	"."	0	512	52	190
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	46	"."	0	512	52	190
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	46	"."	0	512	52	190
+328	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	48	"0"	0	512	11	48
+110	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	48	"0"	0	512	11	48
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	48	"0"	0	512	11	48
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	48	"0"	0	512	11	48
+1031	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	6	1	0	50	"2"	0	512	3	50
+109	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QDoubleSpinBox_0"	168	18	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0"	353	329	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0"	375	421	7	1	0	50	"2"	0	512	3	50
+3797	"MainWindow/GridDataSurfaceDialog_0/QPushButton_0"	118	25	2	75	14	507	561	1	1	0
+94	"MainWindow/GridDataSurfaceDialog_0/QPushButton_0"	118	25	3	75	14	507	561	1	0	0
+7391	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0"	168	18	2	159	11	767	319	1	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	13	608	325	608	325
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	14	168	142	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	166	140	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	166	140	14	166	140	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	166	140	13	0	0	0	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	166	140	14	166	140	-1	-1
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2"	17	140	13	149	0	149	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2"	17	140	14	17	140	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	13	0	0	0	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	14	17	140	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	14	149	140	166	140
+2250	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	157	-5	765	320	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	155	-5	763	320	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	154	-5	762	320	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	153	-5	761	320	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	153	-4	761	321	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	152	-4	760	321	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	150	-4	758	321	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	148	-3	756	322	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	147	-3	755	322	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	145	-1	753	324	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	144	-1	752	324	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	140	0	748	325	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	137	0	746	326	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	133	1	742	327	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	131	2	740	328	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	127	4	736	330	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	122	6	731	332	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	121	7	730	333	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	115	9	724	335	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	114	9	723	335	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	110	11	719	337	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	108	12	717	338	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	104	14	713	340	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	101	15	710	341	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	100	16	709	342	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	98	17	707	343	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	98	18	707	344	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	97	18	706	344	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	96	19	705	345	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	95	20	704	346	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	94	21	703	347	0	1	0
+234	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	94	22	703	348	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	93	22	702	348	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	92	23	701	349	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	92	24	701	350	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	92	25	701	351	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	92	26	701	352	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	91	27	700	353	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	91	28	700	354	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	91	29	700	355	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	91	30	700	356	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	90	30	699	356	0	1	0
+203	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	90	31	699	357	0	1	0
+47	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	89	31	698	357	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	89	32	698	358	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	88	32	697	358	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	88	33	697	359	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	87	34	696	360	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	86	35	695	361	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	86	36	695	362	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	85	38	694	364	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	84	40	693	366	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	83	42	692	368	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	81	46	690	372	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	80	48	689	374	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	79	49	688	375	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	79	50	688	376	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	78	50	687	376	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	77	52	686	378	0	1	0
+250	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	77	53	686	379	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	76	54	685	380	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	75	56	684	382	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	75	58	684	384	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	75	59	684	385	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	74	62	683	388	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	73	64	682	390	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	73	66	682	392	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	73	67	682	393	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	72	68	681	394	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	72	69	681	395	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	72	70	681	396	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	72	71	681	397	0	1	0
+297	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	72	72	681	398	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	72	73	681	399	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	71	73	680	399	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	71	74	680	400	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	70	75	679	401	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	70	76	679	402	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	70	78	679	404	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	69	79	678	405	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	69	80	678	406	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	69	81	678	407	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	69	82	678	408	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	68	82	677	408	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	68	83	677	409	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	68	84	677	410	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	68	85	677	411	0	1	0
+203	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	68	86	677	412	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	86	676	412	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	87	676	413	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	88	676	414	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	89	676	415	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	91	676	417	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	92	676	418	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	93	676	419	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	94	676	420	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	95	676	421	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	97	676	423	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	98	676	424	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	99	676	425	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	102	676	428	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	103	676	429	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	104	676	430	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	105	676	431	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	106	676	432	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	107	676	433	0	1	0
+250	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	108	676	434	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	109	676	435	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	110	676	436	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	111	676	437	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	112	676	438	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	113	676	439	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	115	676	441	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	116	676	442	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	117	676	443	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	118	676	444	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	119	676	445	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	120	676	446	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	121	676	447	0	1	0
+281	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	122	676	448	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	123	676	449	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	124	676	450	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	125	676	451	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	126	676	452	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	127	676	453	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	128	676	454	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	129	676	455	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	130	676	456	0	1	0
+360	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	131	676	457	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	132	676	458	0	1	0
+32	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	133	676	459	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	134	676	460	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	135	676	461	0	1	0
+1078	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	134	676	460	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	133	676	459	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	132	676	458	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	131	676	457	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	67	130	676	456	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	68	130	677	456	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	69	129	678	455	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	71	127	680	453	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	73	126	682	452	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	76	124	685	450	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	76	123	685	449	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	79	121	688	447	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	82	119	691	445	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	86	117	695	443	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	87	116	696	442	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	90	113	699	439	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	92	112	701	438	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	93	111	702	437	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	96	109	705	435	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	97	108	706	434	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	99	106	708	432	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	100	106	709	432	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	101	104	710	430	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	104	103	713	429	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	104	102	713	428	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	106	101	715	427	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	107	101	716	427	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	109	99	718	425	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	111	97	720	423	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	112	97	721	423	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	114	95	723	421	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	117	93	726	419	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	118	92	727	418	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	121	90	730	416	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	122	89	731	415	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	124	87	733	413	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	126	87	735	413	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	129	84	738	410	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	131	82	740	408	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	133	80	742	406	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	135	78	744	404	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	135	77	744	403	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	136	76	745	402	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	137	75	746	401	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	138	74	747	400	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	139	73	748	399	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	139	72	748	398	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	140	71	749	397	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	141	70	750	396	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	141	69	750	395	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	142	68	751	394	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	142	67	751	393	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	142	66	751	392	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	142	65	751	391	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	143	64	752	390	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	143	63	752	389	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	144	62	753	388	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	145	61	754	387	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	146	60	755	386	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	146	59	755	385	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	147	59	756	385	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	147	58	756	384	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	148	57	757	383	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	150	57	758	382	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	152	56	760	381	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	152	55	760	380	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	153	54	761	379	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	153	53	761	378	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	154	52	762	377	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	155	51	763	376	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	156	50	764	375	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	156	49	764	374	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	157	48	765	373	0	1	0
+266	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	157	47	765	372	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	47	766	372	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	46	766	371	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	45	766	370	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	44	766	369	0	1	0
+32	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	43	766	368	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	42	766	367	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	41	766	366	0	1	0
+203	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	168	142	5	158	40	766	365	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	3	8	39	766	365	1	0	0
+359	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	2	8	35	766	361	1	1	0
+188	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	8	36	766	362	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	36	765	362	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	37	765	363	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	38	765	364	0	1	0
+32	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	39	765	365	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	40	765	366	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	41	765	367	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	42	765	368	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	43	765	369	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	44	765	370	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	45	765	371	0	1	0
+47	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	46	765	372	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	47	765	373	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	48	765	374	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	49	765	375	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	50	765	376	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	51	765	377	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	52	765	378	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	53	765	379	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	54	765	380	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	55	765	381	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	56	765	382	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	57	765	383	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	58	765	384	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	60	765	386	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	61	765	387	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	63	765	389	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	64	765	390	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	65	765	391	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	67	765	393	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	68	765	394	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	70	765	396	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	72	765	398	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	74	765	400	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	75	765	401	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	76	765	402	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	77	765	403	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	78	765	404	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	80	765	406	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	81	765	407	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	82	765	408	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	83	765	409	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	5	7	84	765	410	0	1	0
+625	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/QWidget_2/QScrollBar_0"	17	140	3	7	84	765	410	1	0	0
+1266	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	2	51	16	660	342	1	1	0
+281	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	51	17	660	343	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	51	18	660	344	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	51	19	660	345	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	51	21	660	347	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	51	23	660	349	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	51	25	660	351	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	52	27	661	353	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	28	662	354	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	29	662	355	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	30	662	356	0	1	0
+234	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	31	662	357	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	32	662	358	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	33	662	359	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	34	662	360	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	35	662	361	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	37	662	363	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	38	662	364	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	40	662	366	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	41	662	367	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	43	662	369	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	44	662	370	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	46	662	372	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	47	662	373	0	1	0
+188	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	48	662	374	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	49	662	375	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	50	662	376	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	51	662	377	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	53	662	379	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	54	662	380	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	55	662	381	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	56	662	382	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	57	662	383	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	58	662	384	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	59	662	385	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	60	662	386	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	61	662	387	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	62	662	388	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	63	662	389	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	64	662	390	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	65	662	391	0	1	0
+172	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	66	662	392	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	67	662	393	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	68	662	394	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	69	662	395	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	70	662	396	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	71	662	397	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	72	662	398	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	74	662	400	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	76	662	402	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	77	662	403	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	78	662	404	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	79	662	405	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	80	662	406	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	81	662	407	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	82	662	408	0	1	0
+172	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	83	662	409	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	84	662	410	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	85	662	411	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	86	662	412	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	87	662	413	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	88	662	414	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	89	662	415	0	1	0
+203	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	90	662	416	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	91	662	417	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	92	662	418	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	93	662	419	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	94	662	420	0	1	0
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	95	662	421	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	96	662	422	0	1	0
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	97	662	423	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	99	662	425	0	1	0
+16	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	100	662	426	0	1	0
+31	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	101	662	427	0	1	0
+140	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	5	53	102	662	428	0	1	0
+719	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	149	140	3	53	102	662	428	1	0	0
+0	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	376	11	346
+0	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	346	11	376
+4078	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QPushButton_0"	168	25	2	108	7	549	365	1	1	0
+438	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QPushButton_0"	168	25	3	108	7	549	365	1	0	0
+47	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	13	607	371	607	371
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	14	500	357	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QWellArray_0"	224	144	13	11	31	11	31
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QWellArray_0"	224	144	14	224	144	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QLabel_0"	224	14	13	11	11	11	11
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QLabel_0"	224	14	14	224	14	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QWellArray_1"	224	48	13	11	236	11	236
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QWellArray_1"	224	48	14	224	48	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QLabel_1"	224	14	13	11	216	11	216
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QLabel_1"	224	14	14	224	14	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_0"	224	25	13	11	290	11	290
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_0"	224	25	14	224	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorPicker_0"	222	202	13	241	14	241	14
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorPicker_0"	222	202	14	222	202	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorLuminancePicker_0"	20	208	13	469	11	469	11
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorLuminancePicker_0"	20	208	14	20	208	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	13	241	225	241	225
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	14	248	90	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QColorShowLabel_0"	60	78	13	6	6	6	6
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QColorShowLabel_0"	60	78	14	60	78	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_0"	44	18	13	109	7	109	7
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_0"	44	18	14	44	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_0/qt_spinbox_lineedit"	26	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_0/qt_spinbox_lineedit"	26	16	14	26	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_0"	31	20	13	72	6	72	6
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_0"	31	20	14	31	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_1"	44	18	13	109	33	109	33
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_1"	44	18	14	44	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_1/qt_spinbox_lineedit"	26	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_1/qt_spinbox_lineedit"	26	16	14	26	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_1"	31	20	13	72	32	72	32
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_1"	31	20	14	31	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_2"	44	18	13	109	59	109	59
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_2"	44	18	14	44	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_2/qt_spinbox_lineedit"	26	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_2/qt_spinbox_lineedit"	26	16	14	26	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_2"	31	20	13	72	58	72	58
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_2"	31	20	14	31	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	13	198	7	198	7
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	14	44	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3/qt_spinbox_lineedit"	26	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3/qt_spinbox_lineedit"	26	16	14	26	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_3"	33	20	13	159	6	159	6
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_3"	33	20	14	33	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	13	198	33	198	33
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	14	44	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4/qt_spinbox_lineedit"	26	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4/qt_spinbox_lineedit"	26	16	14	26	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_4"	33	20	13	159	32	159	32
+15	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_4"	33	20	14	33	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	13	198	59	198	59
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	14	44	18	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5/qt_spinbox_lineedit"	26	16	13	1	1	1	1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5/qt_spinbox_lineedit"	26	16	14	26	16	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_5"	33	20	13	159	58	159	58
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QLabel_5"	33	20	14	33	20	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_1"	77	25	13	11	321	11	321
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_1"	77	25	14	77	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_2"	77	25	13	94	321	94	321
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_2"	77	25	14	77	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_3"	248	25	13	241	321	241	321
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_3"	248	25	14	248	25	-1	-1
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	13	355	165	604	342
+3938	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3/qt_spinbox_lineedit"	26	16	2	22	7	820	434	1	1	0
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3/qt_spinbox_lineedit"	26	16	3	22	7	820	434	1	0	0
+1000	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	6	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+93	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	6	1	0	16777219	""	0	512	14	8
+63	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	6	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+1750	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	6	1	0	55	"7"	0	512	8	55
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	7	1	0	55	"7"	0	512	8	55
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	55	"7"	0	512	8	55
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	55	"7"	0	512	8	55
+453	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	6	1	0	51	"3"	0	512	4	51
+93	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_3"	44	18	7	1	0	51	"3"	0	512	4	51
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	51	"3"	0	512	4	51
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	51	"3"	0	512	4	51
+1844	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4/qt_spinbox_lineedit"	26	16	2	19	5	817	458	1	1	0
+141	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4/qt_spinbox_lineedit"	26	16	3	19	5	817	458	1	0	0
+719	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	6	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	6	1	0	16777219	""	0	512	14	8
+62	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	6	1	0	16777219	""	0	512	14	8
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+2453	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	6	1	0	54	"6"	0	512	7	54
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	7	1	0	54	"6"	0	512	7	54
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	54	"6"	0	512	7	54
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	54	"6"	0	512	7	54
+313	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	6	1	0	50	"2"	0	512	3	50
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_4"	44	18	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	50	"2"	0	512	3	50
+1843	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5/qt_spinbox_lineedit"	26	16	2	20	4	818	483	1	1	0
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5/qt_spinbox_lineedit"	26	16	3	20	4	818	483	1	0	0
+906	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	6	1	0	16777219	""	0	512	14	8
+110	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+125	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	6	1	0	16777219	""	0	512	14	8
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+156	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	6	1	0	16777219	""	0	512	14	8
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	16777219	""	0	512	14	8
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	16777219	""	0	512	14	8
+1781	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	6	1	0	50	"2"	0	512	3	50
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	50	"2"	0	512	3	50
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	6	1	0	50	"2"	0	512	3	50
+78	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	50	"2"	0	512	3	50
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	50	"2"	0	512	3	50
+562	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	6	1	0	57	"9"	0	512	10	57
+94	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0/QSpinBox_5"	44	18	7	1	0	57	"9"	0	512	10	57
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QColorShower_0"	248	90	7	1	0	57	"9"	0	512	10	57
+0	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0"	500	357	7	1	0	57	"9"	0	512	10	57
+2469	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_1"	77	25	2	45	13	414	528	1	1	0
+125	"MainWindow/GridDataSurfaceDialog_0/GridDataSurfaceWidget_0/QColorDialog_0/QPushButton_1"	77	25	3	45	13	414	528	1	0	0
+47	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	376	11	346
+0	"MainWindow/GridDataSurfaceDialog_0/QFrame_0"	353	3	13	11	346	11	376
+4375	"MainWindow/GridDataSurfaceDialog_0/QPushButton_0"	118	25	2	89	10	521	557	1	1	0
+172	"MainWindow/GridDataSurfaceDialog_0/QPushButton_0"	118	25	3	89	10	521	557	1	0	0
+4828	"MainWindow/GridDataSurfaceDialog_0/QPushButton_2"	118	25	2	111	16	778	563	1	1	0
+109	"MainWindow/GridDataSurfaceDialog_0/QPushButton_2"	118	25	3	111	16	778	563	1	0	0
+4469	"qtooltip_label"	63	19	14	63	19	-1	-1
+0	"QAlphaWidget_0"	63	19	13	202	107	202	107
+0	"QAlphaWidget_0"	63	19	14	63	19	-1	-1
+156	"qtooltip_label"	63	19	13	202	107	202	107
+0	"qtooltip_label"	63	19	14	63	19	-1	-1
+391	"MainWindow/MainToolbar/QToolButton_2"	31	30	2	15	17	193	75	1	1	0
+125	"MainWindow/MainToolbar/QToolButton_2"	31	30	3	15	17	193	75	1	0	0
+1343	"MainWindow/Save image Dialog"	530	340	13	343	210	343	210
+0	"MainWindow/Save image Dialog"	530	340	14	530	340	-1	-1
+0	"MainWindow/Save image Dialog/QSizeGrip_0"	13	13	13	517	327	517	327
+0	"MainWindow/Save image Dialog/QSizeGrip_0"	13	13	14	13	13	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0"	508	223	13	11	45	11	45
+0	"MainWindow/Save image Dialog/QListView_0"	508	223	14	508	223	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	506	204	13	1	1	1	1
+0	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	506	204	14	506	204	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2"	506	17	13	1	205	1	205
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2"	506	17	14	506	17	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2/QScrollBar_0"	506	17	13	0	0	0	0
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2/QScrollBar_0"	506	17	14	506	17	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_0"	22	22	13	363	14	363	14
+0	"MainWindow/Save image Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_1"	22	22	13	394	14	394	14
+0	"MainWindow/Save image Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_2"	22	22	13	425	14	425	14
+0	"MainWindow/Save image Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_3"	22	22	13	456	14	456	14
+0	"MainWindow/Save image Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_4"	22	22	13	487	14	487	14
+0	"MainWindow/Save image Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_0"	80	28	13	11	11	11	11
+0	"MainWindow/Save image Dialog/QLabel_0"	80	28	14	80	28	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_1"	80	28	13	11	274	11	274
+0	"MainWindow/Save image Dialog/QLabel_1"	80	28	14	80	28	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_2"	80	21	13	11	308	11	308
+0	"MainWindow/Save image Dialog/QLabel_2"	80	21	14	80	21	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0"	77	55	13	439	274	439	274
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0"	77	55	14	77	55	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	13	0	0	0	0
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	14	77	25	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	13	0	30	0	30
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	14	77	25	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_0"	251	20	13	97	15	97	15
+0	"MainWindow/Save image Dialog/QComboBox_0"	251	20	14	251	20	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_0/QLineEdit_0"	212	16	13	22	2	22	2
+0	"MainWindow/Save image Dialog/QComboBox_0/QLineEdit_0"	212	16	14	212	16	-1	-1
+0	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	13	97	279	97	279
+0	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	14	251	18	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_1"	251	18	13	97	309	97	309
+0	"MainWindow/Save image Dialog/QComboBox_1"	251	18	14	251	18	-1	-1
+0	"MainWindow/Save image Dialog"	530	340	13	339	172	339	180
+32	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	506	221	14	506	221	506	204
+1015	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	2	56	3	496	484	1	1	0
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	3	56	3	496	484	1	0	0
+922	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	79	"o"	0	512	24	79
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	79	"o"	0	512	24	79
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	79	"o"	0	512	24	79
+218	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	85	"u"	0	512	22	85
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	85	"u"	0	512	22	85
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	85	"u"	0	512	22	85
+203	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	84	"t"	0	512	20	84
+110	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	84	"t"	0	512	20	84
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	84	"t"	0	512	20	84
+390	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	45	"-"	0	512	12	189
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	45	"-"	0	512	12	189
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	45	"-"	0	512	12	189
+641	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	52	"4"	0	512	5	52
+109	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	52	"4"	0	512	5	52
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	52	"4"	0	512	5	52
+266	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	46	"."	0	512	52	190
+109	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	46	"."	0	512	52	190
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	46	"."	0	512	52	190
+531	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	49	"1"	0	512	2	49
+110	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	49	"1"	0	512	2	49
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	49	"1"	0	512	2	49
+1515	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	46	"."	0	512	52	190
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	46	"."	0	512	52	190
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	46	"."	0	512	52	190
+344	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	80	"p"	0	512	25	80
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	80	"p"	0	512	25	80
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	80	"p"	0	512	25	80
+328	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	78	"n"	0	512	49	78
+93	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	78	"n"	0	512	49	78
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	78	"n"	0	512	49	78
+188	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	6	1	0	71	"g"	0	512	34	71
+94	"MainWindow/Save image Dialog/QLineEdit_0"	251	18	7	1	0	71	"g"	0	512	34	71
+0	"MainWindow/Save image Dialog"	530	340	7	1	0	71	"g"	0	512	34	71
+1578	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	2	35	11	817	487	1	1	0
+219	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	3	35	11	817	487	1	0	0

@@ -1,0 +1,38 @@
+
+- Multithreading is required for computation intensive tasks e.g. MEP computation and
+  loading of large molecules to give the user the option to abort the operation.
+
+- OpenBabel and OpenMOIV are slow at loading large pdb files; probably due to the fact
+  that no space partitioning algorithm is used to store atoms for faster bond computation
+  To enable the output of timing information to standard output define TMP_MOLEKEL_PROFILE.
+  The user should be able to abort loading of large molecules.
+
+- Cannot stop VTK, OpenMOIV, OpenBabel and old Molekel code operations in a clean way:
+  no Stop or SetStopFlag method; only way is to force QThread termination
+  through a call to:
+
+  thread->terminate();
+  thread->wait(); // doesn't work on Mac OS.
+
+  Explicitly terminating a thread is wrong and can lead to resource leak and in fact
+  that's what happens if the data loading thread is stopped after memory has been allocated
+  in e.g. read_gauss().
+  calc_dens() function has been fixed by checking the value of a boolean variable
+  and exiting the loop (and the thread if the function is run in its own thread)
+  in case the variable is set to true; OpenBabel and OpenMOIV require a patch,
+  one option is to patch only OpenBabel and create a ChemData object from an OBMol,
+  with this we could also get rid of the required conversion code to convert
+  non-pdb or mol files to mol for loading in OpenMOIV.
+
+- On Mac OS X and Linux SuSE 10.1 Intel 32bit there seem to be some issues with
+  explicitly killing a QThread used for asynchronous data loading; have a look at
+  the @warning comments in MainWindow::LoadMoleculeSlot().
+
+- To enable asynchronous data loading (seems to work fine on windows)
+  define MOLEKEL_MULTITHREADED_DATA_LOADING
+
+- Other problems arise when trying to update Qt gui from a separate thread:
+  "QFont: It is not safe to use text and fonts outside the gui thread"
+  This happens even when emitting a signal from a separate thread
+  connected to a slot of an object created in the main gui thread
+  using Qt::QueuedConnection.

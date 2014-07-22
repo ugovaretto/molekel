@@ -1,0 +1,274 @@
+797	"MainWindow/QVTKWidget"	800	600	2	250	307	538	388	1	1	0
+78	"MainWindow/QVTKWidget"	800	600	3	250	307	538	388	1	0	0
+1235	"MainWindow/MainToolbar/QToolButton_0"	31	30	2	18	18	28	67	1	1	0
+140	"MainWindow/MainToolbar/QToolButton_0"	31	30	3	18	18	28	67	1	0	0
+1344	"MainWindow/Load molecule Dialog"	530	340	13	279	201	279	201
+0	"MainWindow/Load molecule Dialog"	530	340	14	530	340	-1	-1
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	13	13	13	517	327	517	327
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	13	13	14	13	13	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0"	508	223	13	11	45	11	45
+0	"MainWindow/Load molecule Dialog/QListView_0"	508	223	14	508	223	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	204	13	1	1	1	1
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	204	14	506	204	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	506	17	13	1	205	1	205
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	506	17	14	506	17	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	506	17	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	506	17	14	506	17	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	13	363	14	363	14
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	13	394	14	394	14
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	13	425	14	425	14
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	13	456	14	456	14
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	13	487	14	487	14
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_0"	80	28	13	11	11	11	11
+0	"MainWindow/Load molecule Dialog/QLabel_0"	80	28	14	80	28	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_1"	80	28	13	11	274	11	274
+0	"MainWindow/Load molecule Dialog/QLabel_1"	80	28	14	80	28	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_2"	80	21	13	11	308	11	308
+0	"MainWindow/Load molecule Dialog/QLabel_2"	80	21	14	80	21	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	77	55	13	439	274	439	274
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	77	55	14	77	55	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	14	77	25	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	13	0	30	0	30
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	14	77	25	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	251	20	13	97	15	97	15
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	251	20	14	251	20	-1	-1
+16	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	212	16	13	22	2	22	2
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	212	16	14	212	16	-1	-1
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	251	18	13	97	279	97	279
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	251	18	14	251	18	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	251	18	13	97	309	97	309
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	251	18	14	251	18	-1	-1
+31	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	14	506	221	506	204
+1609	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	2	39	37	330	284	1	1	0
+125	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	506	221	3	39	37	330	284	1	0	0
+1141	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	2	9	9	727	484	1	1	0
+94	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	3	9	9	727	484	1	0	0
+5515	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	264	234	2	113	18	123	153	1	1	0
+172	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	264	234	3	113	18	123	153	1	0	0
+3188	"MainWindow/TheMenuBar"	1088	21	2	328	9	328	35	1	1	0
+0	"MainWindow/TheMenuBar/QMenu_1"	138	96	14	138	96	-1	-1
+15	"QAlphaWidget_0"	138	96	13	306	46	306	46
+0	"QAlphaWidget_0"	138	96	14	138	96	-1	-1
+141	"MainWindow/TheMenuBar/QMenu_1"	138	96	13	306	46	306	46
+0	"MainWindow/TheMenuBar/QMenu_1"	138	96	14	138	96	-1	-1
+250	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	22	-10	328	36	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	328	10	328	36	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	22	-9	328	37	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	328	11	328	37	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	22	-8	328	38	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	328	12	328	38	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	22	-6	328	40	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	328	14	328	40	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	23	-5	329	41	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	329	15	329	41	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	23	-3	329	43	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	329	17	329	43	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	24	-2	330	44	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	330	18	330	44	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	25	-1	331	45	0	1	0
+0	"MainWindow/TheMenuBar"	1088	21	5	331	19	331	45	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	25	1	331	47	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	26	1	332	47	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	26	3	332	49	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	26	5	332	51	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	26	6	332	52	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	7	333	53	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	8	333	54	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	9	333	55	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	10	333	56	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	11	333	57	0	1	0
+125	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	12	333	58	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	13	333	59	0	1	0
+31	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	14	333	60	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	16	333	62	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	18	333	64	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	20	333	66	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	22	333	68	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	27	23	333	69	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	28	26	334	72	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	29	27	335	73	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	29	30	335	76	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	31	33	337	79	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	32	35	338	81	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	32	37	338	83	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	39	339	85	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	40	339	86	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	41	339	87	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	42	339	88	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	43	339	89	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	44	339	90	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	45	339	91	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	46	339	92	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	47	339	93	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	48	339	94	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	49	339	95	0	1	0
+31	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	33	50	339	96	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	34	51	340	97	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	34	53	340	99	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	54	341	100	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	55	341	101	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	56	341	102	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	58	341	104	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	59	341	105	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	61	341	107	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	62	341	108	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	64	341	110	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	66	341	112	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	68	341	114	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	69	341	115	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	70	341	116	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	71	341	117	0	1	0
+172	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	72	341	118	0	1	0
+31	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	73	341	119	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	74	341	120	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	75	341	121	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	76	341	122	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	77	341	123	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	79	341	125	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	81	341	127	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	82	341	128	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	83	341	129	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	84	341	130	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	85	341	131	0	1	0
+15	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	86	341	132	0	1	0
+0	"MainWindow/TheMenuBar/QMenu_9"	138	96	5	35	87	341	133	0	1	0
+375	"MainWindow/TheMenuBar/QMenu_9"	138	96	3	35	87	341	133	1	0	0
+32	"MainWindow/QDialog_3"	492	390	13	319	188	319	188
+0	"MainWindow/QDialog_3"	492	390	14	492	390	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0"	470	368	13	11	11	11	11
+0	"MainWindow/QDialog_3/SpectrumWidget_0"	470	368	14	470	368	-1	-1
+15	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0"	452	24	13	9	9	9	9
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0"	452	24	14	452	24	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolButton_0"	37	20	13	2	2	2	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolButton_0"	37	20	14	37	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolBarSeparator_0"	6	20	13	39	2	39	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolBarSeparator_0"	6	20	14	6	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QLabel_0"	64	20	13	45	2	45	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QLabel_0"	64	20	14	64	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QComboBox_0"	75	18	13	109	3	109	3
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QComboBox_0"	75	18	14	75	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolBarSeparator_1"	6	20	13	184	2	184	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolBarSeparator_1"	6	20	14	6	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QLabel_1"	80	20	13	190	2	190	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QLabel_1"	80	20	14	80	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QComboBox_1"	65	18	13	270	3	270	3
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QComboBox_1"	65	18	14	65	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolBarSeparator_2"	6	20	13	335	2	335	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolBarSeparator_2"	6	20	14	6	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QLabel_2"	58	20	13	341	2	341	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QLabel_2"	58	20	14	58	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QDoubleSpinBox_0"	51	18	13	399	3	399	3
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QDoubleSpinBox_0"	51	18	14	51	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	33	16	13	1	1	1	1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	33	16	14	33	16	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0"	452	290	13	9	39	9	39
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0"	452	290	14	452	290	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtTextLabel_0"	394	24	13	58	0	58	0
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtTextLabel_0"	394	24	14	394	24	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtScaleWidget_0"	58	202	13	0	35	0	35
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtScaleWidget_0"	58	202	14	58	202	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtScaleWidget_3"	382	47	13	64	243	64	243
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtScaleWidget_3"	382	47	14	382	47	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtPlotCanvas_0"	394	214	13	58	29	58	29
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtPlotCanvas_0"	394	214	14	394	214	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1"	452	24	13	9	335	9	335
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1"	452	24	14	452	24	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QLabel_0"	37	20	13	2	2	2	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QLabel_0"	37	20	14	37	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QSpinBox_0"	53	18	13	39	3	39	3
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QSpinBox_0"	53	18	14	53	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QSpinBox_0/qt_spinbox_lineedit"	35	16	13	1	1	1	1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QSpinBox_0/qt_spinbox_lineedit"	35	16	14	35	16	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QToolBarSeparator_0"	6	20	13	92	2	92	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QToolBarSeparator_0"	6	20	14	6	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QCheckBox_0"	71	18	13	98	3	98	3
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QCheckBox_0"	71	18	14	71	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QToolBarSeparator_1"	6	20	13	169	2	169	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QToolBarSeparator_1"	6	20	14	6	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QCheckBox_1"	43	18	13	175	3	175	3
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_1/QCheckBox_1"	43	18	14	43	18	-1	-1
+16	"MainWindow/QDialog_3"	492	390	13	294	146	315	166
+3203	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtPlotCanvas_0/QWidget_0"	394	214	13	0	0	0	0
+0	"MainWindow/QDialog_3/SpectrumWidget_0/QwtPlot_0/QwtPlotCanvas_0/QWidget_0"	394	214	14	394	214	-1	-1
+1563	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolButton_0"	37	20	2	16	8	336	198	1	1	0
+156	"MainWindow/QDialog_3/SpectrumWidget_0/QToolBar_0/QToolButton_0"	37	20	3	16	8	336	198	1	0	0
+1328	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	13	279	201	279	201
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	14	530	340	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QSizeGrip_0"	13	13	13	517	327	517	327
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QSizeGrip_0"	13	13	14	13	13	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QListView_0"	508	223	13	11	45	11	45
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QListView_0"	508	223	14	508	223	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QListView_0/qt_scrollarea_viewport"	506	221	13	1	1	1	1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QListView_0/qt_scrollarea_viewport"	506	221	14	506	221	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_0"	22	22	13	363	14	363	14
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_1"	22	22	13	394	14	394	14
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_2"	22	22	13	425	14	425	14
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_3"	22	22	13	456	14	456	14
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_4"	22	22	13	487	14	487	14
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLabel_0"	80	28	13	11	11	11	11
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLabel_0"	80	28	14	80	28	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLabel_1"	80	28	13	11	274	11	274
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLabel_1"	80	28	14	80	28	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLabel_2"	80	21	13	11	308	11	308
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLabel_2"	80	21	14	80	21	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0"	77	55	13	439	274	439	274
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0"	77	55	14	77	55	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	13	0	0	0	0
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	14	77	25	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	13	0	30	0	30
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0/QPushButton_1"	77	25	14	77	25	-1	-1
+16	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QComboBox_0"	251	20	13	97	15	97	15
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QComboBox_0"	251	20	14	251	20	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QComboBox_0/QLineEdit_0"	212	16	13	22	2	22	2
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QComboBox_0/QLineEdit_0"	212	16	14	212	16	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	13	97	279	97	279
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	14	251	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QComboBox_1"	251	18	13	97	309	97	309
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QComboBox_1"	251	18	14	251	18	-1	-1
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	13	275	163	275	171
+2390	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	79	"o"	0	512	24	79
+125	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	79	"o"	0	512	24	79
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	79	"o"	0	512	24	79
+188	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	85	"u"	0	512	22	85
+93	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	85	"u"	0	512	22	85
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	85	"u"	0	512	22	85
+204	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	84	"t"	0	512	20	84
+125	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	84	"t"	0	512	20	84
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	84	"t"	0	512	20	84
+1281	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	45	"-"	0	512	12	189
+140	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	45	"-"	0	512	12	189
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	45	"-"	0	512	12	189
+2125	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	57	"9"	0	512	10	57
+94	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	57	"9"	0	512	10	57
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	57	"9"	0	512	10	57
+344	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	46	"."	0	512	52	190
+94	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	46	"."	0	512	52	190
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	46	"."	0	512	52	190
+297	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	48	"0"	0	512	11	48
+93	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	48	"0"	0	512	11	48
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	48	"0"	0	512	11	48
+2110	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	46	"."	0	512	52	190
+109	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	46	"."	0	512	52	190
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	46	"."	0	512	52	190
+781	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	80	"p"	0	512	25	80
+110	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	80	"p"	0	512	25	80
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	80	"p"	0	512	25	80
+234	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	68	"d"	0	512	32	68
+109	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	68	"d"	0	512	32	68
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	68	"d"	0	512	32	68
+157	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	6	1	0	70	"f"	0	512	33	70
+125	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QLineEdit_0"	251	18	7	1	0	70	"f"	0	512	33	70
+0	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog"	530	340	7	1	0	70	"f"	0	512	33	70
+3203	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	2	56	8	774	475	1	1	0
+156	"MainWindow/QDialog_3/SpectrumWidget_0/Save to PS or PDF Dialog/QDialogButtonBox_0/QPushButton_0"	77	25	3	56	8	774	475	1	0	0

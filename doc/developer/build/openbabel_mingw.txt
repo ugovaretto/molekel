@@ -1,0 +1,117 @@
+This is a description of how to build openbabel 2.0.2 on Windows
+with MinGW, note that for Visual Studio there are project files for
+VC 6 and 8 but not 7! and there is no project for building the libraries.
+Using these instructions you'll be able to build and install libraries,
+includes, tests and all the tools except for obgrep; obgrep has a dependency
+on a library which is not included in the OpenBabel distribution: XGetopt
+which you can download from here:
+http://www.codeproject.com/cpp/xgetopt.asp?df=100.
+
+0) OpenBabel requires libxml2 so make sure you have this library properly
+   installed in your MinGW environment; libxml can be found here:
+   http://xmlsoft.org/
+
+If you try to build OpenBabel 2.0.2 on Windows with MinGW you should
+get something similar to the following:
+
+./configure
+ ...
+make
+ ...
+../../src/obutil.h:73: error: `gettimeofday' undeclared (first use this function)      
+
+The compiler is complaining about a missing function; gettimeofday is in fact
+missing in a MinGW environment.
+
+To fix this you can do the following:
+
+1) Open src/babelconfig.h.in
+2) Add the followfing declaration:
+
+   void gettimeofday( struct timeval* p, void* );
+
+If you build now you get a brand new error message:
+
+bondtyper.cpp:21: bondtyp.h: No such file or directory
+
+The problem is that there are a number of files in the data dir which need
+to be accessible and they are not because this directory is not in the include
+path, here is part of the gcc command line you get: 
+
+-I. -I. -I. -I../data
+
+To fix this problem you need to add the data dir (where the bondtyp.h resides) 
+to the include path:
+
+3) before running ./configure set the CPPFLAGS evironment variable:
+   export CPPFLAGS="-I <absolute path to data dir>"
+
+Now everything compiles but doesn't link yet because there is no definition
+of function gettimeofday so in case you try to link you get the following
+error:
+
+ undefined reference to `gettimeofday(timeval*, void* )
+
+We need to write the definition of this function in a c++ file and then
+modify the makefile to include this new source file.
+
+4) create a file gettimeofday.cpp and add the following code into it:
+   (this is a version of some code I found on the internet a while ago)
+   #include <windows.h>
+   #include <sys/time.h>
+
+   void __stdcall GetSystemTimeAsFileTime(FILETIME*);
+
+   void gettimeofday(struct timeval* p, void* tz /* IGNORED */)
+   {
+	  union {
+	     long long ns100; /*time since 1 Jan 1601 in 100ns units */
+		 FILETIME ft;
+	  } now;
+
+      GetSystemTimeAsFileTime( &(now.ft) );
+      p->tv_usec=(long)((now.ns100 / 10LL) % 1000000LL );
+      p->tv_sec= (long)((now.ns100-(116444736000000000LL))/10000000LL);
+   }
+
+5) Modify Makefile.in adding gettimeofday.cpp to the list of source files:
+   ...
+   @BUILD_SHARED_TRUE@ fingerprints/libfingerprints.la @LTLIBOBJS@
+   am__libopenbabel_la_SOURCES_DIST = gettimeofday.cpp atom.cpp base.cpp bitvec.cpp \
+   ...
+   @BUILD_SHARED_TRUE@am__objects_1 = dlhandler_unix.lo
+   am_libopenbabel_la_OBJECTS = gettimeofday.lo base.lo bitvec.lo bond.lo \
+   ...
+   libopenbabel_la_SOURCES = \
+		gettimeofday.cpp atom.cpp base.cpp bitvec.cpp bond.cpp \
+   ...
+   
+If you build it with the current configuration you will incur in another
+problem: the dynamic library handler is set to unix
+
+6a) substitute all the instances of dlhandler_unix.xxx in Makefile.in with
+    dlhandler_win32.xxx, there should be a total of five occurrences in the file.
+    The use of a dynamic library handler should be automatically enabled when
+    shared library support is turned on (default).
+   
+6b) in case dlhandler is set to null in Makefile you'll have to manually remove
+    @BUILD_SHARED_TRUE@ in front of am_objects_1 AND dlhandler = dlhandler_win32.cpp
+    you have to do this if you get a link error about an undefined
+    symbol __imp_XXXDLHandler9openFileXXXX
+       
+7) if you want to build the executables you'll have to open the cpp files in
+   test and tools folder and comment #define USING_OBDLL
+   
+   // used to set import/export for Cygwin DLLs
+   #ifdef WIN32
+   //#define USING_OBDLL
+   #endif
+      
+ 
+8) run configure --prefix=<installation folder> then make: this will build the
+   libraries into src/.libs, and the executables in the src, tools and test folders.
+   You can then run make install.
+   Note that to have make install succeed you have to also fix obgrep.cpp so that it
+   can somehow build: either you get the XGetopt library mentioned at the beginning
+   of this document, build it with MinGW and link with it or you can simply comment
+   the code in obgrep.cpp main function.

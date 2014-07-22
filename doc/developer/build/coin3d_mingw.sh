@@ -1,0 +1,1 @@
+./configure --prefix=/c/mingw/devlib/release --disable-dl-simage --disable-dl-fontconfig --disable-dl-spidermonkey --disable-dl-freetype --disable-dl-zlib --disable-dl-libbzip2 --disable-debug --enable-exceptions=yes --disable-sound --with-simage=no --with-openal=no --with-fontconfig=no --with-spidermonkey=no --with-freetype=no --with-zlib=no --with-bzip2=no --disable-vrml97

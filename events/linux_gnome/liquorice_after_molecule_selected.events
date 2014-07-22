@@ -1,0 +1,654 @@
+1617	"MainWindow/TheMenuBar"	800	25	2	91	13	97	62	1	1	0
+455	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-11	96	62	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	13	96	62	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-10	96	63	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	14	96	63	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-9	96	64	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	15	96	64	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-8	96	65	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	16	96	65	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-7	96	66	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	17	96	66	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-6	96	67	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	18	96	67	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-5	96	68	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	19	96	68	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-3	96	70	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	21	96	70	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	25	-1	96	72	0	1	0
+0	"MainWindow/TheMenuBar"	800	25	5	90	23	96	72	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	26	0	97	73	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	27	2	98	75	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	28	4	99	77	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	28	5	99	78	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	29	7	100	80	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	29	8	100	81	0	1	0
+9	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	29	9	100	82	0	1	0
+7	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	30	10	101	83	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	30	11	101	84	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	30	12	101	85	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	30	13	101	86	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	30	14	101	87	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	31	16	102	89	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	31	17	102	90	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	32	18	103	91	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	32	19	103	92	0	1	0
+416	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	32	20	103	93	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	207	5	32	21	103	94	0	1	0
+576	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	32	21	103	94	1	0	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	81	123	81	123
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	14	293	481	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	29	13	10	10	10	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	13	105	10	105	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	29	13	10	51	10	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	178	29	13	105	51	105	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	29	13	10	92	10	92
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	13	105	92	105	92
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	29	13	10	133	10	133
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	13	105	133	105	133
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	29	13	10	174	10	174
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	178	29	13	105	174	105	174
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	13	10	213	10	213
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	13	109	213	109	213
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	13	10	237	10	237
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	13	109	237	109	237
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	13	10	268	10	268
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	14	87	21	-1	-1
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	174	21	13	109	268	109	268
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	13	10	295	10	295
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	13	109	295	109	295
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	170	27	13	10	326	10	326
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	170	27	14	170	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	27	13	192	326	192	326
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	170	27	13	10	365	10	365
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	170	27	14	170	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	27	13	192	365	192	365
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	273	3	13	10	402	10	402
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	273	3	14	273	3	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	273	23	13	10	411	10	411
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	273	23	14	273	23	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	13	10	444	10	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	14	92	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	91	27	13	101	444	101	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	92	27	13	191	444	191	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	92	27	14	92	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	255	87	81	123
+20	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	260	110	255	87
+2195	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	2	165	19	530	139	1	1	0
+2	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	178	119	13	365	51	365	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	178	119	14	178	119	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	115	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	115	14	174	115	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	14	174	115	-1	-1
+598	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	162	85	529	138	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	161	85	528	138	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	161	84	528	137	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	159	83	526	136	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	159	82	526	135	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	158	82	525	135	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	158	81	525	134	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	157	80	524	133	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	157	79	524	132	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	156	79	523	132	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	155	78	522	131	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	155	77	522	130	0	1	0
+104	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	154	76	521	129	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	153	76	520	129	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	153	75	520	128	0	1	0
+56	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	153	74	520	127	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	152	74	519	127	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	152	73	519	126	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	151	73	518	126	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	151	72	518	125	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	150	71	517	124	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	149	70	516	123	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	149	69	516	122	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	69	515	122	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	68	515	121	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	147	67	514	120	0	1	0
+40	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	147	66	514	119	0	1	0
+152	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	146	66	513	119	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	146	65	513	118	0	1	0
+1288	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	3	146	65	513	118	1	0	0
+3167	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	2	169	18	534	220	1	1	0
+2	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0"	178	188	13	365	202	365	202
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0"	178	188	14	178	188	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	184	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	184	14	174	184	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	14	174	184	-1	-1
+558	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	166	17	533	221	0	1	0
+103	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	166	18	533	222	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	165	18	532	222	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	165	19	532	223	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	164	19	531	223	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	164	20	531	224	0	1	0
+48	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	21	530	225	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	22	530	226	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	23	530	227	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	163	24	530	228	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	24	529	228	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	25	529	229	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	26	529	230	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	27	529	231	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	28	529	232	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	29	529	233	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	30	529	234	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	31	529	235	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	32	529	236	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	34	529	238	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	35	529	239	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	36	529	240	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	37	529	241	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	38	529	242	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	5	162	39	529	243	0	1	0
+792	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	184	3	162	39	529	243	1	0	0
+2568	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	2	20	12	389	359	1	1	0
+592	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	21	12	390	359	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	22	12	391	359	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	24	12	393	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	25	12	394	359	0	1	0
+3	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	27	12	396	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	28	12	397	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	29	12	398	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	30	12	399	359	0	1	0
+112	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	31	12	400	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	32	12	401	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	34	12	403	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	35	12	404	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	36	12	405	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	37	12	406	359	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	38	12	407	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	39	12	408	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	41	12	410	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	42	12	411	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	43	12	412	359	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	44	12	413	359	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	45	12	414	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	46	12	415	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	47	12	416	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	48	12	417	359	0	1	0
+5	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	49	12	418	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	50	12	419	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	51	12	420	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	52	12	421	359	0	1	0
+56	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	53	12	422	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	54	12	423	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	55	12	424	359	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	56	12	425	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	57	12	426	359	0	1	0
+84	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	58	12	427	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	59	12	428	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	60	12	429	359	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	62	12	431	359	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	63	12	432	359	0	1	0
+56	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	64	12	433	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	66	12	435	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	67	12	436	359	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	69	12	438	359	0	1	0
+5	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	70	12	439	359	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	71	12	440	359	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	72	12	441	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	73	12	442	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	74	12	443	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	75	12	444	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	76	12	445	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	77	12	446	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	78	12	447	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	79	12	448	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	80	12	449	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	81	12	450	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	82	12	451	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	83	12	452	359	0	1	0
+21	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	84	12	453	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	85	12	454	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	86	12	455	359	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	87	12	456	359	0	1	0
+43	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	88	12	457	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	89	12	458	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	90	12	459	359	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	91	12	460	359	0	1	0
+6	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	92	12	461	359	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	93	12	462	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	94	12	463	359	0	1	0
+93	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	95	12	464	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	96	12	465	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	98	12	467	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	100	12	469	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	101	12	470	359	0	1	0
+56	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	102	12	471	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	103	12	472	359	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	104	12	473	359	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	105	12	474	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	106	12	475	359	0	1	0
+80	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	107	12	476	359	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	108	12	477	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	109	12	478	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	110	12	479	359	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	111	12	480	359	0	1	0
+6	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	112	12	481	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	113	12	482	359	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	114	12	483	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	115	12	484	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	116	12	485	359	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	117	12	486	359	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	118	12	487	359	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	119	12	488	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	121	12	490	359	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	123	12	492	359	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	124	12	493	359	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	126	12	495	359	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	127	12	496	359	0	1	0
+6	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	128	12	497	359	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	129	12	498	359	0	1	0
+38	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	130	12	499	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	131	12	500	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	133	12	502	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	135	12	504	359	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	137	12	506	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	138	12	507	359	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	143	12	512	359	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	144	12	513	359	0	1	0
+4	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	146	12	515	359	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	147	12	516	359	0	1	0
+5	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	148	12	517	359	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	149	12	518	359	0	1	0
+21	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	150	12	519	359	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	151	12	520	359	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	152	12	521	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	153	12	522	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	154	12	523	359	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	155	12	524	359	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	156	12	525	359	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	158	12	527	359	0	1	0
+21	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	163	11	532	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	164	11	533	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	165	11	534	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	165	10	534	357	0	1	0
+64	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	166	10	535	357	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	167	10	536	357	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	168	10	537	357	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	169	10	538	357	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	170	10	539	357	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	171	10	540	357	0	1	0
+1896	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	3	171	10	540	357	1	0	0
+3159	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	2	62	14	332	568	1	1	0
+128	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	3	62	14	332	568	1	0	0
+1495	"MainWindow/QVTKWidget"	512	515	2	185	324	479	436	1	1	0
+48	"MainWindow/QVTKWidget"	512	515	5	186	324	480	436	0	1	0
+22	"MainWindow/QVTKWidget"	512	515	5	187	324	481	436	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	190	325	484	437	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	191	325	485	437	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	195	325	489	437	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	200	325	494	437	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	202	326	496	438	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	209	327	503	439	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	211	328	505	440	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	217	328	511	440	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	220	328	514	440	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	227	328	521	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	229	328	523	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	236	328	530	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	242	328	536	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	245	328	539	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	251	328	545	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	253	329	547	441	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	259	330	553	442	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	262	331	556	443	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	268	332	562	444	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	275	333	569	445	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	277	333	571	445	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	282	334	576	446	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	284	334	578	446	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	290	334	584	446	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	291	335	585	447	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	296	336	590	448	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	297	336	591	448	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	303	336	597	448	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	307	337	601	449	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	309	337	603	449	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	313	337	607	449	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	315	338	609	450	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	318	338	612	450	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	320	338	614	450	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	323	339	617	451	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	324	340	618	452	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	327	341	621	453	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	330	342	624	454	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	331	343	625	455	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	333	343	627	455	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	334	344	628	456	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	337	345	631	457	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	338	345	632	457	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	341	346	635	458	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	343	347	637	459	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	344	348	638	460	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	347	348	641	460	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	350	349	644	461	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	351	349	645	461	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	353	350	647	462	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	355	351	649	463	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	359	352	653	464	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	362	353	656	465	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	363	353	657	465	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	367	353	661	465	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	369	353	663	465	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	370	353	664	465	0	1	0
+25	"MainWindow/QVTKWidget"	512	515	5	371	353	665	465	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	371	354	665	466	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	372	355	666	467	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	372	356	666	468	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	372	358	666	470	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	374	359	668	471	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	375	361	669	473	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	376	362	670	474	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	376	363	670	475	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	377	364	671	476	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	377	365	671	477	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	377	367	671	479	0	1	0
+17	"MainWindow/QVTKWidget"	512	515	5	377	368	671	480	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	377	369	671	481	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	377	370	671	482	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	377	371	671	483	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	376	373	670	485	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	376	374	670	486	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	375	376	669	488	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	375	377	669	489	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	375	378	669	490	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	374	379	668	491	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	374	382	668	494	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	374	383	668	495	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	373	385	667	497	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	373	386	667	498	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	373	388	667	500	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	373	391	667	503	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	373	392	667	504	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	372	393	666	505	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	371	396	665	508	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	371	397	665	509	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	369	399	663	511	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	369	400	663	512	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	367	402	661	514	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	367	403	661	515	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	365	405	659	517	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	364	408	658	520	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	363	408	657	520	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	362	410	656	522	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	361	411	655	523	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	360	413	654	525	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	359	413	653	525	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	358	415	652	527	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	357	416	651	528	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	356	417	650	529	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	354	420	648	532	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	352	421	646	533	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	351	422	645	534	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	349	424	643	536	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	348	424	642	536	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	346	425	640	537	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	346	426	640	538	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	344	427	638	539	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	343	429	637	541	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	342	429	636	541	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	341	429	635	541	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	341	430	635	542	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	339	431	633	543	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	337	432	631	544	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	336	433	630	545	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	335	434	629	546	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	333	435	627	547	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	332	436	626	548	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	330	437	624	549	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	329	438	623	550	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	326	439	620	551	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	325	440	619	552	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	321	441	615	553	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	318	441	612	553	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	317	441	611	553	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	314	441	608	553	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	313	441	607	553	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	311	441	605	553	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	310	441	604	553	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	309	441	603	553	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	308	440	602	552	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	307	439	601	551	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	307	438	601	550	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	307	436	601	548	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	307	434	601	546	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	307	433	601	545	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	307	431	601	543	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	307	428	601	540	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	307	425	601	537	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	307	420	601	532	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	307	418	601	530	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	309	415	603	527	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	310	412	604	524	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	311	409	605	521	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	312	405	606	517	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	314	402	608	514	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	315	399	609	511	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	316	398	610	510	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	317	395	611	507	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	319	393	613	505	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	319	389	613	501	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	321	387	615	499	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	322	385	616	497	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	322	382	616	494	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	323	380	617	492	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	324	377	618	489	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	325	376	619	488	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	325	373	619	485	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	325	370	619	482	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	325	368	619	480	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	325	366	619	478	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	325	364	619	476	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	325	363	619	475	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	325	361	619	473	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	325	359	619	471	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	357	620	469	0	1	0
+21	"MainWindow/QVTKWidget"	512	515	5	326	355	620	467	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	326	354	620	466	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	326	353	620	465	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	326	352	620	464	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	326	349	620	461	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	326	346	620	458	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	326	343	620	455	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	326	340	620	452	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	339	620	451	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	337	620	449	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	336	620	448	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	334	620	446	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	331	620	443	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	326	328	620	440	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	327	620	439	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	325	620	437	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	326	324	620	436	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	325	322	619	434	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	325	321	619	433	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	325	320	619	432	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	325	318	619	430	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	325	317	619	429	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	325	316	619	428	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	325	315	619	427	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	325	314	619	426	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	325	313	619	425	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	325	312	619	424	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	325	311	619	423	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	325	310	619	422	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	325	309	619	421	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	325	308	619	420	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	325	307	619	419	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	324	306	618	418	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	324	305	618	417	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	324	303	618	415	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	324	302	618	414	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	324	300	618	412	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	324	298	618	410	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	324	296	618	408	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	324	294	618	406	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	323	292	617	404	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	322	289	616	401	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	321	289	615	401	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	320	286	614	398	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	320	285	614	397	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	318	283	612	395	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	317	282	611	394	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	316	281	610	393	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	316	280	610	392	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	316	279	610	391	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	315	279	609	391	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	315	278	609	390	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	315	277	609	389	0	1	0
+24	"MainWindow/QVTKWidget"	512	515	5	315	276	609	388	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	315	275	609	387	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	315	274	609	386	0	1	0
+24	"MainWindow/QVTKWidget"	512	515	5	315	273	609	385	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	315	272	609	384	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	315	271	609	383	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	315	270	609	382	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	315	268	609	380	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	314	268	608	380	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	314	267	608	379	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	313	266	607	378	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	313	265	607	377	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	312	264	606	376	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	311	264	605	376	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	311	263	605	375	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	311	262	605	374	0	1	0
+65	"MainWindow/QVTKWidget"	512	515	5	311	263	605	375	0	1	0
+17	"MainWindow/QVTKWidget"	512	515	5	311	264	605	376	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	311	266	605	378	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	311	268	605	380	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	310	272	604	384	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	309	275	603	387	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	309	277	603	389	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	308	282	602	394	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	307	284	601	396	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	307	289	601	401	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	307	296	601	408	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	307	300	601	412	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	307	308	601	420	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	307	310	601	422	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	308	315	602	427	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	309	318	603	430	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	310	324	604	436	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	310	327	604	439	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	310	333	604	445	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	311	338	605	450	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	312	341	606	453	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	313	347	607	459	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	313	348	607	460	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	313	355	607	467	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	314	357	608	469	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	315	362	609	474	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	316	368	610	480	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	317	369	611	481	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	317	373	611	485	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	317	375	611	487	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	317	378	611	490	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	318	380	612	492	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	319	382	613	494	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	319	383	613	495	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	320	385	614	497	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	320	388	614	500	0	1	0
+21	"MainWindow/QVTKWidget"	512	515	5	320	390	614	502	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	320	391	614	503	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	320	394	614	506	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	320	396	614	508	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	320	398	614	510	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	320	400	614	512	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	320	403	614	515	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	321	405	615	517	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	322	408	616	520	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	322	409	616	521	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	324	412	618	524	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	325	413	619	525	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	329	419	623	531	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	330	420	624	532	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	332	422	626	534	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	334	424	628	536	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	336	425	630	537	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	339	425	633	537	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	341	425	635	537	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	342	425	636	537	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	343	425	637	537	0	1	0
+20	"MainWindow/QVTKWidget"	512	515	5	344	425	638	537	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	344	424	638	536	0	1	0
+20	"MainWindow/QVTKWidget"	512	515	5	344	423	638	535	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	344	422	638	534	0	1	0
+17	"MainWindow/QVTKWidget"	512	515	5	344	421	638	533	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	344	419	638	531	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	344	418	638	530	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	344	414	638	526	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	344	410	638	522	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	344	406	638	518	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	344	404	638	516	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	344	402	638	514	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	344	401	638	513	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	344	399	638	511	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	344	397	638	509	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	344	396	638	508	0	1	0
+10	"MainWindow/QVTKWidget"	512	515	5	343	395	637	507	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	343	393	637	505	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	343	392	637	504	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	342	390	636	502	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	342	389	636	501	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	341	387	635	499	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	341	386	635	498	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	340	384	634	496	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	339	383	633	495	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	339	380	633	492	0	1	0
+12	"MainWindow/QVTKWidget"	512	515	5	338	379	632	491	0	1	0
+6	"MainWindow/QVTKWidget"	512	515	5	338	378	632	490	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	338	377	632	489	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	338	375	632	487	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	337	375	631	487	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	337	373	631	485	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	336	371	630	483	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	336	370	630	482	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	336	369	630	481	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	335	367	629	479	0	1	0
+13	"MainWindow/QVTKWidget"	512	515	5	335	366	629	478	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	335	365	629	477	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	334	363	628	475	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	333	362	627	474	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	333	360	627	472	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	332	358	626	470	0	1	0
+8	"MainWindow/QVTKWidget"	512	515	5	332	357	626	469	0	1	0
+3	"MainWindow/QVTKWidget"	512	515	5	331	356	625	468	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	330	355	624	467	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	330	354	624	466	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	329	353	623	465	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	329	351	623	463	0	1	0
+16	"MainWindow/QVTKWidget"	512	515	5	329	349	623	461	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	328	347	622	459	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	328	346	622	458	0	1	0
+11	"MainWindow/QVTKWidget"	512	515	5	327	344	621	456	0	1	0
+7	"MainWindow/QVTKWidget"	512	515	5	326	344	620	456	0	1	0
+4	"MainWindow/QVTKWidget"	512	515	5	326	342	620	454	0	1	0
+14	"MainWindow/QVTKWidget"	512	515	5	325	341	619	453	0	1	0
+15	"MainWindow/QVTKWidget"	512	515	5	325	339	619	451	0	1	0
+5	"MainWindow/QVTKWidget"	512	515	5	324	339	618	451	0	1	0
+9	"MainWindow/QVTKWidget"	512	515	5	324	338	618	450	0	1	0
+107	"MainWindow/QVTKWidget"	512	515	3	324	338	618	450	1	0	0

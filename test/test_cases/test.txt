@@ -1,0 +1,363 @@
+Molekel 5.3 tests
+=================
+
+This document lists a number of use cases to ensure that the basic features
+are supported. No low level details are given on how to complete a specific
+operation where multiple options are available, the goal is simply to guarantee
+that there is at least one way to complete a specific operation.
+E.g. thre are 7 different ways to load a file without using the keyboard for
+navigation or typing the file name:
+
+ 1 command line
+ 2 toolbar button + mouse: doubleclick on file
+ 3 toolbar button + mouse: select file and press open
+ 4 File menu + mouse: doubleclick on file
+ 5 File menu + mouse: select file and press open  
+ 6 Keyboard accelerator + mouse: doubleclick on file
+ 7 Keyboard accelerator + mouse: select file and press open
+ 
+Add to the above keyboard navigation and explicit typing of the file name
+and you'll get a lot more.
+
+Environment
+-----------
+
+Set settings to:
+  io/indatadir = <build dir>/test/data
+  io/ineventsdir = <build dir>/test/test_cases/<platform>
+  io/outdatadir = <build dir>/test/out
+  io/outsnapshotsdatadir = <build dir>/test/out
+  io/shaders = <build dir>/test/data/shaders
+  msmsexecutable = <msms executable path> e.g. C:/programs/msms_win32_6.2.1/msms.exe
+
+Make sure that EOLs are correct using unix2dos on windows and dos2unix on UNIX/Mac in test/data.
+
+Always exit through File->Exit menu item.
+
+Use black background and do not unselect molecules before saving images unless
+explicitly stated in test case.
+
+----------
+Test Cases
+----------
+
+The following test cases are intended to be run sequentially  in the same
+order outlined below.
+
+Each test case assumes that settings are reset before executing the test. 
+
+ 0 - Raster output & 3D View resize
+ ----------------------------------
+ 
+   0.0
+    
+     - Resize 3D view to 800 x 600
+    
+     - Save empty 3D view to out-0.0.png
+    
+     - Exit
+    
+  
+   0.1
+    
+     (if 0.0 was executed 3D View should already be 800 x 600)
+    
+     - Save empty 3D view to out-0.1.tiff
+    
+     - Exit
+
+
+ 1 - I/O
+ -------
+ 
+   1.0 
+  
+     - Load Gaussian file aceticacidg98.log and save to out-1.0.xyz
+     
+     - Delete molecule
+
+     - Load out-1.0.xyz and save image out-1.0.png
+  
+     - Exit	
+  
+   1.1
+  
+     - Load Gamess file complex_hex_bromo_hess.gam and save to out-1.1.pdb
+     
+     - Delete molecule
+    
+     - Load out-1.1.pdb and save image out-1.1.png
+    
+     - Exit
+  
+   1.2
+  
+     - Load Gaussian cube file elf_pic.cube and save to out-1.2.pdb
+    
+     - Delete molecule        
+    
+     - Load out-1.2.pdb and save image out-1.2.png
+    
+     - Exit
+  
+   1.3
+  
+     - Load ADF T41 file orbitals.t41 and save to out-1.3.mol
+
+     - Delete molecule
+    
+     - Load out-1.3.mol and save image out-1.3.png
+    
+     - Exit
+    
+   1.4
+  
+     - Load 3POR.pdb and save to out-1.4.msms
+    
+     - Exit
+    
+    
+ 2 - Basic Rendering 
+ -------------------
+ 
+   - Load 3POR.pdb
+  
+   2.0 (Wireframe)
+    
+     - Save image to out-2.0.png
+    
+   2.1 (Spacefill)
+    
+    - Change display settings to CPK and save image to out-2.1.png
+    
+   2.2 (Ball & Stick)
+    
+     - Change display settings to Ball & Stick and save image to out-2.2.png
+        
+   2.3 (Liquorice)
+    
+     - Change molecule display settings to Stick
+        
+     - Change bond display settings to Cylinder Round Cap
+        
+     - Save image to out-2.3.png
+        
+   2.4 (Residue - solid)
+       
+     - Change residue display style to Solid Ribbon and save image to out-2.4.png
+        
+   2.5 (Residue - schematic)           
+            
+     - Change residue display style to Schematic and save image to out-2.5.png
+    
+   - Exit
+    
+   - Restart application and load Gaussian file aceticacid98.log
+    
+   2.6 (Dipole Moment)
+  
+     -  Change dipole moment display settings to Show and save image to out-2.6.png
+        
+   - Exit
+  
+  
+ 3 - Molecular Surfaces - Electron Density
+ -----------------------------------------
+ 
+   3.0
+  
+     - Load Gaussian file aceticacid98.log
+    
+     - Render orbital 44 and save image to out-3.0.png
+    
+   3.1
+  
+     - Increase Electron Density bounding box to (dx, dy, dz) = (5.12, 4.13, 3.34)
+    
+     - Check 'Use both signs'
+    
+     - Render orbital 44 and save to out-3.1.png
+    
+   3.2
+  
+     - Open Electron Density dialog and check 'Generate Nodal Surface'
+    
+     - Check 'Use both signs'
+    
+     - Render orbital 44 and save to out-3.2.png
+  
+   - Hide orbital 44
+  
+   3.3
+       
+     - Generate density matrix and save image to out-3.3.png
+    
+   3.4
+  
+     - Generate density matrix with MEP and save image to out-3.4.png
+    
+   - Exit  
+ 
+ 
+ 4 - Molecular Surfaces - Grid Data
+ ----------------------------------
+  
+   4.0
+     
+     - Load Gaussian cube file elf_pic.cube
+     
+     - Open Surfaces->Grid Data dialog
+            
+     - Generate surface from grid data and save image to out-4.0.png
+        
+     - Exit
+     
+   4.1
+   
+     - Load ADF T41 file orbitals.t41
+     
+     - Open Surfaces->Grid Data dialog
+           
+     - Set Value to 0.02
+     
+     - Generate surface from grid data  "SCF Coulpot"
+     
+     - Select SCF_A_B_26 grid
+     
+     - Change color to R=73, G=62, B=229
+     
+     - Generate surface from grid data SCF_A_B_26
+     
+     - Save image to out-4.1.png
+
+     - Exit
+ 
+ 5 - Molecular Surfaces - SAS/SES
+ --------------------------------
+ 
+    5.0 (SAS)
+    
+      - Load Gaussian file aceticacidg98.log
+     
+      - Generate SAS with radius = 0; Map MEP = true
+     
+      - Save image to out-5.0.png
+      
+      - Exit
+      
+    5.1 (SES)
+    
+      - Load Gaussian file aceticacidg98.log
+      
+      - Generate SES with radius = 1.4; Map MEP = true
+      
+      - Save image to out-5.1.png
+      
+      - Exit           
+     
+ 6 - Analysis
+ ------------
+     
+     6.0 (Plane probe and color bar)
+     
+       - Load Gaussian file aceticacidg98.log
+       
+       - Generate MEP scalar field through plane probe menu
+       
+       - Display Probe Scalar Bar
+       
+       - Save image to out-6.0.png
+       
+       - Exit 
+ 
+     6.1 (Atom selection) - since there is no way to display distance/angle in
+                            3d view, this is just an interaction test; will need
+                            to save entire GUI after computing distance and angles.
+                            
+       - Load Gaussian file aceticacidg98.log
+       
+       - Change display settings to Ball and Stick
+       
+       - Highlight the four white atoms (enable atom selection and hold down shift key while picking)
+       
+       - Save to out-6.1.png
+       
+       - Exit                      
+ 
+ 7 - Animation
+ -------------
+     
+    7.0 (Multi-frame)
+     
+      - Load PDB file alaninemulti.pdb
+
+      - Save animation frames to out-7.0 directory: Create out-7.0 directory and double-click on out-7.0 icon
+     
+      - Exit
+     
+    7.1 (Multi-frame + SES)
+       
+      - Load PDB file alaninemulti.pdb
+       
+      - Compute SES with radius = 1.4; Set material to transparent solid
+     
+      - Save animation frames to out-7.1 directory: Create out-7.1 directory and double-click on out-7.1 icon
+       
+      - Exit
+     
+    7.2 (Vibration modes)
+     
+      - Load aceticacidg98.log
+       
+      - Set Animation Mode to Vibration in per-molecule animation settings
+      
+      - Check Show Arrows
+      
+      - Un-check Constant Arrow Length
+      
+      - Check checkbox in first vibration modes row
+           
+      - Advance to next frame  and save image to out-7.2.0.png
+       
+      - Advance to next frame  and save image to out-7.2.1.png
+       
+      - Advance to next frame  and save image to out-7.2.2.png     
+
+      - Exit
+ 
+ 8 - Advanced Rendering (Shaders)
+ --------------------------------
+    
+    8.0         
+      
+      - Load PDB file 3POR.pdb
+      
+      - Compute SES
+     
+     [VTK 5.0.x]       
+     - Assign shader x-ray to SES by loading x-ray.params file
+     
+     [VTK >= 5.1]
+     - Assign shader x-ray to SES by loading x-ray.params file
+     - Change fragment shader to x-ray2_vtk5.1.frag 
+      
+      - Save image to out-8.0.png  
+      
+      - Exit
+      
+ 9 - Radiation Spectra
+ ---------------------
+   
+   9.0
+   
+    - Load Gaussian file aceticacid98.log
+    
+    - Select molecule
+    
+    - Open radiation spectra window (Analysis->Radiation spectrum)
+    
+    - Save diagram to out-9.0.pdf
+    
+    - Exit
+         
+

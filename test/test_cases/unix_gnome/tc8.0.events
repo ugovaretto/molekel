@@ -1,0 +1,701 @@
+751	"MainWindow/QVTKWidget"	800	600	2	126	236	598	405	1	1	0
+72	"MainWindow/QVTKWidget"	800	600	3	126	236	598	405	1	0	0
+1495	"MainWindow/MainToolbar/QToolButton_0"	35	36	2	17	18	268	150	1	1	0
+88	"MainWindow/MainToolbar/QToolButton_0"	35	36	3	17	18	268	150	1	0	0
+27	"MainWindow/Load molecule Dialog"	635	340	13	487	255	487	255
+0	"MainWindow/Load molecule Dialog"	635	340	14	635	340	-1	-1
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	17	17	13	618	323	618	323
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	17	17	14	17	17	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0"	613	209	13	11	45	11	45
+0	"MainWindow/Load molecule Dialog/QListView_0"	613	209	14	613	209	-1	-1
+1	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	190	13	2	2	2	2
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	190	14	609	190	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	609	15	13	2	192	2	192
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	609	15	14	609	15	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	609	15	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	609	15	14	609	15	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	13	499	14	499	14
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	13	524	14	524	14
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	13	549	14	549	14
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	13	574	14	574	14
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	13	599	14	599	14
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_0"	67	28	13	11	11	11	11
+0	"MainWindow/Load molecule Dialog/QLabel_0"	67	28	14	67	28	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_1"	67	34	13	11	260	11	260
+1	"MainWindow/Load molecule Dialog/QLabel_1"	67	34	14	67	34	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_2"	67	29	13	11	300	11	300
+0	"MainWindow/Load molecule Dialog/QLabel_2"	67	29	14	67	29	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	80	69	13	544	260	544	260
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	80	69	14	80	69	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	14	80	32	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	13	0	37	0	37
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	14	80	32	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	406	26	13	84	12	84	12
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	406	26	14	406	26	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	363	22	13	22	2	22	2
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	363	22	14	363	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	406	26	13	84	264	84	264
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	406	26	14	406	26	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	406	26	13	84	301	84	301
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	406	26	14	406	26	-1	-1
+1	"MainWindow/Load molecule Dialog"	635	340	13	435	255	487	255
+17	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	205	14	609	205	609	190
+16	"MainWindow/Load molecule Dialog"	635	340	13	438	245	435	255
+2817	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	205	2	52	36	503	328	1	1	0
+119	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	205	3	52	36	503	328	1	0	0
+800	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	2	42	20	1024	525	1	1	0
+16	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	5	42	21	1024	526	0	1	0
+16	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	5	42	22	1024	527	0	1	0
+72	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	3	42	22	1024	527	1	0	0
+1960	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	205	228	2	101	26	351	253	1	1	0
+112	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	205	228	3	101	26	351	253	1	0	0
+912	"MainWindow/TheMenuBar"	1033	24	2	269	8	508	115	1	1	0
+327	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	15	-14	508	116	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	269	9	508	116	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	15	-13	508	117	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	269	10	508	117	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	16	-12	509	118	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	270	11	509	118	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	16	-11	509	119	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	270	12	509	119	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	16	-10	509	120	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	270	13	509	120	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	17	-9	510	121	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	271	14	510	121	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	17	-8	510	122	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	271	15	510	122	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	18	-7	511	123	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	272	16	511	123	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	18	-6	511	124	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	272	17	511	124	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	19	-5	512	125	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	273	18	512	125	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	19	-4	512	126	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	273	19	512	126	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	20	-3	513	127	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	274	20	513	127	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	20	-2	513	128	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	274	21	513	128	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	21	0	514	130	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	22	2	515	132	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	23	2	516	132	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	23	3	516	133	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	24	5	517	135	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	24	6	517	136	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	26	12	519	142	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	27	14	520	144	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	28	15	521	145	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	29	17	522	147	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	29	18	522	148	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	30	18	523	148	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	31	19	524	149	0	1	0
+120	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	31	20	524	150	0	1	0
+232	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	31	21	524	151	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	31	22	524	152	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	32	23	525	153	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	32	24	525	154	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	32	25	525	155	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	33	25	526	155	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	33	26	526	156	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	33	27	526	157	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	33	28	526	158	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	33	29	526	159	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	34	31	527	161	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	34	32	527	162	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	34	33	527	163	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	34	34	527	164	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	35	35	528	165	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	35	36	528	166	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	35	37	528	167	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	35	38	528	168	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	35	39	528	169	0	1	0
+32	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	36	40	529	170	0	1	0
+112	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	36	41	529	171	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	36	42	529	172	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	37	43	530	173	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	38	44	531	174	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	38	45	531	175	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	39	47	532	177	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	40	48	533	178	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	41	49	534	179	0	1	0
+10	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	42	51	535	181	0	1	0
+6	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	43	52	536	182	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	44	53	537	183	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	45	54	538	184	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	45	55	538	185	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	46	56	539	186	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	46	57	539	187	0	1	0
+328	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	46	58	539	188	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	46	59	539	189	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	46	60	539	190	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	47	61	540	191	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	47	62	540	192	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	48	63	541	193	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	49	65	542	195	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	49	66	542	196	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	50	67	543	197	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	50	69	543	199	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	51	70	544	200	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	51	71	544	201	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	52	73	545	203	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	52	74	545	204	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	53	74	546	204	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	197	92	5	53	75	546	205	0	1	0
+408	"MainWindow/TheMenuBar/QMenu_9"	197	92	3	53	75	546	205	1	0	0
+13	"MainWindow/SesDialog_0"	353	289	13	352	185	352	185
+0	"MainWindow/SesDialog_0"	353	289	14	353	289	-1	-1
+1	"MainWindow/SesDialog_0/SesWidget_0"	331	235	13	11	11	11	11
+0	"MainWindow/SesDialog_0/SesWidget_0"	331	235	14	331	235	-1	-1
+1	"MainWindow/SesDialog_0/SesWidget_0/QCheckBox_0"	137	22	13	9	9	9	9
+0	"MainWindow/SesDialog_0/SesWidget_0/QCheckBox_0"	137	22	14	137	22	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QLabel_0"	137	28	13	9	37	9	37
+0	"MainWindow/SesDialog_0/SesWidget_0/QLabel_0"	137	28	14	137	28	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_0"	170	26	13	152	38	152	38
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_0"	170	26	14	170	26	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	149	20	13	3	3	3	3
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	149	20	14	149	20	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QLabel_1"	137	28	13	9	71	9	71
+0	"MainWindow/SesDialog_0/SesWidget_0/QLabel_1"	137	28	14	137	28	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_1"	170	26	13	152	72	152	72
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_1"	170	26	14	170	26	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	149	20	13	3	3	3	3
+0	"MainWindow/SesDialog_0/SesWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	149	20	14	149	20	-1	-1
+1	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0"	313	89	13	9	105	9	105
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0"	313	89	14	313	89	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0/QLabel_0"	291	17	13	11	27	11	27
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0/QLabel_0"	291	17	14	291	17	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0/QLineEdit_0"	212	26	13	11	51	11	51
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0/QLineEdit_0"	212	26	14	212	26	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0/QPushButton_0"	80	26	13	222	51	222	51
+0	"MainWindow/SesDialog_0/SesWidget_0/QGroupBox_0/QPushButton_0"	80	26	14	80	26	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QLabel_2"	137	26	13	9	200	9	200
+0	"MainWindow/SesDialog_0/SesWidget_0/QLabel_2"	137	26	14	137	26	-1	-1
+0	"MainWindow/SesDialog_0/SesWidget_0/QComboBox_0"	170	26	13	152	200	152	200
+0	"MainWindow/SesDialog_0/SesWidget_0/QComboBox_0"	170	26	14	170	26	-1	-1
+0	"MainWindow/SesDialog_0/QPushButton_0"	111	26	13	11	252	11	252
+0	"MainWindow/SesDialog_0/QPushButton_0"	111	26	14	111	26	-1	-1
+0	"MainWindow/SesDialog_0/QPushButton_1"	111	26	13	121	252	121	252
+1	"MainWindow/SesDialog_0/QPushButton_1"	111	26	14	111	26	-1	-1
+0	"MainWindow/SesDialog_0/QPushButton_2"	111	26	13	231	252	231	252
+0	"MainWindow/SesDialog_0/QPushButton_2"	111	26	14	111	26	-1	-1
+0	"MainWindow/SesDialog_0"	353	289	13	576	281	352	185
+28	"MainWindow/SesDialog_0"	353	289	13	579	262	576	281
+1595	"MainWindow/SesDialog_0/QPushButton_0"	111	26	2	87	9	677	523	1	1	0
+127	"MainWindow/SesDialog_0/QPushButton_0"	111	26	3	87	9	677	523	1	0	0
+8255	"MainWindow/SesDialog_0/QPushButton_2"	111	26	2	74	16	884	530	1	1	0
+143	"MainWindow/SesDialog_0/QPushButton_2"	111	26	3	74	16	884	530	1	0	0
+2672	"MainWindow/TheMenuBar"	1033	24	2	104	13	343	120	1	1	0
+2	"MainWindow/TheMenuBar/QMenu_2"	209	221	13	304	130	304	130
+0	"MainWindow/TheMenuBar/QMenu_2"	209	221	14	209	221	-1	-1
+581	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	39	-9	343	121	0	1	0
+1	"MainWindow/TheMenuBar"	1033	24	5	104	14	343	121	0	1	0
+7	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	39	-8	343	122	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	104	15	343	122	0	1	0
+80	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	39	-6	343	124	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	104	17	343	124	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	40	-5	344	125	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	105	18	344	125	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	40	-4	344	126	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	105	19	344	126	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	40	-3	344	127	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	105	20	344	127	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	40	-2	344	128	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	105	21	344	128	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	40	-1	344	129	0	1	0
+0	"MainWindow/TheMenuBar"	1033	24	5	105	22	344	129	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	40	0	344	130	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	41	1	345	131	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	41	2	345	132	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	41	3	345	133	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	41	5	345	135	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	42	6	346	136	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	42	7	346	137	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	42	8	346	138	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	43	10	347	140	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	44	11	348	141	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	44	13	348	143	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	45	14	349	144	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	45	15	349	145	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	16	350	146	0	1	0
+256	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	17	350	147	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	18	350	148	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	19	350	149	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	20	350	150	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	21	350	151	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	46	22	350	152	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	47	24	351	154	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	47	26	351	156	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	49	32	353	162	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	49	33	353	163	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	49	36	353	166	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	49	37	353	167	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	51	43	355	173	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	51	45	355	175	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	52	47	356	177	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	52	50	356	180	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	52	51	356	181	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	53	357	183	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	54	357	184	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	55	357	185	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	56	357	186	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	57	357	187	0	1	0
+208	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	58	357	188	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	59	357	189	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	53	60	357	190	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	54	61	358	191	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	54	62	358	192	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	54	63	358	193	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	55	64	359	194	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	55	65	359	195	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	55	66	359	196	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	55	67	359	197	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	55	68	359	198	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	70	360	200	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	71	360	201	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	72	360	202	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	74	360	204	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	75	360	205	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	76	360	206	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	56	77	360	207	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	57	78	361	208	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	57	79	361	209	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	57	80	361	210	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	80	362	210	0	1	0
+144	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	81	362	211	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	82	362	212	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	83	362	213	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	84	362	214	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	85	362	215	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	86	362	216	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	88	362	218	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	89	362	219	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	90	362	220	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	91	362	221	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	93	362	223	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	94	362	224	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	95	362	225	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	96	362	226	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	97	362	227	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	98	362	228	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	99	362	229	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	100	362	230	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	101	362	231	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	102	362	232	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	103	362	233	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	104	362	234	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	105	362	235	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	106	362	236	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	107	362	237	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	108	362	238	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	109	362	239	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	110	362	240	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	111	362	241	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	112	362	242	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	113	362	243	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	114	362	244	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	115	362	245	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	116	362	246	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	117	362	247	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	118	362	248	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	119	362	249	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	120	362	250	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	58	121	362	251	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	122	363	252	0	1	0
+112	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	123	363	253	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	124	363	254	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	125	363	255	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	126	363	256	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	127	363	257	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	128	363	258	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	129	363	259	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	60	131	364	261	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	60	132	364	262	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	134	365	264	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	135	365	265	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	137	365	267	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	138	365	268	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	140	366	270	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	141	366	271	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	142	366	272	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	144	366	274	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	145	367	275	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	146	367	276	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	147	367	277	0	1	0
+64	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	148	367	278	0	1	0
+104	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	149	367	279	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	150	367	280	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	151	367	281	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	152	367	282	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	153	367	283	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	154	367	284	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	155	367	285	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	156	367	286	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	157	367	287	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	158	367	288	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	159	367	289	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	160	367	290	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	161	367	291	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	162	367	292	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	163	367	293	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	164	367	294	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	165	367	295	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	166	367	296	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	167	367	297	0	1	0
+112	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	168	367	298	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	169	367	299	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	170	367	300	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	171	367	301	0	1	0
+120	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	172	367	302	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	173	367	303	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	63	174	367	304	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	174	366	304	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	175	366	305	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	176	366	306	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	62	178	366	308	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	179	365	309	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	180	365	310	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	181	365	311	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	182	365	312	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	183	365	313	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	184	365	314	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	186	365	316	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	187	365	317	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	188	365	318	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	189	365	319	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	190	365	320	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	191	365	321	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	192	365	322	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	61	193	365	323	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	60	194	364	324	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	60	195	364	325	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	60	196	364	326	0	1	0
+16	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	60	197	364	327	0	1	0
+64	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	197	363	327	0	1	0
+8	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	198	363	328	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	199	363	329	0	1	0
+24	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	200	363	330	0	1	0
+104	"MainWindow/TheMenuBar/QMenu_9"	209	221	5	59	201	363	331	0	1	0
+384	"MainWindow/TheMenuBar/QMenu_9"	209	221	3	59	201	363	331	1	0	0
+29	"MainWindow/ShadersDialog_0"	387	266	13	352	185	352	185
+0	"MainWindow/ShadersDialog_0"	387	266	14	387	266	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	365	212	13	11	11	11	11
+0	"MainWindow/ShadersDialog_0/QTabWidget_0"	365	212	14	365	212	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	361	184	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	361	184	14	361	184	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	361	184	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	361	184	14	361	184	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	26	13	9	10	9	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	26	13	148	10	148	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	26	14	204	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	26	13	9	48	9	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	26	13	148	48	148	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	26	14	204	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	13	9	86	9	86
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	26	13	148	86	148	86
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	26	14	204	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	16	13	9	123	9	123
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	16	14	129	16	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	13	9	149	9	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	13	148	149	148	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	14	80	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	13	238	149	238	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	14	114	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	649	24	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	649	24	14	649	24	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	365	24	14	365	24	649	24
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_0"	16	24	13	333	0	333	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_0"	16	24	14	16	24	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_1"	16	24	13	349	0	349	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar/QToolButton_1"	16	24	14	16	24	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	361	186	13	2	24	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	361	186	14	361	186	361	184
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	361	186	14	361	186	361	184
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	13	238	151	238	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	13	148	151	148	149
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	13	9	151	9	149
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	18	14	129	18	129	16
+0	"MainWindow/ShadersDialog_0/QPushButton_0"	365	26	13	11	229	11	229
+0	"MainWindow/ShadersDialog_0/QPushButton_0"	365	26	14	365	26	-1	-1
+0	"MainWindow/ShadersDialog_0"	387	266	13	559	292	352	185
+28	"MainWindow/ShadersDialog_0"	387	266	13	562	270	559	292
+882	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	365	24	2	133	14	706	295	1	1	0
+2	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	361	186	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	361	186	14	361	186	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	26	13	9	10	9	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	26	13	148	10	148	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	26	14	204	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	26	13	9	48	9	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	26	13	148	48	148	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	26	14	204	26	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	13	9	86	9	86
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	26	13	148	86	148	86
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	26	14	204	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	18	13	9	123	9	123
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	18	14	129	18	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	13	9	151	9	151
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	14	129	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	13	148	151	148	151
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	14	80	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	13	238	151	238	151
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	14	114	26	-1	-1
+117	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_tabbar"	365	24	3	133	14	706	295	1	0	0
+2071	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	2	84	15	668	406	1	1	0
+376	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	3	84	15	668	406	1	0	0
+26	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog"	682	340	13	487	209	487	209
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog"	682	340	14	682	340	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QSizeGrip_0"	17	17	13	665	323	665	323
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QSizeGrip_0"	17	17	14	17	17	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QListView_0"	660	209	13	11	45	11	45
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QListView_0"	660	209	14	660	209	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QListView_0/qt_scrollarea_viewport"	656	205	13	2	2	2	2
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QListView_0/qt_scrollarea_viewport"	656	205	14	656	205	-1	-1
+3	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_0"	22	22	13	546	14	546	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_1"	22	22	13	571	14	571	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_2"	22	22	13	596	14	596	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_3"	22	22	13	621	14	621	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_4"	22	22	13	646	14	646	14
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLabel_0"	67	28	13	11	11	11	11
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLabel_0"	67	28	14	67	28	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLabel_1"	67	34	13	11	260	11	260
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLabel_1"	67	34	14	67	34	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLabel_2"	67	29	13	11	300	11	300
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLabel_2"	67	29	14	67	29	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0"	80	69	13	591	260	591	260
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0"	80	69	14	80	69	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	13	0	0	0	0
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	14	80	32	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	13	0	37	0	37
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	14	80	32	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QComboBox_0"	453	26	13	84	12	84	12
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QComboBox_0"	453	26	14	453	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QComboBox_0/QLineEdit_0"	410	22	13	22	2	22	2
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QComboBox_0/QLineEdit_0"	410	22	14	410	22	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLineEdit_0"	453	26	13	84	264	84	264
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QLineEdit_0"	453	26	14	453	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QComboBox_1"	453	26	13	84	301	84	301
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QComboBox_1"	453	26	14	453	26	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog"	682	340	13	411	209	487	209
+22	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog"	682	340	13	414	270	411	209
+7937	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QListView_0/qt_scrollarea_viewport"	656	205	2	55	109	482	426	1	1	0
+159	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QListView_0/qt_scrollarea_viewport"	656	205	3	55	109	482	426	1	0	0
+1744	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	2	31	15	1036	545	1	1	0
+111	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/Select shader parameter file Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	3	31	15	1036	545	1	0	0
+1032	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	2	28	9	612	465	1	1	0
+72	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	5	28	10	612	466	0	1	0
+112	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	3	28	10	612	466	1	0	0
+196	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	14	13	238	85	238	151
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	14	14	114	14	114	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	14	13	148	85	148	151
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	14	14	80	14	80	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	14	13	9	85	9	151
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	14	14	129	14	129	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	14	13	9	66	9	123
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	14	14	129	14	129	18
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	14	13	148	47	148	86
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	14	14	204	14	204	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	14	13	9	47	9	86
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	14	14	129	14	129	26
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	14	13	148	28	148	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	14	14	204	14	204	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	14	13	9	28	9	48
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	14	14	129	14	129	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	14	13	148	9	148	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	14	14	204	14	204	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	14	13	9	9	9	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	14	14	129	14	129	26
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	343	75	13	9	102	9	102
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	343	75	14	343	75	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	339	71	13	2	2	2	2
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	339	71	14	339	71	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0"	515	182	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0"	515	182	14	515	182	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QPushButton_0"	80	26	13	9	10	9	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QPushButton_0"	80	26	14	80	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0"	133	26	13	95	10	95	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1"	133	26	13	234	10	234	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2"	133	26	13	373	10	373	10
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_2/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_0"	80	28	13	9	43	9	43
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_0"	80	28	14	80	28	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3"	133	26	13	95	44	95	44
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_3/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_1"	80	28	13	9	77	9	77
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_1"	80	28	14	80	28	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4"	133	26	13	95	78	95	78
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_4/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5"	133	26	13	234	78	234	78
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_5/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6"	133	26	13	373	78	373	78
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_6/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_2"	80	28	13	9	111	9	111
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_2"	80	28	14	80	28	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7"	133	26	13	95	112	95	112
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_7/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_3"	80	28	13	9	145	9	145
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QLabel_3"	80	28	14	80	28	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8"	133	26	13	95	146	95	146
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8"	133	26	14	133	26	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8/qt_spinbox_lineedit"	112	20	13	3	3	3	3
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport/QGLSLShaderEditorWidget_0/QDoubleSpinBox_8/qt_spinbox_lineedit"	112	20	14	112	20	-1	-1
+15	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	324	15	13	2	58	2	58
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	324	15	14	324	15	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	324	15	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	324	15	14	324	15	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2"	15	56	13	326	2	326	2
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2"	15	56	14	15	56	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2/QScrollBar_0"	15	56	13	0	0	0	0
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_2/QScrollBar_0"	15	56	14	15	56	-1	-1
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	324	56	14	324	56	339	71
+19	"MainWindow/ShadersDialog_0"	387	347	14	387	347	387	266
+0	"MainWindow/ShadersDialog_0/QPushButton_0"	365	26	13	11	310	11	229
+1	"MainWindow/ShadersDialog_0/QTabWidget_0"	365	293	14	365	293	365	212
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget"	361	267	14	361	267	361	186
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7"	361	267	14	361	267	361	186
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	343	77	13	9	181	9	102
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0"	343	77	14	343	77	343	75
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	324	15	13	2	60	2	58
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1"	15	58	14	15	58	15	56
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/QWidget_1/QScrollBar_0"	15	58	14	15	58	15	56
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QScrollArea_0/qt_scrollarea_viewport"	324	58	14	324	58	324	56
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	13	238	149	238	85
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_5"	114	26	14	114	26	114	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	13	148	149	148	85
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_4"	80	26	14	80	26	80	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	13	9	149	9	85
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_3"	129	26	14	129	26	129	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	16	13	9	123	9	66
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLabel_0"	129	16	14	129	16	129	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	26	13	148	86	148	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_2"	204	26	14	204	26	204	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	13	9	86	9	47
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_2"	129	26	14	129	26	129	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	26	13	148	48	148	28
+1	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_1"	204	26	14	204	26	204	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	26	13	9	48	9	28
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_1"	129	26	14	129	26	129	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	26	13	148	10	148	9
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QLineEdit_0"	204	26	14	204	26	204	14
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	26	13	9	10	9	9
+0	"MainWindow/ShadersDialog_0/QTabWidget_0/qt_tabwidget_stackedwidget/ShaderWidget_7/QPushButton_0"	129	26	14	129	26	129	14
+1258	"MainWindow/ShadersDialog_0/QPushButton_0"	365	26	2	239	12	812	592	1	1	0
+80	"MainWindow/ShadersDialog_0/QPushButton_0"	365	26	3	239	12	812	592	1	0	0
+1551	"MainWindow/MainToolbar/QToolButton_2"	35	36	2	16	25	341	157	1	1	0
+136	"MainWindow/MainToolbar/QToolButton_2"	35	36	3	16	25	341	157	1	0	0
+38	"MainWindow/Save image Dialog"	628	340	13	487	255	487	255
+0	"MainWindow/Save image Dialog"	628	340	14	628	340	-1	-1
+0	"MainWindow/Save image Dialog/QSizeGrip_0"	17	17	13	611	323	611	323
+0	"MainWindow/Save image Dialog/QSizeGrip_0"	17	17	14	17	17	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0"	606	209	13	11	45	11	45
+0	"MainWindow/Save image Dialog/QListView_0"	606	209	14	606	209	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	602	190	13	2	2	2	2
+0	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	602	190	14	602	190	-1	-1
+1	"MainWindow/Save image Dialog/QListView_0/QWidget_2"	602	15	13	2	192	2	192
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2"	602	15	14	602	15	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2/QScrollBar_0"	602	15	13	0	0	0	0
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2/QScrollBar_0"	602	15	14	602	15	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_0"	22	22	13	492	14	492	14
+0	"MainWindow/Save image Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_1"	22	22	13	517	14	517	14
+0	"MainWindow/Save image Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_2"	22	22	13	542	14	542	14
+0	"MainWindow/Save image Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_3"	22	22	13	567	14	567	14
+0	"MainWindow/Save image Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_4"	22	22	13	592	14	592	14
+0	"MainWindow/Save image Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_0"	67	28	13	11	11	11	11
+0	"MainWindow/Save image Dialog/QLabel_0"	67	28	14	67	28	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_1"	67	34	13	11	260	11	260
+0	"MainWindow/Save image Dialog/QLabel_1"	67	34	14	67	34	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_2"	67	29	13	11	300	11	300
+0	"MainWindow/Save image Dialog/QLabel_2"	67	29	14	67	29	-1	-1
+1	"MainWindow/Save image Dialog/QDialogButtonBox_0"	80	69	13	537	260	537	260
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0"	80	69	14	80	69	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	13	0	0	0	0
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	14	80	32	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	13	0	37	0	37
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	14	80	32	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_0"	399	26	13	84	12	84	12
+0	"MainWindow/Save image Dialog/QComboBox_0"	399	26	14	399	26	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_0/QLineEdit_0"	356	22	13	22	2	22	2
+0	"MainWindow/Save image Dialog/QComboBox_0/QLineEdit_0"	356	22	14	356	22	-1	-1
+0	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	13	84	264	84	264
+0	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	14	399	26	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_1"	399	26	13	84	301	84	301
+0	"MainWindow/Save image Dialog/QComboBox_1"	399	26	14	399	26	-1	-1
+1	"MainWindow/Save image Dialog"	628	340	13	438	255	487	255
+31	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	602	205	14	602	205	602	190
+20	"MainWindow/Save image Dialog"	628	340	13	441	245	438	255
+1052	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	2	175	24	700	533	1	1	0
+104	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	3	175	24	700	533	1	0	0
+831	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	79	"o"	0	16	32	111
+105	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	79	"o"	0	16	32	111
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	79	"o"	0	16	32	111
+143	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	85	"u"	0	16	30	117
+101	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	85	"u"	0	16	30	117
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	85	"u"	0	16	30	117
+114	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	84	"t"	0	16	28	116
+101	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	84	"t"	0	16	28	116
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	84	"t"	0	16	28	116
+963	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	45	"-"	0	16	20	45
+111	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	45	"-"	0	16	20	45
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	45	"-"	0	16	20	45
+1202	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	56	"8"	0	16	17	56
+88	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	56	"8"	0	16	17	56
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	56	"8"	0	16	17	56
+457	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	46	"."	0	16	60	46
+91	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	46	"."	0	16	60	46
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	46	"."	0	16	60	46
+292	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	48	"0"	0	16	19	48
+84	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	48	"0"	0	16	19	48
+1	"MainWindow/Save image Dialog"	628	340	7	1	0	48	"0"	0	16	19	48
+572	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	46	"."	0	16	60	46
+98	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	46	"."	0	16	60	46
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	46	"."	0	16	60	46
+260	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	80	"p"	0	16	33	112
+94	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	80	"p"	0	16	33	112
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	80	"p"	0	16	33	112
+295	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	78	"n"	0	16	57	110
+101	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	78	"n"	0	16	57	110
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	78	"n"	0	16	57	110
+360	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	71	"g"	0	16	42	103
+100	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	71	"g"	0	16	42	103
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	71	"g"	0	16	42	103
+1730	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	2	64	17	1042	522	1	1	0
+120	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	3	64	17	1042	522	1	0	0

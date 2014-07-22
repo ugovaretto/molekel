@@ -1,0 +1,33 @@
+This file describes how to build molekel in 4 steps using
+the scripts provided in the build dir.
+For this pocess to work all the required dependecies have
+to be installed; check build.txt for detailed information
+on how to add the required dependencies.
+
+1) Get the checkout script:
+   svn export svn://bioinformatics.org/svnroot/molekel/trunk
+2) sh checkout.sh svn
+   checks out the required files in ./svn
+3) Change ./svn/build/run_xxx_cmake.sh setting the include
+   and library paths properly
+4) Build. Two options here:
+     a) build everything in the dist dir:
+        run sh ./svn/build/run_xxx_cmake.sh
+     b) build and package for distribution
+        run sh ./svn/build/build_xxx.sh
+        This requires setting the path to NSIS installer on windows
+
+On Unix and Windows  you need to copy all the dependent DLLs in a
+directory specified in the run_xxx_cmake.sh script. The default is to
+use molekel_dll dir in the current directory, so on linux another option
+is to simply link ./molekel_dll to wherever the libraries are.
+
+To perform a full build producing a re-distributable package:
+- Windows: install Nullsoft installer (NSIS) and specify the
+  installation path in ./svn/build/build_mingw.sh
+- Mac: update ./svn/install/mac/fixpath.sh to point to the right
+  paths
+
+
+ 
+

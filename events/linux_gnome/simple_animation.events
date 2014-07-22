@@ -1,0 +1,362 @@
+1805	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	260	183	2	109	27	125	201	1	1	0
+280	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	260	183	3	109	27	125	201	1	0	0
+1495	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	260	183	2	109	27	125	201	1	1	0
+224	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	260	183	3	109	27	125	201	1	0	0
+2759	"MainWindow/TheMenuBar"	800	25	2	90	13	95	62	1	1	0
+2	"MainWindow/TheMenuBar/QMenu_2"	209	207	13	70	73	70	73
+0	"MainWindow/TheMenuBar/QMenu_2"	209	207	14	209	207	-1	-1
+127	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	25	-11	95	62	1	0	0
+0	"MainWindow/TheMenuBar"	800	25	3	90	13	95	62	1	0	0
+775	"MainWindow/TheMenuBar/QMenu_9"	209	207	2	30	18	100	91	1	1	0
+104	"MainWindow/TheMenuBar/QMenu_9"	209	207	3	30	18	100	91	1	0	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	80	123	80	123
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	14	293	481	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	29	13	10	10	10	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	13	105	10	105	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	29	13	10	51	10	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	178	29	13	105	51	105	51
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	29	13	10	92	10	92
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	13	105	92	105	92
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	29	13	10	133	10	133
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	13	105	133	105	133
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	29	13	10	174	10	174
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	29	14	83	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	178	29	13	105	174	105	174
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	178	29	14	178	29	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	13	10	213	10	213
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	13	109	213	109	213
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	13	10	237	10	237
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	13	109	237	109	237
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	13	10	268	10	268
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	174	21	13	109	268	109	268
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	13	10	295	10	295
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	13	109	295	109	295
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	174	21	14	174	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	170	27	13	10	326	10	326
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	170	27	14	170	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	27	13	192	326	192	326
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	170	27	13	10	365	10	365
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	170	27	14	170	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	27	13	192	365	192	365
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	273	3	13	10	402	10	402
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	273	3	14	273	3	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	273	23	13	10	411	10	411
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	273	23	14	273	23	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	13	10	444	10	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	14	92	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	91	27	13	101	444	101	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	91	27	14	91	27	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	92	27	13	191	444	191	444
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	92	27	14	92	27	-1	-1
+1	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	254	87	80	123
+17	"MainWindow/MoleculeRenderingStyleWidget_0"	293	481	13	259	110	254	87
+2276	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	178	29	2	168	18	532	138	1	1	0
+2	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	178	119	13	364	51	364	51
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0"	178	119	14	178	119	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	115	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	115	14	174	115	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	14	174	115	-1	-1
+53	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	165	85	531	138	0	1	0
+360	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	164	84	530	137	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	164	83	530	136	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	163	83	529	136	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	162	83	528	136	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	161	81	527	134	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	160	80	526	133	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	160	79	526	132	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	159	79	525	132	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	158	78	524	131	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	158	77	524	130	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	157	76	523	129	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	156	75	522	128	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	155	74	521	127	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	155	73	521	126	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	153	72	519	125	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	153	71	519	124	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	152	70	518	123	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	151	69	517	122	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	150	68	516	121	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	150	67	516	120	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	66	514	119	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	65	514	118	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	148	64	514	117	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	147	63	513	116	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	146	62	512	115	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	145	62	511	115	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	145	60	511	113	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	144	60	510	113	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	144	59	510	112	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	143	59	509	112	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	143	58	509	111	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	143	57	509	110	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	142	57	508	110	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	142	56	508	109	0	1	0
+80	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	142	55	508	108	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	141	54	507	107	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	140	54	506	107	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	140	53	506	106	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	140	52	506	105	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	140	51	506	104	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	139	51	505	104	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	139	50	505	103	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	138	49	504	102	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	138	48	504	101	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	138	47	504	100	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	138	46	504	99	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	137	46	503	99	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	137	45	503	98	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	137	44	503	97	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	137	43	503	96	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	137	42	503	95	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	136	42	502	95	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	136	41	502	94	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	5	136	40	502	93	0	1	0
+632	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	115	3	136	40	502	93	1	0	0
+2287	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	2	87	12	455	335	1	1	0
+224	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	88	12	456	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	89	12	457	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	90	12	458	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	91	12	459	335	0	1	0
+12	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	92	12	460	335	0	1	0
+60	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	93	12	461	335	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	95	12	463	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	96	12	464	335	0	1	0
+21	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	97	12	465	335	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	98	12	466	335	0	1	0
+6	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	99	12	467	335	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	100	12	468	335	0	1	0
+29	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	101	12	469	335	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	102	12	470	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	103	12	471	335	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	104	12	472	335	0	1	0
+26	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	105	12	473	335	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	106	12	474	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	107	12	475	335	0	1	0
+25	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	109	12	477	335	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	110	12	478	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	112	12	480	335	0	1	0
+23	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	113	12	481	335	0	1	0
+27	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	116	12	484	335	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	117	12	485	335	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	120	12	488	335	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	121	12	489	335	0	1	0
+27	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	123	12	491	335	0	1	0
+10	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	125	12	493	335	0	1	0
+25	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	127	12	495	335	0	1	0
+14	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	128	12	496	335	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	129	12	497	335	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	130	12	498	335	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	131	12	499	335	0	1	0
+5	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	132	12	500	335	0	1	0
+26	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	137	12	505	335	0	1	0
+27	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	140	12	508	335	0	1	0
+27	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	144	12	512	335	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	145	12	513	335	0	1	0
+2	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	146	12	514	335	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	148	12	516	335	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	150	12	518	335	0	1	0
+33	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	154	12	522	335	0	1	0
+29	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	157	12	525	335	0	1	0
+120	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	158	12	526	335	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	159	12	527	335	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	160	12	528	335	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	161	12	529	335	0	1	0
+48	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	162	12	530	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	163	12	531	335	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	164	12	532	335	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	165	12	533	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	166	12	534	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	167	12	535	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	168	12	536	335	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	169	12	537	335	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	170	12	538	335	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	5	171	12	539	335	0	1	0
+568	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	174	21	3	171	12	539	335	1	0	0
+999	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	2	22	13	390	360	1	1	0
+168	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	22	12	390	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	23	12	391	359	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	24	12	392	359	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	26	12	394	359	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	28	11	396	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	31	11	399	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	33	11	401	358	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	35	11	403	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	37	11	405	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	39	11	407	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	40	11	408	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	42	11	410	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	43	11	411	358	0	1	0
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	44	11	412	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	45	11	413	358	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	46	11	414	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	49	11	417	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	51	11	419	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	54	11	422	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	57	11	425	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	59	11	427	358	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	61	11	429	358	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	63	11	431	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	66	11	434	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	69	11	437	358	0	1	0
+20	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	73	11	441	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	76	11	444	358	0	1	0
+19	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	78	11	446	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	81	11	449	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	82	11	450	358	0	1	0
+17	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	84	11	452	358	0	1	0
+18	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	87	11	455	358	0	1	0
+20	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	89	11	457	358	0	1	0
+20	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	90	11	458	358	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	92	11	460	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	93	11	461	358	0	1	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	94	11	462	358	0	1	0
+21	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	96	11	464	358	0	1	0
+27	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	99	11	467	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	100	11	468	358	0	1	0
+27	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	103	11	471	358	0	1	0
+20	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	104	11	472	358	0	1	0
+38	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	108	11	476	358	0	1	0
+26	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	110	11	478	358	0	1	0
+33	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	112	11	480	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	114	11	482	358	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	116	11	484	358	0	1	0
+34	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	118	11	486	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	119	11	487	358	0	1	0
+7	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	120	11	488	358	0	1	0
+28	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	125	11	493	358	0	1	0
+25	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	130	11	498	358	0	1	0
+35	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	136	11	504	358	0	1	0
+41	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	140	11	508	358	0	1	0
+31	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	143	11	511	358	0	1	0
+34	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	146	11	514	358	0	1	0
+25	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	147	11	515	358	0	1	0
+28	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	148	11	516	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	152	11	520	358	0	1	0
+21	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	155	11	523	358	0	1	0
+23	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	160	11	528	358	0	1	0
+22	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	164	11	532	358	0	1	0
+13	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	166	11	534	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	167	11	535	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	168	11	536	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	169	11	537	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	170	11	538	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	171	11	539	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	172	11	540	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	173	11	541	358	0	1	0
+48	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	175	11	543	358	0	1	0
+40	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	176	11	544	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	177	11	545	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	178	11	546	358	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	179	11	547	358	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	5	180	11	548	358	0	1	0
+1120	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	174	21	3	180	11	548	358	1	0	0
+2631	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	178	29	2	167	17	531	260	1	1	0
+2	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0"	178	165	13	364	243	364	243
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0"	178	165	14	178	165	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	161	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0"	174	161	14	174	161	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	14	174	161	-1	-1
+1494	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	16	529	261	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	17	529	262	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	18	529	263	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	19	529	264	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	21	529	266	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	23	529	268	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	25	529	270	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	26	529	271	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	27	529	272	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	28	529	273	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	29	529	274	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	30	529	275	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	32	529	277	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	33	529	278	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	163	34	529	279	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	162	35	528	280	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	162	37	528	282	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	161	39	527	284	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	161	40	527	285	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	161	41	527	286	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	160	43	526	288	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	159	46	525	291	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	159	49	525	294	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	158	52	524	297	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	157	53	523	298	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	157	56	523	301	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	57	522	302	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	60	522	305	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	62	522	307	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	63	522	308	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	65	522	310	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	66	522	311	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	67	522	312	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	68	522	313	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	69	522	314	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	70	522	315	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	71	522	316	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	72	522	317	0	1	0
+9	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	73	522	318	0	1	0
+15	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	156	74	522	319	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	75	521	320	0	1	0
+152	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	76	521	321	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	77	521	322	0	1	0
+32	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	78	521	323	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	79	521	324	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	80	521	325	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	81	521	326	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	82	521	327	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	83	521	328	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	85	521	330	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	86	521	331	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	88	521	333	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	90	521	335	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	92	521	337	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	93	521	338	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	94	521	339	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	95	521	340	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	96	521	341	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	97	521	342	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	98	521	343	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	99	521	344	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	100	521	345	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	101	521	346	0	1	0
+24	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	102	521	347	0	1	0
+56	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	5	155	103	521	348	0	1	0
+553	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	174	161	3	155	103	521	348	1	0	0
+4447	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	2	61	11	330	565	1	1	0
+127	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	92	27	3	61	11	330	565	1	0	0
+3120	"MainWindow/TheMenuBar"	800	25	2	50	12	55	61	1	1	0
+3	"MainWindow/TheMenuBar/QMenu_1"	192	136	13	37	73	37	73
+0	"MainWindow/TheMenuBar/QMenu_1"	192	136	14	192	136	-1	-1
+109	"MainWindow/TheMenuBar/QMenu_9"	192	136	3	18	-12	55	61	1	0	0
+0	"MainWindow/TheMenuBar"	800	25	3	50	12	55	61	1	0	0
+704	"MainWindow/TheMenuBar/QMenu_9"	192	136	2	28	10	65	83	1	1	0
+79	"MainWindow/TheMenuBar/QMenu_9"	192	136	3	28	10	65	83	1	0	0
+1072	"MainWindow/QVTKWidget"	512	515	2	195	165	488	277	1	1	0
+168	"MainWindow/QVTKWidget"	512	515	3	195	165	488	277	1	0	0
+624	"MainWindow/QVTKWidget"	512	515	31	0	120	2	199	171	492	283	0
+992	"MainWindow/QVTKWidget"	512	515	31	0	120	2	199	171	492	283	0
+2117	"qtooltip_label"	89	21	13	517	112	517	112
+0	"qtooltip_label"	89	21	14	89	21	-1	-1
+738	"MainWindow/MainToolbar/QToolButton_12"	35	36	2	21	21	514	96	1	1	0
+168	"MainWindow/MainToolbar/QToolButton_12"	35	36	3	21	21	514	96	1	0	0
+9119	"MainWindow/MainToolbar/QToolButton_12"	35	36	2	21	21	514	96	1	1	0
+163	"MainWindow/MainToolbar/QToolButton_12"	35	36	3	21	21	514	96	1	0	0

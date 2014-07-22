@@ -1,0 +1,91 @@
+Molekel 5.2.0 beta supports shaders and GUI events record/playback to be
+used mainly for automated testing. This document gives some information on
+how to show some of the Molekel features through pre-recorded event
+sequences. 
+
+In the rest of this document molekel is supposed to be installed into
+/apps/csvis/molekel. 
+
+
+Basic display settings
+----------------------
+
+* Liquorice: creates a 'liquorice' representation of the selected molecule
+          
+1) launch molekel with a molecule in it:
+   molekel /apps/csvis/molekel/data/CATENE/film-ring1.xyz
+2) select molecule by cliking on its name in the tree view
+3) open event player widget (interaction->event player)
+4) select file 'liquorice_after_molecule_selected.events'
+5) click on play
+
+Shaders
+-------
+
+For both examples it's a good idea to first set the molecule display
+settings to liquorice either manually (stick, bonds-round cap) or running
+the liquorice script.
+
+* Basic shader: applies a shader and reads the shader parameters from file
+ 
+1) launch molekel with a molecule in it:
+   molekel /apps/csvis/molekel/data/CATENE/film-ring1.xyz
+2) select molecule by cliking on its name in the tree view
+3) open event player widget (interaction->event player)
+4) select file 'apply_shader_after_molecule_selected.events'
+5) click on play
+
+* Surface shader: generates the solvent excluded surface and applies
+                  x-ray shader to surface
+
+For this shader to work molekel needs to know the path to the msms
+program that performs some computation needed for the surface generation.
+Before running this script select a molecule, open the surfaces->SES dialog
+and verify that the full path to the msms executable is displayed in the
+dialog; select the executable in case it's not then close the dialog. 
+
+1) launch molekel with a molecule in it:
+   molekel /apps/csvis/molekel/data/CATENE/film-ring1.xyz
+2) select molecule by cliking on its name in the tree view
+3) open event player widget (interaction->event player)
+4) select file 'msms_and_x-ray_shader_after_molecule_selected.events'
+5) click on play
+
+Electron density surfaces
+-------------------------
+
+*Density Matrix: generates a surface from density matrix info, color codes
+                 with Molecular Electrostatic Potential and shows
+                 MEP scalar bar
+
+1) launch molekel with a molecule in it:
+   molekel /apps/csvis/molekel/data/aceticacidg98.log
+2) select molecule by cliking on its name in the tree view
+3) open event player widget (interaction->event player)
+4) select file 'density_matrix_mep_after_molecule_selected.events'
+5) click on play
+
+Animation
+---------
+
+*Atom coordinates (pdb and xyz): change display settings and shows
+                                 an animating pdb; this script will
+                                 select the first molecule in the
+                                 tree and change the display settings
+                                 of that molecule before starting
+                                 the animation
+
+1) launch molekel with a molecule in it:
+   molekel /apps/csvis/molekel/data/alaninemulti.pdb
+2) open event player widget (interaction->event player)
+3) select file 'simple_animation.events'
+4) click on play
+
+Bond/Atom Interaction
+---------------------
+
+*Angle: computes angle between two bonds
+<TBD>
+
+
+ 

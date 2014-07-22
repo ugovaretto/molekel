@@ -1,0 +1,58 @@
+From:	Benj FitzPatrick [benjfitz@uchicago.edu]
+Sent:	Tuesday, November 03, 2009 4:07 PM
+To:	Varetto  Ugo
+Subject:	RE: g09 changed the output file formatting lots from g03
+
+Hi Ugo,
+I just sent an email with a few attachments.  In case they are large enough 
+that they don't reach you (our system tends to eat emails with large 
+attachments) please let me know and I'll ftp them to you.
+Thanks,
+Benj
+
+---- Original message ----
+>Date: Tue, 3 Nov 2009 09:55:14 +0100
+>From: "Varetto  Ugo" <uvaretto@cscs.ch>
+>Subject: RE: g09 changed the output file formatting lots from g03
+>To: Benj FitzPatrick <benjfitz@uchicago.edu>
+>
+>Hi Benj thanks a lot for the email.
+>
+>I knew the format had changed however I have no way of accessing 
+>Gaussian 09,
+here they decided to get rid of Gaussian so I won't even have sample output or 
+anything that could help me update the Gaussian readers.
+>It would be great if you could send me any sample Gaussian 09 log file 
+>you may
+have so that I can take a look, my plan was to use similar input files with 
+both
+G03 and G09 and check the output but it won't be possible.
+>
+>In case you want to send me some files you can use email or ftp
+(ftp.cscs.ch/in/put/abc/molekel/)
+>
+>Best Regards & thanks again
+>
+>-ugo-
+>
+>-----Original Message-----
+>From: Benj FitzPatrick [mailto:benjfitz@uchicago.edu]
+>Sent: Saturday, October 31, 2009 12:45 AM
+>To: Varetto Ugo
+>Subject: g09 changed the output file formatting lots from g03
+>
+>Hi Ugo,
+>I posted one case of this on the forums, but I thought I'd send you an 
+>email directly in case you haven't run across g09 yet.  It looks like 
+>geometry specifications are the same as g03, but IRC and frequency 
+>formatting in the output file has changed (even gaussview3 can't handle 
+>gaussian's own output file changes).
+>
+>With the vibrations it looks like at least some, if not all, of the 
+>frequencies get detected correctly, but the vectors corresponding to 
+>the normal mode motion appear to be different.  Namely, Molekel doesn't 
+>do anything when told to animate a vibrational mode.  Also, when I try 
+>to look at an IRC calculation the atoms get scrambled (some disappear all 
+together).
+>Sorry if I'm the bearer of bad news,
+>Benj

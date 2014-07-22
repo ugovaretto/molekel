@@ -1,0 +1,50 @@
+//
+// Vertex shader for spherical harmonics lighting
+//
+// Author: Randi Rost
+//
+// Copyright (C) 2005 3Dlabs, Inc.
+//
+// See 3Dlabs-License.txt for license information
+//
+
+varying vec3  DiffuseColor;
+uniform float ScaleFactor;
+
+const float C1 = 0.429043;
+const float C2 = 0.511664;
+const float C3 = 0.743125;
+const float C4 = 0.886227;
+const float C5 = 0.247708;
+
+// Constants for Breezeway lighting
+const vec3 L00  = vec3( 0.3175995,  0.3571678,  0.3784286);
+const vec3 L1m1 = vec3( 0.3655063,  0.4121290,  0.4490332);
+const vec3 L10  = vec3(-0.0071628, -0.0123780, -0.0146215);
+const vec3 L11  = vec3(-0.1047419, -0.1183074, -0.1260049);
+const vec3 L2m2 = vec3(-0.1304345, -0.1507366, -0.1702497);
+const vec3 L2m1 = vec3(-0.0098978, -0.0155750, -0.0178279);
+const vec3 L20  = vec3(-0.0704158, -0.0762753, -0.0865235);
+const vec3 L21  = vec3( 0.0242531,  0.0279176,  0.0335200);
+const vec3 L22  = vec3(-0.2858534, -0.3235718, -0.3586478);
+
+
+void main(void)
+{
+    vec3 tnorm      = normalize(gl_NormalMatrix * gl_Normal);
+
+    DiffuseColor    = C1 * L22 * (tnorm.x * tnorm.x - tnorm.y * tnorm.y) +
+                      C3 * L20 * tnorm.z * tnorm.z +
+                      C4 * L00 -
+                      C5 * L20 +
+                      2.0 * C1 * L2m2 * tnorm.x * tnorm.y +
+                      2.0 * C1 * L21  * tnorm.x * tnorm.z +
+                      2.0 * C1 * L2m1 * tnorm.y * tnorm.z +
+                      2.0 * C2 * L11  * tnorm.x +
+                      2.0 * C2 * L1m1 * tnorm.y +
+                      2.0 * C2 * L10  * tnorm.z;
+
+    DiffuseColor   *= ScaleFactor;
+
+    gl_Position     = ftransform();
+}

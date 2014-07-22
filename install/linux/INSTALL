@@ -1,0 +1,27 @@
+Launch from command line
+------------------------
+
+Option 1: cd to molekel directory and execute
+          > source launch_molekel.<sh/csh> depending on the shell.
+          The script will automatically update LD_LIBRARY_PATH
+          if needed and launch the program  
+
+Option 2: Modify start_molekel.sh.sample to add
+          <molekel home directory>/lib to LD_LIBRARY_PATH and
+          enter the full path of Molekel's executable:
+          <molekel home directory>/bin/Molekel.
+          No need to cd to Molekel's home dir, the
+          'cd ...' line can be commented.
+
+
+Launch from desktop
+------------------
+To be able to launch Molekel from KDE and Gnome
+you need to modify the script start_molekel.sh.sample
+specifying Molekel's home directory (molekel-<version>).
+You can then create a launcher/application icon on the
+Gnome and KDE desktop and point it to the sh file.
+You can change the icon of the desktop shortcut by selecting
+the Molekel.png icon in the <molekel root>/resources directory.
+When launching from desktop  the launch script will have to 
+explicitly cd to Molekel home directory first.

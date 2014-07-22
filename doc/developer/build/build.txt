@@ -1,0 +1,309 @@
+This file describes the procedure to follow when building Molekel on
+Linux (gcc), Windows (MinGW) and Mac OS X (gcc).
+
+
+Molekel is built with CMake and Make and a number of libraries need to be
+installed before you can build the executable.
+
+Note: it should be possible to build everything with MS VC++ compiler
+      7.1 or better, but this requires the use of the commercial version
+      of Qt or the unsupported Qt distribution you can find through this page:
+      http://psi-im.org/wiki/Compiling_Qt4_on_Windows.
+
+-----
+Steps
+-----
+
+.I Dependencies
+---------------
+
+1) Install CMake
+   http://www.cmake.org
+
+2) Install VTK 5.x
+   http://www.vtk.org
+   if you build from source make sure the following parameters are set to ON
+   VTK_USE_GUISUPPORT
+   VTK_USE_QVTK
+   VTK_USE_GL2PS
+   Check out OS specific information below.
+
+3) Install the Open Source verion of Qt 4.x
+   http://www.trolltech.com/products/qt
+
+4) Install OpenBabel 2.x libraries
+   http://openbabel.sourceforge.net
+   If you are building on Windows with MinGW check out the OS specific issues below.
+
+5) Install OpenInventor and Molecular Inventor
+
+   An open source implementation of Molecular Inventor(OpenMOIV) can be
+   downloaded here:
+
+   http://www.tecn.upf.es/openMOIV
+
+   When building OpenMOIV on Linux/MinGW make sure you set the OIV_DIR
+   environment variable to the installation dir of Coin3D (where the
+   include and lib dirs are) e.g.
+   export OIV_DIR=/usr/local
+   You do not need to do this on Mac OS X if you installe Coin3D as a
+   framework (which is the default).
+
+   Make sure you read the build information for OpenMOIV to undestand
+   how to deal with fonts.
+
+   Any implementation of OpenInventor 2.x will work; you can get an
+   open source version here (Coin3D):
+
+   http://www.coin3d.org
+
+   Note that in case you want to build OpenMOIV (or any program requiring coin)
+   you also have to have in the PATH the directory where coin-config resides.
+   Again, in case Coin3D is installed as a framework on Mac OS this is not required.
+
+6) Install GLEW.
+
+   http://glew.sourceforge.net
+   
+   
+
+
+.II Build
+---------
+
+0) Uncompress the molekel source archive, this will create the following tree:
+ 
+   molekel_src_5.x.y
+     src
+       widgets
+       dialogs
+       resources
+     doc
+       user
+       developer
+     data
+
+   cd to the top level distribution dir and create a cmakebuild folder:
+
+   mkdir cmakebuild
+
+   cd to cmakebuild folder
+
+1) (Optional) Initialize environment variables; this step is optional
+   since you can initialize the same variables also from within CMake: if
+   you want to use the provided scripts to setup environment variables
+   then copy the script to the cmakebuild folder and edit the script
+   specifying the proper values.
+
+2) Modify the PATH variable so that the correct binary Qt dir is found:
+   cmake finds Qt looking for the qmake executable so you need to have
+   the right qmake executable as the first one in the path.
+
+
+3) Run ccmake(Linux, Mac OS) or CMakeSetup(Windows) and make sure that
+   all the parameters are correct.
+
+   ccmake ../src
+
+   IV_DYNAMIC and MOIV_DYNAMIC should be set to ON in case dynamic libraries
+   are used; to OFF otherwise. Note that this only seems to be required on MINGW.
+
+   The following parameters need to be set (make sure you also read the
+   OS specific section below), you can decide to set them before running cmake
+   using a modified version of one of the sample_buildenv.xxx scripts or do it
+   from within ccmake(Linux, Mac) or CMakeSetup(Windows):
+
+   OPENBABEL_INCLUDE_DIR: OpenBabel include dir; where the 'openbabel' include
+                          dir is e.g. /usr/local/include/openbabel-2.0
+
+   OPENBABEL_LINK_DIR: OpenBabel library dir; where the libopenbabel file is.
+
+   IV_INCLUDE_DIR: OpenInventor(Coin3D) include dir; where the Inventor
+                   include dir resides. Not required on Mac if Coin installed
+                   as a framework.
+
+   IV_LINK_DIR: OpenInventor(Coin3D) lib dir. Not required on Mac if
+                Coin installed as a framework.
+
+   MOIV_INCLUDE_DIR: Molecular Inventor include dir; where the ChemKit2
+                     include directory is.
+
+   MOIV_LINK_DIR: Molecular Inventor lib dir;
+
+   VTK_DIR: VTK dir e.g. /usr/local/lib/vtk-5.0
+
+4) Generate the makefiles with CMake (configure then generate):
+
+   Check that all the parameters are set to the proper values.
+
+   Press  [c] to configure then [g] to generate the makefiles.
+
+   Whenever you change one or more parameter values
+   in ccmake you'll have to [c]onfigure before you can [g]enerate.
+
+   Run make.
+
+5) The build process will generate the following tree in the build dir:
+
+	dist      - release notes, license, readme
+	   bin OR bundle  - binary or Mac bundle
+       resources      - images, configuration files...
+       doc            - user documentation/tutorials
+
+
+NOTE: with MinGW 3.4.5 compilation of MolekelData.cpp can be
+      very slow; to speed up build time during development
+      #define MOLEKEL_USE_COMMON_FILE_FORMATS
+
+.IV Print dependency list
+------------------------------------
+
+In case you want to find the list of shared libraries actually
+used by the Molekel executable you can run the following commands:
+
+Mac: otool -L dist/bundle/Contents/MacOS/Molekel
+
+Unix (or any system with ldd): ldd dist/bin/Molekel
+
+Windows:
+
+ option 1: (MinGW/MSYS) objdump -x dist/bin/Molekel.exe | grep "DLL Name"
+ option 2: download and use the free tool dependencychecker
+           http://www.dependencychecker.com
+
+
+.III Run
+--------
+
+In order to launch Molekel you need to make sure that all the
+required dynamic libraries are accessible from the executable.
+
+Windows: all the required dlls must be in directories listed
+         in the PATH environment variable or in the same
+         directory as the executable.
+
+Linux: you can make all the required shared objects accessible
+       by adding the directories where the libraries reside
+       to the LD_LIBRARY_PATH environment variable.
+       To find the list of used dlls run: ldd dist/bin/Molekel
+       from the build directory.
+
+MacOS: add the directories where the dynamic libraries reside
+       to the DYLD_LIBRARY_PATH environment variable.
+       To find the list of dynamic libraries  and frameworks
+       used run:
+       otool -L dist/bundle/Molekel.app/Contents/MacOS/Molekel
+       from the build directory.
+
+In case you have rendering problems (or get messages about errors
+in Coin) you can set the value of two environment variables as follows:
+
+COIN_FULL_INDIRECT_RENDERING = 0
+COIN_FORCE_GL1_0_ONLY = 1
+
+You can also set the COIN_DEBUG_GLGLUE environment variable to 1 before
+starting Molekel in a console window to print OpenGL debug information.
+To enable printing on standard output on Mac you'll have to invoke
+the actual executable in the Molekel.app folder i.e.
+Molekel.app/Contents/MacOS/Molekel.
+
+-----------------------------
+Platform Specific Information
+-----------------------------
+
+**Windows**
+-----------
+On Windows you need to install MinGW and MSYS since this is the only
+environment supported by the open source version of Qt on this platform.
+
+On Windows you'll have to use CMakeSetup instead of ccmake to view
+and edit CMake build parameters; when you run CMakeSetup for the
+first time you'll be prompted with a dialog asking to select the
+type of the makefile to generate; select MSYS.
+
+You can download MinGW/MSYS from this website:
+
+  http://www.mingw.org
+
+Make sure you also install the latest vesion of binutils, if not
+you might get an error at link time (ld.exe:...assertion fail...),
+while building some libraries (e.g. coin).
+Binutils 2.17.50 update - 2006-08-29 seems to work.
+
+OpenBabel cannot be built out of the box with MinGW, it is therefore
+required that you build it from source code following the
+instructions in openbabel_mingw.txt or that you download a prebuilt
+OpenBabel 2.x MinGW library from Molekel's website.
+
+**Linux**
+---------
+
+The described build process has been tested only on SuSE 10.x, and
+Fedora Core 5.
+
+**Mac OS X**
+------------
+
+Not tested with universal binaries. There should be no issue in building
+universal binaries, provided you build/get all the required libraries first.
+
+On Mac some libraries and tools can be installed with darwinports or fink.
+Check on the Darwinports and Fink websites for information on the
+available packages:
+
+http://darwinports.opendarwin.org/
+
+http://fink.sourceforge.net/
+
+if you use darwinports to install OpenBabel it will be automatically installed
+under /opt/local and the include directory to set in the cmake variable will be
+/usr/local/include/openbabel-2.0 (or some other version number).
+
+If you install a pre-built version of Coin3D make sure you also install the
+tools package which is required to build applications outside Xcode.
+
+When building VTK make sure that VTK_USE_CARBON is ON.
+
+OpenMOIV doesn't build out of the box on Mac OS; if you have OpenGL
+installed as a framework (and want to use it as a framework)
+then you cannot use #include <GL/gl.h> in the source code because
+there is no GL directory in the OpenGL.framework/Headers directory.
+To build OpenMOIV you can use the include files in the
+/usr/X11R6/include/GL directory, note that these include files
+are usually different from the ones in the OpenGL.framework/Headers directory.
+To have CMake use the files in the X11 dir open OpenMOIV's CMakeLists.txt and
+add the following line before INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_PATH}):
+SET( ${OPENGL_INCLUDE_PATH} /usr/X11R6/include )
+Build with
+ cmake -Dcoin:int=1
+ make
+You will then have to copy the include/ChemKit2 directory into your
+preferred include dir (e.g. /usr/local/include) and the libChemKit2
+lib into your preferred lib dir (e.g. /usr/local/lib).
+
+Due to the fact that some libraries used by Molekel do have include
+files that #include <GL/gl.h> you also need to configure CMake to
+use /usr/X11R6/include as the value of OPENGL_INCLUDE_DIR; this is
+an advanced options and therefore you need to press 't' to have
+it displayed.
+
+If you want to use the OpenGL.framework #includes you might as well
+copy the OpenGL.frameworks/Headers files to a GL directory and change
+the value of OPENGL_INCLUDE_DIR to the directory containing the GL
+directory; there are however other issues if you do this: if
+some code references GL/glx.h compilation will fail because there is
+no glx.h file in the OpenGL.framework/Headers directory.
+
+IV_INCLUDE_DIR and IV_LINK_DIR do not have to be set on Mac if
+you install the standard Coin3D distribution as a framework.
+
+
+
+
+
+
+
+
+
+
+

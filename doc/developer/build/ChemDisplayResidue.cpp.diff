@@ -1,0 +1,1381 @@
+
+Left file: C:\mingw\src\OpenMOIV.src.1.0.3_ORIGINAL\src\ChemDisplayResidues.cpp
+Right file: C:\mingw\src\OpenMOIV.src.1.0.3\src\ChemDisplayResidues.cpp
+9c9
+<  * 
+---
+>  *
+13c13
+<  * 
+---
+>  *
+18c18
+<  * 
+---
+>  *
+22c22
+<  * Lesser General Public License for more details (see the file 
+---
+>  * Lesser General Public License for more details (see the file
+27c27
+<  * 
+---
+>  *
+118c118
+< #include <Inventor/nodes/SoShapeHints.h> 
+---
+> #include <Inventor/nodes/SoShapeHints.h>
+247c247
+< checkResidueForPick(SoRayPickAction *action, SbLine &pickLine, 
+---
+> checkResidueForPick(SoRayPickAction *action, SbLine &pickLine,
+260c260
+< 	
+---
+> 
+307c307
+< 		
+---
+> 
+318c318
+< 		
+---
+> 
+332c332
+< 			
+---
+> 
+351c351
+< 		
+---
+> 
+359c359
+< 		
+---
+> 
+420c420
+< 	
+---
+> 
+423c423
+< 	
+---
+> 
+425,426c425,426
+< 	
+< 	// special case: first residue 
+---
+> 
+> 	// special case: first residue
+508c508
+< 			continue; 
+---
+> 			continue;
+547c547
+< 		
+---
+> 
+557c557
+< 		
+---
+> 
+569c569
+< 						for (k=l-1; k>=0; k--) 
+---
+> 						for (k=l-1; k>=0; k--)
+584c584
+< 					for (k=l+1; k<pl.getNum(); k++) 
+---
+> 					for (k=l+1; k<pl.getNum(); k++)
+589c589
+< 							// readjust the points // 
+---
+> 							// readjust the points //
+609c609
+< 	
+---
+> 
+648c648
+< 		
+---
+> 
+650c650
+< 		res->halfsize = (maxv - minv)*0.5f;		
+---
+> 		res->halfsize = (maxv - minv)*0.5f;
+685c685
+< 	if ((lastResidueCylinderComplexity != bcc)	|| 
+---
+> 	if ((lastResidueCylinderComplexity != bcc)	||
+734c734
+< 	if ((normalResidueIndex.getNum() > 0) || (highlightResidueIndex.getNum() > 0)) 
+---
+> 	if ((normalResidueIndex.getNum() > 0) || (highlightResidueIndex.getNum() > 0))
+804c804
+< 	
+---
+> 
+841c841
+< 	renderAsPoints = (SoDrawStyleElement::get(state) == 
+---
+> 	renderAsPoints = (SoDrawStyleElement::get(state) ==
+843c843
+< 	
+---
+> 
+847c847
+< 	switch (chemColor->residueColorBinding.getValue()) 
+---
+> 	switch (chemColor->residueColorBinding.getValue())
+857c857
+< 			
+---
+> 
+870c870
+< 				
+---
+> 
+873c873
+< 				
+---
+> 
+885c885
+< 		{	
+---
+> 		{
+898c898
+< 				
+---
+> 
+929c929
+< 				
+---
+> 
+987c987
+< 		
+---
+> 
+989c989
+< 			
+---
+> 
+992c992
+< 			
+---
+> 
+1010c1010
+< 		switch (chemColor->residueColorBinding.getValue()) 
+---
+> 		switch (chemColor->residueColorBinding.getValue())
+1029c1029
+< 						
+---
+> 
+1042c1042
+< 				
+---
+> 
+1044c1044
+< 					
+---
+> 
+1047c1047
+< 					
+---
+> 
+1061c1061
+< 					
+---
+> 
+1067c1067
+< 				
+---
+> 
+1078c1078
+< 							
+---
+> 
+1091c1091
+< 					
+---
+> 
+1102c1102
+< 					
+---
+> 
+1107c1107
+< 				
+---
+> 
+1118c1118
+< 							
+---
+> 
+1130c1130
+< 					
+---
+> 
+1197c1197
+< 	switch (chemColor->residueColorBinding.getValue()) 
+---
+> 	switch (chemColor->residueColorBinding.getValue())
+1222c1222
+< 	switch (chemColor->residueColorBinding.getValue()) 
+---
+> 	switch (chemColor->residueColorBinding.getValue())
+1292c1292
+< 	
+---
+> 
+1316c1316
+< 	
+---
+> 
+1374c1374
+< 		
+---
+> 
+1376c1376
+< 			chemData->getAtomCoordinates(res->from).getValue(), 
+---
+> 			chemData->getAtomCoordinates(res->from).getValue(),
+1426c1426
+< 	
+---
+> 
+1434c1434
+< 		
+---
+> 
+1448c1448
+< 			chemData->getAtomCoordinates(res->from).getValue(), 
+---
+> 			chemData->getAtomCoordinates(res->from).getValue(),
+1498c1498
+< 	
+---
+> 
+1506c1506
+< 		
+---
+> 
+1519c1519
+< 			chemData->getAtomCoordinates(res->from).getValue(), 
+---
+> 			chemData->getAtomCoordinates(res->from).getValue(),
+1567c1567
+< 	
+---
+> 
+1676c1676
+< 	
+---
+> 
+1696c1696
+< 	switch (chemColor->residueColorBinding.getValue()) 
+---
+> 	switch (chemColor->residueColorBinding.getValue())
+1727c1727
+< 	
+---
+> 
+1749,1750c1749,1750
+< 	glEnable(GL_COLOR_MATERIAL);	
+< 	
+---
+> 	glEnable(GL_COLOR_MATERIAL);
+> 
+1762c1762
+< 		
+---
+> 
+1764c1764
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+1796c1796
+< 		
+---
+> 
+1802c1802
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+1834c1834
+< 		
+---
+> 
+1893c1893
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+1907c1907
+< 	
+---
+> 
+1951c1951
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+1967c1967
+< 			
+---
+> 
+1973c1973
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+1988c1988
+< 	
+---
+> 
+2032c2032
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+2048c2048
+< 			
+---
+> 
+2053c2053
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+2058c2058
+< 	
+---
+> 
+2068c2068
+< 	
+---
+> 
+2080c2080
+< 	
+---
+> 
+2090c2090
+< 	
+---
+> 
+2092c2092
+< 	if ((normalResidueIndex.getNum() > 0) || (highlightResidueIndex.getNum() > 0)) 
+---
+> 	if ((normalResidueIndex.getNum() > 0) || (highlightResidueIndex.getNum() > 0))
+2158c2158
+< 		
+---
+> 
+2192c2192
+< 	
+---
+> 
+2201c2201
+< 	
+---
+> 
+2220c2220
+< 			
+---
+> 
+2233c2233
+< 				computeResidueColor(theResidue,state);	
+---
+> 				computeResidueColor(theResidue,state);
+2243c2243
+< 			
+---
+> 
+2255c2255
+< 				computeResidueColor(theResidue,state);	
+---
+> 				computeResidueColor(theResidue,state);
+2290c2290
+< 			
+---
+> 
+2299c2299
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+2306c2306
+< 		switch (chemColor->residueColorBinding.getValue()) 
+---
+> 		switch (chemColor->residueColorBinding.getValue())
+2325c2325
+< 	
+---
+> 
+2328c2328
+< 					
+---
+> 
+2337c2337
+< 					computeResidueColor(theResidue,state);	
+---
+> 					computeResidueColor(theResidue,state);
+2339c2339
+< 					
+---
+> 
+2347c2347
+< 					
+---
+> 
+2357c2357
+< 				
+---
+> 
+2367c2367
+< 					}	
+---
+> 					}
+2370c2370
+< 					computeResidueColor(theResidue,state);	
+---
+> 					computeResidueColor(theResidue,state);
+2372c2372
+< 					
+---
+> 
+2380c2380
+< 					
+---
+> 
+2389c2389
+< 				
+---
+> 
+2402c2402
+< 					computeResidueColor(theResidue,state);	
+---
+> 					computeResidueColor(theResidue,state);
+2404c2404
+< 					
+---
+> 
+2431c2431
+< 	
+---
+> 
+2435c2435
+< 	
+---
+> 
+2441c2441
+< 		
+---
+> 
+2450c2450
+< 	
+---
+> 
+2464c2464
+< 			while (pIndex[nextIndex] < 0 && nextIndex < pl.getNum()) 
+---
+> 			while (pIndex[nextIndex] < 0 && nextIndex < pl.getNum())
+2470c2470
+< 				while (pIndex[nextIndex] < 0 && nextIndex >=0) 
+---
+> 				while (pIndex[nextIndex] < 0 && nextIndex >=0)
+2472c2472
+< 					
+---
+> 
+2486c2486
+< 			
+---
+> 
+2576c2576
+< 	
+---
+> 
+2614c2614
+< 			
+---
+> 
+2617c2617
+< 			
+---
+> 
+2625c2625
+< 		
+---
+> 
+2628c2628
+< 			residueColor[0] = 
+---
+> 			residueColor[0] =
+2631,2632c2631,2632
+< 			
+< 			residueColor[1] = 
+---
+> 
+> 			residueColor[1] =
+2634,2636c2634,2636
+< 				
+< 			
+< 			residueColor[2] = 
+---
+> 
+> 
+> 			residueColor[2] =
+2654,2655c2654,2655
+< 	
+< 	ChemResidueStuff *res = NULL;	
+---
+> 
+> 	ChemResidueStuff *res = NULL;
+2680c2680
+< 		
+---
+> 
+2698,2699c2698,2699
+< 			
+< 				glColor3fv(residueColor[0].getValue());		
+---
+> 
+> 				glColor3fv(residueColor[0].getValue());
+2701c2701
+< 			
+---
+> 
+2712c2712
+< 		}			
+---
+> 		}
+2733c2733
+< 	ChemResidueStuff *res = NULL;	
+---
+> 	ChemResidueStuff *res = NULL;
+2737c2737
+< 	
+---
+> 
+2758c2758
+< 			 
+---
+> 
+2771c2771
+< 			fur.set1Value(i,normal);		
+---
+> 			fur.set1Value(i,normal);
+2782c2782
+< 		
+---
+> 
+2788c2788
+< 		glNormal3fv(ful[0].getValue()); 
+---
+> 		glNormal3fv(ful[0].getValue());
+2790c2790
+< 		
+---
+> 
+2802c2802
+< 		
+---
+> 
+2810c2810
+< 		
+---
+> 
+2832c2832
+< 	ChemResidueStuff *res = NULL;	
+---
+> 	ChemResidueStuff *res = NULL;
+2870c2870
+< 			SbVec3f left = A - B; left.normalize();				
+---
+> 			SbVec3f left = A - B; left.normalize();
+2875c2875
+< 				runtl.set1Value(i,normal); 
+---
+> 				runtl.set1Value(i,normal);
+2881c2881
+< 				
+---
+> 
+2891,2893c2891,2893
+< 			{	
+< 				runtl.set1Value(i,up); 
+< 				runtr.set1Value(i,up);		
+---
+> 			{
+> 				runtl.set1Value(i,up);
+> 				runtr.set1Value(i,up);
+2905c2905
+< 				
+---
+> 
+2918c2918
+< 	
+---
+> 
+2921c2921
+< 		glVertex3fv(rtl[i].getValue()); 
+---
+> 		glVertex3fv(rtl[i].getValue());
+2924c2924
+< 		glVertex3fv(rtr[i].getValue()); 
+---
+> 		glVertex3fv(rtr[i].getValue());
+2927c2927
+< 		glVertex3fv(rbl[i].getValue()); 
+---
+> 		glVertex3fv(rbl[i].getValue());
+2930c2930
+< 		glVertex3fv(rbr[i].getValue()); 
+---
+> 		glVertex3fv(rbr[i].getValue());
+2950c2950
+< 		
+---
+> 
+2952c2952
+< 		glNormal3fv(runtl[0].getValue()); 
+---
+> 		glNormal3fv(runtl[0].getValue());
+2956c2956
+< 		
+---
+> 
+2975c2975
+< 		
+---
+> 
+2981,2982c2982,2986
+< 			glNormal3fv(runtl[i].getValue());
+---
+>             SbVec3f n;
+>             n.setValue( 0, 0, 1 );
+>             glNormal3fv(n.getValue());
+> 			//glNormal3fv(runtl[i].getValue());
+>             glNormal3fv(runbl[i].getValue());
+2984,2985c2989,2991
+< 			glNormal3fv(runtr[i].getValue());
+---
+>             glNormal3fv(n.getValue());
+> 			//glNormal3fv(runtr[i].getValue());
+>             glNormal3fv(runbr[i].getValue());
+2998c3004
+< 		
+---
+> 
+3000c3006
+< 		glNormal3fv(runbl[0].getValue()); 
+---
+> 		glNormal3fv(runbl[0].getValue());
+3004c3010
+< 		
+---
+> 
+3023c3029
+< 		
+---
+> 
+3046c3052
+< 		
+---
+> 
+3048c3054
+< 		glNormal3fv(rlntl[0].getValue()); 
+---
+> 		glNormal3fv(rlntl[0].getValue());
+3052c3058
+< 		
+---
+> 
+3071c3077
+< 		
+---
+> 
+3094c3100
+< 		
+---
+> 
+3096c3102
+< 		glNormal3fv(rlntr[0].getValue()); 
+---
+> 		glNormal3fv(rlntr[0].getValue());
+3100c3106
+< 		
+---
+> 
+3119c3125
+< 		
+---
+> 
+3126c3132
+< 			glNormal3fv(rlntr[i].getValue());
+---
+> 			glNormal3fv(rlntl[i].getValue());
+3129c3135
+< 			glNormal3fv(rlnbr[i].getValue());
+---
+> 			glNormal3fv(rlnbl[i].getValue());
+3178c3184
+< 	switch (chemColor->residueColorBinding.getValue()) 
+---
+> 	switch (chemColor->residueColorBinding.getValue())
+3246c3252
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+3278c3284
+< 		
+---
+> 
+3284c3290
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+3316c3322
+< 		
+---
+> 
+3321c3327
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+3374c3380
+< 		computeResidueColor(theResidue,state);	
+---
+> 		computeResidueColor(theResidue,state);
+3388c3394
+< 	
+---
+> 
+3432c3438
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+3448c3454
+< 			
+---
+> 
+3454c3460
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+3469c3475
+< 	
+---
+> 
+3513c3519
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+3529c3535
+< 			
+---
+> 
+3534c3540
+< 			computeResidueColor(theResidue,state);	
+---
+> 			computeResidueColor(theResidue,state);
+3539c3545
+< 	
+---
+> 
+3549c3555
+< 	
+---
+> 
+3565c3571
+< 	
+---
+> 
+3582c3588
+< 	schematicArrowTesselationSegments = cdp->schematicArrowTesselationSegments.getValue();	
+---
+> 	schematicArrowTesselationSegments = cdp->schematicArrowTesselationSegments.getValue();
+3584c3590
+< 	schematicTubeTesselationSegments = cdp->schematicTubeTesselationSegments.getValue();	
+---
+> 	schematicTubeTesselationSegments = cdp->schematicTubeTesselationSegments.getValue();
+3586c3592
+< 	
+---
+> 
+3612c3618
+< 				angle = (2*M_PI/shapeSegments)*j;	
+---
+> 				angle = (2*M_PI/shapeSegments)*j;
+3662c3668
+< 	switch (chemColor->schematicColorBinding.getValue()) 
+---
+> 	switch (chemColor->schematicColorBinding.getValue())
+3706c3712
+< 		
+---
+> 
+3711c3717
+< 	  schematicUnitCylinder->render(scfrom[cylinders[i]], scto[cylinders[i]], 
+---
+> 	  schematicUnitCylinder->render(scfrom[cylinders[i]], scto[cylinders[i]],
+3721c3727
+< 	
+---
+> 
+3742c3748
+< 	
+---
+> 
+3765c3771
+< 	
+---
+> 
+3767,3768c3773,3774
+< 	glEnable(GL_COLOR_MATERIAL);	
+< 	
+---
+> 	glEnable(GL_COLOR_MATERIAL);
+> 
+3770c3776
+< 	
+---
+> 
+3811c3817
+<                 // and avoid crashes.  
+---
+>                 // and avoid crashes.
+3822c3828
+< 			
+---
+> 
+3825c3831
+< 	
+---
+> 
+3856c3862
+< 	    schematicUnitCylinder->render(scfrom[k], scto[k], 
+---
+> 	    schematicUnitCylinder->render(scfrom[k], scto[k],
+3948c3954
+< 	
+---
+> 
+3964c3970
+< 	
+---
+> 
+3978c3984
+< 	
+---
+> 
+3990c3996
+< 			
+---
+> 
+3992c3998
+< 		
+---
+> 
+4006c4012
+< 				
+---
+> 
+4009c4015
+< 	
+---
+> 
+4019c4025
+< 	
+---
+> 
+4036c4042
+< 	const SbColor &highlightColor = cdp->highlightColor.getValue();	
+---
+> 	const SbColor &highlightColor = cdp->highlightColor.getValue();
+4065c4071
+< 	        schematicUnitCylinder->render(scfrom[k], scto[k], 
+---
+> 	        schematicUnitCylinder->render(scfrom[k], scto[k],
+4113c4119
+< 	        schematicUnitCylinder->render(scfrom[k], scto[k], 
+---
+> 	        schematicUnitCylinder->render(scfrom[k], scto[k],
+4150c4156
+< 	
+---
+> 
+4160c4166
+< 	
+---
+> 
+4181,4184c4187,4190
+< // compute matrix inverse 
+< // remove when different implementations 
+< void MATINV(double **AA) 
+< {                            
+---
+> // compute matrix inverse
+> // remove when different implementations
+> void MATINV(double **AA)
+> {
+4186c4192
+<    double PC[10],PL[10],CS[10];                                          
+---
+>    double PC[10],PL[10],CS[10];
+4259c4265
+<         if (IK==I) continue; 
+---
+>         if (IK==I) continue;
+4265c4271
+<    } 
+---
+>    }
+4282c4288
+< void minEig(double **A, double *X1)  
+---
+> void minEig(double **A, double *X1)
+4295c4301
+<   for (i=0; i<3; i++) 
+---
+>   for (i=0; i<3; i++)
+4298c4304
+<   it=-1; 
+---
+>   it=-1;
+4305c4311
+<       for (j=0; j<3; j++) 
+---
+>       for (j=0; j<3; j++)
+4312c4318
+<       for (i=0; i<3; i++) 
+---
+>       for (i=0; i<3; i++)
+4326c4332
+< }                
+---
+> }
+4393c4399
+< 		}			
+---
+> 		}
+4405c4411
+<   
+---
+> 
+4408c4414
+< 		
+---
+> 
+4423,4424c4429,4430
+< 		
+< 		if (currentResidueType != chainType 
+---
+> 
+> 		if (currentResidueType != chainType
+4431c4437
+< 				
+---
+> 
+4469c4475
+< 					}					
+---
+> 					}
+4502c4508
+< 		if (list[0]>0 && 
+---
+> 		if (list[0]>0 &&
+4508c4514
+< 		if (list[list.getLength()-1]<globalNumberOfResidues-1 && 
+---
+> 		if (list[list.getLength()-1]<globalNumberOfResidues-1 &&
+4511c4517
+< 				((SbIntList*)schematicTubes.get(i))->append(list[list.getLength()-1]+1);	
+---
+> 				((SbIntList*)schematicTubes.get(i))->append(list[list.getLength()-1]+1);
+4513c4519
+< 	
+---
+> 
+4524c4530
+< // this function only must remove those schematic variables 
+---
+> // this function only must remove those schematic variables
+4586c4592
+< 	
+---
+> 
+4598c4604
+< 		
+---
+> 
+4621c4627
+< 		minEig(M,X); 
+---
+> 		minEig(M,X);
+4624c4630
+< 		
+---
+> 
+4639c4645
+< 	// Adjust CA's of helix type residue projecting their position on the axis 
+---
+> 	// Adjust CA's of helix type residue projecting their position on the axis
+4648c4654
+< 	
+---
+> 
+4719c4725
+< 		
+---
+> 
+4733c4739
+< 		
+---
+> 
+4770c4776
+< 			scc.set1Value(i,scpl[i] + (scpr[i]-scpl[i])*0.5f);		
+---
+> 			scc.set1Value(i,scpl[i] + (scpr[i]-scpl[i])*0.5f);
+4793c4799
+<  
+---
+> 
+4797c4803
+< {	
+---
+> {
+4812c4818
+< 	
+---
+> 
+4816c4822
+< 	
+---
+> 
+4821c4827
+< 				
+---
+> 
+4831c4837
+< 			
+---
+> 
+4834c4840
+< 				
+---
+> 
+4845c4851
+< 				// same direction	
+---
+> 				// same direction
+4854c4860
+< 				
+---
+> 
+4857c4863
+< 					
+---
+> 
+4865c4871
+< 			}			
+---
+> 			}
+4869c4875
+< 	
+---
+> 
+4877c4883
+< {	
+---
+> {
+4890c4896
+< 	
+---
+> 
+4895c4901
+< 	
+---
+> 
+4903c4909
+< 			
+---
+> 
+4906c4912
+< 	
+---
+> 
+4911c4917
+< 	
+---
+> 
+4921c4927
+< 		}	
+---
+> 		}
+4924c4930
+< 	
+---
+> 
+4932c4938
+< 	}	
+---
+> 	}
+4941c4947
+< 	ChemResidueStuff* res = NULL;	
+---
+> 	ChemResidueStuff* res = NULL;
+4961c4967
+< 			 
+---
+> 
+4972c4978
+< 		  scruntl.set1Value(j,normal); 
+---
+> 		  scruntl.set1Value(j,normal);
+4976c4982
+< 		  scruntr.set1Value(j,normal);		
+---
+> 		  scruntr.set1Value(j,normal);
+4982c4988
+< 		  
+---
+> 
+5017c5023
+< 		glNormal3fv(scruntl[i].getValue());
+---
+> 		glNormal3fv(scrunbl[i].getValue());
+5020c5026
+< 		glNormal3fv(scruntr[i].getValue());
+---
+> 		glNormal3fv(scrunbr[i].getValue());
+5048c5054
+< 	
+---
+> 
+5053c5059
+< 		glNormal3fv(scrlntr[i].getValue());
+---
+> 		glNormal3fv(scrlntl[i].getValue());
+5056c5062
+< 		glNormal3fv(scrlnbr[i].getValue());
+---
+> 		glNormal3fv(scrlnbl[i].getValue());
+5065c5071
+< 	
+---
+> 
+5069c5075
+< 	
+---
+> 
+5072c5078
+< 	
+---
+> 
+5095c5101
+< 		schematicUnitCylinder->render(scfrom[i], scto[i], 
+---
+> 		schematicUnitCylinder->render(scfrom[i], scto[i],
+5150c5156
+< 	
+---
+> 
+5172c5178
+< 				
+---
+> 
+5195c5201
+< 		
+---
+> 
+5307c5313
+< 	
+---
+> 
+5313c5319
+< 	
+---
+> 
+5316c5322
+< 	
+---
+> 
+5334c5340
+< checkResidueForPick(SoRayPickAction *action, SbLine &pickLine, 
+---
+> checkResidueForPick(SoRayPickAction *action, SbLine &pickLine,
+5379c5385
+< 			
+---
+> 
+5507c5513
+< 						
+---
+> 
+5552c5558
+< 						
+---
+> 
+5623c5629
+< 							
+---
+> 
+5688c5694
+< 							
+---
+> 
+5738c5744
+< 						
+---
+> 
+5780c5786
+< 						
+---
+> 
+5827c5833
+< 							
+---
+> 
+5869c5875
+< 							
+---
+> 
+5895c5901
+< 	
+---
+> 
+5900c5906
+< 	
+---
+> 
+5903c5909
+< 	
+---
+> 
+5907c5913
+< 	
+---
+> 
+5910c5916
+< 	
+---
+> 
+5917c5923
+< 	
+---
+> 
+5967c5973
+< 	
+---
+> 
+5974c5980
+< 	
+---
+> 
+5979c5985
+< 		
+---
+> 
+5987c5993
+< 			rayIntersectsTriangle(pickLine,fl[1],fr[2],fl[2],point)) 
+---
+> 			rayIntersectsTriangle(pickLine,fl[1],fr[2],fl[2],point))
+6018c6024
+< 				
+---
+> 
+6028c6034
+< 	RESIDUELOOP_END	
+---
+> 	RESIDUELOOP_END
+6048c6054
+< 	
+---
+> 
+6053c6059
+<   
+---
+> 
+6055c6061
+< 	
+---
+> 
+6114c6120
+< 				
+---
+> 
+6253c6259
+< 						  
+---
+> 
+6298c6304
+< 						  
+---
+> 
+6369c6375
+< 							  
+---
+> 
+6434c6440
+< 							  
+---
+> 
+6485c6491
+< 						  
+---
+> 
+6528c6534
+< 						  
+---
+> 
+6575c6581
+< 							  
+---
+> 
+6618c6624
+< 							  
+---
+> 
+6630c6636
+<     } // <-- cylinder selection 
+---
+>     } // <-- cylinder selection
+6697c6703
+< 		        
+---
+> 
+6707c6713
+<  
+---
+> 
+6762c6768
+< 		      
+---
+> 
+6780c6786
+<     
+---
+> 
+6786c6792
+< 			angle = (2*M_PI/3)*i;	
+---
+> 			angle = (2*M_PI/3)*i;
+6790c6796
+<     
+---
+> 
+6792c6798
+<     {     
+---
+>     {
+6807c6813
+<         rayIntersectsTriangle(pickLine,scvtx[0][j],scvtx[2][j+1],scvtx[1][j+1],point) ||  
+---
+>         rayIntersectsTriangle(pickLine,scvtx[0][j],scvtx[2][j+1],scvtx[1][j+1],point) ||
+6825c6831
+<         }	      
+---
+>         }
+6833c6839
+< 			angle = (2*M_PI/oldShape)*i;	
+---
+> 			angle = (2*M_PI/oldShape)*i;
+6861c6867
+< 	
+---
+> 

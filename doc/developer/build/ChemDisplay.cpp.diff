@@ -1,0 +1,363 @@
+
+Left file: C:\mingw\src\OpenMOIV.src.1.0.3_ORIGINAL\src\ChemDisplay.cpp
+Right file: C:\mingw\src\OpenMOIV.src.1.0.3\src\ChemDisplay.cpp
+33c33
+<  * 
+---
+>  *
+37c37
+<  * 
+---
+>  *
+42c42
+<  * 
+---
+>  *
+46c46
+<  * Lesser General Public License for more details (see the file 
+---
+>  * Lesser General Public License for more details (see the file
+51c51
+<  * 
+---
+>  *
+241c241
+< static void checkAromaticity(ChemBaseData *chemData, 
+---
+> static void checkAromaticity(ChemBaseData *chemData,
+243c243
+< 	SbIntList *ringList, ChemBondStuff *bondAttributes, 
+---
+> 	SbIntList *ringList, ChemBondStuff *bondAttributes,
+253c253
+< static void processCumulenes(int32_t numPaths, SbIntList *dPaths, 
+---
+> static void processCumulenes(int32_t numPaths, SbIntList *dPaths,
+590c590
+< 			
+---
+> 
+604c604
+< 			
+---
+> 
+652c652
+< // save rendering state 
+---
+> // save rendering state
+661c661
+< 	float ambient[] = {0.2, 0.2, 0.2, 1.0};
+---
+> 	float ambient[] = {0., 0., 0., 1.0};
+664c664
+< 	float diffuse[] = {0.8, 0.8, 0.8, 1.0};
+---
+> 	float diffuse[] = {0.1, 0.1, 0.1, 1.0};
+666,667c666,667
+< 	
+< 	float specular[] = {0.0, 0.0, 0.0, 1.0};
+---
+> 
+> 	float specular[] = {0.5, 0.5, 0.5, 1.0};
+673c673
+< 	glMaterialf(GL_FRONT_AND_BACK,GL_SHININESS,0.0f);
+---
+> 	glMaterialf(GL_FRONT_AND_BACK,GL_SHININESS,128.f);
+719c719
+< 	
+---
+> 
+734c734
+< 	SbBool showNonBondedAtoms = 
+---
+> 	SbBool showNonBondedAtoms =
+792c792
+< 			if (cdp->atomSphereDisplayStyle.getValue() == 
+---
+> 			if (cdp->atomSphereDisplayStyle.getValue() ==
+857c857
+< 				(highlightAtomIndex.getNum() > 0 && 
+---
+> 				(highlightAtomIndex.getNum() > 0 &&
+884c884
+< 			if (cdp->atomSphereDisplayStyle.getValue() == 
+---
+> 			if (cdp->atomSphereDisplayStyle.getValue() ==
+895c895
+< 					(highlightAtomIndex.getNum() > 0 && 
+---
+> 					(highlightAtomIndex.getNum() > 0 &&
+1006c1006
+< 				if (cdp->atomSphereDisplayStyle.getValue() == 
+---
+> 				if (cdp->atomSphereDisplayStyle.getValue() ==
+1017c1017
+< 						(highlightAtomIndex.getNum() > 0 && 
+---
+> 						(highlightAtomIndex.getNum() > 0 &&
+1102c1102
+< 					(highlightAtomIndex.getNum() > 0 && 
+---
+> 					(highlightAtomIndex.getNum() > 0 &&
+1158c1158
+< 		
+---
+> 
+1179c1179
+< 		
+---
+> 
+1195c1195
+< 		glEnable(GL_LIGHTING);	
+---
+> 		glEnable(GL_LIGHTING);
+1485c1485
+< 	// Generate the appropriate primitives as determined from the display 
+---
+> 	// Generate the appropriate primitives as determined from the display
+1656c1656
+< 		if (showBondLabels) 
+---
+> 		if (showBondLabels)
+1759c1759
+< 	SbVec3f vdir=box.getMin()-center;	
+---
+> 	SbVec3f vdir=box.getMin()-center;
+2441c2441
+< 	float  multiSep    = cdp->multipleBondSeparation.getValue(); 
+---
+> 	float  multiSep    = cdp->multipleBondSeparation.getValue();
+2534c2534
+< 	float  multiSep    = cdp->multipleBondSeparation.getValue(); 
+---
+> 	float  multiSep    = cdp->multipleBondSeparation.getValue();
+2810c2810
+< 		// Invoke the appropriate sphere bBox as determined from the 
+---
+> 		// Invoke the appropriate sphere bBox as determined from the
+3375c3375
+< 		lastChemBaseDataElement = 
+---
+> 		lastChemBaseDataElement =
+3401c3401
+< 			// Get the selectionList from the ChemDisplaySelectionElement.  If the 
+---
+> 			// Get the selectionList from the ChemDisplaySelectionElement.  If the
+3403,3406c3403,3406
+< 			// ChemDisplaySelectionElement to contain no selections.  If there 
+< 			// previously had been selections, then the 
+< 			// lastChemSelectionElement would not match and things would be 
+< 			// OK.  If there had not been any previous selections, then 
+---
+> 			// ChemDisplaySelectionElement to contain no selections.  If there
+> 			// previously had been selections, then the
+> 			// lastChemSelectionElement would not match and things would be
+> 			// OK.  If there had not been any previous selections, then
+3469c3469
+< 		
+---
+> 
+3486c3486
+< 			else if (chemData->getBondType(theBond) == 
+---
+> 			else if (chemData->getBondType(theBond) ==
+3490c3490
+< 			else if (chemData->getBondType(theBond) == 
+---
+> 			else if (chemData->getBondType(theBond) ==
+3494c3494
+< 			else if (chemData->getBondType(theBond) == 
+---
+> 			else if (chemData->getBondType(theBond) ==
+3498c3498
+< 			else if (chemData->getBondType(theBond) == 
+---
+> 			else if (chemData->getBondType(theBond) ==
+3553c3553
+< 			// out where to draw the 2 parts of the bond.  We also need to 
+---
+> 			// out where to draw the 2 parts of the bond.  We also need to
+3560c3560
+< 			// If have triple or quadruple bonds, then there is also some 
+---
+> 			// If have triple or quadruple bonds, then there is also some
+3661c3661
+< 	// normalAtomIndex, highlightAtomIndex, nonBondedAtoms, 
+---
+> 	// normalAtomIndex, highlightAtomIndex, nonBondedAtoms,
+3764c3764
+< 			// Remove the normal nonBonded atoms from the highlighted 
+---
+> 			// Remove the normal nonBonded atoms from the highlighted
+3805c3805
+< 					else if (chemData->getBondType(theBond) == 
+---
+> 					else if (chemData->getBondType(theBond) ==
+3809c3809
+< 					else if (chemData->getBondType(theBond) == 
+---
+> 					else if (chemData->getBondType(theBond) ==
+3813c3813
+< 					else if (chemData->getBondType(theBond) == 
+---
+> 					else if (chemData->getBondType(theBond) ==
+3817c3817
+< 					else if (chemData->getBondType(theBond) == 
+---
+> 					else if (chemData->getBondType(theBond) ==
+3838,3839c3838,3839
+< 					// If have double bonds, then we need to do a lot of work 
+< 					// to figure out where to draw the 2 parts of the bond.  
+---
+> 					// If have double bonds, then we need to do a lot of work
+> 					// to figure out where to draw the 2 parts of the bond.
+3846,3848c3846,3848
+< 					// If have triple or quadruple bonds, then there is also 
+< 					// some work involved  determining the placement of the 
+< 					// outer lines.  We also need to generate the list of 
+---
+> 					// If have triple or quadruple bonds, then there is also
+> 					// some work involved  determining the placement of the
+> 					// outer lines.  We also need to generate the list of
+4060c4060
+< 			// Remove the values in the "highlight" indices from the values 
+---
+> 			// Remove the values in the "highlight" indices from the values
+4076c4076
+< 				// Remove the normal nonBonded atoms from the highlighted 
+---
+> 				// Remove the normal nonBonded atoms from the highlighted
+4267c4267
+< 	sortIndices(atomIndex, normalAtomIndex, 
+---
+> 	sortIndices(atomIndex, normalAtomIndex,
+4269c4269
+< 	sortIndices(bondIndex, normalBondIndex, 
+---
+> 	sortIndices(bondIndex, normalBondIndex,
+4271c4271
+< 	sortIndices(atomLabelIndex, normalAtomLabelIndex, 
+---
+> 	sortIndices(atomLabelIndex, normalAtomLabelIndex,
+4273c4273
+< 	sortIndices(bondLabelIndex, normalBondLabelIndex, 
+---
+> 	sortIndices(bondLabelIndex, normalBondLabelIndex,
+4320c4320
+< 	sortIndices(residueIndex, normalResidueIndex, 
+---
+> 	sortIndices(residueIndex, normalResidueIndex,
+4323c4323
+< 	sortIndices(residueLabelIndex, normalResidueLabelIndex, 
+---
+> 	sortIndices(residueLabelIndex, normalResidueLabelIndex,
+4330c4330
+< 	sortIndices(schematicIndex, normalSchematicIndex, 
+---
+> 	sortIndices(schematicIndex, normalSchematicIndex,
+4508c4508
+< 	int32_t localNumberOfBonds, ChemIntList *atch, 
+---
+> 	int32_t localNumberOfBonds, ChemIntList *atch,
+4522c4522
+< 	ChemSSSR *sssr = new ChemSSSR(globalNumberOfAtoms, localNumberOfBonds, 
+---
+> 	ChemSSSR *sssr = new ChemSSSR(globalNumberOfAtoms, localNumberOfBonds,
+4652c4652
+< 			// atom1, use the first non-linear, non-atom2 attachment as the 
+---
+> 			// atom1, use the first non-linear, non-atom2 attachment as the
+4697c4697
+< 				// If the bond is parallel to Y axis, then increment the 
+---
+> 				// If the bond is parallel to Y axis, then increment the
+4717c4717
+< 			// Drop a perpendicular from coord3 to the line defined by coord1 
+---
+> 			// Drop a perpendicular from coord3 to the line defined by coord1
+4950c4950
+< 	int32_t localNumberOfBonds, ChemIntList *atch, 
+---
+> 	int32_t localNumberOfBonds, ChemIntList *atch,
+4974c4974
+< 			// If the bond is parallel to Y axis, then increment the 
+---
+> 			// If the bond is parallel to Y axis, then increment the
+5157c5157
+< checkAromaticity(ChemBaseData *chemData, 
+---
+> checkAromaticity(ChemBaseData *chemData,
+5159c5159
+< 	SbIntList *ringList, ChemBondStuff *bondAttributes, 
+---
+> 	SbIntList *ringList, ChemBondStuff *bondAttributes,
+5177,5178c5177,5178
+< 	// If one bond in the ring is marked aromatic, then all must be marked 
+< 	// aromatic.  
+---
+> 	// If one bond in the ring is marked aromatic, then all must be marked
+> 	// aromatic.
+5180c5180
+< 	//     for those rings that are partially marked aromatic, change 
+---
+> 	//     for those rings that are partially marked aromatic, change
+5447c5447
+< 		// For these resonance bonds, we  also need to place all of the 
+---
+> 		// For these resonance bonds, we  also need to place all of the
+5469c5469
+< 			// If the bond is parallel to Y axis, then increment the 
+---
+> 			// If the bond is parallel to Y axis, then increment the
+5488c5488
+< 			// Drop a perpendicular from coord3 to the line defined by coord1 
+---
+> 			// Drop a perpendicular from coord3 to the line defined by coord1
+5519c5519
+< 		bondAttributes[rPaths[i][0]].start = 
+---
+> 		bondAttributes[rPaths[i][0]].start =
+5599c5599
+< 			// coord2 to the closestPoint will work.  If not, then we need 
+---
+> 			// coord2 to the closestPoint will work.  If not, then we need
+5680c5680
+< 		getPlanes(firstBond, lastBond, 
+---
+> 		getPlanes(firstBond, lastBond,
+5693c5693
+< 			// If the bond is parallel to Y axis, then increment the 
+---
+> 			// If the bond is parallel to Y axis, then increment the
+5712c5712
+< 			// Drop a perpendicular from coord3 to the line defined by coord1 
+---
+> 			// Drop a perpendicular from coord3 to the line defined by coord1
+5895,5896c5895,5896
+< 		// Drop a perpendicular from coord3 to the line defined by 
+< 		// coord1 and coord2.  This line is defined by 
+---
+> 		// Drop a perpendicular from coord3 to the line defined by
+> 		// coord1 and coord2.  This line is defined by
+5951,5952c5951,5952
+< 		// Drop a perpendicular from coord3 to the line defined by 
+< 		// coord1 and coord2.  This line is defined by 
+---
+> 		// Drop a perpendicular from coord3 to the line defined by
+> 		// coord1 and coord2.  This line is defined by
+6039c6039
+< 	
+---
+> 
+6064c6064
+< 			
+---
+> 
+6068c6068
+< 			
+---
+> 
+6121c6121
+< 	
+---
+> 

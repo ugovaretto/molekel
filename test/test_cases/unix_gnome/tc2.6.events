@@ -1,0 +1,230 @@
+971	"MainWindow/QVTKWidget"	800	600	2	232	230	704	399	1	1	0
+93	"MainWindow/QVTKWidget"	800	600	3	232	230	704	399	1	0	0
+1447	"MainWindow/MainToolbar/QToolButton_0"	35	36	2	7	17	258	149	1	1	0
+120	"MainWindow/MainToolbar/QToolButton_0"	35	36	3	7	17	258	149	1	0	0
+30	"MainWindow/Load molecule Dialog"	635	340	13	487	255	487	255
+0	"MainWindow/Load molecule Dialog"	635	340	14	635	340	-1	-1
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	17	17	13	618	323	618	323
+0	"MainWindow/Load molecule Dialog/QSizeGrip_0"	17	17	14	17	17	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0"	613	209	13	11	45	11	45
+0	"MainWindow/Load molecule Dialog/QListView_0"	613	209	14	613	209	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	190	13	2	2	2	2
+0	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	190	14	609	190	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	609	15	13	2	192	2	192
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2"	609	15	14	609	15	-1	-1
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	609	15	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QListView_0/QWidget_2/QScrollBar_0"	609	15	14	609	15	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	13	499	14	499	14
+0	"MainWindow/Load molecule Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+1	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	13	524	14	524	14
+0	"MainWindow/Load molecule Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	13	549	14	549	14
+0	"MainWindow/Load molecule Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	13	574	14	574	14
+0	"MainWindow/Load molecule Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	13	599	14	599	14
+0	"MainWindow/Load molecule Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_0"	67	28	13	11	11	11	11
+0	"MainWindow/Load molecule Dialog/QLabel_0"	67	28	14	67	28	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_1"	67	34	13	11	260	11	260
+0	"MainWindow/Load molecule Dialog/QLabel_1"	67	34	14	67	34	-1	-1
+0	"MainWindow/Load molecule Dialog/QLabel_2"	67	29	13	11	300	11	300
+0	"MainWindow/Load molecule Dialog/QLabel_2"	67	29	14	67	29	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	80	69	13	544	260	544	260
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0"	80	69	14	80	69	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	13	0	0	0	0
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	14	80	32	-1	-1
+0	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	13	0	37	0	37
+1	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	14	80	32	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	406	26	13	84	12	84	12
+0	"MainWindow/Load molecule Dialog/QComboBox_0"	406	26	14	406	26	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	363	22	13	22	2	22	2
+0	"MainWindow/Load molecule Dialog/QComboBox_0/QLineEdit_0"	363	22	14	363	22	-1	-1
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	406	26	13	84	264	84	264
+0	"MainWindow/Load molecule Dialog/QLineEdit_0"	406	26	14	406	26	-1	-1
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	406	26	13	84	301	84	301
+0	"MainWindow/Load molecule Dialog/QComboBox_1"	406	26	14	406	26	-1	-1
+0	"MainWindow/Load molecule Dialog"	635	340	13	435	255	487	255
+25	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	205	14	609	205	609	190
+15	"MainWindow/Load molecule Dialog"	635	340	13	438	245	435	255
+2633	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	205	2	86	56	537	348	1	1	0
+207	"MainWindow/Load molecule Dialog/QListView_0/qt_scrollarea_viewport"	609	205	3	86	56	537	348	1	0	0
+1439	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	2	28	15	1010	520	1	1	0
+184	"MainWindow/Load molecule Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	3	28	15	1010	520	1	0	0
+2160	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	205	228	2	96	23	346	250	1	1	0
+12	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	205	228	5	96	24	346	251	0	1	0
+19	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	205	228	5	96	25	346	252	0	1	0
+89	"MainWindow/WorkspaceTreeDockWidget/WorkspaceTreeWidget/QTreeWidget_0/qt_scrollarea_viewport"	205	228	3	96	25	346	252	1	0	0
+1103	"MainWindow/MainToolbar/QToolButton_7"	35	36	2	25	23	551	155	1	1	0
+113	"MainWindow/MainToolbar/QToolButton_7"	35	36	3	25	23	551	155	1	0	0
+11	"MainWindow/MoleculeRenderingStyleWidget_0"	292	462	13	352	185	352	185
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	292	462	14	292	462	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	26	13	10	10	10	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_0"	83	26	14	83	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	177	26	13	105	10	105	10
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_0"	177	26	14	177	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	26	13	10	48	10	48
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_1"	83	26	14	83	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	177	26	13	105	48	105	48
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_1"	177	26	14	177	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	26	13	10	86	10	86
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_2"	83	26	14	83	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	177	26	13	105	86	105	86
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_2"	177	26	14	177	26	-1	-1
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	26	13	10	124	10	124
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_3"	83	26	14	83	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	177	26	13	105	124	105	124
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_3"	177	26	14	177	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	26	13	10	162	10	162
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_4"	83	26	14	83	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	177	26	13	105	162	105	162
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	177	26	14	177	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	13	10	198	10	198
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_5"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	173	21	13	109	198	109	198
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_0"	173	21	14	173	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	13	10	222	10	222
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_6"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	173	21	13	109	222	109	222
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_1"	173	21	14	173	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	13	10	253	10	253
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_7"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	173	21	13	109	253	109	253
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_2"	173	21	14	173	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	13	10	280	10	280
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_8"	87	21	14	87	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	173	21	13	109	280	109	280
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QSlider_3"	173	21	14	173	21	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	169	26	13	10	311	10	311
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_0"	169	26	14	169	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	26	13	191	311	191	311
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_9"	91	26	14	91	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	169	26	13	10	349	10	349
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_1"	169	26	14	169	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	26	13	191	349	191	349
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QLabel_10"	91	26	14	91	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	272	3	13	10	385	10	385
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QFrame_0"	272	3	14	272	3	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	272	22	13	10	394	10	394
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QCheckBox_0"	272	22	14	272	22	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	91	26	13	10	426	10	426
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	91	26	14	91	26	-1	-1
+1	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	92	26	13	100	426	100	426
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_3"	92	26	14	92	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	91	26	13	191	426	191	426
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_4"	91	26	14	91	26	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0"	292	462	13	606	194	352	185
+28	"MainWindow/MoleculeRenderingStyleWidget_0"	292	462	13	609	205	606	194
+2069	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4"	177	26	2	169	17	883	384	1	1	0
+3	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0"	177	48	13	714	367	714	367
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0"	177	48	14	177	48	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0"	173	44	13	2	2	2	2
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0"	173	44	14	173	44	-1	-1
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	13	0	0	0	0
+0	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	14	173	44	-1	-1
+461	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	166	15	882	384	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	166	16	882	385	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	165	16	881	385	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	165	17	881	386	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	165	18	881	387	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	164	19	880	388	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	164	20	880	389	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	164	21	880	390	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	164	23	880	392	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	164	24	880	393	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	163	25	879	394	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	163	26	879	395	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	163	27	879	396	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	163	28	879	397	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	163	29	879	398	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	163	30	879	399	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	162	30	878	399	0	1	0
+8	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	162	31	878	400	0	1	0
+16	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	5	162	32	878	401	0	1	0
+408	"MainWindow/MoleculeRenderingStyleWidget_0/QComboBox_4/QComboBoxPrivateContainer_0/QComboBoxListView_0/qt_scrollarea_viewport"	173	44	3	162	32	878	401	1	0	0
+2111	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	91	26	2	45	14	664	645	1	1	0
+104	"MainWindow/MoleculeRenderingStyleWidget_0/QPushButton_2"	91	26	3	45	14	664	645	1	0	0
+1512	"MainWindow/MainToolbar/QToolButton_2"	35	36	2	13	21	338	153	1	1	0
+95	"MainWindow/MainToolbar/QToolButton_2"	35	36	3	13	21	338	153	1	0	0
+33	"MainWindow/Save image Dialog"	628	340	13	487	255	487	255
+0	"MainWindow/Save image Dialog"	628	340	14	628	340	-1	-1
+0	"MainWindow/Save image Dialog/QSizeGrip_0"	17	17	13	611	323	611	323
+0	"MainWindow/Save image Dialog/QSizeGrip_0"	17	17	14	17	17	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0"	606	209	13	11	45	11	45
+0	"MainWindow/Save image Dialog/QListView_0"	606	209	14	606	209	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	602	190	13	2	2	2	2
+0	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	602	190	14	602	190	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2"	602	15	13	2	192	2	192
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2"	602	15	14	602	15	-1	-1
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2/QScrollBar_0"	602	15	13	0	0	0	0
+0	"MainWindow/Save image Dialog/QListView_0/QWidget_2/QScrollBar_0"	602	15	14	602	15	-1	-1
+1	"MainWindow/Save image Dialog/QToolButton_0"	22	22	13	492	14	492	14
+0	"MainWindow/Save image Dialog/QToolButton_0"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_1"	22	22	13	517	14	517	14
+0	"MainWindow/Save image Dialog/QToolButton_1"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_2"	22	22	13	542	14	542	14
+0	"MainWindow/Save image Dialog/QToolButton_2"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_3"	22	22	13	567	14	567	14
+0	"MainWindow/Save image Dialog/QToolButton_3"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QToolButton_4"	22	22	13	592	14	592	14
+0	"MainWindow/Save image Dialog/QToolButton_4"	22	22	14	22	22	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_0"	67	28	13	11	11	11	11
+0	"MainWindow/Save image Dialog/QLabel_0"	67	28	14	67	28	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_1"	67	34	13	11	260	11	260
+0	"MainWindow/Save image Dialog/QLabel_1"	67	34	14	67	34	-1	-1
+0	"MainWindow/Save image Dialog/QLabel_2"	67	29	13	11	300	11	300
+0	"MainWindow/Save image Dialog/QLabel_2"	67	29	14	67	29	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0"	80	69	13	537	260	537	260
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0"	80	69	14	80	69	-1	-1
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	13	0	0	0	0
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	14	80	32	-1	-1
+1	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	13	0	37	0	37
+0	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_1"	80	32	14	80	32	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_0"	399	26	13	84	12	84	12
+0	"MainWindow/Save image Dialog/QComboBox_0"	399	26	14	399	26	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_0/QLineEdit_0"	356	22	13	22	2	22	2
+0	"MainWindow/Save image Dialog/QComboBox_0/QLineEdit_0"	356	22	14	356	22	-1	-1
+0	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	13	84	264	84	264
+0	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	14	399	26	-1	-1
+0	"MainWindow/Save image Dialog/QComboBox_1"	399	26	13	84	301	84	301
+0	"MainWindow/Save image Dialog/QComboBox_1"	399	26	14	399	26	-1	-1
+1	"MainWindow/Save image Dialog"	628	340	13	438	255	487	255
+22	"MainWindow/Save image Dialog/QListView_0/qt_scrollarea_viewport"	602	205	14	602	205	602	190
+17	"MainWindow/Save image Dialog"	628	340	13	441	245	438	255
+997	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	2	40	18	565	527	1	1	0
+96	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	3	40	18	565	527	1	0	0
+866	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	79	"o"	0	16	32	111
+120	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	79	"o"	0	16	32	111
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	79	"o"	0	16	32	111
+134	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	85	"u"	0	16	30	117
+91	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	85	"u"	0	16	30	117
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	85	"u"	0	16	30	117
+72	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	84	"t"	0	16	28	116
+91	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	84	"t"	0	16	28	116
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	84	"t"	0	16	28	116
+531	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	45	"-"	0	16	20	45
+104	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	45	"-"	0	16	20	45
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	45	"-"	0	16	20	45
+922	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	50	"2"	0	16	11	50
+97	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	50	"2"	0	16	11	50
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	50	"2"	0	16	11	50
+237	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	46	"."	0	16	60	46
+105	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	46	"."	0	16	60	46
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	46	"."	0	16	60	46
+379	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	54	"6"	0	16	15	54
+84	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	54	"6"	0	16	15	54
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	54	"6"	0	16	15	54
+499	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	46	"."	0	16	60	46
+101	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	46	"."	0	16	60	46
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	46	"."	0	16	60	46
+543	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	80	"p"	0	16	33	112
+92	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	80	"p"	0	16	33	112
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	80	"p"	0	16	33	112
+204	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	78	"n"	0	16	57	110
+104	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	78	"n"	0	16	57	110
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	78	"n"	0	16	57	110
+221	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	6	1	0	71	"g"	0	16	42	103
+114	"MainWindow/Save image Dialog/QLineEdit_0"	399	26	7	1	0	71	"g"	0	16	42	103
+0	"MainWindow/Save image Dialog"	628	340	7	1	0	71	"g"	0	16	42	103
+1488	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	2	51	19	1029	524	1	1	0
+119	"MainWindow/Save image Dialog/QDialogButtonBox_0/QPushButton_0"	80	32	3	51	19	1029	524	1	0	0

@@ -1,0 +1,152 @@
+2662	"MainWindow/TheMenuBar"	800	25	2	280	14	285	63	1	1	0
+2	"MainWindow/TheMenuBar/QMenu_3"	199	96	13	259	73	259	73
+0	"MainWindow/TheMenuBar/QMenu_3"	199	96	14	199	96	-1	-1
+94	"MainWindow/TheMenuBar/QMenu_9"	199	96	3	26	-10	285	63	1	0	0
+0	"MainWindow/TheMenuBar"	800	25	3	280	14	285	63	1	0	0
+2231	"MainWindow/TheMenuBar/QMenu_9"	199	96	2	34	13	293	86	1	1	0
+104	"MainWindow/TheMenuBar/QMenu_9"	199	96	3	34	13	293	86	1	0	0
+14	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	13	80	123	80	123
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	14	360	682	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	13	11	11	11	11
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	14	338	586	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_0"	320	23	13	9	9	9	9
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_0"	320	23	14	320	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_1"	320	23	13	9	38	9	38
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_1"	320	23	14	320	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0"	320	183	13	9	67	9	67
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0"	320	183	14	320	183	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/qt_scrollarea_viewport"	279	153	13	24	28	24	28
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/qt_scrollarea_viewport"	279	153	14	279	153	-1	-1
+1	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_0"	64	153	13	2	28	2	28
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_0"	64	153	14	64	153	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_0/qt_scrollarea_viewport"	64	153	13	0	0	0	0
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_0/qt_scrollarea_viewport"	64	153	14	64	153	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_1"	301	15	13	2	166	2	166
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_1"	301	15	14	301	15	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_1/QScrollBar_0"	301	15	13	0	0	0	0
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_1/QScrollBar_0"	301	15	14	301	15	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/qt_scrollarea_viewport"	237	138	14	237	138	237	153
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_0"	64	138	14	64	138	64	153
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_0/qt_scrollarea_viewport"	64	138	14	64	138	64	153
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_1"	237	26	13	66	2	66	2
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_1"	237	26	14	237	26	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_1/qt_scrollarea_viewport"	237	26	13	0	0	0	0
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QHeaderView_1/qt_scrollarea_viewport"	237	26	14	237	26	-1	-1
+1	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QAbstractButton_0"	64	26	13	2	2	2	2
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QAbstractButton_0"	64	26	14	64	26	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_2"	15	164	13	303	2	303	2
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_2"	15	164	14	15	164	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_2/QScrollBar_0"	15	164	13	0	0	0	0
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QTableWidget_0/QWidget_2/QScrollBar_0"	15	164	14	15	164	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QLabel_0"	140	29	13	9	256	9	256
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QLabel_0"	140	29	14	140	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_0"	140	29	13	189	256	189	256
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_0"	140	29	14	140	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	119	23	13	3	3	3	3
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	119	23	14	119	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_2"	125	23	13	9	291	9	291
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_2"	125	23	14	125	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_3"	155	23	13	174	291	174	291
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_3"	155	23	14	155	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QLabel_1"	145	29	13	9	320	9	320
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QLabel_1"	145	29	14	145	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	13	184	320	184	320
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	14	145	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	124	23	13	3	3	3	3
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	124	23	14	124	23	-1	-1
+1	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0"	138	187	13	9	355	9	355
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0"	138	187	14	138	187	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QLabel_0"	29	29	13	11	28	11	28
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QLabel_0"	29	29	14	29	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_0"	57	29	13	70	28	70	28
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_0"	57	29	14	57	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	36	23	13	3	3	3	3
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_0/qt_spinbox_lineedit"	36	23	14	36	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QLabel_1"	29	29	13	11	87	11	87
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QLabel_1"	29	29	14	29	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_1"	57	29	13	70	87	70	87
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_1"	57	29	14	57	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	36	23	13	3	3	3	3
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	36	23	14	36	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QLabel_2"	29	29	13	11	146	11	146
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QLabel_2"	29	29	14	29	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_2"	57	29	13	70	146	70	146
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_2"	57	29	14	57	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_2/qt_spinbox_lineedit"	36	23	13	3	3	3	3
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_0/QDoubleSpinBox_2/qt_spinbox_lineedit"	36	23	14	36	23	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1"	167	187	13	162	355	162	355
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1"	167	187	14	167	187	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLabel_0"	15	29	13	11	33	11	33
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLabel_0"	15	29	14	15	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLineEdit_0"	110	29	13	46	33	46	33
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLineEdit_0"	110	29	14	110	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLabel_1"	15	29	13	11	87	11	87
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLabel_1"	15	29	14	15	29	-1	-1
+1	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLineEdit_1"	110	29	13	46	87	46	87
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLineEdit_1"	110	29	14	110	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLabel_2"	15	29	13	11	141	11	141
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLabel_2"	15	29	14	15	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLineEdit_2"	110	29	13	46	141	46	141
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QGroupBox_1/QLineEdit_2"	110	29	14	110	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QLabel_2"	161	29	13	9	548	9	548
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QLabel_2"	161	29	14	161	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QComboBox_0"	160	29	13	169	548	169	548
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QComboBox_0"	160	29	14	160	29	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QFrame_0"	338	3	13	11	603	11	603
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QFrame_0"	338	3	14	338	3	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QLabel_0"	170	17	13	11	612	11	612
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QLabel_0"	170	17	14	170	17	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QCheckBox_0"	169	14	13	180	613	180	613
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QCheckBox_0"	169	14	14	169	14	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_0"	113	27	13	11	644	11	644
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_0"	113	27	14	113	27	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_1"	114	27	13	123	644	123	644
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_1"	114	27	14	114	27	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_2"	113	27	13	236	644	236	644
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_2"	113	27	14	113	27	-1	-1
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	13	220	26	80	123
+2	"MainWindow/ComputeElDensSurfaceDialog_0/QFrame_0"	338	3	13	11	635	11	603
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QFrame_0"	338	3	13	11	603	11	635
+61	"MainWindow/ComputeElDensSurfaceDialog_0/QFrame_0"	338	3	13	11	635	11	603
+0	"MainWindow/ComputeElDensSurfaceDialog_0/QFrame_0"	338	3	13	11	603	11	635
+6	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	13	5	22	220	26
+1440	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_0"	320	23	2	37	6	282	74	1	1	0
+136	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QCheckBox_0"	320	23	3	37	6	282	74	1	0	0
+1880	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	124	23	2	31	13	454	395	1	1	0
+88	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1/qt_spinbox_lineedit"	124	23	3	31	13	454	395	1	0	0
+1248	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	16777219	""	0	0	22	65288
+71	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	16777219	""	0	0	22	65288
+537	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	16777219	""	0	0	22	65288
+84	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	16777219	""	0	0	22	65288
+798	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	16777219	""	0	0	22	65288
+82	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	16777219	""	0	0	22	65288
+362	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	16777219	""	0	0	22	65288
+75	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	16777219	""	0	0	22	65288
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	16777219	""	0	0	22	65288
+1449	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	48	"0"	0	0	19	48
+91	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	48	"0"	0	0	19	48
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	48	"0"	0	0	19	48
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	48	"0"	0	0	19	48
+527	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	46	"."	0	0	60	46
+82	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	46	"."	0	0	60	46
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	46	"."	0	0	60	46
+1075	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	48	"0"	0	0	19	48
+88	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	48	"0"	0	0	19	48
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	48	"0"	0	0	19	48
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	48	"0"	0	0	19	48
+956	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	6	1	0	56	"8"	0	0	17	56
+78	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0/QDoubleSpinBox_1"	145	29	7	1	0	56	"8"	0	0	17	56
+0	"MainWindow/ComputeElDensSurfaceDialog_0/MoleculeElDensSurfaceWidget_0"	338	586	7	1	0	56	"8"	0	0	17	56
+0	"MainWindow/ComputeElDensSurfaceDialog_0"	360	682	7	1	0	56	"8"	0	0	17	56
+2570	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_0"	113	27	2	48	10	284	702	1	1	0
+96	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_0"	113	27	3	48	10	284	702	1	0	0
+2416	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_2"	113	27	2	69	17	530	709	1	1	0
+64	"MainWindow/ComputeElDensSurfaceDialog_0/QPushButton_2"	113	27	3	69	17	530	709	1	0	0
