@@ -1,6 +1,7 @@
 
  SET( MOLEKEL_LICENSE
-      "Molekel is Copyright (c) 2006, 2007, 2008, 2009 - Swiss National Supercomputing Centre (CSCS)\n"
+      "Molekel is Copyright (c) 2006-2012 - Swiss National Supercomputing Centre (CSCS)\n"
+      "and Ugo Varetto\n"
       "Portions of the source code are Copyright (C) Ugo Varetto\n"
       "Website: http://molekel.cscs.ch\n"
       "This program is free software; you can redistribute it and/or\n"
