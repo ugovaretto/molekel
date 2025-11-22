@@ -4,6 +4,7 @@ $WikiTitle = 'Molekel';
 //$PubDirUrl = 'http://www.bioinformatics.org/molekel/wiki/pub';
 $PASSWD=crypt('cscsmolekel');
 $DefaultPasswords['admin'] = $PASSWD;
+$DefaultPasswords['read'] = $PASSWD;
 //$DefaultPasswords['read'] = crypt('uvaretto@cscs.ch');
 $DefaultPasswords['edit'] = $PASSWD;
 $DefaultPasswords['attr'] = $PASSWD;
