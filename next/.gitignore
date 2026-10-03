@@ -1,0 +1,9 @@
+/target/
+/app/node_modules/
+/app/dist/
+/app/src/wasm/
+/app/src-tauri/gen/
+/app/test-results/
+/app/playwright-report/
+/artifacts/
+*.log

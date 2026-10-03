@@ -1,0 +1,58 @@
+# Molekel rewrite
+
+A clean Rust scientific core with a React/Three.js interface, shared by a Tauri macOS application and the browser. This directory is independent of the legacy implementation. No legacy source is copied or built, and no C++ is used in the application.
+
+**Status:** first working development preview, not v1 and not completion of the M0-M7 plan. See [implementation status](docs/status.md) for evidence and remaining gates.
+
+## Run
+
+Tested toolchain: Rust 1.92.0, Node 26, wasm-bindgen CLI 0.2.108. Dependency versions are locked in Cargo.lock and app/package-lock.json.
+
+From `next/`:
+
+```sh
+export TMPDIR="$(cd ../tmp && pwd)"
+export TMP="$TMPDIR" TEMP="$TMPDIR"
+rustup target add wasm32-unknown-unknown
+cargo install wasm-bindgen-cli --version 0.2.108 --locked
+cd app
+npm ci
+npm run dev
+```
+
+The development viewer is served at `http://127.0.0.1:5178`. The port is deliberately strict; choose another in both Vite and Tauri config if it is occupied. All project scripts set temporary-directory variables to the ignored repository `tmp/`.
+
+```sh
+npm run desktop        # Tauri development app, starts its own Vite server
+npm run desktop:build  # Unsigned debug macOS .app bundle
+npm run build          # WASM, TypeScript check, production web bundle
+npm test               # Rust scientific and native-format tests
+npm run test:e2e       # Chromium/WebKit interaction, persistence, pixel and mobile tests
+```
+
+Stop an independently started Vite server before `npm run desktop`. Install Playwright's browsers once with `npm exec playwright -- install chromium webkit`, using the temporary-directory variables above.
+
+## Available
+
+- Analytic two-center and fractional-open-shell fixtures, clearly identified as mathematical models rather than chemistry calculations.
+- Frozen independent PySCF references for closed/open-shell molecules and Cartesian/spherical general contractions through G, with native/WASM value and gradient checks. [Reference suite and example documents](fixtures/pyscf/README.md).
+- Explicit Gaussian-polynomial basis evaluation and gradients through G, signed orbitals, and supplied real density matrices in Rust/f64.
+- Ball-and-stick, liquorice, and space-filling representations; camera controls, atom picking, and image export.
+- Rust marching-cubes mesh extraction, signed colors, opacity, visibility, deletion, bounded job execution, worker cancellation, and sampled-field reuse.
+- Experimental sampled raycasting and volume integration with actual shaders; these do not yet meet the full correctness/performance release gates.
+- Self-contained `.molekel` preview files containing quantum data, binary numeric arrays, saved meshes, isovalues, grid geometry, scientific hashes, provenance, and material settings. Reopen displays saved geometry without recomputation.
+- Native Save dialog with validated sibling-file replacement; browser file download. Native Open dialog and browser file selection.
+- Conventional single-frame XYZ and PDB import with automatic coordinate-based bonds, PDB alternate/model handling, and retained explicit connections. [Import policy and algorithm](docs/structure-imports.md).
+- Standard single-channel bohr cube import, including skewed/reflected affine axes and explicit errors for unsupported profiles.
+
+## Boundaries
+
+The mesher is the MIT-licensed Rust `mcubes` 0.1.7 library, not MC33. Its classic table is not topology-certified. The numerical evaluator is a scalar Rust reference implementation, not an optimized collocation kernel. Neither substitution closes the relevant scientific/performance gates.
+
+Raycasting uses bounded step sampling and bracket refinement. It can miss tangencies or multiple crossings between steps. Transparency uses ordinary mesh compositing and an experimental single-volume pass; opaque objects inside volumes and interpenetrating transparent layers are not yet correctly integrated. Do not treat these previews as publication-quality rendering.
+
+The format's named preview profile is intentionally narrower than the proposed full format. It has whole-array ZIP entries and a 128 MiB file/inflated-byte cap; it is not a streaming/chunked large-data implementation. Saving may need several in-memory copies. Camera and transient volume state are not yet persisted. See [format profile](docs/preview-format.md).
+
+Limits are deliberate: 256 AOs, 64 primitives per AO, UI grids up to 48 cubed, 128 cubed maximum imported grid, bounded estimated mesher output, and a reference-evaluator operation budget. Imported cubes can be resampled for display without modifying their authoritative values. XYZ/PDB bonds use published covalent radii and bounded neighbor search; they are display connectivity, not inferred bond orders. PDB import selects the first geometry and one alternate per residue. Van der Waals display-radius defaults outside the small explicit element table remain provisional and are independent of the complete bond-radius dataset.
+
+Direct analytic shader raycasting, topology-certified MC33, shrinkwrap, full transfer-function editing, Molden/OBJ import, atom-color text import, metadata editing, undo, and release qualification remain to be implemented. Linux and Windows are architectural targets, not tested supported releases.

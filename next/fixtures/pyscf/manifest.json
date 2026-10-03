@@ -1,0 +1,24 @@
+{
+  "fixtures": [
+    {
+      "file": "water-rhf-ccpvdz.json",
+      "sha256": "652d05b44035be4c0ce153f96939f28301ae54c4f6e4afefaeae338afc364dc7",
+      "bytes": 117746
+    },
+    {
+      "file": "hydroxyl-uhf-sto3g.json",
+      "sha256": "574a7ae2ea8f9e72e63e9b87c0ff00896be1d9285da4bd13a52e6db95d2bd146",
+      "bytes": 44204
+    },
+    {
+      "file": "general-spdfg-spherical.json",
+      "sha256": "724411702cd3e9ac99ffd160a5ff6e323451a50a30a0b5afba1b900c5b080aa0",
+      "bytes": 122138
+    },
+    {
+      "file": "general-spdfg-cartesian.json",
+      "sha256": "4c6c85b91e2dd381e7118243983c2891fc4cab31f9b2e5d22a9565dbf5df5e3f",
+      "bytes": 179335
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "identifier": "main",
+  "description": "Local file selection and user-selected document access only",
+  "windows": ["main"],
+  "permissions": ["core:default", "dialog:allow-open", "fs:allow-read-file"]
+}

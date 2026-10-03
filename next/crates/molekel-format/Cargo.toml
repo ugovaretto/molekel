@@ -1,0 +1,11 @@
+[package]
+name = "molekel-format"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+molekel-core = { path = "../molekel-core" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+zip = { version = "2.4", default-features = false, features = ["deflate"] }

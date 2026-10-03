@@ -1,0 +1,15 @@
+[package]
+name = "molekel-desktop"
+version.workspace = true
+edition.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+molekel-core = { path = "../../crates/molekel-core" }
+molekel-format = { path = "../../crates/molekel-format" }
+serde_json.workspace = true

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Molekel Preview",
+  "version": "0.1.0",
+  "identifier": "org.molekel.preview",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5178",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "title": "Molekel", "width": 1320, "height": 860, "minWidth": 600, "minHeight": 520 }],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self' ipc: http://ipc.localhost; worker-src 'self' blob:"
+    }
+  },
+  "bundle": { "active": true, "targets": ["app"], "icon": ["icons/icon.png", "icons/icon.icns", "icons/icon.ico"] }
+}

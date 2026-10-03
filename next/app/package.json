@@ -1,0 +1,35 @@
+{
+  "name": "molekel-next",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "wasm": "node ../tools/run.mjs wasm",
+    "dev": "node ../tools/run.mjs dev",
+    "build": "node ../tools/run.mjs build",
+    "test": "node ../tools/run.mjs test",
+    "test:e2e": "node ../tools/run.mjs e2e",
+    "desktop": "node ../tools/run.mjs desktop",
+    "desktop:build": "node ../tools/run.mjs desktop-build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-dialog": "^2.4.0",
+    "@tauri-apps/plugin-fs": "^2.4.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.183.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "prettier": "3.6.2",
+    "typescript": "^5.9.0",
+    "vite": "^7.3.0"
+  }
+}
