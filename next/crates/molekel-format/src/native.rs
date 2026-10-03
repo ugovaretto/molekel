@@ -9,6 +9,15 @@ use std::{
 
 /// Validate before writing; replacement never exposes a partially written file.
 pub fn save_atomic(path: &Path, bytes: &[u8]) -> Result<()> {
+    save(path, bytes, true)
+}
+
+/// Publish a complete native document only if the destination does not exist.
+pub fn save_atomic_new(path: &Path, bytes: &[u8]) -> Result<()> {
+    save(path, bytes, false)
+}
+
+fn save(path: &Path, bytes: &[u8], replace: bool) -> Result<()> {
     decode(bytes)?;
     let parent = path.parent().ok_or("No save directory")?;
     let nonce = SystemTime::now()
@@ -29,7 +38,14 @@ pub fn save_atomic(path: &Path, bytes: &[u8]) -> Result<()> {
         file.write_all(bytes).map_err(|e| e.to_string())?;
         file.sync_all().map_err(|e| e.to_string())?;
         drop(file);
-        std::fs::rename(&temporary, path).map_err(|e| e.to_string())
+        if replace {
+            std::fs::rename(&temporary, path).map_err(|e| e.to_string())
+        } else {
+            // A same-directory hard link atomically refuses an existing target.
+            std::fs::hard_link(&temporary, path).map_err(|e| e.to_string())?;
+            let _ = std::fs::remove_file(&temporary);
+            Ok(())
+        }
     })();
     if result.is_err() {
         let _ = std::fs::remove_file(&temporary);
@@ -86,6 +102,18 @@ mod tests {
         std::fs::create_dir(&destination_dir).unwrap();
         assert!(save_atomic(&destination_dir, &bytes).is_err());
         assert_eq!(std::fs::read_dir(&dir).unwrap().count(), 2);
+        std::fs::remove_dir_all(dir).unwrap();
+    }
+
+    #[test]
+    fn new_save_never_replaces_a_destination() {
+        let dir = scratch("no-replace");
+        let path = dir.join("example.molekel");
+        let original = encode(&fixtures::hydrogen_pair()).unwrap();
+        save_atomic_new(&path, &original).unwrap();
+        assert!(save_atomic_new(&path, &encode(&fixtures::open_shell()).unwrap()).is_err());
+        assert_eq!(std::fs::read(&path).unwrap(), original);
+        assert_eq!(std::fs::read_dir(&dir).unwrap().count(), 1);
         std::fs::remove_dir_all(dir).unwrap();
     }
 }

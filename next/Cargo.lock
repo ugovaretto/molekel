@@ -1923,8 +1923,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "molekel-convert"
+version = "0.2.0"
+dependencies = [
+ "molekel-core",
+ "molekel-format",
+ "molekel-import",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "molekel-core"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "kiddo",
  "lin_alg",
@@ -1937,7 +1948,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-desktop"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "molekel-core",
  "molekel-format",
@@ -1950,7 +1961,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-format"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "molekel-core",
  "serde",
@@ -1960,11 +1971,23 @@ dependencies = [
 ]
 
 [[package]]
-name = "molekel-wasm"
-version = "0.1.0"
+name = "molekel-import"
+version = "0.2.0"
 dependencies = [
  "molekel-core",
  "molekel-format",
+ "serde",
+ "serde_json",
+ "sha2",
+]
+
+[[package]]
+name = "molekel-wasm"
+version = "0.2.0"
+dependencies = [
+ "molekel-core",
+ "molekel-format",
+ "molekel-import",
  "serde_json",
  "wasm-bindgen",
 ]

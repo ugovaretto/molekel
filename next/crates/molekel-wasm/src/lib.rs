@@ -1,4 +1,4 @@
-use molekel_core::{Document, compute, fixtures, import};
+use molekel_core::{Document, compute, fixtures};
 use wasm_bindgen::prelude::*;
 fn err(e: impl ToString) -> JsValue {
     JsValue::from_str(&e.to_string())
@@ -31,18 +31,12 @@ pub fn decode(bytes: &[u8]) -> Result<String, JsValue> {
 }
 #[wasm_bindgen]
 pub fn import_text(text: &str, name: &str) -> Result<String, JsValue> {
-    let d = if name.to_lowercase().ends_with(".xyz") {
-        import::xyz(text, name)
-    } else if name.to_lowercase().ends_with(".pdb") {
-        import::pdb(text, name)
-    } else if name.to_lowercase().ends_with(".cube") || name.to_lowercase().ends_with(".cub") {
-        import::cube(text, name)
-    } else {
-        return Err(err(
-            "This preview opens .molekel, .xyz, .pdb and single-channel .cube files",
-        ));
-    };
-    serde_json::to_string(&d.map_err(err)?).map_err(err)
+    let result = molekel_import::import_bytes(text.as_bytes(), name).map_err(err)?;
+    serde_json::to_string(&result.document).map_err(err)
+}
+#[wasm_bindgen]
+pub fn import_document(bytes: &[u8], name: &str) -> Result<String, JsValue> {
+    serde_json::to_string(&molekel_import::import_bytes(bytes, name).map_err(err)?).map_err(err)
 }
 #[wasm_bindgen]
 pub fn sample(json: &str, field: &str, resolution: usize) -> Result<String, JsValue> {

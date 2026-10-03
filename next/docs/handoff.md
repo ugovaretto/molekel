@@ -3,6 +3,8 @@
 Recorded 3 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
 document, [architecture](architecture.md), and [development commands](development.md).
 The [documentation map](README.md) links the original brief and full M0-M7 plan.
+The current application version is **0.2.0**, including Molden import and the
+shared library/CLI conversion workflow. Native schema `[0, 1]` is unchanged.
 
 ## Establish the live state
 
@@ -26,10 +28,13 @@ and `BUILD-INFO.json` for provenance instead.
 
 ## What is already implemented
 
-- Shared Rust core, Rust native format, Rust/WASM bridge, React/Three.js viewer,
+- Shared Rust core, native format, import library/CLI, Rust/WASM bridge, React/Three.js viewer,
   and Tauri desktop shell, all under `next/`.
 - XYZ/PDB structures with automatic exact-neighbor-search display bonds, plus
   a bounded single-channel cube importer.
+- Molden Open and Convert Files workflows, canonical real Gaussian shells
+  through G, explicit producer/normalization/loss reports, and a separately
+  qualified ORCA S/P/5D Molden export subset. See [import contracts](molden-import.md).
 - Real Gaussian-polynomial orbitals/density matrices through G, analytic
   gradients, sampled grids, positive/negative classic marching-cubes meshes.
 - Native preview files containing scientific inputs and durable surface meshes
@@ -43,11 +48,14 @@ and `BUILD-INFO.json` for provenance instead.
 
 ## Evidence, not assumptions
 
-The last recorded full application suite passed **39 Rust tests** and **30
-browser cases** (15 scenarios in Chromium and WebKit). Packaging has **7 tests**.
-Production WASM/frontend, macOS debug/release bundles, Rust formatting, and
-workspace Clippy were checked. The verified ZIP workflow checks extracted bytes,
-permissions, signature, architecture, linked libraries, and sample imports.
+The Molden increment passed **72 default-workspace Rust tests**, **1 separate
+native destination-guard test**, and **54 browser cases** (27 scenarios in
+Chromium and WebKit). Packaging has **7 tests**. Production WASM/frontend,
+macOS debug bundle, Rust formatting, and workspace Clippy were checked. The
+verified release ZIP workflow checks extracted bytes, permissions, app/CLI
+signatures, architecture, linked libraries, sample imports, and the actual
+standalone converter's scientific agreement with WASM. Each successful package's
+`BUILD-INFO.json` records its artifact-specific checks.
 See [status](status.md) for scope and provenance; rerun relevant tests for new
 changes rather than treating these counts as permanent acceptance.
 
@@ -56,6 +64,9 @@ complete interactive save/reopen, native close-warning behavior, and native PNG
 download handling remain incompletely qualified. Filesystem roundtrip tests and
 browser downloads are separate evidence. Clean-machine installation, the entire
 macOS target range, Intel, Linux, and Windows are not verified releases.
+New native Molden/batch dialogs have not been exercised interactively; browser
+tests and the native destination-guard unit test are separate evidence. The
+existing running app was not restarted during this change.
 
 ## Plan and next work
 
@@ -75,12 +86,13 @@ documented priorities, not permission for an unrelated rewrite:
 | Robust sampled intersections and analytic shaders | `volume.ts`, field evaluator, browser tests | Tangency/multiple-root cases, quantified field/intersection errors, orbital and density envelopes, mixed-scene depth/transparency tests |
 | Broader scientific qualification | Core reference tests, PySCF fixtures/generator | Spatial-integral convergence, diffuse/tight exponents, independent producer conventions; do not use implementation-under-test as sole oracle |
 | Native lifecycle and save workflow | `files.ts`, Tauri entry point, `App.tsx` | Actual dialog save/reopen/cancel/replace/close and data-preservation observations, not only unit tests |
-| Remaining external formats and richer UI | Import/model/format boundaries, UI | Molden/OBJ/color inputs with explicit loss reports and fixtures; metadata/material editing, undo, camera persistence without stale source associations |
+| Remaining external formats and richer UI | Shared import/model/format boundaries, UI | Broader Molden producer fixtures, future formats only when selected by user; metadata/material editing, undo, camera persistence without stale source associations |
 | Public macOS release | Packaging, licensing, platform qualification | Supported-device/OS matrix, clean install, independent license review, Developer ID signing/notarization and distribution testing |
 
 Shrinkwrap, full transfer functions, schema freezing/migrations, larger workloads,
-native parallel jobs, and future ORCA/Gaussian converters also remain in the
-plan. PDB is not a full metadata-preserving importer. Do not quietly downgrade
+native parallel jobs, and future user-selected converters also remain open.
+Direct ORCA is deferred in favor of its existing Molden export tool; no direct
+Gaussian/T41 reader was added. PDB is not a full metadata-preserving importer. Do not quietly downgrade
 these requirements because the current preview can display a scene.
 
 ## Important traps
@@ -96,8 +108,15 @@ these requirements because the current preview can display a scene.
   authoritative scalar data, not recoverable basis/orbital information.
 - Generation replaces meshes for the selected field, not the whole document.
   Reopening saved meshes must not require regeneration or a source attachment.
-- Tests use four unchanged legacy PDB fixtures outside `next/`. Keep them in
+- Tests use four unchanged legacy PDB fixtures and `data/molden.input` outside `next/`. Keep them in
   supplied source archives. Do not copy legacy implementation into the rewrite.
+- Preserve ORCA producer markers. Its qualified Molden profile differs from
+  canonical normalization; F/G and other unqualified variants must not silently
+  fall through to the canonical reader. Density labels must identify listed-
+  occupation reconstruction, not imply recovered correlated matrices.
+- The app calls the shared importer in WASM, not the CLI subprocess. Native
+  conversion results use protected source paths; the CLI independently protects
+  inputs and output aliases. Preserve no-clobber behavior even with `--force`.
 - `npm test` checks default scientific workspace members, not the Tauri shell.
   Playwright may reuse a server on 5178; verify it belongs to this checkout.
 - New tester packages snapshot current nonignored source, including uncommitted

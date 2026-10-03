@@ -36,14 +36,24 @@ QUICK TEST
   saved documents. PDB imports use the first geometry and one alternate
   conformer per residue; they do not retain the complete PDB metadata.
 - The example menu provides mathematical orbital/density demonstrations.
+- Open Examples/water.molden for a calculated 24-basis-function water example.
+  Select an orbital or occupation-derived density, generate surfaces, save,
+  and reopen the .molekel document to check cached geometry.
+- Convert files opens a separate batch window. Add inputs, Convert, review
+  warnings, then Save each result. Closing keeps results in memory; Clear
+  discards them. Nothing is written until you explicitly save a result.
+- Tools/molekel-convert is the standalone command-line converter. Run it
+  with --help; Molden-import.md documents options and the scientific profile.
 
 KNOWN LIMITATIONS
 
 Bonds are geometric display connectivity, not inferred bond orders.
-Only selected XYZ/PDB/cube profiles are implemented. Molden and OBJ import
-are not available. Raycasting, volume rendering, and transparency are
+Only selected XYZ/PDB/cube/Molden profiles are implemented. Canonical Molden
+supports S through G; identified ORCA Molden exports are currently qualified
+only for S/P/spherical D. Direct ORCA/GBW, Gaussian logs, and OBJ are not read.
+Raycasting, volume rendering, and transparency are
 experimental; do not rely on them for publication-quality scientific work.
-See User-guide.md and Structure-imports.md for the current boundaries.
+See User-guide.md, Molden-import.md, and Structure-imports.md for the boundaries.
 
 REPORTING A PROBLEM
 

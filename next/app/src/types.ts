@@ -72,4 +72,12 @@ export interface Generation {
   surfaces: Surface[];
   grid: Grid;
 }
+export interface ImportReport {
+  format: string;
+  warnings: string[];
+}
+export interface ImportResult {
+  document: MolekelDocument;
+  report: ImportReport;
+}
 export type RenderMode = "mesh" | "raycast" | "volume";

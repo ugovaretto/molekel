@@ -12,11 +12,29 @@ import {
   Box,
   Check,
   ChevronDown,
+  ArrowRightLeft,
+  X,
 } from "lucide-react";
 import { request, cancel } from "./science";
-import { native, pickNative, saveBytes } from "./files";
+import {
+  browserSource,
+  fileByteLimit,
+  molecularExtensions,
+  native,
+  pickNative,
+  saveBytes,
+  type SourceFile,
+} from "./files";
+import { ConvertFiles } from "./ConvertFiles";
 import { Viewport } from "./Viewport";
-import type { MolekelDocument, Generation, Grid, RenderMode } from "./types";
+import type {
+  MolekelDocument,
+  Generation,
+  Grid,
+  ImportReport,
+  ImportResult,
+  RenderMode,
+} from "./types";
 
 export default function App() {
   const [doc, setDoc] = useState<MolekelDocument | null>(null);
@@ -29,10 +47,17 @@ export default function App() {
   const [reset, setReset] = useState(0);
   const [inspected, setInspected] = useState("");
   const [dirty, setDirty] = useState(false);
+  const [importReport, setImportReport] = useState<ImportReport | null>(null);
+  const [converterOpen, setConverterOpen] = useState(false);
+  const [protectedSourcePath, setProtectedSourcePath] = useState<
+    string | undefined
+  >();
   const file = useRef<HTMLInputElement>(null);
   const generation = useRef(0);
   const current = useRef(doc);
+  const unsaved = useRef(dirty);
   current.current = doc;
+  unsaved.current = dirty;
   async function compute(document: MolekelDocument, res = resolution) {
     if (!document.view.field) return;
     const token = ++generation.current;
@@ -96,6 +121,8 @@ export default function App() {
       setMode("mesh");
       setDirty(false);
       setInspected("");
+      setImportReport(null);
+      setProtectedSourcePath(undefined);
       await compute(d);
     } catch (e) {
       setError(String(e));
@@ -141,44 +168,46 @@ export default function App() {
     );
     setDirty(true);
   }
-  async function load(name: string, bytes: Uint8Array) {
-    if (
-      dirty &&
-      !window.confirm(
-        "Replace the current document? Unsaved changes will be lost.",
-      )
-    )
-      return;
-    ++generation.current;
+  async function load(source: SourceFile) {
+    const token = ++generation.current;
     cancel();
     setBusy("Opening document");
     setError("");
     try {
-      if (bytes.length > 128 * 1024 * 1024)
+      const bytes = await source.read();
+      if (token !== generation.current) return;
+      if (bytes.length > fileByteLimit)
         throw new Error("File exceeds the 128 MiB preview budget");
-      const d = await request<MolekelDocument>(
-        name.toLowerCase().endsWith(".molekel") ? "decode" : "import",
-        {
-          bytes,
-          text: name.endsWith(".molekel")
-            ? ""
-            : new TextDecoder().decode(bytes),
-          name,
-        },
-      );
+      const result = await request<ImportResult>("import_document", {
+        bytes,
+        name: source.name,
+      });
+      if (token !== generation.current) return;
+      if (
+        unsaved.current &&
+        !window.confirm(
+          "Replace the current document? Unsaved changes will be lost.",
+        )
+      )
+        return;
+      const d = result.document;
       setDoc(d);
       setGrid(null);
       setMode("mesh");
       setReset((v) => v + 1);
-      setDirty(false);
+      setDirty(result.report.format !== "molekel");
+      setProtectedSourcePath(
+        result.report.format !== "molekel" ? source.path : undefined,
+      );
       setInspected("");
+      setImportReport(result.report.warnings.length ? result.report : null);
       setStatus(
-        `Opened ${name}${d.surfaces.length ? " / saved geometry restored" : ""}`,
+        `Opened ${source.name}${d.surfaces.length ? " / saved geometry restored" : ""}`,
       );
     } catch (e) {
-      setError(String(e));
+      if (token === generation.current) setError(String(e));
     } finally {
-      setBusy("");
+      if (token === generation.current) setBusy("");
     }
   }
   async function openFile() {
@@ -186,11 +215,12 @@ export default function App() {
       file.current?.click();
       return;
     }
+    const token = generation.current;
     try {
-      const f = await pickNative();
-      if (f) await load(f.name, f.bytes);
+      const [f] = await pickNative();
+      if (f && token === generation.current) await load(f);
     } catch (e) {
-      setError(String(e));
+      if (token === generation.current) setError(String(e));
     }
   }
   async function save() {
@@ -204,6 +234,7 @@ export default function App() {
         await saveBytes(
           bytes,
           `${doc.title.replace(/[^a-z0-9-]+/gi, "-").toLowerCase()}.molekel`,
+          protectedSourcePath ? [protectedSourcePath] : [],
         )
       ) {
         if (current.current === snapshot) setDirty(false);
@@ -244,6 +275,15 @@ export default function App() {
             <span>Open</span>
           </button>
           <button
+            onClick={() => setConverterOpen(true)}
+            disabled={!!busy}
+            title="Convert Files"
+            aria-label="Convert Files"
+          >
+            <ArrowRightLeft size={17} />
+            <span>Convert</span>
+          </button>
+          <button
             onClick={save}
             disabled={!doc || !!busy}
             title="Save document"
@@ -256,25 +296,47 @@ export default function App() {
           ref={file}
           className="file-input"
           type="file"
-          accept=".molekel,.xyz,.pdb,.cube,.cub"
+          accept={molecularExtensions}
+          aria-label="Open molecular file"
           onChange={async (e) => {
             const f = e.target.files?.[0];
             e.target.value = "";
-            if (f) {
-              if (f.size > 128 * 1024 * 1024) {
-                setError("File exceeds the 128 MiB preview budget");
-                return;
-              }
-              await load(f.name, new Uint8Array(await f.arrayBuffer()));
-            }
+            if (f) await load(browserSource(f));
           }}
         />
       </header>
+      <ConvertFiles
+        open={converterOpen}
+        onClose={() => setConverterOpen(false)}
+      />
       {error && (
         <div className="error" role="alert">
           {error}
           <button onClick={() => setError("")} aria-label="Dismiss error">
             Close
+          </button>
+        </div>
+      )}
+      {importReport && (
+        <div className="import-report">
+          <details>
+            <summary>
+              {importReport.format.toUpperCase()}:{" "}
+              {importReport.warnings.length} import{" "}
+              {importReport.warnings.length === 1 ? "warning" : "warnings"}
+            </summary>
+            <ul>
+              {importReport.warnings.map((warning, index) => (
+                <li key={index}>{warning}</li>
+              ))}
+            </ul>
+          </details>
+          <button
+            aria-label="Dismiss import warnings"
+            title="Dismiss import warnings"
+            onClick={() => setImportReport(null)}
+          >
+            <X size={15} />
           </button>
         </div>
       )}

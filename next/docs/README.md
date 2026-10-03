@@ -17,6 +17,7 @@ with the [user guide](user-guide.md) to use the program, or the
 | Repeatable Apple Silicon tester ZIP, contents, signing boundaries | [Tester packaging](tester-packaging.md) |
 | Implemented `.molekel` container, validation, persistence | [Native preview format](preview-format.md) |
 | XYZ/PDB import policy, automatic bonds, algorithm rationale | [Structure imports](structure-imports.md) |
+| Molden profile, shared Rust importer, CLI, conversion workflow | [Molden import](molden-import.md) and [independent fixtures](../fixtures/molden/README.md) |
 | Libraries, provenance, licensing | [Dependency record](dependencies.md) and [license](../LICENSE) |
 | Independent scientific references and regeneration | [PySCF fixtures](../fixtures/pyscf/README.md) |
 | Cross-platform checks and absence of active hosted CI | [Portability checks](../ci/README.md) |

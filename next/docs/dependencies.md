@@ -34,3 +34,14 @@ app as well as the ZIP. The packager checks for non-system dynamic libraries.
 See [tester packaging](tester-packaging.md). This is an automated development
 inventory, not a completed release-license audit or legal compatibility opinion.
 An ad-hoc-signed tester bundle is not a Developer ID-signed/notarized public release.
+
+The Molden importer and CLI add no new external runtime dependencies. Their
+normalization implementation is new Rust, with no copied legacy or IOData code.
+[Molden reference generation](../fixtures/molden/README.md) additionally uses a
+pinned IOData revision in the optional development-only Python environment.
+One authentic ORCA test export and its derived reference are retained under
+IOData's GPL-3.0-or-later test-data terms, with provenance, upstream license,
+and attribution in [fixtures/molden/third-party](../fixtures/molden/third-party/README.md).
+They are source/test data, not linked runtime code or the packaged water example.
+Tester archives retain these notices separately under `Third-party-notices/Molden-test-data`
+and in the source snapshot. This does not change the application's license.

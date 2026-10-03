@@ -3,12 +3,12 @@
 ## What this program does
 
 Molekel displays molecular structures and quantum-chemistry fields in an
-interactive 3D scene. You can open PDB and XYZ structures, inspect automatically
+interactive 3D scene. You can open Molden wavefunctions and PDB/XYZ structures, inspect automatically
 computed bonds, display supplied orbitals or density matrices, generate signed
 isosurfaces, and save the molecular data and surface geometry together in a
 portable `.molekel` document.
 
-This is version 0.1.0, a development preview. Scientific calculations and
+This is version 0.2.0, a development preview. Scientific calculations and
 rendering have targeted tests, but the application is not yet a qualified
 scientific release. It visualizes supplied data; it does not run a quantum
 chemistry calculation to obtain a wavefunction from atom positions.
@@ -57,7 +57,7 @@ are not implemented.
 
 | Area | Purpose |
 | --- | --- |
-| Top bar | Document title, unsaved-change indicator, Open and Save |
+| Top bar | Document title, unsaved-change indicator, Open, Convert files, and Save |
 | Document panel | Atom/bond/basis counts, representation, example menu |
 | Quantum fields | Select an orbital, supplied density matrix, or sampled field |
 | Provenance | Source descriptions, import decisions, and loss notices |
@@ -94,6 +94,7 @@ complete covalent-radius table; display-radius fallbacks do not affect it.
 | Extension | What is read | Important boundary |
 | --- | --- | --- |
 | `.molekel` | Current preview scientific document, appearance, and saved meshes | Preview profile only; not a general legacy Molekel project reader |
+| `.molden`, `.molf`, `.molden.input` or recognized Molden header | Geometry, Gaussian basis, real orbitals, energies, occupations, and occupation-derived density matrices | Canonical S/P/D/F/G and SP; explicitly identified ORCA exports currently S/P/spherical D only |
 | `.xyz` | One conventional atom-count/comment/coordinate frame, in angstroms | Geometry and automatically inferred bonds; multiple frames and extended XYZ are rejected |
 | `.pdb` | Selected ATOM/HETATM geometry and explicit plus inferred bonds | First model/structure and one alternate conformer per residue |
 | `.cube`, `.cub` | Standard single-channel scalar grid with bohr geometry | No multi-orbital or alternative-unit cube profiles |
@@ -108,10 +109,48 @@ Bonds are a distance-and-coordination heuristic for display, not bond orders,
 aromaticity, hydrogen-bond analysis, or proof of chemical validity. PDB `CONECT`
 connections are retained and supplemented with coordinate-based connections.
 
-Molden, OBJ, atom-color text files, ORCA output, and Gaussian logs are **not
-implemented**. Renaming one of these files does not convert it. A PDB or XYZ
+OBJ, atom-color text files, direct ORCA output/GBW, and Gaussian logs are **not
+implemented**. A PDB or XYZ
 file correctly shows **No quantum fields**; coordinates alone cannot supply
 orbitals or a density matrix.
+
+## Importing and converting Molden
+
+Use **Open** to select your Molden file, including `molden.input`. Import runs
+locally, computes display bonds, and shows a report with any warnings. Select
+an orbital or density and generate surfaces normally. Save creates a native
+`.molekel` document; the source file is not converted in place. An imported
+document is marked unsaved until saved. A failed import leaves the previous
+document intact. **Import report** and Provenance retain decisions and losses.
+
+The ZIP includes `Examples/water.molden`, a calculated RHF water wavefunction
+with 24 basis functions, 24 spatial orbitals, and a total density. This is a
+useful first check for orbital and density surfaces.
+
+**Convert files** opens a separate batch window without replacing your current
+scene. Add files, click **Convert**, review each result, then use its **Save**
+button. Desktop Save asks for a destination; browser Save requests a download.
+Conversion alone writes nothing. Failed rows show individual errors and do not
+discard successful results. **Cancel** stops pending work and keeps completed
+results. Closing the window preserves its results in memory; **Clear** discards
+them. Saved/downloaded bytes are released. Unwritten results do not survive
+closing the application. The queue allows 32 files and up to 128 MiB of retained
+outputs. Save or clear completed results before processing more.
+
+ORCA's `orca_2mkl` can export Molden, so a direct ORCA reader is not needed for
+the supported subset. Preserve its producer title: ORCA uses different primitive
+normalization, which the importer recognizes. This increment qualifies only
+S/P/spherical D ORCA exports, not ORCA F/G, Cartesian D, SP, or all ORCA versions.
+Unsupported cases fail explicitly. Other producer-specific conventions are
+not automatically qualified just because a file is called Molden.
+
+Density matrices are derived from listed orbitals and occupations, not recovered
+correlated/transition density matrices. Truncated orbital sets can produce only
+a partial density; inspect the warnings. Frequency, trajectory, and other
+unsupported sections are omitted with notices. Keep original calculation files.
+The full profile and command-line workflow are in `next/docs/molden-import.md`
+(also `Molden-import.md` in the ZIP). No Python, ORCA, or other calculation
+program is required to read a supported Molden file.
 
 ## Orbitals, densities, and isosurfaces
 
@@ -182,7 +221,9 @@ no separate OBJ-plus-metadata export or external mesh linking yet.
 On desktop, Save opens a native destination dialog; cancelling leaves the
 document unsaved. In a browser, Save requests a download to the browser's
 configured location; confirm that the download completed. Save does not export
-back to PDB/XYZ/cube and does not perform automatic background saving.
+back to Molden/PDB/XYZ/cube and does not perform automatic background saving.
+Use a new `.molekel` filename; replacing an existing native file is an explicit
+Save-dialog choice, not an automatic result of Open or Convert.
 
 The **Saved surfaces** heading means surfaces stored in the current document's
 memory. They reach disk only when you Save. Camera position, active render
@@ -198,7 +239,7 @@ Keep original data and backups because the native preview schema is not frozen.
 
 | Symptom | What to check |
 | --- | --- |
-| Generate surfaces is disabled | PDB/XYZ contain no quantum fields; open a native field document, cube, or example |
+| Generate surfaces is disabled | PDB/XYZ contain no quantum fields; open Molden, a native field document, cube, or example |
 | Raycast/volume choices are disabled | Select a field and Generate surfaces in this session |
 | Structure seems missing | Use Fit scene; try Ball and stick; check atom counts and error messages |
 | Unexpected PDB atom/bond count | Read Provenance; first-model/alternate/occupancy selection and heuristic bonds affect counts |

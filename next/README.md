@@ -65,6 +65,10 @@ release. It includes source and notices under the [application license](LICENSE)
 - Native Save dialog with validated sibling-file replacement; browser file download. Native Open dialog and browser file selection.
 - Conventional single-frame XYZ and PDB import with automatic coordinate-based bonds, PDB alternate/model handling, and retained explicit connections. [Import policy and algorithm](docs/structure-imports.md).
 - Standard single-channel bohr cube import, including skewed/reflected affine axes and explicit errors for unsupported profiles.
+- Molden import through a shared Rust library, Open and batch conversion controls,
+  plus a standalone `molekel-convert` CLI. Canonical Gaussian shells through G
+  and a tested ORCA S/P/spherical-D export subset are supported with explicit
+  normalization and loss reports. [Molden profile and converter](docs/molden-import.md).
 
 ## Boundaries
 
@@ -76,4 +80,4 @@ The format's named preview profile is intentionally narrower than the proposed f
 
 Limits are deliberate: 256 AOs, 64 primitives per AO, UI grids up to 48 cubed, 128 cubed maximum imported grid, bounded estimated mesher output, and a reference-evaluator operation budget. Imported cubes can be resampled for display without modifying their authoritative values. XYZ/PDB bonds use published covalent radii and bounded neighbor search; they are display connectivity, not inferred bond orders. PDB import selects the first geometry and one alternate per residue. Van der Waals display-radius defaults outside the small explicit element table remain provisional and are independent of the complete bond-radius dataset.
 
-Direct analytic shader raycasting, topology-certified MC33, shrinkwrap, full transfer-function editing, Molden/OBJ import, atom-color text import, metadata editing, undo, and release qualification remain to be implemented. Linux and Windows are architectural targets, not tested supported releases.
+Direct analytic shader raycasting, topology-certified MC33, shrinkwrap, full transfer-function editing, OBJ import, atom-color text import, metadata editing, undo, and release qualification remain to be implemented. Other external formats are deferred; no direct ORCA reader is planned for this increment. Linux and Windows are architectural targets, not tested supported releases.

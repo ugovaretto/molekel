@@ -1,15 +1,14 @@
 [package]
-name = "molekel-wasm"
+name = "molekel-import"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 
-[lib]
-crate-type = ["cdylib", "rlib"]
-
 [dependencies]
 molekel-core = { path = "../molekel-core" }
 molekel-format = { path = "../molekel-format" }
-molekel-import = { path = "../molekel-import" }
+serde.workspace = true
+sha2.workspace = true
+
+[dev-dependencies]
 serde_json.workspace = true
-wasm-bindgen = "=0.2.108"

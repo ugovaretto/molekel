@@ -2,6 +2,14 @@
 
 This implementation is an experimental subset of the research proposal, not its frozen version-1 schema. The reader only accepts `format: molekel`, `version: [0, 1]`, `required_features: [molekel-preview-polynomial-v1]`, and `coordinate_unit: bohr`. The exact model is defined in `crates/molekel-core/src/model.rs`.
 
+Molden conversion uses this same profile without a schema change. Explicit
+normalized basis functions, orbitals/occupations/energies, occupation-derived
+density matrices, inferred bonds, source-byte hash, and loss notices become
+ordinary document data. Original Molden text and omitted sections are not
+embedded. Subsequent saved meshes retain the usual field/source associations;
+they do not require the original Molden file to reopen. See the
+[Molden import contract](molden-import.md) for normalization and completeness limits.
+
 The ZIP contains `manifest.json` first and `arrays/aN/0.bin` entries. Numeric array leaves in the document are replaced by `{ "$array": "aN" }` references. Descriptors record shape, entry, byte count, SHA-256, and either `f64` or `u32`. Values are little-endian and row-major; grids are x-fastest. Authoritative Rust float arrays remain f64. Mesh positions are f64 containers for the f32 interpolated result, with that precision limitation recorded explicitly.
 
 Small scalar metadata is JSON. Basis radial weights already include normalization; no automatic normalization is applied. Orbital energies are optional hartree values, not fabricated zeros. Occupations are explicit. A full row-major density matrix identifies its kind independently of orbitals. Current object relationships use stable IDs within a single geometry/basis document.

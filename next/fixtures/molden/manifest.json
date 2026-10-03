@@ -1,0 +1,54 @@
+{
+  "fixtures": [
+    {
+      "file": "water-rhf-ccpvdz.molden",
+      "bytes": 19345,
+      "sha256": "9c0393a493956d22af9dcf76398f368fa211d3fe83488669b69d102baf9f6042"
+    },
+    {
+      "file": "water-rhf-ccpvdz.json",
+      "bytes": 54787,
+      "sha256": "71181575898558db02230254017c2e23f0c424eb5d89cd7b1523bcd93fbabfd1"
+    },
+    {
+      "file": "hydroxyl-uhf-sto3g.molden",
+      "bytes": 3528,
+      "sha256": "03db46e76e25386a941b501d520abd06bca19bd0ecdf53582b8513cacf4ec890"
+    },
+    {
+      "file": "hydroxyl-uhf-sto3g.json",
+      "bytes": 18827,
+      "sha256": "e7da25d1d3fbcc562e2d4bff415a49edef38771f21c2bbdb2471882a13ff302c"
+    },
+    {
+      "file": "general-spdfg-spherical.molden",
+      "bytes": 8639,
+      "sha256": "624e378679e61036f165bac46259009f55dba6481a794a5474f24848abd9f639"
+    },
+    {
+      "file": "general-spdfg-spherical.json",
+      "bytes": 54332,
+      "sha256": "8cd6c07c24255b048f660f3d20a1103896589999e20d402e48a1e75c88a8ef50"
+    },
+    {
+      "file": "general-spdfg-cartesian.molden",
+      "bytes": 11342,
+      "sha256": "ec2b2123b27c87671eae9c726811e9fcd9bfebbac77e208a68aade80554e6afe"
+    },
+    {
+      "file": "general-spdfg-cartesian.json",
+      "bytes": 82405,
+      "sha256": "732c61d7f47c093e64e3f7f5c23fd5043211223be0f2494bd8a95e87d2f31865"
+    },
+    {
+      "file": "third-party/orca-nh3.molden",
+      "bytes": 68614,
+      "sha256": "3c3a0baa0d404c091b5531fa28e8a8f51c38f4e8c263708c0173bea2923b2568"
+    },
+    {
+      "file": "third-party/orca-nh3.json",
+      "bytes": 155827,
+      "sha256": "bd7a87542ff50a631785b38ded7f67f2d1dfba025339563e88d6a6f4908309bf"
+    }
+  ]
+}

@@ -37,9 +37,13 @@ publisher by itself.
 The ZIP contains:
 
 - An optimized, complete `Molekel Preview.app` with an ad-hoc signature.
+- An optimized, ad-hoc-signed `Tools/molekel-convert` for headless conversion;
+  it uses the same Rust import library and needs no GUI, Python, or vendor tool.
 - `READ-ME-FIRST.txt`, the standalone `User-guide.md` (including known
-  limitations), and structure import policies.
-- Synthetic water PDB/XYZ inputs; both should yield three atoms and two bonds.
+  limitations), structure import policies, and `Molden-import.md` with the exact
+  scientific profile and CLI usage.
+- Synthetic water PDB/XYZ inputs and independently calculated `water.molden`;
+  all yield three atoms/two bonds, while Molden also supplies orbitals/density.
 - The application license and collected third-party notices. Notices are also
   embedded in the app's Resources, so moving the app does not discard them.
 - The exact current first-party source snapshot, lockfiles, and legacy test
@@ -63,7 +67,8 @@ Forward the complete package with its license, notices, and sources.
 
 To work from the supplied source, extract `Source/molekel-source.tar.gz` into
 a directory and follow `AGENTS.md` and `next/docs/development.md` there. The
-snapshot includes frozen scientific data and the four legacy PDB test inputs;
+snapshot includes frozen scientific data, four legacy PDB test inputs, and
+the read-only `data/molden.input` regression;
 normal builds/tests do not need the rest of the legacy application. The
 snapshot is not a vendored offline build environment. It has no `.git`, and
 the ZIP packager itself requires a Git checkout for revision/status recording.
@@ -79,10 +84,12 @@ new timestamped filename without overwriting earlier packages.
 
 The command runs packaging unit tests and the Rust regression suite, then the
 TypeScript/WASM/production web build and Tauri release build. It verifies
-arm64 architecture, system-only dynamic library links, strict bundle signing,
-the two sample imports, and source stability during the build. It extracts the
+arm64 architecture, system-only dynamic library links, strict app/CLI signing,
+PDB/XYZ/Molden imports, and source stability during the build. It extracts the
 ZIP into a fresh repository-local directory and checks every file's contents
-and permissions plus the extracted app's signature. Any failure stops delivery
+and permissions plus both extracted signatures. The actual extracted CLI converts
+the water Molden example, revalidates its native output, and is compared against
+the same WASM importer embedded in the application. Any failure stops delivery
 of a new package; staging is retained for diagnosis.
 
 Browser interaction tests remain `npm run test:e2e`; they require Playwright's
@@ -109,6 +116,9 @@ files. Missing upstream notices are supplemented from pinned source revisions
 in `packaging/licenses/manifest.json`. Those files are checksummed, and missing
 notices after a dependency update require review. This automated inventory is
 not a legal compatibility opinion or a claim that release qualification is done.
+The separately licensed IOData ORCA test fixture retains its GPL-3.0-or-later
+notices in both source and `Third-party-notices/Molden-test-data`; no IOData code
+is linked into the application or converter. See the [dependency record](dependencies.md).
 
 References: [Tauri ad-hoc signing](https://v2.tauri.app/distribute/sign/macos/#ad-hoc-signing),
 [Apple's app-specific security exception](https://support.apple.com/en-us/102445),

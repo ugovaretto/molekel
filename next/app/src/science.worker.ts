@@ -21,6 +21,11 @@ self.onmessage = async (event: MessageEvent) => {
       case "import":
         result = JSON.parse(core.import_text(args.text, args.name));
         break;
+      case "import_document":
+        result = JSON.parse(
+          core.import_document(new Uint8Array(args.bytes), args.name),
+        );
+        break;
       case "generate": {
         const doc = args.doc as MolekelDocument;
         const json = JSON.stringify(doc);

@@ -85,6 +85,21 @@ an existing server: verify it belongs to this checkout before trusting results.
 | `npm --prefix next/app run build` | WASM, TypeScript checking, and production frontend in `next/app/dist/` |
 | `npm --prefix next/app run desktop:build` | Debug macOS bundle at `next/target/debug/bundle/macos/Molekel Preview.app` |
 | `npm --prefix next/app run package:macos` | Verified optimized Apple Silicon tester ZIP under `next/artifacts/distributions/` |
+| `cargo build --manifest-path next/Cargo.toml --locked --release -p molekel-convert` | Standalone converter at `next/target/release/molekel-convert` |
+
+The converter links the same Rust importer used through WASM by Open and Convert
+files. It needs no GUI, Python, ORCA, or running application. For a repository
+sample, preserving the original and writing only to ignored artifacts:
+
+```sh
+mkdir -p next/artifacts/conversions
+cargo run --manifest-path next/Cargo.toml --locked -p molekel-convert -- --output next/artifacts/conversions/molden.molekel data/molden.input
+cargo run --manifest-path next/Cargo.toml --locked -p molekel-convert -- --check --json data/molden.input
+```
+
+See [Molden import](molden-import.md) for exact profiles, CLI batch options,
+exit codes, losses, and overwrite policy. The tester ZIP includes the optimized
+Apple Silicon CLI as `Tools/molekel-convert`.
 
 The web build is an HTTP-served application, not a standalone `file://` HTML file.
 For a local production-build preview, after `run build`:
@@ -122,6 +137,7 @@ Use the root-shell temporary-directory setup above, then:
 cargo fmt --manifest-path next/Cargo.toml --all --check
 npm --prefix next/app test
 cargo clippy --manifest-path next/Cargo.toml --locked --workspace --all-targets -- -D warnings
+cargo test --manifest-path next/Cargo.toml --locked -p molekel-desktop
 npm --prefix next/app run build
 npm --prefix next/app exec -- playwright install chromium webkit
 npm --prefix next/app run test:e2e
@@ -140,6 +156,7 @@ cargo check --manifest-path next/Cargo.toml --locked -p molekel-desktop
 | --- | --- |
 | Scientific model/evaluator | Core unit tests plus [independent references](../crates/molekel-core/tests/independent_references.rs) |
 | XYZ/PDB and connectivity | [Connectivity regressions](../crates/molekel-core/tests/connectivity.rs), including read-only legacy fixtures |
+| Molden and converter | [Independent imports](../crates/molekel-import/tests/independent_molden.rs), parser unit tests, [CLI regressions](../crates/molekel-convert/tests/cli.rs), [fixtures/provenance](../fixtures/molden/README.md) |
 | Container/native saving | Format unit tests and [reference roundtrips](../crates/molekel-format/tests/reference_roundtrips.rs) |
 | Browser workflows/numerics | [Playwright tests](../app/tests): Chromium/WebKit, real file input/download, pixels, camera, desktop/mobile layout |
 | Packaging safety/notices | [Packaging tests](../tools/package-support.test.mjs), followed by a full ZIP build when packaging changes |
@@ -172,6 +189,10 @@ bundle: launch it, open the included water PDB/XYZ, check 3 atoms/2 bonds, save
 to a new path, reopen, cancel a save, and exercise replacement/close behavior
 without losing unsaved data. Test cached orbital meshes with a reference document.
 Use disposable files under repository `tmp/`, never the user's original data.
+Also open `Examples/water.molden`, generate an orbital and density, save/reopen,
+then convert a mixed valid/invalid batch without replacing the scene. Check
+per-result Save, cancellation, retry, and protected-source errors with disposable
+copies. Native automated destination validation is separate from dialog QA.
 
 Record what was actually observed, including the OS and app build. Browser
 WebKit tests are not equivalent to Tauri's system WebView. Native filesystem

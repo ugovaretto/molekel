@@ -75,6 +75,7 @@ function sourceNames() {
         .filter(Boolean),
       ".gitignore",
       "src/license",
+      "data/molden.input",
       ...["guanine", "3POR", "URIDINE-VANADATE", "alaninemulti"].map(
         (name) => `data/${name}.pdb`,
       ),
@@ -185,6 +186,11 @@ function main() {
   const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
   const notices = path.join(payload, "Third-party-notices");
   fs.mkdirSync(notices);
+  for (const file of ["README.md", "IODATA-LICENSE.txt"])
+    copy(
+      path.join(root, "fixtures/molden/third-party", file),
+      path.join(notices, "Molden-test-data", file),
+    );
   rustNotices(
     report,
     path.join(notices, "Rust.txt"),
@@ -255,6 +261,15 @@ function main() {
   ]);
 
   console.log("Building the optimized native app with ad-hoc signing...");
+  run("cargo", [
+    "build",
+    "--locked",
+    "--release",
+    "--target",
+    target,
+    "-p",
+    "molekel-convert",
+  ]);
   run(
     path.join(app, "node_modules/.bin/tauri"),
     [
@@ -290,12 +305,48 @@ function main() {
   );
   copy(path.join(root, "packaging/examples"), path.join(payload, "Examples"));
   copy(
+    path.join(root, "fixtures/molden/water-rhf-ccpvdz.molden"),
+    path.join(payload, "Examples/water.molden"),
+  );
+  const converter = path.join(payload, "Tools/molekel-convert");
+  copy(path.join(root, "target", target, "release/molekel-convert"), converter);
+  run("/usr/bin/codesign", [
+    "--force",
+    "--sign",
+    "-",
+    "--timestamp=none",
+    converter,
+  ]);
+  run("/usr/bin/codesign", ["--verify", "--strict", "--verbose=2", converter]);
+  if (run("/usr/bin/lipo", ["-archs", converter], root, true) !== "arm64")
+    throw new Error("Unexpected converter architecture");
+  const converterLibraries = run(
+    "/usr/bin/otool",
+    ["-L", converter],
+    root,
+    true,
+  )
+    .split("\n")
+    .slice(1)
+    .map((line) => line.trim().split(" (")[0]);
+  if (
+    converterLibraries.some(
+      (lib) =>
+        !lib.startsWith("/System/Library/") && !lib.startsWith("/usr/lib/"),
+    )
+  )
+    throw new Error("Non-system converter runtime library found");
+  copy(
     path.join(root, "docs/user-guide.md"),
     path.join(payload, "User-guide.md"),
   );
   copy(
     path.join(root, "docs/structure-imports.md"),
     path.join(payload, "Structure-imports.md"),
+  );
+  copy(
+    path.join(root, "docs/molden-import.md"),
+    path.join(payload, "Molden-import.md"),
   );
   const info = JSON.parse(
     run(
@@ -371,7 +422,9 @@ function main() {
       "strict app signature",
       "ZIP extraction byte and mode comparison",
       "extracted app signature",
-      "sample PDB/XYZ imports",
+      "sample PDB/XYZ/Molden imports",
+      "standalone converter signature, architecture, and runtime libraries",
+      "extracted converter Molden/native roundtrip and WASM agreement",
     ],
     limitations:
       "No clean-machine/Gatekeeper installation or full supported-OS-range qualification. Browser checks are a separate test command.",
@@ -383,6 +436,8 @@ function main() {
     "tools/verify-package-examples.mjs",
     core,
     path.join(payload, "Examples"),
+    converter,
+    path.join(staging, "converted-example.molekel"),
   ]);
   assertEqualManifest(sourceManifest, snapshotFiles(repo, sourceNames()));
 
@@ -408,6 +463,19 @@ function main() {
     "--strict",
     "--verbose=2",
     path.join(restored, `${config.productName}.app`),
+  ]);
+  run("/usr/bin/codesign", [
+    "--verify",
+    "--strict",
+    "--verbose=2",
+    path.join(restored, "Tools/molekel-convert"),
+  ]);
+  run(process.execPath, [
+    "tools/verify-package-examples.mjs",
+    core,
+    path.join(restored, "Examples"),
+    path.join(restored, "Tools/molekel-convert"),
+    path.join(staging, "extracted-converted-example.molekel"),
   ]);
   const out = path.join(root, "artifacts/distributions");
   fs.mkdirSync(out, { recursive: true });

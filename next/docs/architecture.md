@@ -1,6 +1,6 @@
 # As-built architecture
 
-This describes the 0.1.0 development preview, not the complete
+This describes the 0.2.0 development preview, not the complete
 [proposed architecture](../../doc/rewrite/03-architecture-decision.md).
 Read [status](status.md) for dated verification and uncompleted release gates.
 
@@ -18,8 +18,12 @@ file input / downloads           Tauri 2 / system WebView / native dialogs
            |
      wasm-bindgen JSON/byte bridge (molekel-wasm)
            |
-           +--> molekel-core: validation, import, bonds, evaluation, meshing
+           +--> molekel-import: format detection, Molden, reports, provenance
+           |      +--> molekel-core: model, structure/grid imports, scientific operations
            +--> molekel-format: validated .molekel ZIP encode/decode
+
+Command line (no GUI/WebView):
+molekel-convert --> same molekel-import --> molekel-format --> atomic file save
 
 Desktop save only:
 encoded bytes --> Tauri save_native --> format validation --> atomic file save
@@ -35,9 +39,11 @@ by native saving. There is no calculation server, remote service, or database.
 | [Core model](../crates/molekel-core/src/model.rs) | `Document`, validation, explicit scientific units, affine grid geometry, resource limits |
 | [Computation](../crates/molekel-core/src/compute.rs) | AO/field values and gradients, sampling/resampling, source hashes, classic marching cubes |
 | [Imports](../crates/molekel-core/src/import.rs) and [PDB importer](../crates/molekel-core/src/import/pdb.rs) | Supported text profiles and recorded conversion losses |
+| [Import library](../crates/molekel-import/src/lib.rs) | Shared byte detection/dispatch, Molden conventions, import reports, source-byte digest |
+| [Converter CLI](../crates/molekel-convert/src/main.rs) | Bounded file reads, batch/JSON/check mode, destination preflight and no-clobber saves |
 | [Connectivity](../crates/molekel-core/src/bonds.rs) | Exact k-d-tree neighbors, explicit-plus-inferred display bonds |
 | [Native format](../crates/molekel-format/src/lib.rs) and [filesystem adapter](../crates/molekel-format/src/native.rs) | Portable container, checksums/validation, atomic native writes |
-| [WASM bridge](../crates/molekel-wasm/src/lib.rs) | `example`, `validate`, `import_text`, `encode`, `decode`, `sample`, `surfaces`, point/gradient probes |
+| [WASM bridge](../crates/molekel-wasm/src/lib.rs) | `example`, `validate`, `import_document`, compatibility `import_text`, `encode`, `decode`, `sample`, `surfaces`, point/gradient probes |
 | [Document UI](../app/src/App.tsx) and [types](../app/src/types.ts) | Document state, controls, dirty state, generation replacement, error recovery |
 | [Worker client](../app/src/science.ts) and [worker](../app/src/science.worker.ts) | Request lifecycle, WASM initialization, single sampled-grid cache, cancellation |
 | [Viewport](../app/src/Viewport.tsx) and [sampled renderer](../app/src/volume.ts) | Scene/materials, OrbitControls, picking, PNG download, sampled raycast/volume shaders |
@@ -45,8 +51,8 @@ by native saving. There is no calculation server, remote service, or database.
 | [Desktop entry point](../app/src-tauri/src/main.rs) | Tauri plugins and `save_native`/version commands |
 | [Runner](../tools/run.mjs) and [packager](../tools/package-macos.mjs) | Repeatable builds/tests and verified tester artifacts |
 
-The Rust workspace's default members are the three scientific/format/WASM
-crates. The desktop shell is a workspace member but requires an explicit
+The Rust workspace's five default members are core, format, import, converter,
+and WASM. The desktop shell is a workspace member but requires an explicit
 workspace check or Tauri build. `cargo test` alone is not a desktop check.
 
 ## Scientific contract
@@ -82,11 +88,30 @@ missing wavefunctions, or infer a density matrix from a PDB file.
 
 ## Import and open flow
 
-The file adapter obtains bytes. `.molekel` goes through bounded ZIP decoding;
-other supported extensions go through Rust text import. Successful loading
+The file adapter obtains bytes. The shared `molekel-import::import_bytes`
+returns a validated document and structured format/warning report. Native ZIPs
+go through bounded decoding; the Molden header takes precedence over a text
+filename. Other supported extensions use existing Rust importers. Successful loading
 replaces the document, resets the camera/render mode, and clears transient
 sampling state. An import failure leaves the previous document available and
 shows an error. Opening another document cancels pending worker jobs.
+Native documents start clean; imported external documents start dirty. Original
+Molden sections are not embedded wholesale: preserve inputs and read the report.
+
+Molden shells become explicit normalized polynomial contractions. Spin blocks,
+occupations, and energies are retained; complete listed occupations generate
+explicitly labeled occupation-derived matrices. This is not a recovered correlated
+density. Producer and spherical/Cartesian conventions are checked at the import
+boundary, not hidden in the evaluator. See [the exact profile](molden-import.md)
+and [independent producer fixtures](../fixtures/molden/README.md).
+
+The [Convert Files dialog](../app/src/ConvertFiles.tsx) uses the same worker and
+library, serializing imports and retaining bounded encoded outputs separately
+from the open document. It requires explicit per-result Save, supports cancellation,
+and does not replace the scene. The modal excludes concurrent scene jobs because
+cancellation terminates the shared worker. Its outputs are transient until saved.
+The UI links the Rust library through WASM; it does not spawn the CLI or invoke
+vendor programs. The CLI is a separate headless frontend for scripts/batches.
 
 XYZ/PDB convert angstrom positions to bohr and compute bonds before returning
 the document. PDB uses `pdbtbx` plus bounded compatibility preflight and explicit
@@ -97,8 +122,8 @@ selection policy, loss notices, and exhaustive-neighbor comparisons.
 
 Cube imports preserve the authoritative affine scalar grid. Display sampling
 may downsample it but does not mutate the original array. Unsupported profiles
-fail explicitly. General converter infrastructure remains planned, not hidden
-inside the current import dispatcher.
+fail explicitly. Other new formats are deferred; a direct ORCA/GBW reader is
+not part of this increment. Qualified ORCA Molden exports use the shared library.
 
 ## Generation, cache, and rendering
 
@@ -158,6 +183,12 @@ and syncs a new sibling file, then renames it into place. Cancellation or failed
 validation does not replace the existing file. Windows replacement semantics
 need separate qualification. File-format tests are not proof that native
 window close, Save dialog, or download interactions all work end to end.
+Desktop destinations must end in `.molekel`; imported external source paths
+are protected against replacement. Batch conversion protects all selected sources.
+CLI saves protect inputs and output aliases, require `--force` for existing
+destinations, and atomically publish initially absent files without replacement
+even with `--force`. This uses same-directory hard links; filesystems that do
+not support them fail explicitly instead of falling back to an unsafe overwrite.
 
 ## Safety and distribution
 
@@ -175,7 +206,7 @@ dialog inside Rust. No arbitrary shell-execution command or update service is
 exposed to the frontend.
 
 The [tester packager](tester-packaging.md) builds an optimized arm64 app,
-embeds notices, ad-hoc signs the staged bundle, includes documentation/source,
+embeds notices, ad-hoc signs the staged bundle and standalone converter, includes documentation/source,
 and verifies the extracted ZIP before publishing it locally. It does not
 notarize or upload. macOS/Apple Silicon is the exercised platform; portable
 components make Linux/Windows feasible but do not establish support.
