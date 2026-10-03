@@ -28,7 +28,7 @@ A single input defaults to a sibling `.molekel` filename; `.molden.input`
 becomes `.molekel`. Multiple inputs require `--output-dir`. `--output` (or `-o`)
 selects one destination. `--check` validates and reports without writing.
 `--json` emits an array on standard output containing each input/output, status,
-format/warnings, atom/orbital/density counts, and error. Without it, summaries
+format/warnings/`requires_save`, atom/orbital/density counts, and error. Without it, summaries
 and warnings go to standard error. Use `--` before filenames starting with `-`.
 
 Existing outputs require explicit `--force`; input paths are never valid
@@ -48,7 +48,8 @@ discard successful outputs. At most 256 inputs are processed sequentially,
 with bounded regular-file reads. No GUI, Python, ORCA installation, or subprocess
 converter is needed. CLI output contains scientific data but no newly generated
 surfaces; open it in the app to generate and save meshes. Existing native meshes
-survive native-to-native conversion.
+survive native-to-native conversion. The same commands accept supported XYZ,
+PDB, and [Gaussian cube](cube-import.md) files, not only Molden.
 
 ## Shared boundary
 
@@ -68,6 +69,7 @@ pub struct ImportResult {
 pub struct ImportReport {
     pub format: String,
     pub warnings: Vec<String>,
+    pub requires_save: bool,
 }
 ```
 
@@ -85,7 +87,13 @@ also select the Molden parser, which still requires its header. Existing
 XYZ/PDB/ENT/Cube/CUB extensions use the core's existing import profiles. There
 is no generic Gaussian-log, ORCA-binary, T41, or other content detector.
 
-Native opening preserves the decoded document and provenance unchanged.
+Native import supplements missing display bonds while retaining existing
+connections, scientific data, and cached meshes. Additions are reported and
+recorded in provenance; otherwise the decoded document is unchanged. This is
+an import policy, not a change to exact native format decoding.
+`requires_save` is true for external imports and native documents with added
+bonds; the UI uses it for the unsaved indicator. It defaults to false when
+deserializing older reports that omit the field. No input is rewritten on Open.
 External import records the original byte SHA-256, input name, importer version,
 scientific profile, connectivity method, and warnings in document provenance.
 The import report is also returned separately for the UI/CLI. The original file
@@ -109,7 +117,8 @@ not supported in this increment.
 - Atom IDs must be unique and positive. GTO center references resolve these
   IDs explicitly. The atom label/ID itself is not retained as structured metadata.
 - Automatic coordinate-based display bonds use the same exact neighbor-search
-  implementation as XYZ/PDB. They are not inferred bond orders or aromaticity.
+  implementation as the other supported formats. They are not inferred bond
+  orders or aromaticity.
 
 ### Shells and component conventions
 

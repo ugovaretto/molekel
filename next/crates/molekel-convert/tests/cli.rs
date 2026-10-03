@@ -139,6 +139,48 @@ fn check_does_not_write_and_batch_reports_individual_failures() {
 }
 
 #[test]
+fn cube_conversion_preserves_scalar_data_and_repairs_missing_native_bonds() {
+    let dir = Scratch::new();
+    let input = include_bytes!("../../../fixtures/cube/signed-affine.cube");
+    fs::write(dir.0.join("field.cube"), input).unwrap();
+    let expected = molekel_import::import_bytes(input, "field.cube")
+        .unwrap()
+        .document;
+    let result = dir.run(&["field.cube", "--json"]);
+    assert!(
+        result.status.success(),
+        "{}",
+        String::from_utf8_lossy(&result.stderr)
+    );
+    let converted =
+        molekel_format::decode(&fs::read(dir.0.join("field.molekel")).unwrap()).unwrap();
+    assert_eq!(converted, expected);
+    assert_eq!(converted.bonds, vec![[0, 1]]);
+    assert!(converted.basis.is_empty());
+    assert_eq!(converted.grids[0].values.len(), 343);
+    let mut missing = converted.clone();
+    missing.bonds.clear();
+    fs::write(
+        dir.0.join("old.molekel"),
+        molekel_format::encode(&missing).unwrap(),
+    )
+    .unwrap();
+    let result = dir.run(&["old.molekel", "-o", "repaired.molekel", "--json"]);
+    assert!(result.status.success());
+    let report: serde_json::Value = serde_json::from_slice(&result.stdout).unwrap();
+    assert_eq!(report[0]["report"]["requires_save"], true);
+    let repaired =
+        molekel_format::decode(&fs::read(dir.0.join("repaired.molekel")).unwrap()).unwrap();
+    assert_eq!(repaired.bonds, converted.bonds);
+    assert_eq!(repaired.grids, converted.grids);
+    assert_eq!(
+        molekel_format::decode(&fs::read(dir.0.join("old.molekel")).unwrap()).unwrap(),
+        missing
+    );
+    assert_eq!(fs::read(dir.0.join("field.cube")).unwrap(), input);
+}
+
+#[test]
 fn batch_output_collisions_and_input_replacement_are_rejected_before_writing() {
     let dir = Scratch::new();
     fs::create_dir(dir.0.join("a")).unwrap();

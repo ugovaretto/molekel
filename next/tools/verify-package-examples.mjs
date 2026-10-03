@@ -41,6 +41,34 @@ const checked = spawnSync(converter, ["--check", output], {
   encoding: "utf8",
 });
 assert.equal(checked.status, 0, checked.stderr);
+const cubeName = "signed-affine.cube";
+const cube = JSON.parse(
+  core.import_document(
+    fs.readFileSync(path.join(examples, cubeName)),
+    cubeName,
+  ),
+);
+assert.equal(cube.document.atoms.length, 2);
+assert.deepEqual(cube.document.bonds, [[0, 1]]);
+assert.equal(cube.document.basis.length, 0);
+assert.equal(cube.document.grids[0].values.length, 343);
+const grid = core.sample(JSON.stringify(cube.document), "cube", 24);
+const surfaces = JSON.parse(
+  core.surfaces(JSON.stringify(cube.document), grid, "cube", 0.08),
+);
+assert.ok(surfaces.some((s) => s.isovalue > 0));
+assert.ok(surfaces.some((s) => s.isovalue < 0));
+const cubeOutput = `${output}.cube.molekel`;
+const cubeConverted = spawnSync(
+  converter,
+  ["--output", cubeOutput, path.join(examples, cubeName)],
+  { env: process.env, encoding: "utf8" },
+);
+assert.equal(cubeConverted.status, 0, cubeConverted.stderr);
+assert.deepEqual(
+  JSON.parse(core.decode(fs.readFileSync(cubeOutput))),
+  cube.document,
+);
 console.log(
-  "Packaged PDB/XYZ/Molden examples and standalone converter/WASM roundtrip passed.",
+  "Packaged PDB/XYZ/Molden/cube examples, signed cube meshes, and converter/WASM roundtrips passed.",
 );

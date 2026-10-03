@@ -1,6 +1,18 @@
 # Structure imports and automatic bonds
 
-XYZ and PDB imports automatically compute display connectivity in the shared Rust core before the document reaches the viewer. This applies in both the native application and the browser. There is no separate bond-generation action. The atom/bond counts are shown in the document summary, and inferred bonds are saved in `.molekel` files alongside explicit bonds.
+All supported formats, including XYZ, PDB, Molden, Gaussian cube, and native
+`.molekel`, automatically compute display connectivity through the shared Rust
+import path. This applies to the native application, browser, and converter CLI.
+There is no separate bond-generation action. The document summary shows atom/bond
+counts; inferred and explicit bonds are saved together in `.molekel` files.
+
+Native import first validates and decodes the document, then appends only missing
+connections. Existing bonds retain their order and endpoint orientation, including
+connections longer than the automatic cutoff. Scientific arrays and cached
+surfaces are unchanged. Additions produce a warning/provenance entry and set
+`requires_save`; Open marks the document unsaved without overwriting it. An
+already complete bond list leaves the decoded document unchanged. Raw native
+format decoding remains an exact operation and does not perform bond inference.
 
 XYZ accepts one conventional atom-count/comment/coordinate frame in angstroms.
 Each atom row contains an element symbol and three coordinates. Extra nonempty
@@ -21,7 +33,7 @@ The distance test uses the Pyykko-Atsumi single-bond covalent radii for elements
 2. Preserve and deduplicate explicit connections first, including bonds longer than the automatic cutoff.
 3. Query each atom with radius `r_i + max(r_j) + 0.45 angstrom`, then retain pairs with `0.4 <= distance <= r_i + r_j + 0.45 angstrom`. Evaluate each unordered pair once. The search radius has a small numerical guard; acceptance uses the actual pair cutoff.
 4. Sort candidates by increasing `distance / (r_i + r_j)`, with deterministic index tie-breaks. Limit inferred coordination to one for H/F, four for B/C/N, and three for O. Existing explicit bonds consume coordination slots but are never removed. Other elements have no chemistry-specific cap, avoiding a blanket organic-valence rule for metals/hypervalent species.
-5. Return sorted, unique endpoint pairs with no self-bonds. Report the method and any coordination rejections in provenance.
+5. Return sorted, unique endpoint pairs with no self-bonds. Report the method and any coordination rejections in provenance. Native import uses these pairs only to append missing bonds, preserving the existing list as described above.
 
 This is a geometric display-connectivity heuristic, not electronic bond-order perception. The minimum-distance and light-element coordination filters avoid common false connections and overlaps. They do not establish aromaticity, oxidation state, metal coordination, hydrogen bonds, or chemical validity in arbitrary geometries. Open Babel likewise separates proximity-based connections from subsequent bond-order handling and applies minimum-distance/valence checks. The Rust implementation does not link to Open Babel. [Open Babel `ConnectTheDots`](https://openbabel.org/api/3.0/classOpenBabel_1_1OBMol.shtml).
 
@@ -43,6 +55,12 @@ The preview stores coordinates, elements, and connectivity, not the full PDB hie
 ## Verification
 
 Tests cover water/methane XYZ, disconnected fragments, element alignment, model/alternate selection, explicit-plus-inferred connections, duplicate suppression, malformed input, dense-input budgets, coincident/planar/collinear points, and an independent exhaustive pair-distance comparison. Browser tests open XYZ/PDB through the actual file input, inspect rendered pixels, save/reopen connectivity, and check mobile layout and recovery after malformed imports.
+
+[Cube regressions](../crates/molekel-core/tests/cube_import.rs) cover both density
+and single-orbital imports with automatic bonds. Shared-import and CLI tests
+check native missing-bond backfill, retained explicit connections, unchanged
+scientific grids/meshes, and idempotent reopen. See [cube import](cube-import.md)
+and [Molden import](molden-import.md) for those formats' profiles and evidence.
 
 Repository fixtures, read without modification:
 

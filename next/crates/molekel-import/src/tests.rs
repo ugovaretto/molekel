@@ -20,6 +20,7 @@ fn fails(text: &str, expected: &str) {
 fn detects_molden_content_before_filename_and_retains_source_identity() {
     let result = import_bytes(HYDROGEN.as_bytes(), "molden.input").unwrap();
     assert_eq!(result.report.format, "molden");
+    assert!(result.report.requires_save);
     assert_eq!(result.document.atoms.len(), 1);
     assert_eq!(result.document.basis.len(), 1);
     assert!(
@@ -55,6 +56,92 @@ fn native_dispatch_preserves_document_without_adding_import_provenance() {
     assert_eq!(result.document, document);
     assert_eq!(result.report.format, "molekel");
     assert!(result.report.warnings.is_empty());
+    assert!(!result.report.requires_save);
+}
+
+#[test]
+fn native_import_adds_only_missing_bonds_and_preserves_scientific_caches() {
+    use molekel_core::{Atom, compute, fixtures};
+    let mut document = fixtures::hydrogen_pair();
+    document.atoms.extend([
+        Atom {
+            element: 1,
+            position: [30., 0., 0.],
+        },
+        Atom {
+            element: 1,
+            position: [31.4, 0., 0.],
+        },
+    ]);
+    document.bonds = vec![[1, 0]];
+    let hash = compute::source_hash(&document, "antibonding").unwrap();
+    let grid = compute::sample(&document, "antibonding", 12).unwrap();
+    let surface = compute::mesh(&grid, 0.02, "antibonding", &hash, "#00ff00", 0.5).unwrap();
+    assert!(!surface.indices.is_empty());
+    document.grids.push(grid);
+    document.surfaces.push(surface);
+    let encoded = molekel_format::encode(&document).unwrap();
+    assert_eq!(molekel_format::decode(&encoded).unwrap(), document);
+    let imported = import_bytes(&encoded, "existing.molekel").unwrap();
+    assert!(imported.report.requires_save);
+    assert_eq!(imported.document.bonds, [[1, 0], [2, 3]]);
+    assert!(imported.report.warnings[0].contains("Added 1 missing display bonds"));
+    assert_eq!(
+        compute::source_hash(&imported.document, "antibonding").unwrap(),
+        hash
+    );
+    let mut unchanged = imported.document.clone();
+    unchanged.bonds = document.bonds.clone();
+    unchanged.provenance = document.provenance.clone();
+    assert_eq!(unchanged, document);
+    let reopened = import_bytes(
+        &molekel_format::encode(&imported.document).unwrap(),
+        "saved.molekel",
+    )
+    .unwrap();
+    assert_eq!(reopened.document, imported.document);
+    assert!(!reopened.report.requires_save);
+    assert!(reopened.report.warnings.is_empty());
+}
+
+#[test]
+fn native_import_keeps_explicit_long_bonds_and_does_not_claim_false_changes() {
+    let mut document = molekel_core::fixtures::hydrogen_pair();
+    document.atoms[1].position = [100., 0., 0.];
+    document.bonds = vec![[1, 0]];
+    let result = import_bytes(
+        &molekel_format::encode(&document).unwrap(),
+        "explicit.molekel",
+    )
+    .unwrap();
+    assert_eq!(result.document, document);
+    assert!(!result.report.requires_save);
+    assert!(result.report.warnings.is_empty());
+    let report: ImportReport =
+        serde_json::from_str(r#"{"format":"molekel","warnings":[]}"#).unwrap();
+    assert!(!report.requires_save);
+}
+
+#[test]
+fn shared_cube_dispatch_creates_bonds_and_a_persistable_scalar_field() {
+    let bytes = b"Water\nScalar field\n3 0 0 0\n2 1 0 0\n2 0 1 0\n2 0 0 1\n8 8 0 0 0\n1 1 1.8 0 0\n1 1 -0.45 1.75 0\n0 1 2 3 4 5 6 7\n";
+    for name in ["field.cube", "field.CUB"] {
+        let result = import_bytes(bytes, name).unwrap();
+        assert_eq!(result.report.format, "cube");
+        assert!(result.report.requires_save);
+        assert_eq!(result.document.bonds, [[0, 1], [0, 2]]);
+        assert_eq!(
+            result.document.grids[0].values,
+            [0., 4., 2., 6., 1., 5., 3., 7.]
+        );
+        let reopened = import_bytes(
+            &molekel_format::encode(&result.document).unwrap(),
+            "field.molekel",
+        )
+        .unwrap();
+        assert_eq!(reopened.document, result.document);
+        assert!(!reopened.report.requires_save);
+    }
 }
 
 #[test]

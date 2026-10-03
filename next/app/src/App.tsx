@@ -168,6 +168,44 @@ export default function App() {
     );
     setDirty(true);
   }
+  async function prepareGrid(
+    document: MolekelDocument,
+    res: number,
+    nextMode: RenderMode,
+  ) {
+    if (!document.view.field) return;
+    const token = ++generation.current;
+    setBusy("Preparing sampled field");
+    setError("");
+    try {
+      const sampled = await request<Grid>("sample", {
+        doc: { ...document, surfaces: [] },
+        field: document.view.field,
+        resolution: res,
+      });
+      if (token !== generation.current) return;
+      setGrid(sampled);
+      setMode(nextMode);
+      setReset((v) => v + 1);
+      setStatus("Sampled field ready");
+    } catch (e) {
+      if (token === generation.current) setError(String(e));
+    } finally {
+      if (token === generation.current) setBusy("");
+    }
+  }
+  async function selectField(id: string) {
+    if (!doc || id === doc.view.field) return;
+    editView({ field: id });
+    setGrid(null);
+    setMode("mesh");
+    if (doc.grids.some((g) => g.id === id))
+      await prepareGrid(
+        { ...doc, view: { ...doc.view, field: id } },
+        resolution,
+        "volume",
+      );
+  }
   async function load(source: SourceFile) {
     const token = ++generation.current;
     cancel();
@@ -183,6 +221,21 @@ export default function App() {
         name: source.name,
       });
       if (token !== generation.current) return;
+      const d = result.document;
+      let sampled: Grid | null = null;
+      let previewError = "";
+      if (d.grids.some((g) => g.id === d.view.field)) {
+        try {
+          sampled = await request<Grid>("sample", {
+            doc: { ...d, surfaces: [] },
+            field: d.view.field,
+            resolution,
+          });
+        } catch (e) {
+          previewError = `Sampled preview unavailable: ${String(e)}`;
+        }
+      }
+      if (token !== generation.current) return;
       if (
         unsaved.current &&
         !window.confirm(
@@ -190,16 +243,16 @@ export default function App() {
         )
       )
         return;
-      const d = result.document;
       setDoc(d);
-      setGrid(null);
-      setMode("mesh");
+      setGrid(sampled);
+      setMode(sampled && !d.surfaces.length ? "volume" : "mesh");
       setReset((v) => v + 1);
-      setDirty(result.report.format !== "molekel");
+      setDirty(result.report.requires_save);
       setProtectedSourcePath(
         result.report.format !== "molekel" ? source.path : undefined,
       );
       setInspected("");
+      setError(previewError);
       setImportReport(result.report.warnings.length ? result.report : null);
       setStatus(
         `Opened ${source.name}${d.surfaces.length ? " / saved geometry restored" : ""}`,
@@ -401,11 +454,7 @@ export default function App() {
                           className={`field-row ${doc.view.field === f.id ? "selected" : ""}`}
                           key={f.id}
                           disabled={!!busy}
-                          onClick={() => {
-                            editView({ field: f.id });
-                            setGrid(null);
-                            setMode("mesh");
-                          }}
+                          onClick={() => void selectField(f.id)}
                         >
                           <span className="field-dot" />
                           <span>
@@ -454,7 +503,11 @@ export default function App() {
                 <select
                   aria-label="Rendering mode"
                   value={mode}
-                  onChange={(e) => setMode(e.target.value as RenderMode)}
+                  disabled={!!busy}
+                  onChange={(e) => {
+                    setMode(e.target.value as RenderMode);
+                    setReset((v) => v + 1);
+                  }}
                 >
                   <option value="mesh">Isosurface mesh</option>
                   <option value="raycast" disabled={!grid}>
@@ -493,7 +546,12 @@ export default function App() {
                   aria-label="Grid resolution"
                   value={resolution}
                   disabled={!!busy}
-                  onChange={(e) => setResolution(Number(e.target.value))}
+                  onChange={(e) => {
+                    const value = Number(e.target.value);
+                    setResolution(value);
+                    if (doc.grids.some((g) => g.id === doc.view.field))
+                      void prepareGrid(doc, value, mode);
+                  }}
                 >
                   {[24, 32, 40, 48].map((n) => (
                     <option key={n} value={n}>

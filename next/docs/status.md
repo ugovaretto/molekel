@@ -5,6 +5,28 @@ Date: 3 October 2026. Branch: `2026`. All new implementation is under `next/`; l
 Start with the [documentation map](README.md), [user guide](user-guide.md),
 [as-built architecture](architecture.md), or [agent handoff](handoff.md).
 
+## Version 0.2.1
+
+The cube-rendering/all-format-bonds increment advances the application to
+**0.2.1**. Rust workspace crates and their lock entries, frontend package and
+lockfile, Tauri bundle metadata, and current guides share this version. External
+dependency versions and native schema `[0, 1]` are unchanged. The user confirmed
+that the cube examples render correctly and requested committing all changes,
+creating a version tag, and pushing the current `2026` branch. The chosen
+annotated tag is `v0.2.1`; verify its actual commit and remote state with Git.
+
+After the version bump, version/dependency-consistency checks, all 83 workspace
+Rust tests, Rust formatting, workspace/all-target Clippy with warnings denied,
+and the production WASM/frontend build passed. The 66 browser cases and full
+verified tester-package run below cover the same cube implementation before the
+version-only follow-up; they were not rerun solely for metadata changes.
+
+The `elf_pic.cube` investigation confirmed a display-level issue rather than
+lost scalar data: almost every value is above the default isovalue `0.08`.
+Increasing the level reveals the field. The user asked to stop that investigation;
+no proposed percentile-based default selection or ELF-specific behavior was
+applied. The prior low-amplitude default remains unchanged.
+
 ## Version 0.2.0
 
 The Molden/shared-conversion increment advances the application from 0.1.0 to
@@ -21,9 +43,55 @@ passed. External Cargo/npm dependency records remain unchanged. The 54 browser
 cases below were verified before this version-only follow-up; they were not
 rerun solely for the metadata change.
 
+## Cube rendering and all-format bonds
+
+The follow-up to commit `d27aae7` makes cube scalar fields immediately available
+in volume and sampled raycast modes on Open, without first extracting meshes.
+Generate surfaces creates the signed, persistable geometry explicitly. The
+complete original affine f64 grid remains authoritative through preview
+resolution changes, conversion, and save/reopen. Standard single-orbital cubes
+with negative atom counts and one dataset ID are now supported, alongside
+single-channel density cubes. See [the cube profile](cube-import.md).
+
+Every supported format now computes display connectivity: XYZ, PDB, Molden,
+cube, and native `.molekel`. Native import fills only missing bonds, preserves
+explicit edges/order, scientific records, and cached meshes, and reports the
+change through `requires_save`. Raw native format decoding remains exact.
+Older native documents are not silently rewritten. Reflected-grid volume box
+winding is corrected; grid values overflowing f32 fail preview preparation
+without discarding the imported f64 document or cached geometry.
+
+Verification on 3 October 2026: **83 workspace Rust tests** (including the one
+desktop test), **66 Chromium/WebKit browser cases**, and **7 packaging tests**
+pass. Rust formatting, workspace/all-target Clippy with warnings denied,
+TypeScript/production WASM/frontend build, and the macOS debug bundle pass.
+The browser cases include both field signs, desktop/mobile pixels and camera
+interaction, inside/reflected grids, source-grid preservation, saved meshes,
+native missing-bond backfill, conversion, invalid-input recovery, and f32
+preview failure with successful f64 persistence. Desktop/mobile screenshots
+were inspected. One initial full-suite run was interrupted by a concurrent
+WASM rebuild triggering Vite reload; the complete rerun after builds finished
+passed all 66 cases. Build and browser checks must run sequentially.
+
+Core tests also read the user's existing water density and two single-orbital
+cube fixtures, verifying atoms/bonds, grids, and nonempty signed meshes where
+appropriate. The new first-party signed/skewed scalar fixture independently
+specifies every expected sample. No legacy data or code was changed.
+
+Tester packaging now includes `Examples/signed-affine.cube`, `Cube-import.md`,
+and the three legacy cube fixtures needed by the source tests. Its staged and
+extracted checks exercise cube bonds, signed meshes, and the standalone
+converter's exact agreement with WASM, in addition to the prior checks. Each
+successful ZIP's `BUILD-INFO.json` records its artifact-specific verification;
+earlier ZIPs are unchanged. Native cube dialog interaction, full native lifecycle,
+clean-machine installation, and other OSs remain unqualified. The running app
+was not restarted. The implementation was initially uncommitted at version
+0.2.0; the later user-requested 0.2.1 version/commit/tag/push follow-up is recorded
+above. No public release upload or notarization is part of this workflow.
+
 ## Working increment
 
-The new Rust core builds both natively and as WebAssembly. A shared browser/Tauri viewer opens mathematical reference documents, evaluates orbitals and explicit density matrices, samples affine fields, extracts signed meshes, and persists the science plus geometry/materials in a self-contained native preview file. Molden, XYZ, PDB and single-channel standard cube workflows are available. Molden/XYZ/PDB imports automatically infer bonds from atom coordinates; PDB explicit connections are retained and supplemented.
+The new Rust core builds both natively and as WebAssembly. A shared browser/Tauri viewer opens mathematical reference documents, evaluates orbitals and explicit density matrices, samples affine fields, extracts signed meshes, and persists the science plus geometry/materials in a self-contained native preview file. Molden, XYZ, PDB and single-channel standard cube workflows are available. Every supported import, including native documents, automatically fills missing display bonds from atom coordinates; explicit connections are retained and supplemented.
 
 Generated geometry can be copied/reopened without recomputation. Scientific hashes exclude appearance and link each saved surface to its basis/coefficients/matrix or authoritative grid. A changed source is rejected rather than silently associated with an old mesh. The current model does not yet provide full revision history.
 
@@ -69,7 +137,7 @@ reported as omitted. This smoke test is separate from independent numerical
 qualification. A converted convenience copy is generated under ignored
 `next/artifacts/conversions/molden.molekel`, not beside the legacy input.
 
-Current verification: 72 default-workspace Rust tests, one separate native
+Verification for the earlier Molden increment: 72 default-workspace Rust tests, one separate native
 destination-guard test, and seven packaging tests pass. Workspace/all-target
 Clippy with warnings denied, Rust formatting, the production WASM/frontend build,
 and the macOS debug bundle pass. All 54 browser cases pass (27 scenarios in

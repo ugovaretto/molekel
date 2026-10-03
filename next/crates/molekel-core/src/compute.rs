@@ -100,6 +100,9 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
         return Err("Preview resolution must be between 12 and 80".into());
     }
     if let Some(g) = doc.grids.iter().find(|g| g.id == field) {
+        if g.values.iter().any(|v| !(*v as f32).is_finite()) {
+            return Err("Grid values exceed rendering precision".into());
+        }
         let dims = g.dims.map(|n| n.min(resolution));
         if dims == g.dims {
             return Ok(g.clone());
@@ -141,6 +144,9 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
                                     weight * g.values[(i[2] * g.dims[1] + i[1]) * g.dims[0] + i[0]];
                             }
                         }
+                    }
+                    if !(v as f32).is_finite() {
+                        return Err("Grid values exceed rendering precision".into());
                     }
                     out.values.push(v);
                 }
@@ -369,6 +375,34 @@ mod tests {
             assert!((actual - expected).abs() < 1e-12);
         }
         assert_eq!(*sampled.values.last().unwrap(), 88.);
+    }
+    #[test]
+    fn imported_samples_reject_rendering_overflow_without_altering_source() {
+        for dims in [[2; 3], [13; 3]] {
+            let mut d = Document::empty("precision test");
+            d.grids.push(Grid {
+                id: "g".into(),
+                label: "g".into(),
+                quantity: "test".into(),
+                origin: [0.; 3],
+                axes: [[1., 0., 0.], [0., 1., 0.], [0., 0., 1.]],
+                dims,
+                values: vec![0.; dims.iter().product()],
+            });
+            for value in [f64::MAX, -f64::MAX, 2. * f64::from(f32::MAX)] {
+                d.grids[0].values[0] = value;
+                assert!(d.validate().is_ok());
+                assert_eq!(
+                    sample(&d, "g", 12).unwrap_err(),
+                    "Grid values exceed rendering precision"
+                );
+                assert_eq!(d.grids[0].values[0], value);
+            }
+            d.grids[0].values[0] = f64::from(f32::MAX);
+            let sampled = sample(&d, "g", 12).unwrap();
+            assert_eq!(sampled.values[0], f64::from(f32::MAX));
+            assert!(sampled.values.iter().all(|v| (*v as f32).is_finite()));
+        }
     }
     #[test]
     fn normalized_gaussian_value_and_derivative() {

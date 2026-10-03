@@ -33,6 +33,15 @@ export function volumeObject(
   const geometry = new THREE.BoxGeometry(1, 1, 1)
     .translate(0.5, 0.5, 0.5)
     .applyMatrix4(transform);
+  // The baked transform bypasses Three.js's object-matrix winding correction.
+  if (transform.determinant() < 0) {
+    const indices = geometry.getIndex()!;
+    for (let i = 0; i < indices.count; i += 3) {
+      const second = indices.getX(i + 1);
+      indices.setX(i + 1, indices.getX(i + 2));
+      indices.setX(i + 2, second);
+    }
+  }
   const material = new THREE.ShaderMaterial({
     glslVersion: THREE.GLSL3,
     side: THREE.BackSide,

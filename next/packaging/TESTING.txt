@@ -39,6 +39,10 @@ QUICK TEST
 - Open Examples/water.molden for a calculated 24-basis-function water example.
   Select an orbital or occupation-derived density, generate surfaces, save,
   and reopen the .molekel document to check cached geometry.
+- Open Examples/signed-affine.cube: expect 2 atoms, 1 bond, and a signed field
+  in Volume preview immediately. Try Sampled raycast preview, then Generate
+  surfaces to create both signed meshes. Save and reopen to check the cached
+  meshes and preserved scalar grid. This is a mathematical rendering fixture.
 - Convert files opens a separate batch window. Add inputs, Convert, review
   warnings, then Save each result. Closing keeps results in memory; Clear
   discards them. Nothing is written until you explicitly save a result.
@@ -48,12 +52,18 @@ QUICK TEST
 KNOWN LIMITATIONS
 
 Bonds are geometric display connectivity, not inferred bond orders.
+All supported formats compute bonds automatically. Opening a native document
+also fills missing bonds without removing explicit connections or cached data;
+any additions are reported as unsaved and persist only after an explicit Save.
 Only selected XYZ/PDB/cube/Molden profiles are implemented. Canonical Molden
 supports S through G; identified ORCA Molden exports are currently qualified
 only for S/P/spherical D. Direct ORCA/GBW, Gaussian logs, and OBJ are not read.
+Cube supports one scalar field in the bohr-coordinate profile, including a
+negative-atom-count single-orbital header; multi-field cubes are rejected.
 Raycasting, volume rendering, and transparency are
 experimental; do not rely on them for publication-quality scientific work.
-See User-guide.md, Molden-import.md, and Structure-imports.md for the boundaries.
+See User-guide.md, Cube-import.md, Molden-import.md, and Structure-imports.md
+for the boundaries.
 
 REPORTING A PROBLEM
 

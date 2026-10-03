@@ -1,6 +1,6 @@
 # As-built architecture
 
-This describes the 0.2.0 development preview, not the complete
+This describes the 0.2.1 development preview, not the complete
 [proposed architecture](../../doc/rewrite/03-architecture-decision.md).
 Read [status](status.md) for dated verification and uncompleted release gates.
 
@@ -89,13 +89,21 @@ missing wavefunctions, or infer a density matrix from a PDB file.
 ## Import and open flow
 
 The file adapter obtains bytes. The shared `molekel-import::import_bytes`
-returns a validated document and structured format/warning report. Native ZIPs
+returns a validated document and structured format/warning/`requires_save` report. Native ZIPs
 go through bounded decoding; the Molden header takes precedence over a text
 filename. Other supported extensions use existing Rust importers. Successful loading
-replaces the document, resets the camera/render mode, and clears transient
-sampling state. An import failure leaves the previous document available and
-shows an error. Opening another document cancels pending worker jobs.
-Native documents start clean; imported external documents start dirty. Original
+replaces the document and resets the camera/render mode. If the selected field
+is an authoritative grid, Open prepares its bounded display sample immediately;
+without saved meshes the initial mode is volume. A sampling failure still opens
+the validated document in mesh mode with an error, so its full data can be saved.
+An import failure leaves the previous document available and shows an error.
+Opening another document cancels pending worker jobs. Generation tokens and a
+live unsaved-edit check protect the entire read/import/sample sequence.
+External imports start dirty. Native imports supplement missing display bonds
+while preserving explicit bonds and their order, scientific inputs, and saved
+meshes. Additions produce a warning and `requires_save: true`; otherwise the
+decoded document is unchanged and starts clean. Raw format decoding remains
+exact and does not infer bonds. Original
 Molden sections are not embedded wholesale: preserve inputs and read the report.
 
 Molden shells become explicit normalized polynomial contractions. Spin blocks,
@@ -113,29 +121,39 @@ cancellation terminates the shared worker. Its outputs are transient until saved
 The UI links the Rust library through WASM; it does not spawn the CLI or invoke
 vendor programs. The CLI is a separate headless frontend for scripts/batches.
 
-XYZ/PDB convert angstrom positions to bohr and compute bonds before returning
-the document. PDB uses `pdbtbx` plus bounded compatibility preflight and explicit
+All supported imports compute display bonds from positions, including cube and
+native documents. XYZ/PDB convert angstrom positions to bohr. PDB uses `pdbtbx`
+plus bounded compatibility preflight and explicit
 connection handling. `kiddo` supplies an exact immutable k-d tree; covalent
 cutoffs and deterministic coordination filtering supplement explicit bonds.
 See [structure imports](structure-imports.md) for the scientific tradeoffs,
 selection policy, loss notices, and exhaustive-neighbor comparisons.
 
-Cube imports preserve the authoritative affine scalar grid. Display sampling
-may downsample it but does not mutate the original array. Unsupported profiles
+Cube imports preserve the authoritative affine scalar grid, converting source
+z-fastest ordering into model x-fastest ordering. Single-field density cubes and
+negative-atom-count cubes containing exactly one dataset are supported in the
+standard bohr profile. A dataset identifier is metadata, not reconstructed
+orbital coefficients. For low-amplitude fields the initial display isovalue is
+adjusted below the original peak; samples are not normalized or changed.
+Display sampling may downsample the grid but does not mutate the original array.
+Values that overflow f32 fail preview preparation, not import or persistence.
+See [cube import](cube-import.md) for the exact limits. Unsupported profiles
 fail explicitly. Other new formats are deferred; a direct ORCA/GBW reader is
 not part of this increment. Qualified ORCA Molden exports use the shared library.
 
 ## Generation, cache, and rendering
 
-1. The UI requests generation for the selected field, resolution, and isovalue,
-   omitting existing meshes from the computation request.
+1. The UI requests `sample` or `generate` for the selected field and resolution,
+   with an isovalue for generation, omitting existing meshes from the request.
 2. The worker validates the document. Its cache key includes basis, orbital,
    density, grid data, selected field, and resolution. Appearance and isovalue
    are excluded, allowing the sampled grid to be reused when only those change.
 3. Rust evaluates an analytic field on a bounded domain or resamples an imported
    grid. Analytic domain sizing currently uses the most diffuse Gaussian
    exponent; it is a preview heuristic, not a proven surface-containment bound.
-4. `mcubes` extracts positive and negative isosurfaces. Empty meshes are omitted.
+4. A `sample` request returns only the grid. Open, selecting a stored grid, or
+   changing its display resolution uses this path without creating surfaces.
+   For `generate`, `mcubes` extracts positive and negative isosurfaces. Empty meshes are omitted.
    Affine mesh positions/normals are converted to model coordinates.
 5. The UI replaces surfaces of the selected field, retains other fields'
    surfaces, stores the transient grid separately, and marks the document dirty.
@@ -150,6 +168,8 @@ use a 3D texture and replace the selected field's mesh display. Other fields'
 meshes may remain. These shaders are bounded sampled previews, not direct
 analytic evaluation or robust root isolation. Ordinary mesh transparency and
 single-volume compositing do not correctly solve all mixed-scene overlaps.
+Skewed and reflected affine grids use the full grid transform; reflected box
+winding is corrected for back-face ray-entry rendering, including inside views.
 
 The viewport owns its Three.js engine and disposes rebuilt geometry/materials.
 Camera damping drives an animation loop with rendering on movement or changed
@@ -174,8 +194,11 @@ are not yet implemented. Never discard saved meshes as disposable cache data.
 Persistent view settings include representation, field selection, colors,
 opacity, and isovalue. Camera, active render mode, grid-resolution control,
 worker cache, transient display grid, and dirty state are not persisted. A
-loaded document can show saved geometry without recomputation while sampled
-rendering remains disabled until regeneration.
+loaded document can show saved geometry without recomputation. A selected
+authoritative grid also gets a new transient display sample on Open, making
+sampled modes available immediately. Analytic orbital/density fields still need
+Generate to prepare their transient display grid after reopening. No sampled
+preview is a substitute for the complete authoritative grid saved in the file.
 
 Browser saving encodes through WASM and requests a download. Desktop saving
 encodes through WASM, revalidates in native Rust, asks for a destination, writes

@@ -100,6 +100,8 @@ cargo run --manifest-path next/Cargo.toml --locked -p molekel-convert -- --check
 See [Molden import](molden-import.md) for exact profiles, CLI batch options,
 exit codes, losses, and overwrite policy. The tester ZIP includes the optimized
 Apple Silicon CLI as `Tools/molekel-convert`.
+The same CLI accepts [cube files](cube-import.md); for example replace the input
+above with `next/fixtures/cube/signed-affine.cube` and choose a new output path.
 
 The web build is an HTTP-served application, not a standalone `file://` HTML file.
 For a local production-build preview, after `run build`:
@@ -156,6 +158,7 @@ cargo check --manifest-path next/Cargo.toml --locked -p molekel-desktop
 | --- | --- |
 | Scientific model/evaluator | Core unit tests plus [independent references](../crates/molekel-core/tests/independent_references.rs) |
 | XYZ/PDB and connectivity | [Connectivity regressions](../crates/molekel-core/tests/connectivity.rs), including read-only legacy fixtures |
+| Cube fields and all-import bonds | [Cube regressions](../crates/molekel-core/tests/cube_import.rs), shared importer/CLI tests, and [browser cube workflows](../app/tests/cube.spec.ts); analytic signed/skewed grid, negative atom counts, source preservation, native bond backfill, reflected rendering, precision rejection |
 | Molden and converter | [Independent imports](../crates/molekel-import/tests/independent_molden.rs), parser unit tests, [CLI regressions](../crates/molekel-convert/tests/cli.rs), [fixtures/provenance](../fixtures/molden/README.md) |
 | Container/native saving | Format unit tests and [reference roundtrips](../crates/molekel-format/tests/reference_roundtrips.rs) |
 | Browser workflows/numerics | [Playwright tests](../app/tests): Chromium/WebKit, real file input/download, pixels, camera, desktop/mobile layout |
@@ -193,6 +196,10 @@ Also open `Examples/water.molden`, generate an orbital and density, save/reopen,
 then convert a mixed valid/invalid batch without replacing the scene. Check
 per-result Save, cancellation, retry, and protected-source errors with disposable
 copies. Native automated destination validation is separate from dialog QA.
+Open `Examples/signed-affine.cube`: check 2 atoms/1 bond, immediate signed volume,
+raycast mode, and Generate for positive/negative meshes. Save/reopen the result;
+saved geometry must reappear and sampled modes must be available without
+regenerating meshes. Display-resolution changes must not replace source samples.
 
 Record what was actually observed, including the OS and app build. Browser
 WebKit tests are not equivalent to Tauri's system WebView. Native filesystem
@@ -210,7 +217,7 @@ active application window. Current gaps are in [status](status.md).
 | Playwright browser missing | Run the browser-install command with repo-local temporary variables |
 | Rust native link/build fails | Check platform prerequisites/toolchain, then the focused shell check; preserve diagnostics |
 | New dependency notice fails packaging | Review the locked dependency's actual license and pinned notice source; do not bypass the check |
-| Test refers to missing legacy PDB fixture | Use the full checkout or supplied source snapshot, not `next/` copied alone |
+| Test refers to missing legacy PDB/Molden/cube fixture | Use the full checkout or supplied source snapshot, not `next/` copied alone |
 | Desktop display differs from browser | Record both runtimes; test the packaged system WebView separately |
 | App file is rejected | Read the exact profile/validation error and import/format docs; do not weaken checks to accept malformed input |
 

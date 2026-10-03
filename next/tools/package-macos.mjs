@@ -76,6 +76,9 @@ function sourceNames() {
       ".gitignore",
       "src/license",
       "data/molden.input",
+      "data/h2o-dens.cube",
+      "all_data/Benzene.MO19-BOTH-SIGNS.cube",
+      "all_data/molden_test/test_homo.cube",
       ...["guanine", "3POR", "URIDINE-VANADATE", "alaninemulti"].map(
         (name) => `data/${name}.pdb`,
       ),
@@ -308,6 +311,10 @@ function main() {
     path.join(root, "fixtures/molden/water-rhf-ccpvdz.molden"),
     path.join(payload, "Examples/water.molden"),
   );
+  copy(
+    path.join(root, "fixtures/cube/signed-affine.cube"),
+    path.join(payload, "Examples/signed-affine.cube"),
+  );
   const converter = path.join(payload, "Tools/molekel-convert");
   copy(path.join(root, "target", target, "release/molekel-convert"), converter);
   run("/usr/bin/codesign", [
@@ -347,6 +354,10 @@ function main() {
   copy(
     path.join(root, "docs/molden-import.md"),
     path.join(payload, "Molden-import.md"),
+  );
+  copy(
+    path.join(root, "docs/cube-import.md"),
+    path.join(payload, "Cube-import.md"),
   );
   const info = JSON.parse(
     run(
@@ -422,9 +433,9 @@ function main() {
       "strict app signature",
       "ZIP extraction byte and mode comparison",
       "extracted app signature",
-      "sample PDB/XYZ/Molden imports",
+      "sample PDB/XYZ/Molden/cube imports",
       "standalone converter signature, architecture, and runtime libraries",
-      "extracted converter Molden/native roundtrip and WASM agreement",
+      "extracted converter Molden/cube/native roundtrip and WASM agreement",
     ],
     limitations:
       "No clean-machine/Gatekeeper installation or full supported-OS-range qualification. Browser checks are a separate test command.",

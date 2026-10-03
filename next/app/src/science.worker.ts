@@ -26,6 +26,7 @@ self.onmessage = async (event: MessageEvent) => {
           core.import_document(new Uint8Array(args.bytes), args.name),
         );
         break;
+      case "sample":
       case "generate": {
         const doc = args.doc as MolekelDocument;
         const json = JSON.stringify(doc);
@@ -43,17 +44,20 @@ self.onmessage = async (event: MessageEvent) => {
             key,
             grid: JSON.parse(core.sample(json, args.field, args.resolution)),
           };
-        result = {
-          grid: cached!.grid,
-          surfaces: JSON.parse(
-            core.surfaces(
-              json,
-              JSON.stringify(cached!.grid),
-              args.field,
-              args.iso,
-            ),
-          ),
-        };
+        result =
+          action === "sample"
+            ? cached!.grid
+            : {
+                grid: cached!.grid,
+                surfaces: JSON.parse(
+                  core.surfaces(
+                    json,
+                    JSON.stringify(cached!.grid),
+                    args.field,
+                    args.iso,
+                  ),
+                ),
+              };
         break;
       }
       default:

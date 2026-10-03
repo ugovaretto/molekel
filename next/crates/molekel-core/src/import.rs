@@ -87,8 +87,11 @@ pub fn cube(text: &str, name: &str) -> Result<Document> {
         return Err("Invalid cube origin line".into());
     }
     let n: i32 = header[0].parse().map_err(|_| "Invalid cube atom count")?;
-    if !(0..=100_000).contains(&n) || (header.len() == 5 && header[4] != "1") {
-        return Err("Only single-channel standard bohr cubes are supported in this preview".into());
+    if !(-100_000..=100_000).contains(&n) {
+        return Err("Cube atom count must have an absolute value no larger than 100000".into());
+    }
+    if header.len() == 5 && count(header[4])? != 1 {
+        return Err("Only single-channel cubes are supported; NVAL must be one".into());
     }
     let origin = [num(header[1])?, num(header[2])?, num(header[3])?];
     let mut dims = [0; 3];
@@ -102,7 +105,9 @@ pub fn cube(text: &str, name: &str) -> Result<Document> {
         if row.len() != 4 {
             return Err("Invalid cube axis".into());
         }
-        dims[k] = count(row[0])?;
+        dims[k] = count(row[0]).map_err(|_| {
+            "Cube axis counts must be positive; only the standard bohr coordinate profile is supported"
+        })?;
         axes[k] = [num(row[1])?, num(row[2])?, num(row[3])?];
     }
     let size = dims
@@ -113,7 +118,7 @@ pub fn cube(text: &str, name: &str) -> Result<Document> {
         return Err("Cube exceeds the 128^3 sample budget".into());
     }
     let mut d = Document::empty(if title.trim().is_empty() { name } else { title });
-    for _ in 0..n {
+    for _ in 0..n.unsigned_abs() {
         let row: Vec<_> = lines
             .next()
             .ok_or("Truncated cube atoms")?
@@ -132,8 +137,26 @@ pub fn cube(text: &str, name: &str) -> Result<Document> {
             position: [num(row[2])?, num(row[3])?, num(row[4])?],
         });
     }
-    let mut values = vec![0.; size];
     let mut tokens = lines.flat_map(str::split_whitespace);
+    // Negative NATOMS introduces dataset IDs, not a change in coordinate units.
+    let dataset = if n < 0 {
+        if count(tokens.next().ok_or("Missing cube dataset count")?)? != 1 {
+            return Err(
+                "Only single-channel cubes are supported; export one orbital/dataset per cube"
+                    .into(),
+            );
+        }
+        Some(
+            tokens
+                .next()
+                .ok_or("Missing cube dataset identifier")?
+                .parse::<i64>()
+                .map_err(|_| "Invalid cube dataset identifier")?,
+        )
+    } else {
+        None
+    };
+    let mut values = vec![0.; size];
     for x in 0..dims[0] {
         for y in 0..dims[1] {
             for z in 0..dims[2] {
@@ -147,7 +170,7 @@ pub fn cube(text: &str, name: &str) -> Result<Document> {
     }
     d.grids.push(Grid {
         id: "cube".into(),
-        label: name.into(),
+        label: dataset.map_or_else(|| name.into(), |id| format!("{name} (dataset {id})")),
         quantity: "unknown scalar".into(),
         origin,
         axes,
@@ -155,9 +178,27 @@ pub fn cube(text: &str, name: &str) -> Result<Document> {
         values,
     });
     d.view.field = Some("cube".into());
-    d.provenance = vec![format!(
-        "Imported {name}; standard cube bohr profile. Scalar meaning and units unspecified. {comment}"
-    )];
+    let connectivity = bonds::perceive(&d.atoms, &[])?;
+    d.provenance = vec![
+        format!(
+            "Imported {name}; standard cube bohr coordinate profile. Scalar meaning and units unspecified. {comment}"
+        ),
+        connectivity.description(),
+    ];
+    if let Some(id) = dataset {
+        d.provenance.push(format!(
+            "Cube dataset identifier {id}; one sampled scalar field, no basis or orbital coefficients reconstructed."
+        ));
+    }
+    let peak = d.grids[0].values.iter().map(|v| v.abs()).fold(0., f64::max);
+    let initial_iso = 0.1 * peak;
+    if d.view.isovalue >= peak && initial_iso > 0. && initial_iso < peak {
+        d.view.isovalue = initial_iso;
+        d.provenance.push(format!(
+            "Initial display isovalue {initial_iso} chosen as one tenth of the field peak magnitude; scalar samples unchanged."
+        ));
+    }
+    d.bonds = connectivity.bonds;
     d.validate()?;
     Ok(d)
 }

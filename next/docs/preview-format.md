@@ -10,6 +10,14 @@ embedded. Subsequent saved meshes retain the usual field/source associations;
 they do not require the original Molden file to reopen. See the
 [Molden import contract](molden-import.md) for normalization and completeness limits.
 
+Cube conversion also uses this unchanged profile. The complete affine grid,
+original finite f64 samples (reordered x-fastest), atoms, inferred bonds, source
+digest, and dataset/provenance metadata are stored. Display downsampling never
+replaces that authoritative grid. Generated signed meshes include their sampled
+grid geometry and source hash as usual, so the cube source need not accompany a
+saved `.molekel`. Preview f32 overflow can prevent rendering without preventing
+import/save of valid f64 data. See [cube import](cube-import.md).
+
 The ZIP contains `manifest.json` first and `arrays/aN/0.bin` entries. Numeric array leaves in the document are replaced by `{ "$array": "aN" }` references. Descriptors record shape, entry, byte count, SHA-256, and either `f64` or `u32`. Values are little-endian and row-major; grids are x-fastest. Authoritative Rust float arrays remain f64. Mesh positions are f64 containers for the f32 interpolated result, with that precision limitation recorded explicitly.
 
 Small scalar metadata is JSON. Basis radial weights already include normalization; no automatic normalization is applied. Orbital energies are optional hartree values, not fabricated zeros. Occupations are explicit. A full row-major density matrix identifies its kind independently of orbitals. Current object relationships use stable IDs within a single geometry/basis document.
@@ -17,6 +25,13 @@ Small scalar metadata is JSON. Basis radial weights already include normalizatio
 Saved surface records contain source field ID and scientific hash, signed isovalue, algorithm/version, grid origin/step vectors/resolution, precision, geometry/normals/indices, sRGB color, opacity, and visibility. Quantum inputs remain in the same document. A source mismatch is rejected in this preview; the later revision-aware model should preserve historical assets with their original inputs.
 
 Loading verifies ZIP paths, duplicate entries, supported compression, declared inflated size, reference coverage, shape products, byte lengths, digests, finite arrays, IDs, indices, and scientific dimensions. Entry count, file size, inflated size, grid size, and mesh size are bounded. The preview refuses unreferenced archive entries and unsupported required profiles. Original source attachments, arbitrary extensions, multiple geometry revisions, chunk streaming, and migrations are not implemented.
+
+`molekel-format::decode` preserves the validated document exactly. The shared
+import layer used by Open and conversion subsequently supplements missing
+display bonds from atom positions, retaining every existing edge and its order.
+This is reported as an unsaved change, never silently written back to the
+source. Scientific arrays, grids, and cached surface records remain unchanged;
+bonds are not part of a field's scientific hash.
 
 Native saves validate the encoded document, write and sync a newly created sibling file, then rename it into place. Failure leaves the original file intact. Windows overwrite semantics still need a dedicated implementation/test before a Windows release. Browser saves produce the same container through a download.
 

@@ -40,10 +40,12 @@ The ZIP contains:
 - An optimized, ad-hoc-signed `Tools/molekel-convert` for headless conversion;
   it uses the same Rust import library and needs no GUI, Python, or vendor tool.
 - `READ-ME-FIRST.txt`, the standalone `User-guide.md` (including known
-  limitations), structure import policies, and `Molden-import.md` with the exact
-  scientific profile and CLI usage.
+  limitations), structure import policies, `Cube-import.md`, and `Molden-import.md`
+  with the exact scientific profiles and CLI usage.
 - Synthetic water PDB/XYZ inputs and independently calculated `water.molden`;
   all yield three atoms/two bonds, while Molden also supplies orbitals/density.
+- `Examples/signed-affine.cube`, a first-party mathematical signed field with
+  two atoms/one bond on a skewed 7 x 7 x 7 grid, for volume/raycast and mesh checks.
 - The application license and collected third-party notices. Notices are also
   embedded in the app's Resources, so moving the app does not discard them.
 - The exact current first-party source snapshot, lockfiles, and legacy test
@@ -67,8 +69,10 @@ Forward the complete package with its license, notices, and sources.
 
 To work from the supplied source, extract `Source/molekel-source.tar.gz` into
 a directory and follow `AGENTS.md` and `next/docs/development.md` there. The
-snapshot includes frozen scientific data, four legacy PDB test inputs, and
-the read-only `data/molden.input` regression;
+snapshot includes frozen scientific data, four legacy PDB test inputs,
+the read-only `data/molden.input` regression, and the cube regressions
+`data/h2o-dens.cube`, `all_data/Benzene.MO19-BOTH-SIGNS.cube`, and
+`all_data/molden_test/test_homo.cube`;
 normal builds/tests do not need the rest of the legacy application. The
 snapshot is not a vendored offline build environment. It has no `.git`, and
 the ZIP packager itself requires a Git checkout for revision/status recording.
@@ -85,11 +89,13 @@ new timestamped filename without overwriting earlier packages.
 The command runs packaging unit tests and the Rust regression suite, then the
 TypeScript/WASM/production web build and Tauri release build. It verifies
 arm64 architecture, system-only dynamic library links, strict app/CLI signing,
-PDB/XYZ/Molden imports, and source stability during the build. It extracts the
+PDB/XYZ/Molden/cube imports, and source stability during the build. It extracts the
 ZIP into a fresh repository-local directory and checks every file's contents
 and permissions plus both extracted signatures. The actual extracted CLI converts
-the water Molden example, revalidates its native output, and is compared against
-the same WASM importer embedded in the application. Any failure stops delivery
+the water Molden and signed cube examples, revalidates their native outputs, and
+is compared against the same WASM importer embedded in the application. The cube
+check includes bonds, scalar samples, and extraction of both signed meshes.
+Any failure stops delivery
 of a new package; staging is retained for diagnosis.
 
 Browser interaction tests remain `npm run test:e2e`; they require Playwright's

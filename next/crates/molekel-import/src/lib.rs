@@ -4,9 +4,10 @@ mod molden;
 #[cfg(test)]
 mod tests;
 
-use molekel_core::{Document, import};
+use molekel_core::{Document, bonds, import};
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
+use std::collections::BTreeSet;
 
 pub const MAX_IMPORT_BYTES: usize = 128 * 1024 * 1024;
 
@@ -14,6 +15,8 @@ pub const MAX_IMPORT_BYTES: usize = 128 * 1024 * 1024;
 pub struct ImportReport {
     pub format: String,
     pub warnings: Vec<String>,
+    #[serde(default)]
+    pub requires_save: bool,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -23,17 +26,44 @@ pub struct ImportResult {
 }
 
 fn native(bytes: &[u8]) -> Result<ImportResult, String> {
+    let mut document = molekel_format::decode(bytes)?;
+    let connectivity = bonds::perceive(&document.atoms, &document.bonds)?;
+    let existing: BTreeSet<_> = document
+        .bonds
+        .iter()
+        .map(|&[a, b]| [a.min(b), a.max(b)])
+        .collect();
+    let missing: Vec<_> = connectivity
+        .bonds
+        .iter()
+        .filter(|bond| !existing.contains(*bond))
+        .copied()
+        .collect();
+    let requires_save = !missing.is_empty();
+    let mut warnings = vec![];
+    if requires_save {
+        warnings.push(format!(
+            "Added {} missing display bonds from atom positions; existing bonds and scientific data were retained. Save to keep the added bonds.",
+            missing.len()
+        ));
+        document.provenance.push(warnings[0].clone());
+        document.provenance.push(connectivity.description());
+        document.bonds.extend(missing);
+        document.validate()?;
+    }
     Ok(ImportResult {
-        document: molekel_format::decode(bytes)?,
+        document,
         report: ImportReport {
             format: "molekel".into(),
-            warnings: vec![],
+            warnings,
+            requires_save,
         },
     })
 }
 
 /// Detect supported input without relying on a particular Molden extension.
-/// Native documents retain their identity and provenance without modification.
+/// Native documents retain scientific data and explicit bonds; missing display
+/// bonds are supplemented and reported as a change requiring an explicit save.
 pub fn import_bytes(bytes: &[u8], name: &str) -> Result<ImportResult, String> {
     if bytes.is_empty() || bytes.len() > MAX_IMPORT_BYTES {
         return Err("Input is empty or exceeds 128 MiB".into());
@@ -89,6 +119,7 @@ pub fn import_bytes(bytes: &[u8], name: &str) -> Result<ImportResult, String> {
         report: ImportReport {
             format: format.into(),
             warnings,
+            requires_save: true,
         },
     })
 }

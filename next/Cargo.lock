@@ -1924,7 +1924,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-convert"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "molekel-core",
  "molekel-format",
@@ -1935,7 +1935,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-core"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "kiddo",
  "lin_alg",
@@ -1948,7 +1948,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-desktop"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "molekel-core",
  "molekel-format",
@@ -1961,7 +1961,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-format"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "molekel-core",
  "serde",
@@ -1972,7 +1972,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-import"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "molekel-core",
  "molekel-format",
@@ -1983,7 +1983,7 @@ dependencies = [
 
 [[package]]
 name = "molekel-wasm"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "molekel-core",
  "molekel-format",

@@ -75,6 +75,7 @@ export interface Generation {
 export interface ImportReport {
   format: string;
   warnings: string[];
+  requires_save: boolean;
 }
 export interface ImportResult {
   document: MolekelDocument;

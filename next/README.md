@@ -64,7 +64,12 @@ release. It includes source and notices under the [application license](LICENSE)
 - Self-contained `.molekel` preview files containing quantum data, binary numeric arrays, saved meshes, isovalues, grid geometry, scientific hashes, provenance, and material settings. Reopen displays saved geometry without recomputation.
 - Native Save dialog with validated sibling-file replacement; browser file download. Native Open dialog and browser file selection.
 - Conventional single-frame XYZ and PDB import with automatic coordinate-based bonds, PDB alternate/model handling, and retained explicit connections. [Import policy and algorithm](docs/structure-imports.md).
-- Standard single-channel bohr cube import, including skewed/reflected affine axes and explicit errors for unsupported profiles.
+- Gaussian single-field bohr cube import, including single-orbital datasets,
+  skewed/reflected affine axes, automatic bonds, and immediate volume/raycast
+  previews. Generate signed meshes and save them with the original grid in
+  `.molekel`. [Cube profile and workflow](docs/cube-import.md).
+- Automatic display bonds across every supported import, including filling
+  missing bonds in older native documents without losing cached surfaces.
 - Molden import through a shared Rust library, Open and batch conversion controls,
   plus a standalone `molekel-convert` CLI. Canonical Gaussian shells through G
   and a tested ORCA S/P/spherical-D export subset are supported with explicit
@@ -78,6 +83,6 @@ Raycasting uses bounded step sampling and bracket refinement. It can miss tangen
 
 The format's named preview profile is intentionally narrower than the proposed full format. It has whole-array ZIP entries and a 128 MiB file/inflated-byte cap; it is not a streaming/chunked large-data implementation. Saving may need several in-memory copies. Camera and transient volume state are not yet persisted. See [format profile](docs/preview-format.md).
 
-Limits are deliberate: 256 AOs, 64 primitives per AO, UI grids up to 48 cubed, 128 cubed maximum imported grid, bounded estimated mesher output, and a reference-evaluator operation budget. Imported cubes can be resampled for display without modifying their authoritative values. XYZ/PDB bonds use published covalent radii and bounded neighbor search; they are display connectivity, not inferred bond orders. PDB import selects the first geometry and one alternate per residue. Van der Waals display-radius defaults outside the small explicit element table remain provisional and are independent of the complete bond-radius dataset.
+Limits are deliberate: 256 AOs, 64 primitives per AO, UI grids up to 48 cubed, 128 cubed maximum imported grid, bounded estimated mesher output, and a reference-evaluator operation budget. Imported cubes can be resampled for display without modifying their authoritative values. All imports use published covalent radii and bounded neighbor search for automatic bonds; these are display connectivity, not inferred bond orders. PDB import selects the first geometry and one alternate per residue. Van der Waals display-radius defaults outside the small explicit element table remain provisional and are independent of the complete bond-radius dataset.
 
 Direct analytic shader raycasting, topology-certified MC33, shrinkwrap, full transfer-function editing, OBJ import, atom-color text import, metadata editing, undo, and release qualification remain to be implemented. Other external formats are deferred; no direct ORCA reader is planned for this increment. Linux and Windows are architectural targets, not tested supported releases.

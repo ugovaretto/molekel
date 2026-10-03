@@ -3,8 +3,11 @@
 Recorded 3 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
 document, [architecture](architecture.md), and [development commands](development.md).
 The [documentation map](README.md) links the original brief and full M0-M7 plan.
-The current application version is **0.2.0**, including Molden import and the
-shared library/CLI conversion workflow. Native schema `[0, 1]` is unchanged.
+The current application version is **0.2.1**, including cube rendering and
+automatic bonds for all supported imports, alongside Molden and shared library/CLI
+conversion. Native schema `[0, 1]` is unchanged. The user requested committing
+this increment, tagging it `v0.2.1`, and pushing on `2026`; inspect Git for the
+actual local and remote state rather than assuming completion from these notes.
 
 ## Establish the live state
 
@@ -30,8 +33,14 @@ and `BUILD-INFO.json` for provenance instead.
 
 - Shared Rust core, native format, import library/CLI, Rust/WASM bridge, React/Three.js viewer,
   and Tauri desktop shell, all under `next/`.
-- XYZ/PDB structures with automatic exact-neighbor-search display bonds, plus
-  a bounded single-channel cube importer.
+- Automatic exact-neighbor-search display bonds for every supported import:
+  XYZ, PDB, Molden, cube, and native files. Native Open supplements only missing
+  edges, preserves explicit edges/science/cached meshes, and reports an unsaved
+  change when it adds bonds. Raw format decode remains exact.
+- [Single-field cube import](cube-import.md), including standard negative-atom-
+  count single-orbital cubes, affine original grids, immediate volume/raycast
+  previews, and explicit signed-mesh generation. Full f64 source grids persist
+  independently of bounded display samples.
 - Molden Open and Convert Files workflows, canonical real Gaussian shells
   through G, explicit producer/normalization/loss reports, and a separately
   qualified ORCA S/P/5D Molden export subset. See [import contracts](molden-import.md).
@@ -48,13 +57,14 @@ and `BUILD-INFO.json` for provenance instead.
 
 ## Evidence, not assumptions
 
-The Molden increment passed **72 default-workspace Rust tests**, **1 separate
-native destination-guard test**, and **54 browser cases** (27 scenarios in
-Chromium and WebKit). Packaging has **7 tests**. Production WASM/frontend,
+The cube/all-format-bonds increment passed **83 workspace Rust tests**, including
+the native destination-guard test, and **66 browser cases** (33 scenarios in
+Chromium and WebKit). Packaging has **7 passing tests**. Production WASM/frontend,
 macOS debug bundle, Rust formatting, and workspace Clippy were checked. The
 verified release ZIP workflow checks extracted bytes, permissions, app/CLI
 signatures, architecture, linked libraries, sample imports, and the actual
-standalone converter's scientific agreement with WASM. Each successful package's
+standalone converter's scientific agreement with WASM, including cube grids and
+signed mesh generation. Each successful package's
 `BUILD-INFO.json` records its artifact-specific checks.
 See [status](status.md) for scope and provenance; rerun relevant tests for new
 changes rather than treating these counts as permanent acceptance.
@@ -64,7 +74,7 @@ complete interactive save/reopen, native close-warning behavior, and native PNG
 download handling remain incompletely qualified. Filesystem roundtrip tests and
 browser downloads are separate evidence. Clean-machine installation, the entire
 macOS target range, Intel, Linux, and Windows are not verified releases.
-New native Molden/batch dialogs have not been exercised interactively; browser
+New native Molden/batch/cube workflows have not been exercised interactively; browser
 tests and the native destination-guard unit test are separate evidence. The
 existing running app was not restarted during this change.
 
@@ -92,7 +102,8 @@ documented priorities, not permission for an unrelated rewrite:
 Shrinkwrap, full transfer functions, schema freezing/migrations, larger workloads,
 native parallel jobs, and future user-selected converters also remain open.
 Direct ORCA is deferred in favor of its existing Molden export tool; no direct
-Gaussian/T41 reader was added. PDB is not a full metadata-preserving importer. Do not quietly downgrade
+Gaussian-log/T41 reader was added; Gaussian cube is a separate supported scalar
+profile. PDB is not a full metadata-preserving importer. Do not quietly downgrade
 these requirements because the current preview can display a scene.
 
 ## Important traps
@@ -106,10 +117,17 @@ these requirements because the current preview can display a scene.
   Native binary arrays retain f64 bits. Preserve cross-runtime hash tests.
 - Structure-only imports cannot enable quantum generation. Imported grids are
   authoritative scalar data, not recoverable basis/orbital information.
+- `sample` and `generate` share one worker cache. Preparing a cube preview does
+  not create meshes or replace original grid samples. A preview f32 overflow
+  error must not prevent opening/saving a valid f64 document.
+- `ImportReport.requires_save` drives the UI dirty state, including native bond
+  backfill. Do not infer clean state solely from the `.molekel` extension.
 - Generation replaces meshes for the selected field, not the whole document.
   Reopening saved meshes must not require regeneration or a source attachment.
-- Tests use four unchanged legacy PDB fixtures and `data/molden.input` outside `next/`. Keep them in
-  supplied source archives. Do not copy legacy implementation into the rewrite.
+- Tests use four unchanged legacy PDB fixtures, `data/molden.input`, and three
+  cube fixtures outside `next/`. Their exact paths are listed by the packager
+  and [cube guide](cube-import.md); keep them in supplied source archives.
+  Do not copy legacy implementation into the rewrite.
 - Preserve ORCA producer markers. Its qualified Molden profile differs from
   canonical normalization; F/G and other unqualified variants must not silently
   fall through to the canonical reader. Density labels must identify listed-
@@ -119,6 +137,8 @@ these requirements because the current preview can display a scene.
   inputs and output aliases. Preserve no-clobber behavior even with `--force`.
 - `npm test` checks default scientific workspace members, not the Tauri shell.
   Playwright may reuse a server on 5178; verify it belongs to this checkout.
+  Do not regenerate WASM during browser tests: Vite can reload an active test
+  back to the startup example. Finish frontend/native builds before Playwright.
 - New tester packages snapshot current nonignored source, including uncommitted
   work. Do not edit source during packaging; its stability check will reject it.
 - Tester signing deliberately clears Apple/Tauri credentials. Public signing
