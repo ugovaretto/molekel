@@ -4,6 +4,20 @@ A clean Rust scientific core with a React/Three.js interface, shared by a Tauri 
 
 **Status:** first working development preview, not v1 and not completion of the M0-M7 plan. See [implementation status](docs/status.md) for evidence and remaining gates.
 
+## Start here
+
+- **Using the application:** [User guide](docs/user-guide.md), including Mac
+  installation, supported files, controls, surfaces, saving, and troubleshooting.
+- **Building or running from source:** [Development guide](docs/development.md).
+- **Sharing a tester ZIP:** [Packaging guide](docs/tester-packaging.md).
+- **Continuing development:** [Root AGENTS.md](../AGENTS.md),
+  [handoff](docs/handoff.md), and [as-built architecture](docs/architecture.md).
+- **Planning and all documentation:** [Documentation map](docs/README.md).
+
+The historical research and M0-M7 plan remain in `../doc/rewrite/`. They record
+the initial proposal; current implementation facts and later decisions are in
+`docs/`. In particular, proposed features are not all available in this preview.
+
 ## Run
 
 Tested toolchain: Rust 1.92.0, Node 26, wasm-bindgen CLI 0.2.108. Dependency versions are locked in Cargo.lock and app/package-lock.json.
@@ -11,6 +25,7 @@ Tested toolchain: Rust 1.92.0, Node 26, wasm-bindgen CLI 0.2.108. Dependency ver
 From `next/`:
 
 ```sh
+mkdir -p ../tmp
 export TMPDIR="$(cd ../tmp && pwd)"
 export TMP="$TMPDIR" TEMP="$TMPDIR"
 rustup target add wasm32-unknown-unknown
@@ -20,17 +35,23 @@ npm ci
 npm run dev
 ```
 
-The development viewer is served at `http://127.0.0.1:5178`. The port is deliberately strict; choose another in both Vite and Tauri config if it is occupied. All project scripts set temporary-directory variables to the ignored repository `tmp/`.
+The development viewer is served at `http://127.0.0.1:5178`. The port is deliberately strict; choose another in Vite, Tauri, and Playwright config if it is occupied. All project scripts use the ignored repository `tmp/` for temporary work.
 
 ```sh
 npm run desktop        # Tauri development app, starts its own Vite server
-npm run desktop:build  # Unsigned debug macOS .app bundle
+npm run desktop:build  # Debug macOS .app, not Developer ID-signed/notarized
+npm run package:macos  # Optimized, ad-hoc-signed Apple Silicon tester ZIP
 npm run build          # WASM, TypeScript check, production web bundle
 npm test               # Rust scientific and native-format tests
 npm run test:e2e       # Chromium/WebKit interaction, persistence, pixel and mobile tests
+npm run test:packaging # Packaging safety and license-notice regression tests
 ```
 
 Stop an independently started Vite server before `npm run desktop`. Install Playwright's browsers once with `npm exec playwright -- install chromium webkit`, using the temporary-directory variables above.
+
+For sharing with friends, see [tester packaging](docs/tester-packaging.md).
+The ZIP is a development build for Apple Silicon Macs, not an Apple-notarized
+release. It includes source and notices under the [application license](LICENSE).
 
 ## Available
 

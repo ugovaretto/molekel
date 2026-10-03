@@ -1,0 +1,51 @@
+[
+  {
+    "file": "alloc-stdlib.txt",
+    "sha256": "c0c56f26d9c051cac4d200c34c84e7ae9aaa853e01a982a1df08b09931e518ae",
+    "packages": ["alloc-stdlib@0.3.0"],
+    "url": "https://raw.githubusercontent.com/dropbox/rust-alloc-no-stdlib/0a81fd6928ea3b33c8cd484aa4575d50ffb98012/LICENSE"
+  },
+  {
+    "file": "tauri-plugin.txt",
+    "sha256": "9dd42ea92cff2ede5cd477cbfcce051b2d0115c0ac7f368ee88cb545055dff1d",
+    "packages": ["tauri-plugin@2.7.1"],
+    "url": "https://raw.githubusercontent.com/tauri-apps/tauri/30da1fd6e17de6107ecc850c95dfb16b5729f2dd/LICENSE-MIT"
+  },
+  {
+    "file": "objc2-8852b42.txt",
+    "sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+    "packages": ["objc2@0.6.4", "dispatch2@0.3.1"],
+    "url": "https://raw.githubusercontent.com/madsmtm/objc2/8852b424193ca41602281b3d7540d7c8ed51e49a/LICENSE.md"
+  },
+  {
+    "file": "objc2-b4167b5.txt",
+    "sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+    "packages": ["block2@0.6.2"],
+    "url": "https://raw.githubusercontent.com/madsmtm/objc2/b4167b582b2f75f9a1be75495c41b765344fd03c/LICENSE.md"
+  },
+  {
+    "file": "objc2-7b1abfd.txt",
+    "sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+    "packages": [
+      "objc2-app-kit@0.3.2",
+      "objc2-core-foundation@0.3.2",
+      "objc2-foundation@0.3.2",
+      "objc2-quartz-core@0.3.2",
+      "objc2-web-kit@0.3.2"
+    ],
+    "url": "https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md"
+  },
+  {
+    "file": "objc2-8d214f5.txt",
+    "sha256": "7f976f7e9cb2d87df7230606feb932c3f21ac0e664045a775b600046ff850c54",
+    "packages": ["objc2-encode@4.1.0", "objc2-exception-helper@0.1.1"],
+    "url": "https://raw.githubusercontent.com/madsmtm/objc2/8d214f5477365ffcbcbb7de058c86ed9a518efb7/LICENSE.md"
+  },
+  {
+    "file": "selectors.txt",
+    "sha256": "766674381e88a468d55e07de3596987391cf0e8beebe51baf4fddf11078785b3",
+    "packages": ["selectors@0.38.0"],
+    "url": "https://raw.githubusercontent.com/servo/stylo/572ecba2d1600e7c3d490586692a209faf703baa/selectors/lib.rs",
+    "excerpt": "Original four-line MPL notice; full source is included in dependency-sources.tar.gz."
+  }
+]

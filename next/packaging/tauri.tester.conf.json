@@ -1,0 +1,8 @@
+{
+  "bundle": {
+    "macOS": {
+      "signingIdentity": "-",
+      "minimumSystemVersion": "13.0"
+    }
+  }
+}

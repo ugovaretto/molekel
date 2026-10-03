@@ -2,7 +2,7 @@
 
 The application code in this directory is new Rust and TypeScript. No legacy Molekel source is copied, no C++ source is added, and the C-library checkouts in the ignored repository `tmp/` are not build dependencies.
 
-Direct dependency versions are resolved in the committed-source lockfiles `Cargo.lock` and `app/package-lock.json` (not yet committed by this task). Initial candidates:
+Direct dependency versions are resolved in the committed lockfiles `Cargo.lock` and `app/package-lock.json`:
 
 | Dependency | Role | Upstream license |
 | --- | --- | --- |
@@ -26,4 +26,11 @@ The app icon is newly authored in `app/src-tauri/icons/source.svg`; bitmap/nativ
 
 Independent numerical reference generation uses PySCF 2.14.0 (Apache-2.0) in an ignored development-only Python environment under repository `tmp/`. Its compiled numerical libraries are not linked into Molekel or shipped in the desktop/browser builds. The frozen generated data and conventions are documented in [fixtures/pyscf/README.md](../fixtures/pyscf/README.md); generator dependencies are pinned in `tools/reference-requirements.txt`. Normal tests require only Rust and the existing frontend toolchain.
 
-This is a development inventory, not a completed release-license audit. Before distribution, collect notices from exact locked transitive dependencies, check platform libraries, choose the new application's license, and include the required notices in the bundle. A debug bundle is not a signed/notarized public release.
+The rewrite retains Molekel's GPL-2.0-or-later terms in `next/LICENSE`. The tester
+packager uses pinned cargo-about 0.9.1 and installed npm license files to collect
+locked dependency notices, supplements omitted upstream notices from pinned
+revisions, and includes dependency source archives. Notices are embedded in the
+app as well as the ZIP. The packager checks for non-system dynamic libraries.
+See [tester packaging](tester-packaging.md). This is an automated development
+inventory, not a completed release-license audit or legal compatibility opinion.
+An ad-hoc-signed tester bundle is not a Developer ID-signed/notarized public release.

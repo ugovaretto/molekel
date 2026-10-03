@@ -2,6 +2,7 @@
   "name": "molekel-next",
   "version": "0.1.0",
   "private": true,
+  "license": "GPL-2.0-or-later",
   "type": "module",
   "scripts": {
     "wasm": "node ../tools/run.mjs wasm",
@@ -10,7 +11,9 @@
     "test": "node ../tools/run.mjs test",
     "test:e2e": "node ../tools/run.mjs e2e",
     "desktop": "node ../tools/run.mjs desktop",
-    "desktop:build": "node ../tools/run.mjs desktop-build"
+    "desktop:build": "node ../tools/run.mjs desktop-build",
+    "package:macos": "node ../tools/package-macos.mjs",
+    "test:packaging": "node --test ../tools/package-support.test.mjs"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.8.0",
@@ -22,6 +25,7 @@
     "three": "0.186.1"
   },
   "devDependencies": {
+    "@iarna/toml": "2.2.5",
     "@playwright/test": "^1.58.0",
     "@tauri-apps/cli": "^2.8.0",
     "@types/react": "^19.0.0",

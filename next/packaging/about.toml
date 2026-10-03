@@ -1,0 +1,4 @@
+# Collect native and WASM dependencies, including code-generation/build crates.
+accepted = ["MIT", "Apache-2.0", "ISC", "BSD-3-Clause", "BSD-2-Clause", "Zlib", "Unicode-3.0", "CC0-1.0", "Unlicense", "MPL-2.0", "GPL-2.0-or-later"]
+targets = ["aarch64-apple-darwin", "wasm32-unknown-unknown"]
+ignore-dev-dependencies = true

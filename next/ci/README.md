@@ -1,6 +1,13 @@
 # Portability checks
 
-The shared core has no platform-specific dependencies. The same commands run on macOS and Linux after installing Rust, Node, the WASM target, and wasm-bindgen CLI 0.2.108:
+See the [development guide](../docs/development.md) for prerequisites, exact
+root-relative commands, outputs, troubleshooting, and manual native acceptance.
+These checks are not an installed hosted CI workflow.
+
+The shared core has no platform-specific dependencies. The following commands
+are intended for macOS and Linux after installing Rust, Node, the WASM target,
+wasm-bindgen CLI 0.2.108, and Tauri's native platform prerequisites (needed by
+workspace Clippy). Only the macOS run has been verified:
 
 ```sh
 cd next
@@ -9,7 +16,7 @@ export TMPDIR="$(cd ../tmp && pwd)"
 export TMP="$TMPDIR" TEMP="$TMPDIR"
 cargo fmt --all --check
 cargo test --locked
-cargo clippy --locked --all-targets -- -D warnings
+cargo clippy --locked --workspace --all-targets -- -D warnings
 cd app
 npm ci
 npm run build

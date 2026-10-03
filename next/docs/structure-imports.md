@@ -2,6 +2,11 @@
 
 XYZ and PDB imports automatically compute display connectivity in the shared Rust core before the document reaches the viewer. This applies in both the native application and the browser. There is no separate bond-generation action. The atom/bond counts are shown in the document summary, and inferred bonds are saved in `.molekel` files alongside explicit bonds.
 
+XYZ accepts one conventional atom-count/comment/coordinate frame in angstroms.
+Each atom row contains an element symbol and three coordinates. Extra nonempty
+records, including additional frames and extended XYZ columns, are rejected;
+unlike PDB, XYZ does not select the first of several frames.
+
 ## Algorithm decision
 
 The legacy implementation was inspected, not copied. `src/utility/MolekelChemPDBImporter.cpp` uses `UniformGrid`, 27 neighboring buckets, a 1.2-times-covalent-radii cutoff, and angle/valence pruning. Other legacy paths delegate to Open Babel. The located PDB implementation is a uniform grid, not a k-d tree.

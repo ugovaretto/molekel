@@ -1,0 +1,65 @@
+MOLEKEL PREVIEW - FRIENDS AND TESTERS
+
+Read User-guide.md for the complete installation, controls, file workflows,
+surface generation, saving, and troubleshooting guide.
+
+This is a development preview, not a finished scientific release.
+Apple Silicon Mac required (M-series processor). Intel Macs are not supported
+by this package. The build targets macOS 13 or later; compatibility across
+that range is not yet qualified. BUILD-INFO.json records the build machine's
+macOS version. Please report the macOS version and Mac model you tested.
+
+INSTALL
+
+1. Unzip the package and move Molekel Preview.app to Applications.
+2. Open the app. It needs no Node.js, Rust, server, or internet connection
+   for loading and viewing your local molecular files.
+3. This tester build is ad-hoc signed, not signed with an Apple Developer ID
+   or notarized by Apple. If macOS says the developer cannot be verified,
+   and you trust the copy received from the developer, try opening it once,
+   then go to System Settings > Privacy & Security > Open Anyway.
+   Confirm Open for this application only. Do not disable Gatekeeper globally.
+   Managed Macs may prevent this exception.
+
+If macOS instead reports malware or a damaged/modified app, stop and report
+the exact message; do not bypass that warning. Apple instructions:
+https://support.apple.com/en-us/102445
+
+QUICK TEST
+
+- Click Open and choose Examples/water.pdb or Examples/water.xyz.
+  Both should show 3 atoms and 2 automatically computed bonds.
+- Try Ball and stick, Liquorice, and Van der Waals representations.
+- Rotate/zoom the scene, then use Fit scene to restore its framing.
+- Save a .molekel document, reopen it, and check that bonds are still present.
+- Try your own PDB/XYZ files. Keep original inputs and use new filenames for
+  saved documents. PDB imports use the first geometry and one alternate
+  conformer per residue; they do not retain the complete PDB metadata.
+- The example menu provides mathematical orbital/density demonstrations.
+
+KNOWN LIMITATIONS
+
+Bonds are geometric display connectivity, not inferred bond orders.
+Only selected XYZ/PDB/cube profiles are implemented. Molden and OBJ import
+are not available. Raycasting, volume rendering, and transparency are
+experimental; do not rely on them for publication-quality scientific work.
+See User-guide.md and Structure-imports.md for the current boundaries.
+
+REPORTING A PROBLEM
+
+Send the developer the package filename, macOS version, Mac processor,
+steps to reproduce, and a screenshot or exact error. Include a small input
+file only when you have permission to share it. Do not post confidential
+research data in a public issue. BUILD-INFO.json identifies the source build.
+
+REDISTRIBUTION
+
+Keep LICENSE, Third-party-notices, and Source together with the application
+when forwarding this package. Source contains the exact first-party source
+snapshot and lockfiles used for this build, including uncommitted changes.
+Its root AGENTS.md is the development entry point; current documentation,
+the original brief, and the historical planning documents are also included.
+Third-party components retain their own licenses and copyright notices.
+No credentials or development caches are included. Dependency source copies
+are provided for inspection and redistribution alongside their notices.
+This software is supplied without warranty; see LICENSE for its terms.
