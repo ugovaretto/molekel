@@ -70,6 +70,96 @@ pub fn evaluate(doc: &Document, field: &str, p: [f64; 3]) -> Result<(f64, [f64; 
     Err("Analytic evaluation requires an orbital or density matrix".into())
 }
 
+fn basis_scalar_value(b: &BasisFunction, p: [f64; 3]) -> f64 {
+    let r: [f64; 3] = std::array::from_fn(|k| p[k] - b.center[k]);
+    let r2: f64 = r.iter().map(|x| x * x).sum();
+    let radial: f64 = b
+        .exponents
+        .iter()
+        .zip(&b.coefficients)
+        .map(|(&a, &c)| c * (-a * r2).exp())
+        .sum();
+    let poly: f64 = b
+        .terms
+        .iter()
+        .map(|t| {
+            t.weight
+                * (0..3)
+                    .map(|k| r[k].powi(t.powers[k] as i32))
+                    .product::<f64>()
+        })
+        .sum();
+    poly * radial
+}
+
+enum ScalarField<'a> {
+    Orbital(&'a [f64]),
+    Density(Vec<f64>),
+    FullDensity(&'a [f64]),
+}
+
+impl<'a> ScalarField<'a> {
+    fn new(doc: &'a Document, field: &str) -> Result<Self> {
+        if let Some(o) = doc.orbitals.iter().find(|o| o.id == field) {
+            return Ok(Self::Orbital(&o.coefficients));
+        }
+        if let Some(d) = doc.densities.iter().find(|d| d.id == field) {
+            let n = doc.basis.len();
+            let mut upper = Vec::with_capacity(n * (n + 1) / 2);
+            for i in 0..n {
+                for j in i..n {
+                    // Real AO products commute, even for a nonsymmetric matrix.
+                    let c = if i == j {
+                        d.matrix[i * n + i]
+                    } else {
+                        d.matrix[i * n + j] + d.matrix[j * n + i]
+                    };
+                    if !c.is_finite() {
+                        return Ok(Self::FullDensity(&d.matrix));
+                    }
+                    upper.push(c);
+                }
+            }
+            return Ok(Self::Density(upper));
+        }
+        Err("Analytic evaluation requires an orbital or density matrix".into())
+    }
+
+    fn value(&self, ao: &[f64]) -> f64 {
+        match self {
+            Self::Orbital(c) => ao.iter().zip(*c).map(|(a, c)| a * c).sum(),
+            Self::Density(c) => {
+                let mut index = 0;
+                let mut value = 0.;
+                for (i, a) in ao.iter().enumerate() {
+                    for b in &ao[i..] {
+                        let weighted = c[index] * a;
+                        // Folding coefficients must not overflow an otherwise finite product.
+                        value += if weighted.is_infinite()
+                            || (weighted == 0. && c[index] != 0. && *a != 0.)
+                        {
+                            c[index] * (a * b)
+                        } else {
+                            weighted * b
+                        };
+                        index += 1;
+                    }
+                }
+                value
+            }
+            Self::FullDensity(c) => {
+                let mut value = 0.;
+                for (i, a) in ao.iter().enumerate() {
+                    for (j, b) in ao.iter().enumerate() {
+                        value += c[i * ao.len() + j] * a * b;
+                    }
+                }
+                value
+            }
+        }
+    }
+}
+
 pub fn source_hash(doc: &Document, field: &str) -> Result<String> {
     doc.check_field(field)?;
     let mut value = serde_json::json!({"basis":doc.basis, "orbital":doc.orbitals.iter().find(|o| o.id == field),
@@ -166,22 +256,7 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
     if !margin.is_finite() || margin > 100. {
         return Err("Diffuse basis exceeds the preview domain budget".into());
     }
-    let n = doc.basis.len();
-    let work_per_point = doc
-        .basis
-        .iter()
-        .map(|b| b.exponents.len() + b.terms.len() * 6)
-        .sum::<usize>()
-        + if doc.densities.iter().any(|d| d.id == field) {
-            n * n
-        } else {
-            n
-        };
-    if work_per_point.saturating_mul(resolution.pow(3)) > 150_000_000 {
-        return Err(
-            "Field exceeds the reference evaluator's work budget; reduce resolution".into(),
-        );
-    }
+    let scalar = ScalarField::new(doc, field)?;
     for b in &doc.basis {
         for k in 0..3 {
             lo[k] = lo[k].min(b.center[k] - margin);
@@ -211,11 +286,15 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
         dims: [resolution; 3],
         values: Vec::with_capacity(resolution.pow(3)),
     };
+    let mut ao = vec![0.; doc.basis.len()];
     for z in 0..resolution {
         for y in 0..resolution {
             for x in 0..resolution {
                 let p = grid.position([x as f64, y as f64, z as f64]);
-                let v = evaluate(doc, field, p)?.0;
+                for (value, basis) in ao.iter_mut().zip(&doc.basis) {
+                    *value = basis_scalar_value(basis, p);
+                }
+                let v = scalar.value(&ao);
                 if !v.is_finite() || (v as f32).is_infinite() {
                     return Err("Field overflow".into());
                 }
@@ -239,15 +318,15 @@ pub fn mesh(
         return Err("A finite nonzero isovalue is required".into());
     }
     let [nx, ny, nz] = grid.dims;
+    // Bound the library's worst-case unshared output before allocating its input.
+    if (nx - 1) * (ny - 1) * (nz - 1) * 15 > MAX_VERTICES {
+        return Err("Mesh worst-case allocation exceeds preview budget; reduce resolution".into());
+    }
     // mcubes get_value() uses x-fastest storage, independent of its loop order.
     let sign = iso.signum();
     let values = grid.values.iter().map(|v| (sign * v) as f32).collect();
     if grid.values.iter().any(|v| !(*v as f32).is_finite()) {
         return Err("Grid values exceed rendering precision".into());
-    }
-    // Bound the library's worst-case unshared output before allocation.
-    if (nx - 1) * (ny - 1) * (nz - 1) * 15 > MAX_VERTICES {
-        return Err("Mesh worst-case allocation exceeds preview budget; reduce resolution".into());
     }
     let result = MarchingCubes::new(
         (nx, ny, nz),

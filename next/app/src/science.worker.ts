@@ -5,6 +5,7 @@ const ready = init();
 let cached: { key: string; grid: Grid } | null = null;
 self.onmessage = async (event: MessageEvent) => {
   const { id, action, args } = event.data;
+  const progress = (stage: string) => self.postMessage({ id, progress: stage });
   try {
     await ready;
     let result: unknown;
@@ -17,6 +18,12 @@ self.onmessage = async (event: MessageEvent) => {
         break;
       case "encode":
         result = core.encode(JSON.stringify(args.doc));
+        break;
+      case "validate":
+        progress("validating");
+        // Check source identity and native container budgets before publication.
+        core.encode(JSON.stringify(args.doc));
+        result = null;
         break;
       case "import":
         result = JSON.parse(core.import_text(args.text, args.name));
@@ -39,11 +46,14 @@ self.onmessage = async (event: MessageEvent) => {
           args.field,
           args.resolution,
         ]);
-        if (cached?.key !== key)
+        if (cached?.key !== key) {
+          progress("sampling");
           cached = {
             key,
             grid: JSON.parse(core.sample(json, args.field, args.resolution)),
           };
+        }
+        if (action === "generate") progress("meshing");
         result =
           action === "sample"
             ? cached!.grid

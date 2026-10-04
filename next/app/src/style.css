@@ -812,3 +812,236 @@ footer [role="status"] {
     padding: 0 12px;
   }
 }
+
+.browse-orbitals {
+  width: 100%;
+  margin: 4px 0 8px;
+  font-size: 11px;
+}
+.orbital-field-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.orbital-browser {
+  width: min(860px, calc(100% - 24px));
+  height: min(640px, calc(100dvh - 32px));
+  max-height: calc(100dvh - 32px);
+  max-width: calc(100% - 24px);
+  padding: 0;
+  border: 1px solid #bac8c5;
+  border-radius: 6px;
+  color: #334148;
+  background: #fcfdfd;
+  box-shadow: 0 12px 40px #1e333533;
+  overflow: hidden;
+}
+.orbital-browser::backdrop {
+  background: #172e3555;
+}
+.orbital-browser[open] {
+  display: flex;
+  flex-direction: column;
+}
+.orbital-browser-header,
+.orbital-browser-toolbar,
+.orbital-browser-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  flex-shrink: 0;
+}
+.orbital-browser-header {
+  justify-content: space-between;
+  border-bottom: 1px solid #dbe1e3;
+}
+.orbital-browser-header > div {
+  min-width: 0;
+}
+.orbital-browser-header h2 {
+  margin: 0;
+  font-size: 15px;
+}
+.orbital-browser-header p {
+  margin-top: 5px;
+  color: #788b84;
+  font-size: 11px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.orbital-browser-header button,
+.orbital-browser-toolbar > button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  flex-shrink: 0;
+}
+.orbital-filter {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #788b84;
+}
+.orbital-filter > svg {
+  flex-shrink: 0;
+}
+.orbital-filter input {
+  width: 100%;
+  min-width: 0;
+  height: 33px;
+  border: 1px solid #d8dfe1;
+  border-radius: 4px;
+  padding: 5px 8px;
+  color: #26373b;
+  background: #fff;
+}
+.orbital-listed-count {
+  color: #73817f;
+  font-size: 11px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.orbital-table-scroll {
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+  border-top: 1px solid #e5e9eb;
+}
+.orbital-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  font-size: 11px;
+}
+.orbital-check-column {
+  width: 38px;
+}
+.orbital-number-column {
+  width: 44px;
+}
+.orbital-spin-column {
+  width: 76px;
+}
+.orbital-occupation-column {
+  width: 90px;
+}
+.orbital-energy-column {
+  width: 130px;
+}
+.orbital-saved-column {
+  width: 60px;
+}
+.orbital-table th,
+.orbital-table td {
+  height: 35px;
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e8edee;
+  overflow-wrap: anywhere;
+}
+.orbital-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f1f5f4;
+  color: #667973;
+  font-size: 10px;
+  font-weight: 550;
+}
+.orbital-table th:first-child,
+.orbital-table td:first-child {
+  text-align: center;
+}
+.orbital-table input[type="checkbox"] {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  cursor: pointer;
+  accent-color: #258873;
+}
+.orbital-table tr.selected td {
+  background: #edf5f1;
+}
+.orbital-table .orbital-numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.orbital-index {
+  color: #73817f;
+  font-variant-numeric: tabular-nums;
+}
+.orbital-name {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.orbital-spin {
+  text-transform: capitalize;
+}
+.orbital-table .orbital-empty {
+  height: 100px;
+  text-align: center;
+  color: #849096;
+}
+.orbital-browser-footer {
+  justify-content: space-between;
+  align-items: end;
+  border-top: 1px solid #dbe1e3;
+}
+.orbital-selection-error {
+  padding: 9px 18px;
+  color: #9b3d36;
+  background: #fff0ed;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.orbital-selection-count {
+  align-self: center;
+  font-size: 11px;
+  color: #73817f;
+  white-space: nowrap;
+}
+.orbital-generation-settings {
+  display: grid;
+  grid-template-columns: 104px 124px;
+  gap: 12px;
+}
+.orbital-generation-settings label {
+  margin: 0;
+}
+.orbital-generation-settings input[aria-invalid="true"] {
+  border-color: #b75747;
+}
+.orbital-generate {
+  min-height: 33px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+@media (max-width: 580px) {
+  .orbital-browser-header,
+  .orbital-browser-toolbar,
+  .orbital-browser-footer {
+    padding: 12px;
+    gap: 10px;
+  }
+  .orbital-browser-footer {
+    flex-wrap: wrap;
+  }
+  .orbital-selection-count {
+    flex: 1;
+  }
+  .orbital-generation-settings {
+    grid-template-columns: 92px 114px;
+    gap: 8px;
+  }
+  .orbital-generate {
+    width: 100%;
+  }
+}

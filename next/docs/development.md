@@ -162,6 +162,8 @@ cargo check --manifest-path next/Cargo.toml --locked -p molekel-desktop
 | Molden and converter | [Independent imports](../crates/molekel-import/tests/independent_molden.rs), parser unit tests, [CLI regressions](../crates/molekel-convert/tests/cli.rs), [fixtures/provenance](../fixtures/molden/README.md) |
 | Container/native saving | Format unit tests and [reference roundtrips](../crates/molekel-format/tests/reference_roundtrips.rs) |
 | Browser workflows/numerics | [Playwright tests](../app/tests): Chromium/WebKit, real file input/download, pixels, camera, desktop/mobile layout |
+| Orbital selection and batch rendering | [Orbital browser workflows](../app/tests/orbitals.spec.ts): complete imported lists and metadata, filtering/checkboxes, bounded generation, preserved meshes, cancellation, save/reopen, desktop/mobile layout |
+| Density sampling and remaining bounds | [Scalar reference parity](../crates/molekel-core/tests/scalar_sampling.rs), [real Molden density](../crates/molekel-import/tests/density_sampling.rs), [allocation limits](../crates/molekel-core/tests/allocation_limits.rs), and [browser regression](../app/tests/density-budget.spec.ts): value-only sampling, nonsymmetric/signed matrices, finite extremes, 125-AO density at every UI resolution, real-worker cancellation/responsiveness, and retained numerical/allocation bounds |
 | Packaging safety/notices | [Packaging tests](../tools/package-support.test.mjs), followed by a full ZIP build when packaging changes |
 
 `test:e2e` first generates native reference documents in
@@ -196,6 +198,32 @@ Also open `Examples/water.molden`, generate an orbital and density, save/reopen,
 then convert a mixed valid/invalid batch without replacing the scene. Check
 per-result Save, cancellation, retry, and protected-source errors with disposable
 copies. Native automated destination validation is separate from dialog QA.
+
+For the larger repository `data/molden.input`, select the occupation-derived
+density and generate at 24, 32, 40, and 48 samples per axis. Confirm that each
+request uses its chosen resolution without an estimated-work rejection or
+automatic downgrade. Observe the footer's sampling, meshing, and validation
+phases; these are not a percentage-progress API. Cancel during a longer job,
+verify previous geometry remains intact, then generate again to check worker
+restart. Numerical/domain checks, API resolution 12 through 80, grid limits,
+worst-case mesh allocation, and native-container budgets still need rejection
+coverage; removing the CPU estimate must not weaken those boundaries.
+
+On `Examples/water.molden`, use **Orbitals (24)** (tooltip: **Browse and select
+orbitals**): verify all 24 rows, imported
+labels/spins/occupations and hartree energies, filtering, selected-count updates,
+and filtered select-all. Where metadata is absent, confirm `--` or Unknown,
+not a fabricated zero. Generate two orbitals together, confirm that unrelated
+saved meshes remain, and check visibility plus Save/reopen of the new meshes.
+Cancel another batch and check that it leaves previous surfaces intact. Closing
+the browser without generating must not edit the document, and reopening it
+must initialize selection from the active orbital rather than restore old checks.
+For a file with more than 32 orbitals, check that the entire list is available
+but generation above the 32-orbital batch limit is disabled. Check keyboard
+Escape, narrow-window table scrolling, and a single active field in sampled
+volume/raycast modes. These manual steps are acceptance criteria, not a claim
+that the packaged native WebView has passed them.
+
 Open `Examples/signed-affine.cube`: check 2 atoms/1 bond, immediate signed volume,
 raycast mode, and Generate for positive/negative meshes. Save/reopen the result;
 saved geometry must reappear and sampled modes must be available without

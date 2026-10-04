@@ -59,7 +59,11 @@ release. It includes source and notices under the [application license](LICENSE)
 - Frozen independent PySCF references for closed/open-shell molecules and Cartesian/spherical general contractions through G, with native/WASM value and gradient checks. [Reference suite and example documents](fixtures/pyscf/README.md).
 - Explicit Gaussian-polynomial basis evaluation and gradients through G, signed orbitals, and supplied real density matrices in Rust/f64.
 - Ball-and-stick, liquorice, and space-filling representations; camera controls, atom picking, and image export.
-- Rust marching-cubes mesh extraction, signed colors, opacity, visibility, deletion, bounded job execution, worker cancellation, and sampled-field reuse.
+- Rust marching-cubes mesh extraction, signed colors, opacity, visibility, deletion, sampling/meshing/validation progress, worker cancellation, and sampled-field reuse.
+- Searchable orbital table with energy, occupation, spin, and saved-surface counts;
+  select up to 32 orbitals per batch to generate persistent signed meshes together.
+  Cancel or failure preserves prior geometry, and successful batches retain
+  surfaces belonging to unselected fields. See the [user guide](docs/user-guide.md).
 - Experimental sampled raycasting and volume integration with actual shaders; these do not yet meet the full correctness/performance release gates.
 - Self-contained `.molekel` preview files containing quantum data, binary numeric arrays, saved meshes, isovalues, grid geometry, scientific hashes, provenance, and material settings. Reopen displays saved geometry without recomputation.
 - Native Save dialog with validated sibling-file replacement; browser file download. Native Open dialog and browser file selection.
@@ -83,6 +87,24 @@ Raycasting uses bounded step sampling and bracket refinement. It can miss tangen
 
 The format's named preview profile is intentionally narrower than the proposed full format. It has whole-array ZIP entries and a 128 MiB file/inflated-byte cap; it is not a streaming/chunked large-data implementation. Saving may need several in-memory copies. Camera and transient volume state are not yet persisted. See [format profile](docs/preview-format.md).
 
-Limits are deliberate: 256 AOs, 64 primitives per AO, UI grids up to 48 cubed, 128 cubed maximum imported grid, bounded estimated mesher output, and a reference-evaluator operation budget. Imported cubes can be resampled for display without modifying their authoritative values. All imports use published covalent radii and bounded neighbor search for automatic bonds; these are display connectivity, not inferred bond orders. PDB import selects the first geometry and one alternate per residue. Van der Waals display-radius defaults outside the small explicit element table remain provisional and are independent of the complete bond-radius dataset.
+Limits are deliberate: 256 AOs, 64 primitives per AO, sampling resolutions from
+12 through 80 in the API and 24/32/40/48 in the UI, 128 cubed maximum imported
+grid samples, a two-million-vertex worst-case mesher bound, 128 saved surfaces,
+and 128 MiB geometry/native-container bounds. Numerical and domain validation
+also remain. There is no estimated CPU-work cutoff for analytic sampling:
+the repository's 125-AO Molden density can use every offered UI resolution,
+without silently reducing it. Scalar sampling avoids unused gradients and
+folds density-matrix pairs. Larger jobs may take longer; phase progress is not
+a percentage or time estimate, and Cancel terminates the worker while retaining
+previous geometry. These remaining bounds do not guarantee latency or total
+process memory usage.
+
+Imported cubes can be resampled for display without modifying their
+authoritative values. All imports use published covalent radii and bounded
+neighbor search for automatic bonds; these are display connectivity, not
+inferred bond orders. PDB import selects the first geometry and one alternate
+per residue. Van der Waals display-radius defaults outside the small explicit
+element table remain provisional and are independent of the complete bond-radius
+dataset.
 
 Direct analytic shader raycasting, topology-certified MC33, shrinkwrap, full transfer-function editing, OBJ import, atom-color text import, metadata editing, undo, and release qualification remain to be implemented. Other external formats are deferred; no direct ORCA reader is planned for this increment. Linux and Windows are architectural targets, not tested supported releases.

@@ -9,7 +9,7 @@ supplied orbitals or density matrices, generate signed
 isosurfaces, and save the molecular data and surface geometry together in a
 portable `.molekel` document.
 
-This is version 0.2.1, a development preview. Scientific calculations and
+This is version 0.3.0, a development preview. Scientific calculations and
 rendering have targeted tests, but the application is not yet a qualified
 scientific release. It visualizes supplied data; it does not run a quantum
 chemistry calculation to obtain a wavefunction from atom positions.
@@ -60,7 +60,7 @@ are not implemented.
 | --- | --- |
 | Top bar | Document title, unsaved-change indicator, Open, Convert files, and Save |
 | Document panel | Atom/bond/basis counts, representation, example menu |
-| Quantum fields | Select an orbital, supplied density matrix, or sampled field |
+| Quantum fields | Select an active field; the Orbitals (count) button lists all orbitals for multi-selection |
 | Provenance | Source descriptions, import decisions, and loss notices |
 | Central scene | Molecule and surfaces; selected atom/surface information below |
 | Field rendering | Rendering mode, isovalue, grid resolution, Generate/Cancel |
@@ -131,7 +131,8 @@ document intact. **Import report** and Provenance retain decisions and losses.
 
 The ZIP includes `Examples/water.molden`, a calculated RHF water wavefunction
 with 24 basis functions, 24 spatial orbitals, and a total density. This is a
-useful first check for orbital and density surfaces.
+useful first check for orbital and density surfaces. **Orbitals (24)** shows
+all 24 orbitals and their imported metadata.
 
 **Convert files** opens a separate batch window without replacing your current
 scene. Add files, click **Convert**, review each result, then use its **Save**
@@ -194,16 +195,62 @@ results. Opening an example replaces the current document after an unsaved-chang
 confirmation. Independently calculated water/OH `.molekel` reference documents
 can also be generated from the source tree; see `next/fixtures/pyscf/README.md`.
 
+### Browse and render several orbitals
+
+1. Click **Orbitals (count)** under Quantum fields, such as **Orbitals (24)**.
+   Its tooltip is **Browse and select orbitals**. The table lists every orbital
+   in document order, with a one-based row number, label, spin, occupation,
+   energy in hartree, and the number of saved meshes. Missing energies or
+   occupations show `--`, not zero; an unspecified spin shows **Unknown**.
+2. Use **Search orbitals** to filter by row number, label, identifier, or spin.
+   Check the orbitals you want. The header checkbox selects or clears the
+   currently listed rows; filtering does not clear selections outside the list.
+   **Clear orbital selection** removes all checks.
+3. Set a positive **Isovalue** and **Grid resolution**, then click
+   **Generate selected**. Select at most **32 orbitals per generation**; the
+   table itself is not limited to 32. Large jobs can still exceed the preview's
+   geometry budget, so use fewer orbitals or a lower resolution if rejected.
+4. The window closes and the footer reports the current orbital and work phase.
+   **Cancel** stops the batch.
+   Results are applied together only after the complete batch passes validation;
+   cancelling or an error leaves the previous surfaces in place.
+5. On success, the new meshes appear together in **Isosurface mesh** mode.
+   Only meshes belonging to the checked orbitals are replaced; other fields'
+   saved meshes remain. Use the eye controls to show or hide individual surfaces,
+   then **Save** to retain the result on disk.
+
+The **Saved** column counts meshes currently in the document, including hidden
+ones; it does not mean that the document has already been written to disk.
+Checkboxes are temporary and are not saved in `.molekel`. Each time the browser
+opens, only the active orbital is initially checked, if the active field is an
+orbital. Closing without generating leaves the document and settings unchanged.
+Multi-selection creates separate orbital meshes, not a combined orbital or a
+new density matrix.
+
+### Render one field
+
 1. Select a field under Orbitals, Density matrices, or Sampled fields.
 2. Set a positive **Isovalue** magnitude. The generator attempts both positive
    and negative levels; only nonempty surfaces are added. A nonnegative density
    can therefore produce only a positive surface.
 3. Choose **Grid resolution**, from 24 x 24 x 24 to 48 x 48 x 48. Larger values
    cost more memory and computation and are not an accuracy guarantee.
-4. Click **Generate surfaces**. The footer reports completion and triangle count.
-   During computation the same button becomes **Cancel**; cancelling retains
-   the previous completed meshes.
+4. Click **Generate surfaces**. The footer shows the sampling, meshing, and
+   validation phases, followed by completion and triangle count. These are
+   phases, not percentage progress or a remaining-time estimate. During
+   computation the same button becomes **Cancel**; cancelling retains the
+   previous completed meshes.
 5. Adjust colors or opacity, then Save to make the result durable on disk.
+
+Density calculation cost depends on the basis size as well as grid resolution.
+The repository's `data/molden.input` (125 basis functions) can use **24, 32, 40,
+or 48 samples per axis** for its occupation-derived density. Analytic sampling
+has no estimated CPU-work cutoff and does not automatically lower the chosen
+resolution. A larger calculation may therefore take longer, even while the
+same phase remains displayed. **Cancel** terminates the calculation worker;
+the next request starts a new worker. Existing completed geometry is retained.
+Finite-value, domain, grid, mesh-allocation, and file-size limits still apply;
+fewer orbitals or a lower resolution can help when one of those limits is reached.
 
 Selecting a field or changing isovalue/resolution does not regenerate existing
 meshes automatically. For imported grids, selecting the field or changing
@@ -240,6 +287,14 @@ In sampled modes, meshes of the selected field are replaced visually by the
 sampled display. Meshes from other fields may remain visible. The eye and trash
 controls manage saved meshes, not the transient volume; switch to mesh mode
 to inspect their effect independently.
+
+Volume and raycast previews still have **one active field**, chosen in the
+Quantum fields panel; the browser's orbital checkboxes do not select multiple
+simultaneous volumes. After a successful orbital batch, the previous active
+orbital stays active if it was checked, otherwise the first checked orbital in
+document order becomes active. Its sampled preview is ready. Selecting another
+analytic orbital clears that preview; **Generate surfaces** prepares the newly
+active field while retaining other orbitals' saved meshes.
 
 Positive/negative colors and opacity currently apply across the document's
 surfaces, not just the selected field. Eye icons toggle individual mesh
@@ -281,19 +336,24 @@ Keep original data and backups because the native preview schema is not frozen.
 | Symptom | What to check |
 | --- | --- |
 | Generate surfaces is disabled | PDB/XYZ contain no quantum fields; open Molden, a native field document, cube, or example |
+| Generate selected is disabled | Check between 1 and 32 orbitals and enter a finite positive isovalue |
 | Raycast/volume choices are disabled | For orbitals/densities, Generate surfaces; imported grids prepare automatically unless the footer reports a preview error |
 | Cube opens but no field is visible | Check the isovalue and scalar range, Fit scene, and any preview error; an all-zero grid has no nonzero surface |
 | Structure seems missing | Use Fit scene; try Ball and stick; check atom counts and error messages |
 | Unexpected PDB atom/bond count | Read Provenance; first-model/alternate/occupancy selection and heuristic bonds affect counts |
-| Too much work or mesh allocation error | Lower grid resolution; the preview deliberately refuses oversized calculations |
+| Calculation takes too long | Check the footer phase; Cancel preserves completed meshes, then retry at a lower resolution or with fewer orbitals |
+| Mesh allocation or file-size error | Lower grid resolution or generate fewer orbitals; numerical, geometry, and persistence bounds remain |
 | File rejected | Check format/profile and exact message; do not strip validation metadata or rename unsupported data |
 | WebGL2 unavailable | Check graphics acceleration or try another compatible device/browser |
 | Graphics context lost | Save if possible, then restart/reload; unsaved data may be lost |
 
 Current guards include a 128 MiB file/inflated-array budget, a 32 MiB PDB text
 budget, 100,000 atoms, 600,000 bonds, 256 basis functions, 64 primitives per
-basis function, and 128 cubed total imported grid samples. These are rejection
-limits, not recommended workloads; large structures can be slow well below them.
+basis function, 128 cubed total imported grid samples, a two-million-vertex
+worst-case mesher bound, and 128 saved surfaces. Generation also checks an
+estimated 128 MiB geometry budget before native-format validation. These are
+rejection limits, not recommended workloads or guarantees of total memory use;
+large calculations can be slow well below them.
 
 For a problem report, include the package filename or `BUILD-INFO.json`, Mac
 model/processor, OS version, exact error, steps, and screenshot. Include a small

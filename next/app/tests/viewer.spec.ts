@@ -203,7 +203,9 @@ test("mobile layout and Rust WASM analytic reference", async ({ page }) => {
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   ).toBeTruthy();
-  expect((await pixels(page)).colorful).toBeGreaterThan(300);
+  await expect
+    .poll(async () => (await pixels(page)).colorful)
+    .toBeGreaterThan(300);
   await page.screenshot({ path: "../artifacts/mobile.png", fullPage: true });
   const value = await page.evaluate(async () => {
     const url = "/src/wasm/molekel_wasm.js";

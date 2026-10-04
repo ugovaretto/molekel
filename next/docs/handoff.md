@@ -1,13 +1,22 @@
 # Development handoff
 
-Recorded 3 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
+Recorded 4 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
 document, [architecture](architecture.md), and [development commands](development.md).
 The [documentation map](README.md) links the original brief and full M0-M7 plan.
-The current application version is **0.2.1**, including cube rendering and
-automatic bonds for all supported imports, alongside Molden and shared library/CLI
-conversion. Native schema `[0, 1]` is unchanged. The user requested committing
-this increment, tagging it `v0.2.1`, and pushing on `2026`; inspect Git for the
-actual local and remote state rather than assuming completion from these notes.
+The current application version is **0.3.0**, collecting the orbital browser,
+multi-orbital mesh generation, scalar density-sampling optimization, and larger
+background calculations after `v0.2.1`. Cube rendering, automatic bonds for all
+supported imports, Molden, and shared library/CLI conversion remain available.
+Native schema `[0, 1]` and external dependencies are unchanged. The user requested
+committing this increment, tagging it `v0.3.0`, and pushing on `2026`; inspect Git
+for the actual local and remote state rather than assuming completion from these
+notes. The user's separate chat export is not part of the application commit.
+
+The density in `data/molden.input` can use every offered UI resolution
+(24, 32, 40, and 48). Memory/numerical limits remain; the worker reports phases
+and remains cancellable without discarding completed meshes. The user confirmed
+that 48-cubed generation is effectively instantaneous for this file on their
+machine, not a general latency guarantee. No new tester ZIP was requested.
 
 ## Establish the live state
 
@@ -46,6 +55,10 @@ and `BUILD-INFO.json` for provenance instead.
   qualified ORCA S/P/5D Molden export subset. See [import contracts](molden-import.md).
 - Real Gaussian-polynomial orbitals/density matrices through G, analytic
   gradients, sampled grids, positive/negative classic marching-cubes meshes.
+- A full orbital metadata table with filtering and checkbox selection. Generate
+  up to 32 orbital fields sequentially, then publish their signed meshes together
+  after Rust source/container validation. Cancellation or failure preserves all
+  prior meshes and active-field settings; success retains unselected fields.
 - Native preview files containing scientific inputs and durable surface meshes
   with generation/material metadata; browser download and atomic native save.
 - Ball-and-stick/liquorice/space-filling, picking, viewport image download,
@@ -56,6 +69,46 @@ and `BUILD-INFO.json` for provenance instead.
   documentation. Documentation is not a substitute for remaining release tests.
 
 ## Evidence, not assumptions
+
+The 0.3.0 version follow-up reran all **98 workspace Rust tests** and **88
+Chromium/WebKit browser cases**, plus production WASM/frontend build, formatting,
+and workspace/all-target Clippy successfully. Structured checks confirm version
+consistency and unchanged external dependencies; all 165 local Markdown targets
+exist. No native bundle or tester ZIP was rebuilt, and native interaction and
+packaging tests were not rerun for this release request.
+
+The background-calculation follow-up passes **98 workspace Rust tests** and
+**88 browser cases** (44 scenarios in Chromium and WebKit), the production
+WASM/frontend build, Rust/frontend formatting, and workspace/all-target Clippy.
+Native tests generate the actual 125-AO Molden density at 32, 40, and 48, compare
+sampled values with the unchanged reference evaluator, and assert retained
+resolution, imported-grid, overflow, and worst-case mesh allocation limits.
+Browser checks cover real 48-cubed sampling, visible phase progress, timer/frame
+and camera responsiveness during work, termination before completion, exact
+prior-document preservation, and successful fresh-worker retry. No worker
+delay or mock calculation was used for that cancellation check. Mesh/raycast/
+volume pixels, save/reopen, and desktop/mobile screenshots were checked, and
+165 local Markdown targets exist. Native desktop interaction, native bundle,
+and packaging were not rerun. See [status](status.md).
+
+Before that follow-up, the density-sampling fix passed **94 workspace Rust tests**
+and **84 browser cases**, along with production WASM/frontend build, Rust
+formatting and workspace/all-target Clippy. Added coverage checks scalar/reference parity,
+nonsymmetric/signed/extreme matrices, the actual 125-AO file's density at 24,
+the then-retained rejection at 32, all rendering modes, and exact persistence. The point/
+gradient reference evaluator is unchanged. Native desktop interaction and
+packaging remain separate, unrerun gates for this fix. See [status](status.md).
+
+The orbital-browser increment passed **83 workspace Rust tests** and the full
+**82 browser cases** (41 scenarios in Chromium and WebKit) on 4 October 2026,
+plus production WASM/frontend build, Rust formatting, workspace/all-target
+Clippy, and frontend formatting. The 16 new cases exercise metadata, the full
+118-orbital imported list, bounded selection, persistence, active-grid pixel
+identity, mobile layout, and atomic cancellation/failure. Screenshots were
+inspected. An existing mobile pixel assertion now waits for the next rendered
+frame rather than assuming calculation completion means pixels are ready;
+the threshold is unchanged. Native bundle/packaging tests and interactive
+native orbital selection were not rerun for this increment.
 
 The cube/all-format-bonds increment passed **83 workspace Rust tests**, including
 the native destination-guard test, and **66 browser cases** (33 scenarios in
@@ -99,8 +152,9 @@ documented priorities, not permission for an unrelated rewrite:
 | Remaining external formats and richer UI | Shared import/model/format boundaries, UI | Broader Molden producer fixtures, future formats only when selected by user; metadata/material editing, undo, camera persistence without stale source associations |
 | Public macOS release | Packaging, licensing, platform qualification | Supported-device/OS matrix, clean install, independent license review, Developer ID signing/notarization and distribution testing |
 
-Shrinkwrap, full transfer functions, schema freezing/migrations, larger workloads,
-native parallel jobs, and future user-selected converters also remain open.
+Shrinkwrap, full transfer functions, schema freezing/migrations, streaming beyond
+preview allocation limits, native parallel jobs, and future user-selected
+converters also remain open.
 Direct ORCA is deferred in favor of its existing Molden export tool; no direct
 Gaussian-log/T41 reader was added; Gaussian cube is a separate supported scalar
 profile. PDB is not a full metadata-preserving importer. Do not quietly downgrade
@@ -112,6 +166,14 @@ these requirements because the current preview can display a scene.
   threads. The worker has one transient grid cache, distinct from saved meshes.
 - `mcubes` is classic marching cubes, not MC33. The scalar Rust evaluator is a
   reference implementation, not the proposed optimized scientific kernel.
+- Analytic grid sampling has a separate value-only path. Preserve its agreement
+  with the point/gradient reference and retain both halves of nonsymmetric
+  matrices when folding pairs. There is no estimated CPU-work cutoff; long
+  jobs stay inside the worker. Retain numerical/domain validation, API grids
+  from 12 through 80, imported-grid bounds, worst-case mesher allocation checks,
+  and document/container budgets. The UI still offers 24/32/40/48; progress
+  reports phases rather than voxel counts or an ETA. Termination, request IDs,
+  and generation tokens must prevent cancelled or stale work from publishing.
 - The as-built scene is in bohr, despite the early proposal's angstrom renderer.
 - JSON transport folds negative zero; source hashes explicitly canonicalize it.
   Native binary arrays retain f64 bits. Preserve cross-runtime hash tests.
@@ -122,8 +184,12 @@ these requirements because the current preview can display a scene.
   error must not prevent opening/saving a valid f64 document.
 - `ImportReport.requires_save` drives the UI dirty state, including native bond
   backfill. Do not infer clean state solely from the `.molekel` extension.
-- Generation replaces meshes for the selected field, not the whole document.
-  Reopening saved meshes must not require regeneration or a source attachment.
+- Generation replaces meshes only for the selected field(s), not the whole
+  document. Orbital batches commit atomically after native encoding preflight;
+  do not publish intermediate jobs or associate the last grid with a different
+  active field. Checkbox selection is transient; volume/raycast still uses one
+  active field. Reopening saved meshes must not require regeneration or a source
+  attachment. Cancel must work even when the prior document has no active field.
 - Tests use four unchanged legacy PDB fixtures, `data/molden.input`, and three
   cube fixtures outside `next/`. Their exact paths are listed by the packager
   and [cube guide](cube-import.md); keep them in supplied source archives.

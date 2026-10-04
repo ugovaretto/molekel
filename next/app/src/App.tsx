@@ -13,6 +13,7 @@ import {
   Check,
   ChevronDown,
   ArrowRightLeft,
+  ListChecks,
   X,
 } from "lucide-react";
 import { request, cancel } from "./science";
@@ -26,6 +27,7 @@ import {
   type SourceFile,
 } from "./files";
 import { ConvertFiles } from "./ConvertFiles";
+import { OrbitalBrowser, maxOrbitalBatch } from "./OrbitalBrowser";
 import { Viewport } from "./Viewport";
 import type {
   MolekelDocument,
@@ -34,6 +36,7 @@ import type {
   ImportReport,
   ImportResult,
   RenderMode,
+  Surface,
 } from "./types";
 
 export default function App() {
@@ -49,6 +52,7 @@ export default function App() {
   const [dirty, setDirty] = useState(false);
   const [importReport, setImportReport] = useState<ImportReport | null>(null);
   const [converterOpen, setConverterOpen] = useState(false);
+  const [orbitalsOpen, setOrbitalsOpen] = useState(false);
   const [protectedSourcePath, setProtectedSourcePath] = useState<
     string | undefined
   >();
@@ -58,27 +62,92 @@ export default function App() {
   const unsaved = useRef(dirty);
   current.current = doc;
   unsaved.current = dirty;
-  async function compute(document: MolekelDocument, res = resolution) {
+  async function compute(
+    document: MolekelDocument,
+    res = resolution,
+    orbitals?: string[],
+  ) {
     if (!document.view.field) return;
+    const fields = orbitals ?? [document.view.field];
+    if (!fields.length) return;
+    if (
+      orbitals &&
+      (fields.length > maxOrbitalBatch ||
+        new Set(fields).size !== fields.length ||
+        fields.some((id) => !document.orbitals.some((o) => o.id === id)))
+    ) {
+      setError(
+        `Select at most ${maxOrbitalBatch} distinct orbitals per generation.`,
+      );
+      return;
+    }
     const token = ++generation.current;
     setBusy("Calculating field and surfaces");
     setError("");
     const started = performance.now();
     try {
-      const result = await request<Generation>("generate", {
-        doc: { ...document, surfaces: [] },
-        field: document.view.field,
-        resolution: res,
-        iso: document.view.isovalue,
-      });
+      const retained = document.surfaces.filter(
+        (s) => !s.field || !fields.includes(s.field),
+      );
+      const generated: Surface[] = [];
+      let activeGrid: Grid | null = null;
+      const meshBytes = (s: Surface) =>
+        8 * (s.positions.length + s.normals.length) + 4 * s.indices.length;
+      let bytes = retained.reduce((total, s) => total + meshBytes(s), 0);
+      for (const [index, field] of fields.entries()) {
+        const description = orbitals
+          ? `Calculating orbital ${index + 1} of ${fields.length}: ${document.orbitals.find((o) => o.id === field)!.label}`
+          : "Calculating field and surfaces";
+        setBusy(description);
+        const result = await request<Generation>(
+          "generate",
+          {
+            doc: { ...document, surfaces: [] },
+            field,
+            resolution: res,
+            iso: document.view.isovalue,
+          },
+          (stage) => {
+            if (token !== generation.current) return;
+            if (stage === "sampling")
+              setBusy(`${description} / Sampling field`);
+            if (stage === "meshing")
+              setBusy(`${description} / Extracting meshes`);
+          },
+        );
+        if (token !== generation.current) return;
+        generated.push(...result.surfaces);
+        bytes += result.surfaces.reduce((total, s) => total + meshBytes(s), 0);
+        if (retained.length + generated.length > 128 || bytes > fileByteLimit)
+          throw new Error(
+            "Generated geometry exceeds the preview budget. Select fewer orbitals or lower the grid resolution; previous surfaces were retained.",
+          );
+        if (field === document.view.field) activeGrid = result.grid;
+      }
+      // Publish the complete batch only after Rust validates its combined document.
+      await request(
+        "validate",
+        { doc: { ...document, surfaces: [...retained, ...generated] } },
+        () => {
+          if (token === generation.current)
+            setBusy("Calculating surfaces / Checking saved geometry");
+        },
+      );
       if (token !== generation.current) return;
       setDoc((d) =>
         d
           ? {
               ...d,
+              view: {
+                ...d.view,
+                field: document.view.field,
+                isovalue: document.view.isovalue,
+              },
               surfaces: [
-                ...d.surfaces.filter((s) => s.field !== document.view.field),
-                ...result.surfaces.map((s) => ({
+                ...d.surfaces.filter(
+                  (s) => !s.field || !fields.includes(s.field),
+                ),
+                ...generated.map((s) => ({
                   ...s,
                   opacity: d.view.opacity,
                   color:
@@ -90,17 +159,31 @@ export default function App() {
             }
           : d,
       );
-      setGrid(result.grid);
+      setGrid(activeGrid);
+      if (orbitals) {
+        setMode("mesh");
+        setResolution(res);
+      }
       setReset((v) => v + 1);
       setDirty(true);
       setStatus(
-        `${result.surfaces.reduce((n, s) => n + s.indices.length / 3, 0).toLocaleString()} triangles / ${((performance.now() - started) / 1000).toFixed(2)} s`,
+        `${orbitals ? `${fields.length} orbitals / ` : ""}${generated.reduce((n, s) => n + s.indices.length / 3, 0).toLocaleString()} triangles / ${((performance.now() - started) / 1000).toFixed(2)} s`,
       );
     } catch (e) {
       if (token === generation.current) setError(String(e));
     } finally {
       if (token === generation.current) setBusy("");
     }
+  }
+  function generateOrbitals(ids: string[], iso: number, res: number) {
+    if (!doc || busy || !ids.length) return;
+    const field = ids.includes(doc.view.field ?? "") ? doc.view.field : ids[0];
+    setOrbitalsOpen(false);
+    void compute(
+      { ...doc, view: { ...doc.view, field, isovalue: iso } },
+      res,
+      ids,
+    );
   }
   async function example(openShell = false) {
     if (
@@ -117,6 +200,7 @@ export default function App() {
     try {
       const d = await request<MolekelDocument>("example", { openShell });
       setDoc(d);
+      setOrbitalsOpen(false);
       setGrid(null);
       setMode("mesh");
       setDirty(false);
@@ -244,6 +328,7 @@ export default function App() {
       )
         return;
       setDoc(d);
+      setOrbitalsOpen(false);
       setGrid(sampled);
       setMode(sampled && !d.surfaces.length ? "volume" : "mesh");
       setReset((v) => v + 1);
@@ -362,6 +447,14 @@ export default function App() {
         open={converterOpen}
         onClose={() => setConverterOpen(false)}
       />
+      {orbitalsOpen && doc && (
+        <OrbitalBrowser
+          document={doc}
+          resolution={resolution}
+          onClose={() => setOrbitalsOpen(false)}
+          onGenerate={generateOrbitals}
+        />
+      )}
       {error && (
         <div className="error" role="alert">
           {error}
@@ -449,27 +542,47 @@ export default function App() {
                   group.fields.length > 0 && (
                     <div className="field-group" key={group.name}>
                       <h3>{group.name}</h3>
-                      {group.fields.map((f) => (
+                      {group.name === "Orbitals" && (
                         <button
-                          className={`field-row ${doc.view.field === f.id ? "selected" : ""}`}
-                          key={f.id}
+                          className="browse-orbitals"
+                          aria-label="Browse orbitals"
+                          title="Browse and select orbitals"
                           disabled={!!busy}
-                          onClick={() => void selectField(f.id)}
+                          onClick={() => setOrbitalsOpen(true)}
                         >
-                          <span className="field-dot" />
-                          <span>
-                            {f.label}
-                            <small>
-                              {"occupation" in f
-                                ? `${f.spin} / occ. ${f.occupation ?? "unknown"}`
-                                : "kind" in f
-                                  ? f.kind
-                                  : f.quantity}
-                            </small>
-                          </span>
-                          {doc.view.field === f.id && <Check size={15} />}
+                          <ListChecks size={16} />
+                          Orbitals ({doc.orbitals.length})
                         </button>
-                      ))}
+                      )}
+                      <div
+                        className={
+                          group.name === "Orbitals"
+                            ? "orbital-field-list"
+                            : undefined
+                        }
+                      >
+                        {group.fields.map((f) => (
+                          <button
+                            className={`field-row ${doc.view.field === f.id ? "selected" : ""}`}
+                            key={f.id}
+                            disabled={!!busy}
+                            onClick={() => void selectField(f.id)}
+                          >
+                            <span className="field-dot" />
+                            <span>
+                              {f.label}
+                              <small>
+                                {"occupation" in f
+                                  ? `${f.spin} / occ. ${f.occupation ?? "unknown"}`
+                                  : "kind" in f
+                                    ? f.kind
+                                    : f.quantity}
+                              </small>
+                            </span>
+                            {doc.view.field === f.id && <Check size={15} />}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   ),
               )}
@@ -563,7 +676,7 @@ export default function App() {
               <button
                 className="primary generate"
                 disabled={
-                  !doc.view.field || (!!busy && !busy.startsWith("Calculating"))
+                  busy ? !busy.startsWith("Calculating") : !doc.view.field
                 }
                 onClick={() => (busy ? stop() : compute(doc))}
               >

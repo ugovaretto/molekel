@@ -1,9 +1,176 @@
 # Implementation status
 
-Date: 3 October 2026. Branch: `2026`. All new implementation is under `next/`; legacy source, data, and historical research remain untouched. Root `AGENTS.md` is the user-requested development entry point. The previously requested root ignore rule excludes repository-local `tmp/`.
+Date: 4 October 2026. Branch: `2026`. All new implementation is under `next/`; legacy source, data, and historical research remain untouched. Root `AGENTS.md` is the user-requested development entry point. The previously requested root ignore rule excludes repository-local `tmp/`.
 
 Start with the [documentation map](README.md), [user guide](user-guide.md),
 [as-built architecture](architecture.md), or [agent handoff](handoff.md).
+
+## Version 0.3.0
+
+The user requested version **0.3.0**, a commit of the accumulated application
+changes, an annotated `v0.3.0` tag, and a push of the current `2026` branch to
+`origin`. This increment includes the orbital browser and atomic multi-orbital
+meshes, optimized scalar density sampling, and cancellable larger background
+calculations documented below. The user also confirmed that the density in
+`data/molden.input` generates effectively instantaneously at 48 cubed on their
+machine; this is a local observation, not a performance guarantee.
+
+The Rust workspace and its six first-party lock entries, frontend package and
+lockfile, Tauri metadata, and current version descriptions now use 0.3.0.
+External dependencies, frozen scientific reference values, and native schema
+`[0, 1]` are unchanged. Earlier entries describe work before this release request;
+their statements that no version bump or commit was requested are historical.
+Inspect Git to establish the actual commit, tag, and remote state.
+
+After the version update, **98 workspace Rust tests** and the complete
+**88 Chromium/WebKit browser cases** pass. Production WASM/TypeScript/frontend
+build, Rust/frontend formatting, workspace/all-target Clippy with warnings
+denied, and all 165 local Markdown targets pass validation. Structured checks
+confirm that all six crate versions and frontend/Tauri metadata agree, and
+that manifest/lockfile contents changed only in first-party versions. The
+existing large frontend-chunk build warning remains; no dependencies changed.
+No native bundle, tester ZIP, public release upload, or notarization was requested;
+native interaction and packaging tests were not rerun.
+The separate user chat export is left untracked and excluded from this commit.
+
+## Larger background calculations
+
+The user authorized removing the estimated CPU-work restriction while preserving a
+responsive interface, cancellation, and memory/mesh safeguards. Analytic
+sampling no longer rejects requests based on the former 150-million estimated
+work-unit cap. This applies to all analytic fields, not only `molden.input`;
+the actual requested resolution is used without an automatic downgrade.
+The existing UI options remain 24, 32, 40, and 48 samples per axis.
+
+Calculations continue in the existing dedicated Rust/WASM Web Worker. The
+worker sends request-associated sampling, meshing, and validation phase events
+without resolving the pending result. The footer displays the current phase;
+there is no percentage or remaining-time estimate. Cancel terminates the
+worker and retains the prior document, meshes, and active sampled grid. A
+subsequent request starts a fresh worker. Retired-worker events are ignored,
+and the existing atomic publication/native-encoding preflight remains intact.
+
+Retained guards include model validation, finite-value and diffuse-domain
+checks, API sampling resolution 12 through 80, 128-cubed imported sample count,
+the two-million worst-case mesher vertex bound, 128 saved surfaces, and 128 MiB
+geometry/native-container budgets. The mesher rejects excessive worst-case
+output before copying its sampled input. These guards bound admitted data and
+individual allocations, not total browser memory or calculation latency.
+
+Verification on 4 October 2026: **98 workspace Rust tests**, **88 browser cases**
+(44 scenarios in Chromium and WebKit), production WASM/TypeScript/frontend
+build, Rust/frontend formatting, and workspace/all-target Clippy pass. Actual-file
+native tests generate finer density meshes at 32, 40, and 48 than at 24, compare
+sampled values with the unchanged point evaluator, and preserve input science.
+Additional rejection tests cover sampling resolution, imported-grid size,
+dimension overflow, and the exact worst-case mesher boundary.
+
+Browser tests verify real 48-cubed Molden density generation, sampled/reference
+agreement, all three rendering modes, exact science/mesh save-reopen, and mobile
+framing. A real in-flight sampling job reports its phase while page timers,
+animation frames, and camera interaction continue. Cancel terminates that worker
+before its result, preserves the exact saved document, and allows a fresh-worker
+retry. That check uses the unmodified source file and no delayed or mocked
+calculation. The six focused cases passed twice; the final run and complete
+88-case suite include the visible sampling-phase assertion. Desktop/mobile
+screenshots were inspected and all 165 local Markdown targets checked exist.
+WASM builds finished before browser tests ran.
+
+This work preserves the prior uncommitted orbital-browser and scalar-sampling
+increments. No version bump, commit, tag, push, native bundle, or tester ZIP was
+requested. Native desktop interaction and packaging tests were not rerun, and
+the user's running server was not restarted.
+
+## Earlier density sampling work-budget fix
+
+This records the preceding optimization. Its retained CPU cap and 32-cubed
+rejection were superseded by the larger-background-calculation follow-up above.
+
+The user reported that `data/molden.input` could not generate its density even
+at the UI minimum of 24 cubed. Reproduction confirmed 125 basis functions and
+229,340,160 estimated work units, exceeding the existing 150-million cap.
+The old sampling loop called the full value-and-gradient evaluator, discarded
+the gradients, and contracted all `n*n` matrix entries at every grid point.
+
+Scalar sampling now resolves the field once, reuses a value-only AO buffer,
+and folds real density pairs as `Pij + Pji` with separate diagonal terms.
+It preserves nonsymmetric and signed matrices without dropping coefficients or
+substituting occupation-derived orbitals for arbitrary matrices. Nonfinite
+folded coefficients use the original full matrix; alternate multiplication
+order protects representable extreme products. The original point/gradient
+reference evaluator, scientific inputs/hashes, native schema, dependencies,
+application version, and 150-million work cap remain unchanged. Budget errors
+now report the maximum admissible integer resolution.
+
+For this file, 24 cubed now costs 122,204,160 estimated work units and produces
+13,824 samples plus a 460-triangle density mesh at isovalue 0.08. Higher UI
+settings still exceed the cap (the calculated integer maximum is 25); no
+automatic resolution reduction or blanket large-workload support is implied.
+
+Verification on 4 October 2026: **94 workspace Rust tests**, **84 browser cases**
+(42 scenarios in Chromium and WebKit), production WASM/TypeScript/frontend
+build, Rust formatting, and workspace/all-target Clippy pass. New native
+tests compare sampling against the unchanged reference evaluator on four
+frozen PySCF documents and nonsymmetric/antisymmetric/signed/extreme matrices.
+Actual-file regressions cover 24-cubed generation, retained rejection at 32,
+source hashes and native persistence. Browser checks also compare sampled
+values with analytic points and exercise mesh/raycast/volume pixels, camera
+movement, exact science/mesh save-reopen, and mobile framing. Desktop/mobile
+screenshots were inspected, and 162 local Markdown targets checked successfully.
+
+This follow-up preserves the uncommitted orbital-browser work. No commit, tag,
+push, version bump, native bundle, or tester ZIP was requested. Native desktop
+interaction and packaging tests were not rerun; the running server was not
+restarted. The rebuilt WASM core is available in the existing web preview.
+
+## Orbital browser and batch meshes
+
+The orbital-browser increment follows `v0.2.1` without changing application
+version, native schema, dependencies, import profiles, or scientific algorithms.
+The [legacy Electron Density interface](https://ugovaretto.github.io/molekel/wiki/pmwiki.php/ReferenceGuide/ElectronDensity.html)
+and its dialog image informed the metadata table. This increment implements
+orbital listing and selection, not the legacy dialog's full bounding-box, nodal,
+potential-mapping, or density controls.
+
+The searchable table lists every imported orbital in source order, with label,
+spin, occupation, energy in hartree, and saved-mesh count. Missing energy or
+occupation remains unknown, not zero. Filtering preserves hidden selections;
+selection does not change the scene until Generate selected. A batch accepts
+up to 32 orbitals, a positive isovalue, and a bounded grid resolution. Larger
+selections show an error and disable generation; nothing is silently truncated.
+
+Jobs run sequentially through the existing Rust/WASM worker. The UI accumulates
+results without changing the live document, checks aggregate geometry bounds,
+and uses Rust native encoding as a persistence preflight before publishing.
+Success replaces only selected fields' meshes; all other field meshes remain.
+Cancel or any failure retains the prior document, active grid, and generation
+settings. The Cancel control also works for native documents with no initially
+active field. Only the chosen active orbital's sampled grid is retained for
+volume/raycast modes; those modes do not combine multiple fields. Checkbox
+selection is transient, while generated meshes persist in `.molekel` files.
+
+Verification on 4 October 2026: **83 workspace Rust tests** and **82 browser
+cases** (41 scenarios in Chromium and WebKit) pass, along with Rust formatting,
+workspace/all-target Clippy with warnings denied, Prettier, and the production
+WASM/TypeScript/frontend build. The 16 new browser cases cover the full
+118-orbital legacy Molden list, metadata/nulls, filtering and the 32-orbital
+limit, mobile horizontal scrolling, both mesh signs, exact save/reopen,
+preserved density surfaces, active-grid pixel parity, camera movement, and
+atomic recovery from cancellation, worker failure, invalid source hashes, and
+native-format budget rejection. Desktop/mobile table, mesh, and viewport
+screenshots were inspected. All 159 relative Markdown targets checked in the
+rewrite README and current guides exist.
+
+The initial full browser pass exposed an immediate-pixel-read timing race in
+the existing WebKit mobile test. It now polls for the same nonblank-pixel
+threshold, allowing the renderer's next animation frame; rendering code and
+the threshold are unchanged. Five focused repetitions and the complete
+82-case rerun pass. No WASM build ran concurrently with browser tests.
+
+No native shell or packaging behavior changed. No tester ZIP, version bump,
+commit, tag, or push was requested for this increment. Full native-dialog and
+clean-machine release gates remain open. The native bundle and packaging tests
+were not rerun for this UI increment, and the native app was not restarted.
 
 ## Version 0.2.1
 

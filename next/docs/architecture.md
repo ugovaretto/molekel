@@ -1,6 +1,6 @@
 # As-built architecture
 
-This describes the 0.2.1 development preview, not the complete
+This describes the 0.3.0 development preview, not the complete
 [proposed architecture](../../doc/rewrite/03-architecture-decision.md).
 Read [status](status.md) for dated verification and uncompleted release gates.
 
@@ -45,6 +45,7 @@ by native saving. There is no calculation server, remote service, or database.
 | [Native format](../crates/molekel-format/src/lib.rs) and [filesystem adapter](../crates/molekel-format/src/native.rs) | Portable container, checksums/validation, atomic native writes |
 | [WASM bridge](../crates/molekel-wasm/src/lib.rs) | `example`, `validate`, `import_document`, compatibility `import_text`, `encode`, `decode`, `sample`, `surfaces`, point/gradient probes |
 | [Document UI](../app/src/App.tsx) and [types](../app/src/types.ts) | Document state, controls, dirty state, generation replacement, error recovery |
+| [Orbital browser](../app/src/OrbitalBrowser.tsx) | Full orbital metadata table, filtering, transient checkbox selection, bounded multi-orbital generation settings |
 | [Worker client](../app/src/science.ts) and [worker](../app/src/science.worker.ts) | Request lifecycle, WASM initialization, single sampled-grid cache, cancellation |
 | [Viewport](../app/src/Viewport.tsx) and [sampled renderer](../app/src/volume.ts) | Scene/materials, OrbitControls, picking, PNG download, sampled raycast/volume shaders |
 | [File adapter](../app/src/files.ts) | Browser file/download versus native dialog/read/save |
@@ -155,13 +156,62 @@ not part of this increment. Qualified ORCA Molden exports use the shared library
    changing its display resolution uses this path without creating surfaces.
    For `generate`, `mcubes` extracts positive and negative isosurfaces. Empty meshes are omitted.
    Affine mesh positions/normals are converted to model coordinates.
-5. The UI replaces surfaces of the selected field, retains other fields'
+5. The UI stages the generated meshes, preflights native encoding of the combined
+   document through Rust, then replaces surfaces of the selected field, retains other fields'
    surfaces, stores the transient grid separately, and marks the document dirty.
 
-Request IDs resolve worker promises. Cancellation terminates the worker,
-rejects outstanding work, and clears the worker cache. The next request starts
-a new worker. A UI generation token prevents stale completion from overwriting
-new state; cancellation is not a resumable checkpoint or cooperative progress API.
+Analytic grid sampling computes scalar AO values only, resolving the field once
+and reusing an AO buffer. The separate value-and-gradient reference evaluator
+is unchanged. Real density sampling folds each off-diagonal pair into
+`Pij + Pji`, retaining diagonal terms and both halves of nonsymmetric matrices;
+it does not reconstruct arbitrary matrices from orbital occupations or discard
+small coefficients. If a folded coefficient overflows, sampling uses the
+original full matrix. Extreme intermediate products use an alternate
+multiplication order rather than overflowing an otherwise representable value.
+There is no estimated CPU-work cutoff for analytic sampling. The previous
+150-million-work-unit rejection has been removed, not increased or bypassed
+for selected files. Sampling retains its API range of 12 through 80 per axis,
+and the UI continues to offer 24, 32, 40, and 48. It does not silently lower
+the requested resolution; the 125-AO density in `data/molden.input` is no longer
+restricted to 24 cubed by a work estimate. Finite-value and domain checks,
+imported-grid bounds, the two-million-vertex worst-case mesher allocation bound,
+and document/container budgets still apply. Removing the CPU estimate does
+not establish a maximum runtime or remove memory-related rejections.
+
+The orbital browser lists `document.orbitals` in original document order,
+using one-based row numbers and imported label/spin/occupation/energy metadata.
+Missing numerical metadata displays as `--`; unknown spin is labeled Unknown.
+Search matches number, ID, label, or spin. Filtered select-all affects only
+listed rows; hidden selections remain selected. Saved counts derive from
+surface field IDs, including hidden meshes. The browser owns checkbox selection
+and draft isovalue/resolution locally, with the active orbital initially checked.
+Closing without generating does not change the document.
+
+Multi-orbital generation uses the same `generate` operation serially for up to
+32 distinct orbital IDs in document order. The parent rechecks the selection
+and stages all results without publishing partial meshes. The retained plus
+generated geometry is bounded by 128 surfaces and an estimated 128 MiB of
+f64 positions/normals and u32 indices. The worker's `validate` operation also
+encodes the complete combined document through the Rust native format and
+discards the output, checking model and native-container budgets with all
+retained scientific inputs before commit. This persistence preflight has an
+additional encoding/memory cost but writes no file. These are preview rejection
+budgets, not guarantees of acceptable memory use or latency. Cancellation or
+any batch error leaves previous surfaces untouched. A successful batch replaces
+only selected fields' meshes, keeps unrelated saved meshes, and enters mesh mode.
+The active field stays unchanged if its orbital was selected, otherwise it
+becomes the first selected orbital. Only that field's display grid is retained
+in the UI for sampled rendering; the worker still has a single-entry cache.
+
+Request IDs resolve worker promises and associate progress events with the
+request that emitted them. Sampling, meshing, and validation stage events update
+the footer while the UI remains separate from synchronous Rust/WASM work.
+They indicate phases, not completed voxel counts, percentages, or estimated
+remaining time. Stale progress is ignored through request and generation-token
+checks, just like stale completion. Cancellation terminates the same Web Worker,
+rejects outstanding work, and clears its cache; it does not cooperatively stop
+inside a Rust loop. The next request starts a new worker. Previous completed
+geometry remains intact, and cancellation is not a resumable checkpoint.
 
 Mesh mode renders durable surface records. Sampled raycast and volume modes
 use a 3D texture and replace the selected field's mesh display. Other fields'
@@ -191,9 +241,11 @@ JSON keys, and canonicalize negative zero because the JavaScript JSON bridge
 folds its sign. A source mismatch is rejected; revision-aware historical assets
 are not yet implemented. Never discard saved meshes as disposable cache data.
 
-Persistent view settings include representation, field selection, colors,
+Persistent view settings include representation, active field selection, colors,
 opacity, and isovalue. Camera, active render mode, grid-resolution control,
-worker cache, transient display grid, and dirty state are not persisted. A
+orbital-browser checkbox selection, worker cache, transient display grid, and
+dirty state are not persisted. Multi-orbital selection produces independent
+saved meshes, not a new combined orbital/density or multiple active volumes. A
 loaded document can show saved geometry without recomputation. A selected
 authoritative grid also gets a new transient display sample on Open, making
 sampled modes available immediately. Analytic orbital/density fields still need
