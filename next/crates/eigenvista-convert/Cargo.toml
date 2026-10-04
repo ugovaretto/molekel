@@ -1,0 +1,15 @@
+[package]
+name = "eigenvista-convert"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+eigenvista-import = { path = "../eigenvista-import" }
+eigenvista-format = { path = "../eigenvista-format" }
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+eigenvista-core = { path = "../eigenvista-core" }
+zip = { version = "2.4", default-features = false, features = ["deflate"] }

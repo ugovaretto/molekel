@@ -1,6 +1,32 @@
 # Native preview profile
 
-This implementation is an experimental subset of the research proposal, not its frozen version-1 schema. The reader only accepts `format: molekel`, `version: [0, 1]`, `required_features: [molekel-preview-polynomial-v1]`, and `coordinate_unit: bohr`. The exact model is defined in `crates/molekel-core/src/model.rs`.
+This implementation is an experimental subset of the research proposal, not
+its frozen version-1 schema. New files use `format: eigenvista`,
+`version: [0, 1]`, `required_features: [eigenvista-preview-polynomial-v1]`, and
+`coordinate_unit: bohr`. The exact model is defined in the
+[Rust core](../crates/eigenvista-core/src/model.rs).
+
+## Naming and compatibility
+
+The canonical filename suffix is `.eigenvista`. The decoder also accepts the
+previous matched identifiers, `format: molekel` with
+`required_features: [molekel-preview-polynomial-v1]`, for existing `.molekel`
+preview documents. Mixing old and new identifiers is not a supported profile.
+This compatibility does not extend to arbitrary files from legacy C++ Molekel.
+
+The rename leaves the `[0, 1]` document shape, scientific arrays, field/source
+hashes, and cached mesh semantics unchanged. Decoding an old file does not
+rewrite it or require regeneration of its surfaces. Open still applies the
+existing, separately reported missing-bond supplementation policy below.
+The shared importer reports `ImportReport.format = "eigenvista"` for both
+old and new native profiles.
+
+Encoding always writes the new EigenVista identifiers. Native Save accepts
+both `.eigenvista` and the legacy `.molekel` suffix, defaulting to `.eigenvista`,
+but choosing the old suffix does not produce the old profile. Newly saved
+files therefore are not guaranteed readable by previous Molekel builds.
+Keep the original old-profile file when compatibility with those builds is
+required. No bulk file migration is performed by the rename.
 
 Molden conversion uses this same profile without a schema change. Explicit
 normalized basis functions, orbitals/occupations/energies, occupation-derived
@@ -15,7 +41,7 @@ original finite f64 samples (reordered x-fastest), atoms, inferred bonds, source
 digest, and dataset/provenance metadata are stored. Display downsampling never
 replaces that authoritative grid. Generated signed meshes include their sampled
 grid geometry and source hash as usual, so the cube source need not accompany a
-saved `.molekel`. Preview f32 overflow can prevent rendering without preventing
+saved `.eigenvista`. Preview f32 overflow can prevent rendering without preventing
 import/save of valid f64 data. See [cube import](cube-import.md).
 
 The ZIP contains `manifest.json` first and `arrays/aN/0.bin` entries. Numeric array leaves in the document are replaced by `{ "$array": "aN" }` references. Descriptors record shape, entry, byte count, SHA-256, and either `f64` or `u32`. Values are little-endian and row-major; grids are x-fastest. Authoritative Rust float arrays remain f64. Mesh positions are f64 containers for the f32 interpolated result, with that precision limitation recorded explicitly.
@@ -26,7 +52,7 @@ Saved surface records contain source field ID and scientific hash, signed isoval
 
 Loading verifies ZIP paths, duplicate entries, supported compression, declared inflated size, reference coverage, shape products, byte lengths, digests, finite arrays, IDs, indices, and scientific dimensions. Entry count, file size, inflated size, grid size, and mesh size are bounded. The preview refuses unreferenced archive entries and unsupported required profiles. Original source attachments, arbitrary extensions, multiple geometry revisions, chunk streaming, and migrations are not implemented.
 
-`molekel-format::decode` preserves the validated document exactly. The shared
+`eigenvista-format::decode` preserves the validated document exactly. The shared
 import layer used by Open and conversion subsequently supplements missing
 display bonds from atom positions, retaining every existing edge and its order.
 This is reported as an unsaved change, never silently written back to the

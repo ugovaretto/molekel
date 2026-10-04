@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { MolekelDocument } from "../src/types";
+import type { EigenVistaDocument } from "../src/types";
 
 const inputs = [
   {
@@ -80,16 +80,16 @@ for (const input of inputs) {
     const download = page.waitForEvent("download");
     await page.getByRole("button", { name: "Save", exact: true }).click();
     const saved = await download;
-    const file = path.resolve(`../artifacts/${input.name}.molekel`);
+    const file = path.resolve(`../artifacts/${input.name}.eigenvista`);
     await saved.saveAs(file);
     const doc = await page.evaluate(
       async (bytes) => {
-        const url = "/src/wasm/molekel_wasm.js";
+        const url = "/src/wasm/eigenvista_wasm.js";
         const core = await import(/* @vite-ignore */ url);
         await core.default();
         return JSON.parse(
           core.decode(new Uint8Array(bytes)),
-        ) as MolekelDocument;
+        ) as EigenVistaDocument;
       },
       Array.from(readFileSync(file)),
     );
@@ -100,7 +100,7 @@ for (const input of inputs) {
     expect(doc.provenance.join(" ")).toContain("Automatic bonds");
     await page.locator("input[type=file]").setInputFiles(file);
     await expect(page.locator("footer [role=status]")).toHaveText(
-      `Opened ${input.name}.molekel`,
+      `Opened ${input.name}.eigenvista`,
     );
     await expect(page.locator(".document-summary")).toContainText(
       `${input.bonds} bonds`,
@@ -227,11 +227,13 @@ test("legacy protein and multiple-model PDB files use the same WASM path", async
   }));
   await page.goto("/");
   const counts = await page.evaluate(async (files) => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
     return files.map(({ name, text }) => {
-      const doc = JSON.parse(core.import_text(text, name)) as MolekelDocument;
+      const doc = JSON.parse(
+        core.import_text(text, name),
+      ) as EigenVistaDocument;
       return [doc.atoms.length, doc.bonds.length];
     });
   }, files);

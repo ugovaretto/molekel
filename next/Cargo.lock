@@ -758,6 +758,78 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d0881ea181b1df73ff77ffaaf9c7544ecc11e82fba9b5f27b262a3c73a332555"
 
 [[package]]
+name = "eigenvista-convert"
+version = "0.4.0"
+dependencies = [
+ "eigenvista-core",
+ "eigenvista-format",
+ "eigenvista-import",
+ "serde",
+ "serde_json",
+ "zip",
+]
+
+[[package]]
+name = "eigenvista-core"
+version = "0.4.0"
+dependencies = [
+ "kiddo",
+ "lin_alg",
+ "mcubes",
+ "pdbtbx",
+ "serde",
+ "serde_json",
+ "sha2",
+]
+
+[[package]]
+name = "eigenvista-desktop"
+version = "0.4.0"
+dependencies = [
+ "eigenvista-core",
+ "eigenvista-format",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-dialog",
+ "tauri-plugin-fs",
+]
+
+[[package]]
+name = "eigenvista-format"
+version = "0.4.0"
+dependencies = [
+ "eigenvista-core",
+ "serde",
+ "serde_json",
+ "sha2",
+ "zip",
+]
+
+[[package]]
+name = "eigenvista-import"
+version = "0.4.0"
+dependencies = [
+ "eigenvista-core",
+ "eigenvista-format",
+ "serde",
+ "serde_json",
+ "sha2",
+ "zip",
+]
+
+[[package]]
+name = "eigenvista-wasm"
+version = "0.4.0"
+dependencies = [
+ "eigenvista-core",
+ "eigenvista-format",
+ "eigenvista-import",
+ "serde_json",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "embed-resource"
 version = "3.0.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1920,76 +1992,6 @@ dependencies = [
  "libc",
  "wasi",
  "windows-sys 0.61.2",
-]
-
-[[package]]
-name = "molekel-convert"
-version = "0.3.2"
-dependencies = [
- "molekel-core",
- "molekel-format",
- "molekel-import",
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "molekel-core"
-version = "0.3.2"
-dependencies = [
- "kiddo",
- "lin_alg",
- "mcubes",
- "pdbtbx",
- "serde",
- "serde_json",
- "sha2",
-]
-
-[[package]]
-name = "molekel-desktop"
-version = "0.3.2"
-dependencies = [
- "molekel-core",
- "molekel-format",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-dialog",
- "tauri-plugin-fs",
-]
-
-[[package]]
-name = "molekel-format"
-version = "0.3.2"
-dependencies = [
- "molekel-core",
- "serde",
- "serde_json",
- "sha2",
- "zip",
-]
-
-[[package]]
-name = "molekel-import"
-version = "0.3.2"
-dependencies = [
- "molekel-core",
- "molekel-format",
- "serde",
- "serde_json",
- "sha2",
-]
-
-[[package]]
-name = "molekel-wasm"
-version = "0.3.2"
-dependencies = [
- "molekel-core",
- "molekel-format",
- "molekel-import",
- "serde_json",
- "wasm-bindgen",
 ]
 
 [[package]]

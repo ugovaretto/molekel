@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ListX, Play, Search, X } from "lucide-react";
 import { gridResolutions, isGridResolution } from "./resolution";
-import type { MolekelDocument } from "./types";
+import type { EigenVistaDocument } from "./types";
 
 export const maxOrbitalBatch = 32;
 
@@ -11,7 +11,7 @@ export function OrbitalBrowser({
   onClose,
   onGenerate,
 }: {
-  document: MolekelDocument;
+  document: EigenVistaDocument;
   resolution: number;
   onClose: () => void;
   onGenerate: (ids: string[], iso: number, resolution: number) => void;

@@ -27,12 +27,12 @@ function wasm() {
     "--locked",
     "--release",
     "-p",
-    "molekel-wasm",
+    "eigenvista-wasm",
     "--target",
     "wasm32-unknown-unknown",
   ]);
   run("wasm-bindgen", [
-    "target/wasm32-unknown-unknown/release/molekel_wasm.wasm",
+    "target/wasm32-unknown-unknown/release/eigenvista_wasm.wasm",
     "--target",
     "web",
     "--out-dir",
@@ -61,7 +61,7 @@ switch (process.argv[2]) {
       "run",
       "--locked",
       "-p",
-      "molekel-format",
+      "eigenvista-format",
       "--example",
       "reference_documents",
     ]);

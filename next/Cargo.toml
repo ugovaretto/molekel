@@ -1,10 +1,10 @@
 [workspace]
-members = ["crates/molekel-core", "crates/molekel-format", "crates/molekel-import", "crates/molekel-convert", "crates/molekel-wasm", "app/src-tauri"]
-default-members = ["crates/molekel-core", "crates/molekel-format", "crates/molekel-import", "crates/molekel-convert", "crates/molekel-wasm"]
+members = ["crates/eigenvista-core", "crates/eigenvista-format", "crates/eigenvista-import", "crates/eigenvista-convert", "crates/eigenvista-wasm", "app/src-tauri"]
+default-members = ["crates/eigenvista-core", "crates/eigenvista-format", "crates/eigenvista-import", "crates/eigenvista-convert", "crates/eigenvista-wasm"]
 resolver = "2"
 
 [workspace.package]
-version = "0.3.2"
+version = "0.4.0"
 edition = "2024"
 license = "GPL-2.0-or-later"
 

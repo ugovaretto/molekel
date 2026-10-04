@@ -88,7 +88,7 @@ export function ConvertFiles({
           id: ++nextId.current,
           source,
           state: "queued",
-          output: `${source.name.replace(/\.(?:molden\.input|[^.]+)$/i, "").replace(/[^a-z0-9._ -]/gi, "_") || "converted"}.molekel`,
+          output: `${source.name.replace(/\.(?:molden\.input|[^.]+)$/i, "").replace(/[^a-z0-9._ -]/gi, "_") || "converted"}.eigenvista`,
           warnings: [],
           message: "",
         }),

@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { Grid, MolekelDocument } from "../src/types";
+import type { Grid, EigenVistaDocument } from "../src/types";
 
 type DensityWorkerProbe = {
   request: number | null;
@@ -11,14 +11,14 @@ type DensityWorkerProbe = {
 };
 type ProbedWindow = Window & { densityWorkerProbe: DensityWorkerProbe };
 
-async function save(page: Page, filename: string): Promise<MolekelDocument> {
+async function save(page: Page, filename: string): Promise<EigenVistaDocument> {
   const download = page.waitForEvent("download");
   await page.getByTitle("Save document", { exact: true }).click();
   await (await download).saveAs(filename);
   await expect(page.getByLabel("Unsaved changes")).toHaveCount(0);
   return page.evaluate(
     async (bytes) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       return JSON.parse(core.decode(new Uint8Array(bytes)));
@@ -99,7 +99,7 @@ test("a real high-resolution density worker leaves the scene responsive and can 
   const prefix = path.resolve(
     `../artifacts/density-cancel-${testInfo.project.name}`,
   );
-  const before = await save(page, `${prefix}-before.molekel`);
+  const before = await save(page, `${prefix}-before.eigenvista`);
   await expect
     .poll(async () => (await pixels(page)).positive)
     .toBeGreaterThan(250);
@@ -181,7 +181,7 @@ test("a real high-resolution density worker leaves the scene responsive and can 
   await expect(page.getByLabel("Unsaved changes")).toHaveCount(0);
   await expect(page.locator(".surface-row")).toHaveCount(1);
   await page.screenshot({ path: `${prefix}.png` });
-  expect(await save(page, `${prefix}-after.molekel`)).toEqual(before);
+  expect(await save(page, `${prefix}-after.eigenvista`)).toEqual(before);
   await page.getByLabel("Grid resolution", { exact: true }).selectOption("24");
   await page
     .getByRole("button", { name: "Generate surfaces", exact: true })
@@ -256,7 +256,7 @@ for (const resolution of [24, 48]) {
     const prefix = path.resolve(
       `../artifacts/density-budget-${resolution}-${testInfo.project.name}`,
     );
-    const source = await save(page, `${prefix}-before.molekel`);
+    const source = await save(page, `${prefix}-before.eigenvista`);
     expect(source.basis).toHaveLength(125);
     expect(source.orbitals).toHaveLength(118);
     expect(source.densities).toHaveLength(1);
@@ -266,7 +266,7 @@ for (const resolution of [24, 48]) {
     expect(density.label).toContain("Occupation-derived");
     const numerical = await page.evaluate(
       async ({ document, field, resolution }) => {
-        const url = "/src/wasm/molekel_wasm.js";
+        const url = "/src/wasm/eigenvista_wasm.js";
         const core = await import(/* @vite-ignore */ url);
         await core.default();
         const json = JSON.stringify(document);
@@ -355,7 +355,7 @@ for (const resolution of [24, 48]) {
     await expect
       .poll(async () => (await pixels(page)).checksum)
       .not.toBe(beforeRotation.checksum);
-    const filename = `${prefix}-generated.molekel`;
+    const filename = `${prefix}-generated.eigenvista`;
     const generated = await save(page, filename);
     expect(generated).toEqual({
       ...source,
@@ -381,7 +381,9 @@ for (const resolution of [24, 48]) {
     await expect
       .poll(async () => (await pixels(page)).positive)
       .toBeGreaterThan(250);
-    expect(await save(page, `${prefix}-reopened.molekel`)).toEqual(generated);
+    expect(await save(page, `${prefix}-reopened.eigenvista`)).toEqual(
+      generated,
+    );
     await page.setViewportSize({ width: 390, height: 844 });
     await page.getByRole("button", { name: "Fit scene", exact: true }).click();
     await rendered(page);

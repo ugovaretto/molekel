@@ -1,10 +1,11 @@
 # Structure imports and automatic bonds
 
 All supported formats, including XYZ, PDB, Molden, Gaussian cube, and native
-`.molekel`, automatically compute display connectivity through the shared Rust
+`.eigenvista` and legacy `.molekel` preview files, automatically compute display
+connectivity through the shared Rust
 import path. This applies to the native application, browser, and converter CLI.
 There is no separate bond-generation action. The document summary shows atom/bond
-counts; inferred and explicit bonds are saved together in `.molekel` files.
+counts; inferred and explicit bonds are saved together in `.eigenvista` files.
 
 Native import first validates and decodes the document, then appends only missing
 connections. Existing bonds retain their order and endpoint orientation, including
@@ -56,7 +57,7 @@ The preview stores coordinates, elements, and connectivity, not the full PDB hie
 
 Tests cover water/methane XYZ, disconnected fragments, element alignment, model/alternate selection, explicit-plus-inferred connections, duplicate suppression, malformed input, dense-input budgets, coincident/planar/collinear points, and an independent exhaustive pair-distance comparison. Browser tests open XYZ/PDB through the actual file input, inspect rendered pixels, save/reopen connectivity, and check mobile layout and recovery after malformed imports.
 
-[Cube regressions](../crates/molekel-core/tests/cube_import.rs) cover both density
+[Cube regressions](../crates/eigenvista-core/tests/cube_import.rs) cover both density
 and single-orbital imports with automatic bonds. Shared-import and CLI tests
 check native missing-bond backfill, retained explicit connections, unchanged
 scientific grids/meshes, and idempotent reopen. See [cube import](cube-import.md)

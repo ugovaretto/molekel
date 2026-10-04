@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { MolekelDocument } from "../src/types";
+import type { EigenVistaDocument } from "../src/types";
 
 interface MoldenReference {
   reference: {
@@ -89,10 +89,13 @@ async function pixels(page: Page) {
   });
 }
 
-async function decode(page: Page, filename: string): Promise<MolekelDocument> {
+async function decode(
+  page: Page,
+  filename: string,
+): Promise<EigenVistaDocument> {
   return page.evaluate(
     async (bytes) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       return JSON.parse(core.decode(new Uint8Array(bytes)));
@@ -156,7 +159,7 @@ test("Molden Open generates a field and saves quantum data plus durable surfaces
   await page.getByRole("button", { name: "Save", exact: true }).click();
   const saved = await download;
   const filename = path.resolve(
-    `../artifacts/molden-${testInfo.project.name}-roundtrip.molekel`,
+    `../artifacts/molden-${testInfo.project.name}-roundtrip.eigenvista`,
   );
   await saved.saveAs(filename);
   const doc = await decode(page, filename);
@@ -237,15 +240,13 @@ for (const outcome of ["success", "failure"]) {
     await expect(
       page.getByRole("button", { name: "Open", exact: true }),
     ).toBeDisabled();
-    await page
-      .getByLabel("Open molecular file")
-      .setInputFiles({
-        name: "newer.xyz",
-        mimeType: "text/plain",
-        buffer: Buffer.from(
-          "3\nNewer structure\nO 0 0 0\nH 0.9572 0 0\nH -0.239 0.927 0\n",
-        ),
-      });
+    await page.getByLabel("Open molecular file").setInputFiles({
+      name: "newer.xyz",
+      mimeType: "text/plain",
+      buffer: Buffer.from(
+        "3\nNewer structure\nO 0 0 0\nH 0.9572 0 0\nH -0.239 0.927 0\n",
+      ),
+    });
     await expect(page.locator("footer [role=status]")).toHaveText(
       "Opened newer.xyz",
     );
@@ -341,12 +342,12 @@ test("batch conversion keeps the active document and saves only on request", asy
     .filter({ has: page.getByText("water.molden.input", { exact: true }) });
   const download = page.waitForEvent("download");
   await row
-    .getByRole("button", { name: "Save water.molekel", exact: true })
+    .getByRole("button", { name: "Save water.eigenvista", exact: true })
     .click();
   const saved = await download;
-  expect(saved.suggestedFilename()).toBe("water.molekel");
+  expect(saved.suggestedFilename()).toBe("water.eigenvista");
   const filename = path.resolve(
-    `../artifacts/molden-${testInfo.project.name}-converted.molekel`,
+    `../artifacts/molden-${testInfo.project.name}-converted.eigenvista`,
   );
   await saved.saveAs(filename);
   const doc = await decode(page, filename);
@@ -445,13 +446,13 @@ for (const name of [
     await page.goto("/");
     const result = await page.evaluate(
       async ({ bytes, name, reference }) => {
-        const url = "/src/wasm/molekel_wasm.js";
+        const url = "/src/wasm/eigenvista_wasm.js";
         const core = await import(/* @vite-ignore */ url);
         await core.default();
         const imported = JSON.parse(
           core.import_document(new Uint8Array(bytes), `${name}.molden`),
         );
-        const document = imported.document as MolekelDocument;
+        const document = imported.document as EigenVistaDocument;
         const restored = core.decode(core.encode(JSON.stringify(document)));
         const fixture = reference.reference;
         let maxError = 0;
@@ -503,7 +504,7 @@ for (const name of [
         }
         // Unit-coefficient test orbitals expose every imported AO through the public bridge.
         for (let ao = 0; ao < document.basis.length; ao++) {
-          const probe: MolekelDocument = {
+          const probe: EigenVistaDocument = {
             ...document,
             orbitals: [
               {

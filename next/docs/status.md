@@ -5,6 +5,81 @@ Date: 4 October 2026. Branch: `2026`. All new implementation is under `next/`; l
 Start with the [documentation map](README.md), [user guide](user-guide.md),
 [as-built architecture](architecture.md), or [agent handoff](handoff.md).
 
+## Version 0.4.0
+
+The user requested **EigenVista 0.4.0**, committing the rename below, an annotated
+`v0.4.0` tag, and a push of the current `2026` branch to `origin`. The Rust
+workspace and six first-party lock entries, npm package/lockfile, Tauri metadata,
+and current user/architecture/handoff descriptions use 0.4.0. External
+dependencies, icon/logo assets, scientific reference data, and the native
+schema shape `[0, 1]` are unchanged. New documents use EigenVista identifiers;
+the legacy Molekel reader compatibility remains as documented below.
+
+The 0.4.0 release preflight passes **108 workspace Rust tests**, **114
+Chromium/WebKit browser cases**, and **9 packaging tests** after the version
+change. Production WASM/TypeScript/frontend build, Rust/frontend formatting,
+workspace/all-target Clippy with warnings denied, structured version/dependency
+checks, all 202 local documentation targets, and `git diff --check` pass.
+Desktop/mobile branding screenshots were inspected; the converter reports
+`eigenvista-convert 0.4.0`. The existing frontend chunk-size warning remains.
+The running preview and private chat exports are preserved. Native interactive
+and clean-machine installation acceptance remain separate from these checks;
+tester archives are ad-hoc signed, not notarized public releases.
+
+The repository remains at `ugovaretto/molekel`; no organization migration is
+part of this release. Git records the completed commit/tag/push, and each
+delivered tester ZIP's `BUILD-INFO.json` records its exact source and checks.
+
+## EigenVista rename
+
+The user requested renaming the active rewrite to **EigenVista**, keeping its
+icon and logo. That initial rename retained version **0.3.2**; the repository,
+`next/` source location, and current branch remained unchanged. Active packages, commands,
+application metadata, generated WASM names, and documentation adopt EigenVista.
+The native bundle is `EigenVista.app`; the CLI is `eigenvista-convert`; new
+tester ZIP names start with `EigenVista-` and contain
+`Source/eigenvista-source.tar.gz`.
+
+The canonical native suffix is `.eigenvista`. Existing `.molekel` preview files
+remain readable using the previous matched format/profile identifiers, with
+unchanged `[0, 1]` document shape, scientific data, source hashes, and cached
+meshes. Both native profiles report `ImportReport.format: "eigenvista"`.
+Encoding always writes the new `eigenvista` format and
+`eigenvista-preview-polynomial-v1` profile, even when native Save is explicitly
+given the supported legacy `.molekel` suffix. New saves are not guaranteed
+readable in older Molekel builds. No bulk file migration is performed.
+See [native compatibility](preview-format.md).
+
+Verification passes **108 workspace Rust tests** (including native destination
+validation), **114 Chromium/WebKit browser cases**, and **9 packaging tests**.
+Six new Rust regressions cover exact old/new native profiles, mixed-pair
+rejection, scientific arrays/source hashes/cached meshes, import reporting,
+bond repair, and CLI naming/overwrite protection. Four new browser cases cover
+branding, unchanged atom logo, desktop/390/320-pixel header layout, renamed
+downloads, and old-profile Open/save/reopen with full document equality.
+Desktop/mobile screenshots in both engines were inspected; the full existing
+canvas-pixel, camera, quantum import, rendering, high-resolution, and cancellation
+suite also passes. An actual pre-rename water reference file additionally passes
+the renamed CLI's validation.
+
+Production WASM/TypeScript/frontend build, Rust/frontend formatting,
+workspace/all-target Clippy with warnings denied, local documentation targets,
+and `git diff --check` pass. The existing frontend chunk-size warning remains.
+Structured comparisons confirm all eight icon files are byte-identical and all
+external Rust/npm lock entries are unchanged. The numerical core is unchanged
+apart from crate-name substitutions; frozen scientific data is not regenerated.
+
+The packager checks the EigenVista bundle identity, CLI/default filenames,
+source snapshots with uncommitted crate renames, extracted bytes and permissions,
+ad-hoc signatures, and native/WASM example agreement. Exact source identity
+and completed archive checks are recorded in each delivered `BUILD-INFO.json`.
+The tester is not notarized; native interactive and clean-machine installation
+acceptance are not implied. Earlier counts and release evidence below belong
+to the pre-rename Molekel implementation and remain historical evidence.
+The initial rename did not request a version bump, commit, tag, or push. Historical
+Molekel references, Git tags, repository URLs, original research filenames,
+third-party notices, and private chat exports are not renamed.
+
 ## Version 0.3.2
 
 The user confirmed the zoom fix in the web preview, then requested version

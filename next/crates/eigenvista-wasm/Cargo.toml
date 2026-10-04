@@ -1,0 +1,15 @@
+[package]
+name = "eigenvista-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+eigenvista-core = { path = "../eigenvista-core" }
+eigenvista-format = { path = "../eigenvista-format" }
+eigenvista-import = { path = "../eigenvista-import" }
+serde_json.workspace = true
+wasm-bindgen = "=0.2.108"

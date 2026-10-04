@@ -4,7 +4,7 @@ import { readFile } from "@tauri-apps/plugin-fs";
 
 export const native = isTauri();
 export const molecularExtensions =
-  ".molekel,.xyz,.pdb,.cube,.cub,.molden,.molf,.input";
+  ".eigenvista,.molekel,.xyz,.pdb,.cube,.cub,.molden,.molf,.input";
 export const fileByteLimit = 128 * 1024 * 1024;
 export interface SourceFile {
   name: string;

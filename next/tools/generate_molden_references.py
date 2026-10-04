@@ -1,4 +1,4 @@
-"""Generate frozen Molden import references with PySCF, never Molekel."""
+"""Generate frozen Molden import references with PySCF, never EigenVista."""
 
 import argparse
 import hashlib
@@ -129,7 +129,7 @@ def orca_fixture(source):
     assert hashlib.sha256(text.encode()).hexdigest() == ORCA_SHA256
     loaded = load_one(str(original), fmt="molden")
     # A separate established importer resolves the producer convention, then
-    # PySCF/libcint evaluates its canonical export. Molekel is never imported.
+    # PySCF/libcint evaluates its canonical export. EigenVista is never imported.
     canonical_path = TMP / "molden-orca-independent-canonical.molden"
     dump_one(loaded, str(canonical_path), fmt="molden")
     mol, energies, coefficients, occupations, _, _ = molden.load(str(canonical_path))

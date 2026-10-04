@@ -1,21 +1,27 @@
 # Documentation map
 
-This is the documentation hub for the **Rust Molekel development preview**.
+This is the documentation hub for the **Rust EigenVista development preview**.
 It separates the implemented application from the larger planned v1. Start
 with the [user guide](user-guide.md) to use the program, or the
 [root AGENTS.md](../../AGENTS.md) to continue development.
+
+The active rewrite is now EigenVista. Historical Molekel names in research,
+release evidence, repository URLs, and Git tags are preserved. Existing
+`.molekel` preview files remain supported; new saves default to `.eigenvista`.
+The [native profile](preview-format.md) explains input compatibility and the
+limits of opening new saves in older builds.
 
 ## Current documentation
 
 | Need | Read |
 | --- | --- |
-| What Molekel does, installation, controls, files, saving, troubleshooting | [User guide](user-guide.md) |
+| What EigenVista does, installation, controls, files, saving, troubleshooting | [User guide](user-guide.md) |
 | Development setup, run/build commands, tests, outputs | [Development guide](development.md) |
 | Components, code ownership, scientific contracts, runtime data flow | [As-built architecture](architecture.md) |
 | Agent continuation, current baseline, priorities, verification gaps | [Handoff](handoff.md) and [scoped AGENTS.md](../AGENTS.md) |
 | Implemented features, test evidence, M0-M7 progress | [Implementation status](status.md) |
 | Repeatable Apple Silicon tester ZIP, contents, signing boundaries | [Tester packaging](tester-packaging.md) |
-| Implemented `.molekel` container, validation, persistence | [Native preview format](preview-format.md) |
+| Implemented `.eigenvista` container, validation, persistence | [Native preview format](preview-format.md) |
 | XYZ/PDB import policy, automatic bonds across formats, algorithm rationale | [Structure imports](structure-imports.md) |
 | Molden profile, shared Rust importer, CLI, conversion workflow | [Molden import](molden-import.md) and [independent fixtures](../fixtures/molden/README.md) |
 | Gaussian cube profile, volume/raycast previews, signed meshes, preserved grids | [Cube import](cube-import.md) and [analytic fixture](../fixtures/cube/README.md) |

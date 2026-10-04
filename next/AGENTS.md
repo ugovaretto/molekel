@@ -1,9 +1,16 @@
-# Rewrite agent guide
+# EigenVista agent guide
 
 Read the [root working agreement](../AGENTS.md) first. Work only inside `next/`
 for implementation; do not edit legacy source, existing data, or historical
 research. Keep the current branch and preserve existing changes. No C++ or
 copied legacy implementation; use Rust and the established TypeScript UI.
+
+The active rewrite is **EigenVista**, formerly the Molekel Rust preview. Its
+source remains in `next/`; legacy Molekel code, repository URLs, historical
+plans, Git tags, and existing scientific fixtures retain their identity. Use
+`eigenvista-*` Rust packages, the `eigenvista-convert` CLI, and `.eigenvista`
+for new documents. Older `.molekel` preview documents remain readable. See the
+[native profile](docs/preview-format.md) before changing format compatibility.
 
 ## Orientation
 

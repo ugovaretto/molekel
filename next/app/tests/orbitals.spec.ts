@@ -1,7 +1,7 @@
 import { test, expect, type Locator, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { MolekelDocument } from "../src/types";
+import type { EigenVistaDocument } from "../src/types";
 
 const water = {
   name: "water.molden",
@@ -51,15 +51,15 @@ async function select(dialog: Locator, numbers: number[], iso = "0.05") {
   );
 }
 
-async function save(page: Page, name: string): Promise<MolekelDocument> {
+async function save(page: Page, name: string): Promise<EigenVistaDocument> {
   const download = page.waitForEvent("download");
   await page.getByTitle("Save document", { exact: true }).click();
-  const filename = path.resolve(`../artifacts/${name}.molekel`);
+  const filename = path.resolve(`../artifacts/${name}.eigenvista`);
   await (await download).saveAs(filename);
   await expect(page.getByLabel("Unsaved changes")).toHaveCount(0);
   return page.evaluate(
     async (bytes) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       return JSON.parse(core.decode(new Uint8Array(bytes)));
@@ -325,7 +325,7 @@ test("multiple Molden orbitals generate signed persistent meshes while preservin
     .getByLabel("Open molecular file")
     .setInputFiles(
       path.resolve(
-        `../artifacts/orbitals-${testInfo.project.name}-batch.molekel`,
+        `../artifacts/orbitals-${testInfo.project.name}-batch.eigenvista`,
       ),
     );
   await expect(page.locator("footer [role=status]")).toContainText(
@@ -384,7 +384,7 @@ for (const outcome of [
     );
     if (outcome === "cancel-without-active") {
       const bytes = await page.evaluate(async (doc) => {
-        const url = "/src/wasm/molekel_wasm.js";
+        const url = "/src/wasm/eigenvista_wasm.js";
         const core = await import(/* @vite-ignore */ url);
         await core.default();
         return Array.from(
@@ -394,12 +394,12 @@ for (const outcome of [
         );
       }, before);
       await page.getByLabel("Open molecular file").setInputFiles({
-        name: "no-active-orbital.molekel",
+        name: "no-active-orbital.eigenvista",
         mimeType: "application/octet-stream",
         buffer: Buffer.from(bytes),
       });
       await expect(page.locator("footer [role=status]")).toContainText(
-        "Opened no-active-orbital.molekel",
+        "Opened no-active-orbital.eigenvista",
       );
       before = await save(
         page,
@@ -547,21 +547,21 @@ test("missing orbital metadata remains unknown and invalid batch settings cannot
 }) => {
   await ready(page);
   const bytes = await page.evaluate(async () => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
-    const doc = JSON.parse(core.example(false)) as MolekelDocument;
+    const doc = JSON.parse(core.example(false)) as EigenVistaDocument;
     doc.orbitals[0].occupation = null;
     doc.orbitals[0].energy = null;
     return Array.from(core.encode(JSON.stringify(doc)) as Uint8Array);
   });
   await page.getByLabel("Open molecular file").setInputFiles({
-    name: "unknown.molekel",
+    name: "unknown.eigenvista",
     mimeType: "application/octet-stream",
     buffer: Buffer.from(bytes),
   });
   await expect(page.locator("footer [role=status]")).toContainText(
-    "Opened unknown.molekel",
+    "Opened unknown.eigenvista",
   );
   const dialog = await browse(page);
   await expect(row(dialog, 1).getByRole("cell").nth(3)).toHaveText("spatial");

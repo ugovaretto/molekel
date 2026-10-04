@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { MolekelDocument } from "../src/types";
+import type { EigenVistaDocument } from "../src/types";
 
 type WorkerProbe = {
   sampling: boolean;
@@ -36,14 +36,14 @@ async function ready(page: Page) {
   await expect(page.getByRole("alert")).toHaveCount(0);
 }
 
-async function save(page: Page, filename: string): Promise<MolekelDocument> {
+async function save(page: Page, filename: string): Promise<EigenVistaDocument> {
   const download = page.waitForEvent("download");
   await page.getByTitle("Save document", { exact: true }).click();
   await (await download).saveAs(filename);
   await expect(page.getByLabel("Unsaved changes")).toHaveCount(0);
   return page.evaluate(
     async (bytes) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       return JSON.parse(core.decode(new Uint8Array(bytes)));
@@ -239,7 +239,7 @@ test("256-cubed density meshes render and retain their requested resolution on s
   // Leave only the density visible so pixel assertions cannot pass on an orbital.
   const remove = page.getByRole("button", { name: /Delete antibonding/ });
   while (await remove.count()) await remove.first().click();
-  const source = await save(page, `${prefix}-before.molekel`);
+  const source = await save(page, `${prefix}-before.eigenvista`);
   expect(source.id).toBe("analytic-h2-v1");
   expect(source.basis).toHaveLength(2);
   expect(source.surfaces).toEqual([]);
@@ -258,7 +258,7 @@ test("256-cubed density meshes render and retain their requested resolution on s
   });
   const reference = await page.evaluate(
     async ({ document, samples }) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       const json = JSON.stringify(document);
@@ -290,7 +290,7 @@ test("256-cubed density meshes render and retain their requested resolution on s
   }
   await page.getByLabel("Rendering mode").selectOption("mesh");
   await rotate(page);
-  const filename = `${prefix}-generated.molekel`;
+  const filename = `${prefix}-generated.eigenvista`;
   const generated = await save(page, filename);
   expect(generated).toEqual({
     ...source,
@@ -314,7 +314,7 @@ test("256-cubed density meshes render and retain their requested resolution on s
   await expect
     .poll(async () => (await pixels(page)).positive)
     .toBeGreaterThan(250);
-  expect(await save(page, `${prefix}-reopened.molekel`)).toEqual(generated);
+  expect(await save(page, `${prefix}-reopened.eigenvista`)).toEqual(generated);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole("button", { name: "Fit scene", exact: true }).click();
   await expect
@@ -408,7 +408,7 @@ for (const outcome of ["cancel", "worker-failure", "fatal-message"] as const) {
     const prefix = path.resolve(
       `../artifacts/high-resolution-${outcome}-${testInfo.project.name}`,
     );
-    const before = await save(page, `${prefix}-before.molekel`);
+    const before = await save(page, `${prefix}-before.eigenvista`);
     await page
       .getByLabel("Grid resolution", { exact: true })
       .selectOption("256");
@@ -483,7 +483,7 @@ for (const outcome of ["cancel", "worker-failure", "fatal-message"] as const) {
     });
     await expect(page.getByLabel("Unsaved changes")).toHaveCount(0);
     await expect(page.locator(".surface-row")).toHaveCount(1);
-    expect(await save(page, `${prefix}-after.molekel`)).toEqual(before);
+    expect(await save(page, `${prefix}-after.eigenvista`)).toEqual(before);
     await generate(page, 24);
     await expect
       .poll(async () => (await pixels(page)).positive)

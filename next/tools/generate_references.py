@@ -1,4 +1,4 @@
-"""Offline reference generation only. No Molekel evaluator is used here."""
+"""Offline reference generation only. No EigenVista evaluator is used here."""
 
 import hashlib
 import importlib.metadata

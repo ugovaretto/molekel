@@ -5,6 +5,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   testerEnvironment,
+  testerPackageName,
+  existingSourceFiles,
   inside,
   snapshotFiles,
   treeManifest,
@@ -25,6 +27,40 @@ function fixture(t) {
   t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   return dir;
 }
+test("tester package names use the EigenVista identity and retain source provenance", () => {
+  const config = {
+    productName: "EigenVista",
+    identifier: "org.uvar-apps.eigenvista",
+    version: "0.3.2",
+  };
+  const revision = "1234567890abcdef1234567890abcdef12345678";
+  const started = "2026-10-04T12:34:56.789Z";
+  const expected = "EigenVista-0.3.2-apple-silicon-20261004T123456Z-1234567";
+  assert.equal(testerPackageName(config, revision, started, false), expected);
+  assert.equal(
+    testerPackageName(config, revision, started, true),
+    `${expected}-dirty`,
+  );
+  for (const invalid of [
+    { productName: "EigenVista Preview" },
+    { identifier: "org.molekel.preview" },
+    { version: "../0.3.2" },
+  ])
+    assert.throws(() =>
+      testerPackageName({ ...config, ...invalid }, revision, started, false),
+    );
+});
+test("uncommitted source renames omit deleted tracked paths without bypassing safety checks", (t) => {
+  const dir = fixture(t);
+  fs.writeFileSync(path.join(dir, "renamed.rs"), "current source");
+  const names = existingSourceFiles(dir, ["old.rs", "renamed.rs"]);
+  assert.deepEqual(names, ["renamed.rs"]);
+  assert.deepEqual(Object.keys(snapshotFiles(dir, names)), ["renamed.rs"]);
+  fs.symlinkSync(path.join(dir, "missing"), path.join(dir, "link"));
+  assert.deepEqual(existingSourceFiles(dir, ["link"]), ["link"]);
+  assert.throws(() => snapshotFiles(dir, existingSourceFiles(dir, ["link"])));
+  assert.throws(() => existingSourceFiles(dir, ["../outside"]));
+});
 test("tester environment cannot inherit Apple signing/notarization secrets", () => {
   const env = testerEnvironment(
     {

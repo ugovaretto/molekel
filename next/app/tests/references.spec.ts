@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { MolekelDocument } from "../src/types";
+import type { EigenVistaDocument } from "../src/types";
 
 interface ReferenceFixture {
-  document: MolekelDocument;
+  document: EigenVistaDocument;
   reference: {
     points: [number, number, number][];
     fields: { id: string; samples: [number, number, number, number][] }[];
@@ -17,17 +17,19 @@ test("native meshes with signed-zero inputs survive browser material edits", asy
 }) => {
   const bytes = Array.from(
     readFileSync(
-      path.resolve("../artifacts/references/general-spdfg-spherical.molekel"),
+      path.resolve(
+        "../artifacts/references/general-spdfg-spherical.eigenvista",
+      ),
     ),
   );
   await page.goto("/");
   const result = await page.evaluate(async (bytes) => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
     const doc = JSON.parse(
       core.decode(new Uint8Array(bytes)),
-    ) as MolekelDocument;
+    ) as EigenVistaDocument;
     const negativeZeros = doc.densities
       .flatMap((d) => d.matrix)
       .filter((v) => Object.is(v, -0)).length;
@@ -38,7 +40,7 @@ test("native meshes with signed-zero inputs survive browser material edits", asy
     core.validate(json);
     const restored = JSON.parse(
       core.decode(core.encode(json)),
-    ) as MolekelDocument;
+    ) as EigenVistaDocument;
     return {
       negativeZeros,
       hashes,
@@ -69,7 +71,7 @@ for (const name of [
   }) => {
     await page.goto("/");
     const result = await page.evaluate(async (fixture) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       const json = JSON.stringify(fixture.document);

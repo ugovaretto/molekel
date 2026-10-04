@@ -5,6 +5,8 @@ import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 import {
   ABOUT_VERSION,
+  testerPackageName,
+  existingSourceFiles,
   testerEnvironment,
   digest,
   snapshotFiles,
@@ -54,25 +56,28 @@ function json(file, value) {
 function sourceNames() {
   return [
     ...new Set([
-      ...run(
-        "git",
-        [
-          "ls-files",
-          "--cached",
-          "--others",
-          "--exclude-standard",
-          "-z",
-          "--",
-          "next",
-          "AGENTS.md",
-          "prompt-and-info.md",
-          "doc/rewrite",
-        ],
+      ...existingSourceFiles(
         repo,
-        true,
-      )
-        .split("\0")
-        .filter(Boolean),
+        run(
+          "git",
+          [
+            "ls-files",
+            "--cached",
+            "--others",
+            "--exclude-standard",
+            "-z",
+            "--",
+            "next",
+            "AGENTS.md",
+            "prompt-and-info.md",
+            "doc/rewrite",
+          ],
+          repo,
+          true,
+        )
+          .split("\0")
+          .filter(Boolean),
+      ),
       ".gitignore",
       "src/license",
       "data/molden.input",
@@ -100,14 +105,10 @@ function main() {
       "This tester packager currently requires an Apple Silicon Mac and arm64 Node.js",
     );
   fs.mkdirSync(env.TMPDIR, { recursive: true });
-  staging = fs.mkdtempSync(path.join(env.TMPDIR, "molekel-package-"));
+  staging = fs.mkdtempSync(path.join(env.TMPDIR, "eigenvista-package-"));
   const config = JSON.parse(
     fs.readFileSync(path.join(app, "src-tauri/tauri.conf.json"), "utf8"),
   );
-  if (!/^[0-9]+\.[0-9]+\.[0-9]+(?:-[a-zA-Z0-9.-]+)?$/.test(config.version))
-    throw new Error("Unsafe package version");
-  if (!/^[a-zA-Z0-9 ._-]+$/.test(config.productName))
-    throw new Error("Unsafe product name");
   if (!fs.existsSync(path.join(root, "LICENSE")))
     throw new Error("Add the application's LICENSE before redistribution");
   const revision = run("git", ["rev-parse", "HEAD"], repo, true);
@@ -128,7 +129,7 @@ function main() {
     true,
   );
   const started = new Date().toISOString();
-  const id = `Molekel-Preview-${config.version}-apple-silicon-${started.replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z")}-${revision.slice(0, 7)}${dirty ? "-dirty" : ""}`;
+  const id = testerPackageName(config, revision, started, dirty);
   const payload = path.join(staging, id);
   const sources = path.join(staging, "source-snapshot");
   fs.mkdirSync(payload);
@@ -250,7 +251,7 @@ function main() {
   fs.mkdirSync(sourceOut);
   run("/usr/bin/tar", [
     "-czf",
-    path.join(sourceOut, "molekel-source.tar.gz"),
+    path.join(sourceOut, "eigenvista-source.tar.gz"),
     "-C",
     sources,
     ".",
@@ -271,7 +272,7 @@ function main() {
     "--target",
     target,
     "-p",
-    "molekel-convert",
+    "eigenvista-convert",
   ]);
   run(
     path.join(app, "node_modules/.bin/tauri"),
@@ -315,8 +316,11 @@ function main() {
     path.join(root, "fixtures/cube/signed-affine.cube"),
     path.join(payload, "Examples/signed-affine.cube"),
   );
-  const converter = path.join(payload, "Tools/molekel-convert");
-  copy(path.join(root, "target", target, "release/molekel-convert"), converter);
+  const converter = path.join(payload, "Tools/eigenvista-convert");
+  copy(
+    path.join(root, "target", target, "release/eigenvista-convert"),
+    converter,
+  );
   run("/usr/bin/codesign", [
     "--force",
     "--sign",
@@ -367,6 +371,14 @@ function main() {
       true,
     ),
   );
+  if (
+    info.CFBundleName !== config.productName ||
+    info.CFBundleIdentifier !== config.identifier ||
+    info.CFBundleShortVersionString !== config.version
+  )
+    throw new Error(
+      "Built app identity/version does not match the EigenVista configuration",
+    );
   const executable = path.join(
     bundle,
     "Contents/MacOS",
@@ -406,6 +418,7 @@ function main() {
   ]);
   const buildInfo = {
     name: config.productName,
+    identifier: config.identifier,
     version: config.version,
     package: id,
     gitRevision: revision,
@@ -429,12 +442,14 @@ function main() {
       "Rust tests",
       "TypeScript and production WASM/frontend build",
       "arm64 architecture",
+      "app bundle name, identifier, and version",
       "system-only dynamic libraries",
       "strict app signature",
       "ZIP extraction byte and mode comparison",
       "extracted app signature",
       "sample PDB/XYZ/Molden/cube imports",
       "standalone converter signature, architecture, and runtime libraries",
+      "standalone converter default .eigenvista naming and legacy extension reads",
       "extracted converter Molden/cube/native roundtrip and WASM agreement",
     ],
     limitations:
@@ -448,7 +463,7 @@ function main() {
     core,
     path.join(payload, "Examples"),
     converter,
-    path.join(staging, "converted-example.molekel"),
+    path.join(staging, "converted-example.eigenvista"),
   ]);
   assertEqualManifest(sourceManifest, snapshotFiles(repo, sourceNames()));
 
@@ -479,14 +494,14 @@ function main() {
     "--verify",
     "--strict",
     "--verbose=2",
-    path.join(restored, "Tools/molekel-convert"),
+    path.join(restored, "Tools/eigenvista-convert"),
   ]);
   run(process.execPath, [
     "tools/verify-package-examples.mjs",
     core,
     path.join(restored, "Examples"),
-    path.join(restored, "Tools/molekel-convert"),
-    path.join(staging, "extracted-converted-example.molekel"),
+    path.join(restored, "Tools/eigenvista-convert"),
+    path.join(staging, "extracted-converted-example.eigenvista"),
   ]);
   const out = path.join(root, "artifacts/distributions");
   fs.mkdirSync(out, { recursive: true });

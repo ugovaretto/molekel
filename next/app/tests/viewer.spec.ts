@@ -95,7 +95,7 @@ test("portable save/reopen retains both orbital signs without calculation", asyn
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Save", exact: true }).click();
   const saved = await download;
-  const filename = path.resolve("../artifacts/roundtrip.molekel");
+  const filename = path.resolve("../artifacts/roundtrip.eigenvista");
   await saved.saveAs(filename);
   await page
     .getByRole("button", { name: /Delete antibonding/ })
@@ -153,7 +153,7 @@ test("native chemistry reference opens cached orbital and density meshes", async
   await page
     .locator("input[type=file]")
     .setInputFiles(
-      path.resolve("../artifacts/references/water-rhf-ccpvdz.molekel"),
+      path.resolve("../artifacts/references/water-rhf-ccpvdz.eigenvista"),
     );
   await expect(page.locator("footer [role=status]")).toContainText(
     "saved geometry restored",
@@ -208,7 +208,7 @@ test("mobile layout and Rust WASM analytic reference", async ({ page }) => {
     .toBeGreaterThan(300);
   await page.screenshot({ path: "../artifacts/mobile.png", fullPage: true });
   const value = await page.evaluate(async () => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
     return core.point(core.example(true), "spin", 0.4, 0.1, 0.7);

@@ -1,6 +1,6 @@
 # Independent numerical references
 
-These frozen numerical fixtures were generated with PySCF 2.14.0 on Apple Silicon using Python 3.14.7. They are test inputs, not application dependencies or a general-purpose PySCF converter. No Molekel evaluator is called by the generator. Normal Rust/browser tests read the checked-in data without Python or PySCF.
+These frozen numerical fixtures were generated with PySCF 2.14.0 on Apple Silicon using Python 3.14.7. They are test inputs, not application dependencies or a general-purpose PySCF converter. No EigenVista evaluator is called by the generator. Normal Rust/browser tests read the checked-in data without Python or PySCF.
 
 | Fixture | Content |
 | --- | --- |
@@ -13,7 +13,7 @@ The molecular geometries are explicitly chosen test geometries, not optimized st
 
 ## Conventions and independence
 
-All coordinates are bohr. Each file records software versions, calculation settings, AO labels/order, and source conventions. `document` is the explicit-polynomial Molekel model. `reference` contains independent AO/MO/density values and x/y/z gradients, overlap integrals, expected populations, and point coordinates. Each document also contains one asymmetric, skewed, reflected 3 x 4 x 5 grid in x-fastest order.
+All coordinates are bohr. Each file records software versions, calculation settings, AO labels/order, and source conventions. `document` is the explicit-polynomial EigenVista model. `reference` contains independent AO/MO/density values and x/y/z gradients, overlap integrals, expected populations, and point coordinates. Each document also contains one asymmetric, skewed, reflected 3 x 4 x 5 grid in x-fastest order.
 
 The export step expands PySCF shell data into explicit polynomials using `bas_ctr_coeff`, `gto_norm`, and `cart2sph`. Primitive and contraction normalization is absorbed into the radial coefficients. Cartesian S/P angular factors are included; Cartesian D/F/G preserve libcint's normalization, not an assumed unit norm for every component. The Rust evaluator applies no hidden shell normalization or ordering convention.
 
@@ -43,10 +43,10 @@ tmp/reference-venv/bin/python next/tools/generate_references.py
 
 The generator also sets all temporary-directory variables before loading PySCF. Packages are pinned for the recorded environment; normal builds do not install them. Regeneration overwrites only these four generated JSON fixtures and their manifest. Review numerical changes rather than automatically regenerating expected data in tests: SCF phases and degenerate subspaces may differ with software or BLAS versions. `manifest.json` pins the checked-in bytes.
 
-To produce usable `.molekel` examples from the frozen molecular fixtures, run from `next/` with the same temporary-directory environment:
+To produce usable `.eigenvista` examples from the frozen molecular fixtures, run from `next/` with the same temporary-directory environment:
 
 ```sh
-cargo run --locked -p molekel-format --example reference_documents
+cargo run --locked -p eigenvista-format --example reference_documents
 ```
 
 This creates files in ignored `next/artifacts/references/`, each with quantum data and cached meshes. Water and OH initially show signed HOMO meshes; a saved total-density mesh is also available but hidden. The synthetic spherical example displays its supplied transition density. All use the current classic marching-cubes preview, not topology-certified extraction. The browser test runner creates these artifacts automatically.

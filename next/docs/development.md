@@ -3,6 +3,9 @@
 For an already packaged application, use the [user guide](user-guide.md).
 This guide is for the rewrite under `next/`, not the root legacy C++ build.
 Commands below start from the **repository root** unless explicitly stated.
+The current app is EigenVista; the npm package is `eigenvista`, Rust packages
+and crate directories use `eigenvista-*`, and browser bindings are generated as
+`eigenvista_wasm`. The checkout and `next/` source location have not moved.
 
 ## Prerequisites
 
@@ -83,9 +86,9 @@ an existing server: verify it belongs to this checkout before trusting results.
 | --- | --- |
 | `npm --prefix next/app run wasm` | Optimized Rust/WASM and web bindings in `next/app/src/wasm/` |
 | `npm --prefix next/app run build` | WASM, TypeScript checking, and production frontend in `next/app/dist/` |
-| `npm --prefix next/app run desktop:build` | Debug macOS bundle at `next/target/debug/bundle/macos/Molekel Preview.app` |
+| `npm --prefix next/app run desktop:build` | Debug macOS bundle at `next/target/debug/bundle/macos/EigenVista.app` |
 | `npm --prefix next/app run package:macos` | Verified optimized Apple Silicon tester ZIP under `next/artifacts/distributions/` |
-| `cargo build --manifest-path next/Cargo.toml --locked --release -p molekel-convert` | Standalone converter at `next/target/release/molekel-convert` |
+| `cargo build --manifest-path next/Cargo.toml --locked --release -p eigenvista-convert` | Standalone converter at `next/target/release/eigenvista-convert` |
 
 The converter links the same Rust importer used through WASM by Open and Convert
 files. It needs no GUI, Python, ORCA, or running application. For a repository
@@ -93,15 +96,19 @@ sample, preserving the original and writing only to ignored artifacts:
 
 ```sh
 mkdir -p next/artifacts/conversions
-cargo run --manifest-path next/Cargo.toml --locked -p molekel-convert -- --output next/artifacts/conversions/molden.molekel data/molden.input
-cargo run --manifest-path next/Cargo.toml --locked -p molekel-convert -- --check --json data/molden.input
+cargo run --manifest-path next/Cargo.toml --locked -p eigenvista-convert -- --output next/artifacts/conversions/molden.eigenvista data/molden.input
+cargo run --manifest-path next/Cargo.toml --locked -p eigenvista-convert -- --check --json data/molden.input
 ```
 
 See [Molden import](molden-import.md) for exact profiles, CLI batch options,
 exit codes, losses, and overwrite policy. The tester ZIP includes the optimized
-Apple Silicon CLI as `Tools/molekel-convert`.
+Apple Silicon CLI as `Tools/eigenvista-convert`.
 The same CLI accepts [cube files](cube-import.md); for example replace the input
 above with `next/fixtures/cube/signed-affine.cube` and choose a new output path.
+It also accepts existing `.molekel` preview documents. Native output defaults
+to `.eigenvista` and always uses new identifiers, including when an explicit
+legacy `.molekel` destination is used. Keep originals needed by older builds;
+the rename does not bulk-migrate files. See [native compatibility](preview-format.md).
 
 The web build is an HTTP-served application, not a standalone `file://` HTML file.
 For a local production-build preview, after `run build`:
@@ -117,7 +124,7 @@ preview server, not a deployment setup.
 To launch a debug bundle already built on this Mac:
 
 ```sh
-open "next/target/debug/bundle/macos/Molekel Preview.app"
+open "next/target/debug/bundle/macos/EigenVista.app"
 ```
 
 The debug bundle is not Developer ID-signed/notarized and is not the supported
@@ -139,7 +146,7 @@ Use the root-shell temporary-directory setup above, then:
 cargo fmt --manifest-path next/Cargo.toml --all --check
 npm --prefix next/app test
 cargo clippy --manifest-path next/Cargo.toml --locked --workspace --all-targets -- -D warnings
-cargo test --manifest-path next/Cargo.toml --locked -p molekel-desktop
+cargo test --manifest-path next/Cargo.toml --locked -p eigenvista-desktop
 npm --prefix next/app run build
 npm --prefix next/app exec -- playwright install chromium webkit
 npm --prefix next/app run test:e2e
@@ -151,20 +158,21 @@ members, not the desktop shell. Workspace Clippy checks the shell too and needs
 its platform prerequisites. A focused shell check is:
 
 ```sh
-cargo check --manifest-path next/Cargo.toml --locked -p molekel-desktop
+cargo check --manifest-path next/Cargo.toml --locked -p eigenvista-desktop
 ```
 
 | Coverage | Location and meaning |
 | --- | --- |
-| Scientific model/evaluator | Core unit tests plus [independent references](../crates/molekel-core/tests/independent_references.rs) |
-| XYZ/PDB and connectivity | [Connectivity regressions](../crates/molekel-core/tests/connectivity.rs), including read-only legacy fixtures |
-| Cube fields and all-import bonds | [Cube regressions](../crates/molekel-core/tests/cube_import.rs), shared importer/CLI tests, and [browser cube workflows](../app/tests/cube.spec.ts); analytic signed/skewed grid, negative atom counts, source preservation, native bond backfill, reflected rendering, precision rejection |
-| Molden and converter | [Independent imports](../crates/molekel-import/tests/independent_molden.rs), parser unit tests, [CLI regressions](../crates/molekel-convert/tests/cli.rs), [fixtures/provenance](../fixtures/molden/README.md) |
-| Container/native saving | Format unit tests and [reference roundtrips](../crates/molekel-format/tests/reference_roundtrips.rs) |
+| Scientific model/evaluator | Core unit tests plus [independent references](../crates/eigenvista-core/tests/independent_references.rs) |
+| XYZ/PDB and connectivity | [Connectivity regressions](../crates/eigenvista-core/tests/connectivity.rs), including read-only legacy fixtures |
+| Cube fields and all-import bonds | [Cube regressions](../crates/eigenvista-core/tests/cube_import.rs), shared importer/CLI tests, and [browser cube workflows](../app/tests/cube.spec.ts); analytic signed/skewed grid, negative atom counts, source preservation, native bond backfill, reflected rendering, precision rejection |
+| Molden and converter | [Independent imports](../crates/eigenvista-import/tests/independent_molden.rs), parser unit tests, [CLI regressions](../crates/eigenvista-convert/tests/cli.rs), [fixtures/provenance](../fixtures/molden/README.md) |
+| Container/native saving | Format unit tests and [reference roundtrips](../crates/eigenvista-format/tests/reference_roundtrips.rs) |
 | Browser workflows/numerics | [Playwright tests](../app/tests): Chromium/WebKit, real file input/download, pixels, camera, desktop/mobile layout |
+| EigenVista identity and native compatibility | [Branding/browser regression](../app/tests/branding.spec.ts), [legacy format profiles](../crates/eigenvista-format/tests/legacy_compatibility.rs), and [native import compatibility](../crates/eigenvista-import/tests/native_compatibility.rs): old-profile scientific data/cached meshes, canonical names, unchanged atom logo, downloads, and narrow-window layout |
 | Camera redraw and zoom alternatives | [Camera regressions](../app/tests/camera.spec.ts): wheel-only redraw without a later click, idle settling, both zoom directions, middle-drag and keyboard buttons in every rendering mode, and narrow toolbar layout |
 | Orbital selection and batch rendering | [Orbital browser workflows](../app/tests/orbitals.spec.ts): complete imported lists and metadata, filtering/checkboxes, bounded generation, preserved meshes, cancellation, save/reopen, desktop/mobile layout |
-| Density sampling and remaining bounds | [Scalar reference parity](../crates/molekel-core/tests/scalar_sampling.rs), [real Molden density](../crates/molekel-import/tests/density_sampling.rs), [allocation limits](../crates/molekel-core/tests/allocation_limits.rs), and [browser regression](../app/tests/density-budget.spec.ts): value-only sampling, nonsymmetric/signed matrices, finite extremes, 125-AO density regressions, real-worker cancellation/responsiveness, and retained numerical/allocation bounds |
+| Density sampling and remaining bounds | [Scalar reference parity](../crates/eigenvista-core/tests/scalar_sampling.rs), [real Molden density](../crates/eigenvista-import/tests/density_sampling.rs), [allocation limits](../crates/eigenvista-core/tests/allocation_limits.rs), and [browser regression](../app/tests/density-budget.spec.ts): value-only sampling, nonsymmetric/signed matrices, finite extremes, 125-AO density regressions, real-worker cancellation/responsiveness, and retained numerical/allocation bounds |
 | High-resolution grids and typed transfer | [256-cubed workflows](../app/tests/high-resolution.spec.ts) and [owned WASM field parity](../app/tests/sampled-field.spec.ts): real simple-field completion, exact saved resolution, typed display buffers, cached meshing, source validation, cancellation and injected recoverable failure paths |
 | Packaging safety/notices | [Packaging tests](../tools/package-support.test.mjs), followed by a full ZIP build when packaging changes |
 
@@ -177,13 +185,13 @@ lives in `next/app/test-results/`. Screenshots with shared names can be overwrit
 by the second engine; retain specifically needed evidence before another run.
 
 Numerical tests read frozen fixtures without Python. Deliberate regeneration
-and extra `.molekel` example generation are documented in the
+and extra `.eigenvista` example generation are documented in the
 [fixture guide](../fixtures/pyscf/README.md). Do not regenerate expected values
 as a substitute for investigating a regression. The optional release-mode bond
 benchmark is:
 
 ```sh
-cargo run --manifest-path next/Cargo.toml --locked --release -p molekel-core --example bond_benchmark
+cargo run --manifest-path next/Cargo.toml --locked --release -p eigenvista-core --example bond_benchmark
 ```
 
 There is no active hosted rewrite CI workflow. [Portability checks](../ci/README.md)

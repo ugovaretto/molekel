@@ -3,8 +3,59 @@
 Recorded 4 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
 document, [architecture](architecture.md), and [development commands](development.md).
 The [documentation map](README.md) links the original brief and full M0-M7 plan.
-The current application version is **0.3.2**, fixing camera redraws during zoom
-and adding Zoom in/out toolbar buttons. It retains `v0.3.1`'s grids through
+The current application is **EigenVista**, version **0.4.0**. The source remains
+in `next/`, on the existing repository/branch; the icon and logo are unchanged.
+
+## Version 0.4.0 release
+
+The user requested the 0.4.0 version bump, a commit, annotated `v0.4.0` tag,
+and push of the current `2026` branch to `origin`. This is the first release
+under the EigenVista name, including the rename and legacy-file compatibility
+described below. The repository has not moved to `uvar-apps`: origin remains
+`https://github.com/ugovaretto/molekel.git`. External dependencies, icon assets,
+scientific references, and native schema shape `[0, 1]` remain unchanged.
+The post-bump preflight passes 108 workspace Rust tests, 114 browser cases,
+9 packaging tests, production WASM/frontend build, formatting, Clippy, and
+all 202 local documentation targets. Native interactive and clean-machine
+installation acceptance remain separate gates.
+See [status](status.md) for version-specific verification, Git for actual
+commit/tag/push state, and the delivered tester ZIP's `BUILD-INFO.json` for
+exact source identity and packaging evidence.
+
+## EigenVista rename
+
+The user requested renaming the active rewrite, not the legacy Molekel source
+or historical research. Active Rust packages/directories are `eigenvista-*`,
+the npm package is `eigenvista`, the CLI is `eigenvista-convert`, and generated
+browser bindings use `eigenvista_wasm`. The native application is
+`EigenVista.app`, identified as `org.uvar-apps.eigenvista`. New tester archives
+use `EigenVista-...` and include `Source/eigenvista-source.tar.gz`.
+
+New documents default to `.eigenvista`. Existing `.molekel` preview documents
+remain supported through the old matched `molekel` format/profile identifiers.
+New encoding writes `eigenvista`/`eigenvista-preview-polynomial-v1`, retaining
+the `[0, 1]` scientific shape, field hashes, and cached-mesh semantics. Both
+native profiles report `ImportReport.format: "eigenvista"`. Native Save also
+permits the legacy suffix, but that does not produce an old-profile file;
+newly saved files are not guaranteed readable in previous Molekel builds.
+No files are bulk-migrated. See [native compatibility](preview-format.md).
+
+The initial rename retained version 0.3.2; that step did not request a commit,
+tag, push, or repository migration. Its verification passed **108 workspace Rust tests**,
+**114 Chromium/WebKit browser cases**, and **9 packaging tests**, plus the
+production WASM/frontend build, formatting, and workspace/all-target Clippy.
+The old-profile compatibility tests preserve scientific data and cached meshes;
+desktop/mobile branding screenshots were inspected. All eight icon assets are
+byte-identical to the pre-rename commit, and external locked packages are unchanged.
+See [status](status.md) for scope and each delivered ZIP's `BUILD-INFO.json` for
+artifact-specific packaging verification. Native interactive and clean-machine
+acceptance remain separate gates. Preserve historical tags/URLs, prior release
+evidence, third-party notices, private chat exports, and the running application.
+
+## Previous release context
+
+The pre-rename Molekel 0.3.2 release fixed camera redraws during zoom
+and added Zoom in/out toolbar buttons. It retains `v0.3.1`'s grids through
 256 cubed, default 40, background cancellation, and memory guards. The orbital
 browser, multi-orbital mesh generation, density sampling, cube rendering,
 automatic bonds, Molden, and shared library/CLI conversion remain available.
@@ -188,7 +239,8 @@ remains the full target. [Status](status.md) is the authoritative progress table
 M0 is still open, M1-M5 are partial preview implementations, M6 release qualification
 is incomplete, and M7 is not started. Later user decisions require a clean Rust
 implementation and durable self-contained meshes. Optional external mesh links
-or OBJ-plus-metadata export do not replace `.molekel` persistence.
+or OBJ-plus-metadata export do not replace `.eigenvista` persistence and support
+for existing `.molekel` preview documents.
 
 Use the user's next request to choose a bounded item; otherwise these are the
 documented priorities, not permission for an unrelated rewrite:
@@ -240,7 +292,8 @@ these requirements because the current preview can display a scene.
   not create meshes or replace original grid samples. A preview f32 overflow
   error must not prevent opening/saving a valid f64 document.
 - `ImportReport.requires_save` drives the UI dirty state, including native bond
-  backfill. Do not infer clean state solely from the `.molekel` extension.
+  backfill. Do not infer clean state solely from the `.eigenvista` or legacy
+  `.molekel` extension.
 - Generation replaces meshes only for the selected field(s), not the whole
   document. Orbital batches commit atomically after native encoding preflight;
   do not publish intermediate jobs or associate the last grid with a different

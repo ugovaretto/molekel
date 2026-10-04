@@ -24,7 +24,7 @@ Direct dependency versions are resolved in the committed lockfiles `Cargo.lock` 
 
 The app icon is newly authored in `app/src-tauri/icons/source.svg`; bitmap/native icon formats are generated with the Tauri icon tool. It is not copied from the legacy application.
 
-Independent numerical reference generation uses PySCF 2.14.0 (Apache-2.0) in an ignored development-only Python environment under repository `tmp/`. Its compiled numerical libraries are not linked into Molekel or shipped in the desktop/browser builds. The frozen generated data and conventions are documented in [fixtures/pyscf/README.md](../fixtures/pyscf/README.md); generator dependencies are pinned in `tools/reference-requirements.txt`. Normal tests require only Rust and the existing frontend toolchain.
+Independent numerical reference generation uses PySCF 2.14.0 (Apache-2.0) in an ignored development-only Python environment under repository `tmp/`. Its compiled numerical libraries are not linked into EigenVista or shipped in the desktop/browser builds. The frozen generated data and conventions are documented in [fixtures/pyscf/README.md](../fixtures/pyscf/README.md); generator dependencies are pinned in `tools/reference-requirements.txt`. Normal tests require only Rust and the existing frontend toolchain.
 
 The rewrite retains Molekel's GPL-2.0-or-later terms in `next/LICENSE`. The tester
 packager uses pinned cargo-about 0.9.1 and installed npm license files to collect

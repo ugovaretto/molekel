@@ -4,6 +4,24 @@ import path from "node:path";
 
 export const ABOUT_VERSION = "0.9.1";
 
+export function testerPackageName(config, revision, started, dirty) {
+  if (!/^[0-9]+\.[0-9]+\.[0-9]+(?:-[a-zA-Z0-9.-]+)?$/.test(config.version))
+    throw new Error("Unsafe package version");
+  if (
+    config.productName !== "EigenVista" ||
+    config.identifier !== "org.uvar-apps.eigenvista"
+  )
+    throw new Error("Unexpected EigenVista application identity");
+  return `${config.productName}-${config.version}-apple-silicon-${started.replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z")}-${revision.slice(0, 7)}${dirty ? "-dirty" : ""}`;
+}
+
+export function existingSourceFiles(root, names) {
+  // Git lists deleted tracked paths until the rename/removal is committed.
+  return names.filter((name) =>
+    fs.lstatSync(inside(root, name), { throwIfNoEntry: false }),
+  );
+}
+
 export function testerEnvironment(parent, root) {
   const env = { ...parent };
   // A tester build must never use developer credentials or contact the notary.

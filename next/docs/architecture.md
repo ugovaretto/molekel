@@ -1,8 +1,14 @@
 # As-built architecture
 
-This describes the 0.3.2 development preview, not the complete
+This describes the 0.4.0 development preview, not the complete
 [proposed architecture](../../doc/rewrite/03-architecture-decision.md).
 Read [status](status.md) for dated verification and uncompleted release gates.
+
+The current application is EigenVista; its source remains in `next/`. Rust
+packages/crate directories use `eigenvista-*`, the npm package is `eigenvista`,
+and generated browser bindings use `eigenvista_wasm`. The macOS bundle is
+`EigenVista.app`, with application identifier `org.uvar-apps.eigenvista`.
+The name change preserves the existing icon/logo and scientific model.
 
 ## Boundaries and ownership
 
@@ -16,14 +22,14 @@ file input / downloads           Tauri 2 / system WebView / native dialogs
            v
      request IDs + Web Worker (science.ts, science.worker.ts)
            |
-     wasm-bindgen document/byte/typed-array bridge (molekel-wasm)
+     wasm-bindgen document/byte/typed-array bridge (eigenvista-wasm)
            |
-           +--> molekel-import: format detection, Molden, reports, provenance
-           |      +--> molekel-core: model, structure/grid imports, scientific operations
-           +--> molekel-format: validated .molekel ZIP encode/decode
+           +--> eigenvista-import: format detection, Molden, reports, provenance
+           |      +--> eigenvista-core: model, structure/grid imports, scientific operations
+           +--> eigenvista-format: validated .eigenvista ZIP encode/decode
 
 Command line (no GUI/WebView):
-molekel-convert --> same molekel-import --> molekel-format --> atomic file save
+eigenvista-convert --> same eigenvista-import --> eigenvista-format --> atomic file save
 
 Desktop save only:
 encoded bytes --> Tauri save_native --> format validation --> atomic file save
@@ -36,14 +42,14 @@ by native saving. There is no calculation server, remote service, or database.
 
 | Component | Responsibility and entry points |
 | --- | --- |
-| [Core model](../crates/molekel-core/src/model.rs) | `Document`, validation, explicit scientific units, affine grid geometry, resource limits |
-| [Computation](../crates/molekel-core/src/compute.rs) | AO/field values and gradients, sampling/resampling, source hashes, classic marching cubes |
-| [Imports](../crates/molekel-core/src/import.rs) and [PDB importer](../crates/molekel-core/src/import/pdb.rs) | Supported text profiles and recorded conversion losses |
-| [Import library](../crates/molekel-import/src/lib.rs) | Shared byte detection/dispatch, Molden conventions, import reports, source-byte digest |
-| [Converter CLI](../crates/molekel-convert/src/main.rs) | Bounded file reads, batch/JSON/check mode, destination preflight and no-clobber saves |
-| [Connectivity](../crates/molekel-core/src/bonds.rs) | Exact k-d-tree neighbors, explicit-plus-inferred display bonds |
-| [Native format](../crates/molekel-format/src/lib.rs) and [filesystem adapter](../crates/molekel-format/src/native.rs) | Portable container, checksums/validation, atomic native writes |
-| [WASM bridge](../crates/molekel-wasm/src/lib.rs) | Document import/validation/encoding, Rust-owned sampled-grid cache, typed display buffers, compatibility JSON sampling/meshing and point/gradient probes |
+| [Core model](../crates/eigenvista-core/src/model.rs) | `Document`, validation, explicit scientific units, affine grid geometry, resource limits |
+| [Computation](../crates/eigenvista-core/src/compute.rs) | AO/field values and gradients, sampling/resampling, source hashes, classic marching cubes |
+| [Imports](../crates/eigenvista-core/src/import.rs) and [PDB importer](../crates/eigenvista-core/src/import/pdb.rs) | Supported text profiles and recorded conversion losses |
+| [Import library](../crates/eigenvista-import/src/lib.rs) | Shared byte detection/dispatch, Molden conventions, import reports, source-byte digest |
+| [Converter CLI](../crates/eigenvista-convert/src/main.rs) | Bounded file reads, batch/JSON/check mode, destination preflight and no-clobber saves |
+| [Connectivity](../crates/eigenvista-core/src/bonds.rs) | Exact k-d-tree neighbors, explicit-plus-inferred display bonds |
+| [Native format](../crates/eigenvista-format/src/lib.rs) and [filesystem adapter](../crates/eigenvista-format/src/native.rs) | Portable container, checksums/validation, atomic native writes |
+| [WASM bridge](../crates/eigenvista-wasm/src/lib.rs) | Document import/validation/encoding, Rust-owned sampled-grid cache, typed display buffers, compatibility JSON sampling/meshing and point/gradient probes |
 | [Document UI](../app/src/App.tsx) and [types](../app/src/types.ts) | Document state, controls, dirty state, generation replacement, error recovery |
 | [Orbital browser](../app/src/OrbitalBrowser.tsx) | Full orbital metadata table, filtering, transient checkbox selection, bounded multi-orbital generation settings |
 | [Worker client](../app/src/science.ts) and [worker](../app/src/science.worker.ts) | Request lifecycle, WASM initialization, single sampled-grid cache, cancellation |
@@ -89,7 +95,7 @@ missing wavefunctions, or infer a density matrix from a PDB file.
 
 ## Import and open flow
 
-The file adapter obtains bytes. The shared `molekel-import::import_bytes`
+The file adapter obtains bytes. The shared `eigenvista-import::import_bytes`
 returns a validated document and structured format/warning/`requires_save` report. Native ZIPs
 go through bounded decoding; the Molden header takes precedence over a text
 filename. Other supported extensions use existing Rust importers. Successful loading
@@ -106,6 +112,14 @@ meshes. Additions produce a warning and `requires_save: true`; otherwise the
 decoded document is unchanged and starts clean. Raw format decoding remains
 exact and does not infer bonds. Original
 Molden sections are not embedded wholesale: preserve inputs and read the report.
+
+Both EigenVista native files and the previous matched Molekel preview profile
+produce `ImportReport.format: "eigenvista"`. The decoder preserves their
+scientific arrays, source hashes, and cached meshes; the `[0, 1]` data shape
+is unchanged. New encodes use `format: eigenvista` and the
+`eigenvista-preview-polynomial-v1` required feature. Compatibility accepts the
+previous `molekel`/`molekel-preview-polynomial-v1` pair, not arbitrary mixed
+identifiers. See [the native profile](preview-format.md) for the exact contract.
 
 Molden shells become explicit normalized polynomial contractions. Spin blocks,
 occupations, and energies are retained; complete listed occupations generate
@@ -296,7 +310,10 @@ and syncs a new sibling file, then renames it into place. Cancellation or failed
 validation does not replace the existing file. Windows replacement semantics
 need separate qualification. File-format tests are not proof that native
 window close, Save dialog, or download interactions all work end to end.
-Desktop destinations must end in `.molekel`; imported external source paths
+Desktop destinations default to `.eigenvista` and may use the legacy `.molekel`
+suffix. Encoding always writes EigenVista identifiers even with that old suffix,
+so new saves are not guaranteed readable in previous Molekel builds. No automatic
+file migration is performed. Imported external source paths
 are protected against replacement. Batch conversion protects all selected sources.
 CLI saves protect inputs and output aliases, require `--force` for existing
 destinations, and atomically publish initially absent files without replacement

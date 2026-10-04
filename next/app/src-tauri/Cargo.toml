@@ -1,5 +1,5 @@
 [package]
-name = "molekel-desktop"
+name = "eigenvista-desktop"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -11,6 +11,6 @@ tauri-build = { version = "2", features = [] }
 tauri = { version = "2", features = [] }
 tauri-plugin-dialog = "2"
 tauri-plugin-fs = "2"
-molekel-core = { path = "../../crates/molekel-core" }
-molekel-format = { path = "../../crates/molekel-format" }
+eigenvista-core = { path = "../../crates/eigenvista-core" }
+eigenvista-format = { path = "../../crates/eigenvista-format" }
 serde_json.workspace = true

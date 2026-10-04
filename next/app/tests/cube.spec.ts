@@ -1,7 +1,7 @@
 import { test, expect, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { MolekelDocument } from "../src/types";
+import type { EigenVistaDocument } from "../src/types";
 
 const cube = readFileSync(path.resolve("../fixtures/cube/signed-affine.cube"));
 const upload = {
@@ -78,10 +78,13 @@ async function signedPixels(page: Page, minimum = 100) {
     .toBeGreaterThan(minimum);
 }
 
-async function decode(page: Page, filename: string): Promise<MolekelDocument> {
+async function decode(
+  page: Page,
+  filename: string,
+): Promise<EigenVistaDocument> {
   return page.evaluate(
     async (bytes) => {
-      const url = "/src/wasm/molekel_wasm.js";
+      const url = "/src/wasm/eigenvista_wasm.js";
       const core = await import(/* @vite-ignore */ url);
       await core.default();
       return JSON.parse(core.decode(new Uint8Array(bytes)));
@@ -90,7 +93,7 @@ async function decode(page: Page, filename: string): Promise<MolekelDocument> {
   );
 }
 
-function assertScalarData(doc: MolekelDocument) {
+function assertScalarData(doc: EigenVistaDocument) {
   expect(doc.atoms).toEqual([
     { element: 1, position: [-0.7, 0, 0] },
     { element: 1, position: [0.7, 0, 0] },
@@ -216,7 +219,7 @@ test("cube meshes persist with the authoritative affine field, and native Open f
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Save", exact: true }).click();
   const filename = path.resolve(
-    `../artifacts/cube-${testInfo.project.name}-roundtrip.molekel`,
+    `../artifacts/cube-${testInfo.project.name}-roundtrip.eigenvista`,
   );
   await (await download).saveAs(filename);
   const saved = await decode(page, filename);
@@ -248,7 +251,7 @@ test("cube meshes persist with the authoritative affine field, and native Open f
   }
   // Model-valid older native documents can lack inferred display connectivity.
   const noBonds = await page.evaluate(async (doc) => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
     return Array.from(
@@ -256,7 +259,7 @@ test("cube meshes persist with the authoritative affine field, and native Open f
     );
   }, saved);
   await page.getByLabel("Open molecular file").setInputFiles({
-    name: "missing-bonds.molekel",
+    name: "missing-bonds.eigenvista",
     mimeType: "application/octet-stream",
     buffer: Buffer.from(noBonds),
   });
@@ -269,7 +272,7 @@ test("cube meshes persist with the authoritative affine field, and native Open f
   const enrichedDownload = page.waitForEvent("download");
   await page.getByRole("button", { name: "Save", exact: true }).click();
   const enrichedPath = path.resolve(
-    `../artifacts/cube-${testInfo.project.name}-enriched.molekel`,
+    `../artifacts/cube-${testInfo.project.name}-enriched.eigenvista`,
   );
   await (await enrichedDownload).saveAs(enrichedPath);
   const enriched = await decode(page, enrichedPath);
@@ -292,10 +295,10 @@ test("cube batch conversion retains every scalar sample and bonds without genera
   await expect(dialog.locator(".conversion-item.ready")).toHaveCount(1);
   const download = page.waitForEvent("download");
   await dialog
-    .getByRole("button", { name: "Save signed-affine.molekel", exact: true })
+    .getByRole("button", { name: "Save signed-affine.eigenvista", exact: true })
     .click();
   const filename = path.resolve(
-    `../artifacts/cube-${testInfo.project.name}-converted.molekel`,
+    `../artifacts/cube-${testInfo.project.name}-converted.eigenvista`,
   );
   await (await download).saveAs(filename);
   const converted = await decode(page, filename);
@@ -374,7 +377,7 @@ test("a finite scalar grid outside GPU precision still opens and saves without d
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Save", exact: true }).click();
   const filename = path.resolve(
-    `../artifacts/cube-${testInfo.project.name}-large-finite.molekel`,
+    `../artifacts/cube-${testInfo.project.name}-large-finite.eigenvista`,
   );
   await (await download).saveAs(filename);
   const saved = await decode(page, filename);

@@ -2,8 +2,12 @@
 
 The shared Rust importer supports a bounded **real Gaussian Molden wavefunction
 profile**, not every historical producer variant. The application and command-line
-converter call the same library. Native `.molekel` remains the self-contained
+converter call the same library. Native `.eigenvista` remains the self-contained
 format for saving scientific data, appearance, and generated surface meshes.
+Existing `.molekel` preview files remain accepted as native inputs; new outputs
+use EigenVista format identifiers. The [native profile](preview-format.md)
+describes compatibility and why an old suffix does not make a new save readable
+in earlier Molekel builds.
 
 See the [user guide](user-guide.md) for opening and converting files, and the
 [development guide](development.md) for building the converter. This document
@@ -11,21 +15,21 @@ records the scientific and API contract.
 
 ## Command-line conversion
 
-The tester ZIP includes `Tools/molekel-convert`; source builds produce
-`next/target/release/molekel-convert` with the release command in the development
+The tester ZIP includes `Tools/eigenvista-convert`; source builds produce
+`next/target/release/eigenvista-convert` with the release command in the development
 guide. The examples below assume the executable is on your PATH. Output
 directories must already exist.
 
 ```sh
-molekel-convert calculation.molden
-molekel-convert calculation.molden.input --output calculation.molekel
-molekel-convert --output-dir converted water.molden hydroxyl.molden
-molekel-convert --check --json calculation.molden
-molekel-convert --help
+eigenvista-convert calculation.molden
+eigenvista-convert calculation.molden.input --output calculation.eigenvista
+eigenvista-convert --output-dir converted water.molden hydroxyl.molden
+eigenvista-convert --check --json calculation.molden
+eigenvista-convert --help
 ```
 
-A single input defaults to a sibling `.molekel` filename; `.molden.input`
-becomes `.molekel`. Multiple inputs require `--output-dir`. `--output` (or `-o`)
+A single input defaults to a sibling `.eigenvista` filename; `.molden.input`
+becomes `.eigenvista`. Multiple inputs require `--output-dir`. `--output` (or `-o`)
 selects one destination. `--check` validates and reports without writing.
 `--json` emits an array on standard output containing each input/output, status,
 format/warnings/`requires_save`, atom/orbital/density counts, and error. Without it, summaries
@@ -53,7 +57,7 @@ PDB, and [Gaussian cube](cube-import.md) files, not only Molden.
 
 ## Shared boundary
 
-[`molekel-import`](../crates/molekel-import/src/lib.rs) exposes:
+[`eigenvista-import`](../crates/eigenvista-import/src/lib.rs) exposes:
 
 ```rust
 pub const MAX_IMPORT_BYTES: usize = 128 * 1024 * 1024;
@@ -62,7 +66,7 @@ pub fn import_bytes(bytes: &[u8], name: &str)
     -> Result<ImportResult, String>;
 
 pub struct ImportResult {
-    pub document: molekel_core::Document,
+    pub document: eigenvista_core::Document,
     pub report: ImportReport,
 }
 
@@ -74,10 +78,13 @@ pub struct ImportReport {
 ```
 
 The result/report implement Serde serialization/deserialization. `format` is
-one of `molekel`, `molden`, `xyz`, `pdb`, or `cube`. Every successful document
+one of `eigenvista`, `molden`, `xyz`, `pdb`, or `cube`. Every successful document
 passes core validation before returning. Errors contain a Molden line number
 where applicable. There is no filesystem, subprocess, network, or external QC
 program requirement in the library; it builds natively and as WASM.
+Both the new native profile and supported previous Molekel profile report
+`format: "eigenvista"`; callers must not infer compatibility or clean state
+from a filename suffix alone.
 
 ZIP magic routes through the existing bounded native decoder. A text
 `[Molden Format]` header, case-insensitive and allowing a UTF-8 BOM/leading blank
@@ -220,7 +227,7 @@ qualified profile, not guessed normalization or silent MO rescaling.
 The converted document retains atoms, computed bonds, normalized explicit basis,
 real orbitals, optional energies/occupations, occupation-derived densities,
 profile/provenance and source checksum. No source molecular calculation file
-is embedded; `.molekel` instead contains the parsed scientific arrays needed by
+is embedded; `.eigenvista` instead contains the parsed scientific arrays needed by
 the viewer. Subsequent generated meshes and their metadata persist through
 normal Save.
 
@@ -246,25 +253,25 @@ primitives per AO, 512 MOs, and 256 bytes per MO header value. Core resource,
 relationship, finite-number, and format checks apply afterward. Limits are not
 interactive-performance promises. Input is in-memory, not streaming.
 
-The [parser unit tests](../crates/molekel-import/src/tests.rs) exercise content
+The [parser unit tests](../crates/eigenvista-import/src/tests.rs) exercise content
 detection, units, references, SP, sparse coefficients, mixed angular flags,
 fractional/spin densities, missing data, reported losses, resource bounds,
 malformed input, native preservation, and profile rejection.
 
-The [independent tests](../crates/molekel-import/tests/independent_molden.rs)
+The [independent tests](../crates/eigenvista-import/tests/independent_molden.rs)
 and [fixture guide](../fixtures/molden/README.md) cover RHF water, UHF hydroxyl,
 Cartesian and spherical multiple contractions through G, and the qualified
 real ORCA NH3 export. They compare point values and gradients, use independently
 generated overlaps to check MO norms/electron counts, verify fixture checksums,
-and exercise exact `.molekel` scientific/mesh roundtrips. Parser validation
+and exercise exact `.eigenvista` scientific/mesh roundtrips. Parser validation
 does not recompute a full overlap matrix or certify every incoming MO is
 orthonormal; explicit input flags and the selected profile remain authoritative.
 
 From the repository root, with repository-local temporary variables set:
 
 ```sh
-cargo test --manifest-path next/Cargo.toml --locked -p molekel-import
-cargo clippy --manifest-path next/Cargo.toml --locked -p molekel-import --all-targets -- -D warnings
+cargo test --manifest-path next/Cargo.toml --locked -p eigenvista-import
+cargo clippy --manifest-path next/Cargo.toml --locked -p eigenvista-import --all-targets -- -D warnings
 ```
 
 See [status](status.md) for the broader WASM, browser, native, CLI, and packaging

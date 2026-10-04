@@ -34,10 +34,14 @@ overwritten. Send the entire ZIP to testers; send its checksum separately
 when useful. A checksum detects transfer errors but does not authenticate a
 publisher by itself.
 
+New package filenames start with `EigenVista-`. Existing Molekel-named packages
+are historical outputs and are not renamed or overwritten. The application
+remains a development preview despite no longer using "Preview" in its name.
+
 The ZIP contains:
 
-- An optimized, complete `Molekel Preview.app` with an ad-hoc signature.
-- An optimized, ad-hoc-signed `Tools/molekel-convert` for headless conversion;
+- An optimized, complete `EigenVista.app` with an ad-hoc signature.
+- An optimized, ad-hoc-signed `Tools/eigenvista-convert` for headless conversion;
   it uses the same Rust import library and needs no GUI, Python, or vendor tool.
 - `READ-ME-FIRST.txt`, the standalone `User-guide.md` (including known
   limitations), structure import policies, `Cube-import.md`, and `Molden-import.md`
@@ -68,7 +72,7 @@ Testers should follow the [user guide](user-guide.md) or the copy included at
 the top of the ZIP. No developer tools are needed to run the packaged app.
 Forward the complete package with its license, notices, and sources.
 
-To work from the supplied source, extract `Source/molekel-source.tar.gz` into
+To work from the supplied source, extract `Source/eigenvista-source.tar.gz` into
 a directory and follow `AGENTS.md` and `next/docs/development.md` there. The
 snapshot includes frozen scientific data, four legacy PDB test inputs,
 the read-only `data/molden.input` regression, and the cube regressions

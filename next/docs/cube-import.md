@@ -1,7 +1,7 @@
 # Gaussian cube import
 
 The shared Rust importer reads one bounded scalar field from `.cube` or `.cub`.
-Open, Convert files, and the standalone `molekel-convert` CLI use this same
+Open, Convert files, and the standalone `eigenvista-convert` CLI use this same
 profile. A cube supplies an already sampled field: no basis, orbital coefficients,
 or density matrix is needed for volume rendering or isosurface extraction.
 This is not a Gaussian-log reader or a wavefunction reconstruction tool.
@@ -15,7 +15,7 @@ This is not a Gaussian-log reader or a wavefunction reconstruction tool.
 3. Choose a grid resolution, then **Generate surfaces** for positive and negative
    signed meshes. Empty levels are omitted; a nonnegative field may produce
    only a positive mesh.
-4. Save a `.molekel` document to retain the original grid, atoms, bonds, generated
+4. Save a `.eigenvista` document to retain the original grid, atoms, bonds, generated
    geometry, isovalues, colors, and provenance together. The cube is not overwritten.
 
 When the default isovalue `0.08` is at least the field's peak absolute magnitude,
@@ -68,7 +68,7 @@ orbital-labelled dataset.
 
 ## Preservation and precision
 
-The authoritative imported grid uses f64 values and is retained in `.molekel`.
+The authoritative imported grid uses f64 values and is retained in `.eigenvista`.
 Display sampling uses at most the selected resolution per axis, preserving
 the affine extent and applying trilinear downsampling where needed. Small
 grids are not upsampled. Changing preview resolution never rewrites the original
@@ -103,13 +103,15 @@ for the heuristic and bounds.
 The CLI accepts cube inputs using the options in [Molden import](molden-import.md):
 
 ```sh
-molekel-convert calculation.cube --output calculation.molekel
-molekel-convert --check --json calculation.cube
+eigenvista-convert calculation.cube --output calculation.eigenvista
+eigenvista-convert --check --json calculation.cube
 ```
 
 Conversion preserves the scalar grid and inferred bonds but does not generate
 meshes. The same shared native-import path fills missing bonds in older
-`.molekel` files while retaining explicit bonds and cached scientific data.
+`.eigenvista` and legacy `.molekel` preview files while retaining explicit bonds
+and cached scientific data. The [native profile](preview-format.md) describes
+the accepted old identifiers and the EigenVista identifiers written by new saves.
 Additions are reported as requiring Save; the original file is never changed
 by parsing. Raw native decoding remains exact and separate from this import policy.
 
@@ -120,7 +122,7 @@ samples to `128^3`. Every dimension must be at least two. Finite-number,
 checked-allocation, affine-grid, model, and bond-search limits also apply.
 These are rejection bounds, not interactive-performance promises.
 
-[Cube core tests](../crates/molekel-core/tests/cube_import.rs) exercise ordering,
+[Cube core tests](../crates/eigenvista-core/tests/cube_import.rs) exercise ordering,
 affine grids, signed fields, bonds, single-orbital headers, malformed profiles,
 sampling, and meshing. They read the existing
 `data/h2o-dens.cube`, `all_data/Benzene.MO19-BOTH-SIGNS.cube`, and

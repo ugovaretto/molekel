@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { Grid, MolekelDocument, Surface } from "../src/types";
+import type { Grid, EigenVistaDocument, Surface } from "../src/types";
 
 test("owned WASM samples match legacy orbital and density paths and reject stale scientific inputs", async ({
   page,
@@ -9,11 +9,11 @@ test("owned WASM samples match legacy orbital and density paths and reject stale
   await page.goto("/");
   await expect(page.locator("footer [role=status]")).toContainText("triangles");
   const result = await page.evaluate(async () => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
     const json = core.example(false);
-    const document: MolekelDocument = JSON.parse(json);
+    const document: EigenVistaDocument = JSON.parse(json);
     const fields = [document.view.field!, document.densities[0].id];
     const reports = [];
     let freed = 0;
@@ -53,7 +53,7 @@ test("owned WASM samples match legacy orbital and density paths and reject stale
         const displayIndependent = afterDisplayEdit.every((value, index) =>
           Object.is(value, Math.fround(values[index])),
         );
-        const changed: MolekelDocument = JSON.parse(json);
+        const changed: EigenVistaDocument = JSON.parse(json);
         changed.basis[0].coefficients[0] *= 1.125;
         let sourceError = "";
         try {
@@ -126,10 +126,10 @@ test("owned WASM cube samples preserve signed affine source data and match legac
   await page.goto("/");
   await expect(page.locator("footer [role=status]")).toContainText("triangles");
   const result = await page.evaluate(async (sourceBytes) => {
-    const url = "/src/wasm/molekel_wasm.js";
+    const url = "/src/wasm/eigenvista_wasm.js";
     const core = await import(/* @vite-ignore */ url);
     await core.default();
-    const { document }: { document: MolekelDocument } = JSON.parse(
+    const { document }: { document: EigenVistaDocument } = JSON.parse(
       core.import_document(new Uint8Array(sourceBytes), "signed-affine.cube"),
     );
     const json = JSON.stringify(document);
@@ -154,7 +154,7 @@ test("owned WASM cube samples preserve signed affine source data and match legac
         };
       });
       const afterMeshing: Float32Array = sampled.display_values();
-      const changed: MolekelDocument = JSON.parse(json);
+      const changed: EigenVistaDocument = JSON.parse(json);
       changed.grids[0].values[0] += 0.125;
       let sourceError = "";
       try {
@@ -162,7 +162,7 @@ test("owned WASM cube samples preserve signed affine source data and match legac
       } catch (error) {
         sourceError = String(error);
       }
-      const reopened: MolekelDocument = JSON.parse(
+      const reopened: EigenVistaDocument = JSON.parse(
         core.decode(core.encode(json)),
       );
       report = {

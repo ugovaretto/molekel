@@ -1,5 +1,5 @@
-import init, * as core from "./wasm/molekel_wasm";
-import type { MolekelDocument, SampledGrid } from "./types";
+import init, * as core from "./wasm/eigenvista_wasm";
+import type { EigenVistaDocument, SampledGrid } from "./types";
 
 const ready = init();
 let cached: { key: string; field: core.SampledField } | null = null;
@@ -40,7 +40,7 @@ self.onmessage = async (event: MessageEvent) => {
         break;
       case "sample":
       case "generate": {
-        const doc = args.doc as MolekelDocument;
+        const doc = args.doc as EigenVistaDocument;
         const json = JSON.stringify(doc);
         core.validate(json);
         const key = JSON.stringify([

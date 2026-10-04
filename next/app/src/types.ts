@@ -46,7 +46,7 @@ export interface Surface {
   opacity: number;
   visible: boolean;
 }
-export interface MolekelDocument {
+export interface EigenVistaDocument {
   id: string;
   title: string;
   atoms: Atom[];
@@ -81,7 +81,7 @@ export interface ImportReport {
   requires_save: boolean;
 }
 export interface ImportResult {
-  document: MolekelDocument;
+  document: EigenVistaDocument;
   report: ImportReport;
 }
 export type RenderMode = "mesh" | "raycast" | "volume";

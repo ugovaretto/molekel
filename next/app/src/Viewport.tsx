@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { Focus, Camera, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
-import type { MolekelDocument, SampledGrid, RenderMode } from "./types";
+import type { EigenVistaDocument, SampledGrid, RenderMode } from "./types";
 import { volumeObject } from "./volume";
 
 const BOHR = 0.529177210903;
@@ -40,7 +40,7 @@ export function Viewport({
   reset,
   onSelect,
 }: {
-  doc: MolekelDocument;
+  doc: EigenVistaDocument;
   grid: SampledGrid | null;
   mode: RenderMode;
   reset: number;
@@ -300,7 +300,7 @@ export function Viewport({
     try {
       e.renderer.render(e.scene, e.camera);
       const a = document.createElement("a");
-      a.download = "molekel-view.png";
+      a.download = "eigenvista-view.png";
       a.href = e.renderer.domElement.toDataURL("image/png");
       a.click();
     } catch (error) {

@@ -6,11 +6,10 @@ fn validate_save_destination(
     path: &std::path::Path,
     protected_paths: &[String],
 ) -> Result<(), String> {
-    if !path
-        .extension()
-        .is_some_and(|ext| ext.eq_ignore_ascii_case("molekel"))
-    {
-        return Err("Save to a .molekel filename; original external-format files are not export destinations".into());
+    if !path.extension().is_some_and(|ext| {
+        ext.eq_ignore_ascii_case("eigenvista") || ext.eq_ignore_ascii_case("molekel")
+    }) {
+        return Err("Save to a .eigenvista filename; original external-format files are not export destinations".into());
     }
     if protected_paths.len() > 256 {
         return Err("Too many protected source paths".into());
@@ -33,11 +32,11 @@ async fn save_native(
     protected_paths: Option<Vec<String>>,
 ) -> Result<bool, String> {
     tauri::async_runtime::spawn_blocking(move || {
-        molekel_format::decode(&bytes)?;
+        eigenvista_format::decode(&bytes)?;
         let Some(path) = app
             .dialog()
             .file()
-            .add_filter("Molekel document", &["molekel"])
+            .add_filter("EigenVista document", &["eigenvista", "molekel"])
             .set_file_name(name)
             .blocking_save_file()
         else {
@@ -45,7 +44,7 @@ async fn save_native(
         };
         let path = path.into_path().map_err(|e| e.to_string())?;
         validate_save_destination(&path, protected_paths.as_deref().unwrap_or_default())?;
-        molekel_format::native::save_atomic(&path, &bytes)?;
+        eigenvista_format::native::save_atomic(&path, &bytes)?;
         Ok(true)
     })
     .await
@@ -62,7 +61,7 @@ mod tests {
         let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../../tmp");
         std::fs::create_dir_all(&root).unwrap();
         let path = root.join(format!(
-            "native-destination-test-{}.molekel",
+            "native-destination-test-{}.eigenvista",
             std::process::id()
         ));
         std::fs::write(&path, "source bytes").unwrap();
@@ -70,11 +69,12 @@ mod tests {
         assert!(validate_save_destination(&path, &protected).is_err());
         assert!(validate_save_destination(&path, &[]).is_ok());
         assert!(validate_save_destination(&path.with_extension("molden"), &[]).is_err());
+        assert!(validate_save_destination(&path.with_extension("EIGENVISTA"), &[]).is_ok());
         assert!(validate_save_destination(&path.with_extension("MOLEKEL"), &[]).is_ok());
         #[cfg(unix)]
         {
             let alias = path.with_file_name(format!(
-                "native-destination-alias-{}.molekel",
+                "native-destination-alias-{}.eigenvista",
                 std::process::id()
             ));
             std::os::unix::fs::symlink(&path, &alias).unwrap();
@@ -88,7 +88,7 @@ mod tests {
 
 #[tauri::command]
 fn scientific_core_version() -> &'static str {
-    concat!("molekel-core ", env!("CARGO_PKG_VERSION"))
+    concat!("eigenvista-core ", env!("CARGO_PKG_VERSION"))
 }
 
 fn main() {
@@ -100,5 +100,5 @@ fn main() {
             save_native
         ])
         .run(tauri::generate_context!())
-        .expect("Molekel desktop failed to start");
+        .expect("EigenVista desktop failed to start");
 }

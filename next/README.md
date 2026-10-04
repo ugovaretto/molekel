@@ -1,6 +1,13 @@
-# Molekel rewrite
+# EigenVista
 
 A clean Rust scientific core with a React/Three.js interface, shared by a Tauri macOS application and the browser. This directory is independent of the legacy implementation. No legacy source is copied or built, and no C++ is used in the application.
+
+EigenVista is the renamed Molekel rewrite. The repository and `next/` source
+location are unchanged, as are the icon and logo. New documents use
+`.eigenvista`; existing `.molekel` preview documents still open with their
+scientific data and saved meshes. New saves use EigenVista format identifiers
+and are not guaranteed readable by older Molekel builds, even when saved with
+a `.molekel` filename. See the [native profile](docs/preview-format.md).
 
 **Status:** first working development preview, not v1 and not completion of the M0-M7 plan. See [implementation status](docs/status.md) for evidence and remaining gates.
 
@@ -65,17 +72,17 @@ release. It includes source and notices under the [application license](LICENSE)
   Cancel or failure preserves prior geometry, and successful batches retain
   surfaces belonging to unselected fields. See the [user guide](docs/user-guide.md).
 - Experimental sampled raycasting and volume integration with actual shaders; these do not yet meet the full correctness/performance release gates.
-- Self-contained `.molekel` preview files containing quantum data, binary numeric arrays, saved meshes, isovalues, grid geometry, scientific hashes, provenance, and material settings. Reopen displays saved geometry without recomputation.
+- Self-contained `.eigenvista` preview files containing quantum data, binary numeric arrays, saved meshes, isovalues, grid geometry, scientific hashes, provenance, and material settings. Reopen displays saved geometry without recomputation.
 - Native Save dialog with validated sibling-file replacement; browser file download. Native Open dialog and browser file selection.
 - Conventional single-frame XYZ and PDB import with automatic coordinate-based bonds, PDB alternate/model handling, and retained explicit connections. [Import policy and algorithm](docs/structure-imports.md).
 - Gaussian single-field bohr cube import, including single-orbital datasets,
   skewed/reflected affine axes, automatic bonds, and immediate volume/raycast
   previews. Generate signed meshes and save them with the original grid in
-  `.molekel`. [Cube profile and workflow](docs/cube-import.md).
+  `.eigenvista`. [Cube profile and workflow](docs/cube-import.md).
 - Automatic display bonds across every supported import, including filling
   missing bonds in older native documents without losing cached surfaces.
 - Molden import through a shared Rust library, Open and batch conversion controls,
-  plus a standalone `molekel-convert` CLI. Canonical Gaussian shells through G
+  plus a standalone `eigenvista-convert` CLI. Canonical Gaussian shells through G
   and a tested ORCA S/P/spherical-D export subset are supported with explicit
   normalization and loss reports. [Molden profile and converter](docs/molden-import.md).
 

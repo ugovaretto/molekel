@@ -1,18 +1,22 @@
-# Molekel Preview user guide
+# EigenVista user guide
 
 ## What this program does
 
-Molekel displays molecular structures and quantum-chemistry fields in an
+EigenVista displays molecular structures and quantum-chemistry fields in an
 interactive 3D scene. You can open Molden wavefunctions, PDB/XYZ structures, and
 Gaussian cube scalar fields, inspect automatically computed bonds, display
 supplied orbitals or density matrices, generate signed
 isosurfaces, and save the molecular data and surface geometry together in a
-portable `.molekel` document.
+portable `.eigenvista` document.
 
-This is version 0.3.2, a development preview. Scientific calculations and
+This is version 0.4.0, a development preview. Scientific calculations and
 rendering have targeted tests, but the application is not yet a qualified
 scientific release. It visualizes supplied data; it does not run a quantum
 chemistry calculation to obtain a wavefunction from atom positions.
+
+EigenVista is the new name of the Molekel Rust preview. Its icon and logo are
+unchanged. New documents use `.eigenvista`; existing `.molekel` preview files
+remain supported, including their scientific data and saved surfaces.
 
 ## Install and start on a Mac
 
@@ -21,7 +25,7 @@ Macs. It targets macOS 13 or later; that complete OS range has not been tested.
 The package's `BUILD-INFO.json` records the actual build system. Linux and
 Windows packages are not available yet.
 
-1. Unzip the package and move `Molekel Preview.app` to Applications.
+1. Unzip the package and move `EigenVista.app` to Applications.
 2. Double-click the app. A mathematical hydrogen-pair example opens initially.
 3. Keep the rest of the extracted package for this guide, examples, build
    information, license notices, and source code.
@@ -46,7 +50,7 @@ See [Apple's security instructions](https://support.apple.com/en-us/102445).
    Waals. The last uses space-filling spheres and does not draw bond cylinders.
 4. Drag in the scene to rotate it; scroll or use **Zoom in** / **Zoom out** in
    the viewport toolbar to zoom. Use **Fit scene** to restore the framing.
-5. Click **Save**, choose a new `.molekel` filename, and reopen it with **Open**.
+5. Click **Save**, choose a new `.eigenvista` filename, and reopen it with **Open**.
    Your structure, connectivity, and representation are retained.
 
 `Examples/water.xyz` provides the same three-atom/two-bond check. Preserve your
@@ -83,7 +87,7 @@ Toolbar icons show their names on hover.
 - **Fit scene** and **Reset view** currently do the same thing: fit all displayed
   objects and restore the default viewing direction.
 - **Export image** requests a PNG download of the current viewport, named
-  `molekel-view.png`. It uses the browser/WebView download mechanism, not the
+  `eigenvista-view.png`. It uses the browser/WebView download mechanism, not the
   native document Save dialog; download handling varies by host. Browser export
   is the reference path, and native image-download handling still needs qualification.
 
@@ -96,7 +100,7 @@ complete covalent-radius table; display-radius fallbacks do not affect it.
 
 | Extension | What is read | Important boundary |
 | --- | --- | --- |
-| `.molekel` | Current preview scientific document, appearance, and saved meshes | Missing display bonds are filled in on Open; not a general legacy Molekel project reader |
+| `.eigenvista`, legacy `.molekel` | Current or previous Rust-preview scientific document, appearance, and saved meshes | Missing display bonds are filled in on Open; not a general legacy C++ Molekel project reader |
 | `.molden`, `.molf`, `.molden.input` or recognized Molden header | Geometry, Gaussian basis, real orbitals, energies, occupations, and occupation-derived density matrices | Canonical S/P/D/F/G and SP; explicitly identified ORCA exports currently S/P/spherical D only |
 | `.xyz` | One conventional atom-count/comment/coordinate frame, in angstroms | Geometry and automatically inferred bonds; multiple frames and extended XYZ are rejected |
 | `.pdb` | Selected ATOM/HETATM geometry and explicit plus inferred bonds | First model/structure and one alternate conformer per residue |
@@ -112,7 +116,8 @@ Bonds are a distance-and-coordination heuristic for display, not bond orders,
 aromaticity, hydrogen-bond analysis, or proof of chemical validity. PDB `CONECT`
 connections are retained and supplemented with coordinate-based connections.
 All supported imports compute bonds automatically, including cube and Molden.
-Opening an older `.molekel` file also fills in missing display bonds while
+Opening an older `.molekel` or `.eigenvista` preview file also fills in missing
+display bonds while
 preserving existing connections, scientific data, and cached surfaces. If any
 bonds are added, a report appears and the document is marked unsaved; Save
 explicitly to retain them. Opening does not overwrite the source file.
@@ -127,7 +132,7 @@ orbitals or a density matrix.
 Use **Open** to select your Molden file, including `molden.input`. Import runs
 locally, computes display bonds, and shows a report with any warnings. Select
 an orbital or density and generate surfaces normally. Save creates a native
-`.molekel` document; the source file is not converted in place. An imported
+`.eigenvista` document; the source file is not converted in place. An imported
 document is marked unsaved until saved. A failed import leaves the previous
 document intact. **Import report** and Provenance retain decisions and losses.
 
@@ -172,7 +177,7 @@ No basis functions or orbital coefficients are needed for these sampled fields.
 The ZIP includes `Examples/signed-affine.cube`: a mathematical signed field
 with **2 atoms**, **1 bond**, and a skewed 7 x 7 x 7 grid. It is a rendering test,
 not a quantum-chemistry calculation. Generate surfaces at its initial isovalue
-to see both signed lobes, then Save and reopen the `.molekel` document.
+to see both signed lobes, then Save and reopen the `.eigenvista` document.
 
 The accepted profile includes standard single-orbital cubes with a negative
 atom count and exactly one dataset ID. Multi-field cubes must be exported as
@@ -184,7 +189,7 @@ magnitude as an initial display value. You can change it afterward.
 **Grid resolution** bounds the preview grid and mesh calculation. It may
 downsample a large input but does not add samples to a small one. The full
 original scalar values and affine grid remain in the document and are saved
-in `.molekel`, alongside any generated meshes. Convert files and the standalone
+in `.eigenvista`, alongside any generated meshes. Convert files and the standalone
 converter also accept cube inputs; conversion alone does not generate meshes.
 The detailed profile is in `next/docs/cube-import.md` (`Cube-import.md` in the ZIP).
 
@@ -194,7 +199,7 @@ To try the workflow without a quantum-data file, open the flask-shaped example
 menu beside Document and choose **Hydrogen pair** or **Fractional open shell**.
 These are mathematical demonstrations, not calculated molecular reference
 results. Opening an example replaces the current document after an unsaved-change
-confirmation. Independently calculated water/OH `.molekel` reference documents
+confirmation. Independently calculated water/OH `.eigenvista` reference documents
 can also be generated from the source tree; see `next/fixtures/pyscf/README.md`.
 
 ### Browse and render several orbitals
@@ -223,7 +228,7 @@ can also be generated from the source tree; see `next/fixtures/pyscf/README.md`.
 
 The **Saved** column counts meshes currently in the document, including hidden
 ones; it does not mean that the document has already been written to disk.
-Checkboxes are temporary and are not saved in `.molekel`. Each time the browser
+Checkboxes are temporary and are not saved in `.eigenvista`. Each time the browser
 opens, only the active orbital is initially checked, if the active field is an
 orbital. Closing without generating leaves the document and settings unchanged.
 Multi-selection creates separate orbital meshes, not a combined orbital or a
@@ -279,11 +284,11 @@ magnitude or try another field, without assuming that an empty mesh is an error.
 ## Rendering and appearance
 
 **Isosurface mesh** displays saved triangles and works immediately after
-reopening a `.molekel` file, without recalculation.
+reopening a `.eigenvista` file, without recalculation.
 
 **Sampled raycast preview** and **Volume preview** use an in-memory display
 grid, not direct analytic shader evaluation of a wavefunction. Cube fields and
-other grids stored in `.molekel` prepare it automatically on Open or field
+other grids stored in `.eigenvista` prepare it automatically on Open or field
 selection. A reopened document with cached meshes starts in mesh mode, with
 sampled modes also ready. For orbital/density fields without a stored grid,
 Generate surfaces prepares it; generate again after switching away or reopening.
@@ -324,7 +329,7 @@ are not available yet.
 
 ## Saving, reopening, and sharing
 
-Save writes a self-contained `.molekel` preview file. It includes structure,
+Save writes a self-contained `.eigenvista` preview file. It includes structure,
 bonds, supplied basis/orbitals/density matrices or imported grids, provenance,
 saved mesh geometry and generation metadata, visibility, colors, opacity, and
 representation. Copy that file to another matching preview installation to
@@ -335,8 +340,14 @@ On desktop, Save opens a native destination dialog; cancelling leaves the
 document unsaved. In a browser, Save requests a download to the browser's
 configured location; confirm that the download completed. Save does not export
 back to Molden/PDB/XYZ/cube and does not perform automatic background saving.
-Use a new `.molekel` filename; replacing an existing native file is an explicit
+Use a new `.eigenvista` filename; replacing an existing native file is an explicit
 Save-dialog choice, not an automatic result of Open or Convert.
+
+Older `.molekel` preview files open without a manual conversion or migration.
+Native Save also permits the old `.molekel` suffix, but every new save contains
+EigenVista format identifiers regardless of its filename. New saves are not
+guaranteed to open in earlier Molekel builds. Preserve the original file when
+you need to continue using an older build; opening it here does not overwrite it.
 
 The **Saved surfaces** heading means surfaces stored in the current document's
 memory. They reach disk only when you Save. Camera position, active render
@@ -390,4 +401,4 @@ development app, or `npm --prefix next/app run dev` for the browser viewer at
 starts its own server on that port. The installed tester app needs neither.
 
 Other developer documentation is in `next/docs/README.md`; the tester ZIP's
-`Source/molekel-source.tar.gz` contains those files with their original paths.
+`Source/eigenvista-source.tar.gz` contains those files with their original paths.

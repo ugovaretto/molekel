@@ -5,9 +5,9 @@ import { pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
 
 const [wasm, examples, converter, output] = process.argv.slice(2);
-const core = await import(pathToFileURL(path.join(wasm, "molekel_wasm.js")));
+const core = await import(pathToFileURL(path.join(wasm, "eigenvista_wasm.js")));
 await core.default({
-  module_or_path: fs.readFileSync(path.join(wasm, "molekel_wasm_bg.wasm")),
+  module_or_path: fs.readFileSync(path.join(wasm, "eigenvista_wasm_bg.wasm")),
 });
 for (const name of ["water.pdb", "water.xyz"]) {
   const document = JSON.parse(
@@ -41,6 +41,30 @@ const checked = spawnSync(converter, ["--check", output], {
   encoding: "utf8",
 });
 assert.equal(checked.status, 0, checked.stderr);
+const defaultDirectory = `${output}.defaults`;
+fs.mkdirSync(defaultDirectory);
+const defaultConversion = spawnSync(
+  converter,
+  ["--output-dir", defaultDirectory, molden],
+  { env: process.env, encoding: "utf8" },
+);
+assert.equal(defaultConversion.status, 0, defaultConversion.stderr);
+assert.deepEqual(
+  JSON.parse(
+    core.decode(
+      fs.readFileSync(path.join(defaultDirectory, "water.eigenvista")),
+    ),
+  ),
+  imported.document,
+);
+// Legacy filename extensions remain readable; the bytes here use the new native profile.
+const legacyName = path.join(defaultDirectory, "legacy.molekel");
+fs.copyFileSync(output, legacyName, fs.constants.COPYFILE_EXCL);
+const legacyChecked = spawnSync(converter, ["--check", legacyName], {
+  env: process.env,
+  encoding: "utf8",
+});
+assert.equal(legacyChecked.status, 0, legacyChecked.stderr);
 const cubeName = "signed-affine.cube";
 const cube = JSON.parse(
   core.import_document(
@@ -58,7 +82,7 @@ const surfaces = JSON.parse(
 );
 assert.ok(surfaces.some((s) => s.isovalue > 0));
 assert.ok(surfaces.some((s) => s.isovalue < 0));
-const cubeOutput = `${output}.cube.molekel`;
+const cubeOutput = `${output}.cube.eigenvista`;
 const cubeConverted = spawnSync(
   converter,
   ["--output", cubeOutput, path.join(examples, cubeName)],
@@ -70,5 +94,5 @@ assert.deepEqual(
   cube.document,
 );
 console.log(
-  "Packaged PDB/XYZ/Molden/cube examples, signed cube meshes, and converter/WASM roundtrips passed.",
+  "Packaged PDB/XYZ/Molden/cube examples, signed cube meshes, EigenVista output names, legacy extension reads, and converter/WASM roundtrips passed.",
 );

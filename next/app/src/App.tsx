@@ -31,7 +31,7 @@ import { OrbitalBrowser, maxOrbitalBatch } from "./OrbitalBrowser";
 import { gridResolutions, isGridResolution } from "./resolution";
 import { Viewport } from "./Viewport";
 import type {
-  MolekelDocument,
+  EigenVistaDocument,
   Generation,
   SampledGrid,
   ImportReport,
@@ -41,7 +41,7 @@ import type {
 } from "./types";
 
 export default function App() {
-  const [doc, setDoc] = useState<MolekelDocument | null>(null);
+  const [doc, setDoc] = useState<EigenVistaDocument | null>(null);
   const [busy, setBusy] = useState("Opening scientific core");
   const [error, setError] = useState("");
   const [status, setStatus] = useState("");
@@ -64,7 +64,7 @@ export default function App() {
   current.current = doc;
   unsaved.current = dirty;
   async function compute(
-    document: MolekelDocument,
+    document: EigenVistaDocument,
     res = resolution,
     orbitals?: string[],
   ) {
@@ -209,7 +209,7 @@ export default function App() {
     setBusy("Opening example");
     setError("");
     try {
-      const d = await request<MolekelDocument>("example", { openShell });
+      const d = await request<EigenVistaDocument>("example", { openShell });
       setDoc(d);
       setOrbitalsOpen(false);
       setGrid(null);
@@ -240,7 +240,7 @@ export default function App() {
     window.addEventListener("beforeunload", guard);
     return () => window.removeEventListener("beforeunload", guard);
   }, [dirty]);
-  function editView(values: Partial<MolekelDocument["view"]>) {
+  function editView(values: Partial<EigenVistaDocument["view"]>) {
     setDoc((d) =>
       d
         ? {
@@ -264,7 +264,7 @@ export default function App() {
     setDirty(true);
   }
   async function prepareGrid(
-    document: MolekelDocument,
+    document: EigenVistaDocument,
     res: number,
     nextMode: RenderMode,
   ) {
@@ -345,7 +345,7 @@ export default function App() {
       setReset((v) => v + 1);
       setDirty(result.report.requires_save);
       setProtectedSourcePath(
-        result.report.format !== "molekel" ? source.path : undefined,
+        result.report.format !== "eigenvista" ? source.path : undefined,
       );
       setInspected("");
       setError(previewError);
@@ -382,7 +382,7 @@ export default function App() {
       if (
         await saveBytes(
           bytes,
-          `${doc.title.replace(/[^a-z0-9-]+/gi, "-").toLowerCase()}.molekel`,
+          `${doc.title.replace(/[^a-z0-9-]+/gi, "-").toLowerCase()}.eigenvista`,
           protectedSourcePath ? [protectedSourcePath] : [],
         )
       ) {
@@ -411,7 +411,7 @@ export default function App() {
       <header className="topbar">
         <div className="brand">
           <Atom size={27} strokeWidth={1.5} />
-          <h1>Molekel</h1>
+          <h1>EigenVista</h1>
           <span className="build-label">PREVIEW</span>
         </div>
         <div className="document-title" title={doc?.title}>
