@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { Focus, Camera, RotateCcw } from "lucide-react";
+import { Focus, Camera, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 import type { MolekelDocument, SampledGrid, RenderMode } from "./types";
 import { volumeObject } from "./volume";
 
@@ -121,6 +121,11 @@ export function Viewport({
       fit,
       needsRender: true,
     };
+    // Wheel and middle-drag handlers update the camera before the animation tick.
+    const invalidate = () => {
+      if (engine.current) engine.current.needsRender = true;
+    };
+    controls.addEventListener("change", invalidate);
     const resize = new ResizeObserver(() => {
       const { width, height } = div.getBoundingClientRect();
       renderer.setSize(width, height);
@@ -172,6 +177,7 @@ export function Viewport({
     return () => {
       renderer.setAnimationLoop(null);
       resize.disconnect();
+      controls.removeEventListener("change", invalidate);
       controls.dispose();
       dispose(group);
       renderer.dispose();
@@ -310,6 +316,20 @@ export function Viewport({
         </div>
       )}
       <div className="viewport-tools">
+        <button
+          title="Zoom in"
+          aria-label="Zoom in"
+          onClick={() => engine.current?.controls.dollyIn(0.8)}
+        >
+          <ZoomIn size={18} />
+        </button>
+        <button
+          title="Zoom out"
+          aria-label="Zoom out"
+          onClick={() => engine.current?.controls.dollyOut(0.8)}
+        >
+          <ZoomOut size={18} />
+        </button>
         <button
           title="Fit scene"
           aria-label="Fit scene"

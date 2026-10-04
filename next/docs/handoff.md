@@ -3,17 +3,23 @@
 Recorded 4 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
 document, [architecture](architecture.md), and [development commands](development.md).
 The [documentation map](README.md) links the original brief and full M0-M7 plan.
-The current application version is **0.3.1**, extending both grid controls
-through 256 cubed while retaining default 40 and background cancellation.
-It follows `v0.3.0`'s orbital browser, multi-orbital mesh generation, and scalar
-density-sampling optimization. Cube rendering, automatic bonds for all supported
-imports, Molden, and shared library/CLI conversion remain available. Native
-schema `[0, 1]` and external dependencies are unchanged. The user requested
-committing this increment, tagging it `v0.3.1`, pushing on `2026`, and rebuilding
+The current application version is **0.3.2**, fixing camera redraws during zoom
+and adding Zoom in/out toolbar buttons. It retains `v0.3.1`'s grids through
+256 cubed, default 40, background cancellation, and memory guards. The orbital
+browser, multi-orbital mesh generation, density sampling, cube rendering,
+automatic bonds, Molden, and shared library/CLI conversion remain available.
+Native schema `[0, 1]` and external dependencies are unchanged. The user requested
+committing this increment, tagging it `v0.3.2`, pushing on `2026`, and rebuilding
 the redistributable Apple Silicon tester ZIP. Inspect Git and the delivered
 archive's `BUILD-INFO.json` for actual release state and packaging evidence.
 Personal `next/chat-*.md` exports are ignored and excluded from commits and
 source snapshots without changing their contents.
+
+The user confirmed that the camera fix works in the web preview before
+requesting this release. OrbitControls change events invalidate the next frame,
+including wheel and middle-drag updates made before the animation tick. Camera
+changes remain transient and do not regenerate geometry or alter science.
+See the latest [status](status.md) entry for release verification.
 
 The user reports that higher-resolution calculations still finish within
 seconds on their machine. Exact dimensions and timings were not supplied;
@@ -80,6 +86,22 @@ and `BUILD-INFO.json` for provenance instead.
   documentation. Documentation is not a substitute for remaining release tests.
 
 ## Evidence, not assumptions
+
+The 0.3.2 release preflight reruns **102 workspace Rust tests**, **110 browser
+cases**, and **7 packaging tests** successfully after the version bump. The
+production WASM/frontend build, formatting, workspace/all-target Clippy,
+structured version/dependency checks, and all 195 local documentation targets
+pass. Desktop/mobile camera screenshots were inspected. Exact source identity
+and native ZIP verification are recorded in the delivered `BUILD-INFO.json`;
+native interactive and clean-machine acceptance are separate gates.
+
+The camera-redraw follow-up passes **102 workspace Rust tests** and **110
+Chromium/WebKit browser cases**, including eight camera regressions for
+wheel-only redraw, idle settling, alternate zoom controls, and mobile framing.
+The production WASM/frontend build, formatting, workspace/all-target Clippy,
+and local documentation links pass. Desktop/mobile screenshots were inspected.
+The running preview was preserved; the existing native bundle and tester ZIP
+were not rebuilt for this browser-reported fix.
 
 The 0.3.1 release preflight reruns **102 workspace Rust tests**, **102 browser
 cases**, and **7 packaging tests** successfully after the version change. The

@@ -5,6 +5,61 @@ Date: 4 October 2026. Branch: `2026`. All new implementation is under `next/`; l
 Start with the [documentation map](README.md), [user guide](user-guide.md),
 [as-built architecture](architecture.md), or [agent handoff](handoff.md).
 
+## Version 0.3.2
+
+The user confirmed the zoom fix in the web preview, then requested version
+**0.3.2**, a commit, an annotated `v0.3.2` tag, a push of the current `2026`
+branch to `origin`, and a fresh redistributable Apple Silicon tester ZIP.
+This release includes the camera redraw fix, Zoom in/out buttons, camera
+regressions, and updated documentation described below. The Rust workspace,
+six first-party lock entries, frontend package/lockfile, Tauri metadata, and
+current version descriptions use 0.3.2. External dependencies, scientific
+references, and native schema `[0, 1]` are unchanged.
+
+After the version bump, release preflight passes **102 workspace Rust tests**,
+**110 Chromium/WebKit browser cases**, and **7 packaging tests**. Production
+WASM/TypeScript/frontend build, Rust/frontend formatting, workspace/all-target
+Clippy with warnings denied, all 195 local documentation targets, and
+`git diff --check` pass. Camera screenshots were inspected on desktop and mobile.
+Structured manifest checks confirm consistent versions and unchanged external
+dependencies. The existing frontend chunk-size warning remains.
+
+The existing preview and private chat export are preserved. Chat exports remain
+ignored and excluded from source snapshots and commits. Inspect Git for actual
+commit/tag/push state and the delivered ZIP's `BUILD-INFO.json` for its source
+identity and completed packaging checks. Tester ZIPs remain ad-hoc signed, not
+notarized public releases; native interactive workflows and clean-machine
+installation remain separate acceptance gates.
+
+## Camera zoom redraw
+
+The user reported that wheel zoom in the web preview only appeared after a
+later click. This was reproduced before the fix: after a wheel event and eight
+animation frames, canvas pixels remained unchanged. OrbitControls updates the
+camera synchronously inside its wheel handler, so the next animation-loop
+`update()` can return false even though a new camera view has not been drawn.
+
+The viewport now listens for OrbitControls change events and marks the next
+frame for rendering, retaining damping and avoiding unconditional idle redraws.
+The listener is removed on cleanup. Zoom in/out toolbar buttons call the
+library's public dolly methods; middle-button vertical drag and touchscreen
+pinch remain available. Camera-only actions do not modify saved science or
+regenerate geometry. The user guide describes all zoom alternatives.
+
+Verification passes **102 workspace Rust tests** and the full **110
+Chromium/WebKit browser cases** (55 scenarios per engine). The eight new camera
+cases count graphics draw calls, wait for idle frames, and verify wheel-only
+pixel changes before any canvas click in both directions and all rendering
+modes. They also cover Enter/Space button activation, middle-drag, and toolbar
+fit/activation at 390- and 320-pixel widths. Desktop/mobile screenshots were
+visually inspected. Production WASM/TypeScript/frontend build, Rust/frontend
+formatting, workspace/all-target Clippy, local documentation links, and
+`git diff --check` pass. The existing frontend chunk-size warning is unchanged.
+
+At the end of the camera implementation step, version remained 0.3.1 and the
+previously distributed ZIP was unchanged. Native interaction and packaging had
+not been rerun. The subsequent 0.3.2 release request is recorded above.
+
 ## Version 0.3.1
 
 The user requested version **0.3.1**, committing the high-resolution work below,

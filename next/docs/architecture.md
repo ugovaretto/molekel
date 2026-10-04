@@ -1,6 +1,6 @@
 # As-built architecture
 
-This describes the 0.3.1 development preview, not the complete
+This describes the 0.3.2 development preview, not the complete
 [proposed architecture](../../doc/rewrite/03-architecture-decision.md).
 Read [status](status.md) for dated verification and uncompleted release gates.
 
@@ -249,7 +249,12 @@ winding is corrected for back-face ray-entry rendering, including inside views.
 
 The viewport owns its Three.js engine and disposes rebuilt geometry/materials.
 Camera damping drives an animation loop with rendering on movement or changed
-scene state. New scene geometry is staged before replacing the prior scene;
+scene state. OrbitControls change events also invalidate the next frame because
+wheel and middle-drag handlers update the camera before the animation tick;
+their movement must not be lost when the next `update()` returns false.
+Zoom toolbar buttons use public OrbitControls dolly methods, sharing its target
+and distance limits. Camera controls do not change the scientific document.
+New scene geometry is staged before replacing the prior scene;
 recoverable construction errors keep that prior scene visible and report an
 error without unmounting the interface. Render and image-export exceptions are
 also reported, separate from the existing graphics-context-loss warning.

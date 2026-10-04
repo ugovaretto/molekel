@@ -9,7 +9,7 @@ supplied orbitals or density matrices, generate signed
 isosurfaces, and save the molecular data and surface geometry together in a
 portable `.molekel` document.
 
-This is version 0.3.1, a development preview. Scientific calculations and
+This is version 0.3.2, a development preview. Scientific calculations and
 rendering have targeted tests, but the application is not yet a qualified
 scientific release. It visualizes supplied data; it does not run a quantum
 chemistry calculation to obtain a wavefunction from atom positions.
@@ -44,8 +44,8 @@ See [Apple's security instructions](https://support.apple.com/en-us/102445).
    automatically, including when the file has no explicit connections.
 3. Try the **Representation** choices: Ball and stick, Liquorice, and Van der
    Waals. The last uses space-filling spheres and does not draw bond cylinders.
-4. Drag in the scene to rotate it; scroll to zoom. Use **Fit scene** in the
-   viewport toolbar to restore the framing.
+4. Drag in the scene to rotate it; scroll or use **Zoom in** / **Zoom out** in
+   the viewport toolbar to zoom. Use **Fit scene** to restore the framing.
 5. Click **Save**, choose a new `.molekel` filename, and reopen it with **Open**.
    Your structure, connectivity, and representation are retained.
 
@@ -74,8 +74,10 @@ Toolbar icons show their names on hover.
 ## Moving and inspecting the scene
 
 - Left-drag rotates. Right-drag pans; Ctrl-drag is another pan gesture.
-- Scroll or middle-drag zooms. On a touchscreen, one finger rotates and two
-  fingers pinch/pan.
+- Scroll or hold the middle mouse button and drag vertically to zoom.
+  The **Zoom in** and **Zoom out** toolbar buttons work without a wheel;
+  keyboard users can Tab to either button and activate it with Enter or Space.
+  On a touchscreen, one finger rotates and two fingers pinch/pan.
 - Click an atom to see its element/index and coordinates in angstroms. Click
   a mesh to see its label and triangle count. There is no measurement tool yet.
 - **Fit scene** and **Reset view** currently do the same thing: fit all displayed
