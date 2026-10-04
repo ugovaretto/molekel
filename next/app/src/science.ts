@@ -17,6 +17,10 @@ function start() {
     if (worker !== instance) return;
     const p = pending.get(data.id);
     if (!p) return;
+    if (data.fatal) {
+      cancel(new Error(data.error || "Scientific worker failed"));
+      return;
+    }
     if (typeof data.progress === "string") {
       p.onProgress?.(data.progress);
       return;
@@ -26,8 +30,22 @@ function start() {
     else p.resolve(data.result);
   };
   instance.onerror = (event) => {
+    event.preventDefault();
     if (worker === instance)
-      cancel(new Error(event.message || "Scientific worker failed"));
+      cancel(
+        new Error(
+          event.message ||
+            "Scientific worker failed; reduce the grid resolution and retry",
+        ),
+      );
+  };
+  instance.onmessageerror = () => {
+    if (worker === instance)
+      cancel(
+        new Error(
+          "Unable to receive calculation results; reduce the grid resolution and retry",
+        ),
+      );
   };
 }
 export function cancel(reason = new Error("Calculation cancelled")) {
@@ -45,6 +63,10 @@ export function request<T>(
   const id = ++nextId;
   return new Promise((resolve, reject) => {
     pending.set(id, { resolve: (v) => resolve(v as T), reject, onProgress });
-    worker!.postMessage({ id, action, args });
+    try {
+      worker!.postMessage({ id, action, args });
+    } catch (error) {
+      cancel(error instanceof Error ? error : new Error(String(error)));
+    }
   });
 }

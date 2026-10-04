@@ -2,6 +2,22 @@ use crate::*;
 use lin_alg::f32::Vec3;
 use mcubes::{MarchingCubes, MeshSide};
 use sha2::{Digest, Sha256};
+use std::sync::OnceLock;
+
+fn buffer<T>(count: usize, label: &str) -> Result<Vec<T>> {
+    let mut values = Vec::new();
+    values
+        .try_reserve_exact(count)
+        .map_err(|_| format!("Not enough memory for {label}; reduce grid resolution"))?;
+    Ok(values)
+}
+
+fn sample_count(dims: [usize; 3]) -> Result<usize> {
+    dims.into_iter()
+        .try_fold(1usize, |n, d| n.checked_mul(d))
+        .filter(|n| *n <= MAX_TRANSIENT_SAMPLES)
+        .ok_or_else(|| "Grid exceeds the 256^3 transient sample memory budget".into())
+}
 
 /// A deliberately transparent f64 reference evaluator, shared by native and WASM.
 pub fn basis_value(b: &BasisFunction, p: [f64; 3]) -> (f64, [f64; 3]) {
@@ -105,7 +121,12 @@ impl<'a> ScalarField<'a> {
         }
         if let Some(d) = doc.densities.iter().find(|d| d.id == field) {
             let n = doc.basis.len();
-            let mut upper = Vec::with_capacity(n * (n + 1) / 2);
+            let count = n
+                .checked_add(1)
+                .and_then(|next| n.checked_mul(next))
+                .map(|count| count / 2)
+                .ok_or("Density matrix allocation overflow")?;
+            let mut upper = buffer(count, "density coefficients")?;
             for i in 0..n {
                 for j in i..n {
                     // Real AO products commute, even for a nonsymmetric matrix.
@@ -186,8 +207,8 @@ pub fn source_hash(doc: &Document, field: &str) -> Result<String> {
 pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
     doc.validate()?;
     doc.check_field(field)?;
-    if !(12..=80).contains(&resolution) {
-        return Err("Preview resolution must be between 12 and 80".into());
+    if !(12..=256).contains(&resolution) {
+        return Err("Preview resolution must be between 12 and 256".into());
     }
     if let Some(g) = doc.grids.iter().find(|g| g.id == field) {
         if g.values.iter().any(|v| !(*v as f32).is_finite()) {
@@ -195,7 +216,17 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
         }
         let dims = g.dims.map(|n| n.min(resolution));
         if dims == g.dims {
-            return Ok(g.clone());
+            let mut values = buffer(g.values.len(), "sampled field")?;
+            values.extend_from_slice(&g.values);
+            return Ok(Grid {
+                id: g.id.clone(),
+                label: g.label.clone(),
+                quantity: g.quantity.clone(),
+                origin: g.origin,
+                axes: g.axes,
+                dims,
+                values,
+            });
         }
         let scales: [f64; 3] =
             std::array::from_fn(|k| (g.dims[k] - 1) as f64 / (dims[k] - 1) as f64);
@@ -206,7 +237,7 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
             origin: g.origin,
             axes: std::array::from_fn(|k| g.axes[k].map(|v| v * scales[k])),
             dims,
-            values: vec![],
+            values: buffer(sample_count(dims)?, "sampled field")?,
         };
         for z in 0..dims[2] {
             for y in 0..dims[1] {
@@ -284,9 +315,10 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
         origin: lo,
         axes,
         dims: [resolution; 3],
-        values: Vec::with_capacity(resolution.pow(3)),
+        values: buffer(sample_count([resolution; 3])?, "sampled field")?,
     };
-    let mut ao = vec![0.; doc.basis.len()];
+    let mut ao = buffer(doc.basis.len(), "basis values")?;
+    ao.resize(doc.basis.len(), 0.);
     for z in 0..resolution {
         for y in 0..resolution {
             for x in 0..resolution {
@@ -305,6 +337,73 @@ pub fn sample(doc: &Document, field: &str, resolution: usize) -> Result<Grid> {
     Ok(grid)
 }
 
+const CORNERS: [[usize; 3]; 8] = [
+    [0, 0, 0],
+    [1, 0, 0],
+    [1, 1, 0],
+    [0, 1, 0],
+    [0, 0, 1],
+    [1, 0, 1],
+    [1, 1, 1],
+    [0, 1, 1],
+];
+
+fn case_vertex_counts() -> &'static [usize; 256] {
+    static COUNTS: OnceLock<[usize; 256]> = OnceLock::new();
+    COUNTS.get_or_init(|| {
+        // The pinned mesher keeps its tables private; obtain counts through its public API.
+        std::array::from_fn(|mask| {
+            let mut values = vec![1.; 8];
+            for (corner, [x, y, z]) in CORNERS.into_iter().enumerate() {
+                if mask & (1 << corner) != 0 {
+                    values[(z * 2 + y) * 2 + x] = 0.;
+                }
+            }
+            MarchingCubes::new(
+                (2, 2, 2),
+                (1., 1., 1.),
+                (1., 1., 1.),
+                Vec3::new_zero(),
+                values,
+                0.5,
+            )
+            .expect("A 2^3 probe has exactly eight values")
+            .generate(MeshSide::OutsideOnly)
+            .vertices
+            .len()
+        })
+    })
+}
+
+fn mesh_vertex_count(values: &[f32], dims: [usize; 3], iso: f32) -> Result<usize> {
+    let count = sample_count(dims)?;
+    if dims.iter().any(|n| *n < 2) || values.len() != count {
+        return Err("Invalid mesh sample dimensions/count".into());
+    }
+    let [nx, ny, nz] = dims;
+    let offsets = CORNERS.map(|[x, y, z]| (z * ny + y) * nx + x);
+    let counts = case_vertex_counts();
+    let mut vertices = 0usize;
+    for z in 0..nz - 1 {
+        for y in 0..ny - 1 {
+            for x in 0..nx - 1 {
+                let base = (z * ny + y) * nx + x;
+                let mut mask = 0;
+                for (corner, offset) in offsets.into_iter().enumerate() {
+                    if values[base + offset] < iso {
+                        mask |= 1 << corner;
+                    }
+                }
+                vertices = vertices
+                    .checked_add(counts[mask])
+                    .filter(|count| *count <= MAX_VERTICES)
+                    .ok_or("Surface exceeds the 2,000,000-vertex memory budget; reduce resolution or change the isovalue")?;
+            }
+        }
+    }
+    Ok(vertices)
+}
+
 pub fn mesh(
     grid: &Grid,
     iso: f64,
@@ -313,31 +412,51 @@ pub fn mesh(
     color: &str,
     opacity: f64,
 ) -> Result<Surface> {
-    grid.validate()?;
+    grid.validate_transient()?;
     if !iso.is_finite() || iso == 0. || !(iso as f32).is_finite() {
         return Err("A finite nonzero isovalue is required".into());
     }
     let [nx, ny, nz] = grid.dims;
-    // Bound the library's worst-case unshared output before allocating its input.
-    if (nx - 1) * (ny - 1) * (nz - 1) * 15 > MAX_VERTICES {
-        return Err("Mesh worst-case allocation exceeds preview budget; reduce resolution".into());
-    }
     // mcubes get_value() uses x-fastest storage, independent of its loop order.
     let sign = iso.signum();
-    let values = grid.values.iter().map(|v| (sign * v) as f32).collect();
-    if grid.values.iter().any(|v| !(*v as f32).is_finite()) {
-        return Err("Grid values exceed rendering precision".into());
+    let mut values = buffer(grid.values.len(), "marching-cubes input")?;
+    for value in &grid.values {
+        let value = (sign * value) as f32;
+        if !value.is_finite() {
+            return Err("Grid values exceed rendering precision".into());
+        }
+        values.push(value);
     }
-    let result = MarchingCubes::new(
-        (nx, ny, nz),
-        (1., 1., 1.),
-        (1., 1., 1.),
-        Vec3::new_zero(),
-        values,
-        iso.abs() as f32,
-    )
-    .map_err(|e| e.to_string())?
-    .generate(MeshSide::OutsideOnly);
+    let vertex_count = mesh_vertex_count(&values, grid.dims, iso.abs() as f32)?;
+    let coordinates = vertex_count
+        .checked_mul(3)
+        .ok_or("Surface coordinate allocation overflow")?;
+    let positions = buffer(coordinates, "surface positions")?;
+    let normals = buffer(coordinates, "surface normals")?;
+    let mut indices = buffer(vertex_count, "surface indices")?;
+    let result = if vertex_count == 0 {
+        mcubes::Mesh {
+            vertices: vec![],
+            indices: vec![],
+        }
+    } else {
+        MarchingCubes::new(
+            (nx, ny, nz),
+            (1., 1., 1.),
+            (1., 1., 1.),
+            Vec3::new_zero(),
+            values,
+            iso.abs() as f32,
+        )
+        .map_err(|e| e.to_string())?
+        .generate(MeshSide::OutsideOnly)
+    };
+    if result.vertices.len() != vertex_count || result.indices.len() != vertex_count {
+        return Err("Marching-cubes output disagrees with its allocation preflight".into());
+    }
+    for index in &result.indices {
+        indices.push(u32::try_from(*index).map_err(|_| "Surface index overflow")?);
+    }
     let mut surface = Surface {
         id: format!(
             "surface-{field}-{}",
@@ -352,9 +471,9 @@ pub fn mesh(
         grid_origin: grid.origin,
         grid_axes: grid.axes,
         precision: "f64 field; f32 marching-cubes interpolation".into(),
-        positions: vec![],
-        normals: vec![],
-        indices: result.indices.iter().map(|i| *i as u32).collect(),
+        positions,
+        normals,
+        indices,
         color: color.into(),
         opacity,
         visible: true,
@@ -399,6 +518,57 @@ pub fn mesh(
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn mesh_preflight_matches_all_library_cases_including_rounded_thresholds() {
+        for mask in 0..256 {
+            for (low, high, iso) in [(0., 1., 0.5_f32), (-1., 0., -0.5), (0.5 - 1e-12, 0.75, 0.5)] {
+                let values: Vec<f32> = (0..8)
+                    .map(|i| if mask & (1 << i) != 0 { low } else { high } as f32)
+                    .collect();
+                let expected = MarchingCubes::new(
+                    (2, 2, 2),
+                    (1., 1., 1.),
+                    (1., 1., 1.),
+                    Vec3::new_zero(),
+                    values.clone(),
+                    iso,
+                )
+                .unwrap()
+                .generate(MeshSide::OutsideOnly);
+                assert_eq!(
+                    mesh_vertex_count(&values, [2; 3], iso).unwrap(),
+                    expected.vertices.len(),
+                    "case {mask}, threshold {iso}"
+                );
+                assert_eq!(expected.vertices.len(), expected.indices.len());
+            }
+        }
+        assert_eq!(case_vertex_counts().iter().copied().max(), Some(15));
+    }
+
+    #[test]
+    fn exact_mesh_preflight_accepts_the_largest_complete_triangle_budget() {
+        let cells = MAX_VERTICES / 6;
+        let mut dims = [2, 2, cells + 1];
+        let mut values: Vec<f32> = (0..dims.into_iter().product())
+            .map(|i| (i % 2) as f32)
+            .collect();
+        assert_eq!(mesh_vertex_count(&values, dims, 0.5).unwrap(), cells * 6);
+        dims[2] += 1;
+        values.extend([0., 1., 0., 1.]);
+        let error = mesh_vertex_count(&values, dims, 0.5).unwrap_err();
+        assert!(error.contains("2,000,000-vertex memory budget"), "{error}");
+    }
+
+    #[test]
+    fn fallible_buffers_reject_capacity_overflow() {
+        let error = buffer::<f64>(usize::MAX, "sampled field").unwrap_err();
+        assert!(
+            error.contains("Not enough memory for sampled field"),
+            "{error}"
+        );
+    }
+
     #[test]
     fn scientific_hash_ignores_zero_sign_but_not_nonzero_changes() {
         let mut positive = fixtures::hydrogen_pair();

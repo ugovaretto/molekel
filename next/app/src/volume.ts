@@ -1,8 +1,8 @@
 import * as THREE from "three";
-import type { Grid, RenderMode } from "./types";
+import type { SampledGrid, RenderMode } from "./types";
 
 export function volumeObject(
-  grid: Grid,
+  grid: SampledGrid,
   mode: RenderMode,
   iso: number,
   positive: string,
@@ -11,12 +11,7 @@ export function volumeObject(
   filtered: boolean,
 ) {
   const [nx, ny, nz] = grid.dims;
-  const texture = new THREE.Data3DTexture(
-    new Float32Array(grid.values),
-    nx,
-    ny,
-    nz,
-  );
+  const texture = new THREE.Data3DTexture(grid.values, nx, ny, nz);
   texture.format = THREE.RedFormat;
   texture.type = THREE.FloatType;
   texture.minFilter = texture.magFilter = filtered

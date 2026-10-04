@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { Focus, Camera, RotateCcw } from "lucide-react";
-import type { MolekelDocument, Grid, RenderMode } from "./types";
+import type { MolekelDocument, SampledGrid, RenderMode } from "./types";
 import { volumeObject } from "./volume";
 
 const BOHR = 0.529177210903;
@@ -41,7 +41,7 @@ export function Viewport({
   onSelect,
 }: {
   doc: MolekelDocument;
-  grid: Grid | null;
+  grid: SampledGrid | null;
   mode: RenderMode;
   reset: number;
   onSelect: (text: string) => void;
@@ -159,7 +159,13 @@ export function Viewport({
     renderer.setAnimationLoop(() => {
       const moved = controls.update();
       if (moved || engine.current?.needsRender) {
-        renderer.render(scene, camera);
+        try {
+          renderer.render(scene, camera);
+        } catch (error) {
+          setError(
+            `Unable to render the scene: ${String(error)}. Try a lower grid resolution or fewer surfaces.`,
+          );
+        }
         if (engine.current) engine.current.needsRender = false;
       }
     });
@@ -176,90 +182,107 @@ export function Viewport({
   useEffect(() => {
     const e = engine.current;
     if (!e) return;
+    const group = new THREE.Group();
+    try {
+      for (const [i, atom] of doc.atoms.entries()) {
+        const element = elements[atom.element] ?? {
+          symbol: `Z${atom.element}`,
+          color: "#b294b9",
+          radius: 1.8,
+        };
+        const radius =
+          doc.view.representation === "space-fill"
+            ? element.radius / BOHR
+            : doc.view.representation === "liquorice"
+              ? 0.28
+              : atom.element === 1
+                ? 0.32
+                : 0.52;
+        const m = new THREE.Mesh(
+          new THREE.SphereGeometry(radius, 24, 16),
+          new THREE.MeshStandardMaterial({
+            color: element.color,
+            roughness: 0.34,
+          }),
+        );
+        m.position.set(...atom.position);
+        m.userData.label = `${element.symbol} ${i + 1} | ${atom.position.map((v) => (v * BOHR).toFixed(3)).join(", ")} angstrom`;
+        group.add(m);
+      }
+      if (doc.view.representation !== "space-fill")
+        for (const [i, j] of doc.bonds) {
+          const from = new THREE.Vector3(...doc.atoms[i].position);
+          const to = new THREE.Vector3(...doc.atoms[j].position);
+          const delta = to.clone().sub(from);
+          if (delta.length() < 1e-10) continue;
+          const radius = doc.view.representation === "liquorice" ? 0.28 : 0.105;
+          const bond = new THREE.Mesh(
+            new THREE.CylinderGeometry(radius, radius, delta.length(), 12),
+            new THREE.MeshStandardMaterial({
+              color: "#9ba3a8",
+              roughness: 0.5,
+            }),
+          );
+          bond.position.copy(from).add(to).multiplyScalar(0.5);
+          bond.quaternion.setFromUnitVectors(
+            new THREE.Vector3(0, 1, 0),
+            delta.normalize(),
+          );
+          group.add(bond);
+        }
+      for (const s of doc.surfaces) {
+        if (
+          !s.visible ||
+          (mode !== "mesh" && grid && s.field === doc.view.field)
+        )
+          continue;
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute(
+          "position",
+          new THREE.Float32BufferAttribute(s.positions, 3),
+        );
+        geometry.setAttribute(
+          "normal",
+          new THREE.Float32BufferAttribute(s.normals, 3),
+        );
+        geometry.setIndex(s.indices);
+        const mesh = new THREE.Mesh(
+          geometry,
+          new THREE.MeshStandardMaterial({
+            color: s.color,
+            opacity: s.opacity,
+            transparent: s.opacity < 1,
+            side: THREE.DoubleSide,
+            roughness: 0.45,
+            depthWrite: s.opacity >= 1,
+          }),
+        );
+        mesh.userData.label = `${s.label} | ${(s.indices.length / 3).toLocaleString()} triangles`;
+        group.add(mesh);
+      }
+      if (grid && mode !== "mesh")
+        group.add(
+          volumeObject(
+            grid,
+            mode,
+            doc.view.isovalue,
+            doc.view.positive_color,
+            doc.view.negative_color,
+            doc.view.opacity,
+            e.renderer.extensions.has("OES_texture_float_linear"),
+          ),
+        );
+    } catch (error) {
+      dispose(group);
+      setError(
+        `Unable to prepare the new scene: ${String(error)}. The previous scene is still displayed. Try a lower grid resolution or fewer surfaces.`,
+      );
+      return;
+    }
     dispose(e.group);
     e.group.clear();
-    for (const [i, atom] of doc.atoms.entries()) {
-      const element = elements[atom.element] ?? {
-        symbol: `Z${atom.element}`,
-        color: "#b294b9",
-        radius: 1.8,
-      };
-      const radius =
-        doc.view.representation === "space-fill"
-          ? element.radius / BOHR
-          : doc.view.representation === "liquorice"
-            ? 0.28
-            : atom.element === 1
-              ? 0.32
-              : 0.52;
-      const m = new THREE.Mesh(
-        new THREE.SphereGeometry(radius, 24, 16),
-        new THREE.MeshStandardMaterial({
-          color: element.color,
-          roughness: 0.34,
-        }),
-      );
-      m.position.set(...atom.position);
-      m.userData.label = `${element.symbol} ${i + 1} | ${atom.position.map((v) => (v * BOHR).toFixed(3)).join(", ")} angstrom`;
-      e.group.add(m);
-    }
-    if (doc.view.representation !== "space-fill")
-      for (const [i, j] of doc.bonds) {
-        const from = new THREE.Vector3(...doc.atoms[i].position);
-        const to = new THREE.Vector3(...doc.atoms[j].position);
-        const delta = to.clone().sub(from);
-        if (delta.length() < 1e-10) continue;
-        const radius = doc.view.representation === "liquorice" ? 0.28 : 0.105;
-        const bond = new THREE.Mesh(
-          new THREE.CylinderGeometry(radius, radius, delta.length(), 12),
-          new THREE.MeshStandardMaterial({ color: "#9ba3a8", roughness: 0.5 }),
-        );
-        bond.position.copy(from).add(to).multiplyScalar(0.5);
-        bond.quaternion.setFromUnitVectors(
-          new THREE.Vector3(0, 1, 0),
-          delta.normalize(),
-        );
-        e.group.add(bond);
-      }
-    for (const s of doc.surfaces) {
-      if (!s.visible || (mode !== "mesh" && grid && s.field === doc.view.field))
-        continue;
-      const geometry = new THREE.BufferGeometry();
-      geometry.setAttribute(
-        "position",
-        new THREE.Float32BufferAttribute(s.positions, 3),
-      );
-      geometry.setAttribute(
-        "normal",
-        new THREE.Float32BufferAttribute(s.normals, 3),
-      );
-      geometry.setIndex(s.indices);
-      const mesh = new THREE.Mesh(
-        geometry,
-        new THREE.MeshStandardMaterial({
-          color: s.color,
-          opacity: s.opacity,
-          transparent: s.opacity < 1,
-          side: THREE.DoubleSide,
-          roughness: 0.45,
-          depthWrite: s.opacity >= 1,
-        }),
-      );
-      mesh.userData.label = `${s.label} | ${(s.indices.length / 3).toLocaleString()} triangles`;
-      e.group.add(mesh);
-    }
-    if (grid && mode !== "mesh")
-      e.group.add(
-        volumeObject(
-          grid,
-          mode,
-          doc.view.isovalue,
-          doc.view.positive_color,
-          doc.view.negative_color,
-          doc.view.opacity,
-          e.renderer.extensions.has("OES_texture_float_linear"),
-        ),
-      );
+    e.group.add(group);
+    if (!e.renderer.getContext().isContextLost()) setError("");
     e.needsRender = true;
   }, [doc, grid, mode]);
   useEffect(() => {
@@ -268,11 +291,15 @@ export function Viewport({
   function screenshot() {
     const e = engine.current;
     if (!e) return;
-    e.renderer.render(e.scene, e.camera);
-    const a = document.createElement("a");
-    a.download = "molekel-view.png";
-    a.href = e.renderer.domElement.toDataURL("image/png");
-    a.click();
+    try {
+      e.renderer.render(e.scene, e.camera);
+      const a = document.createElement("a");
+      a.download = "molekel-view.png";
+      a.href = e.renderer.domElement.toDataURL("image/png");
+      a.click();
+    } catch (error) {
+      setError(`Unable to export the scene image: ${String(error)}.`);
+    }
   }
   return (
     <div className="scene-wrap">

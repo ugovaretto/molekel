@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ListX, Play, Search, X } from "lucide-react";
+import { gridResolutions, isGridResolution } from "./resolution";
 import type { MolekelDocument } from "./types";
 
 export const maxOrbitalBatch = 32;
@@ -49,6 +50,7 @@ export function OrbitalBrowser({
   }, [document.surfaces]);
   const iso = Number(isovalue);
   const validIso = isovalue.trim() !== "" && Number.isFinite(iso) && iso > 0;
+  const validResolution = isGridResolution(gridResolution);
 
   useEffect(() => {
     const element = dialog.current;
@@ -247,13 +249,19 @@ export function OrbitalBrowser({
             <select
               aria-label="Orbital grid resolution"
               value={gridResolution}
+              aria-invalid={!validResolution}
               onChange={(event) =>
                 setGridResolution(Number(event.target.value))
               }
             >
-              {[24, 32, 40, 48].map((value) => (
-                <option key={value} value={value}>
-                  {value} x {value} x {value}
+              {gridResolutions.map((value) => (
+                <option
+                  key={value}
+                  value={value}
+                  title={`${value} x ${value} x ${value}`}
+                >
+                  {value}
+                  {"\u00b3"}
                 </option>
               ))}
             </select>
@@ -262,17 +270,21 @@ export function OrbitalBrowser({
         <button
           className="primary orbital-generate"
           disabled={
-            selected.size === 0 || selected.size > maxOrbitalBatch || !validIso
+            selected.size === 0 ||
+            selected.size > maxOrbitalBatch ||
+            !validIso ||
+            !validResolution
           }
-          onClick={() =>
+          onClick={() => {
+            if (!validIso || !validResolution) return;
             onGenerate(
               document.orbitals
                 .filter((orbital) => selected.has(orbital.id))
                 .map((orbital) => orbital.id),
               iso,
               gridResolution,
-            )
-          }
+            );
+          }}
         >
           <Play size={14} />
           Generate selected

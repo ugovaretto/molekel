@@ -1,6 +1,6 @@
 # As-built architecture
 
-This describes the 0.3.0 development preview, not the complete
+This describes the 0.3.1 development preview, not the complete
 [proposed architecture](../../doc/rewrite/03-architecture-decision.md).
 Read [status](status.md) for dated verification and uncompleted release gates.
 
@@ -16,7 +16,7 @@ file input / downloads           Tauri 2 / system WebView / native dialogs
            v
      request IDs + Web Worker (science.ts, science.worker.ts)
            |
-     wasm-bindgen JSON/byte bridge (molekel-wasm)
+     wasm-bindgen document/byte/typed-array bridge (molekel-wasm)
            |
            +--> molekel-import: format detection, Molden, reports, provenance
            |      +--> molekel-core: model, structure/grid imports, scientific operations
@@ -43,7 +43,7 @@ by native saving. There is no calculation server, remote service, or database.
 | [Converter CLI](../crates/molekel-convert/src/main.rs) | Bounded file reads, batch/JSON/check mode, destination preflight and no-clobber saves |
 | [Connectivity](../crates/molekel-core/src/bonds.rs) | Exact k-d-tree neighbors, explicit-plus-inferred display bonds |
 | [Native format](../crates/molekel-format/src/lib.rs) and [filesystem adapter](../crates/molekel-format/src/native.rs) | Portable container, checksums/validation, atomic native writes |
-| [WASM bridge](../crates/molekel-wasm/src/lib.rs) | `example`, `validate`, `import_document`, compatibility `import_text`, `encode`, `decode`, `sample`, `surfaces`, point/gradient probes |
+| [WASM bridge](../crates/molekel-wasm/src/lib.rs) | Document import/validation/encoding, Rust-owned sampled-grid cache, typed display buffers, compatibility JSON sampling/meshing and point/gradient probes |
 | [Document UI](../app/src/App.tsx) and [types](../app/src/types.ts) | Document state, controls, dirty state, generation replacement, error recovery |
 | [Orbital browser](../app/src/OrbitalBrowser.tsx) | Full orbital metadata table, filtering, transient checkbox selection, bounded multi-orbital generation settings |
 | [Worker client](../app/src/science.ts) and [worker](../app/src/science.worker.ts) | Request lifecycle, WASM initialization, single sampled-grid cache, cancellation |
@@ -148,14 +148,20 @@ not part of this increment. Qualified ORCA Molden exports use the shared library
    with an isovalue for generation, omitting existing meshes from the request.
 2. The worker validates the document. Its cache key includes basis, orbital,
    density, grid data, selected field, and resolution. Appearance and isovalue
-   are excluded, allowing the sampled grid to be reused when only those change.
+   are excluded, allowing the Rust/WASM-owned f64 sampled grid to be reused when
+   only those change. The worker owns one cached sampled grid at a time.
 3. Rust evaluates an analytic field on a bounded domain or resamples an imported
    grid. Analytic domain sizing currently uses the most diffuse Gaussian
    exponent; it is a preview heuristic, not a proven surface-containment bound.
-4. A `sample` request returns only the grid. Open, selecting a stored grid, or
-   changing its display resolution uses this path without creating surfaces.
-   For `generate`, `mcubes` extracts positive and negative isosurfaces. Empty meshes are omitted.
-   Affine mesh positions/normals are converted to model coordinates.
+4. A `sample` request returns grid metadata and a full-resolution
+   `Float32Array` of display values. Its buffer is transferred to the UI,
+   avoiding a large sampled-array JSON roundtrip and structured-clone copy.
+   Open, selecting a stored grid, or changing its display resolution uses this
+   path without creating surfaces. For `generate`, `mcubes` extracts positive
+   and negative isosurfaces from the retained f64 grid. Empty meshes are omitted.
+   Affine mesh positions/normals are converted to model coordinates. The display
+   renderer uses the transferred array directly rather than making another
+   CPU-side f32 copy; GPU texture upload and storage are still required.
 5. The UI stages the generated meshes, preflights native encoding of the combined
    document through Rust, then replaces surfaces of the selected field, retains other fields'
    surfaces, stores the transient grid separately, and marks the document dirty.
@@ -170,13 +176,32 @@ original full matrix. Extreme intermediate products use an alternate
 multiplication order rather than overflowing an otherwise representable value.
 There is no estimated CPU-work cutoff for analytic sampling. The previous
 150-million-work-unit rejection has been removed, not increased or bypassed
-for selected files. Sampling retains its API range of 12 through 80 per axis,
-and the UI continues to offer 24, 32, 40, and 48. It does not silently lower
-the requested resolution; the 125-AO density in `data/molden.input` is no longer
-restricted to 24 cubed by a work estimate. Finite-value and domain checks,
-imported-grid bounds, the two-million-vertex worst-case mesher allocation bound,
-and document/container budgets still apply. Removing the CPU estimate does
-not establish a maximum runtime or remove memory-related rejections.
+for selected files. The sampling API accepts 12 through 256 per axis; both UI
+selectors use [shared options](../app/src/resolution.ts) of 24, 32, 40, 48, 64,
+80, 96, 128, 160, 192, 224, and 256, with a default of 40. It does not silently
+lower the requested resolution. Transient sampling permits up to 256 cubed
+values, distinct from the unchanged 128 cubed total-sample bound for grids
+stored in `Document`. Finite-value, domain, and native-container validation
+remain. Neither the removed CPU estimate nor the larger transient-grid limit
+establishes a maximum runtime or removes memory-related rejections.
+
+Meshing retains the two-million-vertex output bound but preflights the actual
+per-cell triangle counts instead of assuming the maximum output for every cell.
+The case counts are obtained from public binary-case probes of the pinned
+`mcubes` implementation and applied using that implementation's case convention.
+This permits sparse surfaces on larger grids without replacing the mesher,
+loosening the output bound, or claiming topology-certified extraction.
+
+Large Rust-owned buffers use fallible reservation so recoverable allocation
+failures can be reported. This is not universal OOM recovery: `mcubes`, JSON,
+browser, GPU, and operating-system allocations are outside that guarantee.
+A 256 cubed grid has 16,777,216 samples, requiring 128 MiB for its f64 values
+and 64 MiB for the display f32 values alone. Meshes, temporary copies, WASM
+memory, and GPU textures add to that footprint. No maximum RSS or latency is
+claimed from these arithmetic sizes.
+Freeing a sampled field makes its storage reusable, but WASM linear memory
+does not shrink to its previous size. Worker termination releases that worker's
+memory; a successful large calculation may retain its memory high-water size.
 
 The orbital browser lists `document.orbitals` in original document order,
 using one-based row numbers and imported label/spin/occupation/energy metadata.
@@ -197,11 +222,12 @@ discards the output, checking model and native-container budgets with all
 retained scientific inputs before commit. This persistence preflight has an
 additional encoding/memory cost but writes no file. These are preview rejection
 budgets, not guarantees of acceptable memory use or latency. Cancellation or
-any batch error leaves previous surfaces untouched. A successful batch replaces
+a recoverable batch error leaves previous surfaces untouched. A successful batch replaces
 only selected fields' meshes, keeps unrelated saved meshes, and enters mesh mode.
 The active field stays unchanged if its orbital was selected, otherwise it
 becomes the first selected orbital. Only that field's display grid is retained
-in the UI for sampled rendering; the worker still has a single-entry cache.
+in the UI for sampled rendering; the f64 grid remains in the worker's
+single-entry Rust/WASM cache rather than a JavaScript number array.
 
 Request IDs resolve worker promises and associate progress events with the
 request that emitted them. Sampling, meshing, and validation stage events update
@@ -223,7 +249,11 @@ winding is corrected for back-face ray-entry rendering, including inside views.
 
 The viewport owns its Three.js engine and disposes rebuilt geometry/materials.
 Camera damping drives an animation loop with rendering on movement or changed
-scene state. Scene objects are rebuilt on document/grid/mode changes; atoms
+scene state. New scene geometry is staged before replacing the prior scene;
+recoverable construction errors keep that prior scene visible and report an
+error without unmounting the interface. Render and image-export exceptions are
+also reported, separate from the existing graphics-context-loss warning.
+Scene objects are rebuilt on document/grid/mode changes; atoms
 and bonds are individual meshes, not a qualified large-structure instancing path.
 
 ## Persistence versus transient state
@@ -251,6 +281,9 @@ authoritative grid also gets a new transient display sample on Open, making
 sampled modes available immediately. Analytic orbital/density fields still need
 Generate to prepare their transient display grid after reopening. No sampled
 preview is a substitute for the complete authoritative grid saved in the file.
+The larger 256 cubed transient-grid limit does not extend native source-grid or
+128 MiB container limits; generated meshes can record their larger generation
+resolution without embedding the transient samples in `Document.grids`.
 
 Browser saving encodes through WASM and requests a download. Desktop saving
 encodes through WASM, revalidates in native Rust, asks for a destination, writes

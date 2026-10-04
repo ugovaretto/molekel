@@ -87,17 +87,29 @@ Raycasting uses bounded step sampling and bracket refinement. It can miss tangen
 
 The format's named preview profile is intentionally narrower than the proposed full format. It has whole-array ZIP entries and a 128 MiB file/inflated-byte cap; it is not a streaming/chunked large-data implementation. Saving may need several in-memory copies. Camera and transient volume state are not yet persisted. See [format profile](docs/preview-format.md).
 
-Limits are deliberate: 256 AOs, 64 primitives per AO, sampling resolutions from
-12 through 80 in the API and 24/32/40/48 in the UI, 128 cubed maximum imported
-grid samples, a two-million-vertex worst-case mesher bound, 128 saved surfaces,
-and 128 MiB geometry/native-container bounds. Numerical and domain validation
-also remain. There is no estimated CPU-work cutoff for analytic sampling:
-the repository's 125-AO Molden density can use every offered UI resolution,
-without silently reducing it. Scalar sampling avoids unused gradients and
-folds density-matrix pairs. Larger jobs may take longer; phase progress is not
-a percentage or time estimate, and Cancel terminates the worker while retaining
-previous geometry. These remaining bounds do not guarantee latency or total
-process memory usage.
+Analytic sampling supports 12 through 256 points per axis in the API. Both UI
+selectors offer 24, 32, 40, 48, 64, 80, 96, 128, 160, 192, 224, and 256; the
+default remains 40. A transient sampled field may contain up to 256 cubed
+values, separately from the unchanged 128 cubed total-sample limit for imported
+and native authoritative grids. The two-million-vertex mesher limit now checks
+the actual case counts before extraction, using the pinned `mcubes` behavior;
+it is not a new meshing algorithm or topology guarantee.
+
+Other limits remain: 256 AOs, 64 primitives per AO, 128 saved surfaces, 32
+orbitals per batch, and 128 MiB geometry/native-container bounds, plus numerical
+and domain validation. There is no estimated CPU-work cutoff or silent
+resolution reduction for analytic sampling. Scalar sampling avoids unused
+gradients and folds density-matrix pairs. The WASM worker keeps the f64 sampled
+grid and transfers full-resolution f32 display values without serializing the
+large sample array through JSON.
+
+A 256 cubed field contains 16,777,216 samples: 128 MiB for f64 values plus
+64 MiB for f32 display values, before meshes, additional copies, and GPU memory.
+Larger jobs may take longer; phase progress is not a percentage or time estimate.
+Cancel terminates the worker, retaining previous geometry, and recoverable
+errors leave the previous document intact. Allocation checks cannot guarantee
+recovery from every library, browser, GPU, or system out-of-memory failure;
+these bounds do not guarantee latency or maximum process memory usage.
 
 Imported cubes can be resampled for display without modifying their
 authoritative values. All imports use published covalent radii and bounded

@@ -163,7 +163,8 @@ cargo check --manifest-path next/Cargo.toml --locked -p molekel-desktop
 | Container/native saving | Format unit tests and [reference roundtrips](../crates/molekel-format/tests/reference_roundtrips.rs) |
 | Browser workflows/numerics | [Playwright tests](../app/tests): Chromium/WebKit, real file input/download, pixels, camera, desktop/mobile layout |
 | Orbital selection and batch rendering | [Orbital browser workflows](../app/tests/orbitals.spec.ts): complete imported lists and metadata, filtering/checkboxes, bounded generation, preserved meshes, cancellation, save/reopen, desktop/mobile layout |
-| Density sampling and remaining bounds | [Scalar reference parity](../crates/molekel-core/tests/scalar_sampling.rs), [real Molden density](../crates/molekel-import/tests/density_sampling.rs), [allocation limits](../crates/molekel-core/tests/allocation_limits.rs), and [browser regression](../app/tests/density-budget.spec.ts): value-only sampling, nonsymmetric/signed matrices, finite extremes, 125-AO density at every UI resolution, real-worker cancellation/responsiveness, and retained numerical/allocation bounds |
+| Density sampling and remaining bounds | [Scalar reference parity](../crates/molekel-core/tests/scalar_sampling.rs), [real Molden density](../crates/molekel-import/tests/density_sampling.rs), [allocation limits](../crates/molekel-core/tests/allocation_limits.rs), and [browser regression](../app/tests/density-budget.spec.ts): value-only sampling, nonsymmetric/signed matrices, finite extremes, 125-AO density regressions, real-worker cancellation/responsiveness, and retained numerical/allocation bounds |
+| High-resolution grids and typed transfer | [256-cubed workflows](../app/tests/high-resolution.spec.ts) and [owned WASM field parity](../app/tests/sampled-field.spec.ts): real simple-field completion, exact saved resolution, typed display buffers, cached meshing, source validation, cancellation and injected recoverable failure paths |
 | Packaging safety/notices | [Packaging tests](../tools/package-support.test.mjs), followed by a full ZIP build when packaging changes |
 
 `test:e2e` first generates native reference documents in
@@ -200,14 +201,29 @@ per-result Save, cancellation, retry, and protected-source errors with disposabl
 copies. Native automated destination validation is separate from dialog QA.
 
 For the larger repository `data/molden.input`, select the occupation-derived
-density and generate at 24, 32, 40, and 48 samples per axis. Confirm that each
+density and exercise the intended resolution on the target machine. Both grid
+selectors offer 24, 32, 40, 48, 64, 80, 96, 128, 160, 192, 224, and 256 points
+per axis, with default 40. Larger real-molecule tests remain user/platform
+acceptance work, not an implied all-resolution benchmark. Confirm that the
 request uses its chosen resolution without an estimated-work rejection or
 automatic downgrade. Observe the footer's sampling, meshing, and validation
 phases; these are not a percentage-progress API. Cancel during a longer job,
 verify previous geometry remains intact, then generate again to check worker
-restart. Numerical/domain checks, API resolution 12 through 80, grid limits,
-worst-case mesh allocation, and native-container budgets still need rejection
-coverage; removing the CPU estimate must not weaken those boundaries.
+restart. Record failures and the actual requested dimensions.
+
+Keep the separate limits covered: API resolution 12 through 256, 256 cubed
+transient samples, 128 cubed total authoritative source samples, finite/domain
+validation, two-million actual output vertices, 128 saved surfaces, 32 orbitals
+per batch, and 128 MiB geometry/native-container budgets. Validate actual-cell
+mesher preflight against the pinned library's case behavior; do not reintroduce
+the all-cells worst-case rejection or silently change the classic mesher.
+Check typed-array display dimensions and values without treating the transient
+f32 transfer as persistent scientific data. A 256 cubed test needs at least
+128 MiB of f64 samples and 64 MiB of f32 display samples, plus meshes, temporary
+copies, WASM/browser overhead, and GPU memory. Recoverable allocation and worker
+errors should retain the previous document, but library/browser/GPU/system OOM
+is not universally recoverable. Do not report a maximum RSS, timing guarantee,
+or platform qualification without separate measurements.
 
 On `Examples/water.molden`, use **Orbitals (24)** (tooltip: **Browse and select
 orbitals**): verify all 24 rows, imported

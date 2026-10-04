@@ -53,7 +53,8 @@ The ZIP contains:
   `AGENTS.md`, current documentation, the original brief, and historical
   `doc/rewrite/` plans so another agent can continue from the snapshot.
   Uncommitted source is included and identified, not silently replaced with
-  the last Git commit. Git history is not included.
+  the last Git commit. Git history is not included. Personal `next/chat-*.md`
+  exports are ignored and excluded from source snapshots and commits.
 - Checksummed original Rust dependency archives and frontend production
   dependency sources, including source for MPL components. Build-only Rust
   dependencies are conservatively included. Normal rebuilding still uses the

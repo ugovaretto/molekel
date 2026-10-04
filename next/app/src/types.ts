@@ -25,6 +25,9 @@ export interface Grid {
   dims: number[];
   values: number[];
 }
+export interface SampledGrid extends Omit<Grid, "values"> {
+  values: Float32Array;
+}
 export interface Surface {
   id: string;
   label: string;
@@ -70,7 +73,7 @@ export interface MolekelDocument {
 }
 export interface Generation {
   surfaces: Surface[];
-  grid: Grid;
+  grid: SampledGrid;
 }
 export interface ImportReport {
   format: string;

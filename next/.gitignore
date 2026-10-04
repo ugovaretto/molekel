@@ -6,4 +6,6 @@
 /app/test-results/
 /app/playwright-report/
 /artifacts/
+# Personal chat exports are not application source or redistribution inputs.
+/chat-*.md
 *.log

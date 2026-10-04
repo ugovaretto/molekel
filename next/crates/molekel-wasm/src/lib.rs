@@ -1,4 +1,4 @@
-use molekel_core::{Document, compute, fixtures};
+use molekel_core::{Document, Grid, compute, fixtures};
 use wasm_bindgen::prelude::*;
 fn err(e: impl ToString) -> JsValue {
     JsValue::from_str(&e.to_string())
@@ -48,17 +48,83 @@ pub fn surfaces(json: &str, grid_json: &str, field: &str, iso: f64) -> Result<St
     let d = parse(json)?;
     let g = serde_json::from_str(grid_json).map_err(err)?;
     let hash = compute::source_hash(&d, field).map_err(err)?;
+    mesh_surfaces(&d, &g, field, &hash, iso)
+}
+
+fn mesh_surfaces(
+    d: &Document,
+    g: &Grid,
+    field: &str,
+    hash: &str,
+    iso: f64,
+) -> Result<String, JsValue> {
     let mut surfaces = vec![];
     for (level, color) in [
         (iso, &d.view.positive_color),
         (-iso, &d.view.negative_color),
     ] {
-        let s = compute::mesh(&g, level, field, &hash, color, d.view.opacity).map_err(err)?;
+        let s = compute::mesh(g, level, field, hash, color, d.view.opacity).map_err(err)?;
         if !s.indices.is_empty() {
             surfaces.push(s);
         }
     }
     serde_json::to_string(&surfaces).map_err(err)
+}
+
+/// Retain the authoritative f64 samples inside WASM instead of roundtripping grid JSON.
+#[wasm_bindgen]
+pub struct SampledField {
+    grid: Grid,
+    field: String,
+    hash: String,
+}
+
+#[wasm_bindgen]
+impl SampledField {
+    #[wasm_bindgen(constructor)]
+    pub fn new(json: &str, field: &str, resolution: usize) -> Result<SampledField, JsValue> {
+        let document = parse(json)?;
+        let hash = compute::source_hash(&document, field).map_err(err)?;
+        Ok(Self {
+            grid: compute::sample(&document, field, resolution).map_err(err)?,
+            field: field.into(),
+            hash,
+        })
+    }
+
+    pub fn metadata(&self) -> Result<String, JsValue> {
+        let grid = &self.grid;
+        serde_json::to_string(&serde_json::json!({
+            "id": grid.id,
+            "label": grid.label,
+            "quantity": grid.quantity,
+            "origin": grid.origin,
+            "axes": grid.axes,
+            "dims": grid.dims,
+        }))
+        .map_err(err)
+    }
+
+    pub fn display_values(&self) -> Result<Vec<f32>, JsValue> {
+        let mut values = Vec::new();
+        values
+            .try_reserve_exact(self.grid.values.len())
+            .map_err(|_| {
+                err("Insufficient memory for the display grid; reduce the grid resolution")
+            })?;
+        values.extend(self.grid.values.iter().map(|value| *value as f32));
+        Ok(values)
+    }
+
+    pub fn surfaces(&self, json: &str, iso: f64) -> Result<String, JsValue> {
+        let document = parse(json)?;
+        if compute::source_hash(&document, &self.field).map_err(err)? != self.hash {
+            return Err(err(
+                "Cached samples do not match the current scientific inputs",
+            ));
+        }
+        mesh_surfaces(&document, &self.grid, &self.field, &self.hash, iso)
+    }
 }
 #[wasm_bindgen]
 pub fn point(json: &str, field: &str, x: f64, y: f64, z: f64) -> Result<f64, JsValue> {

@@ -4,6 +4,7 @@ use std::collections::HashSet;
 
 pub const BOHR_TO_ANGSTROM: f64 = 0.529177210903;
 pub const MAX_SAMPLES: usize = 128 * 128 * 128;
+pub const MAX_TRANSIENT_SAMPLES: usize = 256 * 256 * 256;
 pub const MAX_VERTICES: usize = 2_000_000;
 pub const MAX_BONDS: usize = 600_000;
 
@@ -128,11 +129,19 @@ pub fn determinant(a: [[f64; 3]; 3]) -> f64 {
 }
 impl Grid {
     pub fn validate(&self) -> Result<()> {
+        self.validate_samples(MAX_SAMPLES, "128^3 sample")
+    }
+    /// Calculation grids are transient; imported and saved grids retain their smaller budget.
+    pub fn validate_transient(&self) -> Result<()> {
+        self.validate_samples(MAX_TRANSIENT_SAMPLES, "256^3 transient sample")
+    }
+    fn validate_samples(&self, limit: usize, label: &str) -> Result<()> {
         let n = self.dims.iter().try_fold(1usize, |n, d| n.checked_mul(*d));
-        if self.dims.iter().any(|d| *d < 2)
-            || n.is_none_or(|n| n > MAX_SAMPLES || n != self.values.len())
+        if self.dims.iter().any(|d| *d < 2) || n.is_none_or(|n| n > limit || n != self.values.len())
         {
-            return Err("Grid dimensions/count exceed the 128^3 sample budget or disagree".into());
+            return Err(format!(
+                "Grid dimensions/count exceed the {label} budget or disagree"
+            ));
         }
         if !finite(self.origin)
             || !finite(self.axes.into_iter().flatten())

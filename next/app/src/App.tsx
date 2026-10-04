@@ -28,11 +28,12 @@ import {
 } from "./files";
 import { ConvertFiles } from "./ConvertFiles";
 import { OrbitalBrowser, maxOrbitalBatch } from "./OrbitalBrowser";
+import { gridResolutions, isGridResolution } from "./resolution";
 import { Viewport } from "./Viewport";
 import type {
   MolekelDocument,
   Generation,
-  Grid,
+  SampledGrid,
   ImportReport,
   ImportResult,
   RenderMode,
@@ -46,7 +47,7 @@ export default function App() {
   const [status, setStatus] = useState("");
   const [resolution, setResolution] = useState(40);
   const [mode, setMode] = useState<RenderMode>("mesh");
-  const [grid, setGrid] = useState<Grid | null>(null);
+  const [grid, setGrid] = useState<SampledGrid | null>(null);
   const [reset, setReset] = useState(0);
   const [inspected, setInspected] = useState("");
   const [dirty, setDirty] = useState(false);
@@ -68,6 +69,10 @@ export default function App() {
     orbitals?: string[],
   ) {
     if (!document.view.field) return;
+    if (!isGridResolution(res)) {
+      setError("Choose an available grid resolution.");
+      return;
+    }
     const fields = orbitals ?? [document.view.field];
     if (!fields.length) return;
     if (
@@ -90,7 +95,7 @@ export default function App() {
         (s) => !s.field || !fields.includes(s.field),
       );
       const generated: Surface[] = [];
-      let activeGrid: Grid | null = null;
+      let activeGrid: SampledGrid | null = null;
       const meshBytes = (s: Surface) =>
         8 * (s.positions.length + s.normals.length) + 4 * s.indices.length;
       let bytes = retained.reduce((total, s) => total + meshBytes(s), 0);
@@ -177,6 +182,12 @@ export default function App() {
   }
   function generateOrbitals(ids: string[], iso: number, res: number) {
     if (!doc || busy || !ids.length) return;
+    if (!Number.isFinite(iso) || iso <= 0 || !isGridResolution(res)) {
+      setError(
+        "Choose a finite positive isovalue and an available grid resolution.",
+      );
+      return;
+    }
     const field = ids.includes(doc.view.field ?? "") ? doc.view.field : ids[0];
     setOrbitalsOpen(false);
     void compute(
@@ -262,7 +273,7 @@ export default function App() {
     setBusy("Preparing sampled field");
     setError("");
     try {
-      const sampled = await request<Grid>("sample", {
+      const sampled = await request<SampledGrid>("sample", {
         doc: { ...document, surfaces: [] },
         field: document.view.field,
         resolution: res,
@@ -306,11 +317,11 @@ export default function App() {
       });
       if (token !== generation.current) return;
       const d = result.document;
-      let sampled: Grid | null = null;
+      let sampled: SampledGrid | null = null;
       let previewError = "";
       if (d.grids.some((g) => g.id === d.view.field)) {
         try {
-          sampled = await request<Grid>("sample", {
+          sampled = await request<SampledGrid>("sample", {
             doc: { ...d, surfaces: [] },
             field: d.view.field,
             resolution,
@@ -661,14 +672,16 @@ export default function App() {
                   disabled={!!busy}
                   onChange={(e) => {
                     const value = Number(e.target.value);
+                    if (!isGridResolution(value)) return;
                     setResolution(value);
                     if (doc.grids.some((g) => g.id === doc.view.field))
                       void prepareGrid(doc, value, mode);
                   }}
                 >
-                  {[24, 32, 40, 48].map((n) => (
-                    <option key={n} value={n}>
-                      {n} x {n} x {n}
+                  {gridResolutions.map((n) => (
+                    <option key={n} value={n} title={`${n} x ${n} x ${n}`}>
+                      {n}
+                      {"\u00b3"}
                     </option>
                   ))}
                 </select>

@@ -1,14 +1,19 @@
 import init, * as core from "./wasm/molekel_wasm";
-import type { MolekelDocument, Grid } from "./types";
+import type { MolekelDocument, SampledGrid } from "./types";
 
 const ready = init();
-let cached: { key: string; grid: Grid } | null = null;
+let cached: { key: string; field: core.SampledField } | null = null;
+function clearCache() {
+  cached?.field.free();
+  cached = null;
+}
 self.onmessage = async (event: MessageEvent) => {
   const { id, action, args } = event.data;
   const progress = (stage: string) => self.postMessage({ id, progress: stage });
   try {
     await ready;
     let result: unknown;
+    const transfer: Transferable[] = [];
     switch (action) {
       case "example":
         result = JSON.parse(core.example(args.openShell));
@@ -47,34 +52,41 @@ self.onmessage = async (event: MessageEvent) => {
           args.resolution,
         ]);
         if (cached?.key !== key) {
+          clearCache();
           progress("sampling");
           cached = {
             key,
-            grid: JSON.parse(core.sample(json, args.field, args.resolution)),
+            field: new core.SampledField(json, args.field, args.resolution),
           };
         }
         if (action === "generate") progress("meshing");
-        result =
-          action === "sample"
-            ? cached!.grid
-            : {
-                grid: cached!.grid,
-                surfaces: JSON.parse(
-                  core.surfaces(
-                    json,
-                    JSON.stringify(cached!.grid),
-                    args.field,
-                    args.iso,
-                  ),
-                ),
-              };
+        const surfaces =
+          action === "generate"
+            ? JSON.parse(cached.field.surfaces(json, args.iso))
+            : null;
+        const grid: SampledGrid = {
+          ...JSON.parse(cached.field.metadata()),
+          values: cached.field.display_values(),
+        };
+        transfer.push(grid.values.buffer);
+        result = action === "sample" ? grid : { grid, surfaces };
         break;
       }
       default:
         throw new Error(`Unknown worker action ${action}`);
     }
-    self.postMessage({ id, result });
+    self.postMessage({ id, result }, { transfer });
   } catch (e) {
-    self.postMessage({ id, error: String(e) });
+    // A trapped allocator/runtime must not be reused for the next calculation.
+    const fatal =
+      e instanceof WebAssembly.RuntimeError || e instanceof RangeError;
+    if (!fatal) clearCache();
+    self.postMessage({
+      id,
+      fatal,
+      error: fatal
+        ? "The calculation worker exhausted memory or failed. Reduce the grid resolution and retry; previous surfaces were retained."
+        : String(e),
+    });
   }
 };

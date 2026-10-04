@@ -424,7 +424,7 @@ test("volume rays remain visible from inside both ordinary and reflected affine 
             [0, 0, 1],
           ],
           dims: [3, 3, 3],
-          values: Array(27).fill(1),
+          values: new Float32Array(27).fill(1),
         },
         "volume",
         0.08,

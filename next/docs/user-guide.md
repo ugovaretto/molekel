@@ -9,7 +9,7 @@ supplied orbitals or density matrices, generate signed
 isosurfaces, and save the molecular data and surface geometry together in a
 portable `.molekel` document.
 
-This is version 0.3.0, a development preview. Scientific calculations and
+This is version 0.3.1, a development preview. Scientific calculations and
 rendering have targeted tests, but the application is not yet a qualified
 scientific release. It visualizes supplied data; it does not run a quantum
 chemistry calculation to obtain a wavefunction from atom positions.
@@ -213,7 +213,7 @@ can also be generated from the source tree; see `next/fixtures/pyscf/README.md`.
 4. The window closes and the footer reports the current orbital and work phase.
    **Cancel** stops the batch.
    Results are applied together only after the complete batch passes validation;
-   cancelling or an error leaves the previous surfaces in place.
+   cancelling or a recoverable error leaves the previous surfaces in place.
 5. On success, the new meshes appear together in **Isosurface mesh** mode.
    Only meshes belonging to the checked orbitals are replaced; other fields'
    saved meshes remain. Use the eye controls to show or hide individual surfaces,
@@ -233,7 +233,9 @@ new density matrix.
 2. Set a positive **Isovalue** magnitude. The generator attempts both positive
    and negative levels; only nonempty surfaces are added. A nonnegative density
    can therefore produce only a positive surface.
-3. Choose **Grid resolution**, from 24 x 24 x 24 to 48 x 48 x 48. Larger values
+3. Choose **Grid resolution**. Both this control and the orbital browser offer
+   24, 32, 40, 48, 64, 80, 96, 128, 160, 192, 224, or 256 points per axis;
+   the cubic labels describe the full grid, and the default is 40. Larger values
    cost more memory and computation and are not an accuracy guarantee.
 4. Click **Generate surfaces**. The footer shows the sampling, meshing, and
    validation phases, followed by completion and triangle count. These are
@@ -243,14 +245,22 @@ new density matrix.
 5. Adjust colors or opacity, then Save to make the result durable on disk.
 
 Density calculation cost depends on the basis size as well as grid resolution.
-The repository's `data/molden.input` (125 basis functions) can use **24, 32, 40,
-or 48 samples per axis** for its occupation-derived density. Analytic sampling
-has no estimated CPU-work cutoff and does not automatically lower the chosen
-resolution. A larger calculation may therefore take longer, even while the
-same phase remains displayed. **Cancel** terminates the calculation worker;
-the next request starts a new worker. Existing completed geometry is retained.
-Finite-value, domain, grid, mesh-allocation, and file-size limits still apply;
-fewer orbitals or a lower resolution can help when one of those limits is reached.
+Analytic sampling has no estimated CPU-work cutoff and does not automatically
+lower the chosen resolution. Higher resolutions, including those for the
+repository's `data/molden.input` density, can be requested subject to numerical,
+geometry, and file-size limits. A larger calculation may take longer, even
+while the same phase remains displayed. **Cancel** terminates the calculation
+worker; the next request starts a new worker. Existing completed geometry is
+retained. Fewer orbitals or a lower resolution can help when a remaining limit
+is reached.
+
+At 256 cubed, one field has **16,777,216 samples**. Its f64 calculation values
+occupy **128 MiB**, and its f32 display values another **64 MiB**, before meshes,
+additional copies, and graphics memory. Save your document before large jobs.
+Recoverable allocation or worker errors preserve the previous document, but
+the application cannot guarantee recovery if the browser, graphics driver, or
+operating system runs out of memory or terminates it. The larger options are
+not a claim that every molecule has been tested at those resolutions.
 
 Selecting a field or changing isovalue/resolution does not regenerate existing
 meshes automatically. For imported grids, selecting the field or changing
@@ -282,6 +292,11 @@ The original cube data is f64, while rendering and current meshing use f32.
 If a finite grid overflows the preview's numeric range, an error is shown; its
 document, bonds, and existing meshes still open and remain savable. Saving
 does not reduce the precision of the authoritative grid to the preview's precision.
+Generated analytic grids can be up to 256 cubed and are transient: their
+full-resolution f32 values are used for display, without silently reducing the
+selected resolution. This does not increase the 128 cubed total-sample limit
+for authoritative imported/native grids. Save retains the analytic inputs and
+generated meshes, not the transient calculation or display grid.
 
 In sampled modes, meshes of the selected field are replaced visually by the
 sampled display. Meshes from other fields may remain visible. The eye and trash
@@ -349,8 +364,10 @@ Keep original data and backups because the native preview schema is not frozen.
 
 Current guards include a 128 MiB file/inflated-array budget, a 32 MiB PDB text
 budget, 100,000 atoms, 600,000 bonds, 256 basis functions, 64 primitives per
-basis function, 128 cubed total imported grid samples, a two-million-vertex
-worst-case mesher bound, and 128 saved surfaces. Generation also checks an
+basis function, 128 cubed total imported/native grid samples, 256 cubed transient
+samples, a two-million-vertex mesh-output bound, and 128 saved surfaces.
+Meshing counts the actual cell cases before extraction rather than rejecting
+every large grid on an all-cells worst-case estimate. Generation also checks an
 estimated 128 MiB geometry budget before native-format validation. These are
 rejection limits, not recommended workloads or guarantees of total memory use;
 large calculations can be slow well below them.

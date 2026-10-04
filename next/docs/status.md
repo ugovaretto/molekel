@@ -5,6 +5,92 @@ Date: 4 October 2026. Branch: `2026`. All new implementation is under `next/`; l
 Start with the [documentation map](README.md), [user guide](user-guide.md),
 [as-built architecture](architecture.md), or [agent handoff](handoff.md).
 
+## Version 0.3.1
+
+The user requested version **0.3.1**, committing the high-resolution work below,
+an annotated `v0.3.1` tag, pushing the current `2026` branch to `origin`, and a
+fresh redistributable Apple Silicon tester ZIP. The Rust workspace and its six
+first-party lock entries, frontend package/lockfile, Tauri metadata, and current
+version descriptions use 0.3.1. External dependencies, frozen scientific
+references, and native schema `[0, 1]` are unchanged.
+
+The user reports calculations completing within seconds at higher resolutions;
+exact dimensions and timings were not supplied. This is encouraging local
+feedback, not a reproducible benchmark or a platform-wide performance promise.
+Personal `next/chat-*.md` exports are now ignored so packaging cannot include
+them as untracked source. The existing chat export and running preview are
+preserved. Inspect Git for commit/tag/push state and each delivered ZIP's
+`BUILD-INFO.json` for its source identity and completed packaging checks.
+
+After the version bump, release preflight passes **102 workspace Rust tests**,
+**102 Chromium/WebKit browser cases**, and **7 packaging tests**. Production
+WASM/TypeScript/frontend build, Rust/frontend formatting, workspace/all-target
+Clippy with warnings denied, local documentation links, and `git diff --check`
+also pass. Desktop/mobile high-resolution screenshots were inspected. Structured
+manifest checks confirm consistent versions and unchanged external dependencies;
+Git source discovery excludes the private chat export. The existing large
+frontend-chunk build warning remains.
+
+The ZIP workflow builds an optimized native application and standalone converter,
+uses ad-hoc signing, and includes documentation, source, examples, and dependency
+notices. It is not a notarized public release. Native interactive workflows and
+clean-machine installation remain separate acceptance gates.
+
+## High-resolution grids through 256
+
+The user requested substantially larger grids and will test real-molecule
+performance themselves. Both selectors now offer 24, 32, 40, 48, 64, 80, 96,
+128, 160, 192, 224, and 256 samples per axis, with default 40 unchanged. The
+core accepts 12 through 256. Requests are not silently downgraded and remain
+background worker jobs with cancellation and phase reports.
+
+`Grid::validate_transient()` permits up to 256-cubed calculation samples,
+separately from the unchanged 128-cubed authoritative source-grid bound.
+The mesher counts actual per-cell output using all 256 case counts obtained
+from the pinned library's public API. It rejects output above two million
+vertices before extraction, replacing the former all-cells worst-case rejection
+without changing triangulation or mesher identity. Rust-owned large buffers
+use fallible reservations. Numerical/domain validation, document surface counts,
+geometry budgets, and the 128 MiB native-container cap remain intact.
+
+The WASM `SampledField` owns f64 samples, rechecks scientific identity on meshing,
+and exports only small metadata plus an independent full-resolution f32 array
+for display. The worker transfers that buffer instead of cloning a large grid
+through JSON; the renderer uses it without another CPU-side conversion copy.
+Older JSON probe APIs remain for compatibility/reference checks. Saved meshes
+record the requested resolution, while authoritative scientific data and native
+schema remain unchanged. No transient display array is saved as source data.
+
+A 256-cubed field needs 128 MiB of f64 samples and another 64 MiB of display
+values before geometry, temporary copies, GPU storage, and runtime overhead.
+Trapped/failed workers are retired, and the next request starts fresh. Scene
+construction is staged so a recoverable allocation error leaves the old scene
+visible; render/image-export exceptions are reported without unmounting the UI.
+Fallible allocations are not a guarantee against browser, library, GPU, or
+OS-level OOM. WASM linear memory retains its high-water size until worker
+termination. Existing geometry and file guards are deliberately retained.
+
+Verification: **102 workspace Rust tests** and **102 Chromium/WebKit browser
+cases** (51 scenarios in each engine), production WASM/frontend build,
+formatting, and workspace/all-target Clippy pass. Native tests exercise actual
+256-cubed analytic sampling, signed plane meshes, exact case-count/threshold
+parity, pathological output rejection, separate source/transient limits, and
+deterministic capacity-overflow handling without exhausting physical memory.
+Ten new high-resolution browser cases cover a full-resolution two-AO
+density, cache reuse, save/reopen, all rendering modes and mobile framing,
+real 256-cubed Molden job cancellation, and injected worker/scene failure paths.
+Four new direct owned-field API cases verify orbital/density/signed-affine-cube
+parity against the legacy API, independent display buffers, unchanged native
+sources, source-hash rejection, and reuse after a rejected request. Desktop and
+mobile screenshots were visually inspected; all 169 local Markdown targets
+resolve and `git diff --check` passes.
+
+At the end of this implementation step, application version remained 0.3.0;
+no commit, tag, push, native rebuild, or tester ZIP had yet been requested.
+The subsequent 0.3.1 release request is recorded above. Completed high-resolution
+benchmarks for the user's large Molden density are not claimed. The user's
+running server and chat export were preserved.
+
 ## Version 0.3.0
 
 The user requested version **0.3.0**, a commit of the accumulated application

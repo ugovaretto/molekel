@@ -3,20 +3,31 @@
 Recorded 4 October 2026. Start with [root AGENTS.md](../../AGENTS.md), then this
 document, [architecture](architecture.md), and [development commands](development.md).
 The [documentation map](README.md) links the original brief and full M0-M7 plan.
-The current application version is **0.3.0**, collecting the orbital browser,
-multi-orbital mesh generation, scalar density-sampling optimization, and larger
-background calculations after `v0.2.1`. Cube rendering, automatic bonds for all
-supported imports, Molden, and shared library/CLI conversion remain available.
-Native schema `[0, 1]` and external dependencies are unchanged. The user requested
-committing this increment, tagging it `v0.3.0`, and pushing on `2026`; inspect Git
-for the actual local and remote state rather than assuming completion from these
-notes. The user's separate chat export is not part of the application commit.
+The current application version is **0.3.1**, extending both grid controls
+through 256 cubed while retaining default 40 and background cancellation.
+It follows `v0.3.0`'s orbital browser, multi-orbital mesh generation, and scalar
+density-sampling optimization. Cube rendering, automatic bonds for all supported
+imports, Molden, and shared library/CLI conversion remain available. Native
+schema `[0, 1]` and external dependencies are unchanged. The user requested
+committing this increment, tagging it `v0.3.1`, pushing on `2026`, and rebuilding
+the redistributable Apple Silicon tester ZIP. Inspect Git and the delivered
+archive's `BUILD-INFO.json` for actual release state and packaging evidence.
+Personal `next/chat-*.md` exports are ignored and excluded from commits and
+source snapshots without changing their contents.
 
-The density in `data/molden.input` can use every offered UI resolution
-(24, 32, 40, and 48). Memory/numerical limits remain; the worker reports phases
-and remains cancellable without discarding completed meshes. The user confirmed
-that 48-cubed generation is effectively instantaneous for this file on their
-machine, not a general latency guarantee. No new tester ZIP was requested.
+The user reports that higher-resolution calculations still finish within
+seconds on their machine. Exact dimensions and timings were not supplied;
+this is user feedback, not a measured all-resolution performance guarantee.
+Do not treat the automated simple-field 256-cubed tests as a real-molecule
+benchmark.
+
+Transient sampled grids now allow 256 cubed; authoritative imported/native grids
+retain their 128-cubed sample-count bound. Exact mesh-output preflight replaces
+the all-cells worst-case estimate, retaining the two-million-vertex bound.
+The worker retains f64 samples in Rust/WASM and transfers a full-resolution
+f32 display array instead of roundtripping sample JSON. File/geometry limits
+remain, and recoverable failures preserve existing work; process-level OOM is
+not guaranteed recoverable.
 
 ## Establish the live state
 
@@ -69,6 +80,23 @@ and `BUILD-INFO.json` for provenance instead.
   documentation. Documentation is not a substitute for remaining release tests.
 
 ## Evidence, not assumptions
+
+The 0.3.1 release preflight reruns **102 workspace Rust tests**, **102 browser
+cases**, and **7 packaging tests** successfully after the version change. The
+production WASM/frontend build, formatting, workspace/all-target Clippy,
+structured version/dependency checks, and local documentation links pass too.
+Release ZIP checks and exact source identity are recorded separately in its
+`BUILD-INFO.json`; native interactive and clean-machine installation acceptance
+are not implied by these automated checks.
+
+The high-resolution increment passes **102 workspace Rust tests** and **102
+Chromium/WebKit browser cases** (51 scenarios in each engine), production
+WASM/frontend build, formatting, and workspace/all-target Clippy. Browser cases
+cover simple-field 256-cubed completion/persistence/typed-cache reuse,
+real-Molden sampling cancellation, and injected recoverable worker/scene errors.
+Direct `SampledField` tests confirm legacy-path parity, source-hash rejection,
+and reuse after a rejected request. All 169 local Markdown targets resolve.
+See the latest [status](status.md) entry for complete evidence.
 
 The 0.3.0 version follow-up reran all **98 workspace Rust tests** and **88
 Chromium/WebKit browser cases**, plus production WASM/frontend build, formatting,
@@ -170,10 +198,17 @@ these requirements because the current preview can display a scene.
   with the point/gradient reference and retain both halves of nonsymmetric
   matrices when folding pairs. There is no estimated CPU-work cutoff; long
   jobs stay inside the worker. Retain numerical/domain validation, API grids
-  from 12 through 80, imported-grid bounds, worst-case mesher allocation checks,
-  and document/container budgets. The UI still offers 24/32/40/48; progress
+  from 12 through 256, separate 256-cubed transient and 128-cubed source-grid
+  bounds, exact mesh-output preflight, and document/container budgets. UI
+  options extend from 24 through 256 with default 40; progress
   reports phases rather than voxel counts or an ETA. Termination, request IDs,
   and generation tokens must prevent cancelled or stale work from publishing.
+- `SampledField` owns the single worker cache. Free old fields before replacement
+  and preserve scientific-hash checks on reuse. Display buffers are independent
+  transferable f32 arrays; never detach WASM memory or persist display rounding
+  into the authoritative document. Transferred buffers cannot be reused in the
+  worker. Freeing Rust buffers allows reuse but does not shrink WASM linear
+  memory; only worker termination releases that worker's high-water footprint.
 - The as-built scene is in bohr, despite the early proposal's angstrom renderer.
 - JSON transport folds negative zero; source hashes explicitly canonicalize it.
   Native binary arrays retain f64 bits. Preserve cross-runtime hash tests.
